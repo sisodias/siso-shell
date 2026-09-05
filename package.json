@@ -1,0 +1,9 @@
+{
+  "name": "siso-shell",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./shell.mjs",
+  "files": ["shell.mjs", "assets"],
+  "scripts": {"test": "node --test"}
+}
