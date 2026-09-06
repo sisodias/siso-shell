@@ -1,0 +1,63 @@
+{{!-- U8 · Industry detail / value research — process map · current marketed capabilities · candidate modules · SISO projects that apply ·
+     the offer · value inputs + rank (unmeasured stays unmeasured) · evidence gaps. Rob: AM industry page (receipt am-industry-law-firms.png). --}}
+{{> heading heading}}
+
+<section class="siso-section" id="posture">
+  {{> section sections.posture}}
+  <div class="grid grid-3">
+    <div class="card card--strip tone-clients"><span class="kicker" style="color:var(--accent-tasks)">Demand posture</span><p class="small" style="margin-top:6px">{{{posture.demand}}}</p></div>
+    <div class="card card--strip tone-research"><span class="kicker" style="color:var(--accent-focus)">Automation research</span><p class="small" style="margin-top:6px">{{{posture.automation}}}</p></div>
+    <div class="card card--strip tone-warn"><span class="kicker" style="color:var(--accent-tasks)">Claim ceiling</span><p class="small" style="margin-top:6px">{{{posture.ceiling}}}</p></div>
+  </div>
+  {{#if words}}<div style="margin-top:var(--crm-space-4)">{{> words words}}</div>{{/if}}
+</section>
+
+<section class="siso-section" id="workflow">
+  {{> section sections.workflow}}
+  <div class="flow">{{#each processes}}<div class="flow-step"><b>{{process}}</b><span>{{{boundary}}}</span></div>{{/each}}</div>
+  <div class="tbl-wrap" style="margin-top:var(--crm-space-3)"><table class="tbl"><thead><tr><th>process</th><th>metric</th><th>falsifier</th><th>human authority</th><th>value</th></tr></thead><tbody>{{#each processes}}<tr><td><b>{{process}}</b><br><span class="faint mono small">{{id}}</span></td><td class="small">{{metric}}</td><td class="small">{{falsifier}}</td><td class="small">{{authority}}</td><td><span class="chip tone-{{value_tone}}">{{value}}</span></td></tr>{{/each}}</tbody></table></div>
+</section>
+
+<section class="siso-section" id="vendors">
+  {{> section sections.vendors}}
+  <div class="grid grid-3">{{#each vendors}}<div class="card"><span class="kicker dim">{{name}}</span><p class="small" style="margin-top:6px">{{{capability}}}</p><div class="chips" style="margin-top:8px"><span class="chip tone-{{tone}}">{{scope}}</span></div>{{#if price_note}}<p class="faint small" style="margin-top:6px">{{price_note}}</p>{{/if}}</div>{{/each}}</div>
+</section>
+
+<section class="siso-section" id="modules">
+  {{> section sections.modules}}
+  {{> repos modules}}
+</section>
+
+<section class="siso-section" id="projects">
+  {{> section sections.projects}}
+  {{> related projects}}
+</section>
+
+<section class="siso-section" id="offer">
+  {{> section sections.offer}}
+  <div class="grid grid-2">
+    <div class="card card--strip tone-projects"><span class="kicker">The offer</span><p style="margin-top:6px">{{{offer.what}}}</p></div>
+    <div class="card"><span class="kicker dim">Pilot design</span><p class="small" style="margin-top:6px">{{{offer.pilot}}}</p><ul class="small muted" style="margin-top:6px">{{#each offer.record}}<li>{{.}}</li>{{/each}}</ul></div>
+  </div>
+</section>
+
+<section class="siso-section" id="value">
+  {{> section sections.value}}
+  {{> metrics value}}
+  <div class="grid grid-2" style="margin-top:var(--crm-space-3)"><div class="card card--strip tone-blocked"><span class="kicker" style="color:var(--accent-danger)">Reject the pilot if</span><ul class="small" style="margin-top:6px">{{#each reject_if}}<li>{{.}}</li>{{/each}}</ul></div><div class="card"><span class="kicker dim">Why unmeasured</span><p class="small" style="margin-top:6px">{{{value_reason}}}</p></div></div>
+</section>
+
+<section class="siso-section" id="evidence">
+  {{> section sections.evidence}}
+  {{> evidence evidence}}
+</section>
+
+<section class="siso-section" id="map">
+  {{> section sections.map}}
+  {{> map map}}
+</section>
+
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

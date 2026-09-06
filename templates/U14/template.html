@@ -1,0 +1,39 @@
+{{!-- U14 · Person — who, in one line · relationship + since · projects + repos · what they said (private, dated → count only on public) · what is owed · activity.
+     Public-safe identity and relationship only; words and money stay private. --}}
+{{> heading heading}}
+<section class="siso-section" id="who">
+  {{> section sections.who}}
+  <dl class="kv">{{#each who}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+</section>
+<section class="siso-section" id="projects">
+  {{> section sections.projects}}
+  {{> related projects}}
+</section>
+<section class="siso-section" id="repos">
+  {{> section sections.repos}}
+  {{> repos repos}}
+</section>
+<section class="siso-section" id="deliverables">
+  {{> section sections.deliverables}}
+  {{> contents deliverables}}
+</section>
+<section class="siso-section" id="private">
+  {{> section sections.private}}
+  <div class="grid grid-3">{{#each private}}<div class="card card--strip tone-clients"><span class="kicker" style="color:var(--accent-tasks)">{{icon lock}} {{label}}</span><p class="small" style="margin-top:6px">{{{what}}}</p></div>{{/each}}</div>
+</section>
+<section class="siso-section" id="seats">
+  {{> section sections.seats}}
+  <div class="chips">{{> chips seats}}</div>
+</section>
+<section class="siso-section" id="activity">
+  {{> section sections.activity}}
+  {{> activity activity}}
+</section>
+<section class="siso-section" id="map">
+  {{> section sections.map}}
+  {{> map map}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>
