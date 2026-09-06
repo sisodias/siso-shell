@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "SISO Foundry · Work",
+    "description": "Library Work page for SISO Foundry: why it matters, repo with rights, sauce, capabilities, agent entry, evidence, releases.",
+    "stream": "research",
+    "crumb": [{ "label": "Templates", "href": "/" }, { "label": "U3 · Work", "href": "/t/U3/" }, { "label": "SISO Foundry" }],
+    "actions": [{ "label": "Library page", "href": "https://great-library-of-siso.pages.dev/works/siso-foundry/", "icon": "arrow-up-right", "external": true }, { "label": "index.json", "href": "https://great-library-of-siso.pages.dev/works/siso-foundry/index.json", "icon": "file-json", "external": true }],
+    "source": "Great_Library_of_SISO/registry/works/siso-foundry.json (updated 2026-09-06) · registry/releases/siso-foundry-*.json · gh api 19:34"
+  },
+  "heading": {
+    "breadcrumb": [{ "label": "Works", "href": "https://great-library-of-siso.pages.dev/works/" }, { "label": "Research" }, { "label": "siso-foundry" }],
+    "kicker": "Research <span class=\"sep\">·</span> application <span class=\"sep\">·</span> <span class=\"dim\">active</span>",
+    "title": "SISO Foundry",
+    "subtitle": "Find what is worth reusing. Prove it before building on it. A source-mining and reuse-knowledge platform for discovering, evaluating, preserving and navigating valuable external and SISO source.",
+    "badges": [
+      { "label": "public repo", "tone": "now", "dot": true, "href": "https://github.com/sisodias/siso-foundry" },
+      { "label": "MIT · verified", "tone": "now" },
+      { "label": "7 releases", "tone": "muted", "href": "#releases" },
+      { "label": "17 industry records", "tone": "clients", "href": "https://great-library-of-siso.pages.dev/industries/" },
+      { "label": "owner FOUNDRY-ZERO · closed 6 Sep 14:27", "tone": "agents" }
+    ],
+    "status": { "kicker": "Registry record", "value": "active · updated 2026-09-06", "note": "The one Work page on the eight-section template today; every other Work keeps its old layout until it carries an authored <code>reading</code>.", "facts": [{ "k": "gls id", "v": "<code>gls:work:ec664d93</code>" }, { "k": "head", "v": "<code>11f4595</code> · 6 Sep 13:08" }, { "k": "reviewed at", "v": "<code>main@11f45959</code> · verified" }, { "k": "page", "v": "<a href=\"https://great-library-of-siso.pages.dev/works/siso-foundry/\">/works/siso-foundry/</a> · 200" }] }
+  },
+  "sections": {
+    "why": { "n": "01", "title": "Why it matters", "sub": "the Library's reading, authored and labelled; his words where they exist" },
+    "map": { "n": "02", "title": "How it links", "sub": "repo · releases · related Works · people · questions · projects" },
+    "repos": { "n": "03", "title": "Repo and satellites", "sub": "public / private / access / rights from provenance.locators" },
+    "sauce": { "n": "04", "title": "Sauce", "sub": "the useful things to open first; each with a dated receipt" },
+    "contents": { "n": "05", "title": "Contents and capabilities" },
+    "agent": { "n": "06", "title": "Agent quick-start" },
+    "evidence": { "n": "07", "title": "Evidence, limits, version" },
+    "releases": { "n": "08", "title": "Releases", "sub": "immutable, pinned to a commit" },
+    "activity": { "n": "09", "title": "Activity", "sub": "owner writebacks, dated" },
+    "related": { "n": "10", "title": "Related work" }
+  },
+  "reasoning": {
+    "source": [
+      { "text": "this is another template we need for the library the per industry research with all of the projects and what we're offering and stuff obviously the template for that needs some work let's look at the law firm pilot yeah it's all right but they still need some work in in terms of UI and like what actual other information is there that's missing", "who": "Shaan → FOUNDRY-ZERO", "at": "6 Sep 14:26" },
+      { "text": "when i say source it's source like ketchup sauce not source like source document like sources and saucy as fuck type shit", "who": "Shaan → Fable FA0", "at": "5 Sep 19:15" }
+    ],
+    "why": "Good software already contains years of hard-won domain knowledge. Foundry makes that work discoverable and tests how it could serve a real business need, so each project does not have to start its research again. The Library preserves the resulting identities and receipts; Knowledge owns durable retrieval, and the product owner still decides what to adopt. <span class=\"faint\">(reading.why, authored by LIBRARY-ZERO)</span>",
+    "readers": "Human: what is it, is it worth opening, what is the sauce. Agent: entry file, commands, owner, what to verify.",
+    "questions": ["What is it and why does it matter?", "Where is the code, is it public, under what rights?", "What can I use from it today?", "How do I verify it works?", "Who owns it and when did they last write?"],
+    "claim_ceiling": "Facts from the registry record and the repo; 'why it matters' is authored and labelled; maturity from the record, not from prose. Values in the industry records are unmeasured by design.",
+    "data": "registry/works/siso-foundry.json · registry/releases/siso-foundry-*.json · provenance.locators · relationships · OWNERS.md lines for FOUNDRY-ZERO.",
+    "privacy": "Public. Dataset and upstream-source rights are asset-specific and outside the MIT source claim.",
+    "empty_state": "Missing sauce → 'no assets registered' with the gls command; never filler.",
+    "agent_entry": "intelligence/agency/RESEARCH-INDEX.md @ 11f4595"
+  },
+  "map": {
+    "centre": { "label": "SISO Foundry", "href": "https://great-library-of-siso.pages.dev/works/siso-foundry/" },
+    "types": [
+      { "type": "repo", "label": "Repo", "tone": "projects", "items": [{ "label": "sisodias/siso-foundry", "href": "https://github.com/sisodias/siso-foundry", "rel": "source · public · MIT" }] },
+      { "type": "release", "label": "Releases", "tone": "projects", "items": [{ "label": "0.4.0+233edef · value matrix", "href": "https://github.com/sisodias/siso-foundry/releases/tag/v0.4.0", "rel": "2 Aug" }, { "label": "main@11f4595 · value model", "href": "https://github.com/sisodias/siso-foundry/commit/11f459597ce0c67dbfa89deeeafa3202e47dc6d5", "rel": "6 Sep" }] },
+      { "type": "work", "label": "Related Works", "tone": "research", "items": [{ "label": "Great Library of SISO", "href": "https://great-library-of-siso.pages.dev/works/great-library-of-siso/", "rel": "related_to" }, { "label": "SISO Knowledge", "href": "https://great-library-of-siso.pages.dev/works/", "rel": "related_to" }, { "label": "SISO Repo Bank", "href": "https://great-library-of-siso.pages.dev/works/siso-repo-bank/", "rel": "export of" }] },
+      { "type": "industry", "label": "Industries", "tone": "clients", "items": [{ "label": "17 industry records", "href": "https://great-library-of-siso.pages.dev/industries/", "rel": "renders" }, { "label": "law_firms pilot", "href": "https://great-library-of-siso.pages.dev/industries/law_firms/", "rel": "N1" }, { "label": "valuation · 10 examples", "href": "https://great-library-of-siso.pages.dev/valuation/", "rel": "N2" }] },
+      { "type": "question", "label": "Questions", "tone": "research", "items": [{ "label": "GQ-013 building set", "href": "/t/U5/", "rel": "G13" }, { "label": "GQ-014 durable bets", "href": "/t/U5/", "rel": "G14" }, { "label": "GQ-022 Elon corpus", "href": "/t/U5/", "rel": "G22 bundle" }] },
+      { "type": "people", "label": "Seats", "tone": "agents", "items": [{ "label": "FOUNDRY-ZERO", "href": "/t/U17/", "rel": "closed 6 Sep 14:27" }, { "label": "SISO Open Source Foundation", "rel": "steward" }] },
+      { "type": "project", "label": "Project", "tone": "projects", "items": [{ "label": "Foundry · industries, valuation, landscape watch", "href": "/t/U4/", "rel": "U4 row" }] }
+    ]
+  },
+  "repos": [
+    { "repo": "sisodias/siso-foundry", "url": "https://github.com/sisodias/siso-foundry", "branch": "main", "head": "11f4595", "head_at": "2026-09-06 13:08 UTC+07 · feat: publish reviewed value model and canonical research entry", "private": false, "access": "verified · source_review 2026-09-06", "rights": "MIT (software); datasets and upstream sources asset-specific", "what": "<code>core/ datasets/ docs/ intelligence/ packages/ pipelines/ scripts/</code>; <code>intelligence/agency/industries/</code> holds the 17 records (accounting_firms … saas). Local clone sits on a stale branch; the work is on remote main." }
+  ],
+  "sauce": [
+    { "kind": "dataset", "title": "17 industry research records", "href": "https://great-library-of-siso.pages.dev/industries/", "what": "Processes, existing software, candidate code, source evidence and falsifiable pilots. Values are unmeasured; read or fetch the same pinned research from any project.", "proof": "d5ec687 · 17 raw reads HTTP 200 with SHA-256 match · 5 Sep 20:09", "tone": "clients" },
+    { "kind": "model", "title": "What reusable code is worth", "href": "https://great-library-of-siso.pages.dev/valuation/", "what": "The observed-value formula and ten existing-repository examples. Missing inputs remain unknown; evidence completeness is not a dollar value.", "proof": "11f4595 · six synthetic arithmetic/unknown-input tests pass · 5 Sep 18:31", "tone": "research" },
+    { "kind": "receipt", "title": "9,636-repository evidence universe", "href": "https://github.com/sisodias/siso-foundry/releases/tag/v0.4.0", "what": "The v0.4.0 receipt anchors twenty scored applications and twelve evidence-qualified God Sources. Dated findings, not a live inventory or reuse permission.", "proof": "release 0.4.0+233edef · 2 Aug 2026", "tone": "research" },
+    { "kind": "matrix", "title": "Choose the adoption route", "href": "https://github.com/sisodias/siso-foundry/blob/233edef7408afb95571ecd25f64189dfd92a6860/intelligence/agency/VALUE-MATRIX.md", "what": "Whole applications, APIs, sidecars, extraction, reference, building; each route carries proof gates, not a popularity score.", "proof": "pinned to 233edef", "tone": "projects" },
+    { "kind": "procedure", "title": "Resumable discovery campaigns", "href": "https://github.com/sisodias/siso-foundry/blob/233edef7408afb95571ecd25f64189dfd92a6860/README.md", "what": "Versioned query contracts, checkpoints and source lineage make discovery repeatable. Candidate rights still require direct review before promotion.", "proof": "README @ 233edef", "tone": "agents" }
+  ],
+  "contents": {
+    "items": [
+      { "label": "N1 · law-firm pilot record", "what": "six process hypotheses, current vendor capabilities, five source-pinned modules, explicit unknown value", "href": "https://great-library-of-siso.pages.dev/industries/law_firms/", "state": "landed", "tone": "now" },
+      { "label": "N2 · observed-value formula + 10 repo examples", "what": "all customer cash values remain unmeasured", "href": "https://great-library-of-siso.pages.dev/valuation/", "state": "landed", "tone": "now" },
+      { "label": "F1 · industry ranking (law first)", "what": "Open /industries/ and see 17 rows each with a rank or 'unmeasured'", "state": "left", "tone": "warn" },
+      { "label": "W2 · landscape-watch feed v1", "what": "feed contract 1.1.0 + probe exist; no feed produced; 7 INTERNAL reader violations reproduced", "state": "left", "tone": "warn" },
+      { "label": "G13 · component distillation · G14 · horses list · T3", "what": "untouched", "state": "not started", "tone": "blocked" },
+      { "label": "per-industry Library template (U8)", "what": "his 14:26; TEMPLATE-FOLLOWUP.md written, template not started", "href": "/t/U8/", "state": "spec", "tone": "warn" }
+    ],
+    "steps": [{ "label": "Discover", "what": "resumable GitHub campaigns with query contracts" }, { "label": "Evaluate", "what": "value matrix by use case × route, proof gates" }, { "label": "Preserve", "what": "pinned records, receipts, Library Releases" }, { "label": "Render", "what": "Library industries + valuation readers (a9ffd16)" }]
+  },
+  "quickstart": {
+    "entry": { "path": "intelligence/agency/RESEARCH-INDEX.md", "href": "https://github.com/sisodias/siso-foundry/blob/11f459597ce0c67dbfa89deeeafa3202e47dc6d5/intelligence/agency/RESEARCH-INDEX.md" },
+    "owner": { "name": "SISO Open Source Foundation · FOUNDRY-ZERO (closed)", "last": "6 Sep 07:27 UTC" },
+    "context_url": "https://great-library-of-siso.pages.dev/works/siso-foundry/index.json",
+    "verification": "Open <a href=\"https://great-library-of-siso.pages.dev/works/siso-foundry/\">/works/siso-foundry/</a> and see the same eight sections in the same order; the repo card's visibility matches <code>gh api repos/sisodias/siso-foundry</code> (public, MIT).",
+    "commands": ["git clone https://github.com/sisodias/siso-foundry && cd siso-foundry && git checkout main", "npm test", "python3 pipelines/github/run_campaign.py --dry-run"]
+  },
+  "evidence": {
+    "facts": [
+      { "claim": "17 published industry records and two reviewed value-model/input records retain source references, rights boundaries and unmeasured values.", "receipt": "source_review · github.com/sisodias/siso-foundry/commit/11f45959", "href": "https://github.com/sisodias/siso-foundry/commit/11f459597ce0c67dbfa89deeeafa3202e47dc6d5", "at": "2026-09-06" },
+      { "claim": "Foundry 0.4.0 publishes the repository-by-use-case-by-route value matrix over the 9,636-repository evidence universe.", "receipt": "release_receipt · v0.4.0", "href": "https://github.com/sisodias/siso-foundry/releases/tag/v0.4.0", "at": "2026-08-02" },
+      { "claim": "Foundry 0.3.0 adds the durable Agency intelligence mission, exact logical-source and query receipts, candidate and ownership boundaries.", "receipt": "release_receipt · v0.3.0", "href": "https://github.com/sisodias/siso-foundry/releases/tag/v0.3.0", "at": "2026-08-02" },
+      { "claim": "Foundry has an independent research outcome and belongs in the Research section rather than inside Agents.", "receipt": "source-review:siso-agent-base-decomposition:foundry", "at": "2026-07-30" },
+      { "claim": "Hub, 17 industry pages and ten value examples live; 45 stable routes match deployed bytes; cross-origin JSON reads pass.", "receipt": "OWNERS.md FOUNDRY-ZERO 2026-09-06T06:35Z", "at": "2026-09-06" }
+    ],
+    "proposals": [{ "claim": "Full-source <code>npm test</code> passes cleanly.", "why": "record notes a pre-existing external atlas limitation" }],
+    "limits": ["Values in the industry records are unmeasured by design; 'unmeasured' stays unmeasured.", "The local clone is on a stale branch (wip-awesome-and-embeddings); read remote main."],
+    "version": { "label": "MIT · verified · PROVENANCE.md @ f6afca0", "href": "https://github.com/sisodias/siso-foundry/blob/f6afca0db5bf333fd5535aaed6242c42d16c12b3/PROVENANCE.md", "at": "observed 2026-07-30" }
+  },
+  "releases": [
+    { "version": "0.4.0+233edef", "title": "SISO Foundry Agency OS value matrix", "revision": "233edef7", "href": "https://github.com/sisodias/siso-foundry/commit/233edef7408afb95571ecd25f64189dfd92a6860", "at": "2026-08-02 23:33 UTC+07", "license": "MIT" },
+    { "version": "siso-foundry-1ec5890 · -8c6eb30 · -b28b0f7 · -d29480a · -f6afca0 · -fd7d270", "title": "six earlier pinned releases", "revision": "registry/releases/", "href": "https://great-library-of-siso.pages.dev/releases/", "at": "Jul–Aug 2026", "license": "MIT" }
+  ],
+  "activity": {
+    "observed_at": "6 Sep 19:34 UTC+07", "coverage": "ledger/OWNERS.md · FOUNDRY-ZERO lines",
+    "days": [{ "w": 0.7, "title": "5 Sep · 3 lines" }, { "w": 1, "title": "6 Sep · 3 lines" }],
+    "items": [
+      { "at": "2026-09-06 07:27Z", "who": "FOUNDRY-ZERO", "what": "Durable follow-up note: UI, missing information, relevant projects/modules, SISO offers and reasoning (TEMPLATE-FOLLOWUP.md)", "tone": "agents" },
+      { "at": "2026-09-06 06:35Z", "who": "FOUNDRY-ZERO", "what": "Foundry hub, 17 industry pages and ten value examples live; 45 routes match deployed bytes; V40", "tone": "agents" },
+      { "at": "2026-09-05 20:09Z", "who": "FOUNDRY-ZERO", "what": "Public main d5ec687; 17 unauthenticated raw reads HTTP 200 with reviewed SHA-256 matches", "tone": "agents" },
+      { "at": "2026-09-05 18:31", "who": "FOUNDRY-ZERO", "what": "N2 ten repos pinned; observed-value formula; six tests pass; all cash values unmeasured", "tone": "agents" },
+      { "at": "2026-09-05 18:15", "who": "FOUNDRY-ZERO", "what": "N1 law-firm pilot JSON and local HTML pass structural validation", "tone": "agents" }
+    ]
+  },
+  "related": [
+    { "title": "The Great Library of SISO", "href": "https://great-library-of-siso.pages.dev/works/great-library-of-siso/", "type": "related_to", "tone": "projects", "why": "registers identities, evidence and released reuse knowledge without copying Foundry's data plane" },
+    { "title": "SISO Knowledge", "href": "https://great-library-of-siso.pages.dev/works/", "type": "related_to", "tone": "research", "why": "governs durable corpus and retrieval semantics" },
+    { "title": "SISO Repo Bank", "href": "https://great-library-of-siso.pages.dev/works/siso-repo-bank/", "type": "related_to", "tone": "projects", "why": "the read-only reuse-bank export from Foundry's identity database" },
+    { "title": "U8 · Industry detail", "href": "/t/U8/", "type": "template", "tone": "clients", "why": "the per-industry page Foundry writes JSON for" }
+  ]
+}

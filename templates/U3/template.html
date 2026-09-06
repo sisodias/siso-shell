@@ -1,0 +1,53 @@
+{{!-- U3 · Library Work page (docs/module-page-template.md, eight sections in order):
+     kicker · title + why it matters · repo + satellites · sauce · contents/capabilities · agent quick-start · evidence/limits/version · related. --}}
+{{> heading heading}}
+
+<section class="siso-section" id="why">
+  {{> section sections.why}}
+  {{> reasoning reasoning}}
+</section>
+
+<section class="siso-section" id="map">
+  {{> section sections.map}}
+  {{> map map}}
+</section>
+
+<section class="siso-section" id="repos">
+  {{> section sections.repos}}
+  {{> repos repos}}
+</section>
+
+<section class="siso-section" id="sauce">
+  {{> section sections.sauce}}
+  {{> sauce sauce}}
+</section>
+
+<section class="siso-section" id="contents">
+  {{> section sections.contents}}
+  {{> contents contents}}
+</section>
+
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>
+
+<section class="siso-section" id="evidence">
+  {{> section sections.evidence}}
+  {{> evidence evidence}}
+</section>
+
+<section class="siso-section" id="releases">
+  {{> section sections.releases}}
+  {{#if releases}}<div class="tbl-wrap"><table class="tbl"><thead><tr><th>release</th><th>title</th><th>revision</th><th>released</th><th>rights</th></tr></thead><tbody>{{#each releases}}<tr><td><code>{{version}}</code></td><td>{{title}}</td><td class="mono small">{{#if href}}<a href="{{href}}">{{revision}}</a>{{else}}{{revision}}{{/if}}</td><td class="mono small muted">{{at}}</td><td><span class="chip tone-now">{{license}}</span></td></tr>{{/each}}</tbody></table></div>{{else}}<div class="empty">No Release pinned for this Work.</div>{{/if}}
+</section>
+
+<section class="siso-section" id="activity">
+  {{> section sections.activity}}
+  {{> activity activity}}
+</section>
+
+<section class="siso-section" id="related">
+  {{> section sections.related}}
+  {{> related related}}
+</section>

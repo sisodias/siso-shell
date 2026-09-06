@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "U1 · Library landing (root front door)",
+  "description": "The root page. Counts come from catalog.json at build; the loop shows the thesis and marks measured results only where a receipt exists. Shared $defs in templates/U0/schema.json.",
+  "type": "object",
+  "required": ["meta", "heading", "sections", "words", "loop", "metrics", "breakdowns", "featured", "moved", "sectionsList", "quickstart"],
+  "properties": {
+    "meta": { "$ref": "U0/schema.json#/$defs/meta" },
+    "heading": { "$ref": "U0/schema.json#/$defs/heading", "description": "brand gradient hero: title = Great Library of SISO; subtitle = the bet in one line (INTENT.md)" },
+    "sections": { "type": "object", "description": "keys: purpose loop counts featured moved sections agent" },
+    "words": { "type": "array", "description": "his words, dated", "items": { "type": "object", "required": ["text", "who", "at"] } },
+    "loop": { "type": "array", "description": "the ecosystem loop; every node a real link; measured only with a receipt", "items": { "type": "object", "required": ["label", "what", "href", "tone"] } },
+    "metrics": { "type": "array", "description": "section counts equal to catalog.json", "items": { "type": "object", "required": ["value", "label", "href"] } },
+    "breakdowns": { "type": "array", "items": { "type": "object", "required": ["label", "chips"] } },
+    "featured": { "type": "object", "description": "latest Works, latest GQ, latest project one pagers as a filterable catalogue", "required": ["id", "items"] },
+    "moved": { "type": "object", "description": "what moved this week: latest owners.log lines" },
+    "sectionsList": { "$ref": "U0/schema.json#/$defs/related", "description": "the nine section routes" },
+    "quickstart": { "$ref": "U0/schema.json#/$defs/quickstart" }
+  }
+}

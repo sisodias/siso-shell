@@ -1,0 +1,38 @@
+{{!-- U1 · Library landing — the root front door. Sections: purpose in his words · the loop · counts from catalog.json · featured · search. --}}
+{{> heading heading}}
+
+<section class="siso-section" id="purpose">
+  {{> section sections.purpose}}
+  {{> words words}}
+</section>
+
+<section class="siso-section" id="loop">
+  {{> section sections.loop}}
+  {{> loop loop}}
+</section>
+
+<section class="siso-section" id="counts">
+  {{> section sections.counts}}
+  {{> metrics metrics}}
+  <div class="grid grid-3" style="margin-top:var(--crm-space-3)">{{#each breakdowns}}<div class="card"><span class="kicker dim">{{label}}</span><div class="chips" style="margin-top:8px">{{> chips chips}}</div></div>{{/each}}</div>
+</section>
+
+<section class="siso-section" id="featured">
+  {{> section sections.featured}}
+  {{> catalogue featured}}
+</section>
+
+<section class="siso-section" id="moved">
+  {{> section sections.moved}}
+  {{> activity moved}}
+</section>
+
+<section class="siso-section" id="sections">
+  {{> section sections.sections}}
+  {{> related sectionsList}}
+</section>
+
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

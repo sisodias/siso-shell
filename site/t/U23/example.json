@@ -33,7 +33,7 @@
     "subtitle": "Every page family the Great Library and every SISO front door needs. Click one: why it exists, the twelve things it carries, what to rob, the data it renders, and the rendered example in the CRM shell.",
     "badges": [
       {
-        "label": "6 of 24 built",
+        "label": "9 of 24 built",
         "tone": "warn",
         "dot": true
       },
@@ -52,7 +52,7 @@
     ],
     "status": {
       "kicker": "Build order",
-      "value": "6 landed · 18 to go",
+      "value": "9 landed · 15 to go",
       "note": "Shell first because every page sits in it. Parts second so nothing drifts. Gallery third so he judges each template as it lands. Then the project one pager, the God Question with its compute run, the Work page, Agent Zero, the landing, and the records.",
       "facts": [
         {
@@ -136,7 +136,7 @@
       "href": "#order"
     },
     {
-      "value": 6,
+      "value": 9,
       "label": "built and published",
       "tone": "warn",
       "href": "/?status=built#order"
@@ -354,12 +354,12 @@
         "title": "Work",
         "summary": "Library module (standard Work) page <span class=\"faint\">· 47 Works: 18 research_question · 8 knowledge_system · 4 bundle · 3 project · 3 tool · 2 section · 2 agent_system · 2 capability_pack · 2 playbook · 2 application · 1 library</span>",
         "href": "/t/U3/",
-        "status": "spec",
+        "status": "built",
         "tone": "projects",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",
@@ -378,12 +378,12 @@
         "title": "Agent Zero",
         "summary": "Agent Zero page (his concepts + the fleet, on the Library) <span class=\"faint\">· 1 (+ the 24 atlas pages it fronts)</span>",
         "href": "/t/U9/",
-        "status": "spec",
+        "status": "built",
         "tone": "agents",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",
@@ -402,12 +402,12 @@
         "title": "Library landing",
         "summary": "Library landing (root front door) <span class=\"faint\">· 1</span>",
         "href": "/t/U1/",
-        "status": "spec",
+        "status": "built",
         "tone": "projects",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",

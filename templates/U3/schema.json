@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "U3 · Library Work page",
+  "description": "One Work from registry/works/<slug>.json (+ its releases, source_links, relationships, evidence) rendered as the eight-section module page (docs/module-page-template.md). type decides the family: research_question → U5, project → U4, private → U11. Shared $defs in templates/U0/schema.json.",
+  "type": "object",
+  "required": ["meta", "heading", "sections", "reasoning", "map", "repos", "sauce", "contents", "quickstart", "evidence", "releases", "activity", "related"],
+  "properties": {
+    "meta": { "$ref": "U0/schema.json#/$defs/meta" },
+    "heading": { "$ref": "U0/schema.json#/$defs/heading", "description": "kicker = section · type · maturity; title = Work name; subtitle = reading.subtitle; badges = repo visibility, licence, releases count; status = maturity + updated_at + gls id" },
+    "sections": { "type": "object", "description": "keys: why map repos sauce contents agent evidence releases activity related" },
+    "reasoning": { "$ref": "U0/schema.json#/$defs/reasoning", "description": "why = reading.why (authored, labelled); source = his words if any" },
+    "map": { "type": "object", "description": "typed relationship map: repo, releases, related Works (relationships[]), people, questions, projects" },
+    "repos": { "$ref": "U0/schema.json#/$defs/repos", "description": "provenance.locators[] with visibility, revision, verified, rights (license.spdx)" },
+    "sauce": { "type": "array", "minItems": 0, "maxItems": 7, "description": "reading.highlights[]: 3–7 real assets with a dated proof", "items": { "type": "object", "required": ["kind", "title", "href", "what"] } },
+    "contents": { "type": "object", "description": "capabilities with state, plus the procedure", "properties": { "items": { "type": "array" }, "steps": { "type": "array" } } },
+    "quickstart": { "$ref": "U0/schema.json#/$defs/quickstart", "description": "reading.agent_entry, agent_commands, owner, verification line" },
+    "evidence": { "$ref": "U0/schema.json#/$defs/evidence", "description": "evidence[] as facts; provenance.license as version; limits stated" },
+    "releases": { "type": "array", "items": { "type": "object", "required": ["version", "title", "revision", "at"], "properties": { "version": { "type": "string" }, "title": { "type": "string" }, "revision": { "type": "string" }, "href": { "type": "string" }, "at": { "type": "string" }, "license": { "type": "string" } } } },
+    "activity": { "type": "object", "description": "owners.log / OWNERS.md lines for this Work's owner, dated" },
+    "related": { "$ref": "U0/schema.json#/$defs/related", "description": "relationships[] → related Works, typed" }
+  }
+}

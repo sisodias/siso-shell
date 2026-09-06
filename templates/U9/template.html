@@ -1,0 +1,64 @@
+{{!-- U9 · Agent Zero — his concepts + the fleet. Sections: the bet + two axes · his concepts (source/ by date) · projects → U4 ·
+     register by host with verification lines · decisions · fleet now · gaps. --}}
+{{> heading heading}}
+
+<section class="siso-section" id="bet">
+  {{> section sections.bet}}
+  {{> reasoning reasoning}}
+  <div style="margin-top:var(--crm-space-4)">{{> loop loop}}</div>
+</section>
+
+<section class="siso-section" id="counts">
+  {{> section sections.counts}}
+  {{> metrics metrics}}
+</section>
+
+<section class="siso-section" id="concepts">
+  {{> section sections.concepts}}
+  {{> words words}}
+  {{#if sources}}<div class="tbl-wrap" style="margin-top:var(--crm-space-4)"><table class="tbl"><thead><tr><th>captured</th><th>file</th><th>what it caused</th></tr></thead><tbody>{{#each sources}}<tr><td class="mono small muted">{{at}}</td><td class="mono small">{{file}}</td><td class="small">{{{caused}}}</td></tr>{{/each}}</tbody></table></div>{{/if}}
+</section>
+
+<section class="siso-section" id="projects">
+  {{> section sections.projects}}
+  {{> catalogue projects}}
+</section>
+
+<section class="siso-section" id="register">
+  {{> section sections.register}}
+  <div class="grid grid-2" style="margin-bottom:var(--crm-space-4)">
+    <div class="card"><span class="kicker dim">By state</span><div class="chips" style="margin-top:8px">{{> chips register.states}}</div></div>
+    <div class="card"><span class="kicker dim">By host</span><div class="chips" style="margin-top:8px">{{> chips register.hosts}}</div></div>
+  </div>
+  {{> contents register.sample}}
+</section>
+
+<section class="siso-section" id="decisions">
+  {{> section sections.decisions}}
+  <div class="grid grid-2">{{#each decisions}}<div class="card card--strip tone-agents"><span class="kicker" style="color:var(--accent-reflect)">{{id}} <span class="dim">· {{src}}</span></span><b style="display:block;margin-top:4px;color:var(--crm-color-text-strong)">{{q}}</b><p class="small" style="margin-top:4px">{{{call}}}</p><p class="small faint mono" style="margin-top:6px">{{why}}</p></div>{{/each}}</div>
+</section>
+
+<section class="siso-section" id="fleet">
+  {{> section sections.fleet}}
+  {{> activity fleet}}
+</section>
+
+<section class="siso-section" id="map">
+  {{> section sections.map}}
+  {{> map map}}
+</section>
+
+<section class="siso-section" id="timeline">
+  {{> section sections.timeline}}
+  {{> timeline timeline}}
+</section>
+
+<section class="siso-section" id="gaps">
+  {{> section sections.gaps}}
+  {{> evidence gaps}}
+</section>
+
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

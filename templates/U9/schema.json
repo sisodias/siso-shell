@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "U9 · Agent Zero page",
+  "description": "His concepts + the fleet. Source: INTENT.md, BASELINE.md, plan/{modules,projects,decisions}.json, GOD-QUESTIONS.md, source/ (verbatim files), ledger/OWNERS.md, atlas/now.json. Every number from a JSON in the repo; his words only from source/. Shared $defs in templates/U0/schema.json.",
+  "type": "object",
+  "required": ["meta", "heading", "sections", "reasoning", "loop", "metrics", "words", "sources", "projects", "register", "decisions", "fleet", "map", "timeline", "gaps", "quickstart"],
+  "properties": {
+    "meta": { "$ref": "U0/schema.json#/$defs/meta" },
+    "heading": { "$ref": "U0/schema.json#/$defs/heading" },
+    "sections": { "type": "object", "description": "keys: bet counts concepts projects register decisions fleet map timeline gaps agent" },
+    "reasoning": { "$ref": "U0/schema.json#/$defs/reasoning", "description": "the bet (INTENT.md) and the two axes" },
+    "loop": { "type": "array", "description": "the ecosystem loop, every node a real link", "items": { "type": "object", "required": ["label", "what", "href", "tone"] } },
+    "metrics": { "type": "array", "items": { "type": "object", "required": ["value", "label"] } },
+    "words": { "type": "array", "description": "his concepts, verbatim, dated", "items": { "type": "object", "required": ["text", "who", "at"] } },
+    "sources": { "type": "array", "description": "source/ index by date with what each caused", "items": { "type": "object", "required": ["at", "file", "caused"] } },
+    "projects": { "type": "object", "description": "catalogue of plan/projects.json rows → U4 pages", "required": ["id", "items"] },
+    "register": { "type": "object", "required": ["states", "hosts", "sample"], "properties": { "states": { "type": "array" }, "hosts": { "type": "array" }, "sample": { "type": "object", "description": "contents: module rows with verification lines" } } },
+    "decisions": { "type": "array", "items": { "type": "object", "required": ["id", "q", "call", "why", "src"] } },
+    "fleet": { "type": "object", "description": "activity: seats now from atlas/now.json + OWNERS.md" },
+    "map": { "type": "object", "description": "projects · questions · plays · nodes" },
+    "timeline": { "type": "object" },
+    "gaps": { "$ref": "U0/schema.json#/$defs/evidence", "description": "open gaps as proposals; closed as facts" },
+    "quickstart": { "$ref": "U0/schema.json#/$defs/quickstart" }
+  }
+}

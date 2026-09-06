@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "Great Library of SISO · landing",
+    "description": "The root front door: purpose in his words, the ecosystem loop, counts from catalog.json, featured Works, what moved, the nine sections.",
+    "stream": "projects",
+    "crumb": [{ "label": "Templates", "href": "/" }, { "label": "U1 · Library landing", "href": "/t/U1/" }, { "label": "example" }],
+    "actions": [{ "label": "Live root", "href": "https://great-library-of-siso.pages.dev/", "icon": "arrow-up-right", "external": true }, { "label": "catalog.json", "href": "https://great-library-of-siso.pages.dev/catalog.json", "icon": "file-json", "external": true }],
+    "source": "https://great-library-of-siso.pages.dev/catalog.json generated 2026-09-06T06:50Z · GOD-QUESTIONS.md · INTENT.md · OWNERS.md"
+  },
+  "heading": {
+    "kicker": "the great library of siso <span class=\"sep\">·</span> open knowledge <span class=\"sep\">·</span> <span class=\"dim\">catalog.json 2026-09-06 06:50Z</span>",
+    "title": "Great Library of SISO",
+    "subtitle": "The public registry and reading surface for SISO research, software and agent systems. The bet in one line: give every small and medium business the operating system only the biggest companies can afford today, by turning open-source code and the best available intelligence into working systems. <span class=\"faint\">(INTENT.md)</span>",
+    "badges": [
+      { "label": "47 Works", "tone": "projects", "href": "https://great-library-of-siso.pages.dev/works/" },
+      { "label": "86 Releases", "tone": "projects", "href": "https://great-library-of-siso.pages.dev/releases/" },
+      { "label": "40 Snapshots", "tone": "muted", "href": "https://great-library-of-siso.pages.dev/snapshots/" },
+      { "label": "27 repos · 23 public · 4 private", "tone": "clients", "href": "https://great-library-of-siso.pages.dev/estate/" },
+      { "label": "22 God Questions", "tone": "research", "href": "https://great-library-of-siso.pages.dev/god-questions/" },
+      { "label": "17 industries", "tone": "clients", "href": "https://great-library-of-siso.pages.dev/industries/" }
+    ],
+    "status": { "kicker": "Moved this week", "value": "13 commits · 5 Sep 17:00 → 6 Sep 13:42", "note": "Root and Foundry pilot on Cloudflare Pages (ADR-0006), publish + register plays, V39 spine, GQ-012–019 pages, Foundry readers, Action Model Work. The shell and templates now come from siso-shell.", "facts": [{ "k": "head", "v": "<code>477b775</code> · 6 Sep 13:42" }, { "k": "owner", "v": "LIBRARY-ZERO · idle 12:52" }, { "k": "search", "v": "<kbd>⌘K</kbd> in the rail" }] }
+  },
+  "sections": {
+    "purpose": { "n": "01", "title": "Purpose, in his words", "sub": "verbatim, dated" },
+    "loop": { "n": "02", "title": "The loop", "sub": "clients fund compute → owners build → packs enter the Library → people + repos feed Foundry → questions turn evidence into breakthroughs → better client outcomes. Every node is a link; 'measured' only where a receipt exists." },
+    "counts": { "n": "03", "title": "Counts", "sub": "equal to catalog.json at build" },
+    "featured": { "n": "04", "title": "Featured", "sub": "latest Works · latest God Questions · latest project one pagers" },
+    "moved": { "n": "05", "title": "What moved", "sub": "latest owner writebacks" },
+    "sections": { "n": "06", "title": "The sections" },
+    "agent": { "n": "07", "title": "Agent entry" }
+  },
+  "words": [
+    { "text": "we need a bit more of a nicer information front-end system like i'm ai it's all written in code but i need a way to actually see that shit so i i guess that's what the great library is", "who": "Shaan → AGENT-ZERO", "at": "6 Sep 16:36" },
+    { "text": "look at what we currently have and figure out why it's stupid", "who": "Shaan → AGENT-ZERO", "at": "6 Sep 16:36" },
+    { "text": "each module should have a standardized page which is a bit better so like you can have the library with everything but each one should have its own page which is a bit nicer like when i click on one like we should just put some reasoning on it", "who": "Shaan → Fable FA0", "at": "5 Sep 19:15" }
+  ],
+  "loop": [
+    { "label": "Clients fund compute", "what": "ofm · bykonz · actionmodel", "href": "/t/U15/", "tone": "clients" },
+    { "label": "Owners build industry systems", "what": "one seat per project; 11 projects", "href": "/t/U4/example/", "tone": "projects" },
+    { "label": "Packs enter the Library", "what": "47 Works · 86 Releases · 40 Snapshots · 2 Assemblies", "href": "https://great-library-of-siso.pages.dev/works/", "tone": "projects" },
+    { "label": "People + repos feed Foundry", "what": "27 repos · 17 industries · 8 inventories", "href": "https://great-library-of-siso.pages.dev/industries/", "tone": "clients" },
+    { "label": "Questions turn evidence into breakthroughs", "what": "22 God Questions · compute runs with receipts", "href": "https://great-library-of-siso.pages.dev/god-questions/", "tone": "research", "measured": "J2 · ratio 1.00× · n=1" },
+    { "label": "Better client outcomes", "what": "framework replicated industry by industry", "href": "https://great-library-of-siso.pages.dev/industries/law_firms/", "tone": "now" }
+  ],
+  "metrics": [
+    { "value": 47, "label": "Works", "tone": "projects", "href": "https://great-library-of-siso.pages.dev/works/" },
+    { "value": 86, "label": "Releases", "tone": "projects", "href": "https://great-library-of-siso.pages.dev/releases/" },
+    { "value": 40, "label": "Snapshots", "tone": "muted", "href": "https://great-library-of-siso.pages.dev/snapshots/" },
+    { "value": 2, "label": "Assemblies", "tone": "muted", "href": "https://great-library-of-siso.pages.dev/promotion/" },
+    { "value": 8, "label": "Source inventories", "tone": "muted", "href": "https://great-library-of-siso.pages.dev/promotion/" },
+    { "value": 27, "label": "repos · 23 public · 4 private", "tone": "clients", "href": "https://great-library-of-siso.pages.dev/estate/" },
+    { "value": 22, "label": "God Questions (9 real pages)", "tone": "research", "href": "https://great-library-of-siso.pages.dev/god-questions/" },
+    { "value": 17, "label": "industries", "tone": "clients", "href": "https://great-library-of-siso.pages.dev/industries/" },
+    { "value": 47, "label": "Events · 6 decisions · 3 initiatives", "tone": "agents", "href": "https://great-library-of-siso.pages.dev/intelligence/" }
+  ],
+  "breakdowns": [
+    { "label": "Works by type", "chips": [{ "label": "research_question · 18", "tone": "research" }, { "label": "knowledge_system · 8", "tone": "research" }, { "label": "bundle · 4", "tone": "muted" }, { "label": "project · 3", "tone": "projects" }, { "label": "tool · 3", "tone": "projects" }, { "label": "section · 2", "tone": "muted" }, { "label": "agent_system · 2", "tone": "agents" }, { "label": "capability_pack · 2", "tone": "agents" }, { "label": "playbook · 2", "tone": "agents" }, { "label": "application · 2", "tone": "projects" }, { "label": "library · 1", "tone": "projects" }] },
+    { "label": "Works by maturity", "chips": [{ "label": "active · 28", "tone": "now", "dot": true }, { "label": "experimental · 17", "tone": "warn" }, { "label": "planned · 1", "tone": "muted" }, { "label": "retired · 1", "tone": "blocked" }] },
+    { "label": "Works by section", "chips": [{ "label": "Research · 17", "tone": "research" }, { "label": "Agents · 13", "tone": "agents" }, { "label": "Library · 1", "tone": "projects" }, { "label": "Unassigned · 16", "tone": "blocked", "title": "16 Works sit Unassigned (U2 gap)" }] }
+  ],
+  "featured": {
+    "id": "featured",
+    "filters": [{ "key": "kind", "label": "kind", "values": ["work", "question", "project"] }],
+    "items": [
+      { "id": "actionmodel-assembly-framework", "kicker": "work <span class=\"sep\">·</span> latest", "title": "Action Model · assembly framework", "summary": "Registered 6 Sep 13:35 (gls:work:9ab07516); the Blueprint's public counterpart.", "href": "https://great-library-of-siso.pages.dev/works/actionmodel-assembly-framework/", "status": "active", "tone": "projects", "tags": [{ "key": "kind", "value": "work" }], "search": "action model assembly framework" },
+      { "id": "siso-foundry", "kicker": "work <span class=\"sep\">·</span> templated", "title": "SISO Foundry", "summary": "The one Work on the eight-section template; 17 industries, value model.", "href": "/t/U3/example/", "status": "active", "tone": "research", "tags": [{ "key": "kind", "value": "work" }], "search": "foundry" },
+      { "id": "siso-shell", "kicker": "work <span class=\"sep\">·</span> tool", "title": "SISO Shell · the template bank", "summary": "The CRM rail and the 24 templates every page composes.", "href": "https://siso-shell.pages.dev/", "status": "experimental", "tone": "projects", "tags": [{ "key": "kind", "value": "work" }], "search": "shell templates" },
+      { "id": "gq-012", "kicker": "question <span class=\"sep\">·</span> published", "title": "GQ-012 · How do agents retain the right context?", "summary": "Truthful entry points, targeted retrieval, head size and compaction.", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-012/", "status": "active", "tone": "research", "tags": [{ "key": "kind", "value": "question" }], "search": "gq-012 context" },
+      { "id": "gq-011", "kicker": "question <span class=\"sep\">·</span> compute", "title": "GQ-011 · Astra, Luna and delegation", "summary": "J2: ratio 1.00×, effort null; untested, not refuted.", "href": "/t/U5/example/", "status": "measured with limits", "tone": "research", "tags": [{ "key": "kind", "value": "question" }], "search": "gq-011 delegation" },
+      { "id": "library", "kicker": "project <span class=\"sep\">·</span> agency", "title": "Great Library of SISO", "summary": "2 repos · 6 URLs · 7 modules; the hub one pager.", "href": "/t/U4/example/", "status": "live", "tone": "projects", "tags": [{ "key": "kind", "value": "project" }], "search": "library project" },
+      { "id": "agent-zero", "kicker": "project <span class=\"sep\">·</span> agency", "title": "Agent Zero", "summary": "The bet, the register, the fleet.", "href": "/t/U9/example/", "status": "live", "tone": "agents", "tags": [{ "key": "kind", "value": "project" }], "search": "agent zero" }
+    ]
+  },
+  "moved": {
+    "observed_at": "6 Sep 19:40 UTC+07", "coverage": "ledger/OWNERS.md · Library lines, 5–6 Sep",
+    "days": [{ "w": 0.6, "title": "5 Sep · 4 lines" }, { "w": 1, "title": "6 Sep · 6 lines" }],
+    "items": [
+      { "at": "2026-09-06 19:27", "who": "TEMPLATE-BANK-ZERO", "what": "U0 shell + U13 parts + U23 gallery live at siso-shell.pages.dev", "href": "https://siso-shell.pages.dev/", "tone": "projects" },
+      { "at": "2026-09-06 13:42", "who": "LIBRARY-ZERO", "what": "Action Model metadata publication and headers compatibility recorded (477b775)", "tone": "agents" },
+      { "at": "2026-09-06 12:52", "who": "LIBRARY-ZERO", "what": "D-20 published P1/P2/V39 and GQ-012–019/023; 13 exact HTTP 200 checks PASS; idle", "tone": "agents" },
+      { "at": "2026-09-06 01:54", "who": "LIBRARY-ZERO", "what": "Project OS spine bfa88dc and publish capability 5e33b2b; 46 tests", "tone": "agents" },
+      { "at": "2026-09-05 20:54", "who": "LIBRARY-ZERO", "what": "Delivery receipt e2d2373 pushed; root + Foundry pilot live", "tone": "agents" },
+      { "at": "2026-09-05 20:13", "who": "LIBRARY-ZERO", "what": "Published original static siso-shell adea886", "tone": "agents" }
+    ]
+  },
+  "sectionsList": [
+    { "title": "Works", "href": "https://great-library-of-siso.pages.dev/works/", "type": "47", "tone": "projects", "why": "stable identities: research, software, agent systems" },
+    { "title": "Releases", "href": "https://great-library-of-siso.pages.dev/releases/", "type": "86", "tone": "projects", "why": "evidenced versions pinned to a commit" },
+    { "title": "Snapshots", "href": "https://great-library-of-siso.pages.dev/snapshots/", "type": "40", "tone": "muted", "why": "named selections of the whole Library" },
+    { "title": "Research", "href": "https://great-library-of-siso.pages.dev/research/", "type": "17 Works", "tone": "research", "why": "dossiers and God Questions" },
+    { "title": "Agents", "href": "https://great-library-of-siso.pages.dev/agents/", "type": "13 Works", "tone": "agents", "why": "agent systems, plays, capability packs" },
+    { "title": "Industries", "href": "https://great-library-of-siso.pages.dev/industries/", "type": "17", "tone": "clients", "why": "Foundry's per-industry research" },
+    { "title": "Estate", "href": "https://great-library-of-siso.pages.dev/estate/", "type": "27 repos", "tone": "now", "why": "the repo estate with visibility" },
+    { "title": "Promotion", "href": "https://great-library-of-siso.pages.dev/promotion/", "type": "25 units", "tone": "muted", "why": "candidate → owner_assigned → read → released" },
+    { "title": "Intelligence", "href": "https://great-library-of-siso.pages.dev/intelligence/", "type": "47 events", "tone": "agents", "why": "events, decisions, initiatives" }
+  ],
+  "quickstart": {
+    "entry": { "path": "Great_Library_of_SISO/AGENTS.md", "href": "https://github.com/sisodias/great-library-of-siso/blob/main/AGENTS.md" },
+    "owner": { "name": "LIBRARY-ZERO (idle)", "last": "6 Sep 12:52" },
+    "context_url": "https://great-library-of-siso.pages.dev/catalog.json",
+    "verification": "Open the root and see the loop with every node a real link, the counts equal to catalog.json, and the grouped rail.",
+    "commands": ["curl -s https://great-library-of-siso.pages.dev/catalog.json | jq '.works|length, .repositories|length'", "cd Great_Library_of_SISO && npm ci && npm run verify && npm run build"]
+  }
+}
