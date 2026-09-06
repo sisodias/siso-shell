@@ -6,15 +6,21 @@ const num = (v) => typeof v === 'number' ? v.toLocaleString('en-GB') : esc(v);
 
 /** Typed relationship map — a real graph, laid out by a tidy-tree algorithm, not a ring of nodes at one radius.
  *
- * Robbed from 21st.dev @ssshooter/mind-map (Mind Elixir; parts/SOURCES.md): root in the middle, branches split
- * left and right, each branch a curved bezier from parent edge to child edge, leaves as boxed labels tinted by
- * their branch. What is implemented here is the layout itself — Reingold-Tilford tidy-tree first-walk /
- * second-walk, so siblings never overlap, subtrees are packed by their real extents, and a parent sits at the
- * midpoint of its children. The v1 map put every node on one circle at a fixed radius (a star), which is what
- * collided and what "a bit shoddy" named.
+ * Source: the SISO design system hub, `SISO_Knowledge/design-system/library/21st-dev/airbnb-linktypes`
+ * (and its sibling `airbnb-dendrogram`) — the installed visx tree components, ours. See parts/SOURCES.md.
+ * Those render `Tree` from `@visx/hierarchy`, which is d3's Reingold-Tilford tidy tree, with
+ * `LinkHorizontalCurve` branches. A static page ships no React and no visx, so the same layout is computed
+ * here at build time and emitted as plain SVG. Three rules are taken from that source verbatim:
+ *   1. `separation={(a, b) => (a.parent === b.parent ? 1 : 0.5) / 0.5}` — siblings sit at twice the gap of
+ *      cousins, so a subtree reads as one block (linktypes.tsx:321).
+ *   2. a node's SHAPE says whether it has children: parents solid with a small radius, leaves dashed with a
+ *      pill radius (linktypes.tsx:222-231, `strokeDasharray={isParentInData ? '0' : '2,2'}`).
+ *   3. links are curves from parent edge to child edge, not straight spokes.
+ * The v1 map put every node on one circle at a fixed radius (a star), which is what collided and what
+ * "maps all this stuff a bit shoddy" named.
  *
  * data: {centre:{label,href}, types:[{type,label,tone,items:[{label,href,rel,private}]}]}
- * Types become branch nodes; items become their leaves. Returns SVG with no script and no dependency.
+ * Returns SVG with no script and no dependency.
  */
 const MAP_CHAR = 6.35;                 // measured advance of --crm-font-mono at 11px (the leaf label size)
 const MAP_BOX_H = 26;                  // leaf box height
@@ -48,7 +54,8 @@ function mapLayout(branches, side) {
     const y = kids.length ? (top + cursor - MAP_V_GAP + MAP_BOX_H) / 2 - MAP_BOX_H / 2 : cursor + MAP_BOX_H / 2;
     if (!kids.length) cursor += MAP_BOX_H + MAP_V_GAP;
     rows.push({ branch: b, y, kids, side });
-    cursor += 18;                       // gap between whole subtrees
+    /* visx separation: siblings 1, cousins 0.5/0.5 = 2 — so the gap between two subtrees is twice a sibling gap */
+    cursor += MAP_V_GAP;
   }
   return { rows, height: Math.max(cursor - 18 - MAP_V_GAP, 0) };
 }
@@ -105,7 +112,8 @@ export function mapSvg(data) {
         const kAnchor = side < 0 ? kx + leafW : kx;
         edges += link(bOuter, by, kAnchor, ky, row.branch.tone, false);
         const label = esc(mapClip(kid.label, 2)) + (kid.private ? ' 🔒' : '');
-        const inner = `<g class="node node--leaf tone-${esc(row.branch.tone || 'muted')}"><rect x="${kx.toFixed(1)}" y="${(ky - MAP_BOX_H / 2).toFixed(1)}" width="${leafW}" height="${MAP_BOX_H}" rx="6"/><text x="${(kx + (side < 0 ? leafW - 11 : 11)).toFixed(1)}" y="${ky.toFixed(1)}" text-anchor="${side < 0 ? 'end' : 'start'}" dominant-baseline="central">${label}</text>${kid.rel ? `<title>${esc(kid.label)} — ${esc(kid.rel)}</title>` : `<title>${esc(kid.label)}</title>`}</g>`;
+        const isLeaf = !kid.href;   // visx rule 2: a node with somewhere to go is drawn as a parent (solid, small radius); a dead end is dashed and pill-shaped
+        const inner = `<g class="node node--leaf${isLeaf ? ' node--dead' : ''} tone-${esc(row.branch.tone || 'muted')}"><rect x="${kx.toFixed(1)}" y="${(ky - MAP_BOX_H / 2).toFixed(1)}" width="${leafW}" height="${MAP_BOX_H}" rx="${isLeaf ? 13 : 6}"/><text x="${(kx + (side < 0 ? leafW - 11 : 11)).toFixed(1)}" y="${ky.toFixed(1)}" text-anchor="${side < 0 ? 'end' : 'start'}" dominant-baseline="central">${label}</text>${kid.rel ? `<title>${esc(kid.label)} — ${esc(kid.rel)}</title>` : `<title>${esc(kid.label)}</title>`}</g>`;
         nodes += kid.href ? `<a href="${esc(kid.href)}">${inner}</a>` : inner;
       }
     }

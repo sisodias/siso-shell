@@ -188,6 +188,10 @@ a.metric:hover { border-color: rgb(var(--stream-rgb) / 0.5); text-decoration: no
 .map__svg .node--branch text { fill: var(--tone, var(--crm-color-text)); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
 .map__svg .node--branch .count { fill: var(--crm-color-text-faint); letter-spacing: 0; }
 .map__svg .node--leaf rect { fill: rgb(var(--crm-chrome-rgb) / 0.92); stroke: rgb(var(--tone-rgb) / 0.3); stroke-width: 1; }
+/* visx rule 2 (airbnb-linktypes linktypes.tsx:222-231): the node's shape says whether it leads anywhere.
+ * A record you can open is solid with a small radius; a dead end is dashed and pill-shaped. */
+.map__svg .node--dead rect { stroke-dasharray: 2 2; fill: rgb(var(--crm-black-rgb) / 0.22); }
+.map__svg .node--dead text { fill: var(--crm-color-text-muted); }
 .map__svg .node--leaf text { fill: var(--crm-color-text); }
 .map__svg a { text-decoration: none; }
 .map__svg a .node--leaf rect { transition: fill 160ms ease, stroke 160ms ease; }
