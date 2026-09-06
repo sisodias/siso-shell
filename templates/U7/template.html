@@ -1,0 +1,36 @@
+{{!-- U7 · Doc reader — a source document under the shell: breadcrumb · title/description/date/author seat · contents column
+     from its headings · the doc body verbatim (its own <style> dropped, tokens applied) · evidence/version (path, lines, bytes,
+     sha256, commits) · related. Each chapter is a siso-section so "On this page" lists the doc's own h2s. --}}
+{{> heading heading}}
+<section class="siso-section" id="abstract">
+  {{> section sections.abstract}}
+  <p class="doc-lede">{{{abstract.lede}}}</p>
+  {{#if abstract.callout}}<div class="doc"><div class="callout">{{{abstract.callout}}}</div></div>{{/if}}
+  <dl class="kv" style="margin-top:var(--crm-space-4)">{{#each abstract.facts}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+</section>
+<div class="doc-layout">
+  <div class="doc-body">
+    {{#each chapters}}
+    <section class="siso-section" id="{{id}}">
+      {{> section .}}
+      <div class="doc">{{{html}}}</div>
+    </section>
+    {{/each}}
+  </div>
+  <aside class="doc-toc" aria-label="Contents">
+    <span class="kicker">Contents <span class="sep">·</span> <span class="dim">{{contents.from}}</span></span>
+    <ol>{{#each chapters}}<li><a href="#{{id}}"><span class="n">{{n}}</span>{{title}}</a>{{#if subs}}<ol>{{#each subs}}<li><a href="{{href}}">{{label}}</a></li>{{/each}}</ol>{{/if}}</li>{{/each}}</ol>
+  </aside>
+</div>
+<section class="siso-section" id="evidence">
+  {{> section sections.evidence}}
+  {{> evidence evidence}}
+</section>
+<section class="siso-section" id="related">
+  {{> section sections.related}}
+  {{> related related}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

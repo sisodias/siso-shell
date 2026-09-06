@@ -277,3 +277,33 @@ a.metric:hover { border-color: rgb(var(--stream-rgb) / 0.5); text-decoration: no
 
 /* ---- 404 / no-js ---- */
 .no-js .needs-js { display: none; }
+
+/* U7 · doc reader — a source document's body under the shell. Token-only; the doc's own <style> is dropped at render. */
+.doc-layout { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: var(--crm-space-8); align-items: start; }
+@media (max-width: 1100px) { .doc-layout { grid-template-columns: minmax(0, 1fr); } .doc-toc { position: static; } }
+.doc-toc { position: sticky; top: calc(var(--crm-topbar-height) + var(--crm-space-4)); padding: var(--crm-space-4) var(--crm-space-4-5); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-card-compact, 12px); background: var(--glass-card); font-size: var(--crm-text-sm); }
+.doc-toc .kicker { margin-bottom: var(--crm-space-2); }
+.doc-toc ol { list-style: none; padding: 0; margin: 0; }
+.doc-toc li { padding: var(--crm-space-1) 0; }
+.doc-toc li a { color: var(--crm-color-text); }
+.doc-toc li a:hover { color: var(--crm-color-text-strong); }
+.doc-toc ol ol { padding-left: var(--crm-space-4); border-left: 1px solid var(--crm-color-line-subtle); margin: var(--crm-space-1) 0 0 var(--crm-space-1); }
+.doc-toc ol ol a { color: var(--crm-color-text-muted); font-size: var(--crm-text-xs); }
+.doc-toc .n { color: var(--crm-color-text-faint); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); margin-right: var(--crm-space-2); }
+.doc { max-width: 78ch; color: var(--crm-color-text); font-size: var(--crm-text-md); line-height: 1.65; }
+.doc-lede { max-width: 78ch; color: var(--crm-color-text); font-size: var(--crm-text-lg); line-height: 1.55; }
+.doc p, .doc ul, .doc ol, .doc pre, .doc table, .doc .callout, .doc .grid { margin: var(--crm-space-4) 0; }
+.doc h3 { margin: var(--crm-space-7) 0 var(--crm-space-2); font-size: var(--crm-text-lg); color: var(--stream); scroll-margin-top: calc(var(--crm-topbar-height) + var(--crm-space-4)); }
+.doc .eyebrow { color: var(--stream); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); font-weight: var(--crm-weight-semibold); letter-spacing: var(--crm-tracking-label); text-transform: uppercase; }
+.doc .muted { color: var(--crm-color-text-muted); }
+.doc .callout, .doc-lede + .callout { padding: var(--crm-space-4) var(--crm-space-4-5); border: 1px solid rgb(var(--stream-rgb) / 0.45); border-radius: var(--crm-radius-control); background: rgb(var(--stream-rgb) / 0.07); }
+.doc .boundary { padding: var(--crm-space-0-5) 0 var(--crm-space-0-5) var(--crm-space-4); border-left: 3px solid var(--accent-tasks); }
+.doc .template { white-space: pre-wrap; }
+.doc .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 720px) { .doc .grid { grid-template-columns: minmax(0, 1fr); } }
+.doc .card b { display: block; margin-bottom: var(--crm-space-1); color: var(--stream); }
+.doc .card p { margin: var(--crm-space-1) 0; color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); }
+.doc table { width: 100%; border-collapse: collapse; border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-control); overflow: hidden; font-size: var(--crm-text-sm); }
+.doc th, .doc td { padding: var(--crm-space-2-5) var(--crm-space-3); border-bottom: 1px solid var(--crm-color-line-subtle); text-align: left; vertical-align: top; }
+.doc th { color: var(--crm-color-text-muted); background: rgb(var(--crm-white-rgb) / 0.03); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); font-weight: var(--crm-weight-semibold); letter-spacing: var(--crm-tracking-label); text-transform: uppercase; }
+.doc a { text-decoration: underline; text-decoration-color: rgb(var(--stream-rgb) / 0.4); text-underline-offset: 3px; }

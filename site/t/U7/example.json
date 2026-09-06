@@ -1,0 +1,304 @@
+{
+ "meta": {
+  "title": "Frontier Question template · doc",
+  "description": "Doc reader for docs/frontier-question-template.html from the Great Library: breadcrumb, title and source meta, contents from its headings, the body verbatim under the shell, evidence panel with path, lines, bytes, sha256 and commits.",
+  "stream": "research",
+  "crumb": [
+   {
+    "label": "Templates",
+    "href": "/"
+   },
+   {
+    "label": "U7 · Doc reader",
+    "href": "/t/U7/"
+   },
+   {
+    "label": "frontier-question-template"
+   }
+  ],
+  "actions": [
+   {
+    "label": "Source on GitHub",
+    "href": "https://github.com/sisodias/great-library-of-siso/blob/781ea9c/docs/frontier-question-template.html",
+    "icon": "file-code",
+    "external": true
+   },
+   {
+    "label": "As published today",
+    "href": "https://great-library-of-siso.pages.dev/docs/frontier-question-template",
+    "icon": "arrow-up-right",
+    "external": true
+   }
+  ],
+  "source": "Great_Library_of_SISO/docs/frontier-question-template.html at 781ea9c (repo head 477b775) · wc, shasum, git log 6 Sep 20:08 UTC+07 · registry/events/2026-08-01-mission-question-architecture-completed.json · docs/README.md:19 · site/intelligence.json"
+ },
+ "heading": {
+  "breadcrumb": [
+   {
+    "label": "Library",
+    "href": "https://great-library-of-siso.pages.dev"
+   },
+   {
+    "label": "docs",
+    "href": "https://great-library-of-siso.pages.dev/docs/"
+   },
+   {
+    "label": "frontier-question-template"
+   }
+  ],
+  "kicker": "doc <span class=\"sep\">·</span> rendered from docs/frontier-question-template.html <span class=\"sep\">·</span> <span class=\"dim\">Frontier Questions · Reusable dossier</span>",
+  "title": "One question. One living evidence spine.",
+  "subtitle": "A reusable Frontier Question dossier template with assumptions, source queues, claims, ADRs, experiments, answer Releases, and a worked CRM architecture example.",
+  "badges": [
+   {
+    "label": "doc · research",
+    "tone": "research",
+    "dot": true
+   },
+   {
+    "label": "3 chapters · 6 subheadings",
+    "tone": "research",
+    "href": "#copyable-question-dossier"
+   },
+   {
+    "label": "v 781ea9c · 2 Aug 2026",
+    "tone": "projects",
+    "href": "#evidence"
+   },
+   {
+    "label": "sha256 4612cbf1…687f31",
+    "tone": "muted",
+    "href": "#evidence"
+   },
+   {
+    "label": "no shell on the live copy",
+    "tone": "warn",
+    "href": "#evidence"
+   }
+  ],
+  "status": {
+   "kicker": "Source and version",
+   "value": "781ea9c · 2 Aug 2026 02:03",
+   "note": "Three commits touch this file (1–2 Aug 2026), all by Lordsisodia; the last is \"registry: dogfood GQ-009 learning return\". Author seat: the Great Library research maintainer on branch codex/mission-question-architecture-20260801 (registry event, 1 Aug 23:01).",
+   "facts": [
+    {
+     "k": "path",
+     "v": "<code>docs/frontier-question-template.html</code>"
+    },
+    {
+     "k": "size",
+     "v": "216 lines · 13,801 bytes"
+    },
+    {
+     "k": "sha256",
+     "v": "<code>4612cbf1938e54a846553f6d676e85d7af5734b79063724a73a83eff74687f31</code>"
+    },
+    {
+     "k": "author seat",
+     "v": "Great Library research maintainer · Codex branch"
+    },
+    {
+     "k": "live",
+     "v": "<a href=\"https://great-library-of-siso.pages.dev/docs/frontier-question-template\">/docs/frontier-question-template</a> · 200 (308 from .html) · no rail"
+    }
+   ]
+  }
+ },
+ "sections": {
+  "abstract": {
+   "n": "00",
+   "title": "Abstract",
+   "sub": "the document's own opening, verbatim"
+  },
+  "evidence": {
+   "n": "04",
+   "title": "Evidence · version",
+   "sub": "what this page renders, from which bytes; the claim ceiling"
+  },
+  "related": {
+   "n": "05",
+   "title": "Related"
+  },
+  "agent": {
+   "n": "06",
+   "title": "Agent entry"
+  }
+ },
+ "abstract": {
+  "lede": "Create one dossier per Frontier Question. The dossier is the operating map; the stable question remains a Library Work, and each accepted answer remains an immutable Release. Large, private, licensed, or operational payloads stay with their owning evidence systems. The registry scaffold below is the public-safe read model, not a second dossier or evidence store.",
+  "callout": "<strong>Template rule:</strong> do not fill every field with ceremonial prose. A field exists to change retrieval, reasoning, a decision, or a refresh trigger. Mark unknowns honestly. Link evidence rather than copying entire corpora.",
+  "facts": [
+   {
+    "k": "what it is",
+    "v": "a template: the fields a Frontier Question dossier carries and a worked composable-CRM example (docs/README.md:19)"
+   },
+   {
+    "k": "sits in",
+    "v": "<a href=\"https://great-library-of-siso.pages.dev/docs/\">Library docs</a> · mission thread <code>gls:thread:mission-question-architecture</code> (registry event 2026-08-01)"
+   },
+   {
+    "k": "used by",
+    "v": "the 17 <code>frontier-question-gq-*</code> Works in registry/works; the last commit dogfooded it on <a href=\"https://great-library-of-siso.pages.dev/works/frontier-question-gq-009/\">GQ-009</a>"
+   },
+   {
+    "k": "may claim",
+    "v": "a structure, not an answer: no Frontier Question is answered by this document"
+   }
+  ]
+ },
+ "contents": {
+  "from": "from its h2 · h3"
+ },
+ "chapters": [
+  {
+   "id": "copyable-question-dossier",
+   "n": "01",
+   "title": "Copyable question dossier",
+   "subs": [],
+   "html": "<pre class=\"template\">FRONTIER QUESTION\nID / public label:\nTitle:\nExact question:\nWhy this matters / value path:\nDecision owner and steward:\nStatus: proposed | scoped | active | synthesis | released | watching | challenged\nTime horizon:\nPublic / private boundary:\nExpected answer shape:\nRefresh triggers:\n\nFRAME\nDefinitions:\nIn scope:\nOut of scope:\nConstraints:\nSubquestions:\nSuccess / decision threshold:\nKnown disagreements:\n\nBASELINE\nCurrent best answer:\nConfidence and why:\nCandidate answers / hypotheses:\nWhat would reverse the leading view:\nKnown unknowns:\n\nASSUMPTION LEDGER\n- ID: GA-___ | DA-___ | QA-___ | AA-___\n  Statement:\n  Scope and status:\n  Confidence:\n  Evidence for / against:\n  Falsifier:\n  Depends on / dependents:\n  Last reviewed / supersedes:\n\nEVIDENCE UNIVERSE\nFoundry scopes and watchlists:\nRepositories / code:\nPeople / organizations:\nBooks:\nPapers / official documentation:\nWeb / community / videos:\nDatasets:\nSISO systems / experiments / user evidence:\nMissing viewpoints and rights constraints:\n\nSOURCE QUEUE\n- Source ID / locator / edition or revision:\n  Source type and creator:\n  Rights / publication boundary:\n  Relevance hypothesis:\n  Assumption or subquestion targeted:\n  Expected information gain:\n  Read state and extraction receipt:\n\nCLAIM + CONTRADICTION LEDGER\n- Claim ID / atomic statement / type / scope:\n  Supporting sources:\n  Refuting sources:\n  Witness independence:\n  Applicability and confidence:\n  Unresolved contradiction:\n\nFIRST-PRINCIPLES SYNTHESIS\nIrreducible constraints:\nMechanisms and causal model:\nIncentives / information flows / feedback loops:\nUniversal findings vs SISO preferences:\nKilled hypotheses and why:\nWhat the evidence cannot establish:\n\nIMPLICATIONS\nAssumptions changed:\nCapability or stack map changed:\nADRs create / revisit / supersede:\nExperiments to run:\nNo-regret actions:\nActions explicitly not justified:\n\nANSWER RELEASE\nAnswer and grade:\nEvidence universe and cutoff:\nLoad-bearing assumptions:\nLimitations and contradictions:\nPredictions:\nDecision / implementation implications:\nSuccessor and superseded answer IDs:\nNext watch date / event triggers:</pre>"
+  },
+  {
+   "id": "minimal-registry-scaffold",
+   "n": "02",
+   "title": "Minimal registry scaffold",
+   "subs": [],
+   "html": "<p>The authored Work keeps the existing <code>research_contract</code> identity and adds one validated <code>program</code>. Copy only public-safe metadata. Every evidence connection names its owning Work and affirms that its projected summary is safe; every action link declares authority and its immediate predecessor. The generated Research page and <code>/research.json</code> consume this exact state.</p>\n  <pre class=\"template\">\"program\": {\n  \"freshness\": {\n    \"assessed_at\": \"YYYY-MM-DD\",\n    \"review_due_at\": \"YYYY-MM-DD\"\n  },\n  \"next_useful_work\": \"One ordered, decision-relevant next step.\",\n  \"assumptions\": [{\n    \"id\": \"QA-QUESTION-ASSUMPTION\",\n    \"level\": \"QA\",\n    \"scope\": \"bounded claim scope\",\n    \"statement\": \"A falsifiable load-bearing belief.\",\n    \"status\": \"active\",\n    \"confidence\": \"low\",\n    \"falsifier\": \"The observation that would overturn it.\",\n    \"depends_on\": [],\n    \"evidence_connection_ids\": [\"EC-QUESTION-SOURCE\"],\n    \"review_date\": \"YYYY-MM-DD\"\n  }],\n  \"evidence_connections\": [{\n    \"id\": \"EC-QUESTION-SOURCE\",\n    \"source_type\": \"documentation\",\n    \"owning_work_id\": \"gls:work:...\",\n    \"reference\": \"public-safe locator or opaque receipt\",\n    \"relevance_hypothesis\": \"Why this source could change the assumption.\",\n    \"rights_state\": \"public_metadata_only\",\n    \"publication_state\": \"public_safe_metadata\",\n    \"observed_at\": \"YYYY-MM-DD\",\n    \"provenance_receipt\": \"public-safe receipt\",\n    \"revision_or_digest\": \"stable revision or digest\",\n    \"summary\": \"Public-safe metadata only; never paste the private payload.\",\n    \"supports_assumption_ids\": [\"QA-QUESTION-ASSUMPTION\"],\n    \"challenges_assumption_ids\": []\n  }],\n  \"action_learning_links\": [{\n    \"id\": \"AL-QUESTION-DEMAND\",\n    \"object_type\": \"epistemic_demand\",\n    \"authority_state\": \"demand_only\",\n    \"owner_role\": \"question_steward\",\n    \"reference\": \"public-safe demand receipt\",\n    \"recorded_at\": \"YYYY-MM-DDThh:mm:ssZ\",\n    \"predecessor_ids\": [],\n    \"related_assumption_ids\": [\"QA-QUESTION-ASSUMPTION\"],\n    \"status\": \"proposed\",\n    \"summary\": \"Requests evidence and grants no approval or execution authority.\"\n  }]\n}</pre>\n  <div class=\"callout\"><strong>Authoring gate:</strong> run <code>npm run verify</code>. Validation rejects broken assumption/supersession graphs, unsafe locators, duplicate edges, malformed freshness dates, and action chains that skip demand → candidate → mandate → observation → learning. A research state such as <code>answered</code> still does not create a public Answer Release.</div>"
+  },
+  {
+   "id": "worked-example-composable-crm",
+   "n": "03",
+   "title": "Worked example · composable CRM",
+   "subs": [
+    {
+     "label": "Exact question",
+     "href": "#worked-example-composable-crm-exact-question"
+    },
+    {
+     "label": "Why it matters",
+     "href": "#worked-example-composable-crm-why-it-matters"
+    },
+    {
+     "label": "Question-specific assumptions to test",
+     "href": "#worked-example-composable-crm-question-specific-assumptions-to-test"
+    },
+    {
+     "label": "Evidence map",
+     "href": "#worked-example-composable-crm-evidence-map"
+    },
+    {
+     "label": "Subquestions",
+     "href": "#worked-example-composable-crm-subquestions"
+    },
+    {
+     "label": "Expected answer package",
+     "href": "#worked-example-composable-crm-expected-answer-package"
+    }
+   ],
+   "html": "<p class=\"muted\">This is a framing example, not an accepted Work, product commitment, vendor ranking, or completed answer.</p>\n\n  <h3 id=\"worked-example-composable-crm-exact-question\">Exact question</h3>\n  <p><strong>What reusable, composable CRM and business-operating-system architecture should SISO adopt so client systems inherit high-value data, grid, document, form, workflow, permissions, integration, reporting, and agent capabilities without rebuilding the same foundations for every engagement?</strong></p>\n\n  <h3 id=\"worked-example-composable-crm-why-it-matters\">Why it matters</h3>\n  <p>The decision affects delivery speed, reliability, upgrade cost, client fit, agent usability, licensing risk, and the amount of reusable capability that compounds across projects. The answer is not “find the biggest CRM repository.” It is a reference architecture, capability map, evidence-backed source strategy, and sequence of reversible decisions.</p>\n\n  <h3 id=\"worked-example-composable-crm-question-specific-assumptions-to-test\">Question-specific assumptions to test</h3>\n  <table>\n    <thead><tr><th>ID</th><th>Candidate assumption</th><th>Useful falsifier</th></tr></thead>\n    <tbody>\n      <tr><td>QA-CRM-01</td><td>A large share of client workflows reuse a stable set of data, relationship, permission, view, form, automation, and audit primitives.</td><td>Workflow sampling shows the supposedly shared core is small or forces costly exceptions.</td></tr>\n      <tr><td>QA-CRM-02</td><td>Adapting modular, appropriately licensed foundations creates more lifetime value than repeatedly generating bespoke foundations.</td><td>Integration, upgrade, or license cost persistently exceeds verified bespoke delivery and maintenance cost.</td></tr>\n      <tr><td>QA-CRM-03</td><td>A flexible data-and-workflow kernel can support vertical capability packs without becoming an unmaintainable universal platform.</td><td>Two or more representative verticals require incompatible invariants in the proposed kernel.</td></tr>\n      <tr><td>QA-CRM-04</td><td>Agents become materially more useful when the system exposes typed actions, permissions, provenance, and reversible audit trails rather than only a user-interface automation layer.</td><td>Controlled tasks show no meaningful quality, speed, or safety improvement over the simpler interface.</td></tr>\n      <tr><td>QA-CRM-05</td><td>Upstream health, interface stability, composability, and rights are stronger selection criteria than feature count or popularity alone.</td><td>Outcome data demonstrates that simpler popularity/feature signals predict adoption success better.</td></tr>\n    </tbody>\n  </table>\n\n  <h3 id=\"worked-example-composable-crm-evidence-map\">Evidence map</h3>\n  <div class=\"grid\">\n    <article class=\"card\"><b>Executable evidence</b><p>Appropriately licensed open-source CRM, database, grid, document, workflow, form, permission, integration, and agent-interface projects; architecture and extension seams; test and upgrade behavior.</p></article>\n    <article class=\"card\"><b>Product and market evidence</b><p>Publicly observable Notion/Airtable-class workflows, customer jobs, switching costs, ecosystem patterns, and documented interfaces. Product behavior may inform requirements; proprietary source code is not assumed available for reuse.</p></article>\n    <article class=\"card\"><b>Book and framework evidence</b><p>Question-mapped sources on organizational scaling, modularity, platform economics, operations, and adoption. The user-named <em>Exponential Organizations 2.0</em> enters as a queued source only after a relevance and rights check.</p></article>\n    <article class=\"card\"><b>Reality evidence</b><p>Representative client workflow samples, delivery time, change frequency, permission failures, automation reliability, agent task completion, operator feedback, and lifetime maintenance cost.</p></article>\n  </div>\n\n  <h3 id=\"worked-example-composable-crm-subquestions\">Subquestions</h3>\n  <ul>\n    <li>Which capabilities are truly invariant across target engagements, and which belong in vertical packs?</li>\n    <li>What is the smallest stable kernel: data model, relationships, permissions, event log, workflow runtime, views, or something else?</li>\n    <li>Which components must share a transaction/security boundary, and which should remain replaceable services?</li>\n    <li>What extension contracts let agents and humans operate the same system safely?</li>\n    <li>Which source candidates are lawful to reuse, healthy enough to depend on, modular enough to extract, and economical to maintain?</li>\n    <li>When should SISO integrate, extract a capability, contribute upstream, wrap a service, or build an original component?</li>\n  </ul>\n\n  <h3 id=\"worked-example-composable-crm-expected-answer-package\">Expected answer package</h3>\n  <ol>\n    <li>A capability graph separating kernel, optional modules, vertical packs, integrations, and agent interfaces.</li>\n    <li>A source landscape that distinguishes executable code, architectural information, product behavior, and market signal.</li>\n    <li>A weighted shortlist with license, provenance, extension seams, health, upgrade cost, and evidence receipts.</li>\n    <li>A reference architecture and ADR set for the smallest reversible composition.</li>\n    <li>Thin experiments against representative workflows with explicit success and abandonment thresholds.</li>\n    <li>An Answer Release stating what to reuse, integrate, build, defer, and watch—plus the assumptions that could reopen the decision.</li>\n  </ol>\n\n  <div class=\"boundary\"><p><strong>First experiment:</strong> choose a small but representative workflow slice, implement it through the proposed kernel and one vertical pack, expose the same typed actions to a human UI and an agent, and measure delivery time, exception count, permission correctness, task success, and upgrade friction. This is more informative than committing to a universal CRM platform from a repository ranking alone.</p></div>\n\n  <p>Read the <a href=\"question-driven-research.html\">full research architecture</a>, the <a href=\"research-question-model.html\">Frontier Question identity model</a>, or the <a href=\"siso-mission.html\">SISO mission</a>.</p>",
+   "sub": "6 subheadings"
+  }
+ ],
+ "evidence": {
+  "facts": [
+   {
+    "claim": "Rendered from <code>docs/frontier-question-template.html</code>, 216 lines, 13,801 bytes, sha256 <code>4612cbf1938e54a846553f6d676e85d7af5734b79063724a73a83eff74687f31</code>.",
+    "receipt": "wc -l -c · shasum -a 256",
+    "at": "6 Sep 20:08 UTC+07"
+   },
+   {
+    "claim": "Body taken verbatim between <code>&lt;main&gt;</code> and <code>&lt;footer&gt;</code>, split at its three <code>&lt;h2&gt;</code>s; h3s given ids for the contents column; the doc's own <code>&lt;style&gt;</code> dropped and the shell's tokens applied. No sentence rewritten.",
+    "receipt": "templates/U7/example.json chapters[].html",
+    "href": "/t/U7/example.json"
+   },
+   {
+    "claim": "Last commit <code>781ea9c</code> 2 Aug 2026 02:03 +07 \"registry: dogfood GQ-009 learning return\"; created at <code>100f07c</code> 1 Aug 23:01 \"docs: add question-driven research architecture\"; <code>68386b8</code> in between. Repo head <code>477b775</code> 6 Sep 13:42.",
+    "receipt": "git log -- docs/frontier-question-template.html",
+    "href": "https://github.com/sisodias/great-library-of-siso/commits/main/docs/frontier-question-template.html"
+   },
+   {
+    "claim": "Author seat: the registry event \"Mission and question-driven research architecture published\" (1 Aug 23:01:50 +07) names owner <em>Great Library research maintainer</em>, branch <code>codex/mission-question-architecture-20260801</code>, and lists this doc among its changes.",
+    "receipt": "registry/events/2026-08-01-mission-question-architecture-completed.json"
+   },
+   {
+    "claim": "The live copy at /docs/frontier-question-template returns 200 (the .html path 308s to it) and carries no <code>siso-sidebar</code>: the reason this family exists (templates.json U7 why: \"20 docs on the site carry no shell\").",
+    "receipt": "curl -sL … | grep -c siso-sidebar → 0",
+    "at": "6 Sep 20:08 UTC+07"
+   }
+  ],
+  "proposals": [
+   {
+    "claim": "The Library build should render every <code>docs/*.html</code> and <code>docs/*.md</code> through this family, with the contents column from headings and this evidence panel from git.",
+    "why": "not done; the Library pins siso-shell 0.1.0 and has not re-pinned (README Legacy note)"
+   }
+  ],
+  "limits": [
+   "Claim ceiling: the document is a template and a worked example; it establishes no answer to any Frontier Question and the CRM example is illustrative, not a registered Work.",
+   "No date appears in the document body; the dates here are git commit dates.",
+   "Markdown docs (library-ui-spec.md and 12 others) need a markdown pass before this reader; this example is an HTML source."
+  ],
+  "version": {
+   "label": "781ea9c",
+   "href": "https://github.com/sisodias/great-library-of-siso/blob/781ea9c/docs/frontier-question-template.html",
+   "at": "2 Aug 2026 02:03 +07 · Lordsisodia"
+  }
+ },
+ "related": [
+  {
+   "title": "Question-driven research",
+   "href": "https://great-library-of-siso.pages.dev/docs/question-driven-research",
+   "type": "doc · same commit",
+   "tone": "research",
+   "why": "the architecture this template serves (100f07c)"
+  },
+  {
+   "title": "GQ-009",
+   "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-009/",
+   "type": "U5 God Question",
+   "tone": "research",
+   "why": "the dogfood of this template (781ea9c)"
+  },
+  {
+   "title": "Great Library of SISO",
+   "href": "/t/U4/example/",
+   "type": "U4 project",
+   "tone": "projects",
+   "why": "the Work this doc belongs to (gls:work:9b18cc64)"
+  },
+  {
+   "title": "God Question · template family",
+   "href": "/t/U5/example/",
+   "type": "U5",
+   "tone": "research",
+   "why": "what a filled dossier renders as"
+  },
+  {
+   "title": "Source · his words",
+   "href": "/t/U18/example/",
+   "type": "U18 source",
+   "tone": "agents",
+   "why": "the family for transcripts, not docs"
+  },
+  {
+   "title": "Library docs index",
+   "href": "https://great-library-of-siso.pages.dev/docs/",
+   "type": "index",
+   "tone": "research"
+  }
+ ],
+ "quickstart": {
+  "entry": {
+   "path": "Great_Library_of_SISO/docs/frontier-question-template.html",
+   "href": "https://github.com/sisodias/great-library-of-siso/blob/main/docs/frontier-question-template.html"
+  },
+  "owner": {
+   "name": "LIBRARY-ZERO (Library build)",
+   "last": "6 Sep 13:42 · 477b775"
+  },
+  "verification": "Open this page and see the grouped rail, a contents column built from the doc's three h2 and six h3, the same heading style as a Work page, and an evidence panel whose sha256 matches `shasum -a 256 docs/frontier-question-template.html`.",
+  "commands": [
+   "shasum -a 256 docs/frontier-question-template.html",
+   "git log --format='%h %ci %s' -- docs/frontier-question-template.html",
+   "bin/compose U7 templates/U7/example.json --out /tmp/U7.html"
+  ]
+ }
+}
