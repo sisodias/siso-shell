@@ -100,7 +100,14 @@
     }
   },
   "reasoning": {
-    "source": [],
+    "source": [
+      {
+        "text": "Design these once, then compose the families above: Global CRM shell, grouped navigation, search and collapse control. Page heading, breadcrumb, purpose/subtitle and meaningful state badges. Authored reasoning block with source/interpretation distinction. Ecosystem loop and typed relationship map, with accessible text equivalents.",
+        "who": "library-ui-spec.md §6 Reusable page modules · LIBRARY-ZERO",
+        "at": "6 Sep 13:29 (commit 0aaac7a 13:35)",
+        "href": "https://github.com/sisodias/great-library-of-siso/blob/0aaac7a/docs/library-ui-spec.md"
+      }
+    ],
     "why": "Every family composes the same parts; build them once as partials or every page drifts (the atlas already has 24 hand-written pages). The Action Model pages are the proof that these parts render from real data.",
     "readers": "Human: consistent reading. Agent: consistent DOM to parse.",
     "questions": [

@@ -1,0 +1,497 @@
+{
+ "meta": {
+  "title": "P5 writeback · play",
+  "description": "Play P5 writeback and its two hub skills (owner-writeback, writeback = Owner Log Mirror): what it does in his words, the exact commands, installed on Claude + Codex on laptop + Mini with probe receipts, real uses from OWNERS.md, source hashes and hub commit.",
+  "stream": "agents",
+  "crumb": [
+   {
+    "label": "Templates",
+    "href": "/"
+   },
+   {
+    "label": "U20 · Play",
+    "href": "/t/U20/"
+   },
+   {
+    "label": "P5 writeback"
+   }
+  ],
+  "actions": [
+   {
+    "label": "SKILL.md · owner-writeback",
+    "href": "https://github.com/Lordsisodia/siso-skills-hub/blob/1cf5c09/registry/skills/global/owner-writeback/SKILL.md",
+    "icon": "file-code",
+    "external": true
+   },
+   {
+    "label": "SKILL.md · writeback",
+    "href": "https://github.com/Lordsisodia/siso-skills-hub/blob/1cf5c09/registry/skills/global/writeback/SKILL.md",
+    "icon": "file-code",
+    "external": true
+   }
+  ],
+  "source": "00_AGENT_ZERO/ledger/plays-verification-2026-09-05.json (PLAYS-ZERO, 18:28Z; fresh_discovery per machine × harness) · atlas/FRAMEWORKS-2026-09-05.html (P1–P8 with his words) · SISO_Agents/siso-skills-hub registry/skills_registry.json (41 entries) + registry/skills/global/{owner-writeback,writeback}/SKILL.md (shasum 6 Sep 20:38) · ~/.claude/skills and ~/.codex/skills projections (shasum, mtime) · ledger/OWNERS.md lines mentioning writeback"
+ },
+ "heading": {
+  "breadcrumb": [
+   {
+    "label": "Agents",
+    "href": "/t/U9/example/"
+   },
+   {
+    "label": "plays"
+   },
+   {
+    "label": "P5 writeback"
+   }
+  ],
+  "kicker": "play <span class=\"sep\">·</span> P5 <span class=\"sep\">·</span> <span class=\"dim\">hub skills owner-writeback · writeback (Owner Log Mirror)</span>",
+  "title": "P5 · writeback",
+  "subtitle": "Every owner writes back somewhere persistent so the next Agent Zero can come in cold. Two hub skills carry it: <code>owner-writeback</code> (the material checkpoint + pointer through the project's existing adapter) and <code>writeback</code> (append one exact indexed line to the repo log and mirror it to the Agent Zero ledger). Installed and discovered on both harnesses on both machines with zero model turns; used for real by seven seats.",
+  "badges": [
+   {
+    "label": "play P5",
+    "tone": "agents",
+    "dot": true
+   },
+   {
+    "label": "installed · 4 of 4 harness × machine",
+    "tone": "now",
+    "href": "#installed"
+   },
+   {
+    "label": "probe 5 Sep 18:28Z",
+    "tone": "now",
+    "href": "#installed"
+   },
+   {
+    "label": "8 OWNERS lines",
+    "tone": "projects",
+    "href": "#uses"
+   },
+   {
+    "label": "hub 1cf5c09 · 41 skills",
+    "tone": "muted",
+    "href": "#hub"
+   }
+  ],
+  "status": {
+   "kicker": "Last real use",
+   "value": "6 Sep 15:23 · REVIEW-ZERO",
+   "note": "\"V6 PROJECTS.html rebuilt as a generator … writeback, issue per module; in the az-now cascade\" (OWNERS.md:147). Every seat in this bank writes its OWNERS line with the same play; the line for this page is the next one.",
+   "facts": [
+    {
+     "k": "skills",
+     "v": "<code>owner-writeback</code> 1.0.0 · <code>writeback</code> 1.0.0 (registry name \"Owner Log Mirror\")"
+    },
+    {
+     "k": "hub commit",
+     "v": "<code>1cf5c09</code> 5 Sep 19:14 +01 (plays-verification source.hub_commit 1cf5c096…)"
+    },
+    {
+     "k": "v1 owner",
+     "v": "INTERNAL-ZERO; definitions adopted byte-identically (plays-verification source)"
+    },
+    {
+     "k": "discovery",
+     "v": "fresh Codex + Claude on both machines, model_turns 0, default context config"
+    }
+   ]
+  }
+ },
+ "sections": {
+  "what": {
+   "n": "01",
+   "title": "What it does, in his words"
+  },
+  "command": {
+   "n": "02",
+   "title": "The command",
+   "sub": "exact, from the SKILL.md files; run from the skill directory or by name"
+  },
+  "installed": {
+   "n": "03",
+   "title": "Installed where",
+   "sub": "only with a probe receipt; the four fresh_discovery rows of plays-verification-2026-09-05.json plus today's projection hashes"
+  },
+  "uses": {
+   "n": "04",
+   "title": "Real uses",
+   "sub": "OWNERS.md lines that name the play or ran it"
+  },
+  "source": {
+   "n": "05",
+   "title": "Source · hash"
+  },
+  "plays": {
+   "n": "06",
+   "title": "The eight plays",
+   "sub": "atlas/FRAMEWORKS-2026-09-05.html · P1–P8 with his words"
+  },
+  "hub": {
+   "n": "07",
+   "title": "The hub",
+   "sub": "SISO_Agents/siso-skills-hub · registry/skills_registry.json"
+  },
+  "related": {
+   "n": "08",
+   "title": "Links"
+  },
+  "agent": {
+   "n": "09",
+   "title": "Agent entry"
+  }
+ },
+ "words": [
+  {
+   "text": "write back somewhere persistently to the agent zero so another agent zero can come in",
+   "who": "Shaan · FRAMEWORKS-2026-09-05 (S239)",
+   "at": "5 Sep"
+  },
+  {
+   "text": "agent zero should never forget this",
+   "who": "Shaan · FRAMEWORKS-2026-09-05 (S152)",
+   "at": "5 Sep"
+  }
+ ],
+ "what": [
+  {
+   "k": "play",
+   "v": "P5 writeback: the owner records a durable checkpoint (intent, current work, evidence, failed paths) through the project's existing adapter, then appends one indexed pointer line"
+  },
+  {
+   "k": "owner-writeback",
+   "v": "\"Persist a material project-owner checkpoint and append its discoverable pointer using the project's existing durable writeback adapter.\" Reads the project entrypoint; if no adapter exists it reports the boundary and invents none."
+  },
+  {
+   "k": "writeback",
+   "v": "\"Append an exact owner handoff line to a repository log and mirror it to the Agent Zero ledger.\" Local append is durable before the mirror; retries idempotent."
+  },
+  {
+   "k": "pairs with",
+   "v": "P4 handoff (<code>owner-handoff</code>): \"these two make the fleet survivable\" (FRAMEWORKS row 1)"
+  },
+  {
+   "k": "line shape",
+   "v": "<code>time · OWNER · what · path</code> (this bank's OWNERS lines follow it)"
+  }
+ ],
+ "commands": [
+  {
+   "label": "writeback · Owner Log Mirror",
+   "cmd": "python3 scripts/writeback.py --repo PATH --a0-root PATH --entry 'time · OWNER · what · path'",
+   "note": "from <code>registry/skills/global/writeback/</code> (or the installed <code>~/.claude/skills/writeback/</code>); required flags <code>--repo --a0-root --entry</code> (writeback.py:178–180); test with <code>python3 scripts/test_writeback.py</code>"
+  },
+  {
+   "label": "owner-writeback · P5 material checkpoint",
+   "cmd": "# invoke by name in Claude Code: /owner-writeback\n# Codex: the skill at ~/.codex/skills/owner-writeback/SKILL.md is discovered by the catalog",
+   "note": "prose skill: read the project entrypoint, resolve its handoff + adapter, write the checkpoint, append the pointer"
+  },
+  {
+   "label": "install elsewhere",
+   "cmd": "python3 $SISO_HUB/scripts/skills install writeback\npython3 $SISO_HUB/scripts/skills install owner-writeback",
+   "note": "skills-hub-usage §Installation Commands; default target <code>~/.claude/skills/</code>"
+  }
+ ],
+ "installed": [
+  {
+   "machine": "laptop",
+   "harness": "claude",
+   "state": "installed · discovered",
+   "tone": "now",
+   "dot": true,
+   "probe": "2026-09-05 18:28Z",
+   "receipt": "fresh_discovery: passed, matched owner-handoff, owner-writeback, skill-author, writeback; model_turns 0. Today: <code>~/.claude/skills/writeback/SKILL.md</code> sha256 984a4202… = hub; mtime 5 Sep 20:48"
+  },
+  {
+   "machine": "laptop",
+   "harness": "codex",
+   "state": "installed · discovered",
+   "tone": "now",
+   "dot": true,
+   "probe": "2026-09-05 18:28Z",
+   "receipt": "fresh_discovery: passed, matched all four, other_catalog_errors 0. Today: <code>~/.codex/skills/owner-writeback/SKILL.md</code> sha256 7981081d… = hub; mtime 5 Sep 19:53. <code>writeback</code> not projected into ~/.codex/skills (18 entries; only the v1 three)"
+  },
+  {
+   "machine": "mini",
+   "harness": "claude",
+   "state": "installed · discovered",
+   "tone": "now",
+   "dot": true,
+   "probe": "2026-09-05 18:28Z",
+   "receipt": "fresh_discovery: passed, matched all four, model_turns 0, default context config"
+  },
+  {
+   "machine": "mini",
+   "harness": "codex",
+   "state": "installed · discovered",
+   "tone": "now",
+   "dot": true,
+   "probe": "2026-09-05 18:28Z",
+   "receipt": "fresh_discovery: passed, matched all four; other_catalog_errors 82 outside these skills (limits[2]); default_mini_config_issue now \"normal_probe_passes_now\""
+  }
+ ],
+ "not_installed": "Not installed on a harness you are on? <code>python3 $SISO_HUB/scripts/skills install writeback</code>; then a fresh session must list it with zero model turns before the row above turns green.",
+ "uses": {
+  "observed_at": "6 Sep 20:38 UTC+07",
+  "coverage": "ledger/OWNERS.md · 8 lines matching \"writeback\" of 184",
+  "days": [
+   {
+    "w": 0.75,
+    "title": "5 Sep · 6 lines"
+   },
+   {
+    "w": 0.25,
+    "title": "6 Sep · 2 lines"
+   }
+  ],
+  "items": [
+   {
+    "at": "2026-09-06 15:23",
+    "who": "REVIEW-ZERO",
+    "what": "V6 PROJECTS.html rebuilt as a generator (bin/az-projects-table from plan/projects.json; live heads, HTTP codes, spine, writeback, issue per module; in the az-now cascade)",
+    "tone": "agents"
+   },
+   {
+    "at": "2026-09-06 06:25",
+    "who": "INTERNAL-ZERO",
+    "what": "Organizer completed one real manual transfer, successor writeback and preserved predecessor closure",
+    "tone": "agents"
+   },
+   {
+    "at": "2026-09-06 01:28",
+    "who": "PLAYS-ZERO",
+    "what": "First source/install outcome verified: all three v1 plays plus writeback discovered in fresh Codex and Claude on both machines without context override; 20 installed files",
+    "tone": "now",
+    "href": "#installed"
+   },
+   {
+    "at": "2026-09-06 02:06",
+    "who": "INTERNAL-ZERO",
+    "what": "P4 explicit transfer now retains predecessor/evidence history, enables successor writeback and cold recovery",
+    "tone": "agents"
+   },
+   {
+    "at": "2026-09-05 20:53",
+    "who": "PLAYS-ZERO",
+    "what": "P5 repo-log mirror registered and pushed through eeed185; 32-skill suite and retry/failure checks pass",
+    "tone": "now"
+   },
+   {
+    "at": "2026-09-05 20:53",
+    "who": "PLAYS-ZERO",
+    "what": "Published byte-identical v1 owner-writeback, owner-handoff, skill-author and inherited collision-safe installer at 985b42b; canonical 31-skill checks passed",
+    "tone": "now"
+   },
+   {
+    "at": "2026-09-05 19:33",
+    "who": "GQ-COMPUTE",
+    "what": "Same ten real jobs phase-audited: 243 child responses, 21 handoffs, eight first-source-action witnesses",
+    "tone": "muted"
+   }
+  ]
+ },
+ "source": {
+  "facts": [
+   {
+    "claim": "<code>registry/skills/global/writeback/SKILL.md</code> · 1,780 bytes · sha256 <code>984a4202fbb25b62e2ab53d6479043af255cb6e9ead7682ce06565ae94d2a898</code> · last commit 58771ed 5 Sep 14:43 +01 \"feat: add retry-safe per-repo owner log mirror\". Laptop Claude projection identical.",
+    "receipt": "shasum -a 256 · git log",
+    "at": "6 Sep 20:38 UTC+07"
+   },
+   {
+    "claim": "<code>registry/skills/global/owner-writeback/SKILL.md</code> · 1,716 bytes · sha256 <code>7981081dae124bdf060cabb55885f6364ed0532084dec6a6a44cd0025390cfab</code> · last commit 08d9b69 5 Sep 20:47 +07. Laptop Claude and Codex projections identical.",
+    "receipt": "shasum -a 256 (three copies)",
+    "at": "6 Sep 20:38 UTC+07"
+   },
+   {
+    "claim": "Hub head <code>1cf5c09</code> (5 Sep 19:14 +01, \"fix: report cold-discovery configuration failures explicitly\") = plays-verification source.hub_commit; hub npm test passed, registered_skills 32 at probe time; registry lists 41 entries today.",
+    "receipt": "plays-verification-2026-09-05.json checks.hub_npm_test · skills_registry.json"
+   },
+   {
+    "claim": "Repo-log reader tests 7/7 on both machines; portable handoff 14/14; required projection files 20 compared across 2 machines × 2 harness homes.",
+    "receipt": "plays-verification-2026-09-05.json checks"
+   }
+  ],
+  "proposals": [
+   {
+    "claim": "Project <code>writeback</code> into <code>~/.codex/skills</code> on the laptop too (today only the v1 three are there).",
+    "why": "the Mini Codex probe matched it; the laptop Codex home lists 18 skills without it (ls 20:38)"
+   }
+  ],
+  "limits": [
+   "\"This is the source/install and repo-log capability outcome, not a whole-fleet acceptance or runtime handoff.\" (limits[0])",
+   "\"Observer records and two PLAYS source receipts do not establish five distinct owner-authored producers.\" (limits[1])",
+   "Registry entries for the four play skills carry no commit_hash or published_at (skills_registry.json); the hashes here come from the working tree and git log."
+  ],
+  "version": {
+   "label": "hub 1cf5c09",
+   "href": "https://github.com/Lordsisodia/siso-skills-hub/commit/1cf5c09660a9b56ffc470f29071e049d6af17595",
+   "at": "5 Sep 2026 19:14 +01"
+  }
+ },
+ "plays": [
+  {
+   "id": "P1",
+   "name": "publish",
+   "words": "\"a way that my agents can make nice URLs\" (17:40)",
+   "skill": "publish"
+  },
+  {
+   "id": "P2",
+   "name": "register-in-library",
+   "words": "\"skills to upload stuff to the great library … canonical plays\" (18:15)",
+   "skill": "gls"
+  },
+  {
+   "id": "P3",
+   "name": "add-skill",
+   "words": "\"any agent who wants to add a skill or edit skills knows how to do that with the repos\" (18:15)",
+   "skill": "skill-author"
+  },
+  {
+   "id": "P4",
+   "name": "handoff",
+   "words": "\"a handoff every so often with codex … maybe every two compacts\" (17:12)",
+   "skill": "owner-handoff"
+  },
+  {
+   "id": "P5",
+   "name": "writeback",
+   "words": "\"write back somewhere persistently to the agent zero so another agent zero can come in\" (S239)",
+   "skill": "owner-writeback · writeback",
+   "this_one": true
+  },
+  {
+   "id": "P6",
+   "name": "dispatch",
+   "words": "\"Lunas are the unlimited worker class as long as they're not pinging you\" (S232)",
+   "skill": "subagents"
+  },
+  {
+   "id": "P7",
+   "name": "front-door",
+   "words": "\"every project gets a front door for agents to read and understand everything\" (S218)",
+   "skill": null
+  },
+  {
+   "id": "P8",
+   "name": "capture-source",
+   "words": "\"every single word that I sent through my voice transcripts should be saved\" (17:58)",
+   "skill": null
+  }
+ ],
+ "hub": {
+  "metrics": [
+   {
+    "value": 41,
+    "label": "registry entries",
+    "tone": "agents"
+   },
+   {
+    "value": 32,
+    "label": "registered at probe (npm test)",
+    "tone": "muted"
+   },
+   {
+    "value": 8,
+    "label": "folders",
+    "tone": "projects"
+   },
+   {
+    "value": 4,
+    "label": "play skills · global",
+    "tone": "now"
+   },
+   {
+    "value": 18,
+    "label": "~/.codex/skills on the laptop",
+    "tone": "muted"
+   }
+  ],
+  "folders": [
+   {
+    "label": "code · 7",
+    "tone": "muted"
+   },
+   {
+    "label": "communication · 3",
+    "tone": "muted"
+   },
+   {
+    "label": "data · 3",
+    "tone": "muted"
+   },
+   {
+    "label": "devops · 8",
+    "tone": "muted"
+   },
+   {
+    "label": "global · 10",
+    "tone": "agents"
+   },
+   {
+    "label": "pipeline · 4",
+    "tone": "muted"
+   },
+   {
+    "label": "system · 4",
+    "tone": "muted"
+   },
+   {
+    "label": "testing · 2",
+    "tone": "muted"
+   }
+  ]
+ },
+ "related": [
+  {
+   "title": "Agent Zero",
+   "href": "/t/U9/example/",
+   "type": "U9",
+   "tone": "agents",
+   "why": "the ledger the play writes to"
+  },
+  {
+   "title": "Now",
+   "href": "/t/U10/example/",
+   "type": "U10",
+   "tone": "now",
+   "why": "freshness comes from these lines"
+  },
+  {
+   "title": "HALO-ZERO · seat",
+   "href": "/t/U17/example/",
+   "type": "U17",
+   "tone": "agents",
+   "why": "31 writebacks in a day"
+  },
+  {
+   "title": "siso-skills-hub",
+   "href": "https://github.com/Lordsisodia/siso-skills-hub",
+   "type": "repo · public",
+   "tone": "projects"
+  },
+  {
+   "title": "Publish · P1",
+   "href": "https://github.com/Lordsisodia/siso-skills-hub/tree/main/registry/skills/devops/publish",
+   "type": "play",
+   "tone": "projects",
+   "why": "the play that put this page online"
+  }
+ ],
+ "quickstart": {
+  "entry": {
+   "path": "SISO_Agents/siso-skills-hub/registry/skills/global/writeback/SKILL.md"
+  },
+  "owner": {
+   "name": "PLAYS-ZERO (mini, done) · v1 INTERNAL-ZERO",
+   "last": "5 Sep 18:28Z"
+  },
+  "verification": "Open this page and see the command, installed on Claude + Codex on laptop + Mini with probe dates, and real uses with OWNERS.md timestamps.",
+  "commands": [
+   "jq '.checks.fresh_discovery' 00_AGENT_ZERO/ledger/plays-verification-2026-09-05.json",
+   "shasum -a 256 ~/.claude/skills/writeback/SKILL.md SISO_Agents/siso-skills-hub/registry/skills/global/writeback/SKILL.md",
+   "grep -c writeback 00_AGENT_ZERO/ledger/OWNERS.md"
+  ]
+ }
+}

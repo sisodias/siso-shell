@@ -1,0 +1,42 @@
+{{!-- U20 · Play — a play and its hub skill: what it does · the exact command · installed where (only with a probe receipt) ·
+     real uses (OWNERS lines) · source hash. Empty state: not installed here → the add-skill command. --}}
+{{> heading heading}}
+<section class="siso-section" id="what">
+  {{> section sections.what}}
+  {{> words words}}
+  <dl class="kv" style="margin-top:var(--crm-space-4)">{{#each what}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+</section>
+<section class="siso-section" id="command">
+  {{> section sections.command}}
+  {{#each commands}}<div class="card" style="margin-bottom:var(--crm-space-3)"><span class="kicker">{{icon terminal}} {{label}}</span><pre style="margin-top:8px">{{cmd}}</pre>{{#if note}}<span class="small muted">{{{note}}}</span>{{/if}}</div>{{/each}}
+</section>
+<section class="siso-section" id="installed">
+  {{> section sections.installed}}
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Machine</th><th>Harness</th><th>State</th><th>Probe</th><th>Receipt</th></tr></thead><tbody>{{#each installed}}<tr><td><b>{{machine}}</b></td><td>{{harness}}</td><td><span class="chip tone-{{tone}}">{{#if dot}}<i class="dot"></i>{{/if}}{{state}}</span></td><td class="mono small">{{probe}}</td><td class="small">{{{receipt}}}</td></tr>{{/each}}</tbody></table></div>
+  {{#if not_installed}}<div class="empty" style="margin-top:var(--crm-space-4)">{{{not_installed}}}</div>{{/if}}
+</section>
+<section class="siso-section" id="uses">
+  {{> section sections.uses}}
+  {{> activity uses}}
+</section>
+<section class="siso-section" id="source">
+  {{> section sections.source}}
+  {{> evidence source}}
+</section>
+<section class="siso-section" id="plays">
+  {{> section sections.plays}}
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>#</th><th>Play</th><th>His words</th><th>Hub skill</th></tr></thead><tbody>{{#each plays}}<tr{{#if this_one}} style="background:rgb(var(--stream-rgb) / 0.08)"{{/if}}><td class="mono">{{id}}</td><td><b>{{name}}</b></td><td class="small">{{{words}}}</td><td class="small">{{#if skill}}<code>{{skill}}</code>{{else}}<span class="muted">—</span>{{/if}}</td></tr>{{/each}}</tbody></table></div>
+</section>
+<section class="siso-section" id="hub">
+  {{> section sections.hub}}
+  {{> metrics hub.metrics}}
+  <div class="chips" style="margin-top:var(--crm-space-3)">{{> chips hub.folders}}</div>
+</section>
+<section class="siso-section" id="related">
+  {{> section sections.related}}
+  {{> related related}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>
