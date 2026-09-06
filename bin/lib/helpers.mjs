@@ -58,11 +58,13 @@ export function timelineSvg(data) {
   const x = (t) => padL + ((+t - +t0) / span) * (W - padL - padR);
   let out = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Timeline, ${evs.length} events across ${lanes.length} lanes">`;
   // day ticks
+  // day ticks at local midnight, labelled with the local date (events are local wall-clock strings)
+  const pad2 = (n) => String(n).padStart(2, '0');
   const day = new Date(t0); day.setHours(0, 0, 0, 0);
   for (let d = new Date(day); d <= t1; d.setDate(d.getDate() + 1)) {
-    if (d < t0) continue;
-    const xx = x(d);
-    out += `<line class="grid" x1="${xx.toFixed(1)}" y1="${padT - 6}" x2="${xx.toFixed(1)}" y2="${H - 26}"/><text class="day" x="${(xx + 4).toFixed(1)}" y="${H - 10}">${d.toISOString().slice(5, 10)}</text>`;
+    const label = `${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+    const xx = d < t0 ? padL : x(d);
+    out += `<line class="grid" x1="${xx.toFixed(1)}" y1="${padT - 6}" x2="${xx.toFixed(1)}" y2="${H - 26}"/><text class="day" x="${(xx + 4).toFixed(1)}" y="${H - 10}">${label}</text>`;
   }
   lanes.forEach((lane, i) => {
     const y = padT + i * rowH + rowH / 2;
