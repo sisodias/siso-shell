@@ -1,0 +1,30 @@
+{{!-- U16 · Decision — the decision in one line · his words · what it changed · what reverses it · superseded by. --}}
+{{> heading heading}}
+<section class="siso-section" id="decision">
+  {{> section sections.decision}}
+  <div class="card card--strip tone-agents" style="padding:var(--crm-space-5) var(--crm-space-6)"><span class="kicker" style="color:var(--accent-reflect)">{{id}} · the call</span><p style="margin-top:8px;font-size:var(--crm-text-lg);line-height:1.45;color:var(--crm-color-text-strong)">{{{call}}}</p></div>
+</section>
+<section class="siso-section" id="words">
+  {{> section sections.words}}
+  {{> words words}}
+</section>
+<section class="siso-section" id="effects">
+  {{> section sections.effects}}
+  {{> contents effects}}
+</section>
+<section class="siso-section" id="reversal">
+  {{> section sections.reversal}}
+  <div class="grid grid-2"><div class="card card--strip tone-warn"><span class="kicker" style="color:var(--accent-tasks)">What reverses it</span><p class="small" style="margin-top:6px">{{{reverses}}}</p></div><div class="card"><span class="kicker dim">State</span><div class="chips" style="margin-top:8px">{{> chips state}}</div></div></div>
+</section>
+<section class="siso-section" id="map">
+  {{> section sections.map}}
+  {{> map map}}
+</section>
+<section class="siso-section" id="timeline">
+  {{> section sections.timeline}}
+  {{> timeline timeline}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

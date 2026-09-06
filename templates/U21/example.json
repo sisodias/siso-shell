@@ -1,0 +1,963 @@
+{
+ "meta": {
+  "title": "HALO · timeline",
+  "description": "Every dated record of the HALO project on one axis: 37 commits, seat born/migrated/closed, decisions, docs, his words, writebacks.",
+  "stream": "projects",
+  "crumb": [
+   {
+    "label": "Templates",
+    "href": "/"
+   },
+   {
+    "label": "U21 · Timeline",
+    "href": "/t/U21/"
+   },
+   {
+    "label": "HALO"
+   }
+  ],
+  "actions": [
+   {
+    "label": "seat page",
+    "href": "/t/U17/example/",
+    "icon": "user-round"
+   }
+  ],
+  "source": "git log of clients/halocrm/worktrees/private-rewrite-83ab4ba (37 commits) · ledger/OWNERS.md · plan/decisions.json · source/"
+ },
+ "heading": {
+  "breadcrumb": [
+   {
+    "label": "Projects",
+    "href": "/t/U4/"
+   },
+   {
+    "label": "HALO CRM",
+    "href": "/t/U15/"
+   },
+   {
+    "label": "timeline"
+   }
+  ],
+  "kicker": "timeline <span class=\"sep\">·</span> project halo <span class=\"sep\">·</span> <span class=\"dim\">5 Sep 12:00 → 6 Sep 15:00 UTC+07</span>",
+  "title": "HALO · 5–6 September",
+  "subtitle": "One axis every record shares. Commits from the private mirror’s git log (37, all HALO-ZERO, none auto-backup), the seat’s birth, migration and close, the two decisions that stopped it, the docs it produced, his words, its writebacks.",
+  "badges": [
+   {
+    "label": "37 commits",
+    "tone": "projects",
+    "href": "?lane=commits#records"
+   },
+   {
+    "label": "1 seat · born → idle",
+    "tone": "agents"
+   },
+   {
+    "label": "2 decisions",
+    "tone": "research"
+   },
+   {
+    "label": "3 docs",
+    "tone": "clients"
+   },
+   {
+    "label": "3 of his words",
+    "tone": "now"
+   },
+   {
+    "label": "9 writebacks",
+    "tone": "muted"
+   }
+  ],
+  "status": {
+   "kicker": "Density",
+   "value": "37 commits in 20 h",
+   "note": "Peak 3 per hour (6 Sep 01:00–02:00, 05:00–06:00). No commits between 21:13 and 00:36.",
+   "facts": [
+    {
+     "k": "first",
+     "v": "27b8c0f · 5 Sep 17:16"
+    },
+    {
+     "k": "last",
+     "v": "09d69f5 · 6 Sep 13:16"
+    },
+    {
+     "k": "auto",
+     "v": "0 auto-backup commits"
+    }
+   ]
+  }
+ },
+ "sections": {
+  "axis": {
+   "n": "01",
+   "title": "The axis",
+   "sub": "hover a dot for the record; click to open it"
+  },
+  "density": {
+   "n": "02",
+   "title": "Density",
+   "sub": "commits per hour"
+  },
+  "lanes": {
+   "n": "03",
+   "title": "Lanes and their sources"
+  },
+  "records": {
+   "n": "04",
+   "title": "Every record",
+   "sub": "57 rows, oldest first"
+  },
+  "agent": {
+   "n": "05",
+   "title": "Agent entry"
+  }
+ },
+ "timeline": {
+  "from": "2026-09-05 12:00",
+  "to": "2026-09-06 15:00",
+  "lanes": [
+   {
+    "id": "commits",
+    "label": "commits",
+    "tone": "projects"
+   },
+   {
+    "id": "seats",
+    "label": "seats",
+    "tone": "agents"
+   },
+   {
+    "id": "decisions",
+    "label": "decisions",
+    "tone": "research"
+   },
+   {
+    "id": "docs",
+    "label": "docs",
+    "tone": "clients"
+   },
+   {
+    "id": "words",
+    "label": "his words",
+    "tone": "now"
+   },
+   {
+    "id": "writebacks",
+    "label": "writebacks",
+    "tone": "muted"
+   }
+  ],
+  "events": [
+   {
+    "at": "2026-09-05 12:01",
+    "lane": "seats",
+    "label": "HALO-ZERO born (brief)"
+   },
+   {
+    "at": "2026-09-05 12:58",
+    "lane": "writebacks",
+    "label": "OWNERS.md line"
+   },
+   {
+    "at": "2026-09-05 13:22",
+    "lane": "writebacks",
+    "label": "OWNERS.md line"
+   },
+   {
+    "at": "2026-09-05 14:16",
+    "lane": "writebacks",
+    "label": "OWNERS.md line"
+   },
+   {
+    "at": "2026-09-05 17:16",
+    "lane": "commits",
+    "label": "27b8c0f · feat(identity): activate Postgres account and admin workflows"
+   },
+   {
+    "at": "2026-09-05 17:23",
+    "lane": "commits",
+    "label": "6b958bd · test(identity): close P1-01 with recovered runtime proof"
+   },
+   {
+    "at": "2026-09-05 17:39",
+    "lane": "writebacks",
+    "label": "OWNERS.md line"
+   },
+   {
+    "at": "2026-09-05 18:15",
+    "lane": "writebacks",
+    "label": "OWNERS.md line"
+   },
+   {
+    "at": "2026-09-05 18:36",
+    "lane": "seats",
+    "label": "HALO-ZERO · native route migration (E3)"
+   },
+   {
+    "at": "2026-09-05 18:36",
+    "lane": "writebacks",
+    "label": "OWNERS.md line"
+   },
+   {
+    "at": "2026-09-05 18:42",
+    "lane": "commits",
+    "label": "bc8d2b6 · feat(teams): deliver staff onboarding and credential setup"
+   },
+   {
+    "at": "2026-09-05 18:44",
+    "lane": "commits",
+    "label": "184ecbd · test(teams): close P1-02 with real workflow receipts"
+   },
+   {
+    "at": "2026-09-05 19:04",
+    "lane": "writebacks",
+    "label": "OWNERS.md line"
+   },
+   {
+    "at": "2026-09-05 19:33",
+    "lane": "commits",
+    "label": "d0e2b9d · feat(creators): activate native notes and guarded profile workflows"
+   },
+   {
+    "at": "2026-09-05 19:39",
+    "lane": "commits",
+    "label": "83ce460 · test(creators): checkpoint four-persona workflow regression"
+   },
+   {
+    "at": "2026-09-05 19:57",
+    "lane": "writebacks",
+    "label": "OWNERS.md line"
+   },
+   {
+    "at": "2026-09-05 20:13",
+    "lane": "commits",
+    "label": "c4bd096 · feat(creators): deliver scoped model-profile workflows"
+   },
+   {
+    "at": "2026-09-05 21:13",
+    "lane": "commits",
+    "label": "98355b0 · feat(calendar): complete scoped Postgres creator calendar workflows"
+   },
+   {
+    "at": "2026-09-06 00:36",
+    "lane": "commits",
+    "label": "37b1707 · feat(creators): restore native staff creator registration"
+   },
+   {
+    "at": "2026-09-06 01:04",
+    "lane": "commits",
+    "label": "385126a · fix(creators): make native previews scoped and failure-aware"
+   },
+   {
+    "at": "2026-09-06 01:27",
+    "lane": "commits",
+    "label": "5d8497c · refactor(creators): make directory and profile saves Postgres-only"
+   },
+   {
+    "at": "2026-09-06 01:52",
+    "lane": "commits",
+    "label": "6ce81e0 · feat(customs): link status changes to transactional audit evidence"
+   },
+   {
+    "at": "2026-09-06 02:14",
+    "lane": "commits",
+    "label": "03e0313 · feat(customs): record audit evidence for creation and detail edits"
+   },
+   {
+    "at": "2026-09-06 02:53",
+    "lane": "commits",
+    "label": "39100c0 · feat(customs): complete transactional evidence across command handlers"
+   },
+   {
+    "at": "2026-09-06 03:28",
+    "lane": "commits",
+    "label": "ad38138 · fix(customs): preserve draft retries and archive workflow semantics"
+   },
+   {
+    "at": "2026-09-06 03:48",
+    "lane": "commits",
+    "label": "d50ea5e · refactor(customs): make verified native workflows canonical"
+   },
+   {
+    "at": "2026-09-06 04:10",
+    "lane": "commits",
+    "label": "c3f4a07 · Complete native creator overview reads and manager retries"
+   },
+   {
+    "at": "2026-09-06 04:36",
+    "lane": "commits",
+    "label": "657f1e0 · Complete native creator settings and verified contract downloads"
+   },
+   {
+    "at": "2026-09-06 04:53",
+    "lane": "commits",
+    "label": "929f6d2 · Make shared creator avatars and contract cards native"
+   },
+   {
+    "at": "2026-09-06 05:08",
+    "lane": "commits",
+    "label": "80eeef5 · refactor(creators): close native directory dependency paths"
+   },
+   {
+    "at": "2026-09-06 05:22",
+    "lane": "commits",
+    "label": "4b8c73d · Make onboarding cards native and preserve held task uploads"
+   },
+   {
+    "at": "2026-09-06 05:50",
+    "lane": "commits",
+    "label": "152ea53 · fix: make public onboarding native and explicit-save"
+   },
+   {
+    "at": "2026-09-06 06:20",
+    "lane": "commits",
+    "label": "0d7087b · fix: restore native onboarding review queue"
+   },
+   {
+    "at": "2026-09-06 06:49",
+    "lane": "commits",
+    "label": "cce23c1 · feat(onboarding): restore native manager review and sign-off workflows"
+   },
+   {
+    "at": "2026-09-06 07:10",
+    "lane": "commits",
+    "label": "eef1ed4 · feat(contracts): restore native public signing and invitation links"
+   },
+   {
+    "at": "2026-09-06 07:58",
+    "lane": "commits",
+    "label": "aebd0bd · feat(contracts): restore native staff lifecycle workflows"
+   },
+   {
+    "at": "2026-09-06 08:30",
+    "lane": "commits",
+    "label": "1916df9 · fix: preserve native Creator identity and close onboarding migration"
+   },
+   {
+    "at": "2026-09-06 09:12",
+    "lane": "commits",
+    "label": "8efb0aa · Store Customs money in cents and close native domain gates"
+   },
+   {
+    "at": "2026-09-06 09:53",
+    "lane": "commits",
+    "label": "48dc282 · feat(drive): native scoped metadata index and read workflows"
+   },
+   {
+    "at": "2026-09-06 10:20",
+    "lane": "commits",
+    "label": "021e734 · feat(drive): add bounded native metadata scan worker"
+   },
+   {
+    "at": "2026-09-06 10:56",
+    "lane": "commits",
+    "label": "8deb2e9 · feat(drive): admit verified existing creator folder trees"
+   },
+   {
+    "at": "2026-09-06 11:23",
+    "lane": "commits",
+    "label": "ae47814 · feat(drive): persist authenticated posting intent with scan holds"
+   },
+   {
+    "at": "2026-09-06 11:46",
+    "lane": "commits",
+    "label": "72776ae · feat(storage): verify create-only native content uploads"
+   },
+   {
+    "at": "2026-09-06 12:13",
+    "lane": "commits",
+    "label": "ed985f4 · feat(content): add durable authorized creator upload API"
+   },
+   {
+    "at": "2026-09-06 12:30",
+    "lane": "words",
+    "label": "HALO progress percent?",
+    "href": "/t/U18/"
+   },
+   {
+    "at": "2026-09-06 12:34",
+    "lane": "commits",
+    "label": "87d7fea · feat(content): stream private authenticated native downloads"
+   },
+   {
+    "at": "2026-09-06 12:45",
+    "lane": "decisions",
+    "label": "D-21 · native lane idle at checkpoint",
+    "href": "/t/U16/"
+   },
+   {
+    "at": "2026-09-06 12:55",
+    "lane": "commits",
+    "label": "4d24d1b · test(content): preserve P1-07 checkpoint and four persona gates"
+   },
+   {
+    "at": "2026-09-06 13:00",
+    "lane": "words",
+    "label": "halo is going to be one of those projects where we have to move … onto the web ui"
+   },
+   {
+    "at": "2026-09-06 13:07",
+    "lane": "words",
+    "label": "you only did like maybe 20% … allocate this out as lunas"
+   },
+   {
+    "at": "2026-09-06 13:16",
+    "lane": "commits",
+    "label": "09d69f5 · docs: add HALO agent page and handoff entrypoints"
+   },
+   {
+    "at": "2026-09-06 13:16",
+    "lane": "seats",
+    "label": "HALO-ZERO idle · handoff 09d69f5"
+   },
+   {
+    "at": "2026-09-06 13:16",
+    "lane": "docs",
+    "label": ".agents/PAGE.md · HANDOFF.md · page.url (09d69f5)"
+   },
+   {
+    "at": "2026-09-06 13:16",
+    "lane": "docs",
+    "label": "handoffs/HALO.md · D-24 packet"
+   },
+   {
+    "at": "2026-09-06 13:16",
+    "lane": "writebacks",
+    "label": "OWNERS.md line"
+   },
+   {
+    "at": "2026-09-06 13:20",
+    "lane": "decisions",
+    "label": "D-24 · fleet checkpoint, move to web UI",
+    "href": "/t/U16/"
+   },
+   {
+    "at": "2026-09-06 14:37",
+    "lane": "docs",
+    "label": "briefs/HALO-WEBUI-HANDOVER.md"
+   }
+  ]
+ },
+ "density": [
+  {
+   "value": 37,
+   "label": "commits",
+   "tone": "projects"
+  },
+  {
+   "value": 20,
+   "label": "hours 17:16 → 13:16",
+   "tone": "muted"
+  },
+  {
+   "value": "1.8",
+   "label": "commits / hour",
+   "tone": "projects"
+  },
+  {
+   "value": 3,
+   "label": "peak per hour",
+   "tone": "warn"
+  },
+  {
+   "value": 9,
+   "label": "writebacks",
+   "tone": "agents"
+  }
+ ],
+ "strip": {
+  "observed_at": "6 Sep 19:44 UTC+07",
+  "coverage": "git log, hourly, 5 Sep 17:00 → 6 Sep 14:00",
+  "days": [
+   {
+    "w": 0.6666666666666666,
+    "title": "2026-09-05 17:00 · 2 commits"
+   },
+   {
+    "w": 0.6666666666666666,
+    "title": "2026-09-05 18:00 · 2 commits"
+   },
+   {
+    "w": 0.6666666666666666,
+    "title": "2026-09-05 19:00 · 2 commits"
+   },
+   {
+    "w": 0.3333333333333333,
+    "title": "2026-09-05 20:00 · 1 commit"
+   },
+   {
+    "w": 0.3333333333333333,
+    "title": "2026-09-05 21:00 · 1 commit"
+   },
+   {
+    "w": 0,
+    "title": "2026-09-05 22:00 · 0 commits"
+   },
+   {
+    "w": 0,
+    "title": "2026-09-05 23:00 · 0 commits"
+   },
+   {
+    "w": 0.3333333333333333,
+    "title": "2026-09-06 00:00 · 1 commit"
+   },
+   {
+    "w": 1,
+    "title": "2026-09-06 01:00 · 3 commits"
+   },
+   {
+    "w": 0.6666666666666666,
+    "title": "2026-09-06 02:00 · 2 commits"
+   },
+   {
+    "w": 0.6666666666666666,
+    "title": "2026-09-06 03:00 · 2 commits"
+   },
+   {
+    "w": 1,
+    "title": "2026-09-06 04:00 · 3 commits"
+   },
+   {
+    "w": 1,
+    "title": "2026-09-06 05:00 · 3 commits"
+   },
+   {
+    "w": 0.6666666666666666,
+    "title": "2026-09-06 06:00 · 2 commits"
+   },
+   {
+    "w": 0.6666666666666666,
+    "title": "2026-09-06 07:00 · 2 commits"
+   },
+   {
+    "w": 0.3333333333333333,
+    "title": "2026-09-06 08:00 · 1 commit"
+   },
+   {
+    "w": 0.6666666666666666,
+    "title": "2026-09-06 09:00 · 2 commits"
+   },
+   {
+    "w": 0.6666666666666666,
+    "title": "2026-09-06 10:00 · 2 commits"
+   },
+   {
+    "w": 0.6666666666666666,
+    "title": "2026-09-06 11:00 · 2 commits"
+   },
+   {
+    "w": 1,
+    "title": "2026-09-06 12:00 · 3 commits"
+   },
+   {
+    "w": 0.3333333333333333,
+    "title": "2026-09-06 13:00 · 1 commit"
+   },
+   {
+    "w": 0,
+    "title": "2026-09-06 14:00 · 0 commits"
+   }
+  ],
+  "items": []
+ },
+ "laneNotes": [
+  {
+   "label": "commits",
+   "count": 37,
+   "tone": "projects",
+   "source": "<code>git log --since='2026-09-05 17:00'</code> on the private mirror worktree; author HALO-ZERO; auto-backup commits would be marked hollow"
+  },
+  {
+   "label": "seats",
+   "count": 3,
+   "tone": "agents",
+   "source": "briefs/HALO-ZERO.md (born) · OWNERS.md 18:36Z (migration) · handoffs/HALO.md (idle)"
+  },
+  {
+   "label": "decisions",
+   "count": 2,
+   "tone": "research",
+   "source": "plan/decisions.json D-21, D-24"
+  },
+  {
+   "label": "docs",
+   "count": 3,
+   "tone": "clients",
+   "source": ".agents/ files at 09d69f5 · handoffs/HALO.md · briefs/HALO-WEBUI-HANDOVER.md"
+  },
+  {
+   "label": "his words",
+   "count": 3,
+   "tone": "now",
+   "source": "source/2026-09-06-1230-*, -1300-*, and the 13:07 line in plan/projects.json#halo"
+  },
+  {
+   "label": "writebacks",
+   "count": 9,
+   "tone": "muted",
+   "source": "ledger/OWNERS.md HALO-ZERO lines (31 total; 9 shown on the axis)"
+  }
+ ],
+ "records": [
+  {
+   "at": "2026-09-05 12:01",
+   "lane": "seats",
+   "label": "HALO-ZERO born (brief)",
+   "tone": "agents"
+  },
+  {
+   "at": "2026-09-05 12:58",
+   "lane": "writebacks",
+   "label": "OWNERS.md line",
+   "tone": "muted"
+  },
+  {
+   "at": "2026-09-05 13:22",
+   "lane": "writebacks",
+   "label": "OWNERS.md line",
+   "tone": "muted"
+  },
+  {
+   "at": "2026-09-05 14:16",
+   "lane": "writebacks",
+   "label": "OWNERS.md line",
+   "tone": "muted"
+  },
+  {
+   "at": "2026-09-05 17:16",
+   "lane": "commits",
+   "label": "27b8c0f · feat(identity): activate Postgres account and admin workflows",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-05 17:23",
+   "lane": "commits",
+   "label": "6b958bd · test(identity): close P1-01 with recovered runtime proof",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-05 17:39",
+   "lane": "writebacks",
+   "label": "OWNERS.md line",
+   "tone": "muted"
+  },
+  {
+   "at": "2026-09-05 18:15",
+   "lane": "writebacks",
+   "label": "OWNERS.md line",
+   "tone": "muted"
+  },
+  {
+   "at": "2026-09-05 18:36",
+   "lane": "seats",
+   "label": "HALO-ZERO · native route migration (E3)",
+   "tone": "agents"
+  },
+  {
+   "at": "2026-09-05 18:36",
+   "lane": "writebacks",
+   "label": "OWNERS.md line",
+   "tone": "muted"
+  },
+  {
+   "at": "2026-09-05 18:42",
+   "lane": "commits",
+   "label": "bc8d2b6 · feat(teams): deliver staff onboarding and credential setup",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-05 18:44",
+   "lane": "commits",
+   "label": "184ecbd · test(teams): close P1-02 with real workflow receipts",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-05 19:04",
+   "lane": "writebacks",
+   "label": "OWNERS.md line",
+   "tone": "muted"
+  },
+  {
+   "at": "2026-09-05 19:33",
+   "lane": "commits",
+   "label": "d0e2b9d · feat(creators): activate native notes and guarded profile workflows",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-05 19:39",
+   "lane": "commits",
+   "label": "83ce460 · test(creators): checkpoint four-persona workflow regression",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-05 19:57",
+   "lane": "writebacks",
+   "label": "OWNERS.md line",
+   "tone": "muted"
+  },
+  {
+   "at": "2026-09-05 20:13",
+   "lane": "commits",
+   "label": "c4bd096 · feat(creators): deliver scoped model-profile workflows",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-05 21:13",
+   "lane": "commits",
+   "label": "98355b0 · feat(calendar): complete scoped Postgres creator calendar workflows",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 00:36",
+   "lane": "commits",
+   "label": "37b1707 · feat(creators): restore native staff creator registration",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 01:04",
+   "lane": "commits",
+   "label": "385126a · fix(creators): make native previews scoped and failure-aware",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 01:27",
+   "lane": "commits",
+   "label": "5d8497c · refactor(creators): make directory and profile saves Postgres-only",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 01:52",
+   "lane": "commits",
+   "label": "6ce81e0 · feat(customs): link status changes to transactional audit evidence",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 02:14",
+   "lane": "commits",
+   "label": "03e0313 · feat(customs): record audit evidence for creation and detail edits",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 02:53",
+   "lane": "commits",
+   "label": "39100c0 · feat(customs): complete transactional evidence across command handlers",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 03:28",
+   "lane": "commits",
+   "label": "ad38138 · fix(customs): preserve draft retries and archive workflow semantics",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 03:48",
+   "lane": "commits",
+   "label": "d50ea5e · refactor(customs): make verified native workflows canonical",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 04:10",
+   "lane": "commits",
+   "label": "c3f4a07 · Complete native creator overview reads and manager retries",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 04:36",
+   "lane": "commits",
+   "label": "657f1e0 · Complete native creator settings and verified contract downloads",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 04:53",
+   "lane": "commits",
+   "label": "929f6d2 · Make shared creator avatars and contract cards native",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 05:08",
+   "lane": "commits",
+   "label": "80eeef5 · refactor(creators): close native directory dependency paths",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 05:22",
+   "lane": "commits",
+   "label": "4b8c73d · Make onboarding cards native and preserve held task uploads",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 05:50",
+   "lane": "commits",
+   "label": "152ea53 · fix: make public onboarding native and explicit-save",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 06:20",
+   "lane": "commits",
+   "label": "0d7087b · fix: restore native onboarding review queue",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 06:49",
+   "lane": "commits",
+   "label": "cce23c1 · feat(onboarding): restore native manager review and sign-off workflows",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 07:10",
+   "lane": "commits",
+   "label": "eef1ed4 · feat(contracts): restore native public signing and invitation links",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 07:58",
+   "lane": "commits",
+   "label": "aebd0bd · feat(contracts): restore native staff lifecycle workflows",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 08:30",
+   "lane": "commits",
+   "label": "1916df9 · fix: preserve native Creator identity and close onboarding migration",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 09:12",
+   "lane": "commits",
+   "label": "8efb0aa · Store Customs money in cents and close native domain gates",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 09:53",
+   "lane": "commits",
+   "label": "48dc282 · feat(drive): native scoped metadata index and read workflows",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 10:20",
+   "lane": "commits",
+   "label": "021e734 · feat(drive): add bounded native metadata scan worker",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 10:56",
+   "lane": "commits",
+   "label": "8deb2e9 · feat(drive): admit verified existing creator folder trees",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 11:23",
+   "lane": "commits",
+   "label": "ae47814 · feat(drive): persist authenticated posting intent with scan holds",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 11:46",
+   "lane": "commits",
+   "label": "72776ae · feat(storage): verify create-only native content uploads",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 12:13",
+   "lane": "commits",
+   "label": "ed985f4 · feat(content): add durable authorized creator upload API",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 12:30",
+   "lane": "words",
+   "label": "HALO progress percent?",
+   "href": "/t/U18/",
+   "tone": "now"
+  },
+  {
+   "at": "2026-09-06 12:34",
+   "lane": "commits",
+   "label": "87d7fea · feat(content): stream private authenticated native downloads",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 12:45",
+   "lane": "decisions",
+   "label": "D-21 · native lane idle at checkpoint",
+   "href": "/t/U16/",
+   "tone": "research"
+  },
+  {
+   "at": "2026-09-06 12:55",
+   "lane": "commits",
+   "label": "4d24d1b · test(content): preserve P1-07 checkpoint and four persona gates",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 13:00",
+   "lane": "words",
+   "label": "halo is going to be one of those projects where we have to move … onto the web ui",
+   "tone": "now"
+  },
+  {
+   "at": "2026-09-06 13:07",
+   "lane": "words",
+   "label": "you only did like maybe 20% … allocate this out as lunas",
+   "tone": "now"
+  },
+  {
+   "at": "2026-09-06 13:16",
+   "lane": "commits",
+   "label": "09d69f5 · docs: add HALO agent page and handoff entrypoints",
+   "tone": "projects"
+  },
+  {
+   "at": "2026-09-06 13:16",
+   "lane": "seats",
+   "label": "HALO-ZERO idle · handoff 09d69f5",
+   "tone": "agents"
+  },
+  {
+   "at": "2026-09-06 13:16",
+   "lane": "docs",
+   "label": ".agents/PAGE.md · HANDOFF.md · page.url (09d69f5)",
+   "tone": "clients"
+  },
+  {
+   "at": "2026-09-06 13:16",
+   "lane": "docs",
+   "label": "handoffs/HALO.md · D-24 packet",
+   "tone": "clients"
+  },
+  {
+   "at": "2026-09-06 13:16",
+   "lane": "writebacks",
+   "label": "OWNERS.md line",
+   "tone": "muted"
+  },
+  {
+   "at": "2026-09-06 13:20",
+   "lane": "decisions",
+   "label": "D-24 · fleet checkpoint, move to web UI",
+   "href": "/t/U16/",
+   "tone": "research"
+  },
+  {
+   "at": "2026-09-06 14:37",
+   "lane": "docs",
+   "label": "briefs/HALO-WEBUI-HANDOVER.md",
+   "tone": "clients"
+  }
+ ],
+ "quickstart": {
+  "entry": {
+   "path": "00_AGENT_ZERO/bin/az-timeline (to write)"
+  },
+  "owner": {
+   "name": "REVIEW-ZERO reading · TEMPLATE-BANK-ZERO example"
+  },
+  "verification": "Open this page and see 37 commits, HALO-ZERO born 5 Sep 12:01 and idle 6 Sep 13:16, its writebacks, and the docs it produced, on one axis.",
+  "commands": [
+   "git -C clients/halocrm/worktrees/private-rewrite-83ab4ba log --since='2026-09-05 17:00' --format='%h|%ad|%s' --date=format:'%Y-%m-%d %H:%M'",
+   "grep 'HALO-ZERO' 00_AGENT_ZERO/ledger/OWNERS.md | wc -l"
+  ]
+ }
+}

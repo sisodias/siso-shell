@@ -1,0 +1,23 @@
+{{!-- U21 · Timeline — one axis, day ticks; lanes: commits · seats · decisions · docs · his words; density; hover = the record. --}}
+{{> heading heading}}
+<section class="siso-section" id="axis">
+  {{> section sections.axis}}
+  {{> timeline timeline}}
+</section>
+<section class="siso-section" id="density">
+  {{> section sections.density}}
+  {{> metrics density}}
+  {{> activity strip}}
+</section>
+<section class="siso-section" id="lanes">
+  {{> section sections.lanes}}
+  <div class="grid grid-3">{{#each laneNotes}}<div class="card card--strip tone-{{tone}}"><span class="kicker" style="color:var(--tone)">{{label}} · {{count}}</span><p class="small muted" style="margin-top:6px">{{{source}}}</p></div>{{/each}}</div>
+</section>
+<section class="siso-section" id="records">
+  {{> section sections.records}}
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>when</th><th>lane</th><th>record</th></tr></thead><tbody>{{#each records}}<tr><td class="mono small muted">{{at}}</td><td><span class="chip tone-{{tone}}">{{lane}}</span></td><td class="small">{{#if href}}<a href="{{href}}">{{label}}</a>{{else}}{{label}}{{/if}}</td></tr>{{/each}}</tbody></table></div>
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

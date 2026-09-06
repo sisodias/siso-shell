@@ -1,0 +1,35 @@
+{{!-- U17 · Agent seat — born · what it landed (verified) · what it cost · its writebacks · its rollout · closed: how, handoff. --}}
+{{> heading heading}}
+<section class="siso-section" id="born">
+  {{> section sections.born}}
+  <dl class="kv">{{#each born}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+</section>
+<section class="siso-section" id="landed">
+  {{> section sections.landed}}
+  {{> evidence landed}}
+</section>
+<section class="siso-section" id="cost">
+  {{> section sections.cost}}
+  {{> metrics cost}}
+  <p class="small muted" style="margin-top:var(--crm-space-2)">{{{cost_note}}}</p>
+</section>
+<section class="siso-section" id="writebacks">
+  {{> section sections.writebacks}}
+  {{> activity writebacks}}
+</section>
+<section class="siso-section" id="map">
+  {{> section sections.map}}
+  {{> map map}}
+</section>
+<section class="siso-section" id="timeline">
+  {{> section sections.timeline}}
+  {{> timeline timeline}}
+</section>
+<section class="siso-section" id="closed">
+  {{> section sections.closed}}
+  {{> related closed}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

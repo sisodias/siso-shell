@@ -33,7 +33,7 @@
     "subtitle": "Every page family the Great Library and every SISO front door needs. Click one: why it exists, the twelve things it carries, what to rob, the data it renders, and the rendered example in the CRM shell.",
     "badges": [
       {
-        "label": "9 of 24 built",
+        "label": "14 of 24 built",
         "tone": "warn",
         "dot": true
       },
@@ -52,7 +52,7 @@
     ],
     "status": {
       "kicker": "Build order",
-      "value": "9 landed · 15 to go",
+      "value": "14 landed · 10 to go",
       "note": "Shell first because every page sits in it. Parts second so nothing drifts. Gallery third so he judges each template as it lands. Then the project one pager, the God Question with its compute run, the Work page, Agent Zero, the landing, and the records.",
       "facts": [
         {
@@ -136,7 +136,7 @@
       "href": "#order"
     },
     {
-      "value": 9,
+      "value": 14,
       "label": "built and published",
       "tone": "warn",
       "href": "/?status=built#order"
@@ -426,12 +426,12 @@
         "title": "Source",
         "summary": "Source page (his words) <span class=\"faint\">· 44 files, 111,930 words in 00_AGENT_ZERO/source/ + siso-source partitions (August 10,503, September 4,144 occurrences)</span>",
         "href": "/t/U18/",
-        "status": "spec",
+        "status": "built",
         "tone": "agents",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",
@@ -450,12 +450,12 @@
         "title": "Catalogue",
         "summary": "Section / catalogue <span class=\"faint\">· 9 sections</span>",
         "href": "/t/U2/",
-        "status": "spec",
+        "status": "built",
         "tone": "projects",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",
@@ -474,12 +474,12 @@
         "title": "Decision",
         "summary": "Decision page <span class=\"faint\">· 29 (plan/decisions.json D-1…D-29) + harness-lab DECISIONS.md</span>",
         "href": "/t/U16/",
-        "status": "spec",
+        "status": "built",
         "tone": "agents",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",
@@ -498,12 +498,12 @@
         "title": "Agent seat",
         "summary": "Agent seat page <span class=\"faint\">· ~30 seats 5–6 Sep (12 closed Astra seats + Fable heads + Oracle lane + Mini seats); ledger/OWNERS.md lines</span>",
         "href": "/t/U17/",
-        "status": "spec",
+        "status": "built",
         "tone": "agents",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",
@@ -522,12 +522,12 @@
         "title": "Timeline",
         "summary": "Timeline page <span class=\"faint\">· 10 projects + Agent Zero; axis = commits, seats born/closed, decisions, docs, source captures, writebacks</span>",
         "href": "/t/U21/",
-        "status": "spec",
+        "status": "built",
         "tone": "projects",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",

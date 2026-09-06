@@ -1,0 +1,26 @@
+{{!-- U18 · Source page — his words, verbatim, dated; who it was said to; what it caused; the offset note (label vs transcript). --}}
+{{> heading heading}}
+<section class="siso-section" id="words">
+  {{> section sections.words}}
+  {{> words words}}
+</section>
+<section class="siso-section" id="reads">
+  {{> section sections.reads}}
+  <div class="card"><span class="kicker dim">Reads · the seat's reading, labelled</span><ul class="small" style="margin-top:8px">{{#each reads}}<li>{{{.}}}</li>{{/each}}</ul></div>
+</section>
+<section class="siso-section" id="caused">
+  {{> section sections.caused}}
+  {{> related caused}}
+</section>
+<section class="siso-section" id="offset">
+  {{> section sections.offset}}
+  <dl class="kv">{{#each offset}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+</section>
+<section class="siso-section" id="day">
+  {{> section sections.day}}
+  {{> timeline day}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>
