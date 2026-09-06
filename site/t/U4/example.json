@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "title": "Great Library of SISO · project",
+    "description": "Project one pager for the Great Library of SISO: repos with heads, live URLs with codes, seats, landed, left, links.",
+    "stream": "projects",
+    "crumb": [{ "label": "Templates", "href": "/" }, { "label": "U4 · Project", "href": "/t/U4/" }, { "label": "Great Library of SISO" }],
+    "actions": [
+      { "label": "Front door", "href": "https://great-library-of-siso.pages.dev/", "icon": "arrow-up-right", "external": true },
+      { "label": "projects.json row", "href": "https://github.com/sisodias/siso-agent-zero-protocol", "icon": "file-json", "external": true }
+    ],
+    "source": "plan/projects.json#library · gh api · curl 2026-09-06 19:28 UTC+07"
+  },
+  "heading": {
+    "breadcrumb": [{ "label": "Projects", "href": "/t/U4/" }, { "label": "agency" }, { "label": "library" }],
+    "kicker": "project <span class=\"sep\">·</span> agency <span class=\"sep\">·</span> <span class=\"dim\">the information front end</span>",
+    "title": "Great Library of SISO",
+    "subtitle": "The public registry and reading surface for SISO research, software and agent systems: Works, Releases, Snapshots, Assemblies. For Shaan and every cold agent: <em>\"it's all written in code but i need a way to actually see that shit\"</em>.",
+    "badges": [
+      { "label": "agency", "tone": "projects" },
+      { "label": "live · 200", "tone": "now", "dot": true, "href": "https://great-library-of-siso.pages.dev/" },
+      { "label": "owner LIBRARY-ZERO · idle", "tone": "agents" },
+      { "label": "2 repos · both public", "tone": "muted", "href": "#repos" },
+      { "label": "7 modules · 2 ok · 4 partial · 1 not started", "tone": "warn", "href": "#left" }
+    ],
+    "status": {
+      "kicker": "Front door",
+      "value": "great-library-of-siso.pages.dev",
+      "note": "HTTP 200 at 19:28 UTC+07. 47 Works · 86 Releases · 40 Snapshots · 94 HTML pages (catalog.json, 6 Sep 13:42 build).",
+      "facts": [
+        { "k": "head", "v": "<code>477b775</code> · 6 Sep 13:42" },
+        { "k": "shell", "v": "<code>siso-shell 388ce76</code> · 6 Sep 19:26" },
+        { "k": "gls id", "v": "<code>gls:work:9b18cc64</code>" },
+        { "k": "last writeback", "v": "6 Sep 12:52 · LIBRARY-ZERO" }
+      ]
+    }
+  },
+  "sections": {
+    "what": { "n": "01", "title": "What it is, in his words", "sub": "verbatim, dated" },
+    "map": { "n": "02", "title": "Mind map", "sub": "repos · Works · questions · industries · people · nodes this project touches" },
+    "repos": { "n": "03", "title": "Repos, incl. private", "sub": "head and time from gh api, 6 Sep 19:28 UTC+07" },
+    "live": { "n": "04", "title": "Live URLs, with codes", "sub": "curl, 6 Sep 19:28 UTC+07" },
+    "seats": { "n": "05", "title": "Owner seats and latest writeback" },
+    "landed": { "n": "06", "title": "What landed", "sub": "verified against a remote or a URL; proposals are the seat's own claims" },
+    "left": { "n": "07", "title": "What is left", "sub": "the module rows, each with its verification line (plan/modules.json)" },
+    "research": { "n": "08", "title": "Research it rests on", "sub": "and what each means for this project" },
+    "docs": { "n": "09", "title": "Docs, dated" },
+    "timeline": { "n": "10", "title": "Timeline", "sub": "commits · seats · decisions · docs · his words, 5–6 Sep" },
+    "links": { "n": "11", "title": "Links out", "sub": "the Works, questions, industries, people, decisions and pages this project leads to" },
+    "agent": { "n": "12", "title": "Agent entry" }
+  },
+  "words": [
+    { "text": "and also I think we should like make us some standardized for the great library size so we should make a bit more like each module should have a standardized page which is a bit better so like you can have the library with everything but each one should have its own page which is a bit nicer like when i click on one like we should just put some reasoning on it and i just like you know it'd be more human legible like nice title subtitle explaining what it is if there's any mind maps or whatever links of all other github repos associated", "who": "Shaan → Fable FA0", "at": "5 Sep 19:15" },
+    { "text": "we need a bit more of a nicer information front-end system like i'm ai it's all written in code but i need a way to actually see that shit so i i guess that's what the great library is", "who": "Shaan → AGENT-ZERO", "at": "6 Sep 16:36" },
+    { "text": "you're not using our size of crm side nav, which is Specifically what I told you to do And I feel like the templates for the pages are quite light So I think that's something we'll get Fable to do", "who": "Shaan → LIBRARY-ZERO", "at": "6 Sep 13:09" }
+  ],
+  "map": {
+    "centre": { "label": "Great Library", "href": "https://great-library-of-siso.pages.dev/" },
+    "types": [
+      { "type": "repo", "label": "Repos", "tone": "projects", "items": [
+        { "label": "great-library-of-siso", "href": "https://github.com/sisodias/great-library-of-siso", "rel": "source · public" },
+        { "label": "siso-shell", "href": "https://github.com/sisodias/siso-shell", "rel": "shell · public" }
+      ] },
+      { "type": "work", "label": "Works", "tone": "projects", "items": [
+        { "label": "great-library-of-siso", "href": "https://great-library-of-siso.pages.dev/works/great-library-of-siso/", "rel": "type library" },
+        { "label": "siso-shell", "href": "https://great-library-of-siso.pages.dev/works/siso-shell/", "rel": "type tool" },
+        { "label": "siso-project-os", "href": "https://great-library-of-siso.pages.dev/works/siso-project-os/", "rel": "V39 spine" },
+        { "label": "siso-foundry", "href": "https://great-library-of-siso.pages.dev/works/siso-foundry/", "rel": "the one templated Work" }
+      ] },
+      { "type": "question", "label": "Questions", "tone": "research", "items": [
+        { "label": "GQ-012 · context retention", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-012/", "rel": "published here" },
+        { "label": "GQ-020 · industry operating systems", "href": "/t/U5/", "rel": "unpublished (falls to root)" },
+        { "label": "GQ-023 · compute", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-023/", "rel": "D-20" }
+      ] },
+      { "type": "industry", "label": "Industries", "tone": "clients", "items": [
+        { "label": "17 industries (Foundry)", "href": "https://great-library-of-siso.pages.dev/industries/", "rel": "renders" },
+        { "label": "law_firms pilot", "href": "https://great-library-of-siso.pages.dev/industries/law_firms/", "rel": "live" }
+      ] },
+      { "type": "people", "label": "People · seats", "tone": "agents", "items": [
+        { "label": "Shaan", "rel": "owner of the ask" },
+        { "label": "LIBRARY-ZERO", "href": "/t/U17/", "rel": "seat · idle" },
+        { "label": "TEMPLATE-BANK-ZERO", "href": "/t/U17/", "rel": "seat · shell + templates" }
+      ] },
+      { "type": "node", "label": "Nodes", "tone": "now", "items": [
+        { "label": "Cloudflare Pages", "href": "https://great-library-of-siso.pages.dev/", "rel": "serves" },
+        { "label": "Mac Mini", "href": "/t/U22/", "rel": "LIBRARY-ZERO ran here (D-9)" }
+      ] }
+    ]
+  },
+  "repos": [
+    { "repo": "sisodias/great-library-of-siso", "url": "https://github.com/sisodias/great-library-of-siso", "branch": "main", "head": "477b775", "head_at": "2026-09-06 13:42 UTC+07 · Lordsisodia", "private": false, "rights": "see LICENSE-PENDING.md", "what": "The Library site build (<code>src/</code>, <code>site/</code>), registry (<code>registry/works|releases|snapshots</code>), gls CLI (<code>bin/gls</code>), docs incl. <code>library-ui-spec.md</code>. 187 commits; 13 since 5 Sep 17:00." },
+    { "repo": "sisodias/siso-shell", "url": "https://github.com/sisodias/siso-shell", "branch": "main", "head": "388ce76", "head_at": "2026-09-06 19:26 UTC+07 · TEMPLATE-BANK-ZERO", "private": false, "rights": "SISO · lucide ISC", "what": "The one shell (CRM GroupedRail copied) and the template bank the Library consumes: <code>shell/</code>, <code>parts/</code>, <code>templates/</code>, <code>bin/compose</code>. Published at siso-shell.pages.dev." }
+  ],
+  "urls": [
+    { "url": "https://great-library-of-siso.pages.dev/", "what": "root", "code": 200, "tone": "now", "checked": "2026-09-06 19:28" },
+    { "url": "https://great-library-of-siso.pages.dev/works/siso-foundry/", "what": "the one module page on the template", "code": 200, "tone": "now", "checked": "2026-09-06 19:28" },
+    { "url": "https://great-library-of-siso.pages.dev/industries/", "what": "17 industries (Foundry)", "code": 200, "tone": "now", "checked": "2026-09-06 19:28" },
+    { "url": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-012/", "what": "a real GQ page", "code": 200, "tone": "now", "checked": "2026-09-06 19:28" },
+    { "url": "https://great-library-of-siso.pages.dev/catalog.json", "what": "machine entry: 47 Works, 27 repos", "code": 200, "tone": "now", "checked": "2026-09-06 19:28" },
+    { "url": "https://siso-shell.pages.dev/", "what": "the template bank (this site)", "code": 200, "tone": "now", "checked": "2026-09-06 19:28" }
+  ],
+  "seats": [
+    { "name": "LIBRARY-ZERO", "state": "idle · closed by D-20", "href": "/t/U17/", "born": "5 Sep 19:40 (brief) · Mini, Codex Astra", "last": { "at": "2026-09-06 12:52", "what": "D-20 published P1/P2/V39 and GQ-012–019/023 at 29e40f52.great-library-of-siso.pages.dev; 13 exact HTTP200 checks PASS; idle · <code>CURRENT_STATE.md</code>" } },
+    { "name": "TEMPLATE-BANK-ZERO", "state": "live", "href": "/t/U17/", "born": "6 Sep 18:47 · laptop herdr-2, Claude Fable 5.1", "last": { "at": "2026-09-06 19:27", "what": "U0 shell + U13 parts + U23 gallery live at siso-shell.pages.dev; siso-shell 388ce76 · <code>handoffs/TEMPLATE-BANK.md</code>" } },
+    { "name": "Fable FA0", "state": "closed", "href": "/t/U17/", "born": "5 Sep (front seat)", "last": { "at": "2026-09-05 19:40", "what": "wrote <code>briefs/LIBRARY-ZERO.md</code> from his 19:15 words" } }
+  ],
+  "landed": {
+    "facts": [
+      { "claim": "Root, 47 Works, 86 Releases, 40 Snapshots, 94 HTML pages live on Cloudflare Pages; Vercel no longer primary (ADR-0006).", "receipt": "catalog.json · commit ffa7552", "href": "https://great-library-of-siso.pages.dev/catalog.json", "at": "6 Sep 13:42" },
+      { "claim": "Publish play P1 (dir → *.pages.dev URL + receipt line) and register play P2 (<code>gls add work|release|inventory|question</code>, 11 tests) in the skills hub.", "receipt": "commit 8f17a5e · handoffs/LIBRARY.md 12:52 receipt", "href": "https://github.com/sisodias/great-library-of-siso/commit/8f17a5e30322742e827251e55bc9980fe2b51eb8" },
+      { "claim": "GQ-012–019 and GQ-023 as real pages; V39 spine selected.", "receipt": "commit 12099ee · 13 exact HTTP 200 readbacks", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-012/", "at": "6 Sep 12:52" },
+      { "claim": "Foundry industries (17) and valuation readers connected; Action Model assembly-framework Work registered.", "receipt": "commits a9ffd16, 0aaac7a", "href": "https://great-library-of-siso.pages.dev/industries/", "at": "6 Sep 13:42" },
+      { "claim": "The CRM GroupedRail copied into siso-shell with tokens verbatim; template bank live.", "receipt": "siso-shell 388ce76 · siso-shell.pages.dev", "href": "https://siso-shell.pages.dev/t/U0/example/", "at": "6 Sep 19:27" }
+    ],
+    "proposals": [
+      { "claim": "Module-page template applied to every Work (today: 1 of 47, <code>/works/siso-foundry/</code>).", "why": "LIBRARY-ZERO handoff; L1 verification line not yet true" },
+      { "claim": "The Library consumes <code>siso-shell/shell/</code> on all 18 routes.", "why": "the Library still pins siso-shell 0.1.0 (its own forest rail, 3 of 9 URLs checked)" }
+    ],
+    "limits": ["Counts are from catalog.json at the 13:42 build, not a fresh registry query.", "'Landed' lines are REVIEW-ZERO's 6 Sep reading of the rollouts and remotes plus this seat's 19:27 publish."],
+    "version": { "label": "great-library-of-siso 477b775 · siso-shell 388ce76", "at": "2026-09-06 19:28 UTC+07" }
+  },
+  "left": {
+    "items": [
+      { "label": "S1 · Template + shell + publish play", "state": "partial", "tone": "warn", "href": "https://github.com/sisodias/siso-agent-zero-protocol/issues", "what": "Open /industries/law_firms/ and /works/siso-shell/ and see the same CRM GroupedRail on both, collapsing with [. Shell now exists (siso-shell 388ce76); the Library has not re-pinned it." },
+      { "label": "P1 · publish play", "state": "landed", "tone": "now", "what": "Run the publish skill on one directory and see a *.pages.dev URL that returns 200 plus one receipt line in the caller's handoff. Used for the Library four times and for siso-shell.pages.dev." },
+      { "label": "P2 · register-in-library (gls)", "state": "landed", "tone": "now", "what": "Run <code>bin/gls add work</code> on a test record, publish, see it in catalog.json; 11 gls tests pass (8f17a5e)." },
+      { "label": "L1 · Root one-pager + module template + rail on Cloudflare", "state": "partial", "tone": "warn", "what": "Open /, /works/&lt;any&gt;/, /industries/&lt;any&gt;/, /god-questions/, /now/ and see the same rail on all five page types (today 3 of 9) and the template sections on every Work page (today only siso-foundry)." },
+      { "label": "L2 · God Questions Observatory", "state": "partial", "tone": "warn", "what": "Open /works/frontier-question-gq-001/ through gq-023/ and see 23 real pages (today gq-001–011 and 020–022 return the root page)." },
+      { "label": "L3 · Catalogue the lattice: one Work per Tier 1, client stubs private", "state": "not started", "tone": "blocked", "what": "Open catalog.json and see one Work per Tier-1 repo with private stubs for the three clients (today: zero client Works)." },
+      { "label": "L4 · Now + Industries + Source sections; retire Vercel", "state": "partial", "tone": "warn", "what": "Open /now/ and see owner rows from owners.log with dates; open /source/; great-library-of-siso.vercel.app redirects or is gone (Industries landed 13:35)." }
+    ],
+    "steps": [
+      { "label": "Re-pin siso-shell", "what": "Library build imports <code>rail({groups})</code> from 388ce76+ and copies <code>shell/</code>" },
+      { "label": "Compose Works with U3", "what": "47 Work pages through <code>bin/compose U3</code>" },
+      { "label": "GQ pages with U5", "what": "23 real pages from GOD-QUESTIONS.md" },
+      { "label": "Publish", "what": "P1 with exact readback; receipt in handoffs/LIBRARY.md" }
+    ]
+  },
+  "research": [
+    { "kind": "brief", "title": "library-ui-spec.md · 13 page families, composable modules, CRM fidelity", "href": "https://github.com/sisodias/great-library-of-siso/blob/main/docs/library-ui-spec.md", "meaning": "The contract this template bank builds to; §6 is the twelve parts." },
+    { "kind": "research Work", "title": "SISO Project OS (V39 spine)", "href": "https://great-library-of-siso.pages.dev/works/siso-project-os/", "meaning": "The .agents/ front-door layout every project repo carries (PAGE, HANDOFF, owners.log, page.url, repos.json); U4 reads it." },
+    { "kind": "God Question", "title": "GQ-012 · How do agents retain the right context without repeatedly loading everything?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-012/", "meaning": "The Library is the truthful entry point GQ-012 asks for: a cold agent reads a page, not a repo." },
+    { "kind": "God Question", "title": "GQ-013 · How do components, flows, modules and assets become a small high-quality building set?", "href": "/t/U5/", "meaning": "The parts bank (U13) and the 21st.dev picks are this question's first concrete set." }
+  ],
+  "docs": [
+    { "path": "docs/library-ui-spec.md", "href": "https://github.com/sisodias/great-library-of-siso/blob/main/docs/library-ui-spec.md", "what": "Fable implementation brief: 13 page families, §6 modules, acceptance", "at": "2026-09-06 13:29" },
+    { "path": "docs/gls.md", "href": "https://github.com/sisodias/great-library-of-siso/blob/main/docs/gls.md", "what": "Register Works, Releases, Inventories, questions; bounds, locking, recovery", "at": "2026-09-06 02:07" },
+    { "path": "docs/module-page-template.md", "href": "https://github.com/sisodias/great-library-of-siso/blob/main/docs/module-page-template.md", "what": "The eight-section Work page (applied to siso-foundry)", "at": "2026-09-05 20:45" },
+    { "path": "docs/using-the-library.md", "href": "https://github.com/sisodias/great-library-of-siso/blob/main/docs/using-the-library.md", "what": "Reader and agent entry", "at": "2026-09-05 18:09" },
+    { "path": "CURRENT_STATE.md", "href": "https://github.com/sisodias/great-library-of-siso/blob/main/CURRENT_STATE.md", "what": "Owner state and exact publication receipts", "at": "2026-09-06 13:42" },
+    { "path": "00_AGENT_ZERO/briefs/LIBRARY-UI-FABLE.md", "what": "Hashes of the three CRM rail files; the UI reassignment to Fable", "at": "2026-09-06 14:37" }
+  ],
+  "timeline": {
+    "from": "2026-09-05 17:00", "to": "2026-09-06 19:30",
+    "lanes": [
+      { "id": "commits", "label": "commits", "tone": "projects" },
+      { "id": "seats", "label": "seats", "tone": "agents" },
+      { "id": "decisions", "label": "decisions", "tone": "research" },
+      { "id": "docs", "label": "docs", "tone": "clients" },
+      { "id": "words", "label": "his words", "tone": "now" }
+    ],
+    "events": [
+      { "at": "2026-09-05 17:48", "lane": "commits", "label": "40ff12e · UNFUCK, Component Bank, Repo Bank as Works; V38", "href": "https://github.com/sisodias/great-library-of-siso/commit/40ff12e" },
+      { "at": "2026-09-05 18:09", "lane": "commits", "label": "ffa7552 · ADR-0006 Cloudflare Pages", "href": "https://github.com/sisodias/great-library-of-siso/commit/ffa7552" },
+      { "at": "2026-09-05 20:11", "lane": "commits", "label": "siso-shell adea886 · first static rail", "href": "https://github.com/sisodias/siso-shell/commit/adea886" },
+      { "at": "2026-09-05 20:50", "lane": "commits", "label": "7713cd8 · front door + Foundry pilot", "href": "https://github.com/sisodias/great-library-of-siso/commit/7713cd8" },
+      { "at": "2026-09-05 20:53", "lane": "commits", "label": "e2d2373 · pilot receipt" },
+      { "at": "2026-09-06 02:02", "lane": "commits", "label": "fee0f5f · V39 spine, publish + shell releases" },
+      { "at": "2026-09-06 02:31", "lane": "commits", "label": "8f17a5e · gls" },
+      { "at": "2026-09-06 12:50", "lane": "commits", "label": "12099ee · GQ-012–019 published (D-20)" },
+      { "at": "2026-09-06 13:26", "lane": "commits", "label": "a9ffd16 · Foundry readers" },
+      { "at": "2026-09-06 13:35", "lane": "commits", "label": "0aaac7a · Action Model Work; Fable UI handoff" },
+      { "at": "2026-09-06 13:42", "lane": "commits", "label": "477b775 · head" },
+      { "at": "2026-09-06 19:26", "lane": "commits", "label": "siso-shell 388ce76 · U0 U13 U23", "href": "https://github.com/sisodias/siso-shell/commit/388ce76" },
+      { "at": "2026-09-05 19:40", "lane": "seats", "label": "LIBRARY-ZERO brief written (Fable FA0)" },
+      { "at": "2026-09-05 20:13", "lane": "seats", "label": "LIBRARY-ZERO · first writeback" },
+      { "at": "2026-09-06 12:52", "lane": "seats", "label": "LIBRARY-ZERO · idle (D-20)" },
+      { "at": "2026-09-06 18:47", "lane": "seats", "label": "TEMPLATE-BANK-ZERO born" },
+      { "at": "2026-09-05 19:56", "lane": "decisions", "label": "D-9 · Mini-first placement" },
+      { "at": "2026-09-06 12:45", "lane": "decisions", "label": "D-20 · GQ-023 for compute; publish now" },
+      { "at": "2026-09-06 18:47", "lane": "decisions", "label": "D-32 · bank lives in siso-shell" },
+      { "at": "2026-09-05 18:09", "lane": "docs", "label": "using-the-library.md" },
+      { "at": "2026-09-05 20:45", "lane": "docs", "label": "module-page-template.md" },
+      { "at": "2026-09-06 02:07", "lane": "docs", "label": "gls.md" },
+      { "at": "2026-09-06 13:29", "lane": "docs", "label": "library-ui-spec.md" },
+      { "at": "2026-09-06 14:37", "lane": "docs", "label": "LIBRARY-UI-FABLE.md (A0 briefs)" },
+      { "at": "2026-09-05 19:15", "lane": "words", "label": "standardised module pages, reasoning, mind maps, repos" },
+      { "at": "2026-09-06 13:09", "lane": "words", "label": "not our size of CRM side nav; templates too light" },
+      { "at": "2026-09-06 16:36", "lane": "words", "label": "a way to actually see that shit" },
+      { "at": "2026-09-06 18:41", "lane": "words", "label": "build the damn thing" }
+    ]
+  },
+  "links": [
+    { "title": "Work · great-library-of-siso", "href": "https://great-library-of-siso.pages.dev/works/great-library-of-siso/", "type": "U3 Work", "tone": "projects", "why": "the Library's own registry record" },
+    { "title": "Work · siso-shell", "href": "https://great-library-of-siso.pages.dev/works/siso-shell/", "type": "U3 Work", "tone": "projects", "why": "the shell, registered at adea886; a Release for 388ce76 follows" },
+    { "title": "GQ-012 · context retention", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-012/", "type": "U5 God Question", "tone": "research" },
+    { "title": "Industries · 17 records", "href": "https://great-library-of-siso.pages.dev/industries/", "type": "U8 industry", "tone": "clients" },
+    { "title": "LIBRARY-ZERO", "href": "/t/U17/", "type": "U17 seat", "tone": "agents", "why": "handoffs/LIBRARY.md" },
+    { "title": "D-20 · GQ-011 collision; publish now", "href": "/t/U16/", "type": "U16 decision", "tone": "agents" },
+    { "title": "Source · 5 Sep 19:15 standard pages", "href": "/t/U18/", "type": "U18 source", "tone": "agents" },
+    { "title": "Template bank · siso-shell.pages.dev", "href": "https://siso-shell.pages.dev/", "type": "Cloudflare page", "tone": "projects", "why": "the bank this project consumes" },
+    { "title": "Great Library · root", "href": "https://great-library-of-siso.pages.dev/", "type": "Cloudflare page", "tone": "projects" }
+  ],
+  "quickstart": {
+    "entry": { "path": "Great_Library_of_SISO/.agents/PAGE.md", "href": "https://github.com/sisodias/great-library-of-siso/blob/main/.agents/PAGE.md" },
+    "owner": { "name": "LIBRARY-ZERO (idle) · UI: TEMPLATE-BANK-ZERO", "last": "6 Sep 12:52 / 19:27" },
+    "context_url": "https://great-library-of-siso.pages.dev/catalog.json",
+    "verification": "Open <a href=\"https://great-library-of-siso.pages.dev/works/siso-foundry/\">/works/siso-foundry/</a> and <a href=\"https://great-library-of-siso.pages.dev/industries/law_firms/\">/industries/law_firms/</a> and see the same CRM GroupedRail on both, collapsing with <kbd>[</kbd> (S1); today they carry the 0.1.0 forest rail.",
+    "commands": [
+      "cd ~/SISO_Workspace/Great_Library_of_SISO && npm ci && npm run verify",
+      "node bin/gls add work --file reviewed-work.json --reviewed-public --dry-run",
+      "npm run build   # site/",
+      "node ~/.claude/skills/publish/scripts/publish.mjs --input site --project great-library-of-siso --branch main --handoff .agents/HANDOFF.md --wrangler <pinned> --public"
+    ]
+  }
+}

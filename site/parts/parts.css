@@ -50,7 +50,7 @@ hr { border: 0; border-top: 1px solid var(--crm-color-line); margin: var(--crm-s
 /* ---- page frame ---- */
 .siso-page { width: min(1180px, 100% - (var(--crm-canvas-inline-padding) * 2)); margin: 0 auto; padding: var(--crm-canvas-block-padding) 0 var(--crm-space-17-5); }
 .siso-page > * + * { margin-top: var(--crm-space-8); }
-.siso-section { padding-top: var(--crm-space-8); border-top: 1px solid var(--crm-color-line); scroll-margin-top: var(--crm-space-6); }
+.siso-section { padding-top: var(--crm-space-8); border-top: 1px solid var(--crm-color-line); scroll-margin-top: calc(var(--crm-topbar-height) + var(--crm-space-2)); }
 .siso-section > .siso-section__head { display: flex; align-items: baseline; gap: var(--crm-space-3); flex-wrap: wrap; margin-bottom: var(--crm-space-4); }
 .siso-section > .siso-section__head h2 { font-size: var(--crm-text-xl); line-height: 1.1; }
 .siso-section > .siso-section__head .n { color: var(--crm-color-text-faint); font-family: var(--crm-font-mono); font-size: var(--crm-text-sm); }

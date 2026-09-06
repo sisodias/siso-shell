@@ -33,7 +33,7 @@
     "subtitle": "Every page family the Great Library and every SISO front door needs. Click one: why it exists, the twelve things it carries, what to rob, the data it renders, and the rendered example in the CRM shell.",
     "badges": [
       {
-        "label": "3 of 24 built",
+        "label": "4 of 24 built",
         "tone": "warn",
         "dot": true
       },
@@ -52,7 +52,7 @@
     ],
     "status": {
       "kicker": "Build order",
-      "value": "3 landed · 21 to go",
+      "value": "4 landed · 20 to go",
       "note": "Shell first because every page sits in it. Parts second so nothing drifts. Gallery third so he judges each template as it lands. Then the project one pager, the God Question with its compute run, the Work page, Agent Zero, the landing, and the records.",
       "facts": [
         {
@@ -136,7 +136,7 @@
       "href": "#order"
     },
     {
-      "value": 3,
+      "value": 4,
       "label": "built and published",
       "tone": "warn",
       "href": "/?status=built#order"
@@ -282,12 +282,12 @@
         "title": "Project one pager",
         "summary": "Project one pager (bigger; the hub that links to the rest) <span class=\"faint\">· 10 projects: Library, Foundry, Internal+Agent Base, Knowledge/siso-source, Plays/hub, GQ+compute, Agent Zero (agency) · Oracle, HALO, BykonzYard, Action Model (client)</span>",
         "href": "/t/U4/",
-        "status": "spec",
+        "status": "built",
         "tone": "projects",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",

@@ -7,7 +7,7 @@ const num = (v) => typeof v === 'number' ? v.toLocaleString('en-GB') : esc(v);
 /** Typed relationship map: centre node, one ring segment per type, nodes on the ring. Pure SVG, no library. */
 export function mapSvg(data) {
   if (!data || !Array.isArray(data.types) || !data.types.length) return '';
-  const W = 720, H = 460, cx = W / 2, cy = H / 2, R = 165;
+  const W = 760, H = 500, cx = W / 2, cy = H / 2, R = 160;
   const nodes = data.types.flatMap((t) => (t.items || []).map((it) => ({ ...it, type: t })));
   const n = Math.max(nodes.length, 1);
   let out = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Relationship map: ${esc(data.centre?.label || '')} and ${n} linked records">`;
@@ -19,7 +19,7 @@ export function mapSvg(data) {
   for (const t of data.types) {
     const count = (t.items || []).length; if (!count) continue;
     const a0 = start + seg * idx, a1 = start + seg * (idx + count);
-    const mid = (a0 + a1) / 2; const lr = R + 44;
+    const mid = (a0 + a1) / 2; const lr = R + 78;
     const lx = cx + Math.cos(mid) * lr, ly = cy + Math.sin(mid) * lr;
     out += `<g class="tone-${esc(t.tone || 'muted')}"><text class="type-label" x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="middle" dominant-baseline="middle">${esc(t.label)}</text></g>`;
     idx += count;

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "U4 · Project one pager",
+  "description": "One project (agency or client) as the hub every other page is one hop from. Source: plan/projects.json row + <repo>/.agents/{PAGE.md,HANDOFF.md,owners.log,page.url,repos.json} + live gh api / curl lookups (dated). Shared $defs in templates/U0/schema.json.",
+  "type": "object",
+  "required": ["meta", "heading", "sections", "words", "map", "repos", "urls", "seats", "landed", "left", "timeline", "links", "quickstart"],
+  "properties": {
+    "meta": { "$ref": "U0/schema.json#/$defs/meta" },
+    "heading": { "$ref": "U0/schema.json#/$defs/heading", "description": "title = project name; subtitle = client or agency · one-line what · for whom; badges = group, state, owner; status = the front-door URL + code" },
+    "sections": { "type": "object", "description": "keys: what map repos live seats landed left research docs timeline links agent" },
+    "words": { "type": "array", "description": "his words about this project, verbatim, dated", "items": { "type": "object", "required": ["text", "who", "at"], "properties": { "text": { "type": "string" }, "who": { "type": "string" }, "at": { "type": "string" }, "href": { "type": "string" } } } },
+    "reasoning": { "$ref": "U0/schema.json#/$defs/reasoning" },
+    "map": { "type": "object", "description": "the mind map: repos · Works · questions · industries · people · nodes", "required": ["centre", "types"], "properties": { "centre": { "type": "object", "properties": { "label": { "type": "string" }, "href": { "type": "string" } } }, "types": { "type": "array", "items": { "type": "object", "required": ["type", "label", "tone", "items"], "properties": { "type": { "type": "string" }, "label": { "type": "string" }, "tone": { "type": "string" }, "items": { "type": "array", "items": { "type": "object", "required": ["label"], "properties": { "label": { "type": "string" }, "href": { "type": "string" }, "rel": { "type": "string" }, "private": { "type": "boolean" } } } } } } } } },
+    "repos": { "$ref": "U0/schema.json#/$defs/repos", "description": "every repo incl. private: head (gh api), head_at, branch, visibility" },
+    "urls": { "type": "array", "items": { "type": "object", "required": ["url", "what", "code", "checked"], "properties": { "url": { "type": "string" }, "what": { "type": "string" }, "code": { "type": ["integer", "string"] }, "tone": { "type": "string" }, "checked": { "type": "string", "description": "when the code was observed" } } } },
+    "seats": { "type": "array", "items": { "type": "object", "required": ["name", "state"], "properties": { "name": { "type": "string" }, "state": { "type": "string", "description": "live · closed · his" }, "href": { "type": "string" }, "born": { "type": "string" }, "closed": { "type": "string" }, "last": { "type": "object", "properties": { "at": { "type": "string" }, "what": { "type": "string" } }, "description": "latest writeback" } } } },
+    "landed": { "$ref": "U0/schema.json#/$defs/evidence", "description": "what landed, verified (facts with receipts) vs claimed (proposals)" },
+    "left": { "type": "object", "description": "module rows with verification lines", "properties": { "items": { "type": "array", "items": { "type": "object", "required": ["label", "state", "tone"], "properties": { "label": { "type": "string" }, "what": { "type": "string", "description": "the verification line" }, "href": { "type": "string" }, "state": { "type": "string" }, "tone": { "type": "string" } } } }, "steps": { "type": "array" } } },
+    "research": { "type": "array", "items": { "type": "object", "required": ["title", "href", "meaning"], "properties": { "kind": { "type": "string" }, "title": { "type": "string" }, "href": { "type": "string" }, "meaning": { "type": "string", "description": "what this research means for this project" } } } },
+    "docs": { "type": "array", "items": { "type": "object", "required": ["path", "at"], "properties": { "path": { "type": "string" }, "href": { "type": "string" }, "what": { "type": "string" }, "at": { "type": "string" } } } },
+    "timeline": { "type": "object", "description": "commits · seats · decisions · docs · his words on one axis", "properties": { "from": { "type": "string" }, "to": { "type": "string" }, "lanes": { "type": "array" }, "events": { "type": "array", "items": { "type": "object", "required": ["at", "lane", "label"], "properties": { "at": { "type": "string" }, "lane": { "type": "string" }, "label": { "type": "string" }, "href": { "type": "string" }, "auto": { "type": "boolean" } } } } } },
+    "links": { "$ref": "U0/schema.json#/$defs/related", "description": "the Works, GQs, industries, people, decisions, seats, nodes this project touches, and the Cloudflare pages it leads to" },
+    "quickstart": { "$ref": "U0/schema.json#/$defs/quickstart" }
+  }
+}

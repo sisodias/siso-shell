@@ -1,0 +1,67 @@
+{{!-- U4 · Project one pager — the hub every other page is one hop from. Twelve-slot contract, his 18:19:
+     title · subtitle · paragraph (his words) · mind map · repos · research · docs · progress · agents · timeline · docs over time · own nav.
+     Sections in the plan's order: what it is · repos · live URLs · seats · landed · left · links · pages it leads to. --}}
+{{> heading heading}}
+
+<section class="siso-section" id="what">
+  {{> section sections.what}}
+  {{> words words}}
+  {{#if reasoning}}<div style="margin-top:var(--crm-space-4)">{{> reasoning reasoning}}</div>{{/if}}
+</section>
+
+<section class="siso-section" id="map">
+  {{> section sections.map}}
+  {{> map map}}
+</section>
+
+<section class="siso-section" id="repos">
+  {{> section sections.repos}}
+  {{> repos repos}}
+</section>
+
+<section class="siso-section" id="live">
+  {{> section sections.live}}
+  {{#if urls}}<div class="tbl-wrap"><table class="tbl"><thead><tr><th>URL</th><th>What</th><th>HTTP</th><th>Checked</th></tr></thead><tbody>{{#each urls}}<tr><td><a href="{{url}}">{{url}}</a></td><td>{{what}}</td><td class="num"><span class="chip tone-{{tone}}">{{code}}</span></td><td class="mono small muted">{{checked}}</td></tr>{{/each}}</tbody></table></div>
+  {{else}}<div class="empty">No live page yet. Publish one with the publish play: <code>node scripts/publish.mjs --input site --project &lt;name&gt; --public</code></div>{{/if}}
+</section>
+
+<section class="siso-section" id="seats">
+  {{> section sections.seats}}
+  {{#if seats}}<div class="grid grid-3">{{#each seats}}<div class="card card--strip tone-agents"><span class="kicker" style="color:var(--accent-reflect)">{{state}}</span><b style="display:block;margin-top:4px;color:var(--crm-color-text-strong)">{{#if href}}<a href="{{href}}">{{name}}</a>{{else}}{{name}}{{/if}}</b>{{#if born}}<span class="small muted">born {{born}}{{#if closed}} · closed {{closed}}{{/if}}</span>{{/if}}{{#if last}}<div class="small" style="margin-top:6px"><span class="faint mono">{{last.at}}</span> {{{last.what}}}</div>{{/if}}</div>{{/each}}</div>
+  {{else}}<div class="empty no">Unowned: no seat has ever run on this project.</div>{{/if}}
+</section>
+
+<section class="siso-section" id="landed">
+  {{> section sections.landed}}
+  {{> evidence landed}}
+</section>
+
+<section class="siso-section" id="left">
+  {{> section sections.left}}
+  {{> contents left}}
+</section>
+
+<section class="siso-section" id="research">
+  {{> section sections.research}}
+  {{#if research}}<div class="grid grid-2">{{#each research}}<a class="card card--link card--strip tone-research" href="{{href}}"><span class="kicker" style="color:var(--accent-focus)">{{kind}}</span><b style="display:block;margin-top:4px;color:var(--crm-color-text-strong)">{{title}}</b><span class="small muted">{{meaning}}</span></a>{{/each}}</div>{{else}}<div class="empty">No research Works linked to this project.</div>{{/if}}
+</section>
+
+<section class="siso-section" id="docs">
+  {{> section sections.docs}}
+  {{#if docs}}<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Doc</th><th>What</th><th>Dated</th></tr></thead><tbody>{{#each docs}}<tr><td>{{#if href}}<a href="{{href}}"><code>{{path}}</code></a>{{else}}<code>{{path}}</code>{{/if}}</td><td class="small">{{what}}</td><td class="mono small muted">{{at}}</td></tr>{{/each}}</tbody></table></div>{{else}}<div class="empty">No dated docs listed.</div>{{/if}}
+</section>
+
+<section class="siso-section" id="timeline">
+  {{> section sections.timeline}}
+  {{> timeline timeline}}
+</section>
+
+<section class="siso-section" id="links">
+  {{> section sections.links}}
+  {{> related links}}
+</section>
+
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>
