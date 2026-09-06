@@ -1,0 +1,43 @@
+{{!-- U22 · Node — where things run. Reachable, by which route (probe-dated) · what runs there (seats, services) · budget and
+     capacity · placement rule · the other nodes. Probe-dated facts only; no IPs on the page. --}}
+{{> heading heading}}
+<section class="siso-section" id="reach">
+  {{> section sections.reach}}
+  <div class="grid grid-3" style="margin-bottom:var(--crm-space-4)">{{#each routes}}<div class="card card--strip tone-{{tone}}"><span class="kicker" style="color:var(--tone)">{{icon icon}} {{route}}</span><b style="display:block;margin-top:4px;color:var(--crm-color-text-strong)">{{state}}</b><span class="small muted">{{{how}}}</span><div class="small mono faint" style="margin-top:6px">probe {{probed}}</div></div>{{/each}}</div>
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Probe</th><th>Command</th><th>Result</th><th>When</th><th>By</th></tr></thead><tbody>{{#each probes}}<tr><td><b>{{what}}</b></td><td><code class="small">{{cmd}}</code></td><td><span class="chip tone-{{tone}}">{{result}}</span>{{#if note}} <span class="small muted">{{{note}}}</span>{{/if}}</td><td class="mono small">{{at}}</td><td class="small">{{by}}</td></tr>{{/each}}</tbody></table></div>
+</section>
+<section class="siso-section" id="runs">
+  {{> section sections.runs}}
+  {{#if seats}}<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Seat</th><th>Harness</th><th>Status</th><th>cwd</th><th>Last writeback</th></tr></thead><tbody>{{#each seats}}<tr><td><b>{{#if href}}<a href="{{href}}">{{name}}</a>{{else}}{{name}}{{/if}}</b></td><td class="small">{{harness}}</td><td><span class="chip tone-{{tone}}">{{status}}</span></td><td class="mono small muted">{{cwd}}</td><td class="mono small">{{last}}</td></tr>{{/each}}</tbody></table></div>{{else}}<div class="empty">No seat is live on this node.</div>{{/if}}
+  <div class="chips" style="margin-top:var(--crm-space-3)">{{> chips services}}</div>
+</section>
+<section class="siso-section" id="capacity">
+  {{> section sections.capacity}}
+  {{> metrics capacity.metrics}}
+  <dl class="kv" style="margin-top:var(--crm-space-4)">{{#each capacity.facts}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+</section>
+<section class="siso-section" id="placement">
+  {{> section sections.placement}}
+  {{> words words}}
+  <div style="margin-top:var(--crm-space-4)">{{> contents placement}}</div>
+</section>
+<section class="siso-section" id="nodes">
+  {{> section sections.nodes}}
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Node</th><th>Spec</th><th>Role today</th><th>Reach</th><th>Seats</th></tr></thead><tbody>{{#each nodes}}<tr{{#if this_one}} style="background:rgb(var(--stream-rgb) / 0.08)"{{/if}}><td><b>{{name}}</b>{{#if this_one}} <span class="chip tone-now">this page</span>{{/if}}</td><td class="small">{{spec}}</td><td class="small">{{{role}}}</td><td><span class="chip tone-{{tone}}">{{reach}}</span></td><td class="num">{{seats}}</td></tr>{{/each}}</tbody></table></div>
+</section>
+<section class="siso-section" id="evidence">
+  {{> section sections.evidence}}
+  {{> evidence evidence}}
+</section>
+<section class="siso-section" id="timeline">
+  {{> section sections.timeline}}
+  {{> timeline timeline}}
+</section>
+<section class="siso-section" id="related">
+  {{> section sections.related}}
+  {{> related related}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>
