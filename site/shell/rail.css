@@ -795,3 +795,122 @@
 }
 .siso-sidebar__profile-orb .siso-sidebar__brand-mark { font-size: var(--crm-text-xs); }
 .siso-sidebar__toggle svg[hidden] { display: none !important; }
+
+/* ===== 3 · animated state icons (his 21:05: "i do want animated icons same way we have animated icons
+ * on the other projects from the size of crm i want that also") =====
+ * Technique robbed from 21st.dev @dev.yadhakim/animated-state-icons (pick 40, "animated state icons, always
+ * useful to make the app feel nicer"; source registry/21st-source-harvest/source/dev.yadhakim__animated-state-icons/code.tsx,
+ * MIT per 21st.dev component terms — recorded in parts/SOURCES.md). That component animates SVG geometry on a
+ * state change: stroke pathLength 0→1, transform origin at the icon centre, cubic-bezier(0.32, 0.72, 0, 1),
+ * 0.35–0.5s, and a settle. framer-motion is not shippable in a static page, so the same three moves are done in
+ * CSS on :hover / :focus-visible / .is-active: the stroke redraws (dasharray + dashoffset), the glyph settles
+ * (scale + translate back to rest), and the active row holds its drawn state. No size, colour or spacing token
+ * changes: only transform, stroke-dash* and opacity animate. */
+
+.siso-sidebar {
+  --siso-icon-ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --siso-icon-draw: 420ms;
+  --siso-icon-settle: 260ms;
+}
+
+/* The draw. pathLength normalises every path/line/circle/rect to 1 unit regardless of its real length, so one
+ * dasharray value works for all 75 lucide glyphs (the attribute is set in shell/icons.mjs). */
+.siso-sidebar__nav-link svg[data-icon] > *,
+.siso-sidebar__compact-link svg[data-icon] > *,
+.siso-sidebar__utility-link svg[data-icon] > * {
+  stroke-dasharray: 1 1;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset var(--siso-icon-draw) var(--siso-icon-ease), opacity var(--siso-icon-settle) ease;
+}
+
+/* Hover / keyboard focus / active: wipe the stroke out and let it redraw, one glyph at a time. The offset goes to
+ * 1 (undrawn) at the start of the hover and returns to 0 over the draw duration — the same 0→1 pathLength move as
+ * the source's <motion.path animate={{pathLength: 1}}>. */
+@keyframes siso-icon-redraw {
+  0%   { stroke-dashoffset: 1; opacity: 0.25; }
+  55%  { opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 1; }
+}
+@keyframes siso-icon-settle {
+  0%   { transform: scale(0.82) translateY(1px); }
+  60%  { transform: scale(1.06) translateY(0); }
+  100% { transform: scale(1) translateY(0); }
+}
+/* The status dot on a live destination breathes; the source's auto-toggle, slowed to a rail's pace. */
+@keyframes siso-icon-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.45; transform: scale(0.78); }
+}
+
+.siso-sidebar__nav-link:hover svg[data-icon] > *,
+.siso-sidebar__nav-link:focus-visible svg[data-icon] > *,
+.siso-sidebar__compact-link:hover svg[data-icon] > *,
+.siso-sidebar__compact-link:focus-visible svg[data-icon] > *,
+.siso-sidebar__utility-link:hover svg[data-icon] > *,
+.siso-sidebar__utility-link:focus-visible svg[data-icon] > * {
+  animation: siso-icon-redraw var(--siso-icon-draw) var(--siso-icon-ease) both;
+}
+/* Stagger by child so a multi-path glyph draws as a sequence, not a flash. Ten steps covers every lucide icon
+ * in shell/icons.mjs (the widest is `boxes` with 13 children; later children share the last delay). */
+.siso-sidebar__nav-link:hover svg[data-icon] > *:nth-child(2),
+.siso-sidebar__compact-link:hover svg[data-icon] > *:nth-child(2) { animation-delay: 40ms; }
+.siso-sidebar__nav-link:hover svg[data-icon] > *:nth-child(3),
+.siso-sidebar__compact-link:hover svg[data-icon] > *:nth-child(3) { animation-delay: 80ms; }
+.siso-sidebar__nav-link:hover svg[data-icon] > *:nth-child(4),
+.siso-sidebar__compact-link:hover svg[data-icon] > *:nth-child(4) { animation-delay: 120ms; }
+.siso-sidebar__nav-link:hover svg[data-icon] > *:nth-child(n+5),
+.siso-sidebar__compact-link:hover svg[data-icon] > *:nth-child(n+5) { animation-delay: 150ms; }
+
+/* The settle: the whole glyph, not its parts. Transform-box keeps the origin at the icon's own centre the way the
+ * source's style={{transformOrigin:'20px 20px'}} does. */
+.siso-sidebar__nav-link svg[data-icon],
+.siso-sidebar__compact-link svg[data-icon],
+.siso-sidebar__utility-link svg[data-icon] {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform var(--siso-icon-settle) var(--siso-icon-ease);
+}
+.siso-sidebar__nav-link:hover svg[data-icon],
+.siso-sidebar__nav-link:focus-visible svg[data-icon],
+.siso-sidebar__compact-link:hover svg[data-icon],
+.siso-sidebar__compact-link:focus-visible svg[data-icon],
+.siso-sidebar__utility-link:hover svg[data-icon] {
+  animation: siso-icon-settle var(--siso-icon-settle) var(--siso-icon-ease) both;
+}
+
+/* The current destination arrives drawn and stays drawn (the source's `done` state). */
+.siso-sidebar__nav-link.is-active svg[data-icon] > *,
+.siso-sidebar__compact-link.is-active svg[data-icon] > * {
+  animation: siso-icon-redraw var(--siso-icon-draw) var(--siso-icon-ease) both;
+}
+
+/* Live status chip on a destination. */
+.siso-sidebar__link-status[data-state="live"]::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: var(--crm-space-1);
+  border-radius: 50%;
+  background: var(--siso-sidebar-amber-bright);
+  vertical-align: middle;
+  animation: siso-icon-pulse 2200ms var(--siso-icon-ease) infinite;
+}
+
+/* The toggle's two glyphs cross-fade rather than cut (the source's AnimatePresence mode="wait"). */
+.siso-sidebar__toggle:hover svg[data-icon] > * { animation: siso-icon-redraw var(--siso-icon-draw) var(--siso-icon-ease) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .siso-sidebar__nav-link svg[data-icon],
+  .siso-sidebar__nav-link svg[data-icon] > *,
+  .siso-sidebar__compact-link svg[data-icon],
+  .siso-sidebar__compact-link svg[data-icon] > *,
+  .siso-sidebar__utility-link svg[data-icon],
+  .siso-sidebar__utility-link svg[data-icon] > *,
+  .siso-sidebar__toggle svg[data-icon] > *,
+  .siso-sidebar__link-status[data-state="live"]::before {
+    animation: none !important;
+    transition: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+}

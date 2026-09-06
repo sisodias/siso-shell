@@ -14,7 +14,11 @@ const isExternal = (href) => /^https?:\/\//i.test(href);
 
 function status(dest) {
   if (dest.private) return `<span class="siso-sidebar__link-status" title="private">${icon('lock')}</span>`;
-  if (dest.status) return `<span class="siso-sidebar__link-status">${esc(dest.status)}</span>`;
+  if (dest.status) {
+    /* A live destination gets a breathing dot (rail.css §3); every other status is a plain count/label. */
+    const state = /^(live|now|active)$/i.test(dest.status) ? ' data-state="live"' : '';
+    return `<span class="siso-sidebar__link-status"${state}>${esc(dest.status)}</span>`;
+  }
   return '';
 }
 
