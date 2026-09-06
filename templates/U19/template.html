@@ -1,0 +1,57 @@
+{{!-- U19 · Compute run — receipts visible. Sections: preregistration · arms + effort applied · tokens per arm, ratio with n ·
+     acceptance verdict · runtime audit · what it changes. Numbers only from receipt files; requested vs applied shown separately. --}}
+{{> heading heading}}
+
+<section class="siso-section" id="prereg">
+  {{> section sections.prereg}}
+  <div class="grid grid-2">
+    <div><dl class="kv">{{#each prereg.facts}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl></div>
+    <div class="card"><span class="kicker dim">Hashes registered before inference</span><dl class="kv small" style="margin-top:8px;grid-template-columns:200px 1fr">{{#each prereg.hashes}}<dt style="text-transform:none;letter-spacing:0">{{k}}</dt><dd class="mono faint">{{v}}</dd>{{/each}}</dl></div>
+  </div>
+</section>
+
+<section class="siso-section" id="arms">
+  {{> section sections.arms}}
+  <div class="grid grid-2">{{#each arms}}<div class="card card--strip tone-{{tone}}">
+    <span class="kicker" style="color:var(--tone)">arm · {{id}}</span>
+    <dl class="kv" style="margin-top:8px;grid-template-columns:130px 1fr">
+      <dt>requested</dt><dd><code>{{requested}}</code></dd>
+      <dt>applied</dt><dd><code>{{applied}}</code> <span class="small muted">{{applied_note}}</span></dd>
+      <dt>window</dt><dd class="mono small">{{started}} → {{finished}}</dd>
+      <dt>thread</dt><dd class="mono small faint">{{thread}}</dd>
+      <dt>exit</dt><dd>{{exit}}</dd>
+    </dl>
+  </div>{{/each}}</div>
+</section>
+
+<section class="siso-section" id="numbers">
+  {{> section sections.numbers}}
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>metric</th>{{#each arms}}<th class="num">{{id}}</th>{{/each}}<th class="num">ratio</th></tr></thead><tbody>{{#each rows}}<tr><td>{{label}}</td>{{#each values}}<td class="num">{{.}}</td>{{/each}}<td class="num"><b>{{ratio}}</b></td></tr>{{/each}}</tbody></table></div>
+  <p class="small muted" style="margin-top:var(--crm-space-2)">{{{numbers_note}}}</p>
+</section>
+
+<section class="siso-section" id="verdict">
+  {{> section sections.verdict}}
+  <div class="card card--strip tone-{{verdict.tone}}" style="padding:var(--crm-space-5) var(--crm-space-6)">
+    <span class="kicker" style="color:var(--tone)">{{verdict.kicker}}</span>
+    <h3 style="margin-top:6px;font-size:var(--crm-text-lg)">{{verdict.value}}</h3>
+    <p style="margin-top:8px">{{{verdict.text}}}</p>
+    {{#if verdict.claim}}<p class="small muted" style="margin-top:8px"><b>Claim under test:</b> {{{verdict.claim}}}</p>{{/if}}
+  </div>
+  <div class="grid grid-2" style="margin-top:var(--crm-space-3)">{{#each acceptance}}<div class="card"><span class="kicker dim">{{id}} · acceptance</span><ul class="small" style="margin-top:6px">{{#each checks}}<li><span class="{{#if pass}}ok{{else}}no{{/if}}">{{#if pass}}✓{{else}}✗{{/if}}</span> {{name}}</li>{{/each}}</ul></div>{{/each}}</div>
+</section>
+
+<section class="siso-section" id="audit">
+  {{> section sections.audit}}
+  {{> evidence audit}}
+</section>
+
+<section class="siso-section" id="changes">
+  {{> section sections.changes}}
+  {{> related changes}}
+</section>
+
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

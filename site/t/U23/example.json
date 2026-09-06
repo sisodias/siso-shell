@@ -33,7 +33,7 @@
     "subtitle": "Every page family the Great Library and every SISO front door needs. Click one: why it exists, the twelve things it carries, what to rob, the data it renders, and the rendered example in the CRM shell.",
     "badges": [
       {
-        "label": "4 of 24 built",
+        "label": "6 of 24 built",
         "tone": "warn",
         "dot": true
       },
@@ -52,7 +52,7 @@
     ],
     "status": {
       "kicker": "Build order",
-      "value": "4 landed · 20 to go",
+      "value": "6 landed · 18 to go",
       "note": "Shell first because every page sits in it. Parts second so nothing drifts. Gallery third so he judges each template as it lands. Then the project one pager, the God Question with its compute run, the Work page, Agent Zero, the landing, and the records.",
       "facts": [
         {
@@ -136,7 +136,7 @@
       "href": "#order"
     },
     {
-      "value": 4,
+      "value": 6,
       "label": "built and published",
       "tone": "warn",
       "href": "/?status=built#order"
@@ -306,12 +306,12 @@
         "title": "God Question",
         "summary": "God Question page <span class=\"faint\">· 22 (GOD-QUESTIONS.md; 18 registered as Works; 14 GQ URLs fall through to root)</span>",
         "href": "/t/U5/",
-        "status": "spec",
+        "status": "built",
         "tone": "research",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",
@@ -330,12 +330,12 @@
         "title": "Compute run",
         "summary": "Compute run page <span class=\"faint\">· runs: 2026-09-05-gq-compute, 2026-09-06-j2 (medium vs xhigh), e1 windows ×3; receipts in domains/compute/runs/</span>",
         "href": "/t/U19/",
-        "status": "spec",
+        "status": "built",
         "tone": "research",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",

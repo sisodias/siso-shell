@@ -1,0 +1,62 @@
+{{!-- U5 · God Question — where a decision target meets its evidence and its compute.
+     Sections (plan order): the question + decision target · research state + counterexample · evidence map with dated receipts ·
+     subquestions → compute modules allocated / not · expected answer package · who is on it + host. --}}
+{{> heading heading}}
+
+<section class="siso-section" id="question">
+  {{> section sections.question}}
+  <div class="grid grid-2">
+    <div class="card card--strip tone-research"><span class="kicker" style="color:var(--accent-focus)">Decision target</span><p style="margin-top:6px">{{{decision}}}</p></div>
+    <div class="card card--strip tone-warn"><span class="kicker" style="color:var(--accent-tasks)">Counterexample rule</span><p style="margin-top:6px">{{{counterexample}}}</p></div>
+  </div>
+  {{#if words}}<div style="margin-top:var(--crm-space-4)">{{> words words}}</div>{{/if}}
+</section>
+
+<section class="siso-section" id="state">
+  {{> section sections.state}}
+  <div class="grid grid-3">
+    <div class="card"><span class="kicker">Finding</span><p class="small" style="margin-top:6px">{{{state.finding}}}</p></div>
+    <div class="card"><span class="kicker dim">Unknown</span><p class="small" style="margin-top:6px">{{{state.unknown}}}</p></div>
+    <div class="card"><span class="kicker dim">Next</span><p class="small" style="margin-top:6px">{{{state.next}}}</p>{{#if state.dependencies}}<div class="chips" style="margin-top:8px">{{> chips state.dependencies}}</div>{{/if}}</div>
+  </div>
+</section>
+
+<section class="siso-section" id="evidence">
+  {{> section sections.evidence}}
+  {{> evidence evidence}}
+</section>
+
+<section class="siso-section" id="map">
+  {{> section sections.map}}
+  {{> map map}}
+</section>
+
+<section class="siso-section" id="modules">
+  {{> section sections.modules}}
+  {{> contents modules}}
+</section>
+
+<section class="siso-section" id="answer">
+  {{> section sections.answer}}
+  <div class="flow">{{#each answer}}<div class="flow-step"><b>{{label}}</b><span>{{{what}}}</span></div>{{/each}}</div>
+</section>
+
+<section class="siso-section" id="who">
+  {{> section sections.who}}
+  <div class="grid grid-3">{{#each seats}}<div class="card card--strip tone-agents"><span class="kicker" style="color:var(--accent-reflect)">{{state}}{{#if host}} <span class="dim">· host {{host}}</span>{{/if}}</span><b style="display:block;margin-top:4px;color:var(--crm-color-text-strong)">{{#if href}}<a href="{{href}}">{{name}}</a>{{else}}{{name}}{{/if}}</b>{{#if what}}<span class="small muted">{{{what}}}</span>{{/if}}{{#if cost}}<div class="small mono faint" style="margin-top:6px">{{cost}}</div>{{/if}}</div>{{else}}<div class="empty">No seat has run on this question.</div>{{/each}}</div>
+</section>
+
+<section class="siso-section" id="timeline">
+  {{> section sections.timeline}}
+  {{> timeline timeline}}
+</section>
+
+<section class="siso-section" id="links">
+  {{> section sections.links}}
+  {{> related links}}
+</section>
+
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

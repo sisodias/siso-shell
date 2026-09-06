@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "title": "2026-09-06-j2 · compute run",
+    "description": "J2: medium vs xhigh on one real brief, Mac Mini, native openai route. Receipts: preregistration, per-arm run/metadata, acceptance, runtime audit.",
+    "stream": "research",
+    "crumb": [{ "label": "Templates", "href": "/" }, { "label": "U19 · Compute run", "href": "/t/U19/" }, { "label": "2026-09-06-j2" }],
+    "actions": [{ "label": "GQ-011", "href": "/t/U5/example/", "icon": "flask-conical" }, { "label": "runs/", "href": "https://github.com/sisodias/siso-agent-zero-protocol", "icon": "git-branch", "external": true }],
+    "source": "00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2/{preregistration,j2,acceptance,runtime-audit}.json · medium|xhigh/{run,metadata}.json"
+  },
+  "heading": {
+    "breadcrumb": [{ "label": "God Questions", "href": "/t/U5/" }, { "label": "GQ-011", "href": "/t/U5/example/" }, { "label": "runs" }],
+    "kicker": "run <span class=\"sep\">·</span> GQ-011 / D-18 <span class=\"sep\">·</span> <span class=\"dim\">6 Sep 2026 · Mac Mini · native openai · gpt-6-astra</span>",
+    "title": "2026-09-06-j2",
+    "subtitle": "Does requested reasoning effort <code>medium</code> versus <code>xhigh</code> change usage, time or accepted work on one real brief (the E1 response-window summarizer)? Two clean arms, same seed, same prompt, no delegation.",
+    "badges": [
+      { "label": "measured with limits", "tone": "warn", "dot": true },
+      { "label": "n = 1 brief · 1 run per arm", "tone": "muted" },
+      { "label": "effort applied · null in both", "tone": "blocked" },
+      { "label": "both arms pass 12/12", "tone": "now" }
+    ],
+    "status": {
+      "kicker": "Verdict (j2.json)",
+      "value": "inconclusive · effective effort not verified",
+      "note": "Requested-effort runs are approximately 1× in measured usage, turns and time, not about 4×. Neither proves nor refutes a general four-times claim; read as <b>untested, not refuted</b>.",
+      "facts": [
+        { "k": "input", "v": "122,427 vs 122,327 · <b>1.00×</b>" },
+        { "k": "output", "v": "4,101 vs 4,027 · <b>1.02×</b>" },
+        { "k": "wall", "v": "146.3 s vs 143.1 s · 1.02×" },
+        { "k": "applied", "v": "<code>null</code> · <code>null</code>" }
+      ]
+    }
+  },
+  "sections": {
+    "prereg": { "n": "01", "title": "Preregistration", "sub": "what we expected, registered before inference · preregistration.json 2026-09-05T20:48:30Z" },
+    "arms": { "n": "02", "title": "Arms, and the effort actually applied", "sub": "requested from run.json args · applied from the rollout's thread settings (metadata.json)" },
+    "numbers": { "n": "03", "title": "Numbers, with n", "sub": "acceptance.json usage · n = 1 brief, 1 run per arm" },
+    "verdict": { "n": "04", "title": "Acceptance verdict" },
+    "audit": { "n": "05", "title": "Runtime audit", "sub": "facts from runtime-audit.json; confounds from j2.json are proposals until measured" },
+    "changes": { "n": "06", "title": "What it changes" },
+    "agent": { "n": "07", "title": "Agent entry" }
+  },
+  "prereg": {
+    "facts": [
+      { "k": "assignment", "v": "J2 / D-18 then E1" },
+      { "k": "registered", "v": "2026-09-05T20:48:30.689Z (6 Sep 03:48 UTC+07), status <code>registered_before_inference</code>" },
+      { "k": "node · route", "v": "Shaans-Mac-mini.local · native openai / existing ChatGPT login · <code>gpt-6-astra</code>" },
+      { "k": "arms · order", "v": "medium then xhigh; fixed order recorded as a confound" },
+      { "k": "real brief", "v": "Implement reusable E1 response-window summarizer; winning accepted code used on actual first-three-owner E1 data" },
+      { "k": "clean runs", "v": "same seed · same prompt · user config ignored · context management explicitly enabled · approval never · sandbox workspace-write, tool network disabled · no delegation" },
+      { "k": "acceptance", "v": "12 functional holdout checks + 2 provided tests + permitted-file scope + parent code review; first correct action = earliest captured version passing the parent holdout tests (file events + 1 s polling)" },
+      { "k": "claim under test", "v": "factor 4, 'about four times'; metric from his chart not supplied → report separate ratios, no quota multiplier without debit evidence" }
+    ],
+    "hashes": [
+      { "k": "seed/AGENTS.md", "v": "a6d75837…9236511" },
+      { "k": "seed/BRIEF.md", "v": "b72244bc…19b8b2" },
+      { "k": "seed/response-window.test.mjs", "v": "261af503…637058" },
+      { "k": "seed/context/observe.mjs", "v": "c2987380…2ddda" },
+      { "k": "grade.mjs", "v": "9610fa0a…c53a" },
+      { "k": "run-pair.mjs", "v": "16d79060…5293" }
+    ]
+  },
+  "arms": [
+    { "id": "medium", "tone": "research", "requested": "medium", "applied": "null", "applied_note": "collaboration_mode.settings.reasoning_effort in the rollout's turn_context", "started": "2026-09-05T20:48:34.706Z", "finished": "2026-09-05T20:51:01.031Z", "thread": "01a07354-8af2-70f2-9966-1c0dfcb874d8", "exit": "code 0 · no violation · wall 146,325 ms" },
+    { "id": "xhigh", "tone": "clients", "requested": "xhigh", "applied": "null", "applied_note": "same field, same value; only requested settings are known", "started": "2026-09-05T20:51:01.033Z", "finished": "2026-09-05T20:53:24.172Z", "thread": "01a07356-c481-76e3-8c03-3d1365a17a14", "exit": "code 0 · no violation · wall 143,139 ms" }
+  ],
+  "rows": [
+    { "label": "input tokens", "values": ["122,427", "122,327"], "ratio": "1.00×" },
+    { "label": "cached input tokens", "values": ["92,672", "92,672"], "ratio": "1.00×" },
+    { "label": "uncached input tokens", "values": ["29,755", "29,655"], "ratio": "1.00×" },
+    { "label": "output tokens", "values": ["4,101", "4,027"], "ratio": "1.02×" },
+    { "label": "reasoning output tokens", "values": ["240", "248"], "ratio": "0.97×" },
+    { "label": "model responses", "values": ["5", "5"], "ratio": "1.00×" },
+    { "label": "user turns", "values": ["1", "1"], "ratio": "1.00×" },
+    { "label": "first correct action", "values": ["68,135 ms", "67,121 ms"], "ratio": "1.02×" },
+    { "label": "wall", "values": ["146,325 ms", "143,139 ms"], "ratio": "1.02×" },
+    { "label": "holdout checks passed", "values": ["12 / 12", "12 / 12"], "ratio": "—" },
+    { "label": "snapshots captured", "values": ["1", "1"], "ratio": "—" }
+  ],
+  "numbers_note": "Ratios are medium ÷ xhigh from <code>acceptance.json</code>. n = 1 brief and 1 run per arm: one real brief, one run per effort; not general model-quality evidence or a bill comparison. Quota or cost: <b>not tested</b> (no isolated subscription debit, invoice or per-run allowance measurement).",
+  "verdict": {
+    "kicker": "j2.json · claim.verdict",
+    "value": "inconclusive_effective_effort_not_verified",
+    "text": "Both arms pass every holdout check and both provided tests; the medium-labelled output was selected for the real E1 analysis with no reasoning-quality winner inferred (<code>selection_reason</code>). Requested-effort runs are approximately 1× in usage, turns and time. Because <code>reasoning_effort</code> is <code>null</code> in both rollouts, this is not a verified medium/xhigh contrast: the 'about four times' claim is <b>untested, not refuted</b>.",
+    "claim": "'Medium reasoning makes it stretch a lot further, the usage. about four times further' (Shaan, 6 Sep 03:00).",
+    "tone": "warn"
+  },
+  "acceptance": [
+    { "id": "medium", "checks": [
+      { "name": "twenty on each side; no padding or boundary leakage", "pass": true }, { "name": "earliest duplicate time and key order cannot shift window", "pass": true }, { "name": "usage conflict rejected", "pass": true }, { "name": "turn and thread identity conflicts rejected", "pass": true }, { "name": "counter resets do not change additive response accounting", "pass": true }, { "name": "input remains untouched, including frozen rows", "pass": true }, { "name": "tie order, ISO normalization and first-seen user turns", "pass": true }, { "name": "missing IDs counted, other kinds ignored, identity null normalized", "pass": true }, { "name": "empty totals and unknown optional totals", "pass": true }, { "name": "invalid arguments rejected", "pass": true }, { "name": "invalid reported usage and timestamps rejected", "pass": true }, { "name": "top-level contract and default window", "pass": true } ] },
+    { "id": "xhigh", "checks": [
+      { "name": "twenty on each side; no padding or boundary leakage", "pass": true }, { "name": "earliest duplicate time and key order cannot shift window", "pass": true }, { "name": "usage conflict rejected", "pass": true }, { "name": "turn and thread identity conflicts rejected", "pass": true }, { "name": "counter resets do not change additive response accounting", "pass": true }, { "name": "input remains untouched, including frozen rows", "pass": true }, { "name": "tie order, ISO normalization and first-seen user turns", "pass": true }, { "name": "missing IDs counted, other kinds ignored, identity null normalized", "pass": true }, { "name": "empty totals and unknown optional totals", "pass": true }, { "name": "invalid arguments rejected", "pass": true }, { "name": "invalid reported usage and timestamps rejected", "pass": true }, { "name": "top-level contract and default window", "pass": true } ] }
+  ],
+  "audit": {
+    "facts": [
+      { "claim": "Seed files unchanged in both work trees after the run: AGENTS.md, BRIEF.md, response-window.test.mjs, context/observe.mjs (4/4 <code>unchanged: true</code> per arm).", "receipt": "runtime-audit.json seedChecks" },
+      { "claim": "Both invocations used <code>--ignore-user-config</code> with explicit <code>-c</code> arguments; launcher sha256 <code>3b8363aa…</code> identical before and after in both arms.", "receipt": "medium/run.json · xhigh/run.json args, before/after" },
+      { "claim": "Rollouts recovered read-only by exact thread ID; medium rollout 192,878 bytes sha256 <code>7fd47f21…</code>.", "receipt": "runtime-audit.json source" },
+      { "claim": "Final implementation hashes differ per arm (medium <code>6f44c34e…</code>, xhigh <code>7f209064…</code>); parent review: pure computation, no imports or side effects.", "receipt": "acceptance.json final_sha256 · source_review" },
+      { "claim": "Skill catalog hash identical and context guide non-empty in both arms; the same skill-load errors occurred in both.", "receipt": "j2.json confounds[5] · medium/metadata.json world_state" }
+    ],
+    "proposals": [
+      { "claim": "Nine existing E3 owners were switched to medium around 03:04 by an actor outside Fable; effort drift would invalidate a clean comparison.", "why": "confound; later resolved as Shaan's own change (source/2026-09-06-0345)" },
+      { "claim": "Sequential fixed order, cache state, shared-account/server load and small sample may affect timing and usage.", "why": "confound, unmeasured" },
+      { "claim": "The Mini's global config hash changed during the medium arm, by an unobserved actor; both arms ignored user config.", "why": "confound, unmeasured" },
+      { "claim": "The xhigh arm's initial SQLite metadata lookup failed; rollout recovered by thread ID.", "why": "recovery path, not a result" }
+    ],
+    "limits": ["Effective effort is not independently persisted in either exec rollout; both <code>null</code> values cannot be read as medium, xhigh or equal.", "First-correct timing is the earliest captured passing version, not an instrumented model intention or server timestamp."],
+    "version": { "label": "j2.json status measured_with_limits · registered 2026-09-05T20:48:30Z", "at": "2026-09-06" }
+  },
+  "changes": [
+    { "title": "GQ-011 · current answer stays 'untested, not refuted'", "href": "/t/U5/example/", "type": "U5 God Question", "tone": "research", "why": "the 4× claim survived a night because no page showed ratio 1.00× with effort null; now it does" },
+    { "title": "G11 · re-run when a seat can persist applied effort", "href": "/t/U5/example/#modules", "type": "module", "tone": "warn", "why": "host hold" },
+    { "title": "D-18 · J2 then E1", "href": "/t/U16/", "type": "U16 decision", "tone": "agents", "why": "this run is the J2 half; E1 followed (e1.json)" },
+    { "title": "GQ-COMPUTE", "href": "/t/U17/", "type": "U17 seat", "tone": "agents", "why": "ran both arms on the Mini; closed 6 Sep 13:36" },
+    { "title": "Standing rule · medium everywhere except Oracle streaming", "href": "/t/U18/", "type": "U18 source · 6 Sep 03:45", "tone": "clients", "why": "his rule; this run neither supports nor undermines it" }
+  ],
+  "quickstart": {
+    "entry": { "path": "00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2/preregistration.json" },
+    "owner": { "name": "GQ-COMPUTE (closed)", "last": "6 Sep 13:36" },
+    "context_url": "https://siso-shell.pages.dev/t/U19/example.json",
+    "verification": "Open this page and see two arms, 122,427 vs 122,327 input, ratio 1.00×, reasoning_effort null in both, and the verdict; then compare against <code>acceptance.json</code>.",
+    "commands": [
+      "cd 00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2",
+      "jq '.medium.usage, .xhigh.usage' acceptance.json",
+      "jq '.medium.records[] | select(.type==\"turn_context\") | .payload.collaboration_mode.settings.reasoning_effort' runtime-audit.json",
+      "node run-pair.mjs   # re-run both arms on the Mini (native route)"
+    ]
+  }
+}

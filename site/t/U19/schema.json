@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "U19 · Compute run page",
+  "description": "One measured run under its God Question. Source: domains/compute/runs/<run>/{preregistration,run,acceptance,runtime-audit}.json, <arm>/metadata.json (effort applied), <arm>/run.json. Numbers only from receipt files; requested vs applied shown separately. Shared $defs in templates/U0/schema.json.",
+  "type": "object",
+  "required": ["meta", "heading", "sections", "prereg", "arms", "rows", "verdict", "acceptance", "audit", "changes", "quickstart"],
+  "properties": {
+    "meta": { "$ref": "U0/schema.json#/$defs/meta" },
+    "heading": { "$ref": "U0/schema.json#/$defs/heading", "description": "title = run id; subtitle = GQ · date · host; status = the verdict" },
+    "sections": { "type": "object", "description": "keys: prereg arms numbers verdict audit changes agent" },
+    "prereg": { "type": "object", "required": ["facts"], "properties": { "facts": { "type": "array", "items": { "type": "object", "required": ["k", "v"] } }, "hashes": { "type": "array", "items": { "type": "object", "required": ["k", "v"] } } } },
+    "arms": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["id", "requested", "applied", "started", "finished"], "properties": { "id": { "type": "string" }, "tone": { "type": "string" }, "requested": { "type": "string" }, "applied": { "type": "string", "description": "read from the rollout; 'null' when not persisted" }, "applied_note": { "type": "string" }, "started": { "type": "string" }, "finished": { "type": "string" }, "thread": { "type": "string" }, "exit": { "type": "string" } } } },
+    "rows": { "type": "array", "items": { "type": "object", "required": ["label", "values", "ratio"], "properties": { "label": { "type": "string" }, "values": { "type": "array" }, "ratio": { "type": "string" } } } },
+    "numbers_note": { "type": "string" },
+    "verdict": { "type": "object", "required": ["kicker", "value", "text", "tone"], "properties": { "kicker": { "type": "string" }, "value": { "type": "string" }, "text": { "type": "string" }, "claim": { "type": "string" }, "tone": { "type": "string" } } },
+    "acceptance": { "type": "array", "items": { "type": "object", "required": ["id", "checks"], "properties": { "id": { "type": "string" }, "checks": { "type": "array", "items": { "type": "object", "required": ["name", "pass"] } } } } },
+    "audit": { "$ref": "U0/schema.json#/$defs/evidence", "description": "runtime audit: seed unchanged, config hashes, confounds as proposals" },
+    "changes": { "$ref": "U0/schema.json#/$defs/related", "description": "what it changes: the GQ, decisions, seats" },
+    "quickstart": { "$ref": "U0/schema.json#/$defs/quickstart" }
+  }
+}

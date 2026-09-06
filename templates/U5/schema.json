@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "U5 · God Question page",
+  "description": "One God Question: the card from GOD-QUESTIONS.md, its modules from plan/modules.json (domain god-questions / efficiency / plays), its runs from domains/compute/runs/<run>/ (U19), the words that raised it (source/). Shared $defs in templates/U0/schema.json.",
+  "type": "object",
+  "required": ["meta", "heading", "sections", "decision", "counterexample", "state", "evidence", "map", "modules", "answer", "seats", "timeline", "links", "quickstart"],
+  "properties": {
+    "meta": { "$ref": "U0/schema.json#/$defs/meta" },
+    "heading": { "$ref": "U0/schema.json#/$defs/heading", "description": "kicker GQ-NNN · section · host; title = the question; subtitle = decision target in one line; badges = state, host, Library page state; status = current answer with its label (proposed / measured / untested)" },
+    "sections": { "type": "object", "description": "keys: question state evidence map modules answer who timeline links agent" },
+    "decision": { "type": "string", "description": "the decision this question changes" },
+    "counterexample": { "type": "string", "description": "what would refute the current answer" },
+    "words": { "type": "array", "description": "his words that raised it, verbatim, dated", "items": { "type": "object", "required": ["text", "who", "at"] } },
+    "state": { "type": "object", "required": ["finding", "unknown", "next"], "properties": { "finding": { "type": "string" }, "unknown": { "type": "string" }, "next": { "type": "string" }, "dependencies": { "type": "array", "items": { "$ref": "U0/schema.json#/$defs/chip" } } } },
+    "evidence": { "$ref": "U0/schema.json#/$defs/evidence", "description": "facts cite a receipt path + date and carry n; proposals are unmeasured claims" },
+    "map": { "type": "object", "description": "question → subquestions → modules → runs → Works", "required": ["centre", "types"] },
+    "modules": { "type": "object", "description": "compute modules: allocated / done / unallocated by host, each with its verification line", "properties": { "items": { "type": "array", "items": { "type": "object", "required": ["label", "state", "tone", "what"] } }, "steps": { "type": "array" } } },
+    "answer": { "type": "array", "description": "expected answer package, ordered", "items": { "type": "object", "required": ["label", "what"] } },
+    "seats": { "type": "array", "items": { "type": "object", "required": ["name", "state"], "properties": { "name": { "type": "string" }, "state": { "type": "string" }, "host": { "type": "string" }, "href": { "type": "string" }, "what": { "type": "string" }, "cost": { "type": "string" } } } },
+    "timeline": { "type": "object", "description": "runs + decisions + words by date" },
+    "links": { "$ref": "U0/schema.json#/$defs/related" },
+    "quickstart": { "$ref": "U0/schema.json#/$defs/quickstart" }
+  }
+}

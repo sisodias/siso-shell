@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "GQ-011 · How do Astra, Luna and delegation yield more accepted work?",
+    "description": "God Question GQ-011: decision target, counterexample, evidence with receipts (J2, E1, the Oracle token-waste lesson), compute modules by host.",
+    "stream": "research",
+    "crumb": [{ "label": "Templates", "href": "/" }, { "label": "U5 · God Question", "href": "/t/U5/" }, { "label": "GQ-011" }],
+    "actions": [
+      { "label": "GOD-QUESTIONS.md", "href": "https://github.com/sisodias/siso-agent-zero-protocol", "icon": "file-text", "external": true },
+      { "label": "J2 run", "href": "/t/U19/example/", "icon": "cpu" }
+    ],
+    "source": "00_AGENT_ZERO/GOD-QUESTIONS.md#GQ-011 · plan/modules.json · domains/compute/runs/2026-09-06-j2/ · source/2026-09-06-{0300,0345,1530,1832}"
+  },
+  "heading": {
+    "breadcrumb": [{ "label": "God Questions", "href": "/t/U5/" }, { "label": "GQ-011" }],
+    "kicker": "GQ-011 <span class=\"sep\">·</span> compute <span class=\"sep\">·</span> <span class=\"dim\">host hold · priority 1 with GQ-008</span>",
+    "title": "How do Astra, Luna and delegation yield more accepted work?",
+    "subtitle": "Strong ownership versus bounded Luna work versus doing a small operation inline: which tier for which task shape, measured on accepted outcomes, not on tokens alone.",
+    "badges": [
+      { "label": "research", "tone": "research" },
+      { "label": "state · measured with limits", "tone": "warn", "dot": true },
+      { "label": "modules · 1 landed · 3 partial · 1 unallocated", "tone": "warn", "href": "#modules" },
+      { "label": "Library page · GQ-011 is Mathematics (D-20); compute is GQ-023", "tone": "muted", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-023/" }
+    ],
+    "status": {
+      "kicker": "Current answer · proposed",
+      "value": "Untested, not refuted",
+      "note": "The 'about four times' medium-vs-xhigh claim ran once on a real brief (J2): usage ratio 1.00× on input, 1.02× on output, effort applied <code>null</code> in both receipts. 'Free/unlimited Luna', 3×/4×/10× and 75% overhead are not measured facts.",
+      "facts": [
+        { "k": "receipt", "v": "<code>domains/compute/runs/2026-09-06-j2/j2.json</code>" },
+        { "k": "n", "v": "1 brief · 1 run per arm" },
+        { "k": "dated", "v": "6 Sep 03:48–03:53 UTC+07 (Mini)" }
+      ]
+    }
+  },
+  "sections": {
+    "question": { "n": "01", "title": "The question and the decision it changes", "sub": "GOD-QUESTIONS.md card · his words that raised it" },
+    "state": { "n": "02", "title": "Research state", "sub": "finding · unknown · next, from the card" },
+    "evidence": { "n": "03", "title": "Evidence map", "sub": "every fact cites a receipt path and a date and carries n; the rest is proposal" },
+    "map": { "n": "04", "title": "Mind map", "sub": "question → subquestions → modules → runs → Works" },
+    "modules": { "n": "05", "title": "Compute modules", "sub": "allocated / done / unallocated by host, each with its verification line (plan/modules.json)" },
+    "answer": { "n": "06", "title": "Expected answer package", "sub": "what would close it" },
+    "who": { "n": "07", "title": "Who is on it" },
+    "timeline": { "n": "08", "title": "Timeline", "sub": "runs · decisions · his words, 5–6 Sep" },
+    "links": { "n": "09", "title": "Links out" },
+    "agent": { "n": "10", "title": "Agent entry" }
+  },
+  "decision": "Strong ownership versus bounded Luna work versus doing a small operation inline: which tier, for which task shape, by accepted work, allowance, latency and recovery. Dependencies: GQ-008 (which model and route earn each task), GQ-012 (context), GQ-016 (owners without a bottleneck).",
+  "counterexample": "If, on ≥10 real dispatches of one task class on one unchanged route, the cheaper tier's accepted-work rate and repair cost are as good as the stronger tier's, the ownership premium is refuted for that class. Conversely, if setup + verification + repair erase the delegation gain, 'Luna for the dumb 80%' is refuted. Until then every multiplier is a proposal.",
+  "words": [
+    { "text": "apparently reasoning's a big thing. A lot of things don't need more than medium reasoning, according to the chart. Medium reasoning makes it stretch a lot further, the usage. about four times further along with this config the compact one", "who": "Shaan → Fable FA0", "at": "6 Sep 03:00" },
+    { "text": "we needed a smart way to deploy lunar sub have astras use astra for reasoning and lunar sub agents for work because i'll be real we've just rinsed three weekly plans in the last 24 hours this is like unsustainable", "who": "Shaan → Fable FA0", "at": "6 Sep 03:45" },
+    { "text": "we're going to go ultra compute efficient on this so every one of these guys are going down to medium thinking and they can use lunar sub agents to do 80 of the dumb stuff", "who": "Shaan → Fable FA0", "at": "6 Sep 15:30" },
+    { "text": "If you can use Haiku 4.5 for sub-agents, that might be better … we're running low on our GPT and I kinda wanna reserve that for, like, more important shit … Just use Haiku for now", "who": "Shaan → AGENT-ZERO", "at": "6 Sep ~18:45" }
+  ],
+  "state": {
+    "finding": "One helper lost its assignment through a rewrite and completed after a file-packet workaround; earlier worker DONE gates were narrower than intended outcomes. P6's integrated tier / lean-dispatch rules use one Playbook source and the two originally checked harness links; September 6 native discovery exposed a conflicting Hub projection in <code>.agents/skills</code>, so a name-only PASS cannot certify P6.",
+    "unknown": "Net gain after setup, verification and repair. Account debit per route. Whether 'effort applied' can be read back from any rollout at all (J2: <code>null</code> in both).",
+    "next": "Score naturally occurring work by task class and accepted outcome; do not launch another benchmark swarm. Re-run J2 only when a seat can persist applied effort in the receipt.",
+    "dependencies": [{ "label": "GQ-008 route", "tone": "research", "href": "/t/U5/" }, { "label": "GQ-012 context", "tone": "research", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-012/" }, { "label": "GQ-016 owners", "tone": "research", "href": "/t/U5/" }]
+  },
+  "evidence": {
+    "facts": [
+      { "claim": "<b>J2 · medium vs xhigh, one real brief, one run per arm.</b> Input tokens 122,427 vs 122,327 (ratio 1.00×); output 4,101 vs 4,027 (1.02×); reasoning 240 vs 248; uncached input 29,755 vs 29,655; wall 146.3 s vs 143.1 s; first correct action 68.1 s vs 67.1 s; 12/12 holdout checks pass in both; 5 model responses each. <code>reasoning_effort: null</code> in both rollouts, so this is not a verified medium/xhigh contrast.", "receipt": "domains/compute/runs/2026-09-06-j2/acceptance.json · runtime-audit.json · j2.json", "href": "/t/U19/example/", "at": "6 Sep 03:48–03:53 UTC+07 · Mac Mini · native openai" },
+      { "claim": "<b>E1 · 20-response windows before/after the runtime context guide</b> on three owners. INTENT-DISTILLATION: uncached input ×6.34, total ×1.09. GQ-COMPUTE: output ×3.22, reasoning ×4.27, uncached ×12.6, total ×1.26. 20 user turns per side were not available (15/10 distinct), and the E3 route change coincides: observational, confounded.", "receipt": "domains/compute/runs/2026-09-06-j2/e1.json", "at": "6 Sep" },
+      { "claim": "<b>Oracle token-waste lesson.</b> About 75 Astra seat-hours at xhigh landed nothing until the landing rule became a ratchet; then 44 commits in 15 seat-hours (the lesson's numbers); origin/main by commit date shows 13 then 23 commits.", "receipt": "siso-harness-lab/docs/lessons/2026-09-06-oracle-fleet-token-waste.md · plan/projects.json#oracle", "at": "6 Sep 15:31" },
+      { "claim": "<b>Nine E3 owners switched to medium at 03:04</b>: his own change in the Codex app, not a leak. Standing rule: medium everywhere except Oracle streaming.", "receipt": "source/2026-09-06-0345-shaan-medium-was-me-luna-subagents-mini-agents.md", "at": "6 Sep 03:45" },
+      { "claim": "<b>D-30</b>: sub-agents that find, read or list run on Claude Haiku 4.5 while the GPT/Codex window is reserved.", "receipt": "plan/decisions.json D-30 · source/2026-09-06-1832-*", "at": "6 Sep 18:32" }
+    ],
+    "proposals": [
+      { "claim": "Medium reasoning stretches usage 'about four times'.", "why": "his chart, 03:00; J2 measured ~1× on requested effort with applied effort unrecorded" },
+      { "claim": "Luna is 'free / unlimited'; delegation carries ~75% overhead; 3×/4×/10× multipliers.", "why": "GOD-QUESTIONS.md: 'not measured facts'" },
+      { "claim": "P6 tier table is certified across both harnesses and both machines.", "why": "name-only PASS; conflicting Hub projection found in .agents/skills (p6-native-discovery.md)" }
+    ],
+    "limits": ["One brief, one run per effort: not general model-quality evidence or a bill comparison.", "No isolated subscription debit, invoice or per-run allowance was measured.", "Effective effort is not persisted in either rollout; only requested settings are known."],
+    "version": { "label": "GOD-QUESTIONS.md · j2.json measured_with_limits", "at": "2026-09-06" }
+  },
+  "map": {
+    "centre": { "label": "GQ-011", "href": "#top" },
+    "types": [
+      { "type": "sub", "label": "Subquestions", "tone": "research", "items": [
+        { "label": "Which tier for which task shape?", "rel": "G11" },
+        { "label": "Does medium ≈ xhigh on accepted work?", "rel": "J2" },
+        { "label": "What does a dispatch cost end to end?", "rel": "E1 / E2" },
+        { "label": "Can both harnesses read one tier table?", "rel": "P6" }
+      ] },
+      { "type": "module", "label": "Modules", "tone": "projects", "items": [
+        { "label": "G11 · compute allocation, measured", "href": "#modules", "rel": "hold" },
+        { "label": "P6 · dispatch tier table", "href": "#modules", "rel": "codex · partial" },
+        { "label": "E1 · overhead on 10 dispatches", "href": "#modules", "rel": "codex · partial" },
+        { "label": "E2 · re-measure after P4/P5/P6", "href": "#modules", "rel": "unallocated" }
+      ] },
+      { "type": "run", "label": "Runs", "tone": "now", "items": [
+        { "label": "2026-09-06-j2 · medium vs xhigh", "href": "/t/U19/example/", "rel": "measured with limits" },
+        { "label": "2026-09-05-gq-compute · P6, dispatch overhead", "rel": "observational" }
+      ] },
+      { "type": "decision", "label": "Decisions", "tone": "agents", "items": [
+        { "label": "D-18 · J2 then E1", "href": "/t/U16/", "rel": "assignment" },
+        { "label": "D-19 · Luna default", "href": "/t/U16/", "rel": "in force" },
+        { "label": "D-30 · Haiku sub-agents", "href": "/t/U16/", "rel": "in force" }
+      ] },
+      { "type": "work", "label": "Works", "tone": "projects", "items": [
+        { "label": "GQ-023 · compute (Library)", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-023/", "rel": "D-20 home" },
+        { "label": "GQ-008 · route", "rel": "sibling" }
+      ] }
+    ]
+  },
+  "modules": {
+    "items": [
+      { "label": "G11 · GQ-011 compute allocation: which tier for which task, measured", "state": "partial · host hold", "tone": "warn", "what": "Open the dispatch tier skill and see per task shape a measured token and acceptance row from at least 10 real dispatches where the applied effort is recorded in the receipt (J2 today: ratio 1.0×, effort null in both runs)." },
+      { "label": "P6 · dispatch: tier table as a skill both harnesses read; native Luna delegation", "state": "partial · host codex", "tone": "warn", "what": "Open <code>~/.codex/skills/subagents</code> and <code>~/.claude/skills/subagents</code> and see the same tier table; one Luna dispatch from each harness returns a result and a measured overhead line lands in <code>domains/compute/runs/</code> (today: wording only, no measurement)." },
+      { "label": "E1 · measure brief/handoff tokens vs output, time-to-first-correct-action, pings per outcome, on 10 real dispatches", "state": "partial · host codex", "tone": "warn", "what": "Open <code>domains/compute/runs/&lt;run&gt;/overhead.json</code> and see, for 10 real dispatches on one unchanged route, brief+handoff tokens vs output tokens and time-to-first-correct-action (today: 20-response windows confounded by the E3 route change)." },
+      { "label": "E2 · cut and re-measure after P4/P5/P6 land; report the actual multiplier", "state": "unallocated · host hold", "tone": "blocked", "what": "Open the before/after page and see the same 10 dispatch shapes re-run after P4/P5/P6 with the multiplier stated and how many runs support it." },
+      { "label": "G0 · GQ registry rewritten from the full corpus; falsifiers on all", "state": "partial · host webui", "tone": "warn", "what": "Open GOD-QUESTIONS.md and see 22 cards each carrying a decision target and a counterexample line (today 2 cards use the word falsifier)." }
+    ],
+    "steps": [
+      { "label": "Preregister", "what": "hashes of seed, brief, tests and graders before inference (<code>preregistration.json</code>)" },
+      { "label": "Run both arms", "what": "same seed, same prompt, user config ignored, no delegation" },
+      { "label": "Grade", "what": "holdout checks + provided tests + scope + parent review (<code>acceptance.json</code>)" },
+      { "label": "Audit", "what": "seed unchanged, effort applied read from the rollout (<code>runtime-audit.json</code>)" },
+      { "label": "Read", "what": "ratios with n; requested vs applied shown separately (<code>j2.json</code>)" }
+    ]
+  },
+  "answer": [
+    { "label": "A tier table with numbers", "what": "per task shape: accepted-work rate, tokens in/out, time to first correct action, repair count, from ≥10 real dispatches on one unchanged route." },
+    { "label": "Applied effort in every receipt", "what": "not <code>null</code>: the rollout or the harness persists what actually ran." },
+    { "label": "A cost line", "what": "account debit or allowance per run, not a chart multiplier." },
+    { "label": "A decision", "what": "which tier by default for which class, written into the subagents skill both harnesses read, with the counterexample that reverses it." }
+  ],
+  "seats": [
+    { "name": "GQ-COMPUTE", "state": "closed 6 Sep 13:36", "host": "codex · Mini", "href": "/t/U17/", "what": "22 cards; J2 two clean runs; P6 native-discovery diagnosis; E1 windows for three owners; branch checkpoint/gq-compute-20260906-d24 (52 files, 2 commits ahead).", "cost": "handoffs/GQ-COMPUTE.md" },
+    { "name": "Fable FA0", "state": "closed", "host": "claude · laptop", "href": "/t/U17/", "what": "Captured his 03:00 / 03:45 / 15:30 words; assigned J2 (D-18)." },
+    { "name": "unallocated", "state": "E2 · G11 re-run", "host": "hold", "what": "No seat; waits for a route where applied effort persists (GQ-008)." }
+  ],
+  "timeline": {
+    "from": "2026-09-05 17:00", "to": "2026-09-06 19:30",
+    "lanes": [{ "id": "runs", "label": "runs", "tone": "now" }, { "id": "decisions", "label": "decisions", "tone": "agents" }, { "id": "words", "label": "his words", "tone": "clients" }, { "id": "seats", "label": "seats", "tone": "research" }],
+    "events": [
+      { "at": "2026-09-05 17:12", "lane": "words", "label": "fleet respawn and roles" },
+      { "at": "2026-09-06 03:00", "lane": "words", "label": "about four times further (medium)" },
+      { "at": "2026-09-06 03:45", "lane": "words", "label": "rinsed three weekly plans; Luna sub-agents for work" },
+      { "at": "2026-09-06 15:30", "lane": "words", "label": "ultra compute efficient; medium + Lunas for the dumb 80%" },
+      { "at": "2026-09-06 18:32", "lane": "words", "label": "Haiku for sub-agents" },
+      { "at": "2026-09-06 03:48", "lane": "runs", "label": "J2 preregistered 03:48:30; medium arm 03:48–03:51", "href": "/t/U19/example/" },
+      { "at": "2026-09-06 03:51", "lane": "runs", "label": "J2 xhigh arm 03:51–03:53", "href": "/t/U19/example/" },
+      { "at": "2026-09-06 12:00", "lane": "runs", "label": "E1 windows written (e1.json)" },
+      { "at": "2026-09-06 02:30", "lane": "decisions", "label": "D-18 · J2 then E1", "href": "/t/U16/" },
+      { "at": "2026-09-06 02:40", "lane": "decisions", "label": "D-19 · Luna default", "href": "/t/U16/" },
+      { "at": "2026-09-06 18:32", "lane": "decisions", "label": "D-30 · Haiku sub-agents", "href": "/t/U16/" },
+      { "at": "2026-09-05 18:17", "lane": "seats", "label": "GQ-COMPUTE first writeback" },
+      { "at": "2026-09-06 13:36", "lane": "seats", "label": "GQ-COMPUTE closed" }
+    ]
+  },
+  "links": [
+    { "title": "2026-09-06-j2 · compute run", "href": "/t/U19/example/", "type": "U19 run", "tone": "now", "why": "the one measured receipt on this question" },
+    { "title": "D-30 · Haiku for sub-agents", "href": "/t/U16/", "type": "U16 decision", "tone": "agents" },
+    { "title": "GQ-COMPUTE", "href": "/t/U17/", "type": "U17 seat", "tone": "agents", "why": "handoffs/GQ-COMPUTE.md" },
+    { "title": "Source · 6 Sep 03:45", "href": "/t/U18/", "type": "U18 source", "tone": "agents" },
+    { "title": "GQ-023 · compute (Library Work)", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-023/", "type": "U3 Work", "tone": "projects", "why": "D-20: GQ-011 in the Library is Mathematics; compute carries GQ-023 there" },
+    { "title": "Project · God Questions + compute", "href": "/t/U4/", "type": "U4 project", "tone": "projects" },
+    { "title": "Play · P6 subagents tier table", "href": "/t/U20/", "type": "U20 play", "tone": "agents" }
+  ],
+  "quickstart": {
+    "entry": { "path": "00_AGENT_ZERO/GOD-QUESTIONS.md#GQ-011", "href": "https://github.com/sisodias/siso-agent-zero-protocol" },
+    "owner": { "name": "GQ-COMPUTE (closed) · next seat unallocated", "last": "6 Sep 13:36" },
+    "context_url": "https://siso-shell.pages.dev/t/U5/example.json",
+    "verification": "Open the dispatch tier skill and see, per task shape, a measured token and acceptance row from ≥10 real dispatches with applied effort in the receipt (G11).",
+    "commands": [
+      "sed -n '/### GQ-011/,/### GQ-012/p' 00_AGENT_ZERO/GOD-QUESTIONS.md",
+      "cat 00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2/j2.json | jq '.claim, .acceptance'",
+      "node 00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2/run-pair.mjs   # re-run both arms (Mini, native route)"
+    ]
+  }
+}
