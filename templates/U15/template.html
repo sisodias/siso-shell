@@ -1,0 +1,50 @@
+{{!-- U15 · Client account — everything for one client: account in one line · projects as U4 cards · repos incl. private ·
+     money + deliverables (money private; deliverables only when a URL or commit proves them) · people · engagement timeline.
+     Gated; the Library shows a stub. Client brand strip = data-stream="clients"; no invented brand assets. --}}
+{{> heading heading}}
+<section class="siso-section" id="account">
+  {{> section sections.account}}
+  {{> words words}}
+  <dl class="kv" style="margin-top:var(--crm-space-4)">{{#each account}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+</section>
+<section class="siso-section" id="projects">
+  {{> section sections.projects}}
+  {{#if projects}}<div class="grid grid-2">{{#each projects}}<div class="card card--strip tone-{{tone}}">
+    <span class="kicker" style="color:var(--tone)">{{kind}}</span>
+    <b style="display:block;margin-top:4px;font-size:16px;color:var(--crm-color-text-strong)">{{#if href}}<a href="{{href}}">{{name}}</a>{{else}}{{name}}{{/if}}</b>
+    <p class="small" style="margin:6px 0 8px">{{{what}}}</p>
+    <div class="chips">{{> chips chips}}</div>
+    <dl class="kv small" style="margin-top:8px">{{#each facts}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+    {{#if urls}}<div class="tbl-wrap" style="margin-top:8px"><table class="tbl"><thead><tr><th>Live URL</th><th>HTTP</th><th>Checked</th></tr></thead><tbody>{{#each urls}}<tr><td><a href="{{url}}">{{url}}</a></td><td class="num"><span class="chip tone-{{tone}}">{{code}}</span></td><td class="mono small muted">{{checked}}</td></tr>{{/each}}</tbody></table></div>
+    {{else}}<div class="empty" style="margin-top:8px">{{{no_url}}}</div>{{/if}}
+  </div>{{/each}}</div>{{else}}<div class="empty">No project belongs to this account yet.</div>{{/if}}
+</section>
+<section class="siso-section" id="repos">
+  {{> section sections.repos}}
+  {{> repos repos}}
+</section>
+<section class="siso-section" id="deliverables">
+  {{> section sections.deliverables}}
+  {{> contents deliverables}}
+  <div class="grid grid-3" style="margin-top:var(--crm-space-4)">{{#each private}}<div class="card card--strip tone-clients"><span class="kicker" style="color:var(--accent-tasks)">{{icon lock}} {{label}}</span><p class="small" style="margin-top:6px">{{{what}}}</p></div>{{/each}}</div>
+</section>
+<section class="siso-section" id="people">
+  {{> section sections.people}}
+  {{> related people}}
+</section>
+<section class="siso-section" id="seats">
+  {{> section sections.seats}}
+  <div class="chips">{{> chips seats}}</div>
+</section>
+<section class="siso-section" id="timeline">
+  {{> section sections.timeline}}
+  {{> timeline timeline}}
+</section>
+<section class="siso-section" id="map">
+  {{> section sections.map}}
+  {{> map map}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>
