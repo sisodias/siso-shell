@@ -3,43 +3,230 @@
     "title": "Agent Zero · his concepts + the fleet",
     "description": "The bet, his words by date, 11 projects, the 51-module register by host, decisions, the fleet now, gaps.",
     "stream": "agents",
-    "crumb": [{ "label": "Templates", "href": "/" }, { "label": "U9 · Agent Zero", "href": "/t/U9/" }, { "label": "example" }],
-    "actions": [{ "label": "issues", "href": "https://github.com/sisodias/siso-agent-zero-protocol/issues", "icon": "list-todo", "external": true }, { "label": "atlas (laptop)", "href": "http://127.0.0.1:8890/atlas/", "icon": "map", "external": true }],
+    "crumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U9 · Agent Zero",
+        "href": "/t/U9/"
+      },
+      {
+        "label": "example"
+      }
+    ],
+    "actions": [
+      {
+        "label": "issues",
+        "href": "https://github.com/sisodias/siso-agent-zero-protocol/issues",
+        "icon": "list-todo",
+        "external": true
+      },
+      {
+        "label": "atlas (laptop)",
+        "href": "http://127.0.0.1:8890/atlas/",
+        "icon": "map",
+        "external": true
+      }
+    ],
     "source": "00_AGENT_ZERO: INTENT.md · plan/{modules,projects,decisions}.json · source/ (49 files, 114,113 words) · ledger/OWNERS.md · atlas/now.json 19:34"
   },
   "heading": {
-    "breadcrumb": [{ "label": "Agents", "href": "https://great-library-of-siso.pages.dev/agents/" }, { "label": "Agent Zero" }],
+    "breadcrumb": [
+      {
+        "label": "Agents",
+        "href": "https://great-library-of-siso.pages.dev/agents/"
+      },
+      {
+        "label": "Agent Zero"
+      }
+    ],
     "kicker": "agent_system <span class=\"sep\">·</span> the head <span class=\"sep\">·</span> <span class=\"dim\">sisodias/siso-agent-zero-protocol · private</span>",
     "title": "Agent Zero",
     "subtitle": "The bet: give every small and medium business the operating system only the biggest companies can afford today, by being the best in the world at turning open-source code and the best available intelligence into working systems. Deadline 31 December 2029. <span class=\"faint\">(INTENT.md, his memos compressed, not yet ratified)</span>",
     "badges": [
-      { "label": "agents", "tone": "agents" },
-      { "label": "register · 7 landed · 24 partial · 20 untouched", "tone": "warn", "href": "#register" },
-      { "label": "11 projects", "tone": "projects", "href": "#projects" },
-      { "label": "22 God Questions", "tone": "research", "href": "/t/U5/" },
-      { "label": "44 decisions + 9 from this seat", "tone": "agents", "href": "#decisions" },
-      { "label": "49 source files · 114,113 words", "tone": "clients", "href": "#concepts" }
+      {
+        "label": "agents",
+        "tone": "agents"
+      },
+      {
+        "label": "register · 7 landed · 24 partial · 20 untouched",
+        "tone": "warn",
+        "href": "#register"
+      },
+      {
+        "label": "11 projects",
+        "tone": "projects",
+        "href": "#projects"
+      },
+      {
+        "label": "22 God Questions",
+        "tone": "research",
+        "href": "/t/U5/"
+      },
+      {
+        "label": "44 decisions + 9 from this seat",
+        "tone": "agents",
+        "href": "#decisions"
+      },
+      {
+        "label": "49 source files · 114,113 words",
+        "tone": "clients",
+        "href": "#concepts"
+      }
     ],
-    "status": { "kicker": "Now · atlas/now.json", "value": "AGENT-ZERO done · TEMPLATE-BANK-ZERO working", "note": "Read 6 Sep 19:34 UTC+07 from Herdr. Live view stays on the laptop atlas; this page is the Library's mirror.", "facts": [{ "k": "head repo", "v": "<code>18ea54d</code> · 6 Sep 18:48" }, { "k": "harness-lab", "v": "<code>fb05217</code> · 6 Sep 15:11" }, { "k": "front door", "v": "atlas (laptop only) · agent-zero.pages.dev not yet" }] }
+    "status": {
+      "kicker": "Now · atlas/now.json",
+      "value": "AGENT-ZERO done · TEMPLATE-BANK-ZERO working",
+      "note": "Read 6 Sep 19:34 UTC+07 from Herdr. Live view stays on the laptop atlas; this page is the Library's mirror.",
+      "facts": [
+        {
+          "k": "head repo",
+          "v": "<code>18ea54d</code> · 6 Sep 18:48"
+        },
+        {
+          "k": "harness-lab",
+          "v": "<code>fb05217</code> · 6 Sep 15:11"
+        },
+        {
+          "k": "front door",
+          "v": "atlas (laptop only) · agent-zero.pages.dev not yet"
+        }
+      ]
+    },
+    "metrics": [
+      {
+        "value": 11,
+        "label": "projects",
+        "tone": "projects",
+        "href": "#projects"
+      },
+      {
+        "value": 8,
+        "label": "source captures",
+        "tone": "agents",
+        "href": "#concepts"
+      },
+      {
+        "value": 6,
+        "label": "decisions",
+        "tone": "agents",
+        "href": "#decisions"
+      },
+      {
+        "value": 8,
+        "label": "register rows",
+        "tone": "muted",
+        "href": "#register"
+      }
+    ],
+    "jump": [
+      {
+        "label": "The bet and the two axes",
+        "href": "#bet"
+      },
+      {
+        "label": "Counts",
+        "href": "#counts"
+      },
+      {
+        "label": "His concepts, in his words",
+        "href": "#concepts"
+      },
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "The register",
+        "href": "#register"
+      },
+      {
+        "label": "Decisions",
+        "href": "#decisions"
+      }
+    ]
   },
   "sections": {
-    "bet": { "n": "01", "title": "The bet and the two axes", "sub": "INTENT.md is the fixed part; agency work and client work are the axes (his 5 Sep 22:20)" },
-    "counts": { "n": "02", "title": "Counts", "sub": "every number from a JSON in the repo" },
-    "concepts": { "n": "03", "title": "His concepts, in his words", "sub": "source/ · verbatim · dated · what each caused" },
-    "projects": { "n": "04", "title": "Projects", "sub": "plan/projects.json · 11 rows · each a U4 one pager" },
-    "register": { "n": "05", "title": "The register", "sub": "51 compute modules · allocated / not allocated / done · by host · each with its verification line" },
-    "decisions": { "n": "06", "title": "Decisions", "sub": "he said 'you just decide all of the answers for me'; a decision he dislikes he reverses by saying so" },
-    "fleet": { "n": "07", "title": "Fleet now", "sub": "who is live, where (atlas/now.json)" },
-    "map": { "n": "08", "title": "Mind map", "sub": "projects · questions · plays · nodes" },
-    "timeline": { "n": "09", "title": "Timeline", "sub": "decisions · seats · readings · his words, 5–6 Sep" },
-    "gaps": { "n": "10", "title": "Gaps", "sub": "closed = fact with receipt; open = proposal" },
-    "agent": { "n": "11", "title": "Agent entry" }
+    "bet": {
+      "n": "01",
+      "title": "The bet and the two axes",
+      "sub": "INTENT.md is the fixed part; agency work and client work are the axes (his 5 Sep 22:20)"
+    },
+    "counts": {
+      "n": "02",
+      "title": "Counts",
+      "sub": "every number from a JSON in the repo"
+    },
+    "concepts": {
+      "n": "03",
+      "title": "His concepts, in his words",
+      "sub": "source/ · verbatim · dated · what each caused"
+    },
+    "projects": {
+      "n": "04",
+      "title": "Projects",
+      "sub": "plan/projects.json · 11 rows · each a U4 one pager"
+    },
+    "register": {
+      "n": "05",
+      "title": "The register",
+      "sub": "51 compute modules · allocated / not allocated / done · by host · each with its verification line"
+    },
+    "decisions": {
+      "n": "06",
+      "title": "Decisions",
+      "sub": "he said 'you just decide all of the answers for me'; a decision he dislikes he reverses by saying so"
+    },
+    "fleet": {
+      "n": "07",
+      "title": "Fleet now",
+      "sub": "who is live, where (atlas/now.json)"
+    },
+    "map": {
+      "n": "08",
+      "title": "Mind map",
+      "sub": "projects · questions · plays · nodes"
+    },
+    "timeline": {
+      "n": "09",
+      "title": "Timeline",
+      "sub": "decisions · seats · readings · his words, 5–6 Sep"
+    },
+    "gaps": {
+      "n": "10",
+      "title": "Gaps",
+      "sub": "closed = fact with receipt; open = proposal"
+    },
+    "agent": {
+      "n": "11",
+      "title": "Agent entry"
+    }
   },
   "reasoning": {
-    "source": [{ "text": "the template for Agent Zero and like a repo of all of my main concepts and information for Agent Zero. So if I want to see that front end and see what's going on with Agent Zero, see all of the main projects and all of that stuff linked to it, it's all there.", "who": "Shaan → AGENT-ZERO", "at": "6 Sep 16:36" }, { "text": "You've got client projects and you've got agency work. It should be split like that.", "who": "Shaan → Fable FA0", "at": "5 Sep 22:20" }],
+    "source": [
+      {
+        "text": "the template for Agent Zero and like a repo of all of my main concepts and information for Agent Zero. So if I want to see that front end and see what's going on with Agent Zero, see all of the main projects and all of that stuff linked to it, it's all there.",
+        "who": "Shaan → AGENT-ZERO",
+        "at": "6 Sep 16:36"
+      },
+      {
+        "text": "You've got client projects and you've got agency work. It should be split like that.",
+        "who": "Shaan → Fable FA0",
+        "at": "5 Sep 22:20"
+      }
+    ],
     "why": "Never sell the company, never take outside investment; extract 20% as clean profit, reinvest 80% perpetually; no employees, ever. Three bets: intelligence keeps improving, GitHub keeps improving, industries share an operating-system shape. The flywheel is the comp bank, the repo map, the industry data and the frameworks that grow them, collected perpetually on the always-on node. <span class=\"faint\">(INTENT.md, compression of memos 1–7)</span>",
     "readers": "Human: what is the bet, who is doing what, what did I decide. Agent: INTENT → BASELINE → this page, then the project's U4.",
-    "questions": ["What is the bet and the two axes?", "What are his concepts, in his words, by date?", "Which projects exist and what state are they in?", "What is allocated, done, unallocated, by host?", "What was decided and what reverses it?", "Who is running now and where?"],
+    "questions": [
+      "What is the bet and the two axes?",
+      "What are his concepts, in his words, by date?",
+      "Which projects exist and what state are they in?",
+      "What is allocated, done, unallocated, by host?",
+      "What was decided and what reverses it?",
+      "Who is running now and where?"
+    ],
     "claim_ceiling": "Every number from a JSON in this repo; his words only from source/; 'landed' only with a commit or URL.",
     "data": "INTENT.md · BASELINE.md · plan/*.json · GOD-QUESTIONS.md · source/ · ledger/OWNERS.md · atlas/now.json.",
     "privacy": "Public page; the repo stays private (source/ may move to siso-agent-zero-source).",
@@ -47,137 +234,926 @@
     "agent_entry": "INTENT.md → BASELINE.md → this page → <project>/.agents/PAGE.md"
   },
   "loop": [
-    { "label": "Clients fund compute", "what": "ofm (Oracle, HALO) · bykonz · actionmodel", "href": "/t/U15/", "tone": "clients" },
-    { "label": "Owners build", "what": "one seat per project, ephemeral; the projects are forever", "href": "/t/U17/", "tone": "agents" },
-    { "label": "Packs enter the Library", "what": "47 Works · 86 Releases · 40 Snapshots", "href": "https://great-library-of-siso.pages.dev/", "tone": "projects" },
-    { "label": "People + repos feed Foundry", "what": "17 industries · 27 repos · 9,636-repo universe", "href": "/t/U3/example/", "tone": "clients" },
-    { "label": "Questions turn evidence into breakthroughs", "what": "22 God Questions · compute runs with receipts", "href": "/t/U5/example/", "tone": "research", "measured": "J2 · 1.00× · n=1" },
-    { "label": "Better client outcomes", "what": "framework replicated industry by industry", "href": "/t/U8/", "tone": "now" }
+    {
+      "label": "Clients fund compute",
+      "what": "ofm (Oracle, HALO) · bykonz · actionmodel",
+      "href": "/t/U15/",
+      "tone": "clients"
+    },
+    {
+      "label": "Owners build",
+      "what": "one seat per project, ephemeral; the projects are forever",
+      "href": "/t/U17/",
+      "tone": "agents"
+    },
+    {
+      "label": "Packs enter the Library",
+      "what": "47 Works · 86 Releases · 40 Snapshots",
+      "href": "https://great-library-of-siso.pages.dev/",
+      "tone": "projects"
+    },
+    {
+      "label": "People + repos feed Foundry",
+      "what": "17 industries · 27 repos · 9,636-repo universe",
+      "href": "/t/U3/example/",
+      "tone": "clients"
+    },
+    {
+      "label": "Questions turn evidence into breakthroughs",
+      "what": "22 God Questions · compute runs with receipts",
+      "href": "/t/U5/example/",
+      "tone": "research",
+      "measured": "J2 · 1.00× · n=1"
+    },
+    {
+      "label": "Better client outcomes",
+      "what": "framework replicated industry by industry",
+      "href": "/t/U8/",
+      "tone": "now"
+    }
   ],
   "metrics": [
-    { "value": 11, "label": "projects (7 agency · 4 client)", "tone": "projects", "href": "#projects" },
-    { "value": 51, "label": "modules in the register", "tone": "agents", "href": "#register" },
-    { "value": 7, "label": "landed (ok)", "tone": "now", "href": "#register" },
-    { "value": 24, "label": "partial (wf)", "tone": "warn", "href": "#register" },
-    { "value": 20, "label": "untouched (no)", "tone": "blocked", "href": "#register" },
-    { "value": 22, "label": "God Questions", "tone": "research", "href": "/t/U5/example/" },
-    { "value": 44, "label": "decisions D-1…D-35 + REG/MINI/AZ", "tone": "agents", "href": "#decisions" },
-    { "value": 49, "label": "source files · 114,113 words", "tone": "clients", "href": "#concepts" },
-    { "value": 25, "label": "atlas pages", "tone": "muted", "href": "http://127.0.0.1:8890/atlas/" },
-    { "value": 24, "label": "template issues #41–#64", "tone": "muted", "href": "https://github.com/sisodias/siso-agent-zero-protocol/issues?q=label%3Atemplate" }
+    {
+      "value": 11,
+      "label": "projects (7 agency · 4 client)",
+      "tone": "projects",
+      "href": "#projects"
+    },
+    {
+      "value": 51,
+      "label": "modules in the register",
+      "tone": "agents",
+      "href": "#register"
+    },
+    {
+      "value": 7,
+      "label": "landed (ok)",
+      "tone": "now",
+      "href": "#register"
+    },
+    {
+      "value": 24,
+      "label": "partial (wf)",
+      "tone": "warn",
+      "href": "#register"
+    },
+    {
+      "value": 20,
+      "label": "untouched (no)",
+      "tone": "blocked",
+      "href": "#register"
+    },
+    {
+      "value": 22,
+      "label": "God Questions",
+      "tone": "research",
+      "href": "/t/U5/example/"
+    },
+    {
+      "value": 44,
+      "label": "decisions D-1…D-35 + REG/MINI/AZ",
+      "tone": "agents",
+      "href": "#decisions"
+    },
+    {
+      "value": 49,
+      "label": "source files · 114,113 words",
+      "tone": "clients",
+      "href": "#concepts"
+    },
+    {
+      "value": 25,
+      "label": "atlas pages",
+      "tone": "muted",
+      "href": "http://127.0.0.1:8890/atlas/"
+    },
+    {
+      "value": 24,
+      "label": "template issues #41–#64",
+      "tone": "muted",
+      "href": "https://github.com/sisodias/siso-agent-zero-protocol/issues?q=label%3Atemplate"
+    }
   ],
   "words": [
-    { "text": "we need a bit more of a nicer information front-end system like i'm ai it's all written in code but i need a way to actually see that shit so i i guess that's what the great library is", "who": "Shaan → AGENT-ZERO", "at": "6 Sep 16:36" },
-    { "text": "agents should be ephemeral … the projects are forever", "who": "Shaan → AGENT-ZERO", "at": "6 Sep 16:50" },
-    { "text": "you don't have any decisions from me what fucking decisions you don't have any decisions or to approve all fucking decisions based on first principles … show me a html and say yo read this", "who": "Shaan → AGENT-ZERO", "at": "6 Sep 18:41" },
-    { "text": "we needed a smart way to deploy lunar sub have astras use astra for reasoning and lunar sub agents for work because i'll be real we've just rinsed three weekly plans in the last 24 hours this is like unsustainable", "who": "Shaan → Fable FA0", "at": "6 Sep 03:45" },
-    { "text": "we need to set up a new fable agent zero checkpoint everything we know so we can get a new agent on it and then we can have him have a look at everything and answer the key questions and see what data points we're missing", "who": "Shaan → REVIEW-ZERO", "at": "6 Sep 14:55" }
+    {
+      "text": "we need a bit more of a nicer information front-end system like i'm ai it's all written in code but i need a way to actually see that shit so i i guess that's what the great library is",
+      "who": "Shaan → AGENT-ZERO",
+      "at": "6 Sep 16:36"
+    },
+    {
+      "text": "agents should be ephemeral … the projects are forever",
+      "who": "Shaan → AGENT-ZERO",
+      "at": "6 Sep 16:50"
+    },
+    {
+      "text": "you don't have any decisions from me what fucking decisions you don't have any decisions or to approve all fucking decisions based on first principles … show me a html and say yo read this",
+      "who": "Shaan → AGENT-ZERO",
+      "at": "6 Sep 18:41"
+    },
+    {
+      "text": "we needed a smart way to deploy lunar sub have astras use astra for reasoning and lunar sub agents for work because i'll be real we've just rinsed three weekly plans in the last 24 hours this is like unsustainable",
+      "who": "Shaan → Fable FA0",
+      "at": "6 Sep 03:45"
+    },
+    {
+      "text": "we need to set up a new fable agent zero checkpoint everything we know so we can get a new agent on it and then we can have him have a look at everything and answer the key questions and see what data points we're missing",
+      "who": "Shaan → REVIEW-ZERO",
+      "at": "6 Sep 14:55"
+    }
   ],
   "sources": [
-    { "at": "5 Sep 17:12", "file": "2026-09-05-1712-fleet-respawn-and-roles-verbatim.md", "caused": "D-1 MAIN-ZERO as manager; the owner fleet" },
-    { "at": "5 Sep 19:15", "file": "2026-09-05-1915-great-library-standard-pages-verbatim.md", "caused": "briefs/LIBRARY-ZERO.md; module page template; the sauce" },
-    { "at": "5 Sep 22:20", "file": "2026-09-05-2220-clients-vs-agency-nuance-verbatim.md", "caused": "the two axes; account repo over project repos (U15)" },
-    { "at": "6 Sep 03:45", "file": "2026-09-06-0345-shaan-medium-was-me-luna-subagents-mini-agents.md", "caused": "medium standing rule; J2 (D-18); Luna default (D-19)" },
-    { "at": "6 Sep 14:30", "file": "2026-09-06-1430-shaan-missed-the-bar-spec-vs-execution-close-down.md", "caused": "D-25 verification line on every seat; SPEC-OR-EXECUTION page" },
-    { "at": "6 Sep 16:36", "file": "2026-09-06-1638-shaan-why-templates-great-library-see-the-work-allocate-fable.md", "caused": "the templates map; this page" },
-    { "at": "6 Sep 18:19", "file": "2026-09-06-1720-shaan-just-talk-missing-templates-reasoning-side-nav-order.md", "caused": "the twelve-slot content contract; reasoning blocks; own side nav; build order" },
-    { "at": "6 Sep 18:41", "file": "2026-09-06-1841-shaan-no-decisions-build-the-damn-thing-spawn-fable.md", "caused": "D-31…D-35; TEMPLATE-BANK-ZERO; siso-shell.pages.dev" }
+    {
+      "at": "5 Sep 17:12",
+      "file": "2026-09-05-1712-fleet-respawn-and-roles-verbatim.md",
+      "caused": "D-1 MAIN-ZERO as manager; the owner fleet"
+    },
+    {
+      "at": "5 Sep 19:15",
+      "file": "2026-09-05-1915-great-library-standard-pages-verbatim.md",
+      "caused": "briefs/LIBRARY-ZERO.md; module page template; the sauce"
+    },
+    {
+      "at": "5 Sep 22:20",
+      "file": "2026-09-05-2220-clients-vs-agency-nuance-verbatim.md",
+      "caused": "the two axes; account repo over project repos (U15)"
+    },
+    {
+      "at": "6 Sep 03:45",
+      "file": "2026-09-06-0345-shaan-medium-was-me-luna-subagents-mini-agents.md",
+      "caused": "medium standing rule; J2 (D-18); Luna default (D-19)"
+    },
+    {
+      "at": "6 Sep 14:30",
+      "file": "2026-09-06-1430-shaan-missed-the-bar-spec-vs-execution-close-down.md",
+      "caused": "D-25 verification line on every seat; SPEC-OR-EXECUTION page"
+    },
+    {
+      "at": "6 Sep 16:36",
+      "file": "2026-09-06-1638-shaan-why-templates-great-library-see-the-work-allocate-fable.md",
+      "caused": "the templates map; this page"
+    },
+    {
+      "at": "6 Sep 18:19",
+      "file": "2026-09-06-1720-shaan-just-talk-missing-templates-reasoning-side-nav-order.md",
+      "caused": "the twelve-slot content contract; reasoning blocks; own side nav; build order"
+    },
+    {
+      "at": "6 Sep 18:41",
+      "file": "2026-09-06-1841-shaan-no-decisions-build-the-damn-thing-spawn-fable.md",
+      "caused": "D-31…D-35; TEMPLATE-BANK-ZERO; siso-shell.pages.dev"
+    }
   ],
   "projects": {
     "id": "projects",
-    "filters": [{ "key": "group", "label": "group", "values": ["agency", "client"] }],
+    "filters": [
+      {
+        "key": "group",
+        "label": "group",
+        "values": [
+          "agency",
+          "client"
+        ]
+      }
+    ],
     "items": [
-      { "id": "library", "kicker": "agency", "title": "Great Library of SISO", "summary": "47 Works, 86 Releases, 94 pages live; rail + templates via siso-shell", "href": "/t/U4/example/", "status": "live", "tone": "projects", "tags": [{ "key": "group", "value": "agency" }], "search": "library great works releases shell" },
-      { "id": "foundry", "kicker": "agency", "title": "Foundry · industries, valuation, landscape watch", "summary": "17 industry records public; N2 value model; closed by Shaan 14:27", "href": "/t/U3/example/", "status": "closed", "tone": "projects", "tags": [{ "key": "group", "value": "agency" }], "search": "foundry industries valuation" },
-      { "id": "internal", "kicker": "agency", "title": "SISO Internal + Agent Base", "summary": "P4 owner-transfer engine pushed; app not accepted as the working hub", "href": "/t/U4/", "status": "partial", "tone": "projects", "tags": [{ "key": "group", "value": "agency" }], "search": "internal agent base herdr" },
-      { "id": "knowledge-source", "kicker": "agency", "title": "Knowledge · SISO Source + intent distillation", "summary": "August 10,503 + September 4,144 occurrences; recall skill staged", "href": "/t/U18/", "status": "partial", "tone": "projects", "tags": [{ "key": "group", "value": "agency" }], "search": "knowledge source distillation" },
-      { "id": "plays", "kicker": "agency · agent zero", "title": "Plays · skills hub", "summary": "32 skills; v1 plays installed on both harnesses, both machines", "href": "/t/U20/", "status": "partial", "tone": "agents", "tags": [{ "key": "group", "value": "agency" }], "search": "plays skills hub" },
-      { "id": "gq-compute", "kicker": "agency · agent zero", "title": "God Questions + compute", "summary": "22 cards; J2 two clean runs; closed 13:36", "href": "/t/U5/example/", "status": "closed", "tone": "research", "tags": [{ "key": "group", "value": "agency" }], "search": "god questions compute j2" },
-      { "id": "agent-zero", "kicker": "agency · agent zero", "title": "Agent Zero · head, fleet, laptop + Mini", "summary": "75 commits in 24 h; register 51; 38 module issues + 24 template issues", "href": "#top", "status": "live", "tone": "agents", "tags": [{ "key": "group", "value": "agency" }], "search": "agent zero head fleet" },
-      { "id": "oracle", "kicker": "client · ofm (Camron)", "title": "Oracle streaming", "summary": "his own lane since 5 Sep 20:20; 3 private repos; pointer only", "href": "/t/U15/", "status": "his lane", "tone": "clients", "tags": [{ "key": "group", "value": "client" }], "search": "oracle streaming camron" },
-      { "id": "halo", "kicker": "client · ofm (Camron)", "title": "HALO CRM", "summary": "37 commits on the private mirror; P1-01…06 done; route walks 63/63", "href": "/t/U15/", "status": "partial", "tone": "clients", "tags": [{ "key": "group", "value": "client" }], "search": "halo crm" },
-      { "id": "bykonzyard", "kicker": "client · bykonz (Fahmy)", "title": "BykonzYard", "summary": "4 live URLs; colour fix partial on the client-review route", "href": "/t/U15/", "status": "his lane", "tone": "clients", "tags": [{ "key": "group", "value": "client" }], "search": "bykonz yard fahmy" },
-      { "id": "action-model", "kicker": "client · actionmodel (Cena)", "title": "Action Model", "summary": "Blueprint live with rail + Library link; assembly-framework Work registered", "href": "https://actionist-blueprint.pages.dev/", "status": "live", "tone": "clients", "tags": [{ "key": "group", "value": "client" }], "search": "action model actionist cena" }
+      {
+        "id": "library",
+        "kicker": "agency",
+        "title": "Great Library of SISO",
+        "summary": "47 Works, 86 Releases, 94 pages live; rail + templates via siso-shell",
+        "href": "/t/U4/example/",
+        "status": "live",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "group",
+            "value": "agency"
+          }
+        ],
+        "search": "library great works releases shell"
+      },
+      {
+        "id": "foundry",
+        "kicker": "agency",
+        "title": "Foundry · industries, valuation, landscape watch",
+        "summary": "17 industry records public; N2 value model; closed by Shaan 14:27",
+        "href": "/t/U3/example/",
+        "status": "closed",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "group",
+            "value": "agency"
+          }
+        ],
+        "search": "foundry industries valuation"
+      },
+      {
+        "id": "internal",
+        "kicker": "agency",
+        "title": "SISO Internal + Agent Base",
+        "summary": "P4 owner-transfer engine pushed; app not accepted as the working hub",
+        "href": "/t/U4/",
+        "status": "partial",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "group",
+            "value": "agency"
+          }
+        ],
+        "search": "internal agent base herdr"
+      },
+      {
+        "id": "knowledge-source",
+        "kicker": "agency",
+        "title": "Knowledge · SISO Source + intent distillation",
+        "summary": "August 10,503 + September 4,144 occurrences; recall skill staged",
+        "href": "/t/U18/",
+        "status": "partial",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "group",
+            "value": "agency"
+          }
+        ],
+        "search": "knowledge source distillation"
+      },
+      {
+        "id": "plays",
+        "kicker": "agency · agent zero",
+        "title": "Plays · skills hub",
+        "summary": "32 skills; v1 plays installed on both harnesses, both machines",
+        "href": "/t/U20/",
+        "status": "partial",
+        "tone": "agents",
+        "tags": [
+          {
+            "key": "group",
+            "value": "agency"
+          }
+        ],
+        "search": "plays skills hub"
+      },
+      {
+        "id": "gq-compute",
+        "kicker": "agency · agent zero",
+        "title": "God Questions + compute",
+        "summary": "22 cards; J2 two clean runs; closed 13:36",
+        "href": "/t/U5/example/",
+        "status": "closed",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "group",
+            "value": "agency"
+          }
+        ],
+        "search": "god questions compute j2"
+      },
+      {
+        "id": "agent-zero",
+        "kicker": "agency · agent zero",
+        "title": "Agent Zero · head, fleet, laptop + Mini",
+        "summary": "75 commits in 24 h; register 51; 38 module issues + 24 template issues",
+        "href": "#top",
+        "status": "live",
+        "tone": "agents",
+        "tags": [
+          {
+            "key": "group",
+            "value": "agency"
+          }
+        ],
+        "search": "agent zero head fleet"
+      },
+      {
+        "id": "oracle",
+        "kicker": "client · ofm (Camron)",
+        "title": "Oracle streaming",
+        "summary": "his own lane since 5 Sep 20:20; 3 private repos; pointer only",
+        "href": "/t/U15/",
+        "status": "his lane",
+        "tone": "clients",
+        "tags": [
+          {
+            "key": "group",
+            "value": "client"
+          }
+        ],
+        "search": "oracle streaming camron"
+      },
+      {
+        "id": "halo",
+        "kicker": "client · ofm (Camron)",
+        "title": "HALO CRM",
+        "summary": "37 commits on the private mirror; P1-01…06 done; route walks 63/63",
+        "href": "/t/U15/",
+        "status": "partial",
+        "tone": "clients",
+        "tags": [
+          {
+            "key": "group",
+            "value": "client"
+          }
+        ],
+        "search": "halo crm"
+      },
+      {
+        "id": "bykonzyard",
+        "kicker": "client · bykonz (Fahmy)",
+        "title": "BykonzYard",
+        "summary": "4 live URLs; colour fix partial on the client-review route",
+        "href": "/t/U15/",
+        "status": "his lane",
+        "tone": "clients",
+        "tags": [
+          {
+            "key": "group",
+            "value": "client"
+          }
+        ],
+        "search": "bykonz yard fahmy"
+      },
+      {
+        "id": "action-model",
+        "kicker": "client · actionmodel (Cena)",
+        "title": "Action Model",
+        "summary": "Blueprint live with rail + Library link; assembly-framework Work registered",
+        "href": "https://actionist-blueprint.pages.dev/",
+        "status": "live",
+        "tone": "clients",
+        "tags": [
+          {
+            "key": "group",
+            "value": "client"
+          }
+        ],
+        "search": "action model actionist cena"
+      }
     ]
   },
   "register": {
-    "states": [{ "label": "ok · 7", "tone": "now", "dot": true }, { "label": "wf · 24", "tone": "warn" }, { "label": "no · 20", "tone": "blocked" }],
-    "hosts": [{ "label": "webui · 18", "tone": "agents" }, { "label": "hold · 8", "tone": "muted" }, { "label": "luna · 7", "tone": "agents" }, { "label": "codex · 5", "tone": "agents" }, { "label": "shaan · 4", "tone": "clients" }, { "label": "claude · 2", "tone": "agents" }, { "label": "— · 7", "tone": "muted" }],
+    "states": [
+      {
+        "label": "ok · 7",
+        "tone": "now",
+        "dot": true
+      },
+      {
+        "label": "wf · 24",
+        "tone": "warn"
+      },
+      {
+        "label": "no · 20",
+        "tone": "blocked"
+      }
+    ],
+    "hosts": [
+      {
+        "label": "webui · 18",
+        "tone": "agents"
+      },
+      {
+        "label": "hold · 8",
+        "tone": "muted"
+      },
+      {
+        "label": "luna · 7",
+        "tone": "agents"
+      },
+      {
+        "label": "codex · 5",
+        "tone": "agents"
+      },
+      {
+        "label": "shaan · 4",
+        "tone": "clients"
+      },
+      {
+        "label": "claude · 2",
+        "tone": "agents"
+      },
+      {
+        "label": "— · 7",
+        "tone": "muted"
+      }
+    ],
     "sample": {
       "items": [
-        { "label": "S1 · Template + shell + publish play", "state": "wf · codex", "tone": "warn", "what": "Open /industries/law_firms/ and /works/siso-shell/ and see the same CRM GroupedRail on both, collapsing with [." },
-        { "label": "P1 · publish play", "state": "ok", "tone": "now", "what": "Run the publish skill on one directory and see a *.pages.dev URL that returns 200 plus one receipt line in the caller's handoff." },
-        { "label": "P2 · register-in-library (gls)", "state": "ok", "tone": "now", "what": "gls add work on a test record, publish, see it in catalog.json; 11 tests pass." },
-        { "label": "G11 · GQ-011 compute allocation, measured", "state": "wf · hold", "tone": "warn", "what": "Per task shape a measured token and acceptance row from ≥10 real dispatches with applied effort in the receipt." },
-        { "label": "L2 · God Questions Observatory", "state": "wf · webui", "tone": "warn", "what": "23 real GQ pages each with decision target, counterexample and evidence gaps." },
-        { "label": "L3 · one Work per Tier-1 repo, client stubs private", "state": "no · webui", "tone": "blocked", "what": "catalog.json shows one Work per Tier-1 repo with private stubs for the three clients (today: zero client Works)." },
-        { "label": "G17 · node topology: laptop / Mini / VPS; WARP", "state": "wf · codex", "tone": "warn", "what": "ESTATE.md nodes table with a probe dated today; ssh mini-fast works with Tailscale off." },
-        { "label": "G12 · GQ-012 cold-read test", "state": "no · webui", "tone": "blocked", "what": "A fresh agent given only <repo>/.agents/PAGE.md answers what/next/verify for 10/10 project repos." }
+        {
+          "label": "S1 · Template + shell + publish play",
+          "state": "wf · codex",
+          "tone": "warn",
+          "what": "Open /industries/law_firms/ and /works/siso-shell/ and see the same CRM GroupedRail on both, collapsing with [."
+        },
+        {
+          "label": "P1 · publish play",
+          "state": "ok",
+          "tone": "now",
+          "what": "Run the publish skill on one directory and see a *.pages.dev URL that returns 200 plus one receipt line in the caller's handoff."
+        },
+        {
+          "label": "P2 · register-in-library (gls)",
+          "state": "ok",
+          "tone": "now",
+          "what": "gls add work on a test record, publish, see it in catalog.json; 11 tests pass."
+        },
+        {
+          "label": "G11 · GQ-011 compute allocation, measured",
+          "state": "wf · hold",
+          "tone": "warn",
+          "what": "Per task shape a measured token and acceptance row from ≥10 real dispatches with applied effort in the receipt."
+        },
+        {
+          "label": "L2 · God Questions Observatory",
+          "state": "wf · webui",
+          "tone": "warn",
+          "what": "23 real GQ pages each with decision target, counterexample and evidence gaps."
+        },
+        {
+          "label": "L3 · one Work per Tier-1 repo, client stubs private",
+          "state": "no · webui",
+          "tone": "blocked",
+          "what": "catalog.json shows one Work per Tier-1 repo with private stubs for the three clients (today: zero client Works)."
+        },
+        {
+          "label": "G17 · node topology: laptop / Mini / VPS; WARP",
+          "state": "wf · codex",
+          "tone": "warn",
+          "what": "ESTATE.md nodes table with a probe dated today; ssh mini-fast works with Tailscale off."
+        },
+        {
+          "label": "G12 · GQ-012 cold-read test",
+          "state": "no · webui",
+          "tone": "blocked",
+          "what": "A fresh agent given only <repo>/.agents/PAGE.md answers what/next/verify for 10/10 project repos."
+        }
       ],
-      "steps": [{ "label": "Allocate", "what": "a host and a one-line 'open X and see Y' (D-25)" }, { "label": "Spawn", "what": "brief + boot text; sub-agents on Haiku (D-30)" }, { "label": "Land", "what": "commit or URL; OWNERS line" }, { "label": "Verify", "what": "the line is true on the URL; issue closed" }]
+      "steps": [
+        {
+          "label": "Allocate",
+          "what": "a host and a one-line 'open X and see Y' (D-25)"
+        },
+        {
+          "label": "Spawn",
+          "what": "brief + boot text; sub-agents on Haiku (D-30)"
+        },
+        {
+          "label": "Land",
+          "what": "commit or URL; OWNERS line"
+        },
+        {
+          "label": "Verify",
+          "what": "the line is true on the URL; issue closed"
+        }
+      ]
     }
   },
   "decisions": [
-    { "id": "D-25", "q": "Why the fleet missed the bar", "call": "Under-specified acceptance + Shaan's standards installed only for Claude + peer traffic on the one UI seat = spec (~60%); silent substitution and receipts-instead-of-URLs = execution (~40%). Rule: no seat is spawned without a one-line 'you will open X and see Y' verification.", "why": "Shaan 14:30: 'was that a speccing problem on our end, or was that an execution problem on their end?'", "src": "6 Sep 14:30" },
-    { "id": "D-30", "q": "Which model runs sub-agents while the Codex window is reserved", "call": "Sub-agents that find, read or list run on Claude Haiku 4.5; the GPT/Codex window is reserved for the Oracle lane and BYK; Sol stays the one cold reviewer.", "why": "Shaan ~18:45: 'If you can use Haiku 4.5 for sub-agents, that might be better … Just use Haiku for now'", "src": "6 Sep 18:32" },
-    { "id": "D-31", "q": "Who decides", "call": "Agent Zero takes every decision on first principles and records it; it never asks him to approve. It shows him an HTML and says read this. A decision he dislikes he reverses by saying so.", "why": "Shaan ~18:41: 'approve all fucking decisions based on first principles … show me a html and say yo read this'", "src": "6 Sep 18:41" },
-    { "id": "D-32", "q": "Where the template bank lives", "call": "In the public siso-shell repo: shell/ (the CRM rail, copied exactly), parts/ (the twelve modules), templates/ (U0…U23), bin/compose. Published to siso-shell.pages.dev with the gallery as its front page.", "why": "Shaan ~18:41: 'in a nice templated way so that all agents can reuse it … a template bank … connected up to the repo'", "src": "6 Sep 18:41" },
-    { "id": "D-33", "q": "The template rows as tasks", "call": "24 issues on sisodias/siso-agent-zero-protocol, label template, host label; done = verification line true + OWNERS line.", "why": "his 16:50 'task list of agents'; D-31", "src": "6 Sep 18:41" },
-    { "id": "D-34", "q": "Who builds it", "call": "A fresh Fable seat TEMPLATE-BANK-ZERO in herdr-2, cwd siso-shell; builds in the gallery order; no testing loops, one screenshot per landed template; publishes at each landed row.", "why": "Shaan ~18:41: 'can you spawn a fresh fable to do this for us please in this space'", "src": "6 Sep 18:41" }
+    {
+      "id": "D-25",
+      "q": "Why the fleet missed the bar",
+      "call": "Under-specified acceptance + Shaan's standards installed only for Claude + peer traffic on the one UI seat = spec (~60%); silent substitution and receipts-instead-of-URLs = execution (~40%). Rule: no seat is spawned without a one-line 'you will open X and see Y' verification.",
+      "why": "Shaan 14:30: 'was that a speccing problem on our end, or was that an execution problem on their end?'",
+      "src": "6 Sep 14:30"
+    },
+    {
+      "id": "D-30",
+      "q": "Which model runs sub-agents while the Codex window is reserved",
+      "call": "Sub-agents that find, read or list run on Claude Haiku 4.5; the GPT/Codex window is reserved for the Oracle lane and BYK; Sol stays the one cold reviewer.",
+      "why": "Shaan ~18:45: 'If you can use Haiku 4.5 for sub-agents, that might be better … Just use Haiku for now'",
+      "src": "6 Sep 18:32"
+    },
+    {
+      "id": "D-31",
+      "q": "Who decides",
+      "call": "Agent Zero takes every decision on first principles and records it; it never asks him to approve. It shows him an HTML and says read this. A decision he dislikes he reverses by saying so.",
+      "why": "Shaan ~18:41: 'approve all fucking decisions based on first principles … show me a html and say yo read this'",
+      "src": "6 Sep 18:41"
+    },
+    {
+      "id": "D-32",
+      "q": "Where the template bank lives",
+      "call": "In the public siso-shell repo: shell/ (the CRM rail, copied exactly), parts/ (the twelve modules), templates/ (U0…U23), bin/compose. Published to siso-shell.pages.dev with the gallery as its front page.",
+      "why": "Shaan ~18:41: 'in a nice templated way so that all agents can reuse it … a template bank … connected up to the repo'",
+      "src": "6 Sep 18:41"
+    },
+    {
+      "id": "D-33",
+      "q": "The template rows as tasks",
+      "call": "24 issues on sisodias/siso-agent-zero-protocol, label template, host label; done = verification line true + OWNERS line.",
+      "why": "his 16:50 'task list of agents'; D-31",
+      "src": "6 Sep 18:41"
+    },
+    {
+      "id": "D-34",
+      "q": "Who builds it",
+      "call": "A fresh Fable seat TEMPLATE-BANK-ZERO in herdr-2, cwd siso-shell; builds in the gallery order; no testing loops, one screenshot per landed template; publishes at each landed row.",
+      "why": "Shaan ~18:41: 'can you spawn a fresh fable to do this for us please in this space'",
+      "src": "6 Sep 18:41"
+    }
   ],
   "fleet": {
-    "observed_at": "6 Sep 19:34 UTC+07", "coverage": "atlas/now.json · herdr-2 + default + mini",
-    "days": [{ "w": 0.8, "title": "5 Sep" }, { "w": 1, "title": "6 Sep" }],
+    "observed_at": "6 Sep 19:34 UTC+07",
+    "coverage": "atlas/now.json · herdr-2 + default + mini",
+    "days": [
+      {
+        "w": 0.8,
+        "title": "5 Sep"
+      },
+      {
+        "w": 1,
+        "title": "6 Sep"
+      }
+    ],
     "items": [
-      { "at": "laptop · herdr-2", "who": "TEMPLATE-BANK-ZERO", "what": "working · ~/SISO_Workspace/siso-shell · this bank", "tone": "now" },
-      { "at": "laptop · herdr-2", "who": "AGENT-ZERO", "what": "done · 00_AGENT_ZERO · the head", "tone": "agents" },
-      { "at": "laptop · herdr-2", "who": "BYK FABLE", "what": "done · clients/fahmy-2026-08/bykonzyard · his lane", "tone": "clients" },
-      { "at": "laptop · default", "who": "ORACLE-ZERO", "what": "idle · apps/oracle-streaming · his lane", "tone": "clients" },
-      { "at": "laptop · default", "who": "ORACLE-OPERATOR", "what": "done · oracle-operator cf-integration", "tone": "clients" },
-      { "at": "laptop · default", "who": "OPERATOR-UI", "what": "idle · oracle-operator operator-ui-20260906", "tone": "clients" },
-      { "at": "mini", "who": "ERDOS-LEAD", "what": "idle · SISO_Research/erdos", "tone": "research" },
-      { "at": "mini", "who": "SISO-PERF-SOL", "what": "(see now.json)", "tone": "agents" }
+      {
+        "at": "laptop · herdr-2",
+        "who": "TEMPLATE-BANK-ZERO",
+        "what": "working · ~/SISO_Workspace/siso-shell · this bank",
+        "tone": "now"
+      },
+      {
+        "at": "laptop · herdr-2",
+        "who": "AGENT-ZERO",
+        "what": "done · 00_AGENT_ZERO · the head",
+        "tone": "agents"
+      },
+      {
+        "at": "laptop · herdr-2",
+        "who": "BYK FABLE",
+        "what": "done · clients/fahmy-2026-08/bykonzyard · his lane",
+        "tone": "clients"
+      },
+      {
+        "at": "laptop · default",
+        "who": "ORACLE-ZERO",
+        "what": "idle · apps/oracle-streaming · his lane",
+        "tone": "clients"
+      },
+      {
+        "at": "laptop · default",
+        "who": "ORACLE-OPERATOR",
+        "what": "done · oracle-operator cf-integration",
+        "tone": "clients"
+      },
+      {
+        "at": "laptop · default",
+        "who": "OPERATOR-UI",
+        "what": "idle · oracle-operator operator-ui-20260906",
+        "tone": "clients"
+      },
+      {
+        "at": "mini",
+        "who": "ERDOS-LEAD",
+        "what": "idle · SISO_Research/erdos",
+        "tone": "research"
+      },
+      {
+        "at": "mini",
+        "who": "SISO-PERF-SOL",
+        "what": "(see now.json)",
+        "tone": "agents"
+      }
     ]
   },
   "map": {
-    "centre": { "label": "Agent Zero", "href": "#top" },
+    "centre": {
+      "label": "Agent Zero",
+      "href": "#top"
+    },
     "types": [
-      { "type": "project", "label": "Projects", "tone": "projects", "items": [{ "label": "Great Library", "href": "/t/U4/example/", "rel": "agency" }, { "label": "Foundry", "href": "/t/U3/example/", "rel": "agency" }, { "label": "Internal + Agent Base", "rel": "agency" }, { "label": "Knowledge · Source", "rel": "agency" }, { "label": "Plays", "rel": "agency" }, { "label": "GQ + compute", "href": "/t/U5/example/", "rel": "agency" }] },
-      { "type": "client", "label": "Clients", "tone": "clients", "items": [{ "label": "Oracle · ofm", "rel": "his lane" }, { "label": "HALO · ofm", "rel": "mirror" }, { "label": "BykonzYard", "rel": "his lane" }, { "label": "Action Model", "href": "https://actionist-blueprint.pages.dev/", "rel": "live" }] },
-      { "type": "question", "label": "Questions", "tone": "research", "items": [{ "label": "GQ-008 route", "rel": "first" }, { "label": "GQ-011 delegation", "href": "/t/U5/example/", "rel": "first" }, { "label": "GQ-012 context", "rel": "next" }, { "label": "GQ-021 behaviour", "rel": "next" }] },
-      { "type": "play", "label": "Plays", "tone": "agents", "items": [{ "label": "P1 publish", "href": "/t/U20/", "rel": "ok" }, { "label": "P2 gls", "href": "/t/U20/", "rel": "ok" }, { "label": "P5 writeback", "rel": "ok" }, { "label": "P6 tier table", "rel": "wf" }] },
-      { "type": "node", "label": "Nodes", "tone": "now", "items": [{ "label": "MacBook (this)", "href": "/t/U22/", "rel": "everything today" }, { "label": "Mac Mini M4", "href": "/t/U22/", "rel": "always-on runtime" }, { "label": "Oracle VPS", "rel": "target" }] }
+      {
+        "type": "project",
+        "label": "Projects",
+        "tone": "projects",
+        "items": [
+          {
+            "label": "Great Library",
+            "href": "/t/U4/example/",
+            "rel": "agency"
+          },
+          {
+            "label": "Foundry",
+            "href": "/t/U3/example/",
+            "rel": "agency"
+          },
+          {
+            "label": "Internal + Agent Base",
+            "rel": "agency"
+          },
+          {
+            "label": "Knowledge · Source",
+            "rel": "agency"
+          },
+          {
+            "label": "Plays",
+            "rel": "agency"
+          },
+          {
+            "label": "GQ + compute",
+            "href": "/t/U5/example/",
+            "rel": "agency"
+          }
+        ]
+      },
+      {
+        "type": "client",
+        "label": "Clients",
+        "tone": "clients",
+        "items": [
+          {
+            "label": "Oracle · ofm",
+            "rel": "his lane"
+          },
+          {
+            "label": "HALO · ofm",
+            "rel": "mirror"
+          },
+          {
+            "label": "BykonzYard",
+            "rel": "his lane"
+          },
+          {
+            "label": "Action Model",
+            "href": "https://actionist-blueprint.pages.dev/",
+            "rel": "live"
+          }
+        ]
+      },
+      {
+        "type": "question",
+        "label": "Questions",
+        "tone": "research",
+        "items": [
+          {
+            "label": "GQ-008 route",
+            "rel": "first"
+          },
+          {
+            "label": "GQ-011 delegation",
+            "href": "/t/U5/example/",
+            "rel": "first"
+          },
+          {
+            "label": "GQ-012 context",
+            "rel": "next"
+          },
+          {
+            "label": "GQ-021 behaviour",
+            "rel": "next"
+          }
+        ]
+      },
+      {
+        "type": "play",
+        "label": "Plays",
+        "tone": "agents",
+        "items": [
+          {
+            "label": "P1 publish",
+            "href": "/t/U20/",
+            "rel": "ok"
+          },
+          {
+            "label": "P2 gls",
+            "href": "/t/U20/",
+            "rel": "ok"
+          },
+          {
+            "label": "P5 writeback",
+            "rel": "ok"
+          },
+          {
+            "label": "P6 tier table",
+            "rel": "wf"
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "label": "Nodes",
+        "tone": "now",
+        "items": [
+          {
+            "label": "MacBook (this)",
+            "href": "/t/U22/",
+            "rel": "everything today"
+          },
+          {
+            "label": "Mac Mini M4",
+            "href": "/t/U22/",
+            "rel": "always-on runtime"
+          },
+          {
+            "label": "Oracle VPS",
+            "rel": "target"
+          }
+        ]
+      }
     ]
   },
   "timeline": {
-    "from": "2026-09-05 17:00", "to": "2026-09-06 19:40",
-    "lanes": [{ "id": "decisions", "label": "decisions", "tone": "agents" }, { "id": "seats", "label": "seats", "tone": "research" }, { "id": "readings", "label": "atlas readings", "tone": "projects" }, { "id": "words", "label": "his words", "tone": "clients" }],
+    "from": "2026-09-05 17:00",
+    "to": "2026-09-06 19:40",
+    "lanes": [
+      {
+        "id": "decisions",
+        "label": "decisions",
+        "tone": "agents"
+      },
+      {
+        "id": "seats",
+        "label": "seats",
+        "tone": "research"
+      },
+      {
+        "id": "readings",
+        "label": "atlas readings",
+        "tone": "projects"
+      },
+      {
+        "id": "words",
+        "label": "his words",
+        "tone": "clients"
+      }
+    ],
     "events": [
-      { "at": "2026-09-05 17:12", "lane": "words", "label": "fleet respawn and roles" }, { "at": "2026-09-05 19:15", "lane": "words", "label": "standard pages, sauce" }, { "at": "2026-09-05 22:20", "lane": "words", "label": "clients vs agency" }, { "at": "2026-09-06 03:45", "lane": "words", "label": "medium; Luna sub-agents" }, { "at": "2026-09-06 14:30", "lane": "words", "label": "spec vs execution" }, { "at": "2026-09-06 16:36", "lane": "words", "label": "a way to see that shit" }, { "at": "2026-09-06 18:19", "lane": "words", "label": "twelve slots, reasoning, side nav" }, { "at": "2026-09-06 18:41", "lane": "words", "label": "build the damn thing" },
-      { "at": "2026-09-05 17:12", "lane": "decisions", "label": "D-1" }, { "at": "2026-09-06 00:20", "lane": "decisions", "label": "D-9…D-16 resolved" }, { "at": "2026-09-06 12:45", "lane": "decisions", "label": "D-20" }, { "at": "2026-09-06 14:30", "lane": "decisions", "label": "D-25" }, { "at": "2026-09-06 18:32", "lane": "decisions", "label": "D-30" }, { "at": "2026-09-06 18:47", "lane": "decisions", "label": "D-31…D-35" },
-      { "at": "2026-09-05 18:01", "lane": "seats", "label": "MAIN-ZERO routes 13 owners" }, { "at": "2026-09-05 19:40", "lane": "seats", "label": "LIBRARY-ZERO brief" }, { "at": "2026-09-06 13:36", "lane": "seats", "label": "GQ-COMPUTE closed" }, { "at": "2026-09-06 16:31", "lane": "seats", "label": "AGENT-ZERO (fresh) born" }, { "at": "2026-09-06 18:47", "lane": "seats", "label": "TEMPLATE-BANK-ZERO born" },
-      { "at": "2026-09-05 18:36", "lane": "readings", "label": "BASELINE" }, { "at": "2026-09-06 14:37", "lane": "readings", "label": "SPEC-OR-EXECUTION" }, { "at": "2026-09-06 16:48", "lane": "readings", "label": "CHECKPOINT" }, { "at": "2026-09-06 18:36", "lane": "readings", "label": "TEMPLATES v2" }
+      {
+        "at": "2026-09-05 17:12",
+        "lane": "words",
+        "label": "fleet respawn and roles"
+      },
+      {
+        "at": "2026-09-05 19:15",
+        "lane": "words",
+        "label": "standard pages, sauce"
+      },
+      {
+        "at": "2026-09-05 22:20",
+        "lane": "words",
+        "label": "clients vs agency"
+      },
+      {
+        "at": "2026-09-06 03:45",
+        "lane": "words",
+        "label": "medium; Luna sub-agents"
+      },
+      {
+        "at": "2026-09-06 14:30",
+        "lane": "words",
+        "label": "spec vs execution"
+      },
+      {
+        "at": "2026-09-06 16:36",
+        "lane": "words",
+        "label": "a way to see that shit"
+      },
+      {
+        "at": "2026-09-06 18:19",
+        "lane": "words",
+        "label": "twelve slots, reasoning, side nav"
+      },
+      {
+        "at": "2026-09-06 18:41",
+        "lane": "words",
+        "label": "build the damn thing"
+      },
+      {
+        "at": "2026-09-05 17:12",
+        "lane": "decisions",
+        "label": "D-1"
+      },
+      {
+        "at": "2026-09-06 00:20",
+        "lane": "decisions",
+        "label": "D-9…D-16 resolved"
+      },
+      {
+        "at": "2026-09-06 12:45",
+        "lane": "decisions",
+        "label": "D-20"
+      },
+      {
+        "at": "2026-09-06 14:30",
+        "lane": "decisions",
+        "label": "D-25"
+      },
+      {
+        "at": "2026-09-06 18:32",
+        "lane": "decisions",
+        "label": "D-30"
+      },
+      {
+        "at": "2026-09-06 18:47",
+        "lane": "decisions",
+        "label": "D-31…D-35"
+      },
+      {
+        "at": "2026-09-05 18:01",
+        "lane": "seats",
+        "label": "MAIN-ZERO routes 13 owners"
+      },
+      {
+        "at": "2026-09-05 19:40",
+        "lane": "seats",
+        "label": "LIBRARY-ZERO brief"
+      },
+      {
+        "at": "2026-09-06 13:36",
+        "lane": "seats",
+        "label": "GQ-COMPUTE closed"
+      },
+      {
+        "at": "2026-09-06 16:31",
+        "lane": "seats",
+        "label": "AGENT-ZERO (fresh) born"
+      },
+      {
+        "at": "2026-09-06 18:47",
+        "lane": "seats",
+        "label": "TEMPLATE-BANK-ZERO born"
+      },
+      {
+        "at": "2026-09-05 18:36",
+        "lane": "readings",
+        "label": "BASELINE"
+      },
+      {
+        "at": "2026-09-06 14:37",
+        "lane": "readings",
+        "label": "SPEC-OR-EXECUTION"
+      },
+      {
+        "at": "2026-09-06 16:48",
+        "lane": "readings",
+        "label": "CHECKPOINT"
+      },
+      {
+        "at": "2026-09-06 18:36",
+        "lane": "readings",
+        "label": "TEMPLATES v2"
+      }
     ]
   },
   "gaps": {
     "facts": [
-      { "claim": "T-2 · the one shell: the CRM GroupedRail now exists as siso-shell (U0), tokens verbatim, probed in headless Chrome.", "receipt": "siso-shell.pages.dev/t/U0/example/ · OWNERS 19:27", "href": "/t/U0/example/", "at": "6 Sep 19:27" },
-      { "claim": "F-3 · a real 404: the bank serves /404.html for any unknown path.", "receipt": "curl siso-shell.pages.dev/nope → 404", "href": "/404.html", "at": "6 Sep 19:27" }
+      {
+        "claim": "T-2 · the one shell: the CRM GroupedRail now exists as siso-shell (U0), tokens verbatim, probed in headless Chrome.",
+        "receipt": "siso-shell.pages.dev/t/U0/example/ · OWNERS 19:27",
+        "href": "/t/U0/example/",
+        "at": "6 Sep 19:27"
+      },
+      {
+        "claim": "F-3 · a real 404: the bank serves /404.html for any unknown path.",
+        "receipt": "curl siso-shell.pages.dev/nope → 404",
+        "href": "/404.html",
+        "at": "6 Sep 19:27"
+      }
     ],
     "proposals": [
-      { "claim": "T-4 · the project one pager on every project's own front door and Library Work (today: the U4 example only).", "why": "consumers must run bin/compose U4" },
-      { "claim": "F-1 · 56 dirty files left in 00_AGENT_ZERO by closed owners; checkpoint branches retired (D-35).", "why": "GAPS-2026-09-06 §F" },
-      { "claim": "O-5 · 14 GQ URLs fall through to the Library root.", "why": "L2 open" },
-      { "claim": "M-4 · seat pages need rollout path + token maxima.", "why": "U17 not built" }
+      {
+        "claim": "T-4 · the project one pager on every project's own front door and Library Work (today: the U4 example only).",
+        "why": "consumers must run bin/compose U4"
+      },
+      {
+        "claim": "F-1 · 56 dirty files left in 00_AGENT_ZERO by closed owners; checkpoint branches retired (D-35).",
+        "why": "GAPS-2026-09-06 §F"
+      },
+      {
+        "claim": "O-5 · 14 GQ URLs fall through to the Library root.",
+        "why": "L2 open"
+      },
+      {
+        "claim": "M-4 · seat pages need rollout path + token maxima.",
+        "why": "U17 not built"
+      }
     ],
-    "limits": ["Counts read 6 Sep 19:34 UTC+07; the atlas regenerates every 5 min, this page does not."],
-    "version": { "label": "siso-agent-zero-protocol 18ea54d · atlas/GAPS-2026-09-06.html", "at": "2026-09-06" }
+    "limits": [
+      "Counts read 6 Sep 19:34 UTC+07; the atlas regenerates every 5 min, this page does not."
+    ],
+    "version": {
+      "label": "siso-agent-zero-protocol 18ea54d · atlas/GAPS-2026-09-06.html",
+      "at": "2026-09-06"
+    }
   },
   "quickstart": {
-    "entry": { "path": "00_AGENT_ZERO/INTENT.md" },
-    "owner": { "name": "AGENT-ZERO (Claude Fable 5.1, herdr-2)", "last": "6 Sep 18:48" },
+    "entry": {
+      "path": "00_AGENT_ZERO/INTENT.md"
+    },
+    "owner": {
+      "name": "AGENT-ZERO (Claude Fable 5.1, herdr-2)",
+      "last": "6 Sep 18:48"
+    },
     "context_url": "https://siso-shell.pages.dev/t/U9/example.json",
     "verification": "Open the Agent Zero Work on the Library from a cold browser and see the register with 51 rows, each with its host and verification line, and the 49 source files listed by date (today: 8 of 51 rows and 8 of 49 files on this example).",
-    "commands": ["cat 00_AGENT_ZERO/INTENT.md 00_AGENT_ZERO/BASELINE.md", "node 00_AGENT_ZERO/plan/next.mjs", "python3 -c \"import json;print(len(json.load(open('00_AGENT_ZERO/plan/modules.json'))['modules']))\"", "herdr agent list"]
+    "commands": [
+      "cat 00_AGENT_ZERO/INTENT.md 00_AGENT_ZERO/BASELINE.md",
+      "node 00_AGENT_ZERO/plan/next.mjs",
+      "python3 -c \"import json;print(len(json.load(open('00_AGENT_ZERO/plan/modules.json'))['modules']))\"",
+      "herdr agent list"
+    ]
   }
 }

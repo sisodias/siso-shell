@@ -1,22 +1,340 @@
 {
-  "meta": { "title": "2026-09-06 16:50 · not what I asked · source", "description": "His words at 16:50, verbatim; what they caused.", "stream": "agents", "crumb": [{ "label": "Templates", "href": "/" }, { "label": "U18 · Source", "href": "/t/U18/" }, { "label": "2026-09-06-1650" }], "actions": [{ "label": "source/ (private)", "href": "https://github.com/sisodias/siso-agent-zero-protocol", "icon": "lock", "external": true }], "source": "00_AGENT_ZERO/source/2026-09-06-1650-shaan-not-what-i-asked-crm-side-nav-template-map-task-list.md (748 words)" },
-  "heading": { "breadcrumb": [{ "label": "Source", "href": "/t/U18/" }, { "label": "6 Sep 2026" }], "kicker": "source <span class=\"sep\">·</span> 2026-09-06 ~16:50 UTC+07 <span class=\"sep\">·</span> <span class=\"dim\">Shaan → AGENT-ZERO (fresh, Fable 5.1)</span>", "title": "not what I asked: CRM side nav, template map, task list", "subtitle": "Spoken after the CHECKPOINT page was posted (card A0-mtpmp107, 16:47). Captured from <code>date</code> by AGENT-ZERO; no transcript timestamp at capture.", "badges": [{ "label": "verbatim", "tone": "now", "dot": true }, { "label": "748 words", "tone": "muted" }, { "label": "to AGENT-ZERO", "tone": "agents" }, { "label": "caused · templates map · D-31…D-35 · this bank", "tone": "projects", "href": "#caused" }], "status": { "kicker": "Offset", "value": "label ≈ transcript", "note": "The file label is the capture time (16:5x); the words were received between 16:47 and 16:50. GAPS F-8 asks every source file to carry both.", "facts": [{ "k": "file", "v": "<code>2026-09-06-1650-shaan-not-what-i-asked-crm-side-nav-template-map-task-list.md</code>" }, { "k": "repo", "v": "siso-agent-zero-protocol · private" }] } },
-  "sections": { "words": { "n": "01", "title": "The words", "sub": "verbatim; punctuation as delivered" }, "reads": { "n": "02", "title": "Reads", "sub": "AGENT-ZERO's reading, not his words" }, "caused": { "n": "03", "title": "What it caused" }, "offset": { "n": "04", "title": "Label vs transcript" }, "day": { "n": "05", "title": "The day" }, "agent": { "n": "06", "title": "Agent entry" } },
+  "meta": {
+    "title": "2026-09-06 16:50 · not what I asked · source",
+    "description": "His words at 16:50, verbatim; what they caused.",
+    "stream": "agents",
+    "crumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U18 · Source",
+        "href": "/t/U18/"
+      },
+      {
+        "label": "2026-09-06-1650"
+      }
+    ],
+    "actions": [
+      {
+        "label": "source/ (private)",
+        "href": "https://github.com/sisodias/siso-agent-zero-protocol",
+        "icon": "lock",
+        "external": true
+      }
+    ],
+    "source": "00_AGENT_ZERO/source/2026-09-06-1650-shaan-not-what-i-asked-crm-side-nav-template-map-task-list.md (748 words)"
+  },
+  "heading": {
+    "breadcrumb": [
+      {
+        "label": "Source",
+        "href": "/t/U18/"
+      },
+      {
+        "label": "6 Sep 2026"
+      }
+    ],
+    "kicker": "source <span class=\"sep\">·</span> 2026-09-06 ~16:50 UTC+07 <span class=\"sep\">·</span> <span class=\"dim\">Shaan → AGENT-ZERO (fresh, Fable 5.1)</span>",
+    "title": "not what I asked: CRM side nav, template map, task list",
+    "subtitle": "Spoken after the CHECKPOINT page was posted (card A0-mtpmp107, 16:47). Captured from <code>date</code> by AGENT-ZERO; no transcript timestamp at capture.",
+    "badges": [
+      {
+        "label": "verbatim",
+        "tone": "now",
+        "dot": true
+      },
+      {
+        "label": "748 words",
+        "tone": "muted"
+      },
+      {
+        "label": "to AGENT-ZERO",
+        "tone": "agents"
+      },
+      {
+        "label": "caused · templates map · D-31…D-35 · this bank",
+        "tone": "projects",
+        "href": "#caused"
+      }
+    ],
+    "status": {
+      "kicker": "Offset",
+      "value": "label ≈ transcript",
+      "note": "The file label is the capture time (16:5x); the words were received between 16:47 and 16:50. GAPS F-8 asks every source file to carry both.",
+      "facts": [
+        {
+          "k": "file",
+          "v": "<code>2026-09-06-1650-shaan-not-what-i-asked-crm-side-nav-template-map-task-list.md</code>"
+        },
+        {
+          "k": "repo",
+          "v": "siso-agent-zero-protocol · private"
+        }
+      ]
+    },
+    "metrics": [
+      {
+        "value": 6,
+        "label": "reads of this capture",
+        "tone": "agents",
+        "href": "#reads"
+      },
+      {
+        "value": 6,
+        "label": "things it caused",
+        "tone": "projects",
+        "href": "#caused"
+      },
+      {
+        "value": 3,
+        "label": "verbatim blocks",
+        "tone": "muted",
+        "href": "#words"
+      }
+    ],
+    "jump": [
+      {
+        "label": "The words",
+        "href": "#words"
+      },
+      {
+        "label": "Reads",
+        "href": "#reads"
+      },
+      {
+        "label": "What it caused",
+        "href": "#caused"
+      },
+      {
+        "label": "Label vs transcript",
+        "href": "#offset"
+      },
+      {
+        "label": "The day",
+        "href": "#day"
+      },
+      {
+        "label": "Agent entry",
+        "href": "#agent"
+      }
+    ]
+  },
+  "sections": {
+    "words": {
+      "n": "01",
+      "title": "The words",
+      "sub": "verbatim; punctuation as delivered"
+    },
+    "reads": {
+      "n": "02",
+      "title": "Reads",
+      "sub": "AGENT-ZERO's reading, not his words"
+    },
+    "caused": {
+      "n": "03",
+      "title": "What it caused"
+    },
+    "offset": {
+      "n": "04",
+      "title": "Label vs transcript"
+    },
+    "day": {
+      "n": "05",
+      "title": "The day"
+    },
+    "agent": {
+      "n": "06",
+      "title": "Agent entry"
+    }
+  },
   "words": [
-    { "text": "I Understand but you don't really do what I asked you to do Well, I don't have actually to this thing. Yeah, it's the last 40 hours visible Okay, can I have an agent zero base or I like this the side knows good, but you're still not using the what's it called side Now if you're still not using the size of CRM side nav And not all of them have side now so they're connected And You haven't talked to me about the library UI agent we haven't done any thoughts about all the templates that need to be made Like we don't have a place where we've listed all of the template work for the great library size So to fully build it out like we don't actually have that place. I don't know why Like it should be as a task list of agents like I said agent should be a thermal should not be holding the water Agents should be the projects are forever agents", "who": "Shaan → AGENT-ZERO", "at": "6 Sep ~16:50" },
-    { "text": "for the front ends in terms of like all the templates like the GLS template like using our color streams I like our gradient stuff like that so the GLS should be following that great library of sites that should be following that and we should at least map out like I want us right now to map out all the modules and templates that we need across the great library of sites so you know like we need one for each ERDOS question we need one for each god question we need one for each agent zero, we need one for each research doc, we need one for each project one pager, which is obviously going to be a bit bigger and they're all going to link together and fit in. We need one for each great library size, so module, right? However that looks, because there'll be different categories of modules, there'll be projects, there'll be niches, there's client, there's personal", "who": "Shaan → AGENT-ZERO", "at": "6 Sep ~16:50" },
-    { "text": "all of that stuff was distilled already from intelligence, so like it's just about getting eyes on that stuff now. And then once we have that list then we can get a fable and me and him, he can ask me and he can get some 21st.dev components from our component library and look at the themes that we like and figure out what he wants to fit in there and stuff.", "who": "Shaan → AGENT-ZERO", "at": "6 Sep ~16:50" }
+    {
+      "text": "I Understand but you don't really do what I asked you to do Well, I don't have actually to this thing. Yeah, it's the last 40 hours visible Okay, can I have an agent zero base or I like this the side knows good, but you're still not using the what's it called side Now if you're still not using the size of CRM side nav And not all of them have side now so they're connected And You haven't talked to me about the library UI agent we haven't done any thoughts about all the templates that need to be made Like we don't have a place where we've listed all of the template work for the great library size So to fully build it out like we don't actually have that place. I don't know why Like it should be as a task list of agents like I said agent should be a thermal should not be holding the water Agents should be the projects are forever agents",
+      "who": "Shaan → AGENT-ZERO",
+      "at": "6 Sep ~16:50"
+    },
+    {
+      "text": "for the front ends in terms of like all the templates like the GLS template like using our color streams I like our gradient stuff like that so the GLS should be following that great library of sites that should be following that and we should at least map out like I want us right now to map out all the modules and templates that we need across the great library of sites so you know like we need one for each ERDOS question we need one for each god question we need one for each agent zero, we need one for each research doc, we need one for each project one pager, which is obviously going to be a bit bigger and they're all going to link together and fit in. We need one for each great library size, so module, right? However that looks, because there'll be different categories of modules, there'll be projects, there'll be niches, there's client, there's personal",
+      "who": "Shaan → AGENT-ZERO",
+      "at": "6 Sep ~16:50"
+    },
+    {
+      "text": "all of that stuff was distilled already from intelligence, so like it's just about getting eyes on that stuff now. And then once we have that list then we can get a fable and me and him, he can ask me and he can get some 21st.dev components from our component library and look at the themes that we like and figure out what he wants to fit in there and stuff.",
+      "who": "Shaan → AGENT-ZERO",
+      "at": "6 Sep ~16:50"
+    }
   ],
-  "reads": ["The checkpoint page answered 'is the 48 h visible' but not the ask: the template work has no place, no list, no tasks. 'it should be as a task list of agents … agents should be ephemeral … the projects are forever'.", "The atlas pages still do not use the SISO CRM side nav (they use Fable FA0's rail.js), and not every page has it, so the pages are not connected.", "Nobody has talked to him about the Library UI Fable seat.", "Map every module and template the Great Library site needs: one per Erdős question, God Question, Agent Zero, research doc, project one pager, Library module with categories (projects, niches, client, personal).", "Theme: 'our color streams … our gradient stuff'; the GLS template follows that.", "After the list: a Fable seat with him, picking 21st.dev components from the bank."],
+  "reads": [
+    "The checkpoint page answered 'is the 48 h visible' but not the ask: the template work has no place, no list, no tasks. 'it should be as a task list of agents … agents should be ephemeral … the projects are forever'.",
+    "The atlas pages still do not use the SISO CRM side nav (they use Fable FA0's rail.js), and not every page has it, so the pages are not connected.",
+    "Nobody has talked to him about the Library UI Fable seat.",
+    "Map every module and template the Great Library site needs: one per Erdős question, God Question, Agent Zero, research doc, project one pager, Library module with categories (projects, niches, client, personal).",
+    "Theme: 'our color streams … our gradient stuff'; the GLS template follows that.",
+    "After the list: a Fable seat with him, picking 21st.dev components from the bank."
+  ],
   "caused": [
-    { "title": "plan/templates.json · 24 families", "href": "/", "type": "the map", "tone": "projects", "why": "written 17:08, rewritten 18:36 on his 18:19 + 18:22" },
-    { "title": "24 template issues #41–#64", "href": "https://github.com/sisodias/siso-agent-zero-protocol/issues?q=label%3Atemplate", "type": "the task list (D-33)", "tone": "agents" },
-    { "title": "U0 · the CRM rail, copied", "href": "/t/U0/example/", "type": "the side nav", "tone": "projects", "why": "sizing, fonts, spacing from the CRM source" },
-    { "title": "Colour streams · six accents", "href": "/t/U13/example/#atoms", "type": "theme", "tone": "research", "why": "Research blue · Agents violet · Projects orange · Clients amber · Now emerald · Blocked rose" },
-    { "title": "D-31 … D-35", "href": "/t/U16/example/", "type": "decisions", "tone": "agents", "why": "taken 18:47 on his 18:41 follow-up" },
-    { "title": "TEMPLATE-BANK-ZERO", "href": "/t/U17/example/", "type": "seat", "tone": "agents", "why": "the Fable he asked for; born 18:47" }
+    {
+      "title": "plan/templates.json · 24 families",
+      "href": "/",
+      "type": "the map",
+      "tone": "projects",
+      "why": "written 17:08, rewritten 18:36 on his 18:19 + 18:22"
+    },
+    {
+      "title": "24 template issues #41–#64",
+      "href": "https://github.com/sisodias/siso-agent-zero-protocol/issues?q=label%3Atemplate",
+      "type": "the task list (D-33)",
+      "tone": "agents"
+    },
+    {
+      "title": "U0 · the CRM rail, copied",
+      "href": "/t/U0/example/",
+      "type": "the side nav",
+      "tone": "projects",
+      "why": "sizing, fonts, spacing from the CRM source"
+    },
+    {
+      "title": "Colour streams · six accents",
+      "href": "/t/U13/example/#atoms",
+      "type": "theme",
+      "tone": "research",
+      "why": "Research blue · Agents violet · Projects orange · Clients amber · Now emerald · Blocked rose"
+    },
+    {
+      "title": "D-31 … D-35",
+      "href": "/t/U16/example/",
+      "type": "decisions",
+      "tone": "agents",
+      "why": "taken 18:47 on his 18:41 follow-up"
+    },
+    {
+      "title": "TEMPLATE-BANK-ZERO",
+      "href": "/t/U17/example/",
+      "type": "seat",
+      "tone": "agents",
+      "why": "the Fable he asked for; born 18:47"
+    }
   ],
-  "offset": [{ "k": "file label", "v": "16:50" }, { "k": "received", "v": "between 16:47 (card posted) and ~16:50" }, { "k": "transcript", "v": "no transcript timestamp at capture" }, { "k": "captured by", "v": "AGENT-ZERO from <code>date</code>" }, { "k": "gap", "v": "F-8 · every source file should carry label and transcript time" }],
-  "day": { "from": "2026-09-06 12:00", "to": "2026-09-06 19:50", "lanes": [{ "id": "words", "label": "his words", "tone": "clients" }, { "id": "caused", "label": "caused", "tone": "agents" }], "events": [{ "at": "2026-09-06 12:05", "lane": "words", "label": "what did the fleet do overnight" }, { "at": "2026-09-06 13:09", "lane": "words", "label": "not our size of CRM side nav" }, { "at": "2026-09-06 14:30", "lane": "words", "label": "spec vs execution" }, { "at": "2026-09-06 14:55", "lane": "words", "label": "new Fable, checkpoint everything" }, { "at": "2026-09-06 16:36", "lane": "words", "label": "why templates; see the work" }, { "at": "2026-09-06 16:50", "lane": "words", "label": "this file" }, { "at": "2026-09-06 18:19", "lane": "words", "label": "twelve slots, reasoning, order" }, { "at": "2026-09-06 18:22", "lane": "words", "label": "rob the Action Model UIs" }, { "at": "2026-09-06 18:41", "lane": "words", "label": "build the damn thing" }, { "at": "2026-09-06 17:08", "lane": "caused", "label": "templates.json v1", "href": "/" }, { "at": "2026-09-06 18:36", "lane": "caused", "label": "templates.json v2 · 24 rows" }, { "at": "2026-09-06 18:47", "lane": "caused", "label": "D-31…D-35 · TEMPLATE-BANK-ZERO born" }, { "at": "2026-09-06 19:27", "lane": "caused", "label": "siso-shell.pages.dev live", "href": "/" }] },
-  "quickstart": { "entry": { "path": "00_AGENT_ZERO/source/2026-09-06-1650-shaan-not-what-i-asked-crm-side-nav-template-map-task-list.md" }, "owner": { "name": "AGENT-ZERO (capture) · INTENT-DISTILLATION (corpus)" }, "verification": "Open this page and see the 16:50 words verbatim, the capture note, and links to the templates map and the rail work it caused.", "commands": ["ls 00_AGENT_ZERO/source/ | grep 2026-09-06", "grep -l 'CRM side nav' 00_AGENT_ZERO/source/*.md"] }
+  "offset": [
+    {
+      "k": "file label",
+      "v": "16:50"
+    },
+    {
+      "k": "received",
+      "v": "between 16:47 (card posted) and ~16:50"
+    },
+    {
+      "k": "transcript",
+      "v": "no transcript timestamp at capture"
+    },
+    {
+      "k": "captured by",
+      "v": "AGENT-ZERO from <code>date</code>"
+    },
+    {
+      "k": "gap",
+      "v": "F-8 · every source file should carry label and transcript time"
+    }
+  ],
+  "day": {
+    "from": "2026-09-06 12:00",
+    "to": "2026-09-06 19:50",
+    "lanes": [
+      {
+        "id": "words",
+        "label": "his words",
+        "tone": "clients"
+      },
+      {
+        "id": "caused",
+        "label": "caused",
+        "tone": "agents"
+      }
+    ],
+    "events": [
+      {
+        "at": "2026-09-06 12:05",
+        "lane": "words",
+        "label": "what did the fleet do overnight"
+      },
+      {
+        "at": "2026-09-06 13:09",
+        "lane": "words",
+        "label": "not our size of CRM side nav"
+      },
+      {
+        "at": "2026-09-06 14:30",
+        "lane": "words",
+        "label": "spec vs execution"
+      },
+      {
+        "at": "2026-09-06 14:55",
+        "lane": "words",
+        "label": "new Fable, checkpoint everything"
+      },
+      {
+        "at": "2026-09-06 16:36",
+        "lane": "words",
+        "label": "why templates; see the work"
+      },
+      {
+        "at": "2026-09-06 16:50",
+        "lane": "words",
+        "label": "this file"
+      },
+      {
+        "at": "2026-09-06 18:19",
+        "lane": "words",
+        "label": "twelve slots, reasoning, order"
+      },
+      {
+        "at": "2026-09-06 18:22",
+        "lane": "words",
+        "label": "rob the Action Model UIs"
+      },
+      {
+        "at": "2026-09-06 18:41",
+        "lane": "words",
+        "label": "build the damn thing"
+      },
+      {
+        "at": "2026-09-06 17:08",
+        "lane": "caused",
+        "label": "templates.json v1",
+        "href": "/"
+      },
+      {
+        "at": "2026-09-06 18:36",
+        "lane": "caused",
+        "label": "templates.json v2 · 24 rows"
+      },
+      {
+        "at": "2026-09-06 18:47",
+        "lane": "caused",
+        "label": "D-31…D-35 · TEMPLATE-BANK-ZERO born"
+      },
+      {
+        "at": "2026-09-06 19:27",
+        "lane": "caused",
+        "label": "siso-shell.pages.dev live",
+        "href": "/"
+      }
+    ]
+  },
+  "quickstart": {
+    "entry": {
+      "path": "00_AGENT_ZERO/source/2026-09-06-1650-shaan-not-what-i-asked-crm-side-nav-template-map-task-list.md"
+    },
+    "owner": {
+      "name": "AGENT-ZERO (capture) · INTENT-DISTILLATION (corpus)"
+    },
+    "verification": "Open this page and see the 16:50 words verbatim, the capture note, and links to the templates map and the rail work it caused.",
+    "commands": [
+      "ls 00_AGENT_ZERO/source/ | grep 2026-09-06",
+      "grep -l 'CRM side nav' 00_AGENT_ZERO/source/*.md"
+    ]
+  }
 }

@@ -42,6 +42,8 @@
     <div class="heading__badges">
 <span class="chip tone-now" title="Now"><i class="dot"></i>observed 20:29 +07</span><a class="chip tone-now" href="#live" title="Now">2 fresh · &lt;1 h</a><a class="chip tone-warn" href="#live" title="Now">3 within 24 h</a><a class="chip tone-blocked" href="#live" title="Now">5 no writeback</a><a class="chip tone-muted" href="#stale" title="Now">16 seats wrote back but are not live</a><span class="chip tone-now" title="Now">node errors · 0</span>
 </div>
+    
+    <div class="heading__jump"><a class="jumpchip" href="#live">Live seats</a><a class="jumpchip" href="#observations">Dated owner observations</a><a class="jumpchip" href="#stale">Stale · seats that wrote back but are not live</a><a class="jumpchip" href="#repos">Repo activity · last 24 h</a><a class="jumpchip" href="#coverage">Coverage</a><a class="jumpchip" href="#message">Who to message</a></div>
   </div>
   <aside class="heading__status">
     <span class="kicker">Last writeback anywhere</span>
@@ -49,6 +51,12 @@
     <p>heading align fix (his 20:20) · U6 Erdős 742 live (20 of 24); issue #59 closed; siso-shell 4a5fc11 · handoffs/TEMPLATE-BANK.md: "D-36 scrub 4e30a78 (0 hits live)". Seats read at 20:29; this page is a snapshot and says so.</p>
     <dl class="kv"><dt>laptop</dt><dd>6 seats · herdr-2 + default</dd><dt>mini</dt><dd>4 seats · default</dd><dt>unowned claims</dt><dd>0</dd><dt>log issues</dt><dd>22 (scan limit; 2 lines without time; malformed lines 153–155)</dd></dl>
   </aside>
+  
+  <div class="heading__metrics">
+<div class="metrics">
+<a class="metric tone-now" href="#live" title="Now"><b>10</b><span>live seats</span></a><a class="metric tone-warn" href="#stale" title="Now"><b>16</b><span>seats stale</span></a><a class="metric tone-agents" href="#observations" title="Now"><b>22</b><span>dated observations</span></a><a class="metric tone-projects" href="#repos" title="Now"><b>6</b><span>repos with 24h activity</span></a>
+</div>
+</div>
 </header>
 
 <section class="siso-section" id="live">
@@ -163,7 +171,7 @@
 
 </section>
 
-    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U10 · 2026-09-06T14:55:15.557Z · data 00_AGENT_ZERO/atlas/now.json generated &quot;06 Sep 2026 20:29 +0700&quot; by bin/az-now (herdr --session herdr-2|default agent list on laptop, mini-herdr agent list on Mini; 15 log sources; 20 log issues) · git log -1 / rev-list --since 24 h in six local checkouts, 20:27 UTC+07</footer>
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U10 · 2026-09-06T14:59:40.236Z · data 00_AGENT_ZERO/atlas/now.json generated &quot;06 Sep 2026 20:29 +0700&quot; by bin/az-now (herdr --session herdr-2|default agent list on laptop, mini-herdr agent list on Mini; 15 log sources; 20 log issues) · git log -1 / rev-list --since 24 h in six local checkouts, 20:27 UTC+07</footer>
   </main>
 </div>
 </body>

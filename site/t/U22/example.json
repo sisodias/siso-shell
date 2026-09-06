@@ -1,642 +1,694 @@
 {
- "meta": {
-  "title": "Mac Mini M4 · node",
-  "description": "Node page for the Mac Mini M4: reachable by which route with probe times (Tailscale ssh 20:43 ok; WARP route present, ping and ssh fail), the four seats on it and their last writebacks, capacity from sysctl/df/pmset, the placement rule, the other nodes, evidence. No addresses on the page.",
-  "stream": "now",
-  "crumb": [
-   {
-    "label": "Templates",
-    "href": "/"
-   },
-   {
-    "label": "U22 · Node",
-    "href": "/t/U22/"
-   },
-   {
-    "label": "Mac Mini M4"
-   }
-  ],
-  "actions": [
-   {
-    "label": "ESTATE.md",
-    "href": "https://github.com/sisodias/siso-agent-zero-protocol",
-    "icon": "map",
-    "external": true
-   },
-   {
-    "label": "Now",
-    "href": "/t/U10/example/",
-    "icon": "activity"
-   }
-  ],
-  "source": "ssh over Tailscale (hostname, sysctl hw.model/hw.memsize, sw_vers, uptime, df -h /, pmset -g, herdr --version, codex --version, curl :8080) 6 Sep 20:43 UTC+07 · 00_AGENT_ZERO/bin/mini-probe 20:43 · mini-herdr agent list 20:38 · atlas/now.json 20:29 · ledger/2026-09-06-mini-native-pilot.json · briefs/MINI-SYNC.md (6 Sep 00:30) · estate/MINI-STATUS.md (5 Sep) · ESTATE.md (1e5e61e, 5 Sep 18:36) · OWNERS.md LAPTOP-ORGANIZER 5 Sep 19:59"
- },
- "heading": {
-  "breadcrumb": [
-   {
-    "label": "Estate",
-    "href": "/t/U9/example/"
-   },
-   {
-    "label": "nodes"
-   },
-   {
-    "label": "Mac Mini M4"
-   }
-  ],
-  "kicker": "node <span class=\"sep\">·</span> Mac Mini M4 <span class=\"sep\">·</span> <span class=\"dim\">always-on runtime · 4 seats · reachable over Tailscale</span>",
-  "title": "Mac Mini M4",
-  "subtitle": "The always-on box: herdr server, four Codex seats, Bifrost, sleep prevented. Reachable right now over Tailscale (ssh answered at 20:43); the Cloudflare WARP private route is present but does not carry ping or ssh today. Every fact below carries the probe that produced it.",
-  "badges": [
-   {
-    "label": "reachable · Tailscale · 20:43",
-    "tone": "now",
-    "dot": true,
-    "href": "#reach"
-   },
-   {
-    "label": "WARP route · no reply · 20:43",
-    "tone": "blocked",
-    "href": "#reach"
-   },
-   {
-    "label": "4 seats · 2 idle · 2 done",
-    "tone": "agents",
-    "href": "#runs"
-   },
-   {
-    "label": "up 8 d 23 h",
-    "tone": "now",
-    "href": "#capacity"
-   },
-   {
-    "label": "17 GiB disk free",
-    "tone": "warn",
-    "href": "#capacity"
-   },
-   {
-    "label": "no addresses on this page",
-    "tone": "muted",
-    "icon": "lock"
-   }
-  ],
-  "status": {
-   "kicker": "Last probe",
-   "value": "20:43 +07 · ssh ok",
-   "note": "macOS 15.5 · Mac16,10 · 16 GB · load 1.15 · sleep prevented by powerd · herdr 0.6.5 · codex-cli 0.153.4 · Bifrost :8080 answers 200. The Mini clock reads 14:43 (its zone is one hour ahead of UTC; the laptop is +07).",
-   "facts": [
-    {
-     "k": "route in use",
-     "v": "Tailscale (<code>ssh mac-mini-ts</code>, <code>mini-herdr</code> = <code>herdr --remote mac-mini-herdr</code>)"
+  "meta": {
+    "title": "Mac Mini M4 · node",
+    "description": "Node page for the Mac Mini M4: reachable by which route with probe times (Tailscale ssh 20:43 ok; WARP route present, ping and ssh fail), the four seats on it and their last writebacks, capacity from sysctl/df/pmset, the placement rule, the other nodes, evidence. No addresses on the page.",
+    "stream": "now",
+    "crumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U22 · Node",
+        "href": "/t/U22/"
+      },
+      {
+        "label": "Mac Mini M4"
+      }
+    ],
+    "actions": [
+      {
+        "label": "ESTATE.md",
+        "href": "https://github.com/sisodias/siso-agent-zero-protocol",
+        "icon": "map",
+        "external": true
+      },
+      {
+        "label": "Now",
+        "href": "/t/U10/example/",
+        "icon": "activity"
+      }
+    ],
+    "source": "ssh over Tailscale (hostname, sysctl hw.model/hw.memsize, sw_vers, uptime, df -h /, pmset -g, herdr --version, codex --version, curl :8080) 6 Sep 20:43 UTC+07 · 00_AGENT_ZERO/bin/mini-probe 20:43 · mini-herdr agent list 20:38 · atlas/now.json 20:29 · ledger/2026-09-06-mini-native-pilot.json · briefs/MINI-SYNC.md (6 Sep 00:30) · estate/MINI-STATUS.md (5 Sep) · ESTATE.md (1e5e61e, 5 Sep 18:36) · OWNERS.md LAPTOP-ORGANIZER 5 Sep 19:59"
+  },
+  "heading": {
+    "breadcrumb": [
+      {
+        "label": "Estate",
+        "href": "/t/U9/example/"
+      },
+      {
+        "label": "nodes"
+      },
+      {
+        "label": "Mac Mini M4"
+      }
+    ],
+    "kicker": "node <span class=\"sep\">·</span> Mac Mini M4 <span class=\"sep\">·</span> <span class=\"dim\">always-on runtime · 4 seats · reachable over Tailscale</span>",
+    "title": "Mac Mini M4",
+    "subtitle": "The always-on box: herdr server, four Codex seats, Bifrost, sleep prevented. Reachable right now over Tailscale (ssh answered at 20:43); the Cloudflare WARP private route is present but does not carry ping or ssh today. Every fact below carries the probe that produced it.",
+    "badges": [
+      {
+        "label": "reachable · Tailscale · 20:43",
+        "tone": "now",
+        "dot": true,
+        "href": "#reach"
+      },
+      {
+        "label": "WARP route · no reply · 20:43",
+        "tone": "blocked",
+        "href": "#reach"
+      },
+      {
+        "label": "4 seats · 2 idle · 2 done",
+        "tone": "agents",
+        "href": "#runs"
+      },
+      {
+        "label": "up 8 d 23 h",
+        "tone": "now",
+        "href": "#capacity"
+      },
+      {
+        "label": "17 GiB disk free",
+        "tone": "warn",
+        "href": "#capacity"
+      },
+      {
+        "label": "no addresses on this page",
+        "tone": "muted",
+        "icon": "lock"
+      }
+    ],
+    "status": {
+      "kicker": "Last probe",
+      "value": "20:43 +07 · ssh ok",
+      "note": "macOS 15.5 · Mac16,10 · 16 GB · load 1.15 · sleep prevented by powerd · herdr 0.6.5 · codex-cli 0.153.4 · Bifrost :8080 answers 200. The Mini clock reads 14:43 (its zone is one hour ahead of UTC; the laptop is +07).",
+      "facts": [
+        {
+          "k": "route in use",
+          "v": "Tailscale (<code>ssh mac-mini-ts</code>, <code>mini-herdr</code> = <code>herdr --remote mac-mini-herdr</code>)"
+        },
+        {
+          "k": "route intended",
+          "v": "Cloudflare WARP private route (ESTATE.md: \"already the primary, not Tailscale\"); down 5 Sep, no reply 6 Sep"
+        },
+        {
+          "k": "owner of bring-up",
+          "v": "LAPTOP-ORGANIZER (briefs/MINI-SYNC.md, N1)"
+        },
+        {
+          "k": "GQ",
+          "v": "GQ-017 · what runs on laptop, Mini and client VPS"
+        }
+      ]
     },
-    {
-     "k": "route intended",
-     "v": "Cloudflare WARP private route (ESTATE.md: \"already the primary, not Tailscale\"); down 5 Sep, no reply 6 Sep"
+    "metrics": [
+      {
+        "value": 3,
+        "label": "routes",
+        "tone": "now",
+        "href": "#reach"
+      },
+      {
+        "value": 7,
+        "label": "probes, dated",
+        "tone": "muted",
+        "href": "#reach"
+      },
+      {
+        "value": 4,
+        "label": "seats on the node",
+        "tone": "agents",
+        "href": "#runs"
+      },
+      {
+        "value": 5,
+        "label": "nodes in the estate",
+        "tone": "projects",
+        "href": "#nodes"
+      }
+    ],
+    "jump": [
+      {
+        "label": "Reachable, by which route",
+        "href": "#reach"
+      },
+      {
+        "label": "What runs there",
+        "href": "#runs"
+      },
+      {
+        "label": "Capacity · budget",
+        "href": "#capacity"
+      },
+      {
+        "label": "Placement rule",
+        "href": "#placement"
+      },
+      {
+        "label": "The other nodes",
+        "href": "#nodes"
+      },
+      {
+        "label": "Evidence",
+        "href": "#evidence"
+      }
+    ]
+  },
+  "sections": {
+    "reach": {
+      "n": "01",
+      "title": "Reachable, by which route",
+      "sub": "three routes, each with its last probe; commands are the read-only ones in the repo"
     },
-    {
-     "k": "owner of bring-up",
-     "v": "LAPTOP-ORGANIZER (briefs/MINI-SYNC.md, N1)"
+    "runs": {
+      "n": "02",
+      "title": "What runs there",
+      "sub": "mini-herdr agent list 20:38 · last writeback from atlas/now.json 20:29"
     },
-    {
-     "k": "GQ",
-     "v": "GQ-017 · what runs on laptop, Mini and client VPS"
+    "capacity": {
+      "n": "03",
+      "title": "Capacity · budget",
+      "sub": "sysctl, df, pmset over ssh at 20:43; what is not measured says so"
+    },
+    "placement": {
+      "n": "04",
+      "title": "Placement rule",
+      "sub": "briefs/MINI-SYNC.md, 6 Sep 00:30"
+    },
+    "nodes": {
+      "n": "05",
+      "title": "The other nodes",
+      "sub": "ESTATE.md nodes table + today's seat counts"
+    },
+    "evidence": {
+      "n": "06",
+      "title": "Evidence"
+    },
+    "timeline": {
+      "n": "07",
+      "title": "Bring-up"
+    },
+    "related": {
+      "n": "08",
+      "title": "Links"
+    },
+    "agent": {
+      "n": "09",
+      "title": "Agent entry"
     }
-   ]
-  }
- },
- "sections": {
-  "reach": {
-   "n": "01",
-   "title": "Reachable, by which route",
-   "sub": "three routes, each with its last probe; commands are the read-only ones in the repo"
   },
-  "runs": {
-   "n": "02",
-   "title": "What runs there",
-   "sub": "mini-herdr agent list 20:38 · last writeback from atlas/now.json 20:29"
-  },
+  "routes": [
+    {
+      "route": "Tailscale",
+      "state": "up · ssh answered",
+      "tone": "now",
+      "icon": "check",
+      "how": "<code>ssh -o BatchMode=yes mac-mini-ts</code> returned hostname, sysctl, uptime; <code>mini-herdr agent list</code> returned 4 agents at 20:38. ESTATE.md calls Tailscale the legacy fallback; today it is the only route that carries traffic.",
+      "probed": "2026-09-06 20:43 +07"
+    },
+    {
+      "route": "Cloudflare WARP private route",
+      "state": "route present · no reply",
+      "tone": "blocked",
+      "icon": "x",
+      "how": "<code>bin/mini-probe</code>: \"MINI unreachable: ping=fail warp_route=ok ssh=fail\". Same verdict as estate/MINI-STATUS.md on 5 Sep. Pilot note: cloudflared runs on the Mini as a token-managed system daemon; the Mini's current interface address differs from the historical destination; origin certificate absent on both machines so advertised routes could not be inspected.",
+      "probed": "2026-09-06 20:43 +07"
+    },
+    {
+      "route": "Interactive attach (herdr)",
+      "state": "rendered · 6 Sep pilot",
+      "tone": "now",
+      "icon": "terminal",
+      "how": "<code>env -u HERDR_ENV -u HERDR_SESSION herdr --remote mac-mini-herdr --session default</code> rendered the default-session UI (owner labels AGENCY, INTENT). First attempt inherited the laptop session name and started an empty named server, which was stopped; no owner runtime closed.",
+      "probed": "2026-09-06 (mini-native-pilot.json)"
+    }
+  ],
+  "probes": [
+    {
+      "what": "ssh over Tailscale",
+      "cmd": "ssh -T -o BatchMode=yes -o ConnectTimeout=6 -o RemoteCommand=none mac-mini-ts 'hostname; sysctl -n hw.model hw.memsize; sw_vers -productVersion; uptime; df -h /; pmset -g'",
+      "result": "ok",
+      "tone": "now",
+      "note": "Mac16,10 · 16 GB · 15.5 · up 8 days 23:09 · sleep 0 (prevented by powerd)",
+      "at": "2026-09-06 20:43",
+      "by": "TEMPLATE-BANK-ZERO-2"
+    },
+    {
+      "what": "WARP route probe",
+      "cmd": "00_AGENT_ZERO/bin/mini-probe",
+      "result": "unreachable",
+      "tone": "blocked",
+      "note": "ping=fail warp_route=ok ssh=fail (read-only: route inspection, one ICMP echo, ssh running only <code>true</code>)",
+      "at": "2026-09-06 20:43",
+      "by": "TEMPLATE-BANK-ZERO-2"
+    },
+    {
+      "what": "herdr agent list",
+      "cmd": "mini-herdr agent list",
+      "result": "4 agents",
+      "tone": "now",
+      "note": "ERDOS-LEAD idle · SISO-PERF-SOL idle · PLAYS-ZERO done · INTENT-DISTILLATION done, all codex",
+      "at": "2026-09-06 20:38",
+      "by": "TEMPLATE-BANK-ZERO-2"
+    },
+    {
+      "what": "Bifrost",
+      "cmd": "curl -s -o /dev/null -w %{http_code} http://127.0.0.1:8080/ (on the Mini)",
+      "result": "200",
+      "tone": "now",
+      "at": "2026-09-06 20:43",
+      "by": "TEMPLATE-BANK-ZERO-2"
+    },
+    {
+      "what": "Astra inference on the Mini",
+      "cmd": "codex exec --model gpt-6-astra (invocation-only openai provider, native catalog/context overrides)",
+      "result": "ASTRA_MINI_OK",
+      "tone": "now",
+      "note": "exit 0; rollout recorded in the pilot ledger",
+      "at": "2026-09-06 (pilot)",
+      "by": "LAPTOP-ORGANIZER"
+    },
+    {
+      "what": "MINI-SYNC verification",
+      "cmd": "ssh mini-fast (herdr, codex, claude, gh, git, Bifrost, free memory, disk, sleep)",
+      "result": "up · no live agents then",
+      "tone": "muted",
+      "note": "\"herdr 0.6.5 server up (no live agents), codex + claude 2.1.220 + gh + git installed and authed, Bifrost on :8080, 6 GB free, 20 GB disk, sleep prevented … Only Tailscale reaches it\"",
+      "at": "2026-09-06 00:05",
+      "by": "Fable FA0"
+    },
+    {
+      "what": "WARP route probe",
+      "cmd": "bin/mini-probe",
+      "result": "unreachable",
+      "tone": "blocked",
+      "note": "estate/MINI-STATUS.md: WARP route present on utun5; ping and ssh failed",
+      "at": "2026-09-05 02:41",
+      "by": "LAPTOP-ORGANIZER"
+    }
+  ],
+  "seats": [
+    {
+      "name": "ERDOS-LEAD",
+      "harness": "codex",
+      "status": "idle",
+      "tone": "warn",
+      "cwd": "~/SISO_Workspace/SISO_Research/erdos",
+      "last": "none in scanned logs",
+      "href": "/t/U6/example/"
+    },
+    {
+      "name": "SISO-PERF-SOL",
+      "harness": "codex",
+      "status": "idle",
+      "tone": "warn",
+      "cwd": "~/SISO_Workspace/SISO_Internal_Lab",
+      "last": "none in scanned logs"
+    },
+    {
+      "name": "PLAYS-ZERO",
+      "harness": "codex",
+      "status": "done",
+      "tone": "muted",
+      "cwd": "~/SISO_Workspace/SISO_Agents/siso-skills-hub",
+      "last": "2026-09-06 01:28 · plays-verification-2026-09-05.json",
+      "href": "/t/U20/example/"
+    },
+    {
+      "name": "INTENT-DISTILLATION",
+      "harness": "codex",
+      "status": "done",
+      "tone": "muted",
+      "cwd": "~/SISO_Workspace/SISO_Knowledge/.siso-local/siso-source",
+      "last": "2026-09-06 05:33 · KNOWLEDGE-PEOPLE.md"
+    }
+  ],
+  "services": [
+    {
+      "label": "herdr 0.6.5 · default session",
+      "tone": "now",
+      "dot": true
+    },
+    {
+      "label": "codex-cli 0.153.4",
+      "tone": "now"
+    },
+    {
+      "label": "Bifrost :8080 · 200",
+      "tone": "now"
+    },
+    {
+      "label": "cloudflared · system daemon (pilot)",
+      "tone": "warn"
+    },
+    {
+      "label": "Foundry 1.3M index (ESTATE.md)",
+      "tone": "muted"
+    },
+    {
+      "label": "sleep prevented · powerd",
+      "tone": "now"
+    }
+  ],
   "capacity": {
-   "n": "03",
-   "title": "Capacity · budget",
-   "sub": "sysctl, df, pmset over ssh at 20:43; what is not measured says so"
+    "metrics": [
+      {
+        "value": "16 GB",
+        "label": "RAM (hw.memsize)",
+        "tone": "now"
+      },
+      {
+        "value": "17 GiB",
+        "label": "disk free of 228 (df /, 51%)",
+        "tone": "warn"
+      },
+      {
+        "value": "1.15",
+        "label": "load 1 min (uptime)",
+        "tone": "now"
+      },
+      {
+        "value": "8 d 23 h",
+        "label": "uptime",
+        "tone": "now"
+      },
+      {
+        "value": "4",
+        "label": "seats (herdr)",
+        "tone": "agents",
+        "href": "#runs"
+      },
+      {
+        "value": "—",
+        "label": "token budget · not measured here",
+        "tone": "muted"
+      }
+    ],
+    "facts": [
+      {
+        "k": "model",
+        "v": "Mac16,10 (Mac Mini M4) · macOS 15.5"
+      },
+      {
+        "k": "memory then",
+        "v": "6 GB free at 00:05 (MINI-SYNC); not re-read at 20:43 (vm_stat not run)"
+      },
+      {
+        "k": "disk",
+        "v": "228 GiB volume, 17 GiB used, 17 GiB available (APFS; df -h / 20:43). 20 GB at 00:05."
+      },
+      {
+        "k": "sleep",
+        "v": "<code>pmset -g</code>: sleep 0 (prevented by powerd), disksleep 10, networkoversleep 0"
+      },
+      {
+        "k": "budget left",
+        "v": "not measured on this page: no rate_limits event or plan-usage read was taken for the Mini; the Codex profile there is gpt-6-astra via Bifrost (pilot), plan shared with the laptop"
+      },
+      {
+        "k": "what the laptop looks like",
+        "v": "MacBookPro17,1 · 16 GB · / 23% used, 59 GiB free · load 2.44 · up 1 d 4 h (20:43). MINI-SYNC 00:05: \"0.1 GB free, swap 5.2/6 GB, 14 Astras + 3 Claudes … At the ceiling\""
+      }
+    ]
   },
+  "words": [
+    {
+      "text": "GitHub and Cloudflare are the sources of truth, so where an agent runs does not matter. An owner is a repo checkout plus a session; the session is ethereal, the repo is not.",
+      "who": "briefs/MINI-SYNC.md §\"The principle (his)\", written by Fable FA0 from Shaan's 00:15 words (not a transcript)",
+      "at": "6 Sep 00:30"
+    }
+  ],
   "placement": {
-   "n": "04",
-   "title": "Placement rule",
-   "sub": "briefs/MINI-SYNC.md, 6 Sep 00:30"
+    "items": [
+      {
+        "label": "Stays on the laptop",
+        "what": "Oracle's four seats (his call; VNC, browser, streaming hardware) · Fable (front seat) · MAIN-ZERO",
+        "state": "laptop",
+        "tone": "projects"
+      },
+      {
+        "label": "Moves to the Mini",
+        "what": "every agency owner: INTENT-DISTILLATION first (moved 6 Sep 05:48, thread on the Mini), then GQ-COMPUTE, FOUNDRY, INTERNAL, AGENCY, LAPTOP-ORGANIZER; LIBRARY-ZERO and PLAYS-ZERO born there",
+        "state": "mini",
+        "tone": "now"
+      },
+      {
+        "label": "Later: client VPS",
+        "what": "Oracle streaming VPS (paid by SISO) for the oracle-vps engine split; Client VPS #2 unverified (ESTATE.md)",
+        "state": "vps",
+        "tone": "muted"
+      },
+      {
+        "label": "Pass work by repo, never rsync",
+        "what": "\"Never rsync from the laptop\" · <code>codex resume</code> is not portable across machines, so a Mini seat boots fresh from handoff + brief (bring-up step 4)",
+        "state": "rule",
+        "tone": "agents"
+      }
+    ],
+    "steps": [
+      {
+        "label": "1 · Codex route",
+        "what": "copy the model/provider stanza (Astra via Bifrost); verify <code>codex exec 'reply ASTRA_MINI_OK'</code> → passed (pilot)"
+      },
+      {
+        "label": "2 · Repos",
+        "what": "gh repo clone the protocol repo, fix SISO_Agency remote, clone SISO_Knowledge"
+      },
+      {
+        "label": "3 · Herdr",
+        "what": "workspace on the default session, one tab per owner; verify <code>mini-herdr agent list</code> → 4 agents (20:38)"
+      },
+      {
+        "label": "4 · Move a seat",
+        "what": "INTENT-DISTILLATION first; the ethereal test"
+      },
+      {
+        "label": "5 · Visibility",
+        "what": "<code>az-now</code> reads the Mini via mini-herdr; NOW.html marks the node → done (U10 shows node mini)"
+      },
+      {
+        "label": "6 · Repeat",
+        "what": "next owner; two new seats born on the Mini"
+      }
+    ]
   },
-  "nodes": {
-   "n": "05",
-   "title": "The other nodes",
-   "sub": "ESTATE.md nodes table + today's seat counts"
-  },
+  "nodes": [
+    {
+      "name": "MacBook",
+      "spec": "MacBookPro17,1 · 16 GB · / 23% used (df 20:43)",
+      "role": "everything: Herdr, cmux, Bifrost, console, all Claude sessions; Oracle's seats stay here",
+      "reach": "this machine",
+      "tone": "now",
+      "seats": "6"
+    },
+    {
+      "name": "Mac Mini M4",
+      "spec": "Mac16,10 · 16 GB · 228 GiB, 17 free",
+      "role": "always-on runtime: herdr, Codex agency seats, Bifrost; Foundry index",
+      "reach": "Tailscale ok · WARP no reply",
+      "tone": "warn",
+      "seats": "4",
+      "this_one": true
+    },
+    {
+      "name": "Oracle streaming VPS",
+      "spec": "paid by SISO; host and provider not found in any md (ESTATE.md)",
+      "role": "target for the <code>oracle-vps</code> engine split",
+      "reach": "not probed",
+      "tone": "muted",
+      "seats": "—"
+    },
+    {
+      "name": "Client VPS #2",
+      "spec": "paid by client",
+      "role": "UNVERIFIED which client and what runs; HALO README: \"VPS deploy, no code exists\"",
+      "reach": "not probed",
+      "tone": "muted",
+      "seats": "—"
+    },
+    {
+      "name": "Private inter-node link",
+      "spec": "Cloudflare WARP SISO-MINI tunnel",
+      "role": "intended primary; Tailscale the fallback that works",
+      "reach": "route present · no reply",
+      "tone": "blocked",
+      "seats": "—"
+    }
+  ],
   "evidence": {
-   "n": "06",
-   "title": "Evidence"
+    "facts": [
+      {
+        "claim": "ssh over Tailscale answered at 20:43 with hostname, Mac16,10, 16 GB, macOS 15.5, uptime 8 d 23 h, df / 17 GiB free, pmset sleep prevented, herdr 0.6.5, codex-cli 0.153.4, Bifrost 200.",
+        "receipt": "ssh -o RemoteCommand=none mac-mini-ts …",
+        "at": "2026-09-06 20:43 UTC+07"
+      },
+      {
+        "claim": "bin/mini-probe: \"MINI unreachable: ping=fail warp_route=ok ssh=fail\" (WARP destination); identical to estate/MINI-STATUS.md 5 Sep.",
+        "receipt": "00_AGENT_ZERO/bin/mini-probe",
+        "at": "2026-09-06 20:43 UTC+07"
+      },
+      {
+        "claim": "mini-herdr agent list: four codex agents (ERDOS-LEAD idle, SISO-PERF-SOL idle, PLAYS-ZERO done, INTENT-DISTILLATION done).",
+        "receipt": "mini-herdr agent list · atlas/now.json agents (node mini)",
+        "at": "2026-09-06 20:38 / 20:29"
+      },
+      {
+        "claim": "Astra inference on the Mini passed: codex exec --model gpt-6-astra returned ASTRA_MINI_OK, exit 0; interactive attach rendered the default session.",
+        "receipt": "ledger/2026-09-06-mini-native-pilot.json inference · interactiveAttach",
+        "at": "2026-09-06"
+      },
+      {
+        "claim": "N1: \"Mini Astra config/catalog and GitHub clones installed; remote Herdr and dual-node NOW verified; Astra canary high-demand, laptop owner preserved, no full migration\".",
+        "receipt": "OWNERS.md · LAPTOP-ORGANIZER",
+        "at": "2026-09-05 19:59 UTC+07"
+      }
+    ],
+    "proposals": [
+      {
+        "claim": "Make WARP carry traffic again (the Mini's interface address moved; cloudflared runs) and keep it alive across sleep; until then every doc that says \"WARP is primary\" describes intent, not today.",
+        "why": "ESTATE.md row \"Private inter-node link\"; pilot warpFollowup; two probes 5 and 6 Sep"
+      },
+      {
+        "claim": "Read a memory figure (vm_stat) and a rate_limits event in the same probe so \"budget left\" stops being unmeasured.",
+        "why": "the U22 question \"What is the budget left?\" has no receipt today"
+      }
+    ],
+    "limits": [
+      "No IP address, tunnel address or hostname appears on this page; routes are named by their ssh/herdr aliases only.",
+      "The Mini's free memory was last read at 00:05 (6 GB); the 20:43 probe did not run vm_stat.",
+      "Oracle VPS and Client VPS #2 were not probed; ESTATE.md marks the second UNVERIFIED."
+    ],
+    "version": {
+      "label": "ESTATE.md 1e5e61e",
+      "at": "5 Sep 2026 18:36 +07 · nodes table"
+    }
   },
   "timeline": {
-   "n": "07",
-   "title": "Bring-up"
+    "observed_at": "2026-09-06 20:43 UTC+07",
+    "from": "2026-08-30 00:00",
+    "to": "2026-09-07 00:00",
+    "lanes": [
+      {
+        "id": "probes",
+        "label": "probes",
+        "tone": "now"
+      },
+      {
+        "id": "docs",
+        "label": "docs · decisions",
+        "tone": "projects"
+      },
+      {
+        "id": "seats",
+        "label": "seats on the Mini",
+        "tone": "agents"
+      }
+    ],
+    "events": [
+      {
+        "at": "2026-08-30 16:35",
+        "lane": "docs",
+        "label": "Erdős: freeze laptop compute, move to the Mini (DECISION-LOG)"
+      },
+      {
+        "at": "2026-09-05 02:41",
+        "lane": "probes",
+        "label": "mini-probe: unreachable via WARP (MINI-STATUS.md)"
+      },
+      {
+        "at": "2026-09-05 18:36",
+        "lane": "docs",
+        "label": "ESTATE.md nodes table (1e5e61e)"
+      },
+      {
+        "at": "2026-09-05 19:59",
+        "lane": "seats",
+        "label": "LAPTOP-ORGANIZER: N1 Mini Astra config + clones; remote Herdr verified"
+      },
+      {
+        "at": "2026-09-06 00:05",
+        "lane": "probes",
+        "label": "MINI-SYNC verification over Tailscale: server up, no live agents"
+      },
+      {
+        "at": "2026-09-06 00:30",
+        "lane": "docs",
+        "label": "briefs/MINI-SYNC.md written (placement rule)"
+      },
+      {
+        "at": "2026-09-06 05:48",
+        "lane": "seats",
+        "label": "INTENT-DISTILLATION moved to a Mini thread (LAPTOP-ORGANIZER)"
+      },
+      {
+        "at": "2026-09-06 12:00",
+        "lane": "probes",
+        "label": "native pilot: ASTRA_MINI_OK; interactive attach rendered"
+      },
+      {
+        "at": "2026-09-06 20:38",
+        "lane": "seats",
+        "label": "mini-herdr agent list: 4 agents"
+      },
+      {
+        "at": "2026-09-06 20:43",
+        "lane": "probes",
+        "label": "ssh ok over Tailscale; WARP probe no reply"
+      }
+    ]
   },
-  "related": {
-   "n": "08",
-   "title": "Links"
-  },
-  "agent": {
-   "n": "09",
-   "title": "Agent entry"
-  }
- },
- "routes": [
-  {
-   "route": "Tailscale",
-   "state": "up · ssh answered",
-   "tone": "now",
-   "icon": "check",
-   "how": "<code>ssh -o BatchMode=yes mac-mini-ts</code> returned hostname, sysctl, uptime; <code>mini-herdr agent list</code> returned 4 agents at 20:38. ESTATE.md calls Tailscale the legacy fallback; today it is the only route that carries traffic.",
-   "probed": "2026-09-06 20:43 +07"
-  },
-  {
-   "route": "Cloudflare WARP private route",
-   "state": "route present · no reply",
-   "tone": "blocked",
-   "icon": "x",
-   "how": "<code>bin/mini-probe</code>: \"MINI unreachable: ping=fail warp_route=ok ssh=fail\". Same verdict as estate/MINI-STATUS.md on 5 Sep. Pilot note: cloudflared runs on the Mini as a token-managed system daemon; the Mini's current interface address differs from the historical destination; origin certificate absent on both machines so advertised routes could not be inspected.",
-   "probed": "2026-09-06 20:43 +07"
-  },
-  {
-   "route": "Interactive attach (herdr)",
-   "state": "rendered · 6 Sep pilot",
-   "tone": "now",
-   "icon": "terminal",
-   "how": "<code>env -u HERDR_ENV -u HERDR_SESSION herdr --remote mac-mini-herdr --session default</code> rendered the default-session UI (owner labels AGENCY, INTENT). First attempt inherited the laptop session name and started an empty named server, which was stopped; no owner runtime closed.",
-   "probed": "2026-09-06 (mini-native-pilot.json)"
-  }
- ],
- "probes": [
-  {
-   "what": "ssh over Tailscale",
-   "cmd": "ssh -T -o BatchMode=yes -o ConnectTimeout=6 -o RemoteCommand=none mac-mini-ts 'hostname; sysctl -n hw.model hw.memsize; sw_vers -productVersion; uptime; df -h /; pmset -g'",
-   "result": "ok",
-   "tone": "now",
-   "note": "Mac16,10 · 16 GB · 15.5 · up 8 days 23:09 · sleep 0 (prevented by powerd)",
-   "at": "2026-09-06 20:43",
-   "by": "TEMPLATE-BANK-ZERO-2"
-  },
-  {
-   "what": "WARP route probe",
-   "cmd": "00_AGENT_ZERO/bin/mini-probe",
-   "result": "unreachable",
-   "tone": "blocked",
-   "note": "ping=fail warp_route=ok ssh=fail (read-only: route inspection, one ICMP echo, ssh running only <code>true</code>)",
-   "at": "2026-09-06 20:43",
-   "by": "TEMPLATE-BANK-ZERO-2"
-  },
-  {
-   "what": "herdr agent list",
-   "cmd": "mini-herdr agent list",
-   "result": "4 agents",
-   "tone": "now",
-   "note": "ERDOS-LEAD idle · SISO-PERF-SOL idle · PLAYS-ZERO done · INTENT-DISTILLATION done, all codex",
-   "at": "2026-09-06 20:38",
-   "by": "TEMPLATE-BANK-ZERO-2"
-  },
-  {
-   "what": "Bifrost",
-   "cmd": "curl -s -o /dev/null -w %{http_code} http://127.0.0.1:8080/ (on the Mini)",
-   "result": "200",
-   "tone": "now",
-   "at": "2026-09-06 20:43",
-   "by": "TEMPLATE-BANK-ZERO-2"
-  },
-  {
-   "what": "Astra inference on the Mini",
-   "cmd": "codex exec --model gpt-6-astra (invocation-only openai provider, native catalog/context overrides)",
-   "result": "ASTRA_MINI_OK",
-   "tone": "now",
-   "note": "exit 0; rollout recorded in the pilot ledger",
-   "at": "2026-09-06 (pilot)",
-   "by": "LAPTOP-ORGANIZER"
-  },
-  {
-   "what": "MINI-SYNC verification",
-   "cmd": "ssh mini-fast (herdr, codex, claude, gh, git, Bifrost, free memory, disk, sleep)",
-   "result": "up · no live agents then",
-   "tone": "muted",
-   "note": "\"herdr 0.6.5 server up (no live agents), codex + claude 2.1.220 + gh + git installed and authed, Bifrost on :8080, 6 GB free, 20 GB disk, sleep prevented … Only Tailscale reaches it\"",
-   "at": "2026-09-06 00:05",
-   "by": "Fable FA0"
-  },
-  {
-   "what": "WARP route probe",
-   "cmd": "bin/mini-probe",
-   "result": "unreachable",
-   "tone": "blocked",
-   "note": "estate/MINI-STATUS.md: WARP route present on utun5; ping and ssh failed",
-   "at": "2026-09-05 02:41",
-   "by": "LAPTOP-ORGANIZER"
-  }
- ],
- "seats": [
-  {
-   "name": "ERDOS-LEAD",
-   "harness": "codex",
-   "status": "idle",
-   "tone": "warn",
-   "cwd": "~/SISO_Workspace/SISO_Research/erdos",
-   "last": "none in scanned logs",
-   "href": "/t/U6/example/"
-  },
-  {
-   "name": "SISO-PERF-SOL",
-   "harness": "codex",
-   "status": "idle",
-   "tone": "warn",
-   "cwd": "~/SISO_Workspace/SISO_Internal_Lab",
-   "last": "none in scanned logs"
-  },
-  {
-   "name": "PLAYS-ZERO",
-   "harness": "codex",
-   "status": "done",
-   "tone": "muted",
-   "cwd": "~/SISO_Workspace/SISO_Agents/siso-skills-hub",
-   "last": "2026-09-06 01:28 · plays-verification-2026-09-05.json",
-   "href": "/t/U20/example/"
-  },
-  {
-   "name": "INTENT-DISTILLATION",
-   "harness": "codex",
-   "status": "done",
-   "tone": "muted",
-   "cwd": "~/SISO_Workspace/SISO_Knowledge/.siso-local/siso-source",
-   "last": "2026-09-06 05:33 · KNOWLEDGE-PEOPLE.md"
-  }
- ],
- "services": [
-  {
-   "label": "herdr 0.6.5 · default session",
-   "tone": "now",
-   "dot": true
-  },
-  {
-   "label": "codex-cli 0.153.4",
-   "tone": "now"
-  },
-  {
-   "label": "Bifrost :8080 · 200",
-   "tone": "now"
-  },
-  {
-   "label": "cloudflared · system daemon (pilot)",
-   "tone": "warn"
-  },
-  {
-   "label": "Foundry 1.3M index (ESTATE.md)",
-   "tone": "muted"
-  },
-  {
-   "label": "sleep prevented · powerd",
-   "tone": "now"
-  }
- ],
- "capacity": {
-  "metrics": [
-   {
-    "value": "16 GB",
-    "label": "RAM (hw.memsize)",
-    "tone": "now"
-   },
-   {
-    "value": "17 GiB",
-    "label": "disk free of 228 (df /, 51%)",
-    "tone": "warn"
-   },
-   {
-    "value": "1.15",
-    "label": "load 1 min (uptime)",
-    "tone": "now"
-   },
-   {
-    "value": "8 d 23 h",
-    "label": "uptime",
-    "tone": "now"
-   },
-   {
-    "value": "4",
-    "label": "seats (herdr)",
-    "tone": "agents",
-    "href": "#runs"
-   },
-   {
-    "value": "—",
-    "label": "token budget · not measured here",
-    "tone": "muted"
-   }
+  "related": [
+    {
+      "title": "Now",
+      "href": "/t/U10/example/",
+      "type": "U10",
+      "tone": "now",
+      "why": "the same seats with freshness"
+    },
+    {
+      "title": "Erdős 742",
+      "href": "/t/U6/example/",
+      "type": "U6",
+      "tone": "research",
+      "why": "ERDOS-LEAD sits here; the programme moved to the Mini on 30 Aug"
+    },
+    {
+      "title": "P5 writeback · play",
+      "href": "/t/U20/example/",
+      "type": "U20",
+      "tone": "agents",
+      "why": "PLAYS-ZERO, born on the Mini"
+    },
+    {
+      "title": "Agent Zero",
+      "href": "/t/U9/example/",
+      "type": "U9",
+      "tone": "agents",
+      "why": "ESTATE.md lives there"
+    },
+    {
+      "title": "Compute run · j2",
+      "href": "/t/U19/example/",
+      "type": "U19",
+      "tone": "research",
+      "why": "where a Mini-vs-laptop run would be recorded"
+    }
   ],
-  "facts": [
-   {
-    "k": "model",
-    "v": "Mac16,10 (Mac Mini M4) · macOS 15.5"
-   },
-   {
-    "k": "memory then",
-    "v": "6 GB free at 00:05 (MINI-SYNC); not re-read at 20:43 (vm_stat not run)"
-   },
-   {
-    "k": "disk",
-    "v": "228 GiB volume, 17 GiB used, 17 GiB available (APFS; df -h / 20:43). 20 GB at 00:05."
-   },
-   {
-    "k": "sleep",
-    "v": "<code>pmset -g</code>: sleep 0 (prevented by powerd), disksleep 10, networkoversleep 0"
-   },
-   {
-    "k": "budget left",
-    "v": "not measured on this page: no rate_limits event or plan-usage read was taken for the Mini; the Codex profile there is gpt-6-astra via Bifrost (pilot), plan shared with the laptop"
-   },
-   {
-    "k": "what the laptop looks like",
-    "v": "MacBookPro17,1 · 16 GB · / 23% used, 59 GiB free · load 2.44 · up 1 d 4 h (20:43). MINI-SYNC 00:05: \"0.1 GB free, swap 5.2/6 GB, 14 Astras + 3 Claudes … At the ceiling\""
-   }
-  ]
- },
- "words": [
-  {
-   "text": "GitHub and Cloudflare are the sources of truth, so where an agent runs does not matter. An owner is a repo checkout plus a session; the session is ethereal, the repo is not.",
-   "who": "briefs/MINI-SYNC.md §\"The principle (his)\", written by Fable FA0 from Shaan's 00:15 words (not a transcript)",
-   "at": "6 Sep 00:30"
+  "quickstart": {
+    "entry": {
+      "path": "00_AGENT_ZERO/ESTATE.md → briefs/MINI-SYNC.md → ledger/2026-09-06-mini-native-pilot.json"
+    },
+    "owner": {
+      "name": "LAPTOP-ORGANIZER (bring-up) · INTERNAL-ZERO (placement)",
+      "last": "6 Sep 05:48"
+    },
+    "verification": "Open this page and see the last probe time, the seats on the node, and the reachability route with its date; no address anywhere on it.",
+    "commands": [
+      "00_AGENT_ZERO/bin/mini-probe",
+      "mini-herdr agent list",
+      "ssh -T -o BatchMode=yes -o RemoteCommand=none mac-mini-ts 'uptime; df -h /; pmset -g | grep sleep'"
+    ]
   }
- ],
- "placement": {
-  "items": [
-   {
-    "label": "Stays on the laptop",
-    "what": "Oracle's four seats (his call; VNC, browser, streaming hardware) · Fable (front seat) · MAIN-ZERO",
-    "state": "laptop",
-    "tone": "projects"
-   },
-   {
-    "label": "Moves to the Mini",
-    "what": "every agency owner: INTENT-DISTILLATION first (moved 6 Sep 05:48, thread on the Mini), then GQ-COMPUTE, FOUNDRY, INTERNAL, AGENCY, LAPTOP-ORGANIZER; LIBRARY-ZERO and PLAYS-ZERO born there",
-    "state": "mini",
-    "tone": "now"
-   },
-   {
-    "label": "Later: client VPS",
-    "what": "Oracle streaming VPS (paid by SISO) for the oracle-vps engine split; Client VPS #2 unverified (ESTATE.md)",
-    "state": "vps",
-    "tone": "muted"
-   },
-   {
-    "label": "Pass work by repo, never rsync",
-    "what": "\"Never rsync from the laptop\" · <code>codex resume</code> is not portable across machines, so a Mini seat boots fresh from handoff + brief (bring-up step 4)",
-    "state": "rule",
-    "tone": "agents"
-   }
-  ],
-  "steps": [
-   {
-    "label": "1 · Codex route",
-    "what": "copy the model/provider stanza (Astra via Bifrost); verify <code>codex exec 'reply ASTRA_MINI_OK'</code> → passed (pilot)"
-   },
-   {
-    "label": "2 · Repos",
-    "what": "gh repo clone the protocol repo, fix SISO_Agency remote, clone SISO_Knowledge"
-   },
-   {
-    "label": "3 · Herdr",
-    "what": "workspace on the default session, one tab per owner; verify <code>mini-herdr agent list</code> → 4 agents (20:38)"
-   },
-   {
-    "label": "4 · Move a seat",
-    "what": "INTENT-DISTILLATION first; the ethereal test"
-   },
-   {
-    "label": "5 · Visibility",
-    "what": "<code>az-now</code> reads the Mini via mini-herdr; NOW.html marks the node → done (U10 shows node mini)"
-   },
-   {
-    "label": "6 · Repeat",
-    "what": "next owner; two new seats born on the Mini"
-   }
-  ]
- },
- "nodes": [
-  {
-   "name": "MacBook",
-   "spec": "MacBookPro17,1 · 16 GB · / 23% used (df 20:43)",
-   "role": "everything: Herdr, cmux, Bifrost, console, all Claude sessions; Oracle's seats stay here",
-   "reach": "this machine",
-   "tone": "now",
-   "seats": "6"
-  },
-  {
-   "name": "Mac Mini M4",
-   "spec": "Mac16,10 · 16 GB · 228 GiB, 17 free",
-   "role": "always-on runtime: herdr, Codex agency seats, Bifrost; Foundry index",
-   "reach": "Tailscale ok · WARP no reply",
-   "tone": "warn",
-   "seats": "4",
-   "this_one": true
-  },
-  {
-   "name": "Oracle streaming VPS",
-   "spec": "paid by SISO; host and provider not found in any md (ESTATE.md)",
-   "role": "target for the <code>oracle-vps</code> engine split",
-   "reach": "not probed",
-   "tone": "muted",
-   "seats": "—"
-  },
-  {
-   "name": "Client VPS #2",
-   "spec": "paid by client",
-   "role": "UNVERIFIED which client and what runs; HALO README: \"VPS deploy, no code exists\"",
-   "reach": "not probed",
-   "tone": "muted",
-   "seats": "—"
-  },
-  {
-   "name": "Private inter-node link",
-   "spec": "Cloudflare WARP SISO-MINI tunnel",
-   "role": "intended primary; Tailscale the fallback that works",
-   "reach": "route present · no reply",
-   "tone": "blocked",
-   "seats": "—"
-  }
- ],
- "evidence": {
-  "facts": [
-   {
-    "claim": "ssh over Tailscale answered at 20:43 with hostname, Mac16,10, 16 GB, macOS 15.5, uptime 8 d 23 h, df / 17 GiB free, pmset sleep prevented, herdr 0.6.5, codex-cli 0.153.4, Bifrost 200.",
-    "receipt": "ssh -o RemoteCommand=none mac-mini-ts …",
-    "at": "2026-09-06 20:43 UTC+07"
-   },
-   {
-    "claim": "bin/mini-probe: \"MINI unreachable: ping=fail warp_route=ok ssh=fail\" (WARP destination); identical to estate/MINI-STATUS.md 5 Sep.",
-    "receipt": "00_AGENT_ZERO/bin/mini-probe",
-    "at": "2026-09-06 20:43 UTC+07"
-   },
-   {
-    "claim": "mini-herdr agent list: four codex agents (ERDOS-LEAD idle, SISO-PERF-SOL idle, PLAYS-ZERO done, INTENT-DISTILLATION done).",
-    "receipt": "mini-herdr agent list · atlas/now.json agents (node mini)",
-    "at": "2026-09-06 20:38 / 20:29"
-   },
-   {
-    "claim": "Astra inference on the Mini passed: codex exec --model gpt-6-astra returned ASTRA_MINI_OK, exit 0; interactive attach rendered the default session.",
-    "receipt": "ledger/2026-09-06-mini-native-pilot.json inference · interactiveAttach",
-    "at": "2026-09-06"
-   },
-   {
-    "claim": "N1: \"Mini Astra config/catalog and GitHub clones installed; remote Herdr and dual-node NOW verified; Astra canary high-demand, laptop owner preserved, no full migration\".",
-    "receipt": "OWNERS.md · LAPTOP-ORGANIZER",
-    "at": "2026-09-05 19:59 UTC+07"
-   }
-  ],
-  "proposals": [
-   {
-    "claim": "Make WARP carry traffic again (the Mini's interface address moved; cloudflared runs) and keep it alive across sleep; until then every doc that says \"WARP is primary\" describes intent, not today.",
-    "why": "ESTATE.md row \"Private inter-node link\"; pilot warpFollowup; two probes 5 and 6 Sep"
-   },
-   {
-    "claim": "Read a memory figure (vm_stat) and a rate_limits event in the same probe so \"budget left\" stops being unmeasured.",
-    "why": "the U22 question \"What is the budget left?\" has no receipt today"
-   }
-  ],
-  "limits": [
-   "No IP address, tunnel address or hostname appears on this page; routes are named by their ssh/herdr aliases only.",
-   "The Mini's free memory was last read at 00:05 (6 GB); the 20:43 probe did not run vm_stat.",
-   "Oracle VPS and Client VPS #2 were not probed; ESTATE.md marks the second UNVERIFIED."
-  ],
-  "version": {
-   "label": "ESTATE.md 1e5e61e",
-   "at": "5 Sep 2026 18:36 +07 · nodes table"
-  }
- },
- "timeline": {
-  "observed_at": "2026-09-06 20:43 UTC+07",
-  "from": "2026-08-30 00:00",
-  "to": "2026-09-07 00:00",
-  "lanes": [
-   {
-    "id": "probes",
-    "label": "probes",
-    "tone": "now"
-   },
-   {
-    "id": "docs",
-    "label": "docs · decisions",
-    "tone": "projects"
-   },
-   {
-    "id": "seats",
-    "label": "seats on the Mini",
-    "tone": "agents"
-   }
-  ],
-  "events": [
-   {
-    "at": "2026-08-30 16:35",
-    "lane": "docs",
-    "label": "Erdős: freeze laptop compute, move to the Mini (DECISION-LOG)"
-   },
-   {
-    "at": "2026-09-05 02:41",
-    "lane": "probes",
-    "label": "mini-probe: unreachable via WARP (MINI-STATUS.md)"
-   },
-   {
-    "at": "2026-09-05 18:36",
-    "lane": "docs",
-    "label": "ESTATE.md nodes table (1e5e61e)"
-   },
-   {
-    "at": "2026-09-05 19:59",
-    "lane": "seats",
-    "label": "LAPTOP-ORGANIZER: N1 Mini Astra config + clones; remote Herdr verified"
-   },
-   {
-    "at": "2026-09-06 00:05",
-    "lane": "probes",
-    "label": "MINI-SYNC verification over Tailscale: server up, no live agents"
-   },
-   {
-    "at": "2026-09-06 00:30",
-    "lane": "docs",
-    "label": "briefs/MINI-SYNC.md written (placement rule)"
-   },
-   {
-    "at": "2026-09-06 05:48",
-    "lane": "seats",
-    "label": "INTENT-DISTILLATION moved to a Mini thread (LAPTOP-ORGANIZER)"
-   },
-   {
-    "at": "2026-09-06 12:00",
-    "lane": "probes",
-    "label": "native pilot: ASTRA_MINI_OK; interactive attach rendered"
-   },
-   {
-    "at": "2026-09-06 20:38",
-    "lane": "seats",
-    "label": "mini-herdr agent list: 4 agents"
-   },
-   {
-    "at": "2026-09-06 20:43",
-    "lane": "probes",
-    "label": "ssh ok over Tailscale; WARP probe no reply"
-   }
-  ]
- },
- "related": [
-  {
-   "title": "Now",
-   "href": "/t/U10/example/",
-   "type": "U10",
-   "tone": "now",
-   "why": "the same seats with freshness"
-  },
-  {
-   "title": "Erdős 742",
-   "href": "/t/U6/example/",
-   "type": "U6",
-   "tone": "research",
-   "why": "ERDOS-LEAD sits here; the programme moved to the Mini on 30 Aug"
-  },
-  {
-   "title": "P5 writeback · play",
-   "href": "/t/U20/example/",
-   "type": "U20",
-   "tone": "agents",
-   "why": "PLAYS-ZERO, born on the Mini"
-  },
-  {
-   "title": "Agent Zero",
-   "href": "/t/U9/example/",
-   "type": "U9",
-   "tone": "agents",
-   "why": "ESTATE.md lives there"
-  },
-  {
-   "title": "Compute run · j2",
-   "href": "/t/U19/example/",
-   "type": "U19",
-   "tone": "research",
-   "why": "where a Mini-vs-laptop run would be recorded"
-  }
- ],
- "quickstart": {
-  "entry": {
-   "path": "00_AGENT_ZERO/ESTATE.md → briefs/MINI-SYNC.md → ledger/2026-09-06-mini-native-pilot.json"
-  },
-  "owner": {
-   "name": "LAPTOP-ORGANIZER (bring-up) · INTERNAL-ZERO (placement)",
-   "last": "6 Sep 05:48"
-  },
-  "verification": "Open this page and see the last probe time, the seats on the node, and the reachability route with its date; no address anywhere on it.",
-  "commands": [
-   "00_AGENT_ZERO/bin/mini-probe",
-   "mini-herdr agent list",
-   "ssh -T -o BatchMode=yes -o RemoteCommand=none mac-mini-ts 'uptime; df -h /; pmset -g | grep sleep'"
-  ]
- }
 }

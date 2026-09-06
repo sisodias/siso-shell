@@ -1,1165 +1,1217 @@
 {
- "meta": {
-  "title": "ofm · client account",
-  "description": "Client account page for ofm (Camron): Oracle streaming and HALO CRM as project cards with repos, heads and live-URL state; deliverables proven by commit or URL; money and message content private.",
-  "stream": "clients",
-  "crumb": [
-   {
-    "label": "Templates",
-    "href": "/"
-   },
-   {
-    "label": "U15 · Client account",
-    "href": "/t/U15/"
-   },
-   {
-    "label": "ofm"
-   }
-  ],
-  "actions": [
-   {
-    "label": "person · Camron",
-    "href": "/t/U14/example/",
-    "icon": "user"
-   },
-   {
-    "label": "HALO seat",
-    "href": "/t/U17/example/",
-    "icon": "bot"
-   }
-  ],
-  "source": "plan/projects.json rows oracle + halo (group 'client · ofm (Camron)') · BASELINE.md §1 · source/2026-09-05-2220-clients-vs-agency-nuance-verbatim.md · gh api repos/commits 6 Sep 20:00 UTC+07 · OWNERS.md HALO-ZERO / ORACLE-* lines"
- },
- "heading": {
-  "breadcrumb": [
-   {
-    "label": "Clients",
-    "href": "/t/U15/"
-   },
-   {
-    "label": "accounts"
-   },
-   {
-    "label": "ofm"
-   }
-  ],
-  "kicker": "client account <span class=\"sep\">·</span> ofm <span class=\"sep\">·</span> <span class=\"dim\">Camron · since Aug 2026</span>",
-  "title": "ofm",
-  "subtitle": "The OnlyFans-management account: one client, two projects. Oracle streaming is Shaan's own lane; HALO CRM is the native rewrite on a private mirror. The account repo (intake, chats, page, list of projects) sits over the project repos and stays private; this is the Library stub.",
-  "badges": [
-   {
-    "label": "client account",
-    "tone": "clients",
-    "dot": true
-   },
-   {
-    "label": "2 projects",
-    "tone": "projects",
-    "href": "#projects"
-   },
-   {
-    "label": "4 repos · all private",
-    "tone": "clients",
-    "href": "#repos",
-    "icon": "lock"
-   },
-   {
-    "label": "0 live URLs",
-    "tone": "blocked",
-    "href": "#projects"
-   },
-   {
-    "label": "83 commits since 5 Sep 17:00",
-    "tone": "now",
-    "href": "#timeline"
-   },
-   {
-    "label": "money · words · private",
-    "tone": "muted",
-    "icon": "lock"
-   }
-  ],
-  "status": {
-   "kicker": "Last dated activity",
-   "value": "6 Sep 17:51 · oracle 096ce7f",
-   "note": "Oracle: 46 commits on main since 5 Sep 17:00 (gh api, 20:00). HALO: 37 commits on the mirror branch, idle since 13:16 at P1-07 verified slice.",
-   "facts": [
-    {
-     "k": "person",
-     "v": "<a href=\"/t/U14/example/\">Camron</a> (U14)"
+  "meta": {
+    "title": "ofm · client account",
+    "description": "Client account page for ofm (Camron): Oracle streaming and HALO CRM as project cards with repos, heads and live-URL state; deliverables proven by commit or URL; money and message content private.",
+    "stream": "clients",
+    "crumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U15 · Client account",
+        "href": "/t/U15/"
+      },
+      {
+        "label": "ofm"
+      }
+    ],
+    "actions": [
+      {
+        "label": "person · Camron",
+        "href": "/t/U14/example/",
+        "icon": "user"
+      },
+      {
+        "label": "HALO seat",
+        "href": "/t/U17/example/",
+        "icon": "bot"
+      }
+    ],
+    "source": "plan/projects.json rows oracle + halo (group 'client · ofm (Camron)') · BASELINE.md §1 · source/2026-09-05-2220-clients-vs-agency-nuance-verbatim.md · gh api repos/commits 6 Sep 20:00 UTC+07 · OWNERS.md HALO-ZERO / ORACLE-* lines"
+  },
+  "heading": {
+    "breadcrumb": [
+      {
+        "label": "Clients",
+        "href": "/t/U15/"
+      },
+      {
+        "label": "accounts"
+      },
+      {
+        "label": "ofm"
+      }
+    ],
+    "kicker": "client account <span class=\"sep\">·</span> ofm <span class=\"sep\">·</span> <span class=\"dim\">Camron · since Aug 2026</span>",
+    "title": "ofm",
+    "subtitle": "The OnlyFans-management account: one client, two projects. Oracle streaming is Shaan's own lane; HALO CRM is the native rewrite on a private mirror. The account repo (intake, chats, page, list of projects) sits over the project repos and stays private; this is the Library stub.",
+    "badges": [
+      {
+        "label": "client account",
+        "tone": "clients",
+        "dot": true
+      },
+      {
+        "label": "2 projects",
+        "tone": "projects",
+        "href": "#projects"
+      },
+      {
+        "label": "4 repos · all private",
+        "tone": "clients",
+        "href": "#repos",
+        "icon": "lock"
+      },
+      {
+        "label": "0 live URLs",
+        "tone": "blocked",
+        "href": "#projects"
+      },
+      {
+        "label": "83 commits since 5 Sep 17:00",
+        "tone": "now",
+        "href": "#timeline"
+      },
+      {
+        "label": "money · words · private",
+        "tone": "muted",
+        "icon": "lock"
+      }
+    ],
+    "status": {
+      "kicker": "Last dated activity",
+      "value": "6 Sep 17:51 · oracle 096ce7f",
+      "note": "Oracle: 46 commits on main since 5 Sep 17:00 (gh api, 20:00). HALO: 37 commits on the mirror branch, idle since 13:16 at P1-07 verified slice.",
+      "facts": [
+        {
+          "k": "person",
+          "v": "<a href=\"/t/U14/example/\">Camron</a> (U14)"
+        },
+        {
+          "k": "account repo",
+          "v": "private; not in the public plan (a gap, see deliverables)"
+        },
+        {
+          "k": "his ruling",
+          "v": "5 Sep 22:20: projects split by client vs agency"
+        },
+        {
+          "k": "brand",
+          "v": "SISO clients stream (amber); no client brand assets on this page"
+        }
+      ]
     },
-    {
-     "k": "account repo",
-     "v": "private; not in the public plan (a gap, see deliverables)"
+    "metrics": [
+      {
+        "value": 2,
+        "label": "projects in the account",
+        "tone": "clients",
+        "href": "#projects"
+      },
+      {
+        "value": 4,
+        "label": "repos",
+        "tone": "projects",
+        "href": "#repos"
+      },
+      {
+        "value": 8,
+        "label": "deliverables",
+        "tone": "muted",
+        "href": "#deliverables"
+      },
+      {
+        "value": 3,
+        "label": "people",
+        "tone": "agents",
+        "href": "#people"
+      }
+    ],
+    "jump": [
+      {
+        "label": "The account, in one line",
+        "href": "#account"
+      },
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "Repos",
+        "href": "#repos"
+      },
+      {
+        "label": "Deliverables · money",
+        "href": "#deliverables"
+      },
+      {
+        "label": "People",
+        "href": "#people"
+      },
+      {
+        "label": "Seats that ran on this account",
+        "href": "#seats"
+      }
+    ]
+  },
+  "sections": {
+    "account": {
+      "n": "01",
+      "title": "The account, in one line",
+      "sub": "his 22:20 words set the axis; the facts below are the public-safe subset"
     },
-    {
-     "k": "his ruling",
-     "v": "5 Sep 22:20: projects split by client vs agency"
+    "projects": {
+      "n": "02",
+      "title": "Projects",
+      "sub": "U4 cards: head, seats, modules, live URL state; each links to its project page when one exists"
     },
-    {
-     "k": "brand",
-     "v": "SISO clients stream (amber); no client brand assets on this page"
+    "repos": {
+      "n": "03",
+      "title": "Repos",
+      "sub": "all four private; branch, head and time from gh api 6 Sep 20:00 UTC+07"
+    },
+    "deliverables": {
+      "n": "04",
+      "title": "Deliverables · money",
+      "sub": "delivered only when a commit or URL proves it; money never renders here"
+    },
+    "people": {
+      "n": "05",
+      "title": "People"
+    },
+    "seats": {
+      "n": "06",
+      "title": "Seats that ran on this account"
+    },
+    "timeline": {
+      "n": "07",
+      "title": "Engagement timeline",
+      "sub": "5 Sep 12:00 → 6 Sep 20:00 · 83 commits across the two projects, seat events, his words, writebacks"
+    },
+    "map": {
+      "n": "08",
+      "title": "Mind map",
+      "sub": "account → projects → repos"
+    },
+    "agent": {
+      "n": "09",
+      "title": "Agent entry"
     }
-   ]
-  }
- },
- "sections": {
-  "account": {
-   "n": "01",
-   "title": "The account, in one line",
-   "sub": "his 22:20 words set the axis; the facts below are the public-safe subset"
   },
-  "projects": {
-   "n": "02",
-   "title": "Projects",
-   "sub": "U4 cards: head, seats, modules, live URL state; each links to its project page when one exists"
-  },
-  "repos": {
-   "n": "03",
-   "title": "Repos",
-   "sub": "all four private; branch, head and time from gh api 6 Sep 20:00 UTC+07"
-  },
+  "words": [
+    {
+      "text": "Halo, CRM and Oracle are both part of the OnlyFans management client. Bycons Yard is his own client, his client work, action model. And we'll consider it more internal. … You know, you've got client projects and you've got agency work. It should be split like that. You know so for the OnlyFans American client like we should have probably a repo, well they are split but like the main project kind of has both of those but they are like individual projects if that makes sense.",
+      "who": "Shaan → Fable FA0 · 00_AGENT_ZERO/source/2026-09-05-2220-clients-vs-agency-nuance-verbatim.md",
+      "at": "5 Sep 22:20"
+    }
+  ],
+  "account": [
+    {
+      "k": "client",
+      "v": "Camron · OnlyFans-management business (US)"
+    },
+    {
+      "k": "account",
+      "v": "<code>ofm</code> · the account repo over the project repos (BASELINE.md §1, 22:20)"
+    },
+    {
+      "k": "projects",
+      "v": "<a href=\"#projects\">Oracle streaming</a> · <a href=\"#projects\">HALO CRM</a>"
+    },
+    {
+      "k": "since",
+      "v": "Aug 2026 (halocrm-mirror created 29 Aug; oracle repo created 1 May 2026)"
+    },
+    {
+      "k": "live for them",
+      "v": "nothing with a URL yet: Oracle has no page.url row, HALO's page.url is the mirror repo (404 logged out)"
+    },
+    {
+      "k": "owed",
+      "v": "see <a href=\"#deliverables\">deliverables</a>: a real HALO URL, the client's 4 shared-drive commits reconciled, Oracle S2"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Oracle streaming",
+      "kind": "U4 project · his lane",
+      "tone": "projects",
+      "href": "/t/U4/",
+      "what": "Streaming app + operator. Shaan's own lane since 5 Sep 20:20, not reviewed by REVIEW-ZERO. 46 commits on main since 5 Sep 17:00; latest <code>096ce7f</code> 6 Sep 17:51 (operator board-session with rollback). Modules O1, S2.",
+      "chips": [
+        {
+          "label": "3 repos · private",
+          "tone": "clients",
+          "icon": "lock"
+        },
+        {
+          "label": "head 096ce7f · 6 Sep 17:51",
+          "tone": "projects"
+        },
+        {
+          "label": "4 seats",
+          "tone": "agents",
+          "href": "#seats"
+        },
+        {
+          "label": "S2 open",
+          "tone": "warn"
+        }
+      ],
+      "facts": [
+        {
+          "k": "front door",
+          "v": "<code>.agents/PAGE.md</code> in sisodias/oracle (private)"
+        },
+        {
+          "k": "his words",
+          "v": "6 Sep 15:30: <em>\"When tokens are wasted we need to mention it because we going on an ultra token efficient rampage now\"</em>"
+        },
+        {
+          "k": "left",
+          "v": "S2: front door dated this week, oracle-source September partition, one session file"
+        }
+      ],
+      "urls": [],
+      "no_url": "No live URL registered for Oracle in plan/projects.json (<code>urls: []</code>). The Operator UI URL is on his 15:30 list."
+    },
+    {
+      "name": "HALO CRM",
+      "kind": "U4 project · partial",
+      "tone": "clients",
+      "href": "/t/U21/example/",
+      "what": "Native rewrite of the client's CRM on a private mirror. 37 commits 5–6 Sep: P1-01…P1-06 done (identity, teams, creators, onboarding, contracts, Customs in integer cents), P1-07 Drive at verified slice; four persona route walks 63/63 at <code>4d24d1b</code>. Modules H1, G20.",
+      "chips": [
+        {
+          "label": "1 repo · private",
+          "tone": "clients",
+          "icon": "lock"
+        },
+        {
+          "label": "head 09d69f5 · 6 Sep 13:16",
+          "tone": "projects"
+        },
+        {
+          "label": "HALO-ZERO · idle",
+          "tone": "agents",
+          "href": "/t/U17/example/"
+        },
+        {
+          "label": "planner 17/74",
+          "tone": "warn"
+        }
+      ],
+      "facts": [
+        {
+          "k": "front door",
+          "v": "<code>.agents/{PAGE,HANDOFF,page.url}</code> at 09d69f5"
+        },
+        {
+          "k": "his words",
+          "v": "6 Sep 13:07: <em>\"so you only did like maybe 20% of all the work\"</em>"
+        },
+        {
+          "k": "left",
+          "v": "P1-08…P1-17 once V5 passes; reconcile the client's 4 commits before any Luna fan-out; a real page.url"
+        }
+      ],
+      "urls": [],
+      "no_url": "page.url today is the mirror repo URL, which returns 404 logged out; not a live URL for the client (plan/projects.json halo.left)."
+    }
+  ],
+  "repos": [
+    {
+      "repo": "sisodias/oracle",
+      "private": true,
+      "branch": "main",
+      "head": "096ce7f",
+      "head_at": "2026-09-06 17:51 UTC+07",
+      "access": "client account",
+      "rights": "client",
+      "what": "Oracle streaming app (local: apps/oracle-streaming). 46 commits since 5 Sep 17:00; ~7,189 commits on main in total (gh api page count)."
+    },
+    {
+      "repo": "sisodias/oracle-source",
+      "private": true,
+      "branch": "main",
+      "head": "7df1f8c",
+      "head_at": "2026-09-05 20:27 UTC+07",
+      "access": "client account",
+      "rights": "client",
+      "what": "His words for Oracle: one August file plus receipts (gh api git/trees, 6 Sep 14:57)."
+    },
+    {
+      "repo": "sisodias/oracle-sessions",
+      "private": true,
+      "branch": "main",
+      "head": "16cbcd2",
+      "head_at": "2026-09-05 20:27 UTC+07",
+      "access": "client account",
+      "rights": "client",
+      "what": "Session receipts only, no session file yet."
+    },
+    {
+      "repo": "sisodias/halocrm-mirror",
+      "private": true,
+      "branch": "codex/private-rewrite-83ab4ba",
+      "head": "09d69f5",
+      "head_at": "2026-09-06 13:16 UTC+07",
+      "access": "client account",
+      "rights": "client",
+      "what": "Private mirror of the client's CRM; <code>main</code> still at the 17 Aug import (<code>347329a</code>). Upstream: the client's upstream repo (private; push disabled by name)."
+    }
+  ],
   "deliverables": {
-   "n": "04",
-   "title": "Deliverables · money",
-   "sub": "delivered only when a commit or URL proves it; money never renders here"
+    "items": [
+      {
+        "label": "HALO · P1-01…P1-06 (identity, teams, creators, onboarding, contracts, Customs)",
+        "what": "commits 27b8c0f … 8efb0aa on the mirror branch; route walks 63/63 at 4d24d1b",
+        "state": "delivered",
+        "tone": "now"
+      },
+      {
+        "label": "HALO · P1-07 Drive",
+        "what": "verified slice (metadata index, scan worker, admission, posting intent, S3 create-only upload, private download); CreatorUpload still on Convex paths",
+        "state": "partial",
+        "tone": "warn"
+      },
+      {
+        "label": "HALO · front door",
+        "what": ".agents/PAGE.md, HANDOFF.md, page.url pushed at 09d69f5 (D-24 step 3)",
+        "state": "delivered",
+        "tone": "now"
+      },
+      {
+        "label": "HALO · a real page.url the client can open",
+        "what": "today the mirror repo URL, 404 logged out",
+        "state": "owed",
+        "tone": "blocked"
+      },
+      {
+        "label": "HALO · reconcile the client's 4 shared-drive commits",
+        "what": "200 files, 82 overlapping paths, 59 simulated conflicts; no merge yet (rollout row 15255)",
+        "state": "owed",
+        "tone": "blocked"
+      },
+      {
+        "label": "Oracle · operator board-session",
+        "what": "ad5c23c provisions a scoped board session with rollback; 096ce7f logs it landed and a blocked board-session case (6 Sep 17:47–17:51)",
+        "state": "delivered",
+        "tone": "now"
+      },
+      {
+        "label": "Oracle · S2 front door dated this week · September source partition · one session file",
+        "what": "plan/projects.json oracle.left; his lane",
+        "state": "owed",
+        "tone": "warn"
+      },
+      {
+        "label": "Account repo listed in plan/projects.json",
+        "what": "BASELINE §1 names it (intake, chats, page, list of projects); no repo row exists in the plan yet",
+        "state": "gap",
+        "tone": "blocked"
+      }
+    ],
+    "steps": [
+      {
+        "label": "Prove",
+        "what": "a deliverable is <b>delivered</b> only with a commit hash or a URL that returns 200"
+      },
+      {
+        "label": "Owe",
+        "what": "what is owed comes from the project rows' <code>left</code> lines, dated"
+      },
+      {
+        "label": "Keep private",
+        "what": "terms, invoices and cash live in the account repo; this page shows neither figures nor dates for them"
+      }
+    ]
   },
-  "people": {
-   "n": "05",
-   "title": "People"
+  "private": [
+    {
+      "label": "Money",
+      "what": "Engagement terms, invoices and what is owed in cash: account repo only. Not even a count renders here."
+    },
+    {
+      "label": "What they said",
+      "what": "WhatsApp intake and calls, dated, in the account repo. Content never renders; dates render on the gated page."
+    },
+    {
+      "label": "Roster and routing",
+      "what": "Creators, staff and chatters inside HALO; Oracle device tokens and VPS hosts: never on a public page."
+    }
+  ],
+  "people": [
+    {
+      "title": "Camron",
+      "href": "/t/U14/example/",
+      "type": "U14 person · client",
+      "tone": "clients",
+      "why": "the account's owner; upstream the client's upstream repo (private; push disabled by name)"
+    },
+    {
+      "title": "Shaan",
+      "href": "/t/U9/example/",
+      "type": "owner · Oracle lane",
+      "tone": "projects",
+      "why": "runs Oracle himself since 5 Sep 20:20"
+    },
+    {
+      "title": "HALO-ZERO",
+      "href": "/t/U17/example/",
+      "type": "U17 seat",
+      "tone": "agents",
+      "why": "the HALO native lane, idle at P1-07 verified slice"
+    }
+  ],
+  "seats": [
+    {
+      "label": "HALO-ZERO · idle",
+      "tone": "agents",
+      "href": "/t/U17/example/"
+    },
+    {
+      "label": "ORACLE-ZERO · idle",
+      "tone": "agents"
+    },
+    {
+      "label": "ORACLE-OPERATOR · done",
+      "tone": "agents"
+    },
+    {
+      "label": "OPERATOR-UI · idle",
+      "tone": "agents"
+    },
+    {
+      "label": "GO-LIVE · closed",
+      "tone": "muted"
+    },
+    {
+      "label": "ORACLE-REBUILD · closed",
+      "tone": "muted"
+    }
+  ],
+  "map": {
+    "centre": {
+      "label": "ofm",
+      "href": "#top"
+    },
+    "types": [
+      {
+        "type": "person",
+        "label": "People",
+        "tone": "clients",
+        "items": [
+          {
+            "label": "Camron",
+            "href": "/t/U14/example/",
+            "rel": "client"
+          }
+        ]
+      },
+      {
+        "type": "project",
+        "label": "Projects",
+        "tone": "projects",
+        "items": [
+          {
+            "label": "Oracle streaming",
+            "href": "#projects",
+            "rel": "his lane"
+          },
+          {
+            "label": "HALO CRM",
+            "href": "#projects",
+            "rel": "partial"
+          }
+        ]
+      },
+      {
+        "type": "repo",
+        "label": "Repos",
+        "tone": "clients",
+        "items": [
+          {
+            "label": "oracle",
+            "rel": "private",
+            "private": true
+          },
+          {
+            "label": "oracle-source",
+            "rel": "private",
+            "private": true
+          },
+          {
+            "label": "oracle-sessions",
+            "rel": "private",
+            "private": true
+          },
+          {
+            "label": "halocrm-mirror",
+            "rel": "private",
+            "private": true
+          }
+        ]
+      },
+      {
+        "type": "seat",
+        "label": "Seats",
+        "tone": "agents",
+        "items": [
+          {
+            "label": "HALO-ZERO",
+            "href": "/t/U17/example/",
+            "rel": "idle"
+          },
+          {
+            "label": "ORACLE-ZERO",
+            "rel": "idle"
+          },
+          {
+            "label": "ORACLE-OPERATOR",
+            "rel": "done"
+          }
+        ]
+      }
+    ]
   },
-  "seats": {
-   "n": "06",
-   "title": "Seats that ran on this account"
+  "quickstart": {
+    "entry": {
+      "path": "<ofm account repo>/.agents/PAGE.md (private; not yet a plan row)"
+    },
+    "owner": {
+      "name": "Shaan (Oracle lane) · HALO web-UI lane",
+      "last": "6 Sep 17:51"
+    },
+    "verification": "Open this page and see Oracle and HALO as two project cards with their heads (096ce7f, 09d69f5) and live-URL state (none yet, truthfully); four repos marked private; no money, no message content.",
+    "commands": [
+      "jq '.projects[]|select(.group|test(\"ofm\"))|{slug,repos:[.repos[].repo],urls,seats,left}' 00_AGENT_ZERO/plan/projects.json",
+      "gh api repos/sisodias/halocrm-mirror/commits/codex/private-rewrite-83ab4ba --jq .sha",
+      "gh api repos/sisodias/oracle/commits/main --jq .sha"
+    ]
   },
   "timeline": {
-   "n": "07",
-   "title": "Engagement timeline",
-   "sub": "5 Sep 12:00 → 6 Sep 20:00 · 83 commits across the two projects, seat events, his words, writebacks"
-  },
-  "map": {
-   "n": "08",
-   "title": "Mind map",
-   "sub": "account → projects → repos"
-  },
-  "agent": {
-   "n": "09",
-   "title": "Agent entry"
-  }
- },
- "words": [
-  {
-   "text": "Halo, CRM and Oracle are both part of the OnlyFans management client. Bycons Yard is his own client, his client work, action model. And we'll consider it more internal. … You know, you've got client projects and you've got agency work. It should be split like that. You know so for the OnlyFans American client like we should have probably a repo, well they are split but like the main project kind of has both of those but they are like individual projects if that makes sense.",
-   "who": "Shaan → Fable FA0 · 00_AGENT_ZERO/source/2026-09-05-2220-clients-vs-agency-nuance-verbatim.md",
-   "at": "5 Sep 22:20"
-  }
- ],
- "account": [
-  {
-   "k": "client",
-   "v": "Camron · OnlyFans-management business (US)"
-  },
-  {
-   "k": "account",
-   "v": "<code>ofm</code> · the account repo over the project repos (BASELINE.md §1, 22:20)"
-  },
-  {
-   "k": "projects",
-   "v": "<a href=\"#projects\">Oracle streaming</a> · <a href=\"#projects\">HALO CRM</a>"
-  },
-  {
-   "k": "since",
-   "v": "Aug 2026 (halocrm-mirror created 29 Aug; oracle repo created 1 May 2026)"
-  },
-  {
-   "k": "live for them",
-   "v": "nothing with a URL yet: Oracle has no page.url row, HALO's page.url is the mirror repo (404 logged out)"
-  },
-  {
-   "k": "owed",
-   "v": "see <a href=\"#deliverables\">deliverables</a>: a real HALO URL, the client's 4 shared-drive commits reconciled, Oracle S2"
-  }
- ],
- "projects": [
-  {
-   "name": "Oracle streaming",
-   "kind": "U4 project · his lane",
-   "tone": "projects",
-   "href": "/t/U4/",
-   "what": "Streaming app + operator. Shaan's own lane since 5 Sep 20:20, not reviewed by REVIEW-ZERO. 46 commits on main since 5 Sep 17:00; latest <code>096ce7f</code> 6 Sep 17:51 (operator board-session with rollback). Modules O1, S2.",
-   "chips": [
-    {
-     "label": "3 repos · private",
-     "tone": "clients",
-     "icon": "lock"
-    },
-    {
-     "label": "head 096ce7f · 6 Sep 17:51",
-     "tone": "projects"
-    },
-    {
-     "label": "4 seats",
-     "tone": "agents",
-     "href": "#seats"
-    },
-    {
-     "label": "S2 open",
-     "tone": "warn"
-    }
-   ],
-   "facts": [
-    {
-     "k": "front door",
-     "v": "<code>.agents/PAGE.md</code> in sisodias/oracle (private)"
-    },
-    {
-     "k": "his words",
-     "v": "6 Sep 15:30: <em>\"When tokens are wasted we need to mention it because we going on an ultra token efficient rampage now\"</em>"
-    },
-    {
-     "k": "left",
-     "v": "S2: front door dated this week, oracle-source September partition, one session file"
-    }
-   ],
-   "urls": [],
-   "no_url": "No live URL registered for Oracle in plan/projects.json (<code>urls: []</code>). The Operator UI URL is on his 15:30 list."
-  },
-  {
-   "name": "HALO CRM",
-   "kind": "U4 project · partial",
-   "tone": "clients",
-   "href": "/t/U21/example/",
-   "what": "Native rewrite of the client's CRM on a private mirror. 37 commits 5–6 Sep: P1-01…P1-06 done (identity, teams, creators, onboarding, contracts, Customs in integer cents), P1-07 Drive at verified slice; four persona route walks 63/63 at <code>4d24d1b</code>. Modules H1, G20.",
-   "chips": [
-    {
-     "label": "1 repo · private",
-     "tone": "clients",
-     "icon": "lock"
-    },
-    {
-     "label": "head 09d69f5 · 6 Sep 13:16",
-     "tone": "projects"
-    },
-    {
-     "label": "HALO-ZERO · idle",
-     "tone": "agents",
-     "href": "/t/U17/example/"
-    },
-    {
-     "label": "planner 17/74",
-     "tone": "warn"
-    }
-   ],
-   "facts": [
-    {
-     "k": "front door",
-     "v": "<code>.agents/{PAGE,HANDOFF,page.url}</code> at 09d69f5"
-    },
-    {
-     "k": "his words",
-     "v": "6 Sep 13:07: <em>\"so you only did like maybe 20% of all the work\"</em>"
-    },
-    {
-     "k": "left",
-     "v": "P1-08…P1-17 once V5 passes; reconcile the client's 4 commits before any Luna fan-out; a real page.url"
-    }
-   ],
-   "urls": [],
-   "no_url": "page.url today is the mirror repo URL, which returns 404 logged out; not a live URL for the client (plan/projects.json halo.left)."
-  }
- ],
- "repos": [
-  {
-   "repo": "sisodias/oracle",
-   "private": true,
-   "branch": "main",
-   "head": "096ce7f",
-   "head_at": "2026-09-06 17:51 UTC+07",
-   "access": "client account",
-   "rights": "client",
-   "what": "Oracle streaming app (local: apps/oracle-streaming). 46 commits since 5 Sep 17:00; ~7,189 commits on main in total (gh api page count)."
-  },
-  {
-   "repo": "sisodias/oracle-source",
-   "private": true,
-   "branch": "main",
-   "head": "7df1f8c",
-   "head_at": "2026-09-05 20:27 UTC+07",
-   "access": "client account",
-   "rights": "client",
-   "what": "His words for Oracle: one August file plus receipts (gh api git/trees, 6 Sep 14:57)."
-  },
-  {
-   "repo": "sisodias/oracle-sessions",
-   "private": true,
-   "branch": "main",
-   "head": "16cbcd2",
-   "head_at": "2026-09-05 20:27 UTC+07",
-   "access": "client account",
-   "rights": "client",
-   "what": "Session receipts only, no session file yet."
-  },
-  {
-   "repo": "sisodias/halocrm-mirror",
-   "private": true,
-   "branch": "codex/private-rewrite-83ab4ba",
-   "head": "09d69f5",
-   "head_at": "2026-09-06 13:16 UTC+07",
-   "access": "client account",
-   "rights": "client",
-   "what": "Private mirror of the client's CRM; <code>main</code> still at the 17 Aug import (<code>347329a</code>). Upstream: the client's upstream repo (private; push disabled by name)."
-  }
- ],
- "deliverables": {
-  "items": [
-   {
-    "label": "HALO · P1-01…P1-06 (identity, teams, creators, onboarding, contracts, Customs)",
-    "what": "commits 27b8c0f … 8efb0aa on the mirror branch; route walks 63/63 at 4d24d1b",
-    "state": "delivered",
-    "tone": "now"
-   },
-   {
-    "label": "HALO · P1-07 Drive",
-    "what": "verified slice (metadata index, scan worker, admission, posting intent, S3 create-only upload, private download); CreatorUpload still on Convex paths",
-    "state": "partial",
-    "tone": "warn"
-   },
-   {
-    "label": "HALO · front door",
-    "what": ".agents/PAGE.md, HANDOFF.md, page.url pushed at 09d69f5 (D-24 step 3)",
-    "state": "delivered",
-    "tone": "now"
-   },
-   {
-    "label": "HALO · a real page.url the client can open",
-    "what": "today the mirror repo URL, 404 logged out",
-    "state": "owed",
-    "tone": "blocked"
-   },
-   {
-    "label": "HALO · reconcile the client's 4 shared-drive commits",
-    "what": "200 files, 82 overlapping paths, 59 simulated conflicts; no merge yet (rollout row 15255)",
-    "state": "owed",
-    "tone": "blocked"
-   },
-   {
-    "label": "Oracle · operator board-session",
-    "what": "ad5c23c provisions a scoped board session with rollback; 096ce7f logs it landed and a blocked board-session case (6 Sep 17:47–17:51)",
-    "state": "delivered",
-    "tone": "now"
-   },
-   {
-    "label": "Oracle · S2 front door dated this week · September source partition · one session file",
-    "what": "plan/projects.json oracle.left; his lane",
-    "state": "owed",
-    "tone": "warn"
-   },
-   {
-    "label": "Account repo listed in plan/projects.json",
-    "what": "BASELINE §1 names it (intake, chats, page, list of projects); no repo row exists in the plan yet",
-    "state": "gap",
-    "tone": "blocked"
-   }
-  ],
-  "steps": [
-   {
-    "label": "Prove",
-    "what": "a deliverable is <b>delivered</b> only with a commit hash or a URL that returns 200"
-   },
-   {
-    "label": "Owe",
-    "what": "what is owed comes from the project rows' <code>left</code> lines, dated"
-   },
-   {
-    "label": "Keep private",
-    "what": "terms, invoices and cash live in the account repo; this page shows neither figures nor dates for them"
-   }
-  ]
- },
- "private": [
-  {
-   "label": "Money",
-   "what": "Engagement terms, invoices and what is owed in cash: account repo only. Not even a count renders here."
-  },
-  {
-   "label": "What they said",
-   "what": "WhatsApp intake and calls, dated, in the account repo. Content never renders; dates render on the gated page."
-  },
-  {
-   "label": "Roster and routing",
-   "what": "Creators, staff and chatters inside HALO; Oracle device tokens and VPS hosts: never on a public page."
-  }
- ],
- "people": [
-  {
-   "title": "Camron",
-   "href": "/t/U14/example/",
-   "type": "U14 person · client",
-   "tone": "clients",
-   "why": "the account's owner; upstream the client's upstream repo (private; push disabled by name)"
-  },
-  {
-   "title": "Shaan",
-   "href": "/t/U9/example/",
-   "type": "owner · Oracle lane",
-   "tone": "projects",
-   "why": "runs Oracle himself since 5 Sep 20:20"
-  },
-  {
-   "title": "HALO-ZERO",
-   "href": "/t/U17/example/",
-   "type": "U17 seat",
-   "tone": "agents",
-   "why": "the HALO native lane, idle at P1-07 verified slice"
-  }
- ],
- "seats": [
-  {
-   "label": "HALO-ZERO · idle",
-   "tone": "agents",
-   "href": "/t/U17/example/"
-  },
-  {
-   "label": "ORACLE-ZERO · idle",
-   "tone": "agents"
-  },
-  {
-   "label": "ORACLE-OPERATOR · done",
-   "tone": "agents"
-  },
-  {
-   "label": "OPERATOR-UI · idle",
-   "tone": "agents"
-  },
-  {
-   "label": "GO-LIVE · closed",
-   "tone": "muted"
-  },
-  {
-   "label": "ORACLE-REBUILD · closed",
-   "tone": "muted"
-  }
- ],
- "map": {
-  "centre": {
-   "label": "ofm",
-   "href": "#top"
-  },
-  "types": [
-   {
-    "type": "person",
-    "label": "People",
-    "tone": "clients",
-    "items": [
-     {
-      "label": "Camron",
-      "href": "/t/U14/example/",
-      "rel": "client"
-     }
+    "observed_at": "2026-09-06 20:01 UTC+07",
+    "from": "2026-09-05 12:00",
+    "to": "2026-09-06 20:00",
+    "lanes": [
+      {
+        "id": "oracle",
+        "label": "oracle commits",
+        "tone": "projects"
+      },
+      {
+        "id": "halo",
+        "label": "halo commits",
+        "tone": "clients"
+      },
+      {
+        "id": "seats",
+        "label": "seats",
+        "tone": "agents"
+      },
+      {
+        "id": "words",
+        "label": "his words",
+        "tone": "now"
+      },
+      {
+        "id": "writebacks",
+        "label": "writebacks",
+        "tone": "muted"
+      }
+    ],
+    "events": [
+      {
+        "at": "2026-09-05 12:01",
+        "lane": "seats",
+        "label": "HALO-ZERO born (brief)"
+      },
+      {
+        "at": "2026-09-05 12:58",
+        "lane": "writebacks",
+        "label": "OWNERS.md line"
+      },
+      {
+        "at": "2026-09-05 13:22",
+        "lane": "writebacks",
+        "label": "OWNERS.md line"
+      },
+      {
+        "at": "2026-09-05 14:16",
+        "lane": "writebacks",
+        "label": "OWNERS.md line"
+      },
+      {
+        "at": "2026-09-05 17:16",
+        "lane": "halo",
+        "label": "halo 27b8c0f · feat(identity): activate Postgres account and admin workflows",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 17:23",
+        "lane": "halo",
+        "label": "halo 6b958bd · test(identity): close P1-01 with recovered runtime proof",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 17:39",
+        "lane": "writebacks",
+        "label": "OWNERS.md line"
+      },
+      {
+        "at": "2026-09-05 18:15",
+        "lane": "writebacks",
+        "label": "OWNERS.md line"
+      },
+      {
+        "at": "2026-09-05 18:36",
+        "lane": "seats",
+        "label": "HALO-ZERO · native route migration (E3)"
+      },
+      {
+        "at": "2026-09-05 18:36",
+        "lane": "writebacks",
+        "label": "OWNERS.md line"
+      },
+      {
+        "at": "2026-09-05 18:42",
+        "lane": "halo",
+        "label": "halo bc8d2b6 · feat(teams): deliver staff onboarding and credential setup",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 18:44",
+        "lane": "halo",
+        "label": "halo 184ecbd · test(teams): close P1-02 with real workflow receipts",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 19:04",
+        "lane": "writebacks",
+        "label": "OWNERS.md line"
+      },
+      {
+        "at": "2026-09-05 19:33",
+        "lane": "halo",
+        "label": "halo d0e2b9d · feat(creators): activate native notes and guarded profile workflows",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 19:39",
+        "lane": "halo",
+        "label": "halo 83ce460 · test(creators): checkpoint four-persona workflow regression",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 19:57",
+        "lane": "writebacks",
+        "label": "OWNERS.md line"
+      },
+      {
+        "at": "2026-09-05 20:13",
+        "lane": "halo",
+        "label": "halo c4bd096 · feat(creators): deliver scoped model-profile workflows",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 20:20",
+        "lane": "words",
+        "label": "Oracle becomes Shaan’s own lane"
+      },
+      {
+        "at": "2026-09-05 20:41",
+        "lane": "oracle",
+        "label": "oracle 971c4ed · feat(managed-ops): rotate the device token before its 30-day",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 20:41",
+        "lane": "oracle",
+        "label": "oracle f244fa5 · fix(vps): device-token expiry re-enrolls instead of wiping l",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 21:13",
+        "lane": "halo",
+        "label": "halo 98355b0 · feat(calendar): complete scoped Postgres creator calendar workflows",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 22:20",
+        "lane": "words",
+        "label": "22:20 · client accounts vs agency work; HALO + Oracle one client"
+      },
+      {
+        "at": "2026-09-05 23:18",
+        "lane": "oracle",
+        "label": "oracle d351750 · fix(go-live): converge token recovery and pin diagnostic pro",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 23:41",
+        "lane": "oracle",
+        "label": "oracle 04b4783 · fix(go-live): verify deploy parity inside attested shell",
+        "auto": true
+      },
+      {
+        "at": "2026-09-05 23:59",
+        "lane": "oracle",
+        "label": "oracle 602e673 · fix(go-live): preserve VPS companion and repair protected co",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 00:12",
+        "lane": "oracle",
+        "label": "oracle 5c41b7a · fix(enrollment): distinguish absent from corrupt prior autho",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 00:20",
+        "lane": "oracle",
+        "label": "oracle ed7adf8 · fix(fleet): rehabilitate split-tree gates and lane tooling",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 00:36",
+        "lane": "halo",
+        "label": "halo 37b1707 · feat(creators): restore native staff creator registration",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 00:49",
+        "lane": "oracle",
+        "label": "oracle 2f1174d · fix(go-live): refuse ungrounded credential and deploy diagno",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 01:04",
+        "lane": "halo",
+        "label": "halo 385126a · fix(creators): make native previews scoped and failure-aware",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 01:27",
+        "lane": "halo",
+        "label": "halo 5d8497c · refactor(creators): make directory and profile saves Postgres-only",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 01:31",
+        "lane": "oracle",
+        "label": "oracle 5667718 · test(go-live): prove HTTP expiry preserves data and repair r",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 01:52",
+        "lane": "halo",
+        "label": "halo 6ce81e0 · feat(customs): link status changes to transactional audit evidence",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 02:14",
+        "lane": "halo",
+        "label": "halo 03e0313 · feat(customs): record audit evidence for creation and detail edits",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 02:24",
+        "lane": "oracle",
+        "label": "oracle 07ddb2e · test(go-live): align agent smoke fixtures with current lifec",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 02:29",
+        "lane": "oracle",
+        "label": "oracle fc05160 · fix(context): normalize authorized runtime metadata blocks",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 02:29",
+        "lane": "oracle",
+        "label": "oracle f4628b7 · fix(test): deduplicate the maintained stream-key watcher sui",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 02:53",
+        "lane": "halo",
+        "label": "halo 39100c0 · feat(customs): complete transactional evidence across command handlers",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 03:01",
+        "lane": "oracle",
+        "label": "oracle 1b40094 · fix(fleet): close shared offline integration gate failures",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 03:28",
+        "lane": "halo",
+        "label": "halo ad38138 · fix(customs): preserve draft retries and archive workflow semantics",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 03:48",
+        "lane": "halo",
+        "label": "halo d50ea5e · refactor(customs): make verified native workflows canonical",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:01",
+        "lane": "oracle",
+        "label": "oracle 1aae68a · fix(worker): bind caption moderation to its token scope",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:01",
+        "lane": "oracle",
+        "label": "oracle e120472 · test(worker): restore lifecycle regression coverage",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:10",
+        "lane": "halo",
+        "label": "halo c3f4a07 · Complete native creator overview reads and manager retries",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:11",
+        "lane": "oracle",
+        "label": "oracle dd41a31 · docs(cull): preserve query navigation and distinct proof rou",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:11",
+        "lane": "oracle",
+        "label": "oracle d0c0e7e · docs(cull): refresh generated task and knowledge views",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:11",
+        "lane": "oracle",
+        "label": "oracle 6857cd2 · docs(cull): archive historical docs and return stale tasks t",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:11",
+        "lane": "oracle",
+        "label": "oracle 76a99d9 · docs(cull): consolidate legacy memory and repair the short b",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:16",
+        "lane": "oracle",
+        "label": "oracle efe982d · chore(cull): apply final landing rule and canonical dependen",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:20",
+        "lane": "oracle",
+        "label": "oracle 1ded9ab · fix(operator): classify record tables and resolve worktree t",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:20",
+        "lane": "oracle",
+        "label": "oracle 1369702 · feat(operator): integrate durable onboarding checklist attes",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:20",
+        "lane": "oracle",
+        "label": "oracle e7e7ef1 · feat(operator): move client decisions to Convex without boot",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:20",
+        "lane": "oracle",
+        "label": "oracle 613ae5f · feat(operator): persist typed record context with revision c",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:28",
+        "lane": "oracle",
+        "label": "oracle 3edc04e · fix(fleet): verify indexed graph attribution and preserve so",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:29",
+        "lane": "oracle",
+        "label": "oracle 2a569f1 · fix(auth): accept canonical model identity during token rota",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:36",
+        "lane": "halo",
+        "label": "halo 657f1e0 · Complete native creator settings and verified contract downloads",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:41",
+        "lane": "oracle",
+        "label": "oracle 6e1af55 · docs(cull): record landed cleanup and per-item recovery rout",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:42",
+        "lane": "oracle",
+        "label": "oracle ad2d35b · fix(tooling): fail empty integration runs and stabilize offl",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:45",
+        "lane": "oracle",
+        "label": "oracle a098591 · fix(operator): use an allowed Convex question index name",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:49",
+        "lane": "oracle",
+        "label": "oracle 60b452f · docs(fixer): close landed tooling rows and task source outco",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:50",
+        "lane": "oracle",
+        "label": "oracle 8667256 · test(proof): await bounded stay-live monitor outcomes",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:53",
+        "lane": "oracle",
+        "label": "oracle 04a0eb0 · docs(cull): repair archived source-context references",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:53",
+        "lane": "halo",
+        "label": "halo 929f6d2 · Make shared creator avatars and contract cards native",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 04:57",
+        "lane": "oracle",
+        "label": "oracle 2efef35 · docs(cull): close landed cleanup and reference repair handof",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 05:01",
+        "lane": "oracle",
+        "label": "oracle 396da45 · fix(build): resolve token identity through contracts barrel",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 05:08",
+        "lane": "halo",
+        "label": "halo 80eeef5 · refactor(creators): close native directory dependency paths",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 05:22",
+        "lane": "halo",
+        "label": "halo 4b8c73d · Make onboarding cards native and preserve held task uploads",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 05:50",
+        "lane": "oracle",
+        "label": "oracle aea29af · docs(golive): preserve deployed renewal and remaining vault ",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 05:50",
+        "lane": "halo",
+        "label": "halo 152ea53 · fix: make public onboarding native and explicit-save",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 05:53",
+        "lane": "oracle",
+        "label": "oracle 1523912 · docs(golive): record verified landed renewal source",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 06:20",
+        "lane": "halo",
+        "label": "halo 0d7087b · fix: restore native onboarding review queue",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 06:49",
+        "lane": "halo",
+        "label": "halo cce23c1 · feat(onboarding): restore native manager review and sign-off workflows",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 07:10",
+        "lane": "halo",
+        "label": "halo eef1ed4 · feat(contracts): restore native public signing and invitation links",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 07:58",
+        "lane": "halo",
+        "label": "halo aebd0bd · feat(contracts): restore native staff lifecycle workflows",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 08:30",
+        "lane": "halo",
+        "label": "halo 1916df9 · fix: preserve native Creator identity and close onboarding migration",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 09:12",
+        "lane": "halo",
+        "label": "halo 8efb0aa · Store Customs money in cents and close native domain gates",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 09:53",
+        "lane": "halo",
+        "label": "halo 48dc282 · feat(drive): native scoped metadata index and read workflows",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 10:20",
+        "lane": "halo",
+        "label": "halo 021e734 · feat(drive): add bounded native metadata scan worker",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 10:56",
+        "lane": "halo",
+        "label": "halo 8deb2e9 · feat(drive): admit verified existing creator folder trees",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 11:23",
+        "lane": "halo",
+        "label": "halo ae47814 · feat(drive): persist authenticated posting intent with scan holds",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 11:46",
+        "lane": "halo",
+        "label": "halo 72776ae · feat(storage): verify create-only native content uploads",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 12:13",
+        "lane": "halo",
+        "label": "halo ed985f4 · feat(content): add durable authorized creator upload API",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 12:30",
+        "lane": "words",
+        "label": "HALO progress percent?",
+        "href": "/t/U18/"
+      },
+      {
+        "at": "2026-09-06 12:34",
+        "lane": "halo",
+        "label": "halo 87d7fea · feat(content): stream private authenticated native downloads",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 12:55",
+        "lane": "halo",
+        "label": "halo 4d24d1b · test(content): preserve P1-07 checkpoint and four persona gates",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 13:00",
+        "lane": "words",
+        "label": "halo is going to be one of those projects where we have to move … onto the web ui"
+      },
+      {
+        "at": "2026-09-06 13:07",
+        "lane": "words",
+        "label": "you only did like maybe 20% … allocate this out as lunas"
+      },
+      {
+        "at": "2026-09-06 13:16",
+        "lane": "halo",
+        "label": "halo 09d69f5 · docs: add HALO agent page and handoff entrypoints",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 13:16",
+        "lane": "seats",
+        "label": "HALO-ZERO idle · handoff 09d69f5"
+      },
+      {
+        "at": "2026-09-06 13:16",
+        "lane": "writebacks",
+        "label": "OWNERS.md line"
+      },
+      {
+        "at": "2026-09-06 15:03",
+        "lane": "oracle",
+        "label": "oracle 4b3cd63 · docs(checkpoint): six seat recaps, current handoffs, rulings",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 15:30",
+        "lane": "words",
+        "label": "15:30 · token-efficient rampage (Oracle pane)"
+      },
+      {
+        "at": "2026-09-06 15:32",
+        "lane": "oracle",
+        "label": "oracle 2405c5f · docs(resume): RESUME-AGENT-ZERO for the fresh coordinator; a",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 15:51",
+        "lane": "oracle",
+        "label": "oracle 20e7193 · docs(handover): Shaan's replan verbatim, OPERATOR-ASTRA brie",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 17:11",
+        "lane": "oracle",
+        "label": "oracle baf198e · docs(zero): promotion pass — replan + landing rule + readbac",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 17:19",
+        "lane": "oracle",
+        "label": "oracle dfa1568 · fix(operator): restore authenticated device and repair ledge",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 17:29",
+        "lane": "oracle",
+        "label": "oracle 3e90be4 · docs(master): log dfa15688f ledger landing + deploy verified",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 17:34",
+        "lane": "oracle",
+        "label": "oracle 3d95b20 · docs(master): log the managed-ops device-pin repoint (verifi",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 17:43",
+        "lane": "oracle",
+        "label": "oracle bc899ca · docs(master): log operator 58e2ec4 verified, board-session l",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 17:47",
+        "lane": "oracle",
+        "label": "oracle ad5c23c · feat(operator): provision a scoped board session with rollba",
+        "auto": true
+      },
+      {
+        "at": "2026-09-06 17:51",
+        "lane": "oracle",
+        "label": "oracle 096ce7f · docs(master): log ad5c23ccb landing, blocked board-session a",
+        "auto": true
+      }
     ]
-   },
-   {
-    "type": "project",
-    "label": "Projects",
-    "tone": "projects",
-    "items": [
-     {
-      "label": "Oracle streaming",
-      "href": "#projects",
-      "rel": "his lane"
-     },
-     {
-      "label": "HALO CRM",
-      "href": "#projects",
-      "rel": "partial"
-     }
-    ]
-   },
-   {
-    "type": "repo",
-    "label": "Repos",
-    "tone": "clients",
-    "items": [
-     {
-      "label": "oracle",
-      "rel": "private",
-      "private": true
-     },
-     {
-      "label": "oracle-source",
-      "rel": "private",
-      "private": true
-     },
-     {
-      "label": "oracle-sessions",
-      "rel": "private",
-      "private": true
-     },
-     {
-      "label": "halocrm-mirror",
-      "rel": "private",
-      "private": true
-     }
-    ]
-   },
-   {
-    "type": "seat",
-    "label": "Seats",
-    "tone": "agents",
-    "items": [
-     {
-      "label": "HALO-ZERO",
-      "href": "/t/U17/example/",
-      "rel": "idle"
-     },
-     {
-      "label": "ORACLE-ZERO",
-      "rel": "idle"
-     },
-     {
-      "label": "ORACLE-OPERATOR",
-      "rel": "done"
-     }
-    ]
-   }
-  ]
- },
- "quickstart": {
-  "entry": {
-   "path": "<ofm account repo>/.agents/PAGE.md (private; not yet a plan row)"
-  },
-  "owner": {
-   "name": "Shaan (Oracle lane) · HALO web-UI lane",
-   "last": "6 Sep 17:51"
-  },
-  "verification": "Open this page and see Oracle and HALO as two project cards with their heads (096ce7f, 09d69f5) and live-URL state (none yet, truthfully); four repos marked private; no money, no message content.",
-  "commands": [
-   "jq '.projects[]|select(.group|test(\"ofm\"))|{slug,repos:[.repos[].repo],urls,seats,left}' 00_AGENT_ZERO/plan/projects.json",
-   "gh api repos/sisodias/halocrm-mirror/commits/codex/private-rewrite-83ab4ba --jq .sha",
-   "gh api repos/sisodias/oracle/commits/main --jq .sha"
-  ]
- },
- "timeline": {
-  "observed_at": "2026-09-06 20:01 UTC+07",
-  "from": "2026-09-05 12:00",
-  "to": "2026-09-06 20:00",
-  "lanes": [
-   {
-    "id": "oracle",
-    "label": "oracle commits",
-    "tone": "projects"
-   },
-   {
-    "id": "halo",
-    "label": "halo commits",
-    "tone": "clients"
-   },
-   {
-    "id": "seats",
-    "label": "seats",
-    "tone": "agents"
-   },
-   {
-    "id": "words",
-    "label": "his words",
-    "tone": "now"
-   },
-   {
-    "id": "writebacks",
-    "label": "writebacks",
-    "tone": "muted"
-   }
-  ],
-  "events": [
-   {
-    "at": "2026-09-05 12:01",
-    "lane": "seats",
-    "label": "HALO-ZERO born (brief)"
-   },
-   {
-    "at": "2026-09-05 12:58",
-    "lane": "writebacks",
-    "label": "OWNERS.md line"
-   },
-   {
-    "at": "2026-09-05 13:22",
-    "lane": "writebacks",
-    "label": "OWNERS.md line"
-   },
-   {
-    "at": "2026-09-05 14:16",
-    "lane": "writebacks",
-    "label": "OWNERS.md line"
-   },
-   {
-    "at": "2026-09-05 17:16",
-    "lane": "halo",
-    "label": "halo 27b8c0f · feat(identity): activate Postgres account and admin workflows",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 17:23",
-    "lane": "halo",
-    "label": "halo 6b958bd · test(identity): close P1-01 with recovered runtime proof",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 17:39",
-    "lane": "writebacks",
-    "label": "OWNERS.md line"
-   },
-   {
-    "at": "2026-09-05 18:15",
-    "lane": "writebacks",
-    "label": "OWNERS.md line"
-   },
-   {
-    "at": "2026-09-05 18:36",
-    "lane": "seats",
-    "label": "HALO-ZERO · native route migration (E3)"
-   },
-   {
-    "at": "2026-09-05 18:36",
-    "lane": "writebacks",
-    "label": "OWNERS.md line"
-   },
-   {
-    "at": "2026-09-05 18:42",
-    "lane": "halo",
-    "label": "halo bc8d2b6 · feat(teams): deliver staff onboarding and credential setup",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 18:44",
-    "lane": "halo",
-    "label": "halo 184ecbd · test(teams): close P1-02 with real workflow receipts",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 19:04",
-    "lane": "writebacks",
-    "label": "OWNERS.md line"
-   },
-   {
-    "at": "2026-09-05 19:33",
-    "lane": "halo",
-    "label": "halo d0e2b9d · feat(creators): activate native notes and guarded profile workflows",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 19:39",
-    "lane": "halo",
-    "label": "halo 83ce460 · test(creators): checkpoint four-persona workflow regression",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 19:57",
-    "lane": "writebacks",
-    "label": "OWNERS.md line"
-   },
-   {
-    "at": "2026-09-05 20:13",
-    "lane": "halo",
-    "label": "halo c4bd096 · feat(creators): deliver scoped model-profile workflows",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 20:20",
-    "lane": "words",
-    "label": "Oracle becomes Shaan’s own lane"
-   },
-   {
-    "at": "2026-09-05 20:41",
-    "lane": "oracle",
-    "label": "oracle 971c4ed · feat(managed-ops): rotate the device token before its 30-day",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 20:41",
-    "lane": "oracle",
-    "label": "oracle f244fa5 · fix(vps): device-token expiry re-enrolls instead of wiping l",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 21:13",
-    "lane": "halo",
-    "label": "halo 98355b0 · feat(calendar): complete scoped Postgres creator calendar workflows",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 22:20",
-    "lane": "words",
-    "label": "22:20 · client accounts vs agency work; HALO + Oracle one client"
-   },
-   {
-    "at": "2026-09-05 23:18",
-    "lane": "oracle",
-    "label": "oracle d351750 · fix(go-live): converge token recovery and pin diagnostic pro",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 23:41",
-    "lane": "oracle",
-    "label": "oracle 04b4783 · fix(go-live): verify deploy parity inside attested shell",
-    "auto": true
-   },
-   {
-    "at": "2026-09-05 23:59",
-    "lane": "oracle",
-    "label": "oracle 602e673 · fix(go-live): preserve VPS companion and repair protected co",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 00:12",
-    "lane": "oracle",
-    "label": "oracle 5c41b7a · fix(enrollment): distinguish absent from corrupt prior autho",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 00:20",
-    "lane": "oracle",
-    "label": "oracle ed7adf8 · fix(fleet): rehabilitate split-tree gates and lane tooling",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 00:36",
-    "lane": "halo",
-    "label": "halo 37b1707 · feat(creators): restore native staff creator registration",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 00:49",
-    "lane": "oracle",
-    "label": "oracle 2f1174d · fix(go-live): refuse ungrounded credential and deploy diagno",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 01:04",
-    "lane": "halo",
-    "label": "halo 385126a · fix(creators): make native previews scoped and failure-aware",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 01:27",
-    "lane": "halo",
-    "label": "halo 5d8497c · refactor(creators): make directory and profile saves Postgres-only",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 01:31",
-    "lane": "oracle",
-    "label": "oracle 5667718 · test(go-live): prove HTTP expiry preserves data and repair r",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 01:52",
-    "lane": "halo",
-    "label": "halo 6ce81e0 · feat(customs): link status changes to transactional audit evidence",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 02:14",
-    "lane": "halo",
-    "label": "halo 03e0313 · feat(customs): record audit evidence for creation and detail edits",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 02:24",
-    "lane": "oracle",
-    "label": "oracle 07ddb2e · test(go-live): align agent smoke fixtures with current lifec",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 02:29",
-    "lane": "oracle",
-    "label": "oracle fc05160 · fix(context): normalize authorized runtime metadata blocks",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 02:29",
-    "lane": "oracle",
-    "label": "oracle f4628b7 · fix(test): deduplicate the maintained stream-key watcher sui",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 02:53",
-    "lane": "halo",
-    "label": "halo 39100c0 · feat(customs): complete transactional evidence across command handlers",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 03:01",
-    "lane": "oracle",
-    "label": "oracle 1b40094 · fix(fleet): close shared offline integration gate failures",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 03:28",
-    "lane": "halo",
-    "label": "halo ad38138 · fix(customs): preserve draft retries and archive workflow semantics",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 03:48",
-    "lane": "halo",
-    "label": "halo d50ea5e · refactor(customs): make verified native workflows canonical",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:01",
-    "lane": "oracle",
-    "label": "oracle 1aae68a · fix(worker): bind caption moderation to its token scope",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:01",
-    "lane": "oracle",
-    "label": "oracle e120472 · test(worker): restore lifecycle regression coverage",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:10",
-    "lane": "halo",
-    "label": "halo c3f4a07 · Complete native creator overview reads and manager retries",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:11",
-    "lane": "oracle",
-    "label": "oracle dd41a31 · docs(cull): preserve query navigation and distinct proof rou",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:11",
-    "lane": "oracle",
-    "label": "oracle d0c0e7e · docs(cull): refresh generated task and knowledge views",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:11",
-    "lane": "oracle",
-    "label": "oracle 6857cd2 · docs(cull): archive historical docs and return stale tasks t",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:11",
-    "lane": "oracle",
-    "label": "oracle 76a99d9 · docs(cull): consolidate legacy memory and repair the short b",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:16",
-    "lane": "oracle",
-    "label": "oracle efe982d · chore(cull): apply final landing rule and canonical dependen",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:20",
-    "lane": "oracle",
-    "label": "oracle 1ded9ab · fix(operator): classify record tables and resolve worktree t",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:20",
-    "lane": "oracle",
-    "label": "oracle 1369702 · feat(operator): integrate durable onboarding checklist attes",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:20",
-    "lane": "oracle",
-    "label": "oracle e7e7ef1 · feat(operator): move client decisions to Convex without boot",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:20",
-    "lane": "oracle",
-    "label": "oracle 613ae5f · feat(operator): persist typed record context with revision c",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:28",
-    "lane": "oracle",
-    "label": "oracle 3edc04e · fix(fleet): verify indexed graph attribution and preserve so",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:29",
-    "lane": "oracle",
-    "label": "oracle 2a569f1 · fix(auth): accept canonical model identity during token rota",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:36",
-    "lane": "halo",
-    "label": "halo 657f1e0 · Complete native creator settings and verified contract downloads",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:41",
-    "lane": "oracle",
-    "label": "oracle 6e1af55 · docs(cull): record landed cleanup and per-item recovery rout",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:42",
-    "lane": "oracle",
-    "label": "oracle ad2d35b · fix(tooling): fail empty integration runs and stabilize offl",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:45",
-    "lane": "oracle",
-    "label": "oracle a098591 · fix(operator): use an allowed Convex question index name",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:49",
-    "lane": "oracle",
-    "label": "oracle 60b452f · docs(fixer): close landed tooling rows and task source outco",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:50",
-    "lane": "oracle",
-    "label": "oracle 8667256 · test(proof): await bounded stay-live monitor outcomes",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:53",
-    "lane": "oracle",
-    "label": "oracle 04a0eb0 · docs(cull): repair archived source-context references",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:53",
-    "lane": "halo",
-    "label": "halo 929f6d2 · Make shared creator avatars and contract cards native",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 04:57",
-    "lane": "oracle",
-    "label": "oracle 2efef35 · docs(cull): close landed cleanup and reference repair handof",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 05:01",
-    "lane": "oracle",
-    "label": "oracle 396da45 · fix(build): resolve token identity through contracts barrel",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 05:08",
-    "lane": "halo",
-    "label": "halo 80eeef5 · refactor(creators): close native directory dependency paths",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 05:22",
-    "lane": "halo",
-    "label": "halo 4b8c73d · Make onboarding cards native and preserve held task uploads",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 05:50",
-    "lane": "oracle",
-    "label": "oracle aea29af · docs(golive): preserve deployed renewal and remaining vault ",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 05:50",
-    "lane": "halo",
-    "label": "halo 152ea53 · fix: make public onboarding native and explicit-save",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 05:53",
-    "lane": "oracle",
-    "label": "oracle 1523912 · docs(golive): record verified landed renewal source",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 06:20",
-    "lane": "halo",
-    "label": "halo 0d7087b · fix: restore native onboarding review queue",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 06:49",
-    "lane": "halo",
-    "label": "halo cce23c1 · feat(onboarding): restore native manager review and sign-off workflows",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 07:10",
-    "lane": "halo",
-    "label": "halo eef1ed4 · feat(contracts): restore native public signing and invitation links",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 07:58",
-    "lane": "halo",
-    "label": "halo aebd0bd · feat(contracts): restore native staff lifecycle workflows",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 08:30",
-    "lane": "halo",
-    "label": "halo 1916df9 · fix: preserve native Creator identity and close onboarding migration",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 09:12",
-    "lane": "halo",
-    "label": "halo 8efb0aa · Store Customs money in cents and close native domain gates",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 09:53",
-    "lane": "halo",
-    "label": "halo 48dc282 · feat(drive): native scoped metadata index and read workflows",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 10:20",
-    "lane": "halo",
-    "label": "halo 021e734 · feat(drive): add bounded native metadata scan worker",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 10:56",
-    "lane": "halo",
-    "label": "halo 8deb2e9 · feat(drive): admit verified existing creator folder trees",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 11:23",
-    "lane": "halo",
-    "label": "halo ae47814 · feat(drive): persist authenticated posting intent with scan holds",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 11:46",
-    "lane": "halo",
-    "label": "halo 72776ae · feat(storage): verify create-only native content uploads",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 12:13",
-    "lane": "halo",
-    "label": "halo ed985f4 · feat(content): add durable authorized creator upload API",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 12:30",
-    "lane": "words",
-    "label": "HALO progress percent?",
-    "href": "/t/U18/"
-   },
-   {
-    "at": "2026-09-06 12:34",
-    "lane": "halo",
-    "label": "halo 87d7fea · feat(content): stream private authenticated native downloads",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 12:55",
-    "lane": "halo",
-    "label": "halo 4d24d1b · test(content): preserve P1-07 checkpoint and four persona gates",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 13:00",
-    "lane": "words",
-    "label": "halo is going to be one of those projects where we have to move … onto the web ui"
-   },
-   {
-    "at": "2026-09-06 13:07",
-    "lane": "words",
-    "label": "you only did like maybe 20% … allocate this out as lunas"
-   },
-   {
-    "at": "2026-09-06 13:16",
-    "lane": "halo",
-    "label": "halo 09d69f5 · docs: add HALO agent page and handoff entrypoints",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 13:16",
-    "lane": "seats",
-    "label": "HALO-ZERO idle · handoff 09d69f5"
-   },
-   {
-    "at": "2026-09-06 13:16",
-    "lane": "writebacks",
-    "label": "OWNERS.md line"
-   },
-   {
-    "at": "2026-09-06 15:03",
-    "lane": "oracle",
-    "label": "oracle 4b3cd63 · docs(checkpoint): six seat recaps, current handoffs, rulings",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 15:30",
-    "lane": "words",
-    "label": "15:30 · token-efficient rampage (Oracle pane)"
-   },
-   {
-    "at": "2026-09-06 15:32",
-    "lane": "oracle",
-    "label": "oracle 2405c5f · docs(resume): RESUME-AGENT-ZERO for the fresh coordinator; a",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 15:51",
-    "lane": "oracle",
-    "label": "oracle 20e7193 · docs(handover): Shaan's replan verbatim, OPERATOR-ASTRA brie",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 17:11",
-    "lane": "oracle",
-    "label": "oracle baf198e · docs(zero): promotion pass — replan + landing rule + readbac",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 17:19",
-    "lane": "oracle",
-    "label": "oracle dfa1568 · fix(operator): restore authenticated device and repair ledge",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 17:29",
-    "lane": "oracle",
-    "label": "oracle 3e90be4 · docs(master): log dfa15688f ledger landing + deploy verified",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 17:34",
-    "lane": "oracle",
-    "label": "oracle 3d95b20 · docs(master): log the managed-ops device-pin repoint (verifi",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 17:43",
-    "lane": "oracle",
-    "label": "oracle bc899ca · docs(master): log operator 58e2ec4 verified, board-session l",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 17:47",
-    "lane": "oracle",
-    "label": "oracle ad5c23c · feat(operator): provision a scoped board session with rollba",
-    "auto": true
-   },
-   {
-    "at": "2026-09-06 17:51",
-    "lane": "oracle",
-    "label": "oracle 096ce7f · docs(master): log ad5c23ccb landing, blocked board-session a",
-    "auto": true
-   }
-  ]
- }
+  }
 }

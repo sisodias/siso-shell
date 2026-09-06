@@ -8,6 +8,9 @@
     <h1>{{title}}</h1>
     {{#if subtitle}}<p class="heading__sub">{{{subtitle}}}</p>{{/if}}
     {{#if badges}}<div class="heading__badges">{{> chips badges}}</div>{{/if}}
+    {{!-- jump row: the entry points of this page, as chips with live dots. Action Model blueprint pattern
+         (blueprint/index.html chip row of entry points), which is the bar actionist-blueprint.pages.dev sets. --}}
+    {{#if jump}}<div class="heading__jump">{{#each jump}}<a class="jumpchip{{#if live}} is-live{{/if}}" href="{{href}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}>{{#if live}}<i class="dot"></i>{{/if}}{{label}}</a>{{/each}}</div>{{/if}}
   </div>
   {{#if status}}<aside class="heading__status">
     <span class="kicker">{{status.kicker}}</span>
@@ -15,4 +18,6 @@
     {{#if status.note}}<p>{{{status.note}}}</p>{{/if}}
     {{#if status.facts}}<dl class="kv">{{#each status.facts}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>{{/if}}
   </aside>{{/if}}
+  {{!-- the metric strip sits under the whole heading, full width, one row — the bar's orientation band. --}}
+  {{#if metrics}}<div class="heading__metrics">{{> metrics metrics}}</div>{{/if}}
 </header>

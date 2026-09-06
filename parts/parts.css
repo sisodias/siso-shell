@@ -400,3 +400,17 @@ a.repocard__open:hover { border-color: var(--crm-color-line-strong); background:
 .bento__go svg { width: 13px; height: 13px; stroke-width: var(--crm-icon-stroke); }
 .bento__card:hover .bento__go { color: var(--tone, var(--stream)); border-color: rgb(var(--tone-rgb, var(--stream-rgb)) / 0.5); }
 @media (prefers-reduced-motion: reduce) { .bento__card, .bento__shot img { transition: none; } .bento__card:hover { transform: none; } .bento__card:hover .bento__shot img { transform: none; } }
+
+/* heading · jump row + metric band — the bar (actionist-blueprint.pages.dev): under the title, a row of entry-point
+ * chips with live dots, then a full-width metric strip that orients before any prose. */
+.heading__jump { display: flex; flex-wrap: wrap; gap: var(--crm-space-2); margin-top: var(--crm-space-3-5); }
+.jumpchip { display: inline-flex; align-items: center; gap: var(--crm-space-1-5); height: 30px; padding: 0 var(--crm-space-3-5); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-pill); color: var(--crm-color-text); font-size: var(--crm-text-sm); text-decoration: none; transition: border-color 160ms ease, background 160ms ease; }
+.jumpchip:hover { border-color: var(--crm-color-line-strong); background: rgb(var(--crm-white-rgb) / 0.045); text-decoration: none; }
+.jumpchip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--tone-now, #34d399); box-shadow: 0 0 7px currentColor; }
+.jumpchip.is-live { color: var(--crm-color-text-strong); }
+.heading__metrics { grid-column: 1 / -1; margin-top: var(--crm-space-6); }
+/* in the band the metrics are one flat row with dividers, not separate cards — the bar's treatment */
+.heading__metrics .metrics { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0; border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-card-compact, 12px); overflow: hidden; background: rgb(var(--crm-chrome-rgb) / 0.5); }
+.heading__metrics .metric { border: 0; border-left: 1px solid var(--crm-color-line); border-radius: 0; background: none; padding: var(--crm-space-4) var(--crm-space-4-5); }
+.heading__metrics .metric:first-child { border-left: 0; }
+.heading__metrics .metric b { font-size: 28px; }

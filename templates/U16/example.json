@@ -1,24 +1,361 @@
 {
-  "meta": { "title": "D-25 · no seat without a verification line · decision", "description": "Decision D-25: why the fleet missed the bar, and the rule it installed.", "stream": "agents", "crumb": [{ "label": "Templates", "href": "/" }, { "label": "U16 · Decision", "href": "/t/U16/" }, { "label": "D-25" }], "actions": [{ "label": "decisions.json", "href": "https://github.com/sisodias/siso-agent-zero-protocol", "icon": "gavel", "external": true }], "source": "00_AGENT_ZERO/plan/decisions.json D-25 · source/2026-09-06-1430-shaan-missed-the-bar-spec-vs-execution-close-down.md" },
+  "meta": {
+    "title": "D-25 · no seat without a verification line · decision",
+    "description": "Decision D-25: why the fleet missed the bar, and the rule it installed.",
+    "stream": "agents",
+    "crumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U16 · Decision",
+        "href": "/t/U16/"
+      },
+      {
+        "label": "D-25"
+      }
+    ],
+    "actions": [
+      {
+        "label": "decisions.json",
+        "href": "https://github.com/sisodias/siso-agent-zero-protocol",
+        "icon": "gavel",
+        "external": true
+      }
+    ],
+    "source": "00_AGENT_ZERO/plan/decisions.json D-25 · source/2026-09-06-1430-shaan-missed-the-bar-spec-vs-execution-close-down.md"
+  },
   "id": "D-25",
-  "heading": { "breadcrumb": [{ "label": "Agent Zero", "href": "/t/U9/example/" }, { "label": "decisions" }, { "label": "D-25" }], "kicker": "decision <span class=\"sep\">·</span> D-25 <span class=\"sep\">·</span> <span class=\"dim\">6 Sep 2026 14:30 · in force</span>", "title": "No seat is spawned without a verification line", "subtitle": "Why the fleet missed the bar: under-specified acceptance (spec, ~60%) plus silent substitution and receipts-instead-of-URLs (execution, ~40%). The rule that came out of it gates every spawn since.", "badges": [{ "label": "in force", "tone": "now", "dot": true }, { "label": "taken by REVIEW-ZERO (Fable)", "tone": "agents" }, { "label": "gates · every spawn", "tone": "warn", "href": "#effects" }], "status": { "kicker": "In force since", "value": "6 Sep 2026 14:30", "note": "Reaffirmed by D-31 (18:41: decisions on first principles) and applied by D-34 (TEMPLATE-BANK-ZERO's brief carries a done-when per family).", "facts": [{ "k": "source", "v": "<code>source/2026-09-06-1430-*</code>" }, { "k": "page", "v": "atlas/SPEC-OR-EXECUTION-2026-09-06.html" }, { "k": "superseded by", "v": "—" }] } },
-  "sections": { "decision": { "n": "01", "title": "The decision", "sub": "plan/decisions.json, verbatim" }, "words": { "n": "02", "title": "His words that caused it" }, "effects": { "n": "03", "title": "What it changed", "sub": "files, modules, plays it gates" }, "reversal": { "n": "04", "title": "What reverses it" }, "map": { "n": "05", "title": "Mind map", "sub": "→ modules, projects, plays it gates" }, "timeline": { "n": "06", "title": "Decided · reaffirmed · applied" }, "agent": { "n": "07", "title": "Agent entry" } },
+  "heading": {
+    "breadcrumb": [
+      {
+        "label": "Agent Zero",
+        "href": "/t/U9/example/"
+      },
+      {
+        "label": "decisions"
+      },
+      {
+        "label": "D-25"
+      }
+    ],
+    "kicker": "decision <span class=\"sep\">·</span> D-25 <span class=\"sep\">·</span> <span class=\"dim\">6 Sep 2026 14:30 · in force</span>",
+    "title": "No seat is spawned without a verification line",
+    "subtitle": "Why the fleet missed the bar: under-specified acceptance (spec, ~60%) plus silent substitution and receipts-instead-of-URLs (execution, ~40%). The rule that came out of it gates every spawn since.",
+    "badges": [
+      {
+        "label": "in force",
+        "tone": "now",
+        "dot": true
+      },
+      {
+        "label": "taken by REVIEW-ZERO (Fable)",
+        "tone": "agents"
+      },
+      {
+        "label": "gates · every spawn",
+        "tone": "warn",
+        "href": "#effects"
+      }
+    ],
+    "status": {
+      "kicker": "In force since",
+      "value": "6 Sep 2026 14:30",
+      "note": "Reaffirmed by D-31 (18:41: decisions on first principles) and applied by D-34 (TEMPLATE-BANK-ZERO's brief carries a done-when per family).",
+      "facts": [
+        {
+          "k": "source",
+          "v": "<code>source/2026-09-06-1430-*</code>"
+        },
+        {
+          "k": "page",
+          "v": "atlas/SPEC-OR-EXECUTION-2026-09-06.html"
+        },
+        {
+          "k": "superseded by",
+          "v": "—"
+        }
+      ]
+    },
+    "metrics": [
+      {
+        "value": 4,
+        "label": "things it changed",
+        "tone": "agents",
+        "href": "#effects"
+      },
+      {
+        "value": 3,
+        "label": "state chips",
+        "tone": "muted",
+        "href": "#decision"
+      }
+    ],
+    "jump": [
+      {
+        "label": "The decision",
+        "href": "#decision"
+      },
+      {
+        "label": "His words that caused it",
+        "href": "#words"
+      },
+      {
+        "label": "What it changed",
+        "href": "#effects"
+      },
+      {
+        "label": "What reverses it",
+        "href": "#reversal"
+      },
+      {
+        "label": "Mind map",
+        "href": "#map"
+      },
+      {
+        "label": "Decided · reaffirmed · applied",
+        "href": "#timeline"
+      }
+    ]
+  },
+  "sections": {
+    "decision": {
+      "n": "01",
+      "title": "The decision",
+      "sub": "plan/decisions.json, verbatim"
+    },
+    "words": {
+      "n": "02",
+      "title": "His words that caused it"
+    },
+    "effects": {
+      "n": "03",
+      "title": "What it changed",
+      "sub": "files, modules, plays it gates"
+    },
+    "reversal": {
+      "n": "04",
+      "title": "What reverses it"
+    },
+    "map": {
+      "n": "05",
+      "title": "Mind map",
+      "sub": "→ modules, projects, plays it gates"
+    },
+    "timeline": {
+      "n": "06",
+      "title": "Decided · reaffirmed · applied"
+    },
+    "agent": {
+      "n": "07",
+      "title": "Agent entry"
+    }
+  },
   "call": "Under-specified acceptance (3 of 50 modules had a verification line) + Shaan's standards installed only for Claude + peer traffic on the one UI seat = spec (~60%); silent substitution and receipts-instead-of-URLs = execution (~40%). Rule from now: no seat is spawned for a module without a one-line 'you will open X and see Y' verification, and the ui-bank/console/atlas skills go into the Codex home before the next Astra wave.",
-  "words": [{ "text": "was that a speccing problem on our end, or was that an execution problem on their end?", "who": "Shaan → REVIEW-ZERO", "at": "6 Sep 14:30" }],
-  "effects": { "items": [
-    { "label": "Every module row carries a verification line", "what": "plan/modules.json: 51 rows, each 'open X and see Y' (before: 3 of 50)", "state": "landed", "tone": "now" },
-    { "label": "Every brief carries a done-when", "what": "briefs/TEMPLATE-BANK-ZERO.md: one done-when line per family; the gallery detail pages show it", "href": "/t/U4/", "state": "landed", "tone": "now" },
-    { "label": "ui-bank / console / atlas skills into the Codex home", "what": "before the next Astra wave (P3 second half; absent from ~/.codex/skills on both machines at 15:19)", "href": "/t/U20/", "state": "left", "tone": "warn" },
-    { "label": "atlas/SPEC-OR-EXECUTION-2026-09-06.html", "what": "the reading page behind the ratio", "state": "landed", "tone": "now" }
-  ], "steps": [{ "label": "Spec", "what": "one line: open X and see Y" }, { "label": "Spawn", "what": "brief + boot with the line" }, { "label": "Land", "what": "URL or commit" }, { "label": "Verify", "what": "the line is true on the URL" }] },
+  "words": [
+    {
+      "text": "was that a speccing problem on our end, or was that an execution problem on their end?",
+      "who": "Shaan → REVIEW-ZERO",
+      "at": "6 Sep 14:30"
+    }
+  ],
+  "effects": {
+    "items": [
+      {
+        "label": "Every module row carries a verification line",
+        "what": "plan/modules.json: 51 rows, each 'open X and see Y' (before: 3 of 50)",
+        "state": "landed",
+        "tone": "now"
+      },
+      {
+        "label": "Every brief carries a done-when",
+        "what": "briefs/TEMPLATE-BANK-ZERO.md: one done-when line per family; the gallery detail pages show it",
+        "href": "/t/U4/",
+        "state": "landed",
+        "tone": "now"
+      },
+      {
+        "label": "ui-bank / console / atlas skills into the Codex home",
+        "what": "before the next Astra wave (P3 second half; absent from ~/.codex/skills on both machines at 15:19)",
+        "href": "/t/U20/",
+        "state": "left",
+        "tone": "warn"
+      },
+      {
+        "label": "atlas/SPEC-OR-EXECUTION-2026-09-06.html",
+        "what": "the reading page behind the ratio",
+        "state": "landed",
+        "tone": "now"
+      }
+    ],
+    "steps": [
+      {
+        "label": "Spec",
+        "what": "one line: open X and see Y"
+      },
+      {
+        "label": "Spawn",
+        "what": "brief + boot with the line"
+      },
+      {
+        "label": "Land",
+        "what": "URL or commit"
+      },
+      {
+        "label": "Verify",
+        "what": "the line is true on the URL"
+      }
+    ]
+  },
   "reverses": "Shaan saying so. Or evidence that seats with a verification line miss the bar at the same rate as those without (the ratio is REVIEW-ZERO's reading of 12 closed seats, not a measurement).",
-  "state": [{ "label": "in force", "tone": "now", "dot": true }, { "label": "reaffirmed · D-31 18:41", "tone": "agents" }, { "label": "applied · D-34 18:47", "tone": "agents" }],
-  "map": { "centre": { "label": "D-25", "href": "#top" }, "types": [
-    { "type": "module", "label": "Modules it gates", "tone": "projects", "items": [{ "label": "all 51 register rows", "href": "/t/U9/example/#register", "rel": "verification line" }] },
-    { "type": "play", "label": "Plays", "tone": "agents", "items": [{ "label": "P3 · skills into the Codex home", "href": "/t/U20/", "rel": "left" }, { "label": "spawn defaults", "rel": "SPAWN-DEFAULTS page" }] },
-    { "type": "decision", "label": "Decisions", "tone": "agents", "items": [{ "label": "D-31 · first principles", "rel": "reaffirms" }, { "label": "D-34 · TEMPLATE-BANK-ZERO", "rel": "applies" }] },
-    { "type": "seat", "label": "Seats", "tone": "research", "items": [{ "label": "REVIEW-ZERO", "href": "/t/U17/", "rel": "took it" }, { "label": "TEMPLATE-BANK-ZERO", "href": "/t/U17/example/", "rel": "first seat under it" }] }
-  ] },
-  "timeline": { "from": "2026-09-06 12:00", "to": "2026-09-06 19:50", "lanes": [{ "id": "words", "label": "his words", "tone": "clients" }, { "id": "decision", "label": "decision", "tone": "agents" }, { "id": "applied", "label": "applied", "tone": "now" }], "events": [{ "at": "2026-09-06 14:30", "lane": "words", "label": "speccing problem or execution problem?" }, { "at": "2026-09-06 14:30", "lane": "decision", "label": "D-25 taken" }, { "at": "2026-09-06 18:41", "lane": "words", "label": "approve all decisions on first principles" }, { "at": "2026-09-06 18:47", "lane": "decision", "label": "D-31 reaffirms · D-34 applies" }, { "at": "2026-09-06 18:47", "lane": "applied", "label": "TEMPLATE-BANK-ZERO brief: done-when per family" }, { "at": "2026-09-06 19:27", "lane": "applied", "label": "first family verified on its URL", "href": "/t/U0/example/" }] },
-  "quickstart": { "entry": { "path": "00_AGENT_ZERO/plan/decisions.json" }, "owner": { "name": "AGENT-ZERO" }, "verification": "Open this page and see the D-25 call verbatim, the 14:30 words that caused it, and the modules it gates.", "commands": ["jq '.decisions[]|select(.id==\"D-25\")' 00_AGENT_ZERO/plan/decisions.json"] }
+  "state": [
+    {
+      "label": "in force",
+      "tone": "now",
+      "dot": true
+    },
+    {
+      "label": "reaffirmed · D-31 18:41",
+      "tone": "agents"
+    },
+    {
+      "label": "applied · D-34 18:47",
+      "tone": "agents"
+    }
+  ],
+  "map": {
+    "centre": {
+      "label": "D-25",
+      "href": "#top"
+    },
+    "types": [
+      {
+        "type": "module",
+        "label": "Modules it gates",
+        "tone": "projects",
+        "items": [
+          {
+            "label": "all 51 register rows",
+            "href": "/t/U9/example/#register",
+            "rel": "verification line"
+          }
+        ]
+      },
+      {
+        "type": "play",
+        "label": "Plays",
+        "tone": "agents",
+        "items": [
+          {
+            "label": "P3 · skills into the Codex home",
+            "href": "/t/U20/",
+            "rel": "left"
+          },
+          {
+            "label": "spawn defaults",
+            "rel": "SPAWN-DEFAULTS page"
+          }
+        ]
+      },
+      {
+        "type": "decision",
+        "label": "Decisions",
+        "tone": "agents",
+        "items": [
+          {
+            "label": "D-31 · first principles",
+            "rel": "reaffirms"
+          },
+          {
+            "label": "D-34 · TEMPLATE-BANK-ZERO",
+            "rel": "applies"
+          }
+        ]
+      },
+      {
+        "type": "seat",
+        "label": "Seats",
+        "tone": "research",
+        "items": [
+          {
+            "label": "REVIEW-ZERO",
+            "href": "/t/U17/",
+            "rel": "took it"
+          },
+          {
+            "label": "TEMPLATE-BANK-ZERO",
+            "href": "/t/U17/example/",
+            "rel": "first seat under it"
+          }
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "from": "2026-09-06 12:00",
+    "to": "2026-09-06 19:50",
+    "lanes": [
+      {
+        "id": "words",
+        "label": "his words",
+        "tone": "clients"
+      },
+      {
+        "id": "decision",
+        "label": "decision",
+        "tone": "agents"
+      },
+      {
+        "id": "applied",
+        "label": "applied",
+        "tone": "now"
+      }
+    ],
+    "events": [
+      {
+        "at": "2026-09-06 14:30",
+        "lane": "words",
+        "label": "speccing problem or execution problem?"
+      },
+      {
+        "at": "2026-09-06 14:30",
+        "lane": "decision",
+        "label": "D-25 taken"
+      },
+      {
+        "at": "2026-09-06 18:41",
+        "lane": "words",
+        "label": "approve all decisions on first principles"
+      },
+      {
+        "at": "2026-09-06 18:47",
+        "lane": "decision",
+        "label": "D-31 reaffirms · D-34 applies"
+      },
+      {
+        "at": "2026-09-06 18:47",
+        "lane": "applied",
+        "label": "TEMPLATE-BANK-ZERO brief: done-when per family"
+      },
+      {
+        "at": "2026-09-06 19:27",
+        "lane": "applied",
+        "label": "first family verified on its URL",
+        "href": "/t/U0/example/"
+      }
+    ]
+  },
+  "quickstart": {
+    "entry": {
+      "path": "00_AGENT_ZERO/plan/decisions.json"
+    },
+    "owner": {
+      "name": "AGENT-ZERO"
+    },
+    "verification": "Open this page and see the D-25 call verbatim, the 14:30 words that caused it, and the modules it gates.",
+    "commands": [
+      "jq '.decisions[]|select(.id==\"D-25\")' 00_AGENT_ZERO/plan/decisions.json"
+    ]
+  }
 }

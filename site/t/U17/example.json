@@ -1,49 +1,646 @@
 {
-  "meta": { "title": "HALO-ZERO · seat", "description": "Agent seat HALO-ZERO: born, landed (37 commits on the private mirror), writebacks, rollout, closed.", "stream": "agents", "crumb": [{ "label": "Templates", "href": "/" }, { "label": "U17 · Agent seat", "href": "/t/U17/" }, { "label": "HALO-ZERO" }], "actions": [{ "label": "handoffs/HALO.md", "href": "https://github.com/sisodias/siso-agent-zero-protocol", "icon": "file-text", "external": true }], "source": "briefs/HALO-ZERO.md · handoffs/HALO.md · ledger/OWNERS.md (31 HALO-ZERO lines) · git log of the private mirror worktree" },
-  "heading": { "breadcrumb": [{ "label": "Projects", "href": "/t/U4/" }, { "label": "HALO CRM", "href": "/t/U15/" }, { "label": "seats" }], "kicker": "seat <span class=\"sep\">·</span> HALO-ZERO <span class=\"sep\">·</span> <span class=\"dim\">gpt-6-astra xhigh · native openai · laptop</span>", "title": "HALO-ZERO", "subtitle": "Full continuing HALO ownership: transform the client's OFM dashboard into a VPS-runnable operating system, removing Convex. Born from <code>briefs/HALO-ZERO.md</code>; idle under D-21/D-24 at P1-07 VERIFIED-SLICE.", "badges": [{ "label": "idle · D-24 checkpoint", "tone": "warn", "dot": true }, { "label": "37 commits landed", "tone": "now", "href": "#landed" }, { "label": "31 writebacks", "tone": "agents", "href": "#writebacks" }, { "label": "client · ofm (Camron)", "tone": "clients" }, { "label": "rollout · private", "tone": "clients", "icon": "lock" }], "status": { "kicker": "Closed", "value": "idle 6 Sep 13:16 · handoff 09d69f5", "note": "Handoff written; native lane IDLE; P1-07 NOT DONE (CreatorUpload still on Convex paths). Phase 1 continues from the ChatGPT web UI on the same planner.", "facts": [{ "k": "thread", "v": "<code>01a06ff1-839b-7a11-8c73-641881a8c6ef</code>" }, { "k": "checkout", "v": "<code>clients/halocrm/worktrees/private-rewrite-83ab4ba</code>" }, { "k": "branch", "v": "<code>codex/private-rewrite-83ab4ba</code>" }] } },
-  "sections": { "born": { "n": "01", "title": "Born" }, "landed": { "n": "02", "title": "What it landed", "sub": "verified against the private mirror's git log (commit = fact); the handoff's own claims are proposals" }, "cost": { "n": "03", "title": "What it cost", "sub": "labelled cumulative vs uncached; from the plan's verification line, not a token_count receipt on this page" }, "writebacks": { "n": "04", "title": "Writebacks", "sub": "ledger/OWNERS.md · 31 lines" }, "map": { "n": "05", "title": "Mind map", "sub": "project → modules → commits" }, "timeline": { "n": "06", "title": "Born · writebacks · closed" }, "closed": { "n": "07", "title": "How it closed" }, "agent": { "n": "08", "title": "Agent entry" } },
-  "born": [{ "k": "date", "v": "5 Sep 2026 12:01 UTC+07 (plan/templates.json U17 verification line)" }, { "k": "brief", "v": "<code>briefs/HALO-ZERO.md</code>: 'take over the current build intelligently … full continuing HALO ownership'" }, { "k": "node", "v": "laptop · herdr-2 pane halo · later native openai route (E3 migration 5 Sep 18:36)" }, { "k": "model", "v": "gpt-6-astra · xhigh · 828,400 effective context (OWNERS 2026-09-05T18:36Z)" }, { "k": "harness", "v": "Codex · ChatGPT login" }, { "k": "project", "v": "<a href=\"/t/U15/\">HALO CRM · client ofm (Camron)</a>" }],
-  "landed": { "facts": [
-    { "claim": "<b>37 commits</b> on <code>codex/private-rewrite-83ab4ba</code> between 5 Sep 17:16 (27b8c0f identity) and 6 Sep 13:16 (09d69f5 docs: HALO agent page and handoff entrypoints).", "receipt": "git log --since='2026-09-05 17:00' on the private mirror worktree · 37 rows", "at": "read 6 Sep 19:44" },
-    { "claim": "P1-01 identity · P1-02 teams · P1-03 creators · P1-04 onboarding · P1-05 contracts · P1-06 Customs (money in integer cents) DONE.", "receipt": "commits 27b8c0f, 6b958bd, bc8d2b6, 184ecbd … 8efb0aa · handoffs/HALO.md" },
-    { "claim": "P1-07 Drive at VERIFIED-SLICE: metadata index (48dc282), scan worker (021e734), admission (8deb2e9), posting intent (ae47814), create-only upload (72776ae), private download (87d7fea).", "receipt": "commits listed · handoffs/HALO.md" },
-    { "claim": "Four persona route walks 63/63 each at 4d24d1b (Admin 05:50:30Z, Creator 05:51:57Z, Chatter 05:53:25Z, HR 05:54:54Z), zero Convex/page errors/API 5xx.", "receipt": "handoffs/HALO.md · build/plan/LEDGER.md ROUTE-WALK lines", "at": "6 Sep" },
-    { "claim": "Front door <code>.agents/{PAGE,HANDOFF,page.url}</code> pushed at 09d69f5.", "receipt": "commit 09d69f5", "at": "6 Sep 13:16" }
-  ], "proposals": [
-    { "claim": "P1-07 DONE.", "why": "not: CreatorUpload.tsx imports convex/react (line 3); cancellation/recovery unimplemented" },
-    { "claim": "Planner 17/74 tickets, Phase 1 7/18.", "why": "node build/plan/next.mjs --status, 6 Sep 14:44 (REVIEW-ZERO reading)" },
-    { "claim": "A real page.url.", "why": "today the mirror repo URL, 404 logged out" }
-  ], "limits": ["Client's shared-drive branch (4 commits, 200 files, 82 overlapping paths, 59 simulated conflicts) not merged.", "Upstream: the client's upstream repo (private; push disabled by name)."], "version": { "label": "private mirror 4d24d1b (D-21 checkpoint) · 09d69f5 (entrypoints)", "at": "2026-09-06" } },
-  "cost": [{ "value": "184.6M", "label": "cumulative tokens (plan verification line)", "tone": "warn", "title": "plan/templates.json U17 verification; token_count receipt not on this page" }, { "value": 37, "label": "commits", "tone": "now" }, { "value": 31, "label": "writebacks", "tone": "agents" }, { "value": "~20 h", "label": "5 Sep 17:16 → 6 Sep 13:16", "tone": "muted" }],
-  "cost_note": "The 184.6M figure is the number the plan's verification line names; it is cumulative, not uncached. A U17 page built by the Library should read <code>token_count</code> events from the rollout and label cumulative vs uncached separately (GAPS M-4).",
-  "writebacks": { "observed_at": "6 Sep 19:44 UTC+07", "coverage": "ledger/OWNERS.md · HALO-ZERO · 31 lines", "days": [{ "w": 1, "title": "5 Sep · 24 lines" }, { "w": 0.3, "title": "6 Sep · 7 lines" }], "items": [
-    { "at": "2026-09-06 13:16", "who": "HALO-ZERO", "what": "D-24 step 3 entrypoint checkpoint 09d69f5: .agents page/handoff files, links and mirror URL verified", "tone": "agents" },
-    { "at": "2026-09-05 19:57Z", "who": "HALO-ZERO", "what": "Accepted private-mirror checkpoint 39100c0: all eight admitted Customs commands link audit evidence", "tone": "agents" },
-    { "at": "2026-09-05 19:04Z", "who": "HALO-ZERO", "what": "Accepted checkpoint 6ce81e0: Customs status commits status/history/audit", "tone": "agents" },
-    { "at": "2026-09-05 18:36Z", "who": "HALO-ZERO", "what": "Main-observed E3 same-thread native migration; openai/gpt-6-astra xhigh; 828400 usable", "tone": "research" },
-    { "at": "2026-09-05 18:15Z", "who": "HALO-ZERO", "what": "Accepted checkpoint 385126a: creator preview uses scoped cancellable native reads", "tone": "agents" },
-    { "at": "2026-09-05 17:39Z", "who": "HALO-ZERO", "what": "Accepted checkpoint 37b1707: native staff creator registration", "tone": "agents" },
-    { "at": "2026-09-05 14:16Z", "who": "HALO-ZERO", "what": "Accepted checkpoint 98355b0: scoped Postgres calendar/templates", "tone": "agents" },
-    { "at": "2026-09-05 13:22Z", "who": "HALO-ZERO", "what": "Accepted checkpoint c4bd096: native creator Notes and lifecycle workflows", "tone": "agents" },
-    { "at": "2026-09-05 12:58Z", "who": "HALO-ZERO", "what": "observer-seeded: pushed P1-02 checkpoint 184ecbd; P1-03 in progress", "tone": "muted" }
-  ] },
-  "map": { "centre": { "label": "HALO-ZERO", "href": "#top" }, "types": [
-    { "type": "project", "label": "Project", "tone": "clients", "items": [{ "label": "HALO CRM · ofm", "href": "/t/U15/", "rel": "owns" }] },
-    { "type": "module", "label": "Modules", "tone": "projects", "items": [{ "label": "P1-01…06 DONE", "rel": "landed" }, { "label": "P1-07 Drive", "rel": "verified slice" }, { "label": "P1-08…17", "rel": "unclaimed" }, { "label": "H1 · G20 (register)", "href": "/t/U9/example/#register", "rel": "register" }] },
-    { "type": "commit", "label": "Commits", "tone": "now", "items": [{ "label": "27b8c0f identity", "rel": "5 Sep 17:16" }, { "label": "8efb0aa Customs cents", "rel": "6 Sep 09:12" }, { "label": "87d7fea private downloads", "rel": "6 Sep 12:34" }, { "label": "4d24d1b D-21 checkpoint", "rel": "6 Sep 12:55" }, { "label": "09d69f5 entrypoints", "rel": "6 Sep 13:16" }] },
-    { "type": "decision", "label": "Decisions", "tone": "agents", "items": [{ "label": "D-21 · idle at checkpoint", "href": "/t/U16/", "rel": "stopped it" }, { "label": "D-24 · move to web UI", "href": "/t/U16/", "rel": "closed it" }] },
-    { "type": "repo", "label": "Repos", "tone": "clients", "items": [{ "label": "sisodias/halocrm-mirror", "rel": "private", "private": true }] }
-  ] },
-  "timeline": { "from": "2026-09-05 12:00", "to": "2026-09-06 14:00", "lanes": [{ "id": "commits", "label": "commits", "tone": "now" }, { "id": "writebacks", "label": "writebacks", "tone": "agents" }, { "id": "seat", "label": "seat", "tone": "research" }], "events": [
-    { "at": "2026-09-05 12:01", "lane": "seat", "label": "born" }, { "at": "2026-09-05 18:36", "lane": "seat", "label": "native route migration" }, { "at": "2026-09-06 13:16", "lane": "seat", "label": "idle · handoff" },
-    { "at": "2026-09-05 17:16", "lane": "commits", "label": "27b8c0f identity" }, { "at": "2026-09-05 18:42", "lane": "commits", "label": "bc8d2b6 teams" }, { "at": "2026-09-05 19:33", "lane": "commits", "label": "d0e2b9d creators notes" }, { "at": "2026-09-05 20:13", "lane": "commits", "label": "c4bd096" }, { "at": "2026-09-05 21:13", "lane": "commits", "label": "98355b0 calendar" }, { "at": "2026-09-06 00:36", "lane": "commits", "label": "37b1707" }, { "at": "2026-09-06 01:52", "lane": "commits", "label": "6ce81e0 customs audit" }, { "at": "2026-09-06 02:53", "lane": "commits", "label": "39100c0" }, { "at": "2026-09-06 04:10", "lane": "commits", "label": "c3f4a07" }, { "at": "2026-09-06 05:22", "lane": "commits", "label": "4b8c73d onboarding" }, { "at": "2026-09-06 06:49", "lane": "commits", "label": "cce23c1" }, { "at": "2026-09-06 07:58", "lane": "commits", "label": "aebd0bd contracts" }, { "at": "2026-09-06 09:12", "lane": "commits", "label": "8efb0aa customs cents" }, { "at": "2026-09-06 09:53", "lane": "commits", "label": "48dc282 drive index" }, { "at": "2026-09-06 10:56", "lane": "commits", "label": "8deb2e9" }, { "at": "2026-09-06 11:46", "lane": "commits", "label": "72776ae uploads" }, { "at": "2026-09-06 12:34", "lane": "commits", "label": "87d7fea downloads" }, { "at": "2026-09-06 12:55", "lane": "commits", "label": "4d24d1b checkpoint" }, { "at": "2026-09-06 13:16", "lane": "commits", "label": "09d69f5 entrypoints" },
-    { "at": "2026-09-05 12:58", "lane": "writebacks", "label": "observer-seeded" }, { "at": "2026-09-05 13:22", "lane": "writebacks", "label": "c4bd096 accepted" }, { "at": "2026-09-05 17:39", "lane": "writebacks", "label": "37b1707 accepted" }, { "at": "2026-09-05 19:57", "lane": "writebacks", "label": "39100c0 accepted" }, { "at": "2026-09-06 13:16", "lane": "writebacks", "label": "D-24 checkpoint" }
-  ] },
-  "closed": [
-    { "title": "handoffs/HALO.md", "href": "https://github.com/sisodias/siso-agent-zero-protocol", "type": "handoff · written", "tone": "now", "why": "D-24 step 3 entrypoint checkpoint 09d69f5; native lane IDLE; P1-07 VERIFIED-SLICE, NOT DONE; P1-08 unclaimed" },
-    { "title": "briefs/HALO-WEBUI-HANDOVER.md", "href": "https://github.com/sisodias/siso-agent-zero-protocol", "type": "successor", "tone": "agents", "why": "Phase 1 continues from the ChatGPT web UI on the same build/plan/LEDGER.md" },
-    { "title": "Rollout · ~/.codex/sessions (private satellite)", "href": "/t/U11/", "type": "rollout", "tone": "clients", "why": "thread 01a06ff1-839b-7a11-8c73-641881a8c6ef; path private; size not on this page" },
-    { "title": "HALO CRM · project one pager", "href": "/t/U15/", "type": "U15 client account", "tone": "clients" }
+  "meta": {
+    "title": "HALO-ZERO · seat",
+    "description": "Agent seat HALO-ZERO: born, landed (37 commits on the private mirror), writebacks, rollout, closed.",
+    "stream": "agents",
+    "crumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U17 · Agent seat",
+        "href": "/t/U17/"
+      },
+      {
+        "label": "HALO-ZERO"
+      }
+    ],
+    "actions": [
+      {
+        "label": "handoffs/HALO.md",
+        "href": "https://github.com/sisodias/siso-agent-zero-protocol",
+        "icon": "file-text",
+        "external": true
+      }
+    ],
+    "source": "briefs/HALO-ZERO.md · handoffs/HALO.md · ledger/OWNERS.md (31 HALO-ZERO lines) · git log of the private mirror worktree"
+  },
+  "heading": {
+    "breadcrumb": [
+      {
+        "label": "Projects",
+        "href": "/t/U4/"
+      },
+      {
+        "label": "HALO CRM",
+        "href": "/t/U15/"
+      },
+      {
+        "label": "seats"
+      }
+    ],
+    "kicker": "seat <span class=\"sep\">·</span> HALO-ZERO <span class=\"sep\">·</span> <span class=\"dim\">gpt-6-astra xhigh · native openai · laptop</span>",
+    "title": "HALO-ZERO",
+    "subtitle": "Full continuing HALO ownership: transform the client's OFM dashboard into a VPS-runnable operating system, removing Convex. Born from <code>briefs/HALO-ZERO.md</code>; idle under D-21/D-24 at P1-07 VERIFIED-SLICE.",
+    "badges": [
+      {
+        "label": "idle · D-24 checkpoint",
+        "tone": "warn",
+        "dot": true
+      },
+      {
+        "label": "37 commits landed",
+        "tone": "now",
+        "href": "#landed"
+      },
+      {
+        "label": "31 writebacks",
+        "tone": "agents",
+        "href": "#writebacks"
+      },
+      {
+        "label": "client · ofm (Camron)",
+        "tone": "clients"
+      },
+      {
+        "label": "rollout · private",
+        "tone": "clients",
+        "icon": "lock"
+      }
+    ],
+    "status": {
+      "kicker": "Closed",
+      "value": "idle 6 Sep 13:16 · handoff 09d69f5",
+      "note": "Handoff written; native lane IDLE; P1-07 NOT DONE (CreatorUpload still on Convex paths). Phase 1 continues from the ChatGPT web UI on the same planner.",
+      "facts": [
+        {
+          "k": "thread",
+          "v": "<code>01a06ff1-839b-7a11-8c73-641881a8c6ef</code>"
+        },
+        {
+          "k": "checkout",
+          "v": "<code>clients/halocrm/worktrees/private-rewrite-83ab4ba</code>"
+        },
+        {
+          "k": "branch",
+          "v": "<code>codex/private-rewrite-83ab4ba</code>"
+        }
+      ]
+    },
+    "metrics": [
+      {
+        "value": 5,
+        "label": "landed, verified",
+        "tone": "now",
+        "href": "#landed"
+      },
+      {
+        "value": 9,
+        "label": "writebacks",
+        "tone": "agents",
+        "href": "#writebacks"
+      },
+      {
+        "value": 4,
+        "label": "cost facts",
+        "tone": "muted",
+        "href": "#cost"
+      }
+    ],
+    "jump": [
+      {
+        "label": "Born",
+        "href": "#born"
+      },
+      {
+        "label": "What it landed",
+        "href": "#landed"
+      },
+      {
+        "label": "What it cost",
+        "href": "#cost"
+      },
+      {
+        "label": "Writebacks",
+        "href": "#writebacks"
+      },
+      {
+        "label": "Mind map",
+        "href": "#map"
+      },
+      {
+        "label": "Born · writebacks · closed",
+        "href": "#timeline"
+      }
+    ]
+  },
+  "sections": {
+    "born": {
+      "n": "01",
+      "title": "Born"
+    },
+    "landed": {
+      "n": "02",
+      "title": "What it landed",
+      "sub": "verified against the private mirror's git log (commit = fact); the handoff's own claims are proposals"
+    },
+    "cost": {
+      "n": "03",
+      "title": "What it cost",
+      "sub": "labelled cumulative vs uncached; from the plan's verification line, not a token_count receipt on this page"
+    },
+    "writebacks": {
+      "n": "04",
+      "title": "Writebacks",
+      "sub": "ledger/OWNERS.md · 31 lines"
+    },
+    "map": {
+      "n": "05",
+      "title": "Mind map",
+      "sub": "project → modules → commits"
+    },
+    "timeline": {
+      "n": "06",
+      "title": "Born · writebacks · closed"
+    },
+    "closed": {
+      "n": "07",
+      "title": "How it closed"
+    },
+    "agent": {
+      "n": "08",
+      "title": "Agent entry"
+    }
+  },
+  "born": [
+    {
+      "k": "date",
+      "v": "5 Sep 2026 12:01 UTC+07 (plan/templates.json U17 verification line)"
+    },
+    {
+      "k": "brief",
+      "v": "<code>briefs/HALO-ZERO.md</code>: 'take over the current build intelligently … full continuing HALO ownership'"
+    },
+    {
+      "k": "node",
+      "v": "laptop · herdr-2 pane halo · later native openai route (E3 migration 5 Sep 18:36)"
+    },
+    {
+      "k": "model",
+      "v": "gpt-6-astra · xhigh · 828,400 effective context (OWNERS 2026-09-05T18:36Z)"
+    },
+    {
+      "k": "harness",
+      "v": "Codex · ChatGPT login"
+    },
+    {
+      "k": "project",
+      "v": "<a href=\"/t/U15/\">HALO CRM · client ofm (Camron)</a>"
+    }
   ],
-  "quickstart": { "entry": { "path": "00_AGENT_ZERO/handoffs/HALO.md" }, "owner": { "name": "HALO-ZERO (idle) · successor: web UI lane", "last": "6 Sep 13:16" }, "verification": "Open this page and see born 5 Sep 12:01, 37 commits landed on the mirror, the cumulative token figure labelled as such, the rollout path marked private, and the handoff.", "commands": ["cd clients/halocrm/worktrees/private-rewrite-83ab4ba && git log --since='2026-09-05 17:00' --oneline | wc -l   # 37", "node build/plan/next.mjs --status"] }
+  "landed": {
+    "facts": [
+      {
+        "claim": "<b>37 commits</b> on <code>codex/private-rewrite-83ab4ba</code> between 5 Sep 17:16 (27b8c0f identity) and 6 Sep 13:16 (09d69f5 docs: HALO agent page and handoff entrypoints).",
+        "receipt": "git log --since='2026-09-05 17:00' on the private mirror worktree · 37 rows",
+        "at": "read 6 Sep 19:44"
+      },
+      {
+        "claim": "P1-01 identity · P1-02 teams · P1-03 creators · P1-04 onboarding · P1-05 contracts · P1-06 Customs (money in integer cents) DONE.",
+        "receipt": "commits 27b8c0f, 6b958bd, bc8d2b6, 184ecbd … 8efb0aa · handoffs/HALO.md"
+      },
+      {
+        "claim": "P1-07 Drive at VERIFIED-SLICE: metadata index (48dc282), scan worker (021e734), admission (8deb2e9), posting intent (ae47814), create-only upload (72776ae), private download (87d7fea).",
+        "receipt": "commits listed · handoffs/HALO.md"
+      },
+      {
+        "claim": "Four persona route walks 63/63 each at 4d24d1b (Admin 05:50:30Z, Creator 05:51:57Z, Chatter 05:53:25Z, HR 05:54:54Z), zero Convex/page errors/API 5xx.",
+        "receipt": "handoffs/HALO.md · build/plan/LEDGER.md ROUTE-WALK lines",
+        "at": "6 Sep"
+      },
+      {
+        "claim": "Front door <code>.agents/{PAGE,HANDOFF,page.url}</code> pushed at 09d69f5.",
+        "receipt": "commit 09d69f5",
+        "at": "6 Sep 13:16"
+      }
+    ],
+    "proposals": [
+      {
+        "claim": "P1-07 DONE.",
+        "why": "not: CreatorUpload.tsx imports convex/react (line 3); cancellation/recovery unimplemented"
+      },
+      {
+        "claim": "Planner 17/74 tickets, Phase 1 7/18.",
+        "why": "node build/plan/next.mjs --status, 6 Sep 14:44 (REVIEW-ZERO reading)"
+      },
+      {
+        "claim": "A real page.url.",
+        "why": "today the mirror repo URL, 404 logged out"
+      }
+    ],
+    "limits": [
+      "Client's shared-drive branch (4 commits, 200 files, 82 overlapping paths, 59 simulated conflicts) not merged.",
+      "Upstream: the client's upstream repo (private; push disabled by name)."
+    ],
+    "version": {
+      "label": "private mirror 4d24d1b (D-21 checkpoint) · 09d69f5 (entrypoints)",
+      "at": "2026-09-06"
+    }
+  },
+  "cost": [
+    {
+      "value": "184.6M",
+      "label": "cumulative tokens (plan verification line)",
+      "tone": "warn",
+      "title": "plan/templates.json U17 verification; token_count receipt not on this page"
+    },
+    {
+      "value": 37,
+      "label": "commits",
+      "tone": "now"
+    },
+    {
+      "value": 31,
+      "label": "writebacks",
+      "tone": "agents"
+    },
+    {
+      "value": "~20 h",
+      "label": "5 Sep 17:16 → 6 Sep 13:16",
+      "tone": "muted"
+    }
+  ],
+  "cost_note": "The 184.6M figure is the number the plan's verification line names; it is cumulative, not uncached. A U17 page built by the Library should read <code>token_count</code> events from the rollout and label cumulative vs uncached separately (GAPS M-4).",
+  "writebacks": {
+    "observed_at": "6 Sep 19:44 UTC+07",
+    "coverage": "ledger/OWNERS.md · HALO-ZERO · 31 lines",
+    "days": [
+      {
+        "w": 1,
+        "title": "5 Sep · 24 lines"
+      },
+      {
+        "w": 0.3,
+        "title": "6 Sep · 7 lines"
+      }
+    ],
+    "items": [
+      {
+        "at": "2026-09-06 13:16",
+        "who": "HALO-ZERO",
+        "what": "D-24 step 3 entrypoint checkpoint 09d69f5: .agents page/handoff files, links and mirror URL verified",
+        "tone": "agents"
+      },
+      {
+        "at": "2026-09-05 19:57Z",
+        "who": "HALO-ZERO",
+        "what": "Accepted private-mirror checkpoint 39100c0: all eight admitted Customs commands link audit evidence",
+        "tone": "agents"
+      },
+      {
+        "at": "2026-09-05 19:04Z",
+        "who": "HALO-ZERO",
+        "what": "Accepted checkpoint 6ce81e0: Customs status commits status/history/audit",
+        "tone": "agents"
+      },
+      {
+        "at": "2026-09-05 18:36Z",
+        "who": "HALO-ZERO",
+        "what": "Main-observed E3 same-thread native migration; openai/gpt-6-astra xhigh; 828400 usable",
+        "tone": "research"
+      },
+      {
+        "at": "2026-09-05 18:15Z",
+        "who": "HALO-ZERO",
+        "what": "Accepted checkpoint 385126a: creator preview uses scoped cancellable native reads",
+        "tone": "agents"
+      },
+      {
+        "at": "2026-09-05 17:39Z",
+        "who": "HALO-ZERO",
+        "what": "Accepted checkpoint 37b1707: native staff creator registration",
+        "tone": "agents"
+      },
+      {
+        "at": "2026-09-05 14:16Z",
+        "who": "HALO-ZERO",
+        "what": "Accepted checkpoint 98355b0: scoped Postgres calendar/templates",
+        "tone": "agents"
+      },
+      {
+        "at": "2026-09-05 13:22Z",
+        "who": "HALO-ZERO",
+        "what": "Accepted checkpoint c4bd096: native creator Notes and lifecycle workflows",
+        "tone": "agents"
+      },
+      {
+        "at": "2026-09-05 12:58Z",
+        "who": "HALO-ZERO",
+        "what": "observer-seeded: pushed P1-02 checkpoint 184ecbd; P1-03 in progress",
+        "tone": "muted"
+      }
+    ]
+  },
+  "map": {
+    "centre": {
+      "label": "HALO-ZERO",
+      "href": "#top"
+    },
+    "types": [
+      {
+        "type": "project",
+        "label": "Project",
+        "tone": "clients",
+        "items": [
+          {
+            "label": "HALO CRM · ofm",
+            "href": "/t/U15/",
+            "rel": "owns"
+          }
+        ]
+      },
+      {
+        "type": "module",
+        "label": "Modules",
+        "tone": "projects",
+        "items": [
+          {
+            "label": "P1-01…06 DONE",
+            "rel": "landed"
+          },
+          {
+            "label": "P1-07 Drive",
+            "rel": "verified slice"
+          },
+          {
+            "label": "P1-08…17",
+            "rel": "unclaimed"
+          },
+          {
+            "label": "H1 · G20 (register)",
+            "href": "/t/U9/example/#register",
+            "rel": "register"
+          }
+        ]
+      },
+      {
+        "type": "commit",
+        "label": "Commits",
+        "tone": "now",
+        "items": [
+          {
+            "label": "27b8c0f identity",
+            "rel": "5 Sep 17:16"
+          },
+          {
+            "label": "8efb0aa Customs cents",
+            "rel": "6 Sep 09:12"
+          },
+          {
+            "label": "87d7fea private downloads",
+            "rel": "6 Sep 12:34"
+          },
+          {
+            "label": "4d24d1b D-21 checkpoint",
+            "rel": "6 Sep 12:55"
+          },
+          {
+            "label": "09d69f5 entrypoints",
+            "rel": "6 Sep 13:16"
+          }
+        ]
+      },
+      {
+        "type": "decision",
+        "label": "Decisions",
+        "tone": "agents",
+        "items": [
+          {
+            "label": "D-21 · idle at checkpoint",
+            "href": "/t/U16/",
+            "rel": "stopped it"
+          },
+          {
+            "label": "D-24 · move to web UI",
+            "href": "/t/U16/",
+            "rel": "closed it"
+          }
+        ]
+      },
+      {
+        "type": "repo",
+        "label": "Repos",
+        "tone": "clients",
+        "items": [
+          {
+            "label": "sisodias/halocrm-mirror",
+            "rel": "private",
+            "private": true
+          }
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "from": "2026-09-05 12:00",
+    "to": "2026-09-06 14:00",
+    "lanes": [
+      {
+        "id": "commits",
+        "label": "commits",
+        "tone": "now"
+      },
+      {
+        "id": "writebacks",
+        "label": "writebacks",
+        "tone": "agents"
+      },
+      {
+        "id": "seat",
+        "label": "seat",
+        "tone": "research"
+      }
+    ],
+    "events": [
+      {
+        "at": "2026-09-05 12:01",
+        "lane": "seat",
+        "label": "born"
+      },
+      {
+        "at": "2026-09-05 18:36",
+        "lane": "seat",
+        "label": "native route migration"
+      },
+      {
+        "at": "2026-09-06 13:16",
+        "lane": "seat",
+        "label": "idle · handoff"
+      },
+      {
+        "at": "2026-09-05 17:16",
+        "lane": "commits",
+        "label": "27b8c0f identity"
+      },
+      {
+        "at": "2026-09-05 18:42",
+        "lane": "commits",
+        "label": "bc8d2b6 teams"
+      },
+      {
+        "at": "2026-09-05 19:33",
+        "lane": "commits",
+        "label": "d0e2b9d creators notes"
+      },
+      {
+        "at": "2026-09-05 20:13",
+        "lane": "commits",
+        "label": "c4bd096"
+      },
+      {
+        "at": "2026-09-05 21:13",
+        "lane": "commits",
+        "label": "98355b0 calendar"
+      },
+      {
+        "at": "2026-09-06 00:36",
+        "lane": "commits",
+        "label": "37b1707"
+      },
+      {
+        "at": "2026-09-06 01:52",
+        "lane": "commits",
+        "label": "6ce81e0 customs audit"
+      },
+      {
+        "at": "2026-09-06 02:53",
+        "lane": "commits",
+        "label": "39100c0"
+      },
+      {
+        "at": "2026-09-06 04:10",
+        "lane": "commits",
+        "label": "c3f4a07"
+      },
+      {
+        "at": "2026-09-06 05:22",
+        "lane": "commits",
+        "label": "4b8c73d onboarding"
+      },
+      {
+        "at": "2026-09-06 06:49",
+        "lane": "commits",
+        "label": "cce23c1"
+      },
+      {
+        "at": "2026-09-06 07:58",
+        "lane": "commits",
+        "label": "aebd0bd contracts"
+      },
+      {
+        "at": "2026-09-06 09:12",
+        "lane": "commits",
+        "label": "8efb0aa customs cents"
+      },
+      {
+        "at": "2026-09-06 09:53",
+        "lane": "commits",
+        "label": "48dc282 drive index"
+      },
+      {
+        "at": "2026-09-06 10:56",
+        "lane": "commits",
+        "label": "8deb2e9"
+      },
+      {
+        "at": "2026-09-06 11:46",
+        "lane": "commits",
+        "label": "72776ae uploads"
+      },
+      {
+        "at": "2026-09-06 12:34",
+        "lane": "commits",
+        "label": "87d7fea downloads"
+      },
+      {
+        "at": "2026-09-06 12:55",
+        "lane": "commits",
+        "label": "4d24d1b checkpoint"
+      },
+      {
+        "at": "2026-09-06 13:16",
+        "lane": "commits",
+        "label": "09d69f5 entrypoints"
+      },
+      {
+        "at": "2026-09-05 12:58",
+        "lane": "writebacks",
+        "label": "observer-seeded"
+      },
+      {
+        "at": "2026-09-05 13:22",
+        "lane": "writebacks",
+        "label": "c4bd096 accepted"
+      },
+      {
+        "at": "2026-09-05 17:39",
+        "lane": "writebacks",
+        "label": "37b1707 accepted"
+      },
+      {
+        "at": "2026-09-05 19:57",
+        "lane": "writebacks",
+        "label": "39100c0 accepted"
+      },
+      {
+        "at": "2026-09-06 13:16",
+        "lane": "writebacks",
+        "label": "D-24 checkpoint"
+      }
+    ]
+  },
+  "closed": [
+    {
+      "title": "handoffs/HALO.md",
+      "href": "https://github.com/sisodias/siso-agent-zero-protocol",
+      "type": "handoff · written",
+      "tone": "now",
+      "why": "D-24 step 3 entrypoint checkpoint 09d69f5; native lane IDLE; P1-07 VERIFIED-SLICE, NOT DONE; P1-08 unclaimed"
+    },
+    {
+      "title": "briefs/HALO-WEBUI-HANDOVER.md",
+      "href": "https://github.com/sisodias/siso-agent-zero-protocol",
+      "type": "successor",
+      "tone": "agents",
+      "why": "Phase 1 continues from the ChatGPT web UI on the same build/plan/LEDGER.md"
+    },
+    {
+      "title": "Rollout · ~/.codex/sessions (private satellite)",
+      "href": "/t/U11/",
+      "type": "rollout",
+      "tone": "clients",
+      "why": "thread 01a06ff1-839b-7a11-8c73-641881a8c6ef; path private; size not on this page"
+    },
+    {
+      "title": "HALO CRM · project one pager",
+      "href": "/t/U15/",
+      "type": "U15 client account",
+      "tone": "clients"
+    }
+  ],
+  "quickstart": {
+    "entry": {
+      "path": "00_AGENT_ZERO/handoffs/HALO.md"
+    },
+    "owner": {
+      "name": "HALO-ZERO (idle) · successor: web UI lane",
+      "last": "6 Sep 13:16"
+    },
+    "verification": "Open this page and see born 5 Sep 12:01, 37 commits landed on the mirror, the cumulative token figure labelled as such, the rollout path marked private, and the handoff.",
+    "commands": [
+      "cd clients/halocrm/worktrees/private-rewrite-83ab4ba && git log --since='2026-09-05 17:00' --oneline | wc -l   # 37",
+      "node build/plan/next.mjs --status"
+    ]
+  }
 }

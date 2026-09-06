@@ -42,6 +42,8 @@
     <div class="heading__badges">
 <a class="chip tone-now" href="#reach" title="Mac Mini M4"><i class="dot"></i>reachable · Tailscale · 20:43</a><a class="chip tone-blocked" href="#reach" title="Mac Mini M4">WARP route · no reply · 20:43</a><a class="chip tone-agents" href="#runs" title="Mac Mini M4">4 seats · 2 idle · 2 done</a><a class="chip tone-now" href="#capacity" title="Mac Mini M4">up 8 d 23 h</a><a class="chip tone-warn" href="#capacity" title="Mac Mini M4">17 GiB disk free</a><span class="chip tone-muted" title="Mac Mini M4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="lock"><rect pathLength="1" width="18" height="11" x="3" y="11" rx="2" ry="2"/><path pathLength="1" d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>no addresses on this page</span>
 </div>
+    
+    <div class="heading__jump"><a class="jumpchip" href="#reach">Reachable, by which route</a><a class="jumpchip" href="#runs">What runs there</a><a class="jumpchip" href="#capacity">Capacity · budget</a><a class="jumpchip" href="#placement">Placement rule</a><a class="jumpchip" href="#nodes">The other nodes</a><a class="jumpchip" href="#evidence">Evidence</a></div>
   </div>
   <aside class="heading__status">
     <span class="kicker">Last probe</span>
@@ -49,6 +51,12 @@
     <p>macOS 15.5 · Mac16,10 · 16 GB · load 1.15 · sleep prevented by powerd · herdr 0.6.5 · codex-cli 0.153.4 · Bifrost :8080 answers 200. The Mini clock reads 14:43 (its zone is one hour ahead of UTC; the laptop is +07).</p>
     <dl class="kv"><dt>route in use</dt><dd>Tailscale (<code>ssh mac-mini-ts</code>, <code>mini-herdr</code> = <code>herdr --remote mac-mini-herdr</code>)</dd><dt>route intended</dt><dd>Cloudflare WARP private route (ESTATE.md: "already the primary, not Tailscale"); down 5 Sep, no reply 6 Sep</dd><dt>owner of bring-up</dt><dd>LAPTOP-ORGANIZER (briefs/MINI-SYNC.md, N1)</dd><dt>GQ</dt><dd>GQ-017 · what runs on laptop, Mini and client VPS</dd></dl>
   </aside>
+  
+  <div class="heading__metrics">
+<div class="metrics">
+<a class="metric tone-now" href="#reach" title="Mac Mini M4"><b>3</b><span>routes</span></a><a class="metric tone-muted" href="#reach" title="Mac Mini M4"><b>7</b><span>probes, dated</span></a><a class="metric tone-agents" href="#runs" title="Mac Mini M4"><b>4</b><span>seats on the node</span></a><a class="metric tone-projects" href="#nodes" title="Mac Mini M4"><b>5</b><span>nodes in the estate</span></a>
+</div>
+</div>
 </header>
 
 <section class="siso-section" id="reach">
@@ -176,7 +184,7 @@
 
 </section>
 
-    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U22 · 2026-09-06T14:55:15.557Z · data ssh over Tailscale (hostname, sysctl hw.model/hw.memsize, sw_vers, uptime, df -h /, pmset -g, herdr --version, codex --version, curl :8080) 6 Sep 20:43 UTC+07 · 00_AGENT_ZERO/bin/mini-probe 20:43 · mini-herdr agent list 20:38 · atlas/now.json 20:29 · ledger/2026-09-06-mini-native-pilot.json · briefs/MINI-SYNC.md (6 Sep 00:30) · estate/MINI-STATUS.md (5 Sep) · ESTATE.md (1e5e61e, 5 Sep 18:36) · OWNERS.md LAPTOP-ORGANIZER 5 Sep 19:59</footer>
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U22 · 2026-09-06T14:59:40.236Z · data ssh over Tailscale (hostname, sysctl hw.model/hw.memsize, sw_vers, uptime, df -h /, pmset -g, herdr --version, codex --version, curl :8080) 6 Sep 20:43 UTC+07 · 00_AGENT_ZERO/bin/mini-probe 20:43 · mini-herdr agent list 20:38 · atlas/now.json 20:29 · ledger/2026-09-06-mini-native-pilot.json · briefs/MINI-SYNC.md (6 Sep 00:30) · estate/MINI-STATUS.md (5 Sep) · ESTATE.md (1e5e61e, 5 Sep 18:36) · OWNERS.md LAPTOP-ORGANIZER 5 Sep 19:59</footer>
   </main>
 </div>
 </body>

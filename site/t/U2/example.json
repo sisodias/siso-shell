@@ -1,43 +1,864 @@
 {
-  "meta": { "title": "Works · catalogue", "description": "The Works section: 47 records from catalog.json, filterable by type, maturity, section.", "stream": "projects", "crumb": [{ "label": "Templates", "href": "/" }, { "label": "U2 · Catalogue", "href": "/t/U2/" }, { "label": "Works" }], "actions": [{ "label": "live /works/", "href": "https://great-library-of-siso.pages.dev/works/", "icon": "arrow-up-right", "external": true }], "source": "https://great-library-of-siso.pages.dev/catalog.json works[] · generated 2026-09-06T06:50Z" },
-  "heading": { "breadcrumb": [{ "label": "Library", "href": "/t/U1/example/" }, { "label": "Works" }], "kicker": "section <span class=\"sep\">·</span> Works <span class=\"sep\">·</span> <span class=\"dim\">47 records</span>", "title": "Works", "subtitle": "Stable identities for SISO research, software and agent systems. A Work holds the name and the reasoning; Releases pin its versions; Snapshots select views.", "badges": [{ "label": "47 Works", "tone": "projects" }, { "label": "18 research questions", "tone": "research", "href": "?type=research_question#list" }, { "label": "16 Unassigned", "tone": "blocked", "href": "?section=Unassigned#list", "title": "no section yet" }], "status": { "kicker": "Filter", "value": "type · maturity · section", "note": "Deep links work: <code>?type=research_question</code> shows exactly 18 cards. Counts equal the JSON; no 'coming soon' rows.", "facts": [{ "k": "source", "v": "<code>catalog.json</code> 06:50Z" }, { "k": "private", "v": "4 Works render as U11 stubs" }] } },
-  "sections": { "scope": { "n": "01", "title": "Scope" }, "counts": { "n": "02", "title": "Counts", "sub": "equal to catalog.json" }, "list": { "n": "03", "title": "Records", "sub": "filter, then open" }, "agent": { "n": "04", "title": "Agent entry" } },
+  "meta": {
+    "title": "Works · catalogue",
+    "description": "The Works section: 47 records from catalog.json, filterable by type, maturity, section.",
+    "stream": "projects",
+    "crumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U2 · Catalogue",
+        "href": "/t/U2/"
+      },
+      {
+        "label": "Works"
+      }
+    ],
+    "actions": [
+      {
+        "label": "live /works/",
+        "href": "https://great-library-of-siso.pages.dev/works/",
+        "icon": "arrow-up-right",
+        "external": true
+      }
+    ],
+    "source": "https://great-library-of-siso.pages.dev/catalog.json works[] · generated 2026-09-06T06:50Z"
+  },
+  "heading": {
+    "breadcrumb": [
+      {
+        "label": "Library",
+        "href": "/t/U1/example/"
+      },
+      {
+        "label": "Works"
+      }
+    ],
+    "kicker": "section <span class=\"sep\">·</span> Works <span class=\"sep\">·</span> <span class=\"dim\">47 records</span>",
+    "title": "Works",
+    "subtitle": "Stable identities for SISO research, software and agent systems. A Work holds the name and the reasoning; Releases pin its versions; Snapshots select views.",
+    "badges": [
+      {
+        "label": "47 Works",
+        "tone": "projects"
+      },
+      {
+        "label": "18 research questions",
+        "tone": "research",
+        "href": "?type=research_question#list"
+      },
+      {
+        "label": "16 Unassigned",
+        "tone": "blocked",
+        "href": "?section=Unassigned#list",
+        "title": "no section yet"
+      }
+    ],
+    "status": {
+      "kicker": "Filter",
+      "value": "type · maturity · section",
+      "note": "Deep links work: <code>?type=research_question</code> shows exactly 18 cards. Counts equal the JSON; no 'coming soon' rows.",
+      "facts": [
+        {
+          "k": "source",
+          "v": "<code>catalog.json</code> 06:50Z"
+        },
+        {
+          "k": "private",
+          "v": "4 Works render as U11 stubs"
+        }
+      ]
+    },
+    "metrics": [
+      {
+        "value": 23,
+        "label": "rows in the catalogue",
+        "tone": "projects",
+        "href": "#list"
+      },
+      {
+        "value": 3,
+        "label": "breakdowns",
+        "tone": "muted",
+        "href": "#counts"
+      }
+    ],
+    "jump": [
+      {
+        "label": "Scope",
+        "href": "#scope"
+      },
+      {
+        "label": "Counts",
+        "href": "#counts"
+      },
+      {
+        "label": "Records",
+        "href": "#list"
+      },
+      {
+        "label": "Agent entry",
+        "href": "#agent"
+      }
+    ]
+  },
+  "sections": {
+    "scope": {
+      "n": "01",
+      "title": "Scope"
+    },
+    "counts": {
+      "n": "02",
+      "title": "Counts",
+      "sub": "equal to catalog.json"
+    },
+    "list": {
+      "n": "03",
+      "title": "Records",
+      "sub": "filter, then open"
+    },
+    "agent": {
+      "n": "04",
+      "title": "Agent entry"
+    }
+  },
   "scope": "What belongs here: anything with a stable identity worth citing: a research question, a knowledge system, a tool, a project, an agent system, a playbook. What does not: raw payloads, client rosters, conversations. Private Works appear as stubs (purpose, owner, dated activity), never payload.",
-  "metrics": [{ "value": 47, "label": "Works", "tone": "projects", "href": "#list" }, { "value": 18, "label": "research questions", "tone": "research", "href": "?type=research_question#list" }, { "value": 28, "label": "active", "tone": "now", "href": "?maturity=active#list" }, { "value": 17, "label": "experimental", "tone": "warn", "href": "?maturity=experimental#list" }, { "value": 16, "label": "Unassigned section", "tone": "blocked", "href": "?section=Unassigned#list" }],
+  "metrics": [
+    {
+      "value": 47,
+      "label": "Works",
+      "tone": "projects",
+      "href": "#list"
+    },
+    {
+      "value": 18,
+      "label": "research questions",
+      "tone": "research",
+      "href": "?type=research_question#list"
+    },
+    {
+      "value": 28,
+      "label": "active",
+      "tone": "now",
+      "href": "?maturity=active#list"
+    },
+    {
+      "value": 17,
+      "label": "experimental",
+      "tone": "warn",
+      "href": "?maturity=experimental#list"
+    },
+    {
+      "value": 16,
+      "label": "Unassigned section",
+      "tone": "blocked",
+      "href": "?section=Unassigned#list"
+    }
+  ],
   "breakdowns": [
-    { "label": "by type", "chips": [{ "label": "research_question · 18", "tone": "research" }, { "label": "knowledge_system · 8", "tone": "research" }, { "label": "bundle · 4", "tone": "muted" }, { "label": "project · 3", "tone": "projects" }, { "label": "tool · 3", "tone": "projects" }, { "label": "section · 2", "tone": "muted" }, { "label": "agent_system · 2", "tone": "agents" }, { "label": "capability_pack · 2", "tone": "agents" }, { "label": "playbook · 2", "tone": "agents" }, { "label": "application · 2", "tone": "projects" }, { "label": "library · 1", "tone": "projects" }] },
-    { "label": "by maturity", "chips": [{ "label": "active · 28", "tone": "now", "dot": true }, { "label": "experimental · 17", "tone": "warn" }, { "label": "planned · 1", "tone": "muted" }, { "label": "retired · 1", "tone": "blocked" }] },
-    { "label": "by section", "chips": [{ "label": "Research · 17", "tone": "research" }, { "label": "Agents · 13", "tone": "agents" }, { "label": "Library · 1", "tone": "projects" }, { "label": "Unassigned · 16", "tone": "blocked" }] }
+    {
+      "label": "by type",
+      "chips": [
+        {
+          "label": "research_question · 18",
+          "tone": "research"
+        },
+        {
+          "label": "knowledge_system · 8",
+          "tone": "research"
+        },
+        {
+          "label": "bundle · 4",
+          "tone": "muted"
+        },
+        {
+          "label": "project · 3",
+          "tone": "projects"
+        },
+        {
+          "label": "tool · 3",
+          "tone": "projects"
+        },
+        {
+          "label": "section · 2",
+          "tone": "muted"
+        },
+        {
+          "label": "agent_system · 2",
+          "tone": "agents"
+        },
+        {
+          "label": "capability_pack · 2",
+          "tone": "agents"
+        },
+        {
+          "label": "playbook · 2",
+          "tone": "agents"
+        },
+        {
+          "label": "application · 2",
+          "tone": "projects"
+        },
+        {
+          "label": "library · 1",
+          "tone": "projects"
+        }
+      ]
+    },
+    {
+      "label": "by maturity",
+      "chips": [
+        {
+          "label": "active · 28",
+          "tone": "now",
+          "dot": true
+        },
+        {
+          "label": "experimental · 17",
+          "tone": "warn"
+        },
+        {
+          "label": "planned · 1",
+          "tone": "muted"
+        },
+        {
+          "label": "retired · 1",
+          "tone": "blocked"
+        }
+      ]
+    },
+    {
+      "label": "by section",
+      "chips": [
+        {
+          "label": "Research · 17",
+          "tone": "research"
+        },
+        {
+          "label": "Agents · 13",
+          "tone": "agents"
+        },
+        {
+          "label": "Library · 1",
+          "tone": "projects"
+        },
+        {
+          "label": "Unassigned · 16",
+          "tone": "blocked"
+        }
+      ]
+    }
   ],
   "catalogue": {
     "id": "works",
-    "filters": [{ "key": "type", "label": "type", "values": ["research_question", "knowledge_system", "bundle", "project", "tool", "section", "agent_system", "capability_pack", "playbook", "application", "library"] }, { "key": "maturity", "label": "maturity", "values": ["active", "experimental", "planned", "retired"] }, { "key": "section", "label": "section", "values": ["Research", "Agents", "Library", "Unassigned"] }],
+    "filters": [
+      {
+        "key": "type",
+        "label": "type",
+        "values": [
+          "research_question",
+          "knowledge_system",
+          "bundle",
+          "project",
+          "tool",
+          "section",
+          "agent_system",
+          "capability_pack",
+          "playbook",
+          "application",
+          "library"
+        ]
+      },
+      {
+        "key": "maturity",
+        "label": "maturity",
+        "values": [
+          "active",
+          "experimental",
+          "planned",
+          "retired"
+        ]
+      },
+      {
+        "key": "section",
+        "label": "section",
+        "values": [
+          "Research",
+          "Agents",
+          "Library",
+          "Unassigned"
+        ]
+      }
+    ],
     "items": [
-      { "id": "frontier-question-agent-workspace", "kicker": "research_question · Research", "title": "GQ-001 · The Agent Workspace", "summary": "What makes a complete agent workspace understandable and maintainable?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-agent-workspace/", "status": "active", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Research" }], "search": "gq-001 agent workspace" },
-      { "id": "frontier-question-agent-layer-efficiency", "kicker": "research_question · Research", "title": "GQ-002 · 10× the Agent Layer", "summary": "Complete agent-layer effectiveness (umbrella).", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-agent-layer-efficiency/", "status": "active", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Research" }], "search": "gq-002 agent layer" },
-      { "id": "frontier-question-best-software-primitive", "kicker": "research_question · Research", "title": "GQ-004 · Best Software Primitive", "summary": "Which existing primitive best fits this host and requirement?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-best-software-primitive/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Research" }], "search": "gq-004 primitive" },
-      { "id": "frontier-question-field-momentum", "kicker": "research_question · Research", "title": "GQ-005 · Where the Field Is Moving", "summary": "What is genuinely changing, and which predictions survive measurement?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-field-momentum/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Research" }], "search": "gq-005 field" },
-      { "id": "frontier-question-information-organ", "kicker": "research_question · Research", "title": "GQ-006 · The Information Organ", "summary": "How does collected evidence reach an agent's current decision?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-information-organ/", "status": "active", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Research" }], "search": "gq-006 information organ" },
-      { "id": "frontier-question-model-routing", "kicker": "research_question · Research", "title": "GQ-008 · Model Routing Evidence", "summary": "Which model and route earn each recurring task?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-model-routing/", "status": "active", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Research" }], "search": "gq-008 routing" },
-      { "id": "frontier-question-god-questions-infrastructure", "kicker": "research_question · Research", "title": "GQ-009 · The God Questions Observatory", "summary": "How do questions, evidence and learning stay visible without bureaucracy?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-god-questions-infrastructure/", "status": "active", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Research" }], "search": "gq-009 observatory" },
-      { "id": "frontier-question-gq-010", "kicker": "research_question · Research", "title": "GQ-010 · People Graph 100×", "summary": "Which People Graph capabilities improve decisions rather than row counts?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-010/", "status": "active", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Research" }], "search": "gq-010 people graph" },
-      { "id": "frontier-question-gq-012", "kicker": "research_question · Unassigned", "title": "GQ-012 · Context that Preserves Intent", "summary": "How do agents retain the right context without repeatedly loading everything?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-012/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Unassigned" }], "search": "gq-012 context" },
-      { "id": "frontier-question-gq-013", "kicker": "research_question · Unassigned", "title": "GQ-013 · A Useful Reusable Building Set", "summary": "Components, flows, modules and assets as a small high-quality set.", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-013/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Unassigned" }], "search": "gq-013 building set" },
-      { "id": "frontier-question-gq-014", "kicker": "research_question · Unassigned", "title": "GQ-014 · Durable Upstream Bets", "summary": "Which upstream teams and projects deserve a durable bet?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-014/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Unassigned" }], "search": "gq-014 bets" },
-      { "id": "frontier-question-gq-015", "kicker": "research_question · Unassigned", "title": "GQ-015 · Useful Human Decisions from Agent Work", "summary": "Show important work; ask only for necessary human decisions.", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-015/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Unassigned" }], "search": "gq-015 decisions" },
-      { "id": "frontier-question-gq-016", "kicker": "research_question · Unassigned", "title": "GQ-016 · Persistent Project Ownership", "summary": "Persistent owners without Main or Shaan becoming the bottleneck.", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-016/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Unassigned" }], "search": "gq-016 ownership" },
-      { "id": "frontier-question-gq-017", "kicker": "research_question · Unassigned", "title": "GQ-017 · Compute Placement and Continuity", "summary": "What runs on laptop, Mini and client VPS, discoverably.", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-017/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Unassigned" }], "search": "gq-017 placement" },
-      { "id": "frontier-question-gq-018", "kicker": "research_question · Unassigned", "title": "GQ-018 · Pricing that Sustains Delivered Value", "summary": "What commercial model rewards value and funds continuous improvement?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-018/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Unassigned" }], "search": "gq-018 pricing" },
-      { "id": "frontier-question-gq-019", "kicker": "research_question · Unassigned", "title": "GQ-019 · Conversation to Accepted Change", "summary": "Can real client conversation reliably become the correct accepted change?", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-019/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Unassigned" }], "search": "gq-019 conversation" },
-      { "id": "frontier-question-gq-023", "kicker": "research_question · Unassigned", "title": "GQ-023 · Accepted Work from Compute and Delegation", "summary": "The compute question (D-20); GQ-011 in the Library is Mathematics.", "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-023/", "status": "experimental", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Unassigned" }], "search": "gq-023 compute delegation" },
-      { "id": "siso-unsolveable-mathematics", "kicker": "research_question · Unassigned", "title": "SISO Unsolveable Mathematics", "summary": "The Erdős fleet's question (GQ-011 in the Library).", "href": "https://great-library-of-siso.pages.dev/works/siso-unsolveable-mathematics/", "status": "active", "tone": "research", "tags": [{ "key": "type", "value": "research_question" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Unassigned" }], "search": "mathematics erdos" },
-      { "id": "great-library-of-siso", "kicker": "library · Library", "title": "The Great Library of SISO", "summary": "The registry and reading surface itself.", "href": "https://great-library-of-siso.pages.dev/works/great-library-of-siso/", "status": "active", "tone": "projects", "tags": [{ "key": "type", "value": "library" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Library" }], "search": "great library" },
-      { "id": "siso-foundry", "kicker": "application · Research", "title": "SISO Foundry", "summary": "Source mining and reuse knowledge; 17 industries.", "href": "/t/U3/example/", "status": "active", "tone": "research", "tags": [{ "key": "type", "value": "application" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Research" }], "search": "foundry" },
-      { "id": "siso-shell", "kicker": "tool · Agents", "title": "SISO Shell", "summary": "The CRM rail and template bank.", "href": "https://great-library-of-siso.pages.dev/works/siso-shell/", "status": "experimental", "tone": "projects", "tags": [{ "key": "type", "value": "tool" }, { "key": "maturity", "value": "experimental" }, { "key": "section", "value": "Agents" }], "search": "shell" },
-      { "id": "siso-project-os", "kicker": "project · Agents", "title": "SISO Project OS", "summary": "The .agents/ spine (V39).", "href": "https://great-library-of-siso.pages.dev/works/siso-project-os/", "status": "active", "tone": "projects", "tags": [{ "key": "type", "value": "project" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Agents" }], "search": "project os spine" },
-      { "id": "actionmodel-assembly-framework", "kicker": "project · Unassigned · private repo", "title": "Action Model · assembly framework", "summary": "Public Work over a private repo (actionmodel-private): renders as a U11 stub.", "href": "https://great-library-of-siso.pages.dev/works/actionmodel-assembly-framework/", "status": "active", "tone": "clients", "tags": [{ "key": "type", "value": "project" }, { "key": "maturity", "value": "active" }, { "key": "section", "value": "Unassigned" }], "search": "action model private" }
+      {
+        "id": "frontier-question-agent-workspace",
+        "kicker": "research_question · Research",
+        "title": "GQ-001 · The Agent Workspace",
+        "summary": "What makes a complete agent workspace understandable and maintainable?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-agent-workspace/",
+        "status": "active",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Research"
+          }
+        ],
+        "search": "gq-001 agent workspace"
+      },
+      {
+        "id": "frontier-question-agent-layer-efficiency",
+        "kicker": "research_question · Research",
+        "title": "GQ-002 · 10× the Agent Layer",
+        "summary": "Complete agent-layer effectiveness (umbrella).",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-agent-layer-efficiency/",
+        "status": "active",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Research"
+          }
+        ],
+        "search": "gq-002 agent layer"
+      },
+      {
+        "id": "frontier-question-best-software-primitive",
+        "kicker": "research_question · Research",
+        "title": "GQ-004 · Best Software Primitive",
+        "summary": "Which existing primitive best fits this host and requirement?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-best-software-primitive/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Research"
+          }
+        ],
+        "search": "gq-004 primitive"
+      },
+      {
+        "id": "frontier-question-field-momentum",
+        "kicker": "research_question · Research",
+        "title": "GQ-005 · Where the Field Is Moving",
+        "summary": "What is genuinely changing, and which predictions survive measurement?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-field-momentum/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Research"
+          }
+        ],
+        "search": "gq-005 field"
+      },
+      {
+        "id": "frontier-question-information-organ",
+        "kicker": "research_question · Research",
+        "title": "GQ-006 · The Information Organ",
+        "summary": "How does collected evidence reach an agent's current decision?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-information-organ/",
+        "status": "active",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Research"
+          }
+        ],
+        "search": "gq-006 information organ"
+      },
+      {
+        "id": "frontier-question-model-routing",
+        "kicker": "research_question · Research",
+        "title": "GQ-008 · Model Routing Evidence",
+        "summary": "Which model and route earn each recurring task?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-model-routing/",
+        "status": "active",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Research"
+          }
+        ],
+        "search": "gq-008 routing"
+      },
+      {
+        "id": "frontier-question-god-questions-infrastructure",
+        "kicker": "research_question · Research",
+        "title": "GQ-009 · The God Questions Observatory",
+        "summary": "How do questions, evidence and learning stay visible without bureaucracy?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-god-questions-infrastructure/",
+        "status": "active",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Research"
+          }
+        ],
+        "search": "gq-009 observatory"
+      },
+      {
+        "id": "frontier-question-gq-010",
+        "kicker": "research_question · Research",
+        "title": "GQ-010 · People Graph 100×",
+        "summary": "Which People Graph capabilities improve decisions rather than row counts?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-010/",
+        "status": "active",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Research"
+          }
+        ],
+        "search": "gq-010 people graph"
+      },
+      {
+        "id": "frontier-question-gq-012",
+        "kicker": "research_question · Unassigned",
+        "title": "GQ-012 · Context that Preserves Intent",
+        "summary": "How do agents retain the right context without repeatedly loading everything?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-012/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "gq-012 context"
+      },
+      {
+        "id": "frontier-question-gq-013",
+        "kicker": "research_question · Unassigned",
+        "title": "GQ-013 · A Useful Reusable Building Set",
+        "summary": "Components, flows, modules and assets as a small high-quality set.",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-013/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "gq-013 building set"
+      },
+      {
+        "id": "frontier-question-gq-014",
+        "kicker": "research_question · Unassigned",
+        "title": "GQ-014 · Durable Upstream Bets",
+        "summary": "Which upstream teams and projects deserve a durable bet?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-014/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "gq-014 bets"
+      },
+      {
+        "id": "frontier-question-gq-015",
+        "kicker": "research_question · Unassigned",
+        "title": "GQ-015 · Useful Human Decisions from Agent Work",
+        "summary": "Show important work; ask only for necessary human decisions.",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-015/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "gq-015 decisions"
+      },
+      {
+        "id": "frontier-question-gq-016",
+        "kicker": "research_question · Unassigned",
+        "title": "GQ-016 · Persistent Project Ownership",
+        "summary": "Persistent owners without Main or Shaan becoming the bottleneck.",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-016/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "gq-016 ownership"
+      },
+      {
+        "id": "frontier-question-gq-017",
+        "kicker": "research_question · Unassigned",
+        "title": "GQ-017 · Compute Placement and Continuity",
+        "summary": "What runs on laptop, Mini and client VPS, discoverably.",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-017/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "gq-017 placement"
+      },
+      {
+        "id": "frontier-question-gq-018",
+        "kicker": "research_question · Unassigned",
+        "title": "GQ-018 · Pricing that Sustains Delivered Value",
+        "summary": "What commercial model rewards value and funds continuous improvement?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-018/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "gq-018 pricing"
+      },
+      {
+        "id": "frontier-question-gq-019",
+        "kicker": "research_question · Unassigned",
+        "title": "GQ-019 · Conversation to Accepted Change",
+        "summary": "Can real client conversation reliably become the correct accepted change?",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-019/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "gq-019 conversation"
+      },
+      {
+        "id": "frontier-question-gq-023",
+        "kicker": "research_question · Unassigned",
+        "title": "GQ-023 · Accepted Work from Compute and Delegation",
+        "summary": "The compute question (D-20); GQ-011 in the Library is Mathematics.",
+        "href": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-023/",
+        "status": "experimental",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "gq-023 compute delegation"
+      },
+      {
+        "id": "siso-unsolveable-mathematics",
+        "kicker": "research_question · Unassigned",
+        "title": "SISO Unsolveable Mathematics",
+        "summary": "The Erdős fleet's question (GQ-011 in the Library).",
+        "href": "https://great-library-of-siso.pages.dev/works/siso-unsolveable-mathematics/",
+        "status": "active",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "research_question"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "mathematics erdos"
+      },
+      {
+        "id": "great-library-of-siso",
+        "kicker": "library · Library",
+        "title": "The Great Library of SISO",
+        "summary": "The registry and reading surface itself.",
+        "href": "https://great-library-of-siso.pages.dev/works/great-library-of-siso/",
+        "status": "active",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "type",
+            "value": "library"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Library"
+          }
+        ],
+        "search": "great library"
+      },
+      {
+        "id": "siso-foundry",
+        "kicker": "application · Research",
+        "title": "SISO Foundry",
+        "summary": "Source mining and reuse knowledge; 17 industries.",
+        "href": "/t/U3/example/",
+        "status": "active",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "type",
+            "value": "application"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Research"
+          }
+        ],
+        "search": "foundry"
+      },
+      {
+        "id": "siso-shell",
+        "kicker": "tool · Agents",
+        "title": "SISO Shell",
+        "summary": "The CRM rail and template bank.",
+        "href": "https://great-library-of-siso.pages.dev/works/siso-shell/",
+        "status": "experimental",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "type",
+            "value": "tool"
+          },
+          {
+            "key": "maturity",
+            "value": "experimental"
+          },
+          {
+            "key": "section",
+            "value": "Agents"
+          }
+        ],
+        "search": "shell"
+      },
+      {
+        "id": "siso-project-os",
+        "kicker": "project · Agents",
+        "title": "SISO Project OS",
+        "summary": "The .agents/ spine (V39).",
+        "href": "https://great-library-of-siso.pages.dev/works/siso-project-os/",
+        "status": "active",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "type",
+            "value": "project"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Agents"
+          }
+        ],
+        "search": "project os spine"
+      },
+      {
+        "id": "actionmodel-assembly-framework",
+        "kicker": "project · Unassigned · private repo",
+        "title": "Action Model · assembly framework",
+        "summary": "Public Work over a private repo (actionmodel-private): renders as a U11 stub.",
+        "href": "https://great-library-of-siso.pages.dev/works/actionmodel-assembly-framework/",
+        "status": "active",
+        "tone": "clients",
+        "tags": [
+          {
+            "key": "type",
+            "value": "project"
+          },
+          {
+            "key": "maturity",
+            "value": "active"
+          },
+          {
+            "key": "section",
+            "value": "Unassigned"
+          }
+        ],
+        "search": "action model private"
+      }
     ],
     "empty": "0 records; nothing registered yet."
   },
-  "quickstart": { "entry": { "path": "Great_Library_of_SISO/site/works/index.html" }, "owner": { "name": "LIBRARY-ZERO" }, "context_url": "https://great-library-of-siso.pages.dev/catalog.json", "verification": "Open /works/ and filter type=research_question and see exactly 18 cards; every card's repo badge says public/private truthfully.", "commands": ["curl -s https://great-library-of-siso.pages.dev/catalog.json | jq '[.works[]|select(.type==\"research_question\")]|length'   # 18"] }
+  "quickstart": {
+    "entry": {
+      "path": "Great_Library_of_SISO/site/works/index.html"
+    },
+    "owner": {
+      "name": "LIBRARY-ZERO"
+    },
+    "context_url": "https://great-library-of-siso.pages.dev/catalog.json",
+    "verification": "Open /works/ and filter type=research_question and see exactly 18 cards; every card's repo badge says public/private truthfully.",
+    "commands": [
+      "curl -s https://great-library-of-siso.pages.dev/catalog.json | jq '[.works[]|select(.type==\"research_question\")]|length'   # 18"
+    ]
+  }
 }
