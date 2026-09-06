@@ -307,7 +307,7 @@
    "head_at": "2026-09-06 13:16 UTC+07",
    "access": "client account",
    "rights": "client",
-   "what": "Private mirror of the client's CRM; <code>main</code> still at the 17 Aug import (<code>347329a</code>). Upstream camronkellman/halocrm push disabled by name."
+   "what": "Private mirror of the client's CRM; <code>main</code> still at the 17 Aug import (<code>347329a</code>). Upstream: the client's upstream repo (private; push disabled by name)."
   }
  ],
  "deliverables": {
@@ -396,7 +396,7 @@
    "href": "/t/U14/example/",
    "type": "U14 person · client",
    "tone": "clients",
-   "why": "the account's owner; upstream camronkellman/halocrm"
+   "why": "the account's owner; upstream the client's upstream repo (private; push disabled by name)"
   },
   {
    "title": "Shaan",

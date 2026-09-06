@@ -93,7 +93,7 @@
     },
     {
      "k": "upstream",
-     "v": "<code>camronkellman/halocrm</code> · push disabled by name"
+     "v": "the client's upstream repo (private; push disabled by name)"
     },
     {
      "k": "Library",
@@ -145,7 +145,7 @@
   }
  },
  "purpose": {
-  "text": "A read-only study mirror of the client's CRM, then the branch where SISO rewrites it natively (Postgres, S3-compatible storage, staff and creator roles). The repo description reads: <em>\"Read-only study mirror of camronkellman/halocrm (HALO Angels CRM). Analysis only — never push upstream.\"</em> The rewrite lives on one working branch; <code>main</code> is still the 17 Aug import.",
+  "text": "A read-only study mirror of the client's CRM, then the branch where SISO rewrites it natively (Postgres, S3-compatible storage, staff and creator roles). The repo description reads: <em>\"Read-only study mirror of the client's upstream repo (private; push disabled by name). Analysis only — never push upstream.\"</em> The rewrite lives on one working branch; <code>main</code> is still the 17 Aug import.",
   "words": [
    {
     "text": "even client stock will have the listing of the repos even if they private or what like it just our infrastructure database",
@@ -165,7 +165,7 @@
   },
   {
    "k": "relationship",
-   "v": "client deliverable; the upstream repo is the client's (<code>camronkellman/halocrm</code>, sole contributor on <code>main</code>); the mirror is SISO's workbench"
+   "v": "client deliverable; the upstream repo is the client's own (private; push disabled by name); the mirror is SISO's workbench"
   },
   {
    "k": "rights",
@@ -261,7 +261,7 @@
    "head_at": "2026-09-06 13:16 UTC+07",
    "access": "client account",
    "rights": "client",
-   "what": "Private mirror of the client's CRM. 50 branches; <code>main</code> at <code>347329a</code> (17 Aug import, author Camron Kellman); 545 commits on the working branch; size 68,277 KB (gh api). Nothing else about the inside renders here."
+   "what": "Private mirror of the client's CRM. 50 branches; <code>main</code> at <code>347329a</code> (17 Aug import, client author); 545 commits on the working branch; size 68,277 KB (gh api). Nothing else about the inside renders here."
   }
  ],
  "activity": {
@@ -337,7 +337,7 @@
    },
    {
     "at": "2026-08-17 21:45",
-    "who": "Camron Kellman",
+    "who": "the client",
     "what": "main: the last upstream commit mirrored (347329a)",
     "tone": "clients"
    }
