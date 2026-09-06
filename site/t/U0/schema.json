@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "U0 · Shell page data",
+  "description": "The shell family renders a page about the rail; the rail itself is opts.nav (site/nav.json shape: {title, mark, home, groups:[{id,label,destinations:[{id,label,href,icon,private,status}]}], utilities, operator}).",
+  "type": "object",
+  "required": ["meta", "heading", "sections", "reasoning", "values", "behaviour", "evidence", "quickstart", "repos"],
+  "properties": {
+    "meta": { "$ref": "#/$defs/meta" },
+    "heading": { "$ref": "#/$defs/heading" },
+    "sections": { "type": "object", "additionalProperties": { "$ref": "#/$defs/sectionHead" } },
+    "reasoning": { "$ref": "#/$defs/reasoning" },
+    "values": { "type": "array", "items": { "type": "object", "required": ["thing", "token", "value", "where"], "properties": { "thing": { "type": "string" }, "token": { "type": "string" }, "value": { "type": "string" }, "where": { "type": "string" } } } },
+    "behaviour": { "type": "array", "items": { "type": "object", "required": ["label", "what"], "properties": { "label": { "type": "string" }, "what": { "type": "string" }, "from": { "type": "string" } } } },
+    "evidence": { "$ref": "#/$defs/evidence" },
+    "quickstart": { "$ref": "#/$defs/quickstart" },
+    "repos": { "$ref": "#/$defs/repos" },
+    "related": { "$ref": "#/$defs/related" }
+  },
+  "$defs": {
+    "meta": { "type": "object", "properties": { "title": { "type": "string" }, "description": { "type": "string" }, "stream": { "enum": ["projects", "research", "agents", "clients", "now", "blocked"] }, "crumb": { "type": "array", "items": { "$ref": "#/$defs/link" } }, "actions": { "type": "array", "items": { "type": "object", "properties": { "label": { "type": "string" }, "href": { "type": "string" }, "icon": { "type": "string" }, "kbd": { "type": "string" }, "external": { "type": "boolean" } } } }, "source": { "type": "string" } } },
+    "link": { "type": "object", "required": ["label"], "properties": { "label": { "type": "string" }, "href": { "type": "string" } } },
+    "chip": { "type": "object", "required": ["label"], "properties": { "label": { "type": "string" }, "tone": { "type": "string" }, "href": { "type": "string" }, "dot": { "type": "boolean" }, "icon": { "type": "string" }, "title": { "type": "string" } } },
+    "heading": { "type": "object", "required": ["title"], "properties": { "breadcrumb": { "type": "array", "items": { "$ref": "#/$defs/link" } }, "kicker": { "type": "string" }, "title": { "type": "string" }, "subtitle": { "type": "string" }, "badges": { "type": "array", "items": { "$ref": "#/$defs/chip" } }, "status": { "type": "object", "properties": { "kicker": { "type": "string" }, "value": { "type": "string" }, "note": { "type": "string" }, "facts": { "type": "array", "items": { "type": "object", "properties": { "k": { "type": "string" }, "v": { "type": "string" } } } } } } } },
+    "sectionHead": { "type": "object", "required": ["n", "title"], "properties": { "n": { "type": "string" }, "title": { "type": "string" }, "sub": { "type": "string" } } },
+    "reasoning": { "type": "object", "properties": { "source": { "type": "array", "items": { "type": "object", "required": ["text"], "properties": { "text": { "type": "string" }, "who": { "type": "string" }, "at": { "type": "string" }, "href": { "type": "string" } } } }, "why": { "type": "string" }, "readers": { "type": "string" }, "questions": { "type": "array", "items": { "type": "string" } }, "claim_ceiling": { "type": "string" }, "data": { "type": "string" }, "privacy": { "type": "string" }, "empty_state": { "type": "string" }, "agent_entry": { "type": "string" } } },
+    "evidence": { "type": "object", "properties": { "facts": { "type": "array", "items": { "type": "object", "required": ["claim"], "properties": { "claim": { "type": "string" }, "receipt": { "type": "string" }, "href": { "type": "string" }, "at": { "type": "string" } } } }, "proposals": { "type": "array", "items": { "type": "object", "required": ["claim"], "properties": { "claim": { "type": "string" }, "why": { "type": "string" } } } }, "limits": { "type": "array", "items": { "type": "string" } }, "version": { "type": "object", "properties": { "label": { "type": "string" }, "href": { "type": "string" }, "at": { "type": "string" } } } } },
+    "quickstart": { "type": "object", "properties": { "entry": { "type": "object", "properties": { "path": { "type": "string" }, "href": { "type": "string" } } }, "commands": { "type": "array", "items": { "type": "string" } }, "owner": { "type": "object", "properties": { "name": { "type": "string" }, "href": { "type": "string" }, "last": { "type": "string" } } }, "verification": { "type": "string" }, "context_url": { "type": "string" } } },
+    "repos": { "type": "array", "items": { "type": "object", "required": ["repo"], "properties": { "repo": { "type": "string" }, "url": { "type": "string" }, "branch": { "type": "string" }, "head": { "type": "string" }, "head_at": { "type": "string" }, "private": { "type": "boolean" }, "access": { "type": "string" }, "rights": { "type": "string" }, "what": { "type": "string" }, "satellite": { "type": "boolean" } } } },
+    "related": { "type": "array", "items": { "type": "object", "required": ["title", "href"], "properties": { "title": { "type": "string" }, "href": { "type": "string" }, "why": { "type": "string" }, "type": { "type": "string" }, "tone": { "type": "string" } } } }
+  }
+}

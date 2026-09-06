@@ -1,0 +1,802 @@
+{
+  "meta": {
+    "title": "U13 · Parts · SISO templates",
+    "description": "The twelve modules every family composes, rendered once each with the JSON they take.",
+    "stream": "projects",
+    "crumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U13 · Parts",
+        "href": "/t/U13/"
+      },
+      {
+        "label": "fixture"
+      }
+    ],
+    "actions": [
+      {
+        "label": "parts.css",
+        "href": "/parts/parts.css",
+        "icon": "file-code"
+      },
+      {
+        "label": "parts/ on GitHub",
+        "href": "https://github.com/sisodias/siso-shell/tree/main/parts",
+        "icon": "git-branch",
+        "external": true
+      }
+    ],
+    "source": "parts/"
+  },
+  "heading": {
+    "breadcrumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U13",
+        "href": "/t/U13/"
+      },
+      {
+        "label": "fixture"
+      }
+    ],
+    "kicker": "U13 <span class=\"sep\">·</span> reusable modules <span class=\"sep\">·</span> <span class=\"dim\">library-ui-spec §6</span>",
+    "title": "The twelve parts, rendered once each",
+    "subtitle": "Every family below composes these. One HTML partial each in <code>parts/</code>, one stylesheet, dark tokens, no framework. View source: each block on this page is one partial fed one JSON object, shown under it.",
+    "badges": [
+      {
+        "label": "12 parts + 5 atoms",
+        "tone": "now",
+        "dot": true
+      },
+      {
+        "label": "truthful empty states",
+        "tone": "now"
+      },
+      {
+        "label": "real 404",
+        "tone": "now"
+      },
+      {
+        "label": "Action Model presentation, receipts kept",
+        "tone": "clients"
+      }
+    ],
+    "status": {
+      "kicker": "Where",
+      "value": "siso-shell/parts/",
+      "note": "Composed by <code>bin/compose</code> through <code>{{&gt; part data}}</code>.",
+      "facts": [
+        {
+          "k": "css",
+          "v": "<code>parts/parts.css</code>"
+        },
+        {
+          "k": "js",
+          "v": "<code>parts/catalogue.js</code> only"
+        }
+      ]
+    }
+  },
+  "sections": {
+    "why": {
+      "n": "00",
+      "title": "Why parts",
+      "sub": "his words · the reading"
+    },
+    "index": {
+      "n": "01",
+      "title": "Index"
+    },
+    "states": {
+      "n": "13",
+      "title": "Empty, blocked, 404",
+      "sub": "each part has a truthful empty state; the site has a real 404 (GAPS F-3)"
+    }
+  },
+  "reasoning": {
+    "source": [],
+    "why": "Every family composes the same parts; build them once as partials or every page drifts (the atlas already has 24 hand-written pages). The Action Model pages are the proof that these parts render from real data.",
+    "readers": "Human: consistent reading. Agent: consistent DOM to parse.",
+    "questions": [
+      "Which parts exist and what data does each take?"
+    ],
+    "claim_ceiling": "A part renders only what its JSON carries; empty means empty.",
+    "data": "a fixture page with all parts + their JSON shapes.",
+    "privacy": "—",
+    "empty_state": "each part has a truthful empty state (and the site has a real 404, GAPS F-3).",
+    "agent_entry": "parts/<name>.html · the JSON shape under each block here"
+  },
+  "index": {
+    "items": [
+      {
+        "label": "01 · Global shell",
+        "what": "the CRM GroupedRail: grouped navigation, search, collapse; the rail on this page",
+        "href": "#shell",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "02 · Heading",
+        "what": "breadcrumb · kicker · title · purpose · state badges · status panel",
+        "href": "#heading",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "03 · Reasoning block",
+        "what": "his words (source) vs the seat's reading, then the claim ceiling, data, privacy, empty state, agent entry",
+        "href": "#reasoning",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "04 · Map · typed relationship map + ecosystem loop",
+        "what": "the mind map: repos, Works, questions, industries, people, nodes as a graph, with its text equivalent; and the loop",
+        "href": "#map",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "05 · Repository cards",
+        "what": "every repo incl. private: head, time, branch, visibility, access, rights",
+        "href": "#repos",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "06 · Sauce cards",
+        "what": "3–7 genuinely useful assets, examples, datasets or receipts",
+        "href": "#sauce",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "07 · Contents + procedure",
+        "what": "capability list with states, and the ordered flow steps",
+        "href": "#contents",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "08 · Agent quick-start",
+        "what": "entry file, actual commands, owner, verification line, machine context",
+        "href": "#quickstart",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "09 · Evidence / limits / version",
+        "what": "facts with receipts vs proposals, visibly distinct; limits; version",
+        "href": "#evidence",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "10 · Activity strip",
+        "what": "observation date and coverage, a density strip, the dated lines",
+        "href": "#activity",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "11 · Searchable catalogue",
+        "what": "cards with kicker, summary, state; text filter and select filters; visible count; truthful empty state",
+        "href": "#catalogue",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "12 · Related work",
+        "what": "next reading, typed; never filler",
+        "href": "#related",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "+ · Atoms the parts share",
+        "what": "chips · metrics · words · timeline · section head",
+        "href": "#atoms",
+        "state": "built",
+        "tone": "now"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "shell",
+      "n": "01",
+      "title": "Global shell",
+      "what": "the CRM GroupedRail: grouped navigation, search, collapse; the rail on this page",
+      "file": "../shell.mjs · shell/rail.{css,js}",
+      "robbed": "SISOCRM GroupedRail (copied, not adapted)",
+      "sample": null
+    },
+    {
+      "id": "heading",
+      "n": "02",
+      "title": "Heading",
+      "what": "breadcrumb · kicker · title · purpose · state badges · status panel",
+      "file": "heading.html",
+      "robbed": "AM hero + status panel (system-map/part-page.css:8-15)",
+      "sample": {
+        "breadcrumb": [
+          {
+            "label": "Works",
+            "href": "#"
+          },
+          {
+            "label": "siso-foundry"
+          }
+        ],
+        "kicker": "Work <span class=\"sep\">·</span> knowledge_system <span class=\"sep\">·</span> <span class=\"dim\">active</span>",
+        "title": "Foundry · industries, valuation, landscape watch",
+        "subtitle": "Industry research and value inputs for every SISO offer; 17 industry records, a law-firm pilot live.",
+        "badges": [
+          {
+            "label": "public repo",
+            "tone": "now",
+            "dot": true
+          },
+          {
+            "label": "section Research",
+            "tone": "research"
+          },
+          {
+            "label": "V40 a9ffd16",
+            "tone": "muted"
+          }
+        ],
+        "status": {
+          "kicker": "Current posture",
+          "value": "active · 7 modules",
+          "note": "Observed 6 Sep 13:42 from catalog.json.",
+          "facts": [
+            {
+              "k": "owner",
+              "v": "FOUNDRY-ZERO"
+            },
+            {
+              "k": "last",
+              "v": "6 Sep 13:42"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "reasoning",
+      "n": "03",
+      "title": "Reasoning block",
+      "what": "his words (source) vs the seat's reading, then the claim ceiling, data, privacy, empty state, agent entry",
+      "file": "reasoning.html",
+      "robbed": "AM research reader CLAIM CEILING · system-map evidence ladder",
+      "sample": {
+        "source": [
+          {
+            "text": "we also need to put reasoning in each of these templates because like right now it's quite simple",
+            "who": "Shaan",
+            "at": "6 Sep 18:19"
+          }
+        ],
+        "why": "A page without its reasoning is a layout. The block keeps what he said apart from what the seat read into it.",
+        "readers": "Human: judge the reading against the words. Agent: the claim ceiling is the contract.",
+        "questions": [
+          "Why does this page exist?",
+          "What may it claim?"
+        ],
+        "claim_ceiling": "Only what the record says; authored text is labelled.",
+        "data": "plan/templates.json reasoning block.",
+        "privacy": "Public.",
+        "empty_state": "No source → the source column says so.",
+        "agent_entry": "templates/<id>/README.md"
+      }
+    },
+    {
+      "id": "map",
+      "n": "04",
+      "title": "Map · typed relationship map + ecosystem loop",
+      "what": "the mind map: repos, Works, questions, industries, people, nodes as a graph, with its text equivalent; and the loop",
+      "file": "map.html · loop.html",
+      "robbed": "AM dependency link chips (system-map/index.html:152-157); loop from library-ui-spec §6",
+      "sample": {
+        "centre": {
+          "label": "Great Library",
+          "href": "#"
+        },
+        "types": [
+          {
+            "type": "repo",
+            "label": "Repos",
+            "tone": "projects",
+            "items": [
+              {
+                "label": "great-library-of-siso",
+                "href": "#",
+                "rel": "source"
+              },
+              {
+                "label": "siso-shell",
+                "href": "#",
+                "rel": "shell"
+              }
+            ]
+          },
+          {
+            "type": "question",
+            "label": "Questions",
+            "tone": "research",
+            "items": [
+              {
+                "label": "GQ-012 context",
+                "href": "#",
+                "rel": "serves"
+              },
+              {
+                "label": "GQ-013 building set",
+                "href": "#",
+                "rel": "serves"
+              }
+            ]
+          },
+          {
+            "type": "people",
+            "label": "People",
+            "tone": "clients",
+            "items": [
+              {
+                "label": "LIBRARY-ZERO",
+                "href": "#",
+                "rel": "seat"
+              }
+            ]
+          },
+          {
+            "type": "node",
+            "label": "Nodes",
+            "tone": "now",
+            "items": [
+              {
+                "label": "laptop",
+                "href": "#",
+                "rel": "built on"
+              },
+              {
+                "label": "Cloudflare Pages",
+                "href": "#",
+                "rel": "served"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "repos",
+      "n": "05",
+      "title": "Repository cards",
+      "what": "every repo incl. private: head, time, branch, visibility, access, rights",
+      "file": "repos.html",
+      "robbed": "AM registry card grid; his 16:36 \"even if they private\"",
+      "sample": [
+        {
+          "repo": "sisodias/great-library-of-siso",
+          "url": "https://github.com/sisodias/great-library-of-siso",
+          "branch": "main",
+          "head": "0aaac7a",
+          "head_at": "6 Sep 13:42",
+          "private": false,
+          "what": "The Library site build and registry."
+        },
+        {
+          "repo": "sisodias/halocrm-mirror",
+          "private": true,
+          "branch": "main",
+          "head": "37 commits",
+          "head_at": "5 Sep",
+          "access": "client account",
+          "rights": "client",
+          "what": "Private mirror; dated activity only, never payload."
+        }
+      ]
+    },
+    {
+      "id": "sauce",
+      "n": "06",
+      "title": "Sauce cards",
+      "what": "3–7 genuinely useful assets, examples, datasets or receipts",
+      "file": "sauce.html",
+      "robbed": "AM resource room card grid (site/index.html:403-416)",
+      "sample": [
+        {
+          "kind": "dataset",
+          "title": "catalog.json",
+          "href": "https://great-library-of-siso.pages.dev/catalog.json",
+          "what": "47 Works, 27 repos, 86 releases as machine data.",
+          "proof": "HTTP 200 · 6 Sep",
+          "tone": "research"
+        },
+        {
+          "kind": "receipt",
+          "title": "J2 acceptance.json",
+          "href": "#",
+          "what": "Two arms, 12 holdout checks each, both pass.",
+          "proof": "domains/compute/runs/2026-09-06-j2/acceptance.json",
+          "tone": "research"
+        },
+        {
+          "kind": "play",
+          "title": "P1 publish",
+          "href": "#",
+          "what": "Publish a static dir to Cloudflare Pages with an exact readback.",
+          "proof": "skills/publish v0.1.2",
+          "tone": "agents"
+        }
+      ]
+    },
+    {
+      "id": "contents",
+      "n": "07",
+      "title": "Contents + procedure",
+      "what": "capability list with states, and the ordered flow steps",
+      "file": "contents.html",
+      "robbed": "AM flow / process steps (blueprint .flow-step; system-map/index.html:93-104)",
+      "sample": {
+        "items": [
+          {
+            "label": "S1 · CRM rail on every route",
+            "what": "verification: [ collapses on all three sites",
+            "state": "partial",
+            "tone": "warn"
+          },
+          {
+            "label": "P1 · publish play",
+            "what": "Hub 0.1.2",
+            "state": "landed",
+            "tone": "now"
+          },
+          {
+            "label": "L2 · 14 GQ pages",
+            "what": "fall through to root today",
+            "state": "left",
+            "tone": "blocked"
+          }
+        ],
+        "steps": [
+          {
+            "label": "Register",
+            "what": "gls add work"
+          },
+          {
+            "label": "Build",
+            "what": "src/build.mjs"
+          },
+          {
+            "label": "Verify",
+            "what": "npm run verify"
+          },
+          {
+            "label": "Publish",
+            "what": "publish play, exact readback"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quickstart",
+      "n": "08",
+      "title": "Agent quick-start",
+      "what": "entry file, actual commands, owner, verification line, machine context",
+      "file": "quickstart.html",
+      "robbed": "library-ui-spec §6",
+      "sample": {
+        "entry": {
+          "path": ".agents/PAGE.md"
+        },
+        "owner": {
+          "name": "LIBRARY-ZERO",
+          "last": "6 Sep 13:42"
+        },
+        "context_url": "https://great-library-of-siso.pages.dev/works/siso-foundry/index.json",
+        "verification": "Open /works/siso-foundry/ and see eight sections in order.",
+        "commands": [
+          "npm run verify",
+          "node bin/gls add work --file work.json --reviewed-public --dry-run"
+        ]
+      }
+    },
+    {
+      "id": "evidence",
+      "n": "09",
+      "title": "Evidence / limits / version",
+      "what": "facts with receipts vs proposals, visibly distinct; limits; version",
+      "file": "evidence.html",
+      "robbed": "AM evidence ladder (system-map root) · reader file chips (lines · bytes · sha256)",
+      "sample": {
+        "facts": [
+          {
+            "claim": "Ratio medium/xhigh input tokens 1.00× (122,427 vs 122,327).",
+            "receipt": "domains/compute/runs/2026-09-06-j2/acceptance.json",
+            "at": "6 Sep"
+          }
+        ],
+        "proposals": [
+          {
+            "claim": "xhigh costs about four times medium.",
+            "why": "claim from a chart; not supplied; effort applied was null in both rollouts"
+          }
+        ],
+        "limits": [
+          "One brief, one run per arm."
+        ],
+        "version": {
+          "label": "j2.json · measured_with_limits",
+          "at": "2026-09-06"
+        }
+      }
+    },
+    {
+      "id": "activity",
+      "n": "10",
+      "title": "Activity strip",
+      "what": "observation date and coverage, a density strip, the dated lines",
+      "file": "activity.html",
+      "robbed": "AM freshness lane card · research-os CURRENT POSTURE",
+      "sample": {
+        "observed_at": "6 Sep 19:14 UTC+07",
+        "coverage": "OWNERS.md last 48 h",
+        "days": [
+          {
+            "label": "5 Sep",
+            "w": 0.6,
+            "title": "5 Sep · 41 lines"
+          },
+          {
+            "label": "6 Sep",
+            "w": 1,
+            "title": "6 Sep · 63 lines"
+          }
+        ],
+        "items": [
+          {
+            "at": "2026-09-06 18:48",
+            "who": "AGENT-ZERO",
+            "what": "Spawned TEMPLATE-BANK-ZERO",
+            "tone": "agents"
+          },
+          {
+            "at": "2026-09-06 17:11",
+            "who": "AGENT-ZERO",
+            "what": "CRM GroupedRail ported to the atlas (v1)",
+            "tone": "agents"
+          }
+        ]
+      }
+    },
+    {
+      "id": "catalogue",
+      "n": "11",
+      "title": "Searchable catalogue",
+      "what": "cards with kicker, summary, state; text filter and select filters; visible count; truthful empty state",
+      "file": "catalogue.html · catalogue.js",
+      "robbed": "AM searchable track filter (blueprint/index.html:357-400) · registry card grid (system-map/registry.css:14-20)",
+      "sample": {
+        "id": "fixture",
+        "filters": [
+          {
+            "key": "type",
+            "label": "type",
+            "values": [
+              "research_question",
+              "project"
+            ]
+          }
+        ],
+        "items": [
+          {
+            "id": "gq-011",
+            "kicker": "research_question <span class=\"sep\">·</span> active",
+            "title": "GQ-011 · Astra, Luna and delegation",
+            "summary": "How do they yield more accepted work?",
+            "href": "#",
+            "status": "active",
+            "tone": "research",
+            "tags": [
+              {
+                "key": "type",
+                "value": "research_question"
+              }
+            ],
+            "search": "gq-011 astra luna delegation"
+          },
+          {
+            "id": "library",
+            "kicker": "project <span class=\"sep\">·</span> active",
+            "title": "Great Library of SISO",
+            "summary": "47 Works, 86 Releases, 94 pages.",
+            "href": "#",
+            "status": "active",
+            "tone": "projects",
+            "tags": [
+              {
+                "key": "type",
+                "value": "project"
+              }
+            ],
+            "search": "library works releases"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related",
+      "n": "12",
+      "title": "Related work",
+      "what": "next reading, typed; never filler",
+      "file": "related.html",
+      "robbed": "—",
+      "sample": [
+        {
+          "title": "U4 · Project one pager",
+          "href": "/t/U4/",
+          "type": "hub",
+          "tone": "projects",
+          "why": "every page is one hop from it"
+        },
+        {
+          "title": "U5 · God Question",
+          "href": "/t/U5/",
+          "type": "research",
+          "tone": "research"
+        }
+      ]
+    },
+    {
+      "id": "atoms",
+      "n": "+",
+      "title": "Atoms the parts share",
+      "what": "chips · metrics · words · timeline · section head",
+      "file": "chips.html · metrics.html · words.html · timeline.html · section.html",
+      "robbed": "AM status chips · metric strip; his timeline picks (21st.dev nyxbui/timeline, great-ui revision timeline) for the lane idea",
+      "sample": {
+        "chips": [
+          {
+            "label": "live",
+            "tone": "now",
+            "dot": true
+          },
+          {
+            "label": "partial",
+            "tone": "warn"
+          },
+          {
+            "label": "blocked",
+            "tone": "blocked"
+          },
+          {
+            "label": "private",
+            "tone": "clients",
+            "icon": "lock"
+          }
+        ],
+        "metrics": [
+          {
+            "value": 47,
+            "label": "Works",
+            "tone": "projects"
+          },
+          {
+            "value": 86,
+            "label": "Releases",
+            "tone": "research"
+          },
+          {
+            "value": 22,
+            "label": "God Questions",
+            "tone": "research"
+          },
+          {
+            "value": 27,
+            "label": "repos · 23 public / 4 private",
+            "tone": "clients"
+          }
+        ],
+        "words": [
+          {
+            "text": "agents should be ephemeral … the projects are forever",
+            "who": "Shaan",
+            "at": "6 Sep 16:50"
+          }
+        ],
+        "timeline": {
+          "from": "2026-09-05 12:00",
+          "to": "2026-09-06 19:00",
+          "lanes": [
+            {
+              "id": "commits",
+              "label": "commits",
+              "tone": "projects"
+            },
+            {
+              "id": "seats",
+              "label": "seats",
+              "tone": "agents"
+            },
+            {
+              "id": "decisions",
+              "label": "decisions",
+              "tone": "research"
+            },
+            {
+              "id": "words",
+              "label": "his words",
+              "tone": "clients"
+            }
+          ],
+          "events": [
+            {
+              "at": "2026-09-05 20:11",
+              "lane": "commits",
+              "label": "siso-shell adea886"
+            },
+            {
+              "at": "2026-09-06 16:31",
+              "lane": "seats",
+              "label": "AGENT-ZERO born"
+            },
+            {
+              "at": "2026-09-06 18:47",
+              "lane": "seats",
+              "label": "TEMPLATE-BANK-ZERO born"
+            },
+            {
+              "at": "2026-09-06 18:32",
+              "lane": "decisions",
+              "label": "D-30 Haiku sub-agents"
+            },
+            {
+              "at": "2026-09-06 18:47",
+              "lane": "decisions",
+              "label": "D-31…D-35"
+            },
+            {
+              "at": "2026-09-06 16:50",
+              "lane": "words",
+              "label": "not what I asked; CRM side nav"
+            },
+            {
+              "at": "2026-09-06 18:19",
+              "lane": "words",
+              "label": "templates, reasoning, side nav, order"
+            },
+            {
+              "at": "2026-09-06 18:41",
+              "lane": "words",
+              "label": "build the damn thing"
+            },
+            {
+              "at": "2026-09-05 23:50",
+              "lane": "commits",
+              "label": "auto backup",
+              "auto": true
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "empty": {
+    "repos": [],
+    "catalogue": {
+      "id": "empty",
+      "filters": [],
+      "items": [],
+      "empty": "0 records; nothing registered yet. Register with <code>node bin/gls add work --file … --reviewed-public</code>."
+    }
+  }
+}

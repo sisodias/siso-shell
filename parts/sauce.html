@@ -1,0 +1,7 @@
+{{!-- 06 · sauce — 3–7 genuinely useful assets, examples, datasets or receipts. Never filler.
+     Data: [{kind,title,href,what,proof,tone}] --}}
+{{#if .}}
+<div class="sauce grid grid-3">
+{{#each .}}<a class="card card--link tone-{{tone}}" href="{{href}}"><span class="sauce__kind">{{kind}}</span><span class="sauce__title">{{title}}</span><span class="sauce__what">{{what}}</span>{{#if proof}}<span class="sauce__proof">{{proof}}</span>{{/if}}</a>{{/each}}
+</div>
+{{else}}<div class="empty">No assets registered. Add real ones with <code>gls</code>; this section never shows placeholders.</div>{{/if}}

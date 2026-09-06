@@ -1,0 +1,63 @@
+{{!-- U23/detail — one template's page: reasoning · content contract · sections · what to rob (AM + 21st.dev) · data · done-when · the rendered example. --}}
+{{> heading heading}}
+
+{{#if example_href}}
+<section class="siso-section" id="example">
+  {{> section sections.example}}
+  <div class="card" style="padding:0;overflow:hidden">
+    <iframe src="{{example_href}}" title="Rendered example of {{id}}" loading="lazy" style="display:block;width:100%;height:640px;border:0;background:var(--crm-color-canvas)"></iframe>
+  </div>
+  <p class="small muted" style="margin-top:var(--crm-space-2)">Open it full size: <a href="{{example_href}}"><code>{{example_href}}</code></a>{{#if example_data}} · data: <a href="{{example_data}}"><code>example.json</code></a>{{/if}}{{#if schema_href}} · <a href="{{schema_href}}"><code>schema.json</code></a>{{/if}}</p>
+</section>
+{{/if}}
+
+<section class="siso-section" id="why">
+  {{> section sections.why}}
+  {{> reasoning reasoning}}
+</section>
+
+<section class="siso-section" id="contract">
+  {{> section sections.contract}}
+  <div class="grid grid-3">{{#each contract}}<div class="card{{#if value}} card--strip{{/if}}"><span class="kicker{{#unless value}} dim{{/unless}}">{{@n}} · {{key}}</span><p class="small" style="margin-top:4px">{{#if value}}{{value}}{{else}}<span class="faint">—</span>{{/if}}</p></div>{{/each}}</div>
+</section>
+
+<section class="siso-section" id="sections">
+  {{> section sections.sections}}
+  <div class="grid grid-2">
+    <div><ol class="contents__list">{{#each page_sections}}<li><span class="n">{{@n}}</span><div><b>{{.}}</b></div></li>{{/each}}</ol></div>
+    <div>
+      <dl class="kv">
+        <dt>Lives at</dt><dd>{{{where}}}</dd>
+        <dt>Instances</dt><dd>{{instances}}</dd>
+        <dt>Count</dt><dd>{{count}}</dd>
+        <dt>Renders</dt><dd>{{{source_data}}}</dd>
+        <dt>Theme</dt><dd>{{theme}}</dd>
+        <dt>Rail</dt><dd>{{rail}}</dd>
+        <dt>Needs</dt><dd>{{#each needs}}<a class="chip tone-muted" href="/t/{{.}}/">{{.}}</a> {{else}}<span class="faint">—</span>{{/each}}</dd>
+        <dt>Links out</dt><dd>{{#each links_out}}<span class="chip tone-muted">{{.}}</span> {{else}}—{{/each}}</dd>
+        <dt>Links in</dt><dd>{{#each links_in}}<span class="chip tone-muted">{{.}}</span> {{else}}—{{/each}}</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="siso-section" id="rob">
+  {{> section sections.rob}}
+  <h3 class="kicker dim" style="margin-bottom:var(--crm-space-2)">From the Action Model sites (built from real data)</h3>
+  {{#if rob_am}}<div class="grid grid-3">{{#each rob_am}}<figure class="card" style="margin:0;padding:0;overflow:hidden">{{#if shot}}<a href="{{shot}}"><img src="{{shot}}" alt="" loading="lazy" style="display:block;width:100%;height:auto;border-bottom:1px solid var(--crm-color-line)"></a>{{/if}}<figcaption class="small" style="padding:var(--crm-space-2-5) var(--crm-space-3)">{{text}}</figcaption></figure>{{/each}}</div>{{else}}<div class="empty">No Action Model pattern named for this family.</div>{{/if}}
+  {{#if rob_components}}<h3 class="kicker dim" style="margin:var(--crm-space-4) 0 var(--crm-space-2)">Components, exact locations (Luna inventory)</h3>
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Component</th><th>Where</th><th>Renders</th><th>How</th><th>Quality</th></tr></thead><tbody>{{#each rob_components}}<tr><td><b>{{name}}</b></td><td class="mono small muted">{{where}}</td><td class="small">{{data}}</td><td class="small">{{how}}</td><td class="small">{{quality}}</td></tr>{{/each}}</tbody></table></div>{{/if}}
+  <h3 class="kicker dim" style="margin:var(--crm-space-4) 0 var(--crm-space-2)">From the 21st.dev bank (his picks, his notes)</h3>
+  {{#if rob_bank}}<div class="grid grid-2">{{#each rob_bank}}<div class="card card--strip tone-clients"><b><a href="{{url}}">{{name}}</a></b>{{#if his_note}}<blockquote class="quote quote--sm" style="margin-top:6px;padding:4px 12px;font-size:var(--crm-text-sm)">{{his_note}}<small>Shaan · ui-bank note</small></blockquote>{{/if}}{{#if why}}<p class="small muted" style="margin-top:6px">{{why}}</p>{{/if}}</div>{{/each}}</div>{{else}}<div class="empty">No 21st.dev pick for this family.</div>{{/if}}
+  {{#if bank_gaps}}<p class="small muted" style="margin-top:var(--crm-space-3)"><b>Bank gaps:</b> {{#each bank_gaps}}{{.}}{{#unless @last}} · {{/unless}}{{/each}}</p>{{/if}}
+</section>
+
+<section class="siso-section" id="done">
+  {{> section sections.done}}
+  {{> evidence evidence}}
+</section>
+
+<section class="siso-section" id="related">
+  {{> section sections.related}}
+  {{> related related}}
+</section>

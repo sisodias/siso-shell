@@ -1,0 +1,6 @@
+{{!-- 12 · related — related work / next reading; no recommendation filler. Data: [{title,href,why,type,tone}] --}}
+{{#if .}}
+<div class="related">
+{{#each .}}<a class="card card--link card--strip tone-{{tone}}" href="{{href}}">{{#if type}}<span class="kicker">{{type}}</span>{{/if}}<b>{{title}}</b>{{#if why}}<span>{{why}}</span>{{/if}}</a>{{/each}}
+</div>
+{{else}}<div class="empty">Nothing related is linked from this record.</div>{{/if}}

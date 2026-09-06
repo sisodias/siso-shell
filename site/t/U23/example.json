@@ -1,0 +1,966 @@
+{
+  "meta": {
+    "title": "SISO templates · the bank",
+    "description": "Every template the Great Library and every SISO front door composes, with its reasoning, content contract, parts and rendered example.",
+    "stream": "projects",
+    "crumb": [
+      {
+        "label": "SISO",
+        "href": "/"
+      },
+      {
+        "label": "Templates"
+      }
+    ],
+    "actions": [
+      {
+        "label": "Repo",
+        "href": "https://github.com/sisodias/siso-shell",
+        "icon": "git-branch",
+        "external": true
+      },
+      {
+        "label": "How to reuse",
+        "href": "/how/",
+        "icon": "terminal"
+      }
+    ],
+    "source": "plan/templates.json"
+  },
+  "heading": {
+    "kicker": "siso-shell <span class=\"sep\">·</span> template bank <span class=\"sep\">·</span> <span class=\"dim\">24 families</span>",
+    "title": "Templates",
+    "subtitle": "Every page family the Great Library and every SISO front door needs. Click one: why it exists, the twelve things it carries, what to rob, the data it renders, and the rendered example in the CRM shell.",
+    "badges": [
+      {
+        "label": "3 of 24 built",
+        "tone": "warn",
+        "dot": true
+      },
+      {
+        "label": "shell = SISO CRM GroupedRail",
+        "tone": "projects"
+      },
+      {
+        "label": "no framework",
+        "tone": "muted"
+      },
+      {
+        "label": "ISC lucide · CRM tokens verbatim",
+        "tone": "muted"
+      }
+    ],
+    "status": {
+      "kicker": "Build order",
+      "value": "3 landed · 21 to go",
+      "note": "Shell first because every page sits in it. Parts second so nothing drifts. Gallery third so he judges each template as it lands. Then the project one pager, the God Question with its compute run, the Work page, Agent Zero, the landing, and the records.",
+      "facts": [
+        {
+          "k": "source",
+          "v": "<code>plan/templates.json</code>"
+        },
+        {
+          "k": "engine",
+          "v": "<code>bin/compose</code>"
+        },
+        {
+          "k": "issues",
+          "v": "<a href=\"https://github.com/sisodias/siso-agent-zero-protocol/issues?q=label%3Atemplate\">#41–#64</a>"
+        }
+      ]
+    }
+  },
+  "sections": {
+    "words": {
+      "n": "00",
+      "title": "His words",
+      "sub": "verbatim, dated; the reason this bank exists"
+    },
+    "counts": {
+      "n": "01",
+      "title": "Counts"
+    },
+    "order": {
+      "n": "02",
+      "title": "The 24 templates, in build order",
+      "sub": "click a card for its spec and rendered example"
+    },
+    "contract": {
+      "n": "03",
+      "title": "The content contract",
+      "sub": "his twelve, 18:19: what every page carries"
+    },
+    "parts": {
+      "n": "04",
+      "title": "The parts every family composes",
+      "sub": "library-ui-spec §6 · built once in parts/"
+    },
+    "use": {
+      "n": "05",
+      "title": "Reuse it"
+    }
+  },
+  "words": [
+    {
+      "text": "i'd want to see all of the templates and then from those templates i can like click on it to see something you know click on the page to actually see the page template and the component or something like that because it's more about like what information should actually go on each page",
+      "who": "Shaan",
+      "at": "6 Sep 18:19",
+      "href": "https://github.com/sisodias/siso-agent-zero-protocol"
+    },
+    {
+      "text": "we also need to put reasoning in each of these templates because like right now it's quite simple",
+      "who": "Shaan",
+      "at": "6 Sep 18:19"
+    },
+    {
+      "text": "look at the size of crm one it's just so much nicer okay look at the size of crm and you'll understand that's the exact side map that i want like sizing fonts everything spacing the way it all fits together. And I click on certain shit and it disappears now. Templated page on the side now doesn't fully wire up.",
+      "who": "Shaan",
+      "at": "6 Sep 18:41"
+    },
+    {
+      "text": "can you just go and build the damn thing? In a nice templated way so that all agents can reuse it in whatever ways It's needed and it becomes like a great library a size or template bank or whatever connected up to the repo",
+      "who": "Shaan",
+      "at": "6 Sep 18:41"
+    },
+    {
+      "text": "if you look around the action model we've made some really nice ui's for them like this like showing stuff ui like to show the project and display data like you should look through all of that and the ui hubs and all of this stuff there's a bunch of components and stuff that you can rob from there in ways that we've already done it from real data",
+      "who": "Shaan",
+      "at": "6 Sep 18:22"
+    }
+  ],
+  "metrics": [
+    {
+      "value": 24,
+      "label": "template families",
+      "tone": "projects",
+      "href": "#order"
+    },
+    {
+      "value": 3,
+      "label": "built and published",
+      "tone": "warn",
+      "href": "/?status=built#order"
+    },
+    {
+      "value": 12,
+      "label": "parts (library-ui-spec §6)",
+      "tone": "projects",
+      "href": "/t/U13/"
+    },
+    {
+      "value": 12,
+      "label": "content-contract slots",
+      "tone": "muted",
+      "href": "#contract"
+    },
+    {
+      "value": 33,
+      "label": "Action Model components inventoried",
+      "tone": "clients",
+      "href": "/t/U4/#rob",
+      "title": "ledger/templates-2026-09-06/action-model-ui-inventory.json"
+    },
+    {
+      "value": 84,
+      "label": "21st.dev picks with his notes",
+      "tone": "clients",
+      "href": "/t/U0/#rob",
+      "title": "ledger/templates-2026-09-06/bank-picks-per-family.json"
+    }
+  ],
+  "order_note": "Order from <code>plan/templates.json</code>: <a href=\"/t/U0/\">U0</a> → <a href=\"/t/U13/\">U13</a> → <a href=\"/t/U23/\">U23</a> → <a href=\"/t/U4/\">U4</a> → <a href=\"/t/U5/\">U5</a> → <a href=\"/t/U19/\">U19</a> → <a href=\"/t/U3/\">U3</a> → <a href=\"/t/U9/\">U9</a> → <a href=\"/t/U1/\">U1</a> → <a href=\"/t/U18/\">U18</a> → <a href=\"/t/U2/\">U2</a> → <a href=\"/t/U16/\">U16</a> → <a href=\"/t/U17/\">U17</a> → <a href=\"/t/U21/\">U21</a> → <a href=\"/t/U8/\">U8</a> → <a href=\"/t/U14/\">U14</a> → <a href=\"/t/U15/\">U15</a> → <a href=\"/t/U7/\">U7</a> → <a href=\"/t/U11/\">U11</a> → <a href=\"/t/U6/\">U6</a> → <a href=\"/t/U10/\">U10</a> → <a href=\"/t/U12/\">U12</a> → <a href=\"/t/U20/\">U20</a> → <a href=\"/t/U22/\">U22</a>.",
+  "catalogue": {
+    "id": "templates",
+    "filters": [
+      {
+        "key": "status",
+        "label": "status",
+        "values": [
+          "built",
+          "spec"
+        ]
+      },
+      {
+        "key": "host",
+        "label": "host",
+        "values": [
+          "fable",
+          "fable-with-shaan",
+          "luna",
+          "fable-spec-then-luna",
+          "luna-then-fable"
+        ]
+      },
+      {
+        "key": "stream",
+        "label": "stream",
+        "values": [
+          "projects",
+          "research",
+          "agents",
+          "clients",
+          "now"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "U0",
+        "kicker": "U0 <span class=\"sep\">·</span> order 1 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Shell",
+        "summary": "Shell: CRM GroupedRail + SISO tokens (the one shell) <span class=\"faint\">· 1 shell · 18 Library routes · 24 atlas pages · 10 front doors</span>",
+        "href": "/t/U0/",
+        "status": "built",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "status",
+            "value": "built"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "projects"
+          }
+        ],
+        "search": "u0 shell: crm groupedrail + siso tokens (the one shell) fable every page family below brand block groups: now / plan / readings / outside (atlas) · library / research / agents / projects / estate (library) compact icons search (cmd-k) collapse handle current-page marker"
+      },
+      {
+        "id": "U13",
+        "kicker": "U13 <span class=\"sep\">·</span> order 2 <span class=\"sep\">·</span> <span class=\"dim\">fable-with-shaan</span>",
+        "title": "Parts",
+        "summary": "Reusable modules (the parts every family composes) <span class=\"faint\">· 12</span>",
+        "href": "/t/U13/",
+        "status": "built",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "status",
+            "value": "built"
+          },
+          {
+            "key": "host",
+            "value": "fable-with-shaan"
+          },
+          {
+            "key": "stream",
+            "value": "projects"
+          }
+        ],
+        "search": "u13 reusable modules (the parts every family composes) fable-with-shaan 12 modules from library-ui-spec §6 one html/css partial each dark tokens no framework a fixture page showing all 12 truthful empty state + a real 404 (gaps f-3)"
+      },
+      {
+        "id": "U23",
+        "kicker": "U23 <span class=\"sep\">·</span> order 2 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Gallery",
+        "summary": "Template gallery <span class=\"faint\">· 24 templates (this map)</span>",
+        "href": "/t/U23/",
+        "status": "built",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "status",
+            "value": "built"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "projects"
+          }
+        ],
+        "search": "u23 template gallery fable one page + one detail page per template card per template detail: reasoning block · content contract · wireframe · components to rob (with screenshots) · example today · verification · issue"
+      },
+      {
+        "id": "U4",
+        "kicker": "U4 <span class=\"sep\">·</span> order 3 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Project one pager",
+        "summary": "Project one pager (bigger; the hub that links to the rest) <span class=\"faint\">· 10 projects: Library, Foundry, Internal+Agent Base, Knowledge/siso-source, Plays/hub, GQ+compute, Agent Zero (agency) · Oracle, HALO, BykonzYard, Action Model (client)</span>",
+        "href": "/t/U4/",
+        "status": "spec",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "projects"
+          }
+        ],
+        "search": "u4 project one pager (bigger; the hub that links to the rest) fable one per project, agency and client what it is, in his words repos incl. private (head, time, visibility) live urls with codes owner seats + latest writeback what landed (verified) what is left → the module rows with verification lines links: the works, gqs and industries this project touches the cloudflare pages it leads to"
+      },
+      {
+        "id": "U5",
+        "kicker": "U5 <span class=\"sep\">·</span> order 4 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "God Question",
+        "summary": "God Question page <span class=\"faint\">· 22 (GOD-QUESTIONS.md; 18 registered as Works; 14 GQ URLs fall through to root)</span>",
+        "href": "/t/U5/",
+        "status": "spec",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "research"
+          }
+        ],
+        "search": "u5 god question page fable one per gq the question + decision target research state + counterexample evidence map with dated receipts (j2 ratio, e1 windows…) subquestions → compute modules allocated / not expected answer package who is on it + host (webui/luna/codex/shaan/hold)"
+      },
+      {
+        "id": "U19",
+        "kicker": "U19 <span class=\"sep\">·</span> order 5 <span class=\"sep\">·</span> <span class=\"dim\">luna</span>",
+        "title": "Compute run",
+        "summary": "Compute run page <span class=\"faint\">· runs: 2026-09-05-gq-compute, 2026-09-06-j2 (medium vs xhigh), e1 windows ×3; receipts in domains/compute/runs/</span>",
+        "href": "/t/U19/",
+        "status": "spec",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "luna"
+          },
+          {
+            "key": "stream",
+            "value": "research"
+          }
+        ],
+        "search": "u19 compute run page luna one per measured run preregistration (what we expected) arms + effort applied tokens in/out per arm, ratio with n acceptance verdict runtime audit what it changes (decision)"
+      },
+      {
+        "id": "U3",
+        "kicker": "U3 <span class=\"sep\">·</span> order 6 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Work",
+        "summary": "Library module (standard Work) page <span class=\"faint\">· 47 Works: 18 research_question · 8 knowledge_system · 4 bundle · 3 project · 3 tool · 2 section · 2 agent_system · 2 capability_pack · 2 playbook · 2 application · 1 library</span>",
+        "href": "/t/U3/",
+        "status": "spec",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "projects"
+          }
+        ],
+        "search": "u3 library module (standard work) page fable one per work, by category kicker: section/type/maturity title + why it matters (authored) repo + satellites cards with public/private/rights sauce: 3–7 real assets contents / capabilities agent quick-start: entry file, commands, owner, verification line evidence / limits / version related work"
+      },
+      {
+        "id": "U9",
+        "kicker": "U9 <span class=\"sep\">·</span> order 7 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Agent Zero",
+        "summary": "Agent Zero page (his concepts + the fleet, on the Library) <span class=\"faint\">· 1 (+ the 24 atlas pages it fronts)</span>",
+        "href": "/t/U9/",
+        "status": "spec",
+        "tone": "agents",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "agents"
+          }
+        ],
+        "search": "u9 agent zero page (his concepts + the fleet, on the library) fable one the bet + the two axes his concepts (source/ index, dated, verbatim) projects → u4 pages register: allocated / not allocated / done, by host, with verification lines decisions d-1…d-29 fleet now (owners, nodes) gaps"
+      },
+      {
+        "id": "U1",
+        "kicker": "U1 <span class=\"sep\">·</span> order 8 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Library landing",
+        "summary": "Library landing (root front door) <span class=\"faint\">· 1</span>",
+        "href": "/t/U1/",
+        "status": "spec",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "projects"
+          }
+        ],
+        "search": "u1 library landing (root front door) fable one page purpose in his words the loop: clients fund compute → owners build → packs enter the library → people+repos feed foundry → questions turn evidence into breakthroughs section counts from catalog.json featured: latest works, latest gq, latest project one pagers search"
+      },
+      {
+        "id": "U18",
+        "kicker": "U18 <span class=\"sep\">·</span> order 9 <span class=\"sep\">·</span> <span class=\"dim\">luna</span>",
+        "title": "Source",
+        "summary": "Source page (his words) <span class=\"faint\">· 44 files, 111,930 words in 00_AGENT_ZERO/source/ + siso-source partitions (August 10,503, September 4,144 occurrences)</span>",
+        "href": "/t/U18/",
+        "status": "spec",
+        "tone": "agents",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "luna"
+          },
+          {
+            "key": "stream",
+            "value": "agents"
+          }
+        ],
+        "search": "u18 source page (his words) luna one per capture the words, verbatim, dated who it was said to what it caused (decisions, briefs, pages) the offset note (label vs transcript, gaps f-8)"
+      },
+      {
+        "id": "U2",
+        "kicker": "U2 <span class=\"sep\">·</span> order 9 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Catalogue",
+        "summary": "Section / catalogue <span class=\"faint\">· 9 sections</span>",
+        "href": "/t/U2/",
+        "status": "spec",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "projects"
+          }
+        ],
+        "search": "u2 section / catalogue fable works, releases, snapshots, research, agents, industries, estate, promotion, intelligence section purpose + scope real counts filter by type / maturity / section cards with kicker, summary, repo state truthful empty state"
+      },
+      {
+        "id": "U16",
+        "kicker": "U16 <span class=\"sep\">·</span> order 10 <span class=\"sep\">·</span> <span class=\"dim\">luna</span>",
+        "title": "Decision",
+        "summary": "Decision page <span class=\"faint\">· 29 (plan/decisions.json D-1…D-29) + harness-lab DECISIONS.md</span>",
+        "href": "/t/U16/",
+        "status": "spec",
+        "tone": "agents",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "luna"
+          },
+          {
+            "key": "stream",
+            "value": "agents"
+          }
+        ],
+        "search": "u16 decision page luna one per decision the decision in one line his words (verbatim) what it changed (files, modules) what reverses it superseded by"
+      },
+      {
+        "id": "U17",
+        "kicker": "U17 <span class=\"sep\">·</span> order 11 <span class=\"sep\">·</span> <span class=\"dim\">luna</span>",
+        "title": "Agent seat",
+        "summary": "Agent seat page <span class=\"faint\">· ~30 seats 5–6 Sep (12 closed Astra seats + Fable heads + Oracle lane + Mini seats); ledger/OWNERS.md lines</span>",
+        "href": "/t/U17/",
+        "status": "spec",
+        "tone": "agents",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "luna"
+          },
+          {
+            "key": "stream",
+            "value": "agents"
+          }
+        ],
+        "search": "u17 agent seat page luna one per seat that ever ran born: date, brief, node, model, harness what it landed (verified) what it cost (uncached in / out / reasoning) its writebacks its rollout (path, size, private) closed: how, handoff"
+      },
+      {
+        "id": "U21",
+        "kicker": "U21 <span class=\"sep\">·</span> order 11 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Timeline",
+        "summary": "Timeline page <span class=\"faint\">· 10 projects + Agent Zero; axis = commits, seats born/closed, decisions, docs, source captures, writebacks</span>",
+        "href": "/t/U21/",
+        "status": "spec",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "projects"
+          }
+        ],
+        "search": "u21 timeline page fable one per project + one global one axis, day ticks lanes: commits · seats · decisions · docs · his words filters by lane hover = the record"
+      },
+      {
+        "id": "U8",
+        "kicker": "U8 <span class=\"sep\">·</span> order 12 <span class=\"sep\">·</span> <span class=\"dim\">fable-spec-then-luna</span>",
+        "title": "Industry",
+        "summary": "Industry detail / value research <span class=\"faint\">· 17 records (siso-foundry intelligence/agency/industries), law-firm pilot live</span>",
+        "href": "/t/U8/",
+        "status": "spec",
+        "tone": "clients",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable-spec-then-luna"
+          },
+          {
+            "key": "stream",
+            "value": "clients"
+          }
+        ],
+        "search": "u8 industry detail / value research fable-spec-then-luna one per industry process / workflow map current marketed capabilities candidate modules siso projects that apply the offer value inputs + rank (unmeasured stays unmeasured) evidence gaps"
+      },
+      {
+        "id": "U14",
+        "kicker": "U14 <span class=\"sep\">·</span> order 13 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Person",
+        "summary": "Person page <span class=\"faint\">· 3 clients (Camron · ofm, Fahmy · bykonz, Cena · actionmodel) + the People Graph programme</span>",
+        "href": "/t/U14/",
+        "status": "spec",
+        "tone": "clients",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "clients"
+          }
+        ],
+        "search": "u14 person page fable one per client, collaborator, person in the graph who, in one line relationship + since projects + repos what they said (private, dated) what we owe / they owe activity"
+      },
+      {
+        "id": "U15",
+        "kicker": "U15 <span class=\"sep\">·</span> order 14 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Client account",
+        "summary": "Client account page <span class=\"faint\">· 3 accounts → 5 client projects (ofm: Oracle, HALO · bykonz: BykonzYard · actionmodel: Actionist)</span>",
+        "href": "/t/U15/",
+        "status": "spec",
+        "tone": "clients",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "clients"
+          }
+        ],
+        "search": "u15 client account page fable one per client account (the account repo over its project repos) account in one line projects (u4 cards) repos incl. private money + deliverables (private) people timeline"
+      },
+      {
+        "id": "U7",
+        "kicker": "U7 <span class=\"sep\">·</span> order 15 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Doc reader",
+        "summary": "Research doc reader <span class=\"faint\">· 20 docs on the site (site/docs/*.html) + every research dossier Work</span>",
+        "href": "/t/U7/",
+        "status": "spec",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "research"
+          }
+        ],
+        "search": "u7 research doc reader fable one per document same shell + breadcrumb title, description, date, author seat table of contents rail the doc evidence / version panel related"
+      },
+      {
+        "id": "U11",
+        "kicker": "U11 <span class=\"sep\">·</span> order 16 <span class=\"sep\">·</span> <span class=\"dim\">fable</span>",
+        "title": "Private stub",
+        "summary": "Private Work stub (client + personal) <span class=\"faint\">· 4 private repos in catalog (27 total) + siso-source + oracle-source/sessions + halocrm-mirror + bykonz-scout-review + actionmodel-private</span>",
+        "href": "/t/U11/",
+        "status": "spec",
+        "tone": "clients",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "fable"
+          },
+          {
+            "key": "stream",
+            "value": "clients"
+          }
+        ],
+        "search": "u11 private work stub (client + personal) fable one per private repo / satellite public-safe purpose owner + relationship why it exists how access works the repo listed, marked private dated activity"
+      },
+      {
+        "id": "U6",
+        "kicker": "U6 <span class=\"sep\">·</span> order 17 <span class=\"sep\">·</span> <span class=\"dim\">luna-then-fable</span>",
+        "title": "Erdős question",
+        "summary": "Erdős question page <span class=\"faint\">· 4 (742, 647, 23, 848; SISO_Research/erdos, laptop lane frozen 30 Aug, Mini lane)</span>",
+        "href": "/t/U6/",
+        "status": "spec",
+        "tone": "research",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "luna-then-fable"
+          },
+          {
+            "key": "stream",
+            "value": "research"
+          }
+        ],
+        "search": "u6 erdős question page luna-then-fable one per problem in the erdős fleet problem statement approach + reductions certificate / replay status compute spent + host decision log what would close it"
+      },
+      {
+        "id": "U10",
+        "kicker": "U10 <span class=\"sep\">·</span> order 18 <span class=\"sep\">·</span> <span class=\"dim\">luna</span>",
+        "title": "Now",
+        "summary": "Now / activity <span class=\"faint\">· Library /now/, atlas NOW.html, per-project owners.log views</span>",
+        "href": "/t/U10/",
+        "status": "spec",
+        "tone": "now",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "luna"
+          },
+          {
+            "key": "stream",
+            "value": "now"
+          }
+        ],
+        "search": "u10 now / activity luna one per site + one per project dated owner/runtime observations task/outcome summaries repo activity coverage date who to message"
+      },
+      {
+        "id": "U12",
+        "kicker": "U12 <span class=\"sep\">·</span> order 19 <span class=\"sep\">·</span> <span class=\"dim\">luna</span>",
+        "title": "Release",
+        "summary": "Release / Snapshot / Assembly record <span class=\"faint\">· 86 releases · 40 snapshots · 2 assemblies · 8 source inventories</span>",
+        "href": "/t/U12/",
+        "status": "spec",
+        "tone": "projects",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "luna"
+          },
+          {
+            "key": "stream",
+            "value": "projects"
+          }
+        ],
+        "search": "u12 release / snapshot / assembly record luna one per pinned thing exact version + scope source locators evidence distribution + rights what it pins, linked to its work"
+      },
+      {
+        "id": "U20",
+        "kicker": "U20 <span class=\"sep\">·</span> order 20 <span class=\"sep\">·</span> <span class=\"dim\">luna</span>",
+        "title": "Play",
+        "summary": "Play / skill page <span class=\"faint\">· 8 plays (P1–P8) + 32 hub skills (siso-skills-hub)</span>",
+        "href": "/t/U20/",
+        "status": "spec",
+        "tone": "agents",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "luna"
+          },
+          {
+            "key": "stream",
+            "value": "agents"
+          }
+        ],
+        "search": "u20 play / skill page luna one per play and per hub skill what it does in one line the command where installed (harness × machine) with probe date used for real: receipts source hash"
+      },
+      {
+        "id": "U22",
+        "kicker": "U22 <span class=\"sep\">·</span> order 21 <span class=\"sep\">·</span> <span class=\"dim\">luna</span>",
+        "title": "Node",
+        "summary": "Estate / node page <span class=\"faint\">· 3 (laptop, Mac Mini, client VPS) + Cloudflare/Tailscale/WARP routes</span>",
+        "href": "/t/U22/",
+        "status": "spec",
+        "tone": "now",
+        "tags": [
+          {
+            "key": "status",
+            "value": "spec"
+          },
+          {
+            "key": "host",
+            "value": "luna"
+          },
+          {
+            "key": "stream",
+            "value": "now"
+          }
+        ],
+        "search": "u22 estate / node page luna one per node node: what runs there reachability probe, dated seats on it now disk / swap / budgets placement rule"
+      }
+    ]
+  },
+  "contract": [
+    {
+      "key": "title",
+      "what": "the record name"
+    },
+    {
+      "key": "subtitle",
+      "what": "kicker + one line: what it is, for whom"
+    },
+    {
+      "key": "paragraph",
+      "what": "in his words, dated"
+    },
+    {
+      "key": "mind_map",
+      "what": "link to everything it touches: repos, Works, questions, industries, people, nodes"
+    },
+    {
+      "key": "repos",
+      "what": "every repo incl. private: head, time, branch, visibility"
+    },
+    {
+      "key": "research",
+      "what": "the research it rests on and what each means here"
+    },
+    {
+      "key": "docs",
+      "what": "the docs it produced, dated"
+    },
+    {
+      "key": "progress",
+      "what": "landed / left with verification lines"
+    },
+    {
+      "key": "agents",
+      "what": "every seat that ran on it"
+    },
+    {
+      "key": "timeline",
+      "what": "commits + seats + decisions + docs on one axis"
+    },
+    {
+      "key": "docs_over_time",
+      "what": "docs plotted on that axis"
+    },
+    {
+      "key": "own_nav",
+      "what": "the page's own side nav: the 'On this page' group"
+    }
+  ],
+  "partsIndex": {
+    "items": [
+      {
+        "label": "Global shell",
+        "what": "the CRM GroupedRail: grouped navigation, search, collapse; the rail on this page",
+        "href": "/t/U13/#shell",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Heading",
+        "what": "breadcrumb · kicker · title · purpose · state badges · status panel",
+        "href": "/t/U13/#heading",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Reasoning block",
+        "what": "his words (source) vs the seat's reading, then the claim ceiling, data, privacy, empty state, agent entry",
+        "href": "/t/U13/#reasoning",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Map · typed relationship map + ecosystem loop",
+        "what": "the mind map: repos, Works, questions, industries, people, nodes as a graph, with its text equivalent; and the loop",
+        "href": "/t/U13/#map",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Repository cards",
+        "what": "every repo incl. private: head, time, branch, visibility, access, rights",
+        "href": "/t/U13/#repos",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Sauce cards",
+        "what": "3–7 genuinely useful assets, examples, datasets or receipts",
+        "href": "/t/U13/#sauce",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Contents + procedure",
+        "what": "capability list with states, and the ordered flow steps",
+        "href": "/t/U13/#contents",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Agent quick-start",
+        "what": "entry file, actual commands, owner, verification line, machine context",
+        "href": "/t/U13/#quickstart",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Evidence / limits / version",
+        "what": "facts with receipts vs proposals, visibly distinct; limits; version",
+        "href": "/t/U13/#evidence",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Activity strip",
+        "what": "observation date and coverage, a density strip, the dated lines",
+        "href": "/t/U13/#activity",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Searchable catalogue",
+        "what": "cards with kicker, summary, state; text filter and select filters; visible count; truthful empty state",
+        "href": "/t/U13/#catalogue",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Related work",
+        "what": "next reading, typed; never filler",
+        "href": "/t/U13/#related",
+        "state": "built",
+        "tone": "now"
+      },
+      {
+        "label": "Atoms the parts share",
+        "what": "chips · metrics · words · timeline · section head",
+        "href": "/t/U13/#atoms",
+        "state": "built",
+        "tone": "now"
+      }
+    ],
+    "steps": [
+      {
+        "label": "Pick a family",
+        "what": "templates/&lt;id&gt;/README.md says what it is for and what its JSON carries."
+      },
+      {
+        "label": "Write the JSON",
+        "what": "to schema.json, from real sources (catalog.json, projects.json, receipts). Never filler."
+      },
+      {
+        "label": "Compose",
+        "what": "<code>bin/compose U4 data.json --out page.html</code>"
+      },
+      {
+        "label": "Publish",
+        "what": "through the publish play; post the URL."
+      }
+    ]
+  },
+  "quickstart": {
+    "entry": {
+      "path": "siso-shell/README.md",
+      "href": "https://github.com/sisodias/siso-shell#readme"
+    },
+    "owner": {
+      "name": "TEMPLATE-BANK-ZERO",
+      "href": "/t/U9/"
+    },
+    "context_url": "https://siso-shell.pages.dev/templates.json",
+    "verification": "Open <a href=\"https://siso-shell.pages.dev/\">siso-shell.pages.dev</a> cold and see 24 cards; open <a href=\"/t/U4/\">/t/U4/</a> and see the project one pager rendered from projects.json inside the CRM rail.",
+    "commands": [
+      "git clone https://github.com/sisodias/siso-shell && cd siso-shell",
+      "bin/compose U4 templates/U4/example.json --out /tmp/u4.html",
+      "bin/compose U4 my-project.json --nav my-nav.json --base https://siso-shell.pages.dev --out site/index.html",
+      "node --test"
+    ]
+  }
+}

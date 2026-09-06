@@ -1,0 +1,12 @@
+{{!-- 05 · repos — repository and satellite cards with public/private/access/rights (his 16:36: "even if they private").
+     Data: [{repo,url,branch,head,head_at,private,access,rights,what,satellite,local}] --}}
+{{#if .}}
+<div class="grid grid-2">
+{{#each .}}<div class="card repo{{#if private}} card--strip tone-clients{{/if}}">
+  <div class="repo__name">{{icon git-branch}}{{#if url}}<a href="{{url}}">{{repo}}</a>{{else}}{{repo}}{{/if}}</div>
+  <div class="chips">{{#if private}}<span class="chip tone-clients">{{icon lock}}private</span>{{else}}<span class="chip tone-now">public</span>{{/if}}{{#if satellite}}<span class="chip tone-muted">satellite</span>{{/if}}{{#if access}}<span class="chip tone-muted">{{access}}</span>{{/if}}</div>
+  <div class="repo__meta">{{#if branch}}<span>branch <b>{{branch}}</b></span>{{/if}}{{#if head}}<span>head <b>{{head}}</b></span>{{/if}}{{#if head_at}}<span>{{head_at}}</span>{{/if}}{{#if rights}}<span>rights <b>{{rights}}</b></span>{{/if}}</div>
+  {{#if what}}<div class="repo__what">{{{what}}}</div>{{/if}}
+</div>{{/each}}
+</div>
+{{else}}<div class="empty">No repository registered. Register one: <code>node bin/gls add work --file … --reviewed-public</code></div>{{/if}}

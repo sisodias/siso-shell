@@ -1,0 +1,23 @@
+{{!-- /how/ — how any agent reuses the bank. --}}
+{{> heading heading}}
+<section class="siso-section" id="three-ways">
+  {{> section sections.ways}}
+  <div class="flow">{{#each ways}}<div class="flow-step"><b>{{label}}</b><span>{{{what}}}</span></div>{{/each}}</div>
+</section>
+<section class="siso-section" id="compose">
+  {{> section sections.compose}}
+  {{> quickstart quickstart}}
+</section>
+<section class="siso-section" id="shell">
+  {{> section sections.shell}}
+  <pre><code>{{shell_snippet}}</code></pre>
+  <p class="small muted" style="margin-top:var(--crm-space-2)">{{{shell_note}}}</p>
+</section>
+<section class="siso-section" id="layout">
+  {{> section sections.layout}}
+  <pre><code>{{tree}}</code></pre>
+</section>
+<section class="siso-section" id="rules">
+  {{> section sections.rules}}
+  <ol class="contents__list">{{#each rules}}<li><span class="n">{{@n}}</span><div><b>{{label}}</b><span>{{{what}}}</span></div></li>{{/each}}</ol>
+</section>

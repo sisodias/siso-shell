@@ -1,0 +1,5 @@
+{{!-- 04b · loop — the ecosystem loop (library-ui-spec §6): every node a real link; measured results only where a receipt exists.
+     Data: [{label,what,href,tone,measured}] --}}
+<div class="loop">
+{{#each .}}<a class="loop__node tone-{{tone}}" href="{{href}}"><b>{{label}}</b><span>{{what}}</span>{{#if measured}}<span class="measured">measured · {{measured}}</span>{{else}}<span class="measured unmeasured">unmeasured</span>{{/if}}</a>{{/each}}
+</div>

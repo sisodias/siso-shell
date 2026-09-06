@@ -1,0 +1,2 @@
+{{!-- atom · chips — status chips (AM status badge/chip; site/index.html:101-102). Data: [{label,tone,href,dot,icon,title}] --}}
+{{#each .}}{{#if href}}<a class="chip tone-{{tone}}" href="{{href}}"{{#if title}} title="{{title}}"{{/if}}>{{#if dot}}<i class="dot"></i>{{/if}}{{#if icon}}{{icon icon}}{{/if}}{{label}}</a>{{else}}<span class="chip tone-{{tone}}"{{#if title}} title="{{title}}"{{/if}}>{{#if dot}}<i class="dot"></i>{{/if}}{{#if icon}}{{icon icon}}{{/if}}{{label}}</span>{{/if}}{{/each}}

@@ -1,0 +1,18 @@
+{{!-- 02 · heading — page heading, breadcrumb, purpose/subtitle, state badges, and a status panel (AM hero+status,
+     system-map/part-page.css:8-15; registry.css:3-12). Data: {kicker, title, subtitle, breadcrumb:[{label,href}],
+     badges:[{label,tone,href,dot}], status:{kicker,value,note,facts:[{k,v}]}} --}}
+<header class="heading" id="top">
+  <div>
+    {{#if breadcrumb}}<nav class="heading__crumb" aria-label="Breadcrumb">{{#each breadcrumb}}{{#unless @first}}<span class="faint">/</span>{{/unless}}{{#if href}}<a href="{{href}}">{{label}}</a>{{else}}<span>{{label}}</span>{{/if}}{{/each}}</nav>{{/if}}
+    {{#if kicker}}<div class="kicker">{{{kicker}}}</div>{{/if}}
+    <h1>{{title}}</h1>
+    {{#if subtitle}}<p class="heading__sub">{{{subtitle}}}</p>{{/if}}
+    {{#if badges}}<div class="heading__badges">{{> chips badges}}</div>{{/if}}
+  </div>
+  {{#if status}}<aside class="heading__status">
+    <span class="kicker">{{status.kicker}}</span>
+    <strong>{{status.value}}</strong>
+    {{#if status.note}}<p>{{{status.note}}}</p>{{/if}}
+    {{#if status.facts}}<dl class="kv">{{#each status.facts}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>{{/if}}
+  </aside>{{/if}}
+</header>

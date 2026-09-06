@@ -1,0 +1,11 @@
+{{!-- 07 · contents — contents/capability list and a procedure (flow steps, AM blueprint .flow-step).
+     Data: {items:[{label,what,href,state,tone}], steps:[{label,what}]} --}}
+<div class="contents">
+  <div>
+    {{#if items}}<ol class="contents__list">{{#each items}}<li><span class="n">{{@n}}</span><div><b>{{#if href}}<a href="{{href}}">{{label}}</a>{{else}}{{label}}{{/if}}</b>{{#if state}} <span class="chip tone-{{tone}}">{{state}}</span>{{/if}}{{#if what}}<span>{{{what}}}</span>{{/if}}</div></li>{{/each}}</ol>
+    {{else}}<div class="empty">No contents listed.</div>{{/if}}
+  </div>
+  <div>
+    {{#if steps}}<div class="flow">{{#each steps}}<div class="flow-step"><b>{{label}}</b><span>{{{what}}}</span></div>{{/each}}</div>{{/if}}
+  </div>
+</div>

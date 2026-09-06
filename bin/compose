@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+/* bin/compose <family> <data.json> [--nav nav.json] [--base URL] [--current href] [--out page.html]
+ * Renders templates/<family>/template.html with the data, inside the SISO CRM shell. Prints HTML to stdout unless --out. */
+import { writeFileSync, mkdirSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
+import { compose, readJSON, ROOT } from './lib/compose.mjs';
+
+const args = process.argv.slice(2);
+if (args.length < 2 || args.includes('-h') || args.includes('--help')) {
+  console.error('usage: bin/compose <family> <data.json> [--nav nav.json] [--base URL] [--current href] [--out page.html]');
+  process.exit(args.length < 2 ? 64 : 0);
+}
+const [family, dataPath] = args;
+const opt = (k) => { const i = args.indexOf(k); return i > -1 ? args[i + 1] : undefined; };
+const data = readJSON(resolve(dataPath));
+const nav = opt('--nav') ? readJSON(resolve(opt('--nav'))) : (data.nav || readJSON(resolve(ROOT, 'site', 'nav.json')));
+const html = compose(family, data, { nav, base: opt('--base') ?? '', current: opt('--current') });
+if (opt('--out')) { mkdirSync(dirname(resolve(opt('--out'))), { recursive: true }); writeFileSync(resolve(opt('--out')), html); console.error(`wrote ${opt('--out')} (${html.length} bytes)`); }
+else process.stdout.write(html);

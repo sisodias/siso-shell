@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "title": "U0 · Shell · SISO templates",
+    "description": "The SISO CRM GroupedRail as a static shell: every value the CRM's, resolved through the same tokens.",
+    "stream": "projects",
+    "crumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U0 · Shell",
+        "href": "/t/U0/"
+      },
+      {
+        "label": "example"
+      }
+    ],
+    "actions": [
+      {
+        "label": "rail.css",
+        "href": "/shell/rail.css",
+        "icon": "file-code"
+      },
+      {
+        "label": "tokens.css",
+        "href": "/shell/tokens.css",
+        "icon": "file-code"
+      },
+      {
+        "label": "Search",
+        "href": "#",
+        "icon": "search",
+        "kbd": "⌘K"
+      }
+    ],
+    "source": "shell/"
+  },
+  "heading": {
+    "breadcrumb": [
+      {
+        "label": "Templates",
+        "href": "/"
+      },
+      {
+        "label": "U0",
+        "href": "/t/U0/"
+      },
+      {
+        "label": "example"
+      }
+    ],
+    "kicker": "U0 <span class=\"sep\">·</span> the one shell <span class=\"sep\">·</span> <span class=\"dim\">SISO CRM GroupedRail, copied</span>",
+    "title": "The rail on the left is the deliverable",
+    "subtitle": "The SISO CRM GroupedRail (product-app <code>GroupedRail.tsx</code> + <code>GroupedRail.css</code> + <code>tokens.css</code>) as plain HTML, CSS and JS. Sizes, fonts, spacing, gradients, shadows and transitions are the CRM's values through the CRM's token names. Press <kbd>[</kbd> to collapse it to icons with tooltips, <kbd>⌘K</kbd> to search; click a group heading and nothing disappears.",
+    "badges": [
+      {
+        "label": "tokens.css verbatim",
+        "tone": "now",
+        "dot": true
+      },
+      {
+        "label": "GroupedRail.css verbatim + 1 additive section",
+        "tone": "now",
+        "dot": true
+      },
+      {
+        "label": "lucide icons · ISC",
+        "tone": "muted"
+      },
+      {
+        "label": "232 → 52 px",
+        "tone": "projects"
+      }
+    ],
+    "status": {
+      "kicker": "Sources, hashed",
+      "value": "3 CRM files",
+      "note": "SHA-256 in <code>shell/rail.css</code> header and <code>briefs/LIBRARY-UI-FABLE.md</code>.",
+      "facts": [
+        {
+          "k": "tokens",
+          "v": "<code>1fb51616…5115b9</code>"
+        },
+        {
+          "k": "rail css",
+          "v": "<code>87c0c20e…62f5b</code>"
+        },
+        {
+          "k": "rail tsx",
+          "v": "<code>a5f0ae6a…8936e</code>"
+        }
+      ]
+    }
+  },
+  "sections": {
+    "what": {
+      "n": "01",
+      "title": "Why one shell",
+      "sub": "his words · the reading"
+    },
+    "values": {
+      "n": "02",
+      "title": "Every value, and where the CRM sets it",
+      "sub": "if a number was chosen here it is wrong; these are read from tokens.css"
+    },
+    "behaviour": {
+      "n": "03",
+      "title": "Behaviour, from GroupedRail.tsx and App.tsx"
+    },
+    "bugs": {
+      "n": "04",
+      "title": "The two bugs this port does not repeat",
+      "sub": "v1/v2 atlas ports, superseded"
+    },
+    "use": {
+      "n": "05",
+      "title": "Use it on your page"
+    },
+    "sources": {
+      "n": "06",
+      "title": "Sources"
+    },
+    "related": {
+      "n": "07",
+      "title": "Related"
+    }
+  },
+  "reasoning": {
+    "source": [
+      {
+        "text": "look at the size of crm one it's just so much nicer okay look at the size of crm and you'll understand that's the exact side map that i want like sizing fonts everything spacing the way it all fits together. And I click on certain shit and it disappears now. Templated page on the side now doesn't fully wire up.",
+        "who": "Shaan",
+        "at": "6 Sep 18:41"
+      }
+    ],
+    "why": "His 13:09 to LIBRARY-ZERO: 'you're not using our size of crm side nav, which is Specifically what I told you to do'; 16:50: 'not all of them have side nav so they're connected'; 18:19: 'the side nav is a bit shit'. One shell is what makes 60+ pages across 10 repos and 6 pages.dev sites feel like one place.",
+    "readers": "Human: orient, jump between families, collapse it and read. Agent: the rail's link data is the site map; Cmd-K search is the same map as text.",
+    "questions": [
+      "Where am I in the ecosystem?",
+      "What are the sibling pages?",
+      "Which section of this page do I want?"
+    ],
+    "claim_ceiling": "May assert only what the link data says exists; every destination must return 200 or be marked private.",
+    "data": "A link JSON per site (groups → destinations → status chip); built at publish; the rail reads it, never hand-edited HTML.",
+    "privacy": "Public; private destinations show a lock chip, never a payload.",
+    "empty_state": "No JS: the page still reads; the rail is absent, nav.top remains.",
+    "agent_entry": "siso-shell/shell.mjs rail({title, groups, page, current}) · shell/rail.js · shell/rail.css · shell/tokens.css"
+  },
+  "values": [
+    {
+      "thing": "Expanded width",
+      "token": "--crm-rail-width",
+      "value": "232px",
+      "where": "tokens.css · Component sizing"
+    },
+    {
+      "thing": "Collapsed width",
+      "token": "--crm-rail-collapsed-width",
+      "value": "52px",
+      "where": "tokens.css"
+    },
+    {
+      "thing": "Screen inset (top/left/bottom)",
+      "token": "--crm-rail-screen-inset",
+      "value": "16px (space-4)",
+      "where": "GroupedRail.css .siso-sidebar"
+    },
+    {
+      "thing": "Rail padding",
+      "token": "--crm-rail-padding",
+      "value": "16px",
+      "where": "tokens.css"
+    },
+    {
+      "thing": "Rail gap",
+      "token": "--crm-rail-gap",
+      "value": "10px",
+      "where": "tokens.css"
+    },
+    {
+      "thing": "Rail radius / inner",
+      "token": "--crm-radius-rail / -inner",
+      "value": "27px / 26px",
+      "where": "tokens.css · Radius roles"
+    },
+    {
+      "thing": "Shell background",
+      "token": "--crm-gradient-rail-shell",
+      "value": "2 radial + 1 linear, rail-top/mid/bottom rgb",
+      "where": "tokens.css · Effects"
+    },
+    {
+      "thing": "Shell border",
+      "token": "--crm-gradient-rail-border",
+      "value": "conic-gradient 0→360°",
+      "where": "tokens.css"
+    },
+    {
+      "thing": "Glass",
+      "token": "--crm-blur-glass",
+      "value": "blur(32px) saturate(124%)",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Shell shadow",
+      "token": "--crm-shadow-rail-shell",
+      "value": "7 layers",
+      "where": "tokens.css"
+    },
+    {
+      "thing": "Header grid",
+      "token": ".siso-sidebar__header",
+      "value": "40px 1fr 36px · min-height 48px · gap 6px",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Brand tile",
+      "token": ".siso-sidebar__brand",
+      "value": "40×40 · radius 12px · rail-brand-tile gradient",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Product name",
+      "token": "--crm-text-sm",
+      "value": "12px · weight 660 · -0.01em · lh 1.08",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Toggle",
+      "token": ".siso-sidebar__toggle",
+      "value": "36×36 · radius 11px · svg 17px",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Search row",
+      "token": "--crm-control-touch / --crm-radius-control-lg",
+      "value": "44px high · radius 13px · gap 10px · pad 0 12px",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Search label",
+      "token": "--crm-text-sm",
+      "value": "12px · -0.005em",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Search kbd",
+      "token": "--crm-text-2xs",
+      "value": "9px mono · 31×24 · radius 7px",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Group heading",
+      "token": "--crm-text-2xs / --crm-tracking-label",
+      "value": "9px · weight 650 · 0.17em · uppercase · 17px high · white/0.47",
+      "where": "GroupedRail.css .siso-sidebar__group-heading"
+    },
+    {
+      "thing": "Group gap",
+      "token": "--crm-nav-section-gap",
+      "value": "16px",
+      "where": "tokens.css"
+    },
+    {
+      "thing": "Heading inset",
+      "token": "--crm-nav-button-gutter + --crm-nav-inline-inset",
+      "value": "4px + 12px",
+      "where": "tokens.css"
+    },
+    {
+      "thing": "Nav row",
+      "token": "--crm-nav-row-height",
+      "value": "44px (control-touch)",
+      "where": "tokens.css"
+    },
+    {
+      "thing": "Nav label",
+      "token": "--crm-text-md",
+      "value": "13.5px · weight 510 · white/0.7",
+      "where": "GroupedRail.css .siso-sidebar__nav-link"
+    },
+    {
+      "thing": "Nav icon",
+      "token": "--crm-icon-md / --crm-icon-stroke",
+      "value": "17px · stroke 1.7 · white/0.56",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Icon–label gap",
+      "token": "--crm-nav-icon-label-gap",
+      "value": "12px",
+      "where": "tokens.css"
+    },
+    {
+      "thing": "Row gap",
+      "token": "--crm-space-0-5",
+      "value": "2px",
+      "where": "GroupedRail.css .siso-sidebar__nav-items"
+    },
+    {
+      "thing": "Row radius",
+      "token": "--crm-radius-control",
+      "value": "11px",
+      "where": "tokens.css"
+    },
+    {
+      "thing": "Active row",
+      "token": "--crm-gradient-rail-active / --crm-shadow-active",
+      "value": "brand-hover text · radial+linear brand/0.13 · 4-layer shadow",
+      "where": "GroupedRail.css .is-active"
+    },
+    {
+      "thing": "Hover row",
+      "token": "rgb(white/0.035)",
+      "value": "text → crm-color-text",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Compact strip",
+      "token": ".siso-sidebar__compact-navigation",
+      "value": "44px wide · radius 13px · capsule gradient · gap 2px",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Compact link",
+      "token": ".siso-sidebar__compact-link",
+      "value": "44×44 · radius 11px · active-icon gradient",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Collapsed shell",
+      "token": ".siso-sidebar.is-collapsed",
+      "value": "width 52px · pad 4px · gap 8px · radius 20px · brand/toggle/search 42px",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Transitions",
+      "token": "—",
+      "value": "width 200ms ease · colour/background 160ms ease",
+      "where": "GroupedRail.css"
+    },
+    {
+      "thing": "Font",
+      "token": "--crm-font-sans",
+      "value": "'Geist', ui-sans-serif, system-ui, -apple-system, …",
+      "where": "tokens.css · Typography"
+    },
+    {
+      "thing": "Workspace offset",
+      "token": "app.css .crm-workspace",
+      "value": "margin-left = inset×2 + rail width",
+      "where": "SISOCRM src/styles/app.css:17-18"
+    },
+    {
+      "thing": "Preference key",
+      "token": "App.tsx RAIL_STORAGE_KEY",
+      "value": "'siso.crm.rail.collapsed'",
+      "where": "SISOCRM src/App.tsx:14"
+    }
+  ],
+  "behaviour": [
+    {
+      "label": "Expanded",
+      "what": "Grouped labels: a heading per group (<code>&lt;h2&gt;</code>), the destinations under it with icon + label. Headings are headings; a click does nothing and nothing disappears.",
+      "from": "GroupedRail.tsx LabeledNavigation"
+    },
+    {
+      "label": "Compact",
+      "what": "The same destinations as 44px icon links with <code>title</code> tooltips, in the capsule strip. Collapsing never changes what the navigation means.",
+      "from": "GroupedRail.tsx CompactNavigation"
+    },
+    {
+      "label": "Toggle",
+      "what": "The 36px header button (PanelLeftClose / PanelLeftOpen) flips <code>is-collapsed</code> on the rail and <code>rail-collapsed</code> on <code>body</code>; the workspace margin follows.",
+      "from": "GroupedRail.tsx · App.tsx useRailState"
+    },
+    {
+      "label": "[ toggles",
+      "what": "Outside editable fields, <kbd>[</kbd> collapses/expands.",
+      "from": "Library adaptation (briefs/LIBRARY-UI-FABLE.md)"
+    },
+    {
+      "label": "Cmd/Ctrl-K",
+      "what": "Focuses the search row (expanding the rail if needed). Typing filters destinations by label; <kbd>Esc</kbd> clears; <kbd>Enter</kbd> opens the first match.",
+      "from": "App.tsx onSearchShortcut · SidebarSearch"
+    },
+    {
+      "label": "Preference",
+      "what": "Collapsed state persists in <code>localStorage[\"siso.crm.rail.collapsed\"]</code>, the CRM's key. Below 980px it starts collapsed.",
+      "from": "App.tsx:14,44-56 · app.css:101"
+    },
+    {
+      "label": "On this page",
+      "what": "The one folding group: a <code>&lt;details&gt;</code> (Action Model <code>lanebox</code>) listing the page's sections, built by <code>bin/compose</code> from <code>&lt;section class=\"siso-section\" id&gt;</code>; the current section is marked as you scroll.",
+      "from": "blueprint/index.html:185-190 · compose.mjs sectionsOf"
+    },
+    {
+      "label": "No JavaScript",
+      "what": "The rail renders expanded with every group; toggle and search are inert. Navigation never depends on JS.",
+      "from": "shell/rail.css .no-js"
+    }
+  ],
+  "evidence": {
+    "facts": [
+      {
+        "claim": "<b>v1 bug:</b> a <code>display</code> rule beat <code>[hidden]</code>, so the search trigger and the search box rendered at once. Fixed here: <code>.siso-sidebar [hidden] { display: none !important }</code> in section 2 of rail.css, and one search row (a real input) instead of two.",
+        "receipt": "OWNERS.md 2026-09-06T17:13 · atlas/crm-rail.css:10,83"
+      },
+      {
+        "claim": "<b>v2 bug:</b> groups were <code>&lt;details&gt;</code>, so clicking a heading collapsed the group. Fixed here: groups are <code>&lt;section&gt;</code> + <code>&lt;h2&gt;</code> like the CRM; only \"On this page\" folds.",
+        "receipt": "his 18:41 'I click on certain shit and it disappears now' · atlas/crm-rail.js:103-116"
+      },
+      {
+        "claim": "<b>Section 1 of shell/rail.css is byte-for-byte GroupedRail.css.</b>",
+        "receipt": "sha256 87c0c20e…62f5b · shell/rail.css header"
+      },
+      {
+        "claim": "<b>shell/tokens.css is byte-for-byte the CRM tokens.css.</b>",
+        "receipt": "sha256 1fb51616…5115b9"
+      }
+    ],
+    "proposals": [
+      {
+        "claim": "Compare against the built CRM at the same viewport (dist CSS values match the token values listed above).",
+        "why": "CRM dist served read-only on 127.0.0.1:7677 (laptop only)"
+      }
+    ],
+    "limits": [
+      "The CRM brand tile and profile orb show an <code>&lt;img&gt;</code>; the static shell shows letters in the same tile.",
+      "The CRM search button dispatches a global palette; here the row is the search input itself."
+    ],
+    "version": {
+      "label": "siso-shell main",
+      "href": "https://github.com/sisodias/siso-shell"
+    }
+  },
+  "quickstart": {
+    "entry": {
+      "path": "shell.mjs",
+      "href": "https://github.com/sisodias/siso-shell/blob/main/shell.mjs"
+    },
+    "owner": {
+      "name": "TEMPLATE-BANK-ZERO"
+    },
+    "context_url": "https://siso-shell.pages.dev/nav.json",
+    "verification": "Open your page: the rail at the left has the CRM's sizes; <kbd>[</kbd> collapses to icons with tooltips; <kbd>⌘K</kbd> focuses search; \"On this page\" lists your sections.",
+    "commands": [
+      "import { rail, head } from \"siso-shell/shell.mjs\";",
+      "const html = `<!doctype html><html class=\"no-js\"><head>${head(\"https://siso-shell.pages.dev/shell\")}</head>",
+      "  <body class=\"rail-expanded\">${rail({ title: \"My site\", groups, current: \"/x/\", page: [{label:\"Why\", href:\"#why\"}] })}",
+      "  <div class=\"siso-shell-page\">…</div></body></html>`;",
+      "// or, without node: copy shell/ next to your HTML and paste the <nav> from any published page"
+    ]
+  },
+  "repos": [
+    {
+      "repo": "SISO_Agency/apps/SISOCRM/product-app",
+      "private": true,
+      "branch": "main",
+      "what": "The source of truth: <code>src/components/GroupedRail.tsx</code> (306 lines), <code>src/styles/GroupedRail.css</code> (677), <code>src/styles/tokens.css</code> (303), <code>src/App.tsx</code> (rail state, ⌘K), <code>src/styles/app.css</code> (workspace offset). Presentation robbed; no client routes, auth or data.",
+      "access": "read-only",
+      "rights": "SISO"
+    },
+    {
+      "repo": "sisodias/siso-shell",
+      "url": "https://github.com/sisodias/siso-shell",
+      "private": false,
+      "branch": "main",
+      "what": "This bank: <code>shell/</code> (tokens, rail.css, rail.js, icons), <code>shell.mjs</code>, <code>parts/</code>, <code>templates/</code>, <code>bin/compose</code>.",
+      "rights": "SISO · lucide ISC"
+    },
+    {
+      "repo": "sisodias/siso-agent-zero-protocol",
+      "url": "https://github.com/sisodias/siso-agent-zero-protocol",
+      "private": false,
+      "branch": "main",
+      "satellite": true,
+      "what": "The plan: <code>plan/templates.json</code>, the 24 template issues, <code>atlas/crm-rail.{css,js}</code> (v1/v2 ports, superseded), receipts.",
+      "rights": "SISO"
+    }
+  ],
+  "related": [
+    {
+      "title": "U13 · Parts",
+      "href": "/t/U13/",
+      "type": "next in order",
+      "tone": "projects",
+      "why": "the twelve modules every family composes inside this shell"
+    },
+    {
+      "title": "U23 · Gallery",
+      "href": "/",
+      "type": "front page",
+      "tone": "projects"
+    },
+    {
+      "title": "How to reuse",
+      "href": "/how/",
+      "type": "guide",
+      "tone": "agents"
+    }
+  ]
+}

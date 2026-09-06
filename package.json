@@ -1,9 +1,28 @@
 {
   "name": "siso-shell",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "exports": "./shell.mjs",
-  "files": ["shell.mjs", "assets"],
-  "scripts": {"test": "node --test"}
+  "exports": {
+    ".": "./shell.mjs",
+    "./compose": "./bin/lib/compose.mjs",
+    "./shell/*": "./shell/*",
+    "./parts/*": "./parts/*"
+  },
+  "files": [
+    "shell.mjs",
+    "shell",
+    "parts",
+    "templates",
+    "bin"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "build": "node bin/build-site",
+    "compose": "node bin/compose"
+  },
+  "bin": {
+    "siso-compose": "./bin/compose",
+    "siso-build-site": "./bin/build-site"
+  }
 }

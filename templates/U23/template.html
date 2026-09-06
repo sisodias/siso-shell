@@ -1,0 +1,33 @@
+{{!-- U23 · Gallery — the bank's front page: every template as a card in build order; click → its detail page. --}}
+{{> heading heading}}
+
+<section class="siso-section" id="words">
+  {{> section sections.words}}
+  {{> words words}}
+</section>
+
+<section class="siso-section" id="counts">
+  {{> section sections.counts}}
+  {{> metrics metrics}}
+</section>
+
+<section class="siso-section" id="order">
+  {{> section sections.order}}
+  <p class="small muted" style="margin-bottom:var(--crm-space-3)">{{{order_note}}}</p>
+  {{> catalogue catalogue}}
+</section>
+
+<section class="siso-section" id="contract">
+  {{> section sections.contract}}
+  <div class="grid grid-3">{{#each contract}}<div class="card card--strip"><span class="kicker">{{@n}} · {{key}}</span><p class="small muted" style="margin-top:4px">{{what}}</p></div>{{/each}}</div>
+</section>
+
+<section class="siso-section" id="parts">
+  {{> section sections.parts}}
+  {{> contents partsIndex}}
+</section>
+
+<section class="siso-section" id="use">
+  {{> section sections.use}}
+  {{> quickstart quickstart}}
+</section>

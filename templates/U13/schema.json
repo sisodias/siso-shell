@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "U13 · Parts fixture data",
+  "description": "One entry per part; bin/build-site renders each part's `sample` with parts/<id>.html into `rendered` and pretty-prints it into `shape`. Shared $defs (meta, heading, reasoning, …) are in templates/U0/schema.json.",
+  "type": "object",
+  "required": ["meta", "heading", "sections", "reasoning", "index", "parts", "empty"],
+  "properties": {
+    "meta": { "$ref": "U0/schema.json#/$defs/meta" },
+    "heading": { "$ref": "U0/schema.json#/$defs/heading" },
+    "sections": { "type": "object" },
+    "reasoning": { "$ref": "U0/schema.json#/$defs/reasoning" },
+    "index": { "type": "object", "properties": { "items": { "type": "array" }, "steps": { "type": "array" } } },
+    "parts": { "type": "array", "items": { "type": "object", "required": ["id", "n", "title", "what", "file", "sample"], "properties": { "id": { "type": "string", "description": "parts/<id>.html" }, "n": { "type": "string" }, "title": { "type": "string" }, "what": { "type": "string" }, "file": { "type": "string" }, "robbed": { "type": "string", "description": "Action Model / 21st.dev receipt" }, "sample": { "description": "the JSON that part takes; shapes: heading{…} reasoning{…} map{centre,types[]} repos[] sauce[] contents{items[],steps[]} quickstart{…} evidence{facts[],proposals[],limits[],version} activity{observed_at,coverage,days[],items[]} catalogue{id,filters[],items[]} related[]" } } } },
+    "empty": { "type": "object", "properties": { "repos": { "type": "array", "maxItems": 0 }, "catalogue": { "type": "object" } } }
+  }
+}

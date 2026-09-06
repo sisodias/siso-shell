@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en" class="no-js" data-stream="projects" data-family="U13">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U13 · Parts · SISO templates</title>
+<meta name="description" content="The twelve modules every family composes, rendered once each with the JSON they take.">
+<meta name="generator" content="siso-shell bin/compose · U13">
+<link rel="stylesheet" href="/shell/tokens.css"><link rel="stylesheet" href="/shell/rail.css"><script src="/shell/rail.js" defer></script><link rel="stylesheet" href="/parts/parts.css"><script src="/parts/catalogue.js" defer></script>
+</head>
+<body class="rail-expanded">
+<nav class="siso-sidebar is-expanded" aria-label="Global navigation" data-siso-rail data-verify-unit="GroupedRail" data-verify-direction="B" data-verify-material="champagne-glass-v2" data-verify-expanded-width="232" data-verify-collapsed-width="52" data-verify-utility-width="44" data-verify-nav-groups="4" data-verify-compact-destinations="28" data-verify-collapsed="false">
+  <div class="siso-sidebar__bloom" aria-hidden="true"></div>
+  <div class="siso-sidebar__noise" aria-hidden="true"></div>
+  <header class="siso-sidebar__header">
+    <a class="siso-sidebar__brand" href="/" aria-label="SISO templates home"><span class="siso-sidebar__brand-mark">S</span></a>
+    <div class="siso-sidebar__identity"><span class="siso-sidebar__product-name">SISO templates</span></div>
+    <button type="button" class="siso-sidebar__toggle" aria-label="Collapse rail" title="Collapse navigation ([)" aria-expanded="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="siso-sidebar__toggle-close" data-icon="panel-left-close"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="m16 15-3-3 3-3"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="siso-sidebar__toggle-open" data-icon="panel-left-open"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="m14 9 3 3-3 3"/></svg></button>
+  </header>
+  <label class="siso-sidebar__search" title="Jump to anything (⌘K)" data-shell-search="rail-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="siso-sidebar__search-icon" data-icon="search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg><input class="siso-sidebar__search-input" type="search" placeholder="Search…" aria-label="Search destinations" autocomplete="off" spellcheck="false"><kbd class="siso-sidebar__search-shortcut">⌘K</kbd></label>
+  <div class="siso-sidebar__body">
+    <div class="siso-sidebar__navigation" data-verify-nav-groups="4"><section class="siso-sidebar__nav-group" id="siso-nav-section-bank" aria-labelledby="siso-nav-group-bank" data-group-label="bank"><h2 class="siso-sidebar__group-heading" id="siso-nav-group-bank">Bank</h2><div class="siso-sidebar__nav-items"><a class="siso-sidebar__nav-link" href="/" data-label="gallery"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="layout-dashboard"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg><span>Gallery</span></a><a class="siso-sidebar__nav-link" href="/t/U0/" data-label="shell · u0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="panel-left-close"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="m16 15-3-3 3-3"/></svg><span>Shell · U0</span></a><a class="siso-sidebar__nav-link is-active" href="/t/U13/" data-label="parts · u13" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="blocks"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"/><rect x="14" y="2" width="8" height="8" rx="1"/></svg><span>Parts · U13</span></a><a class="siso-sidebar__nav-link" href="/how/" data-label="how to reuse"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="terminal"><path d="M12 19h8"/><path d="m4 17 6-6-6-6"/></svg><span>How to reuse</span></a></div></section><section class="siso-sidebar__nav-group" id="siso-nav-section-hubs" aria-labelledby="siso-nav-group-hubs" data-group-label="hubs"><h2 class="siso-sidebar__group-heading" id="siso-nav-group-hubs">Hubs</h2><div class="siso-sidebar__nav-items"><a class="siso-sidebar__nav-link" href="/t/U4/" data-label="project"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="folder-kanban"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/><path d="M8 10v4"/><path d="M12 10v2"/><path d="M16 10v6"/></svg><span>Project</span></a><a class="siso-sidebar__nav-link" href="/t/U5/" data-label="god question"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="flask-conical"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"/><path d="M6.453 15h11.094"/><path d="M8.5 2h7"/></svg><span>God Question</span></a><a class="siso-sidebar__nav-link" href="/t/U19/" data-label="compute run"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="cpu"><path d="M12 20v2"/><path d="M12 2v2"/><path d="M17 20v2"/><path d="M17 2v2"/><path d="M2 12h2"/><path d="M2 17h2"/><path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/><path d="M20 7h2"/><path d="M7 20v2"/><path d="M7 2v2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg><span>Compute run</span></a><a class="siso-sidebar__nav-link" href="/t/U3/" data-label="work"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="book-open"><path d="M12 5v16"/><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"/></svg><span>Work</span></a><a class="siso-sidebar__nav-link" href="/t/U9/" data-label="agent zero"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="bot"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg><span>Agent Zero</span></a><a class="siso-sidebar__nav-link" href="/t/U1/" data-label="library landing"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="library"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg><span>Library landing</span></a></div></section><section class="siso-sidebar__nav-group" id="siso-nav-section-records" aria-labelledby="siso-nav-group-records" data-group-label="records"><h2 class="siso-sidebar__group-heading" id="siso-nav-group-records">Records</h2><div class="siso-sidebar__nav-items"><a class="siso-sidebar__nav-link" href="/t/U18/" data-label="source"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="scroll-text"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/></svg><span>Source</span></a><a class="siso-sidebar__nav-link" href="/t/U2/" data-label="catalogue"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="grid-2x2"><path d="M12 3v18"/><path d="M3 12h18"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg><span>Catalogue</span></a><a class="siso-sidebar__nav-link" href="/t/U16/" data-label="decision"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="gavel"><path d="m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381"/><path d="m16 16 6-6"/><path d="m21.5 10.5-8-8"/><path d="m8 8 6-6"/><path d="m8.5 7.5 8 8"/></svg><span>Decision</span></a><a class="siso-sidebar__nav-link" href="/t/U17/" data-label="agent seat"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><span>Agent seat</span></a><a class="siso-sidebar__nav-link" href="/t/U21/" data-label="timeline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="clock"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Timeline</span></a><a class="siso-sidebar__nav-link" href="/t/U8/" data-label="industry"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="briefcase"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg><span>Industry</span></a><a class="siso-sidebar__nav-link" href="/t/U14/" data-label="person"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="contact-round"><path d="M16 2v2"/><path d="M17.915 21a6 6 0 10-12 0"/><path d="M8 2v2"/><circle cx="12" cy="11" r="4"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg><span>Person</span></a><a class="siso-sidebar__nav-link" href="/t/U15/" data-label="client account"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="handshake"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg><span>Client account</span></a><a class="siso-sidebar__nav-link" href="/t/U7/" data-label="doc reader"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="file-text"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg><span>Doc reader</span></a><a class="siso-sidebar__nav-link" href="/t/U11/" data-label="private stub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="lock"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>Private stub</span></a><a class="siso-sidebar__nav-link" href="/t/U6/" data-label="erdős"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="sigma"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"/></svg><span>Erdős</span></a><a class="siso-sidebar__nav-link" href="/t/U10/" data-label="now"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="activity"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg><span>Now</span></a><a class="siso-sidebar__nav-link" href="/t/U12/" data-label="release"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="tag"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg><span>Release</span></a><a class="siso-sidebar__nav-link" href="/t/U20/" data-label="play"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="puzzle"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></svg><span>Play</span></a><a class="siso-sidebar__nav-link" href="/t/U22/" data-label="node"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="server"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg><span>Node</span></a></div></section><section class="siso-sidebar__nav-group" id="siso-nav-section-outside" aria-labelledby="siso-nav-group-outside" data-group-label="outside"><h2 class="siso-sidebar__group-heading" id="siso-nav-group-outside">Outside</h2><div class="siso-sidebar__nav-items"><a class="siso-sidebar__nav-link" href="https://great-library-of-siso.pages.dev/" data-label="great library" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg><span>Great Library</span></a><a class="siso-sidebar__nav-link" href="https://github.com/sisodias/siso-shell" data-label="sisodias/siso-shell" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/></svg><span>sisodias/siso-shell</span></a><a class="siso-sidebar__nav-link" href="https://github.com/sisodias/siso-agent-zero-protocol/issues?q=label%3Atemplate" data-label="template issues" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="list-todo"><path d="M13 5h8"/><path d="M13 12h8"/><path d="M13 19h8"/><path d="m3 17 2 2 4-4"/><rect x="3" y="4" width="6" height="6" rx="1"/></svg><span>Template issues</span></a></div></section><details class="siso-sidebar__nav-group siso-sidebar__page-group" id="siso-nav-section-page" data-group-label="on this page" open><summary class="siso-sidebar__group-heading">On this page</summary><div class="siso-sidebar__nav-items"><a class="siso-sidebar__nav-link" href="#why" data-label="why parts"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Why parts</span></a><a class="siso-sidebar__nav-link" href="#index" data-label="index"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Index</span></a><a class="siso-sidebar__nav-link" href="#shell" data-label="global shell"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Global shell</span></a><a class="siso-sidebar__nav-link" href="#heading" data-label="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Heading</span></a><a class="siso-sidebar__nav-link" href="#reasoning" data-label="reasoning block"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Reasoning block</span></a><a class="siso-sidebar__nav-link" href="#map" data-label="map · typed relationship map + ecosystem loop"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Map · typed relationship map + ecosystem loop</span></a><a class="siso-sidebar__nav-link" href="#repos" data-label="repository cards"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Repository cards</span></a><a class="siso-sidebar__nav-link" href="#sauce" data-label="sauce cards"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Sauce cards</span></a><a class="siso-sidebar__nav-link" href="#contents" data-label="contents + procedure"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Contents + procedure</span></a><a class="siso-sidebar__nav-link" href="#quickstart" data-label="agent quick-start"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Agent quick-start</span></a><a class="siso-sidebar__nav-link" href="#evidence" data-label="evidence / limits / version"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Evidence / limits / version</span></a><a class="siso-sidebar__nav-link" href="#activity" data-label="activity strip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Activity strip</span></a><a class="siso-sidebar__nav-link" href="#catalogue" data-label="searchable catalogue"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Searchable catalogue</span></a><a class="siso-sidebar__nav-link" href="#related" data-label="related work"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Related work</span></a><a class="siso-sidebar__nav-link" href="#atoms" data-label="atoms the parts share"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Atoms the parts share</span></a><a class="siso-sidebar__nav-link" href="#states" data-label="empty, blocked, 404"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="hash"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg><span>Empty, blocked, 404</span></a></div></details><div class="siso-sidebar__empty" hidden>No destinations match.</div></div>
+    <div class="siso-sidebar__compact-navigation" aria-label="Page navigation" data-verify-compact-destinations="28" hidden><a class="siso-sidebar__compact-link" href="/" aria-label="Gallery" title="Gallery"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="layout-dashboard"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U0/" aria-label="Shell · U0" title="Shell · U0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="panel-left-close"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="m16 15-3-3 3-3"/></svg></a><a class="siso-sidebar__compact-link is-active" href="/t/U13/" aria-label="Parts · U13" title="Parts · U13" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="blocks"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"/><rect x="14" y="2" width="8" height="8" rx="1"/></svg></a><a class="siso-sidebar__compact-link" href="/how/" aria-label="How to reuse" title="How to reuse"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="terminal"><path d="M12 19h8"/><path d="m4 17 6-6-6-6"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U4/" aria-label="Project" title="Project"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="folder-kanban"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/><path d="M8 10v4"/><path d="M12 10v2"/><path d="M16 10v6"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U5/" aria-label="God Question" title="God Question"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="flask-conical"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"/><path d="M6.453 15h11.094"/><path d="M8.5 2h7"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U19/" aria-label="Compute run" title="Compute run"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="cpu"><path d="M12 20v2"/><path d="M12 2v2"/><path d="M17 20v2"/><path d="M17 2v2"/><path d="M2 12h2"/><path d="M2 17h2"/><path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/><path d="M20 7h2"/><path d="M7 20v2"/><path d="M7 2v2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U3/" aria-label="Work" title="Work"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="book-open"><path d="M12 5v16"/><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U9/" aria-label="Agent Zero" title="Agent Zero"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="bot"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U1/" aria-label="Library landing" title="Library landing"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="library"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U18/" aria-label="Source" title="Source"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="scroll-text"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U2/" aria-label="Catalogue" title="Catalogue"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="grid-2x2"><path d="M12 3v18"/><path d="M3 12h18"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U16/" aria-label="Decision" title="Decision"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="gavel"><path d="m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381"/><path d="m16 16 6-6"/><path d="m21.5 10.5-8-8"/><path d="m8 8 6-6"/><path d="m8.5 7.5 8 8"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U17/" aria-label="Agent seat" title="Agent seat"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U21/" aria-label="Timeline" title="Timeline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="clock"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U8/" aria-label="Industry" title="Industry"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="briefcase"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U14/" aria-label="Person" title="Person"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="contact-round"><path d="M16 2v2"/><path d="M17.915 21a6 6 0 10-12 0"/><path d="M8 2v2"/><circle cx="12" cy="11" r="4"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U15/" aria-label="Client account" title="Client account"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="handshake"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U7/" aria-label="Doc reader" title="Doc reader"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="file-text"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U11/" aria-label="Private stub" title="Private stub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="lock"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U6/" aria-label="Erdős" title="Erdős"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="sigma"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U10/" aria-label="Now" title="Now"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="activity"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U12/" aria-label="Release" title="Release"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="tag"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U20/" aria-label="Play" title="Play"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="puzzle"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></svg></a><a class="siso-sidebar__compact-link" href="/t/U22/" aria-label="Node" title="Node"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="server"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg></a><a class="siso-sidebar__compact-link" href="https://great-library-of-siso.pages.dev/" aria-label="Great Library" title="Great Library" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><a class="siso-sidebar__compact-link" href="https://github.com/sisodias/siso-shell" aria-label="sisodias/siso-shell" title="sisodias/siso-shell" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/></svg></a><a class="siso-sidebar__compact-link" href="https://github.com/sisodias/siso-agent-zero-protocol/issues?q=label%3Atemplate" aria-label="Template issues" title="Template issues" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="list-todo"><path d="M13 5h8"/><path d="M13 12h8"/><path d="M13 19h8"/><path d="m3 17 2 2 4-4"/><rect x="3" y="4" width="6" height="6" rx="1"/></svg></a></div>
+  </div>
+  
+  
+</nav>
+<div class="siso-shell-page">
+  <header class="siso-topbar">
+    <div class="siso-topbar__crumb"><a href="/">Templates</a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="chevron-right"><path d="m9 18 6-6-6-6"/></svg><a href="/t/U13/">U13 · Parts</a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="chevron-right"><path d="m9 18 6-6-6-6"/></svg><strong>fixture</strong></div>
+    <div class="siso-topbar__actions"><a href="/parts/parts.css"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="file-code"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 12.5 8 15l2 2.5"/><path d="m14 12.5 2 2.5-2 2.5"/></svg><span>parts.css</span></a><a href="https://github.com/sisodias/siso-shell/tree/main/parts" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/></svg><span>parts/ on GitHub</span></a></div>
+  </header>
+  <main class="siso-page" id="content">
+
+
+<header class="heading" id="top">
+  <div>
+    <nav class="heading__crumb" aria-label="Breadcrumb"><a href="/">Templates</a><span class="faint">/</span><a href="/t/U13/">U13</a><span class="faint">/</span><span>fixture</span></nav>
+    <div class="kicker">U13 <span class="sep">·</span> reusable modules <span class="sep">·</span> <span class="dim">library-ui-spec §6</span></div>
+    <h1>The twelve parts, rendered once each</h1>
+    <p class="heading__sub">Every family below composes these. One HTML partial each in <code>parts/</code>, one stylesheet, dark tokens, no framework. View source: each block on this page is one partial fed one JSON object, shown under it.</p>
+    <div class="heading__badges">
+<span class="chip tone-now" title="The twelve parts, rendered once each"><i class="dot"></i>12 parts + 5 atoms</span><span class="chip tone-now" title="The twelve parts, rendered once each">truthful empty states</span><span class="chip tone-now" title="The twelve parts, rendered once each">real 404</span><span class="chip tone-clients" title="The twelve parts, rendered once each">Action Model presentation, receipts kept</span>
+</div>
+  </div>
+  <aside class="heading__status">
+    <span class="kicker">Where</span>
+    <strong>siso-shell/parts/</strong>
+    <p>Composed by <code>bin/compose</code> through <code>{{&gt; part data}}</code>.</p>
+    <dl class="kv"><dt>css</dt><dd><code>parts/parts.css</code></dd><dt>js</dt><dd><code>parts/catalogue.js</code> only</dd></dl>
+  </aside>
+</header>
+
+
+<section class="siso-section" id="why">
+  
+<div class="siso-section__head"><span class="n">00</span><h2>Why parts</h2><span class="sub">his words · the reading</span></div>
+
+  
+<div class="reasoning">
+  <div class="reasoning__col reasoning__col--source">
+    <span class="kicker">Source · his words, verbatim</span>
+    <div class="empty">No verbatim source on this page.</div>
+  </div>
+  <div class="reasoning__col">
+    <span class="kicker dim">Reading · authored by the seat</span>
+    <p>Every family composes the same parts; build them once as partials or every page drifts (the atlas already has 24 hand-written pages). The Action Model pages are the proof that these parts render from real data.</p>
+    <p class="small muted" style="margin-top:var(--crm-space-3)"><b>Readers.</b> Human: consistent reading. Agent: consistent DOM to parse.</p>
+    <ol class="reasoning__questions small"><li>Which parts exist and what data does each take?</li></ol>
+  </div>
+  <div class="reasoning__ceiling">
+    <div class="card"><span class="kicker">Claim ceiling</span>A part renders only what its JSON carries; empty means empty.</div>
+    <div class="card"><span class="kicker dim">Data it renders</span>a fixture page with all parts + their JSON shapes.</div>
+    <div class="card"><span class="kicker dim">Privacy</span>—</div>
+    <div class="card"><span class="kicker dim">Empty state</span>each part has a truthful empty state (and the site has a real 404, GAPS F-3).</div>
+    <div class="card"><span class="kicker dim">Agent entry</span><code>parts/&lt;name&gt;.html · the JSON shape under each block here</code></div>
+  </div>
+</div>
+
+</section>
+
+<section class="siso-section" id="index">
+  
+<div class="siso-section__head"><span class="n">01</span><h2>Index</h2></div>
+
+  
+<div class="contents">
+  <div>
+    <ol class="contents__list"><li><span class="n">1</span><div><b><a href="#shell">01 · Global shell</a></b> <span class="chip tone-now">built</span><span>the CRM GroupedRail: grouped navigation, search, collapse; the rail on this page</span></div></li><li><span class="n">2</span><div><b><a href="#heading">02 · Heading</a></b> <span class="chip tone-now">built</span><span>breadcrumb · kicker · title · purpose · state badges · status panel</span></div></li><li><span class="n">3</span><div><b><a href="#reasoning">03 · Reasoning block</a></b> <span class="chip tone-now">built</span><span>his words (source) vs the seat's reading, then the claim ceiling, data, privacy, empty state, agent entry</span></div></li><li><span class="n">4</span><div><b><a href="#map">04 · Map · typed relationship map + ecosystem loop</a></b> <span class="chip tone-now">built</span><span>the mind map: repos, Works, questions, industries, people, nodes as a graph, with its text equivalent; and the loop</span></div></li><li><span class="n">5</span><div><b><a href="#repos">05 · Repository cards</a></b> <span class="chip tone-now">built</span><span>every repo incl. private: head, time, branch, visibility, access, rights</span></div></li><li><span class="n">6</span><div><b><a href="#sauce">06 · Sauce cards</a></b> <span class="chip tone-now">built</span><span>3–7 genuinely useful assets, examples, datasets or receipts</span></div></li><li><span class="n">7</span><div><b><a href="#contents">07 · Contents + procedure</a></b> <span class="chip tone-now">built</span><span>capability list with states, and the ordered flow steps</span></div></li><li><span class="n">8</span><div><b><a href="#quickstart">08 · Agent quick-start</a></b> <span class="chip tone-now">built</span><span>entry file, actual commands, owner, verification line, machine context</span></div></li><li><span class="n">9</span><div><b><a href="#evidence">09 · Evidence / limits / version</a></b> <span class="chip tone-now">built</span><span>facts with receipts vs proposals, visibly distinct; limits; version</span></div></li><li><span class="n">10</span><div><b><a href="#activity">10 · Activity strip</a></b> <span class="chip tone-now">built</span><span>observation date and coverage, a density strip, the dated lines</span></div></li><li><span class="n">11</span><div><b><a href="#catalogue">11 · Searchable catalogue</a></b> <span class="chip tone-now">built</span><span>cards with kicker, summary, state; text filter and select filters; visible count; truthful empty state</span></div></li><li><span class="n">12</span><div><b><a href="#related">12 · Related work</a></b> <span class="chip tone-now">built</span><span>next reading, typed; never filler</span></div></li><li><span class="n">13</span><div><b><a href="#atoms">+ · Atoms the parts share</a></b> <span class="chip tone-now">built</span><span>chips · metrics · words · timeline · section head</span></div></li></ol>
+    
+  </div>
+  <div>
+    
+  </div>
+</div>
+
+</section>
+
+
+<section class="siso-section" id="shell">
+  <div class="siso-section__head"><span class="n">01</span><h2>Global shell</h2><span class="sub">the CRM GroupedRail: grouped navigation, search, collapse; the rail on this page · <code>parts/../shell.mjs · shell/rail.{css,js}</code> · robbed from SISOCRM GroupedRail (copied, not adapted)</span></div>
+  <div class="empty">The shell is the rail at the left of this page. Its markup comes from <code>shell.mjs rail()</code>; press <kbd>[</kbd> and <kbd>⌘K</kbd>.</div>
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>null</code></pre></details>
+</section>
+
+<section class="siso-section" id="heading">
+  <div class="siso-section__head"><span class="n">02</span><h2>Heading</h2><span class="sub">breadcrumb · kicker · title · purpose · state badges · status panel · <code>parts/heading.html</code> · robbed from AM hero + status panel (system-map/part-page.css:8-15)</span></div>
+  
+<header class="heading" id="top">
+  <div>
+    <nav class="heading__crumb" aria-label="Breadcrumb"><a href="#">Works</a><span class="faint">/</span><span>siso-foundry</span></nav>
+    <div class="kicker">Work <span class="sep">·</span> knowledge_system <span class="sep">·</span> <span class="dim">active</span></div>
+    <h1>Foundry · industries, valuation, landscape watch</h1>
+    <p class="heading__sub">Industry research and value inputs for every SISO offer; 17 industry records, a law-firm pilot live.</p>
+    <div class="heading__badges">
+<span class="chip tone-now" title="Foundry · industries, valuation, landscape watch"><i class="dot"></i>public repo</span><span class="chip tone-research" title="Foundry · industries, valuation, landscape watch">section Research</span><span class="chip tone-muted" title="Foundry · industries, valuation, landscape watch">V40 a9ffd16</span>
+</div>
+  </div>
+  <aside class="heading__status">
+    <span class="kicker">Current posture</span>
+    <strong>active · 7 modules</strong>
+    <p>Observed 6 Sep 13:42 from catalog.json.</p>
+    <dl class="kv"><dt>owner</dt><dd>FOUNDRY-ZERO</dd><dt>last</dt><dd>6 Sep 13:42</dd></dl>
+  </aside>
+</header>
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>{
+  &quot;breadcrumb&quot;: [
+    {
+      &quot;label&quot;: &quot;Works&quot;,
+      &quot;href&quot;: &quot;#&quot;
+    },
+    {
+      &quot;label&quot;: &quot;siso-foundry&quot;
+    }
+  ],
+  &quot;kicker&quot;: &quot;Work &lt;span class=\&quot;sep\&quot;&gt;·&lt;/span&gt; knowledge_system &lt;span class=\&quot;sep\&quot;&gt;·&lt;/span&gt; &lt;span class=\&quot;dim\&quot;&gt;active&lt;/span&gt;&quot;,
+  &quot;title&quot;: &quot;Foundry · industries, valuation, landscape watch&quot;,
+  &quot;subtitle&quot;: &quot;Industry research and value inputs for every SISO offer; 17 industry records, a law-firm pilot live.&quot;,
+  &quot;badges&quot;: [
+    {
+      &quot;label&quot;: &quot;public repo&quot;,
+      &quot;tone&quot;: &quot;now&quot;,
+      &quot;dot&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;section Research&quot;,
+      &quot;tone&quot;: &quot;research&quot;
+    },
+    {
+      &quot;label&quot;: &quot;V40 a9ffd16&quot;,
+      &quot;tone&quot;: &quot;muted&quot;
+    }
+  ],
+  &quot;status&quot;: {
+    &quot;kicker&quot;: &quot;Current posture&quot;,
+    &quot;value&quot;: &quot;active · 7 modules&quot;,
+    &quot;note&quot;: &quot;Observed 6 Sep 13:42 from catalog.json.&quot;,
+    &quot;facts&quot;: [
+      {
+        &quot;k&quot;: &quot;owner&quot;,
+        &quot;v&quot;: &quot;FOUNDRY-ZERO&quot;
+      },
+      {
+        &quot;k&quot;: &quot;last&quot;,
+        &quot;v&quot;: &quot;6 Sep 13:42&quot;
+      }
+    ]
+  }
+}</code></pre></details>
+</section>
+
+<section class="siso-section" id="reasoning">
+  <div class="siso-section__head"><span class="n">03</span><h2>Reasoning block</h2><span class="sub">his words (source) vs the seat's reading, then the claim ceiling, data, privacy, empty state, agent entry · <code>parts/reasoning.html</code> · robbed from AM research reader CLAIM CEILING · system-map evidence ladder</span></div>
+  
+<div class="reasoning">
+  <div class="reasoning__col reasoning__col--source">
+    <span class="kicker">Source · his words, verbatim</span>
+    <blockquote class="quote quote--sm">we also need to put reasoning in each of these templates because like right now it&#39;s quite simple<small>Shaan · 6 Sep 18:19</small></blockquote>
+  </div>
+  <div class="reasoning__col">
+    <span class="kicker dim">Reading · authored by the seat</span>
+    <p>A page without its reasoning is a layout. The block keeps what he said apart from what the seat read into it.</p>
+    <p class="small muted" style="margin-top:var(--crm-space-3)"><b>Readers.</b> Human: judge the reading against the words. Agent: the claim ceiling is the contract.</p>
+    <ol class="reasoning__questions small"><li>Why does this page exist?</li><li>What may it claim?</li></ol>
+  </div>
+  <div class="reasoning__ceiling">
+    <div class="card"><span class="kicker">Claim ceiling</span>Only what the record says; authored text is labelled.</div>
+    <div class="card"><span class="kicker dim">Data it renders</span>plan/templates.json reasoning block.</div>
+    <div class="card"><span class="kicker dim">Privacy</span>Public.</div>
+    <div class="card"><span class="kicker dim">Empty state</span>No source → the source column says so.</div>
+    <div class="card"><span class="kicker dim">Agent entry</span><code>templates/&lt;id&gt;/README.md</code></div>
+  </div>
+</div>
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>{
+  &quot;source&quot;: [
+    {
+      &quot;text&quot;: &quot;we also need to put reasoning in each of these templates because like right now it&#39;s quite simple&quot;,
+      &quot;who&quot;: &quot;Shaan&quot;,
+      &quot;at&quot;: &quot;6 Sep 18:19&quot;
+    }
+  ],
+  &quot;why&quot;: &quot;A page without its reasoning is a layout. The block keeps what he said apart from what the seat read into it.&quot;,
+  &quot;readers&quot;: &quot;Human: judge the reading against the words. Agent: the claim ceiling is the contract.&quot;,
+  &quot;questions&quot;: [
+    &quot;Why does this page exist?&quot;,
+    &quot;What may it claim?&quot;
+  ],
+  &quot;claim_ceiling&quot;: &quot;Only what the record says; authored text is labelled.&quot;,
+  &quot;data&quot;: &quot;plan/templates.json reasoning block.&quot;,
+  &quot;privacy&quot;: &quot;Public.&quot;,
+  &quot;empty_state&quot;: &quot;No source → the source column says so.&quot;,
+  &quot;agent_entry&quot;: &quot;templates/&lt;id&gt;/README.md&quot;
+}</code></pre></details>
+</section>
+
+<section class="siso-section" id="map">
+  <div class="siso-section__head"><span class="n">04</span><h2>Map · typed relationship map + ecosystem loop</h2><span class="sub">the mind map: repos, Works, questions, industries, people, nodes as a graph, with its text equivalent; and the loop · <code>parts/map.html · loop.html</code> · robbed from AM dependency link chips (system-map/index.html:152-157); loop from library-ui-spec §6</span></div>
+  
+
+<div class="map">
+  <svg viewBox="0 0 720 460" role="img" aria-label="Relationship map: Great Library and 7 linked records"><title>Great Library</title><g class="tone-projects"><text class="type-label" x="523.4" y="99.7" text-anchor="middle" dominant-baseline="middle">Repos</text></g><g class="tone-research"><text class="type-label" x="450.7" y="418.3" text-anchor="middle" dominant-baseline="middle">Questions</text></g><g class="tone-clients"><text class="type-label" x="196.6" y="360.3" text-anchor="middle" dominant-baseline="middle">People</text></g><g class="tone-now"><text class="type-label" x="196.6" y="99.7" text-anchor="middle" dominant-baseline="middle">Nodes</text></g><line class="edge edge--typed tone-projects" x1="360" y1="230" x2="431.6" y2="81.3"/><a href="#"><g class="node tone-projects"><circle cx="431.6" cy="81.3" r="6"/><text x="442.6" y="81.3" text-anchor="start" dominant-baseline="middle">great-library-of-siso</text></g></a><line class="edge edge--typed tone-projects" x1="360" y1="230" x2="520.9" y2="193.3"/><a href="#"><g class="node tone-projects"><circle cx="520.9" cy="193.3" r="6"/><text x="531.9" y="193.3" text-anchor="start" dominant-baseline="middle">siso-shell</text></g></a><line class="edge edge--typed tone-research" x1="360" y1="230" x2="489.0" y2="332.9"/><a href="#"><g class="node tone-research"><circle cx="489.0" cy="332.9" r="6"/><text x="500.0" y="332.9" text-anchor="start" dominant-baseline="middle">GQ-012 context</text></g></a><line class="edge edge--typed tone-research" x1="360" y1="230" x2="360.0" y2="395.0"/><a href="#"><g class="node tone-research"><circle cx="360.0" cy="395.0" r="6"/><text x="371.0" y="395.0" text-anchor="start" dominant-baseline="middle">GQ-013 building set</text></g></a><line class="edge edge--typed tone-clients" x1="360" y1="230" x2="231.0" y2="332.9"/><a href="#"><g class="node tone-clients"><circle cx="231.0" cy="332.9" r="6"/><text x="220.0" y="332.9" text-anchor="end" dominant-baseline="middle">LIBRARY-ZERO</text></g></a><line class="edge edge--typed tone-now" x1="360" y1="230" x2="199.1" y2="193.3"/><a href="#"><g class="node tone-now"><circle cx="199.1" cy="193.3" r="6"/><text x="188.1" y="193.3" text-anchor="end" dominant-baseline="middle">laptop</text></g></a><line class="edge edge--typed tone-now" x1="360" y1="230" x2="288.4" y2="81.3"/><a href="#"><g class="node tone-now"><circle cx="288.4" cy="81.3" r="6"/><text x="277.4" y="81.3" text-anchor="end" dominant-baseline="middle">Cloudflare Pages</text></g></a><a href="#"><g class="centre"><circle cx="360" cy="230" r="46"/><text x="360" y="230" text-anchor="middle" dominant-baseline="middle">Great Library</text></g></a></svg>
+  <div class="map__list">
+    <div class="map__type tone-projects"><span class="kicker">Repos <span class="dim">· 2</span></span><ul><li><span><a href="#">great-library-of-siso</a></span><span class="rel">source</span></li><li><span><a href="#">siso-shell</a></span><span class="rel">shell</span></li></ul></div><div class="map__type tone-research"><span class="kicker">Questions <span class="dim">· 2</span></span><ul><li><span><a href="#">GQ-012 context</a></span><span class="rel">serves</span></li><li><span><a href="#">GQ-013 building set</a></span><span class="rel">serves</span></li></ul></div><div class="map__type tone-clients"><span class="kicker">People <span class="dim">· 1</span></span><ul><li><span><a href="#">LIBRARY-ZERO</a></span><span class="rel">seat</span></li></ul></div><div class="map__type tone-now"><span class="kicker">Nodes <span class="dim">· 2</span></span><ul><li><span><a href="#">laptop</a></span><span class="rel">built on</span></li><li><span><a href="#">Cloudflare Pages</a></span><span class="rel">served</span></li></ul></div>
+  </div>
+</div>
+
+<div style="margin-top:var(--crm-space-4)"><span class="kicker dim">The ecosystem loop</span></div>
+<div class="loop">
+<a class="loop__node tone-clients" href="/t/U15/"><b>Clients fund compute</b><span>client projects pay for the runs</span><span class="measured unmeasured">unmeasured</span></a><a class="loop__node tone-projects" href="/t/U4/"><b>Owners build</b><span>industry systems, module by module</span><span class="measured unmeasured">unmeasured</span></a><a class="loop__node tone-projects" href="/t/U3/"><b>Packs enter the Library</b><span>Works, Releases, Snapshots</span><span class="measured unmeasured">unmeasured</span></a><a class="loop__node tone-clients" href="/t/U8/"><b>People + repos feed Foundry</b><span>industries, valuation, landscape</span><span class="measured unmeasured">unmeasured</span></a><a class="loop__node tone-research" href="/t/U5/"><b>Questions turn evidence into breakthroughs</b><span>God Questions with compute runs</span><span class="measured">measured · J2 ratio 1.00×</span></a><a class="loop__node tone-now" href="/t/U15/"><b>Better client outcomes</b><span>improved systems and packs</span><span class="measured unmeasured">unmeasured</span></a>
+</div>
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>{
+  &quot;centre&quot;: {
+    &quot;label&quot;: &quot;Great Library&quot;,
+    &quot;href&quot;: &quot;#&quot;
+  },
+  &quot;types&quot;: [
+    {
+      &quot;type&quot;: &quot;repo&quot;,
+      &quot;label&quot;: &quot;Repos&quot;,
+      &quot;tone&quot;: &quot;projects&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;label&quot;: &quot;great-library-of-siso&quot;,
+          &quot;href&quot;: &quot;#&quot;,
+          &quot;rel&quot;: &quot;source&quot;
+        },
+        {
+          &quot;label&quot;: &quot;siso-shell&quot;,
+          &quot;href&quot;: &quot;#&quot;,
+          &quot;rel&quot;: &quot;shell&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;question&quot;,
+      &quot;label&quot;: &quot;Questions&quot;,
+      &quot;tone&quot;: &quot;research&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;label&quot;: &quot;GQ-012 context&quot;,
+          &quot;href&quot;: &quot;#&quot;,
+          &quot;rel&quot;: &quot;serves&quot;
+        },
+        {
+          &quot;label&quot;: &quot;GQ-013 building set&quot;,
+          &quot;href&quot;: &quot;#&quot;,
+          &quot;rel&quot;: &quot;serves&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;people&quot;,
+      &quot;label&quot;: &quot;People&quot;,
+      &quot;tone&quot;: &quot;clients&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;label&quot;: &quot;LIBRARY-ZERO&quot;,
+          &quot;href&quot;: &quot;#&quot;,
+          &quot;rel&quot;: &quot;seat&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;node&quot;,
+      &quot;label&quot;: &quot;Nodes&quot;,
+      &quot;tone&quot;: &quot;now&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;label&quot;: &quot;laptop&quot;,
+          &quot;href&quot;: &quot;#&quot;,
+          &quot;rel&quot;: &quot;built on&quot;
+        },
+        {
+          &quot;label&quot;: &quot;Cloudflare Pages&quot;,
+          &quot;href&quot;: &quot;#&quot;,
+          &quot;rel&quot;: &quot;served&quot;
+        }
+      ]
+    }
+  ]
+}</code></pre></details>
+</section>
+
+<section class="siso-section" id="repos">
+  <div class="siso-section__head"><span class="n">05</span><h2>Repository cards</h2><span class="sub">every repo incl. private: head, time, branch, visibility, access, rights · <code>parts/repos.html</code> · robbed from AM registry card grid; his 16:36 "even if they private"</span></div>
+  
+
+<div class="grid grid-2">
+<div class="card repo">
+  <div class="repo__name"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/></svg><a href="https://github.com/sisodias/great-library-of-siso">sisodias/great-library-of-siso</a></div>
+  <div class="chips"><span class="chip tone-now">public</span></div>
+  <div class="repo__meta"><span>branch <b>main</b></span><span>head <b>0aaac7a</b></span><span>6 Sep 13:42</span></div>
+  <div class="repo__what">The Library site build and registry.</div>
+</div><div class="card repo card--strip tone-clients">
+  <div class="repo__name"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/></svg>sisodias/halocrm-mirror</div>
+  <div class="chips"><span class="chip tone-clients"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="lock"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>private</span><span class="chip tone-muted">client account</span></div>
+  <div class="repo__meta"><span>branch <b>main</b></span><span>head <b>37 commits</b></span><span>5 Sep</span><span>rights <b>client</b></span></div>
+  <div class="repo__what">Private mirror; dated activity only, never payload.</div>
+</div>
+</div>
+
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>[
+  {
+    &quot;repo&quot;: &quot;sisodias/great-library-of-siso&quot;,
+    &quot;url&quot;: &quot;https://github.com/sisodias/great-library-of-siso&quot;,
+    &quot;branch&quot;: &quot;main&quot;,
+    &quot;head&quot;: &quot;0aaac7a&quot;,
+    &quot;head_at&quot;: &quot;6 Sep 13:42&quot;,
+    &quot;private&quot;: false,
+    &quot;what&quot;: &quot;The Library site build and registry.&quot;
+  },
+  {
+    &quot;repo&quot;: &quot;sisodias/halocrm-mirror&quot;,
+    &quot;private&quot;: true,
+    &quot;branch&quot;: &quot;main&quot;,
+    &quot;head&quot;: &quot;37 commits&quot;,
+    &quot;head_at&quot;: &quot;5 Sep&quot;,
+    &quot;access&quot;: &quot;client account&quot;,
+    &quot;rights&quot;: &quot;client&quot;,
+    &quot;what&quot;: &quot;Private mirror; dated activity only, never payload.&quot;
+  }
+]</code></pre></details>
+</section>
+
+<section class="siso-section" id="sauce">
+  <div class="siso-section__head"><span class="n">06</span><h2>Sauce cards</h2><span class="sub">3–7 genuinely useful assets, examples, datasets or receipts · <code>parts/sauce.html</code> · robbed from AM resource room card grid (site/index.html:403-416)</span></div>
+  
+
+<div class="sauce grid grid-3">
+<a class="card card--link tone-research" href="https://great-library-of-siso.pages.dev/catalog.json"><span class="sauce__kind">dataset</span><span class="sauce__title">catalog.json</span><span class="sauce__what">47 Works, 27 repos, 86 releases as machine data.</span><span class="sauce__proof">HTTP 200 · 6 Sep</span></a><a class="card card--link tone-research" href="#"><span class="sauce__kind">receipt</span><span class="sauce__title">J2 acceptance.json</span><span class="sauce__what">Two arms, 12 holdout checks each, both pass.</span><span class="sauce__proof">domains/compute/runs/2026-09-06-j2/acceptance.json</span></a><a class="card card--link tone-agents" href="#"><span class="sauce__kind">play</span><span class="sauce__title">P1 publish</span><span class="sauce__what">Publish a static dir to Cloudflare Pages with an exact readback.</span><span class="sauce__proof">skills/publish v0.1.2</span></a>
+</div>
+
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>[
+  {
+    &quot;kind&quot;: &quot;dataset&quot;,
+    &quot;title&quot;: &quot;catalog.json&quot;,
+    &quot;href&quot;: &quot;https://great-library-of-siso.pages.dev/catalog.json&quot;,
+    &quot;what&quot;: &quot;47 Works, 27 repos, 86 releases as machine data.&quot;,
+    &quot;proof&quot;: &quot;HTTP 200 · 6 Sep&quot;,
+    &quot;tone&quot;: &quot;research&quot;
+  },
+  {
+    &quot;kind&quot;: &quot;receipt&quot;,
+    &quot;title&quot;: &quot;J2 acceptance.json&quot;,
+    &quot;href&quot;: &quot;#&quot;,
+    &quot;what&quot;: &quot;Two arms, 12 holdout checks each, both pass.&quot;,
+    &quot;proof&quot;: &quot;domains/compute/runs/2026-09-06-j2/acceptance.json&quot;,
+    &quot;tone&quot;: &quot;research&quot;
+  },
+  {
+    &quot;kind&quot;: &quot;play&quot;,
+    &quot;title&quot;: &quot;P1 publish&quot;,
+    &quot;href&quot;: &quot;#&quot;,
+    &quot;what&quot;: &quot;Publish a static dir to Cloudflare Pages with an exact readback.&quot;,
+    &quot;proof&quot;: &quot;skills/publish v0.1.2&quot;,
+    &quot;tone&quot;: &quot;agents&quot;
+  }
+]</code></pre></details>
+</section>
+
+<section class="siso-section" id="contents">
+  <div class="siso-section__head"><span class="n">07</span><h2>Contents + procedure</h2><span class="sub">capability list with states, and the ordered flow steps · <code>parts/contents.html</code> · robbed from AM flow / process steps (blueprint .flow-step; system-map/index.html:93-104)</span></div>
+  
+<div class="contents">
+  <div>
+    <ol class="contents__list"><li><span class="n">1</span><div><b>S1 · CRM rail on every route</b> <span class="chip tone-warn">partial</span><span>verification: [ collapses on all three sites</span></div></li><li><span class="n">2</span><div><b>P1 · publish play</b> <span class="chip tone-now">landed</span><span>Hub 0.1.2</span></div></li><li><span class="n">3</span><div><b>L2 · 14 GQ pages</b> <span class="chip tone-blocked">left</span><span>fall through to root today</span></div></li></ol>
+    
+  </div>
+  <div>
+    <div class="flow"><div class="flow-step"><b>Register</b><span>gls add work</span></div><div class="flow-step"><b>Build</b><span>src/build.mjs</span></div><div class="flow-step"><b>Verify</b><span>npm run verify</span></div><div class="flow-step"><b>Publish</b><span>publish play, exact readback</span></div></div>
+  </div>
+</div>
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>{
+  &quot;items&quot;: [
+    {
+      &quot;label&quot;: &quot;S1 · CRM rail on every route&quot;,
+      &quot;what&quot;: &quot;verification: [ collapses on all three sites&quot;,
+      &quot;state&quot;: &quot;partial&quot;,
+      &quot;tone&quot;: &quot;warn&quot;
+    },
+    {
+      &quot;label&quot;: &quot;P1 · publish play&quot;,
+      &quot;what&quot;: &quot;Hub 0.1.2&quot;,
+      &quot;state&quot;: &quot;landed&quot;,
+      &quot;tone&quot;: &quot;now&quot;
+    },
+    {
+      &quot;label&quot;: &quot;L2 · 14 GQ pages&quot;,
+      &quot;what&quot;: &quot;fall through to root today&quot;,
+      &quot;state&quot;: &quot;left&quot;,
+      &quot;tone&quot;: &quot;blocked&quot;
+    }
+  ],
+  &quot;steps&quot;: [
+    {
+      &quot;label&quot;: &quot;Register&quot;,
+      &quot;what&quot;: &quot;gls add work&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Build&quot;,
+      &quot;what&quot;: &quot;src/build.mjs&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Verify&quot;,
+      &quot;what&quot;: &quot;npm run verify&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Publish&quot;,
+      &quot;what&quot;: &quot;publish play, exact readback&quot;
+    }
+  ]
+}</code></pre></details>
+</section>
+
+<section class="siso-section" id="quickstart">
+  <div class="siso-section__head"><span class="n">08</span><h2>Agent quick-start</h2><span class="sub">entry file, actual commands, owner, verification line, machine context · <code>parts/quickstart.html</code> · robbed from library-ui-spec §6</span></div>
+  
+<div class="quickstart">
+  <div>
+    <span class="kicker">Agent entry</span>
+    <dl class="kv">
+      <dt>Read first</dt><dd><code>.agents/PAGE.md</code></dd>
+      <dt>Owner</dt><dd>LIBRARY-ZERO <span class="muted small">· last writeback 6 Sep 13:42</span></dd>
+      <dt>Machine</dt><dd><a href="https://great-library-of-siso.pages.dev/works/siso-foundry/index.json"><code>https://great-library-of-siso.pages.dev/works/siso-foundry/index.json</code></a></dd>
+      <dt>Done when</dt><dd>Open /works/siso-foundry/ and see eight sections in order.</dd>
+    </dl>
+  </div>
+  <div>
+    <span class="kicker">Commands</span>
+    <pre><code>npm run verify
+node bin/gls add work --file work.json --reviewed-public --dry-run
+</code></pre>
+  </div>
+</div>
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>{
+  &quot;entry&quot;: {
+    &quot;path&quot;: &quot;.agents/PAGE.md&quot;
+  },
+  &quot;owner&quot;: {
+    &quot;name&quot;: &quot;LIBRARY-ZERO&quot;,
+    &quot;last&quot;: &quot;6 Sep 13:42&quot;
+  },
+  &quot;context_url&quot;: &quot;https://great-library-of-siso.pages.dev/works/siso-foundry/index.json&quot;,
+  &quot;verification&quot;: &quot;Open /works/siso-foundry/ and see eight sections in order.&quot;,
+  &quot;commands&quot;: [
+    &quot;npm run verify&quot;,
+    &quot;node bin/gls add work --file work.json --reviewed-public --dry-run&quot;
+  ]
+}</code></pre></details>
+</section>
+
+<section class="siso-section" id="evidence">
+  <div class="siso-section__head"><span class="n">09</span><h2>Evidence / limits / version</h2><span class="sub">facts with receipts vs proposals, visibly distinct; limits; version · <code>parts/evidence.html</code> · robbed from AM evidence ladder (system-map root) · reader file chips (lines · bytes · sha256)</span></div>
+  
+<div class="evidence">
+  <div>
+    <div class="evidence__legend"><span><i></i>fact · has a receipt</span><span><i class="p"></i>proposal · not yet</span></div>
+    <div class="fact"><div>Ratio medium/xhigh input tokens 1.00× (122,427 vs 122,327).<span class="receipt">domains/compute/runs/2026-09-06-j2/acceptance.json · 6 Sep</span></div></div>
+    <div class="proposal"><div>xhigh costs about four times medium.<span class="receipt">claim from a chart; not supplied; effort applied was null in both rollouts</span></div></div>
+    
+  </div>
+  <div class="evidence__side">
+    <div class="card"><span class="kicker tone-warn" style="color:var(--accent-tasks)">Limits</span><ul><li>One brief, one run per arm.</li></ul></div>
+    <div class="card"><span class="kicker dim">Version</span><div class="small"><code>j2.json · measured_with_limits</code><div class="faint mono small" style="margin-top:4px">2026-09-06</div></div></div>
+  </div>
+</div>
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>{
+  &quot;facts&quot;: [
+    {
+      &quot;claim&quot;: &quot;Ratio medium/xhigh input tokens 1.00× (122,427 vs 122,327).&quot;,
+      &quot;receipt&quot;: &quot;domains/compute/runs/2026-09-06-j2/acceptance.json&quot;,
+      &quot;at&quot;: &quot;6 Sep&quot;
+    }
+  ],
+  &quot;proposals&quot;: [
+    {
+      &quot;claim&quot;: &quot;xhigh costs about four times medium.&quot;,
+      &quot;why&quot;: &quot;claim from a chart; not supplied; effort applied was null in both rollouts&quot;
+    }
+  ],
+  &quot;limits&quot;: [
+    &quot;One brief, one run per arm.&quot;
+  ],
+  &quot;version&quot;: {
+    &quot;label&quot;: &quot;j2.json · measured_with_limits&quot;,
+    &quot;at&quot;: &quot;2026-09-06&quot;
+  }
+}</code></pre></details>
+</section>
+
+<section class="siso-section" id="activity">
+  <div class="siso-section__head"><span class="n">10</span><h2>Activity strip</h2><span class="sub">observation date and coverage, a density strip, the dated lines · <code>parts/activity.html</code> · robbed from AM freshness lane card · research-os CURRENT POSTURE</span></div>
+  
+<div class="activity">
+  <div class="activity__head"><span>observed 6 Sep 19:14 UTC+07</span><span>coverage · OWNERS.md last 48 h</span></div>
+  <div class="activity__strip" aria-hidden="true"><i style="--w:0.6" title="5 Sep · 41 lines"></i><i style="--w:1" title="6 Sep · 63 lines"></i></div>
+  <ul class="activity__list"><li><span class="at">2026-09-06 18:48</span><span class="who tone-agents">AGENT-ZERO</span><span>Spawned TEMPLATE-BANK-ZERO</span></li><li><span class="at">2026-09-06 17:11</span><span class="who tone-agents">AGENT-ZERO</span><span>CRM GroupedRail ported to the atlas (v1)</span></li></ul>
+  
+</div>
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>{
+  &quot;observed_at&quot;: &quot;6 Sep 19:14 UTC+07&quot;,
+  &quot;coverage&quot;: &quot;OWNERS.md last 48 h&quot;,
+  &quot;days&quot;: [
+    {
+      &quot;label&quot;: &quot;5 Sep&quot;,
+      &quot;w&quot;: 0.6,
+      &quot;title&quot;: &quot;5 Sep · 41 lines&quot;
+    },
+    {
+      &quot;label&quot;: &quot;6 Sep&quot;,
+      &quot;w&quot;: 1,
+      &quot;title&quot;: &quot;6 Sep · 63 lines&quot;
+    }
+  ],
+  &quot;items&quot;: [
+    {
+      &quot;at&quot;: &quot;2026-09-06 18:48&quot;,
+      &quot;who&quot;: &quot;AGENT-ZERO&quot;,
+      &quot;what&quot;: &quot;Spawned TEMPLATE-BANK-ZERO&quot;,
+      &quot;tone&quot;: &quot;agents&quot;
+    },
+    {
+      &quot;at&quot;: &quot;2026-09-06 17:11&quot;,
+      &quot;who&quot;: &quot;AGENT-ZERO&quot;,
+      &quot;what&quot;: &quot;CRM GroupedRail ported to the atlas (v1)&quot;,
+      &quot;tone&quot;: &quot;agents&quot;
+    }
+  ]
+}</code></pre></details>
+</section>
+
+<section class="siso-section" id="catalogue">
+  <div class="siso-section__head"><span class="n">11</span><h2>Searchable catalogue</h2><span class="sub">cards with kicker, summary, state; text filter and select filters; visible count; truthful empty state · <code>parts/catalogue.html · catalogue.js</code> · robbed from AM searchable track filter (blueprint/index.html:357-400) · registry card grid (system-map/registry.css:14-20)</span></div>
+  
+<div class="catalogue" data-catalogue="fixture">
+  <div class="catalogue__bar needs-js">
+    <label class="catalogue__search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg><input type="search" placeholder="Filter…" aria-label="Filter catalogue" data-cat-search></label>
+    <label class="catalogue__filter"><select data-cat-filter="type" aria-label="type"><option value="">type · all</option><option value="research_question">research_question</option><option value="project">project</option></select></label>
+    <span class="catalogue__count" data-cat-count>2 of 2</span>
+  </div>
+  <div class="grid grid-auto" data-cat-grid>
+  <a class="card card--link card--strip tone-research" href="#" data-cat-item data-search="gq-011 astra luna delegation" data-tag-type="research_question"><span class="kicker">research_question <span class="sep">·</span> active</span><h4>GQ-011 · Astra, Luna and delegation</h4><p>How do they yield more accepted work?</p><span class="foot"><span>gq-011</span><span class="chip tone-research">active</span></span></a><a class="card card--link card--strip tone-projects" href="#" data-cat-item data-search="library works releases" data-tag-type="project"><span class="kicker">project <span class="sep">·</span> active</span><h4>Great Library of SISO</h4><p>47 Works, 86 Releases, 94 pages.</p><span class="foot"><span>library</span><span class="chip tone-projects">active</span></span></a>
+  </div>
+  <div class="empty" data-cat-empty hidden>No records match. Clear a filter.</div>
+  
+</div>
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>{
+  &quot;id&quot;: &quot;fixture&quot;,
+  &quot;filters&quot;: [
+    {
+      &quot;key&quot;: &quot;type&quot;,
+      &quot;label&quot;: &quot;type&quot;,
+      &quot;values&quot;: [
+        &quot;research_question&quot;,
+        &quot;project&quot;
+      ]
+    }
+  ],
+  &quot;items&quot;: [
+    {
+      &quot;id&quot;: &quot;gq-011&quot;,
+      &quot;kicker&quot;: &quot;research_question &lt;span class=\&quot;sep\&quot;&gt;·&lt;/span&gt; active&quot;,
+      &quot;title&quot;: &quot;GQ-011 · Astra, Luna and delegation&quot;,
+      &quot;summary&quot;: &quot;How do they yield more accepted work?&quot;,
+      &quot;href&quot;: &quot;#&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;tone&quot;: &quot;research&quot;,
+      &quot;tags&quot;: [
+        {
+          &quot;key&quot;: &quot;type&quot;,
+          &quot;value&quot;: &quot;research_question&quot;
+        }
+      ],
+      &quot;search&quot;: &quot;gq-011 astra luna delegation&quot;
+    },
+    {
+      &quot;id&quot;: &quot;library&quot;,
+      &quot;kicker&quot;: &quot;project &lt;span class=\&quot;sep\&quot;&gt;·&lt;/span&gt; active&quot;,
+      &quot;title&quot;: &quot;Great Library of SISO&quot;,
+      &quot;summary&quot;: &quot;47 Works, 86 Releases, 94 pages.&quot;,
+      &quot;href&quot;: &quot;#&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;tone&quot;: &quot;projects&quot;,
+      &quot;tags&quot;: [
+        {
+          &quot;key&quot;: &quot;type&quot;,
+          &quot;value&quot;: &quot;project&quot;
+        }
+      ],
+      &quot;search&quot;: &quot;library works releases&quot;
+    }
+  ]
+}</code></pre></details>
+</section>
+
+<section class="siso-section" id="related">
+  <div class="siso-section__head"><span class="n">12</span><h2>Related work</h2><span class="sub">next reading, typed; never filler · <code>parts/related.html</code> · robbed from —</span></div>
+  
+
+<div class="related">
+<a class="card card--link card--strip tone-projects" href="/t/U4/"><span class="kicker">hub</span><b>U4 · Project one pager</b><span>every page is one hop from it</span></a><a class="card card--link card--strip tone-research" href="/t/U5/"><span class="kicker">research</span><b>U5 · God Question</b></a>
+</div>
+
+
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>[
+  {
+    &quot;title&quot;: &quot;U4 · Project one pager&quot;,
+    &quot;href&quot;: &quot;/t/U4/&quot;,
+    &quot;type&quot;: &quot;hub&quot;,
+    &quot;tone&quot;: &quot;projects&quot;,
+    &quot;why&quot;: &quot;every page is one hop from it&quot;
+  },
+  {
+    &quot;title&quot;: &quot;U5 · God Question&quot;,
+    &quot;href&quot;: &quot;/t/U5/&quot;,
+    &quot;type&quot;: &quot;research&quot;,
+    &quot;tone&quot;: &quot;research&quot;
+  }
+]</code></pre></details>
+</section>
+
+<section class="siso-section" id="atoms">
+  <div class="siso-section__head"><span class="n">+</span><h2>Atoms the parts share</h2><span class="sub">chips · metrics · words · timeline · section head · <code>parts/chips.html · metrics.html · words.html · timeline.html · section.html</code> · robbed from AM status chips · metric strip; his timeline picks (21st.dev nyxbui/timeline, great-ui revision timeline) for the lane idea</span></div>
+  <div class="chips">
+<span class="chip tone-now"><i class="dot"></i>live</span><span class="chip tone-warn">partial</span><span class="chip tone-blocked">blocked</span><span class="chip tone-clients"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="lock"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>private</span>
+</div><div style="margin-top:var(--crm-space-3)">
+<div class="metrics">
+<div class="metric tone-projects"><b>47</b><span>Works</span></div><div class="metric tone-research"><b>86</b><span>Releases</span></div><div class="metric tone-research"><b>22</b><span>God Questions</span></div><div class="metric tone-clients"><b>27</b><span>repos · 23 public / 4 private</span></div>
+</div>
+</div><div style="margin-top:var(--crm-space-3)">
+<div class="words">
+<blockquote class="quote">agents should be ephemeral … the projects are forever<small>Shaan · 6 Sep 16:50</small></blockquote>
+</div>
+</div><div style="margin-top:var(--crm-space-3)">
+
+<div class="timeline">
+  <svg viewBox="0 0 960 192" role="img" aria-label="Timeline, 9 events across 4 lanes"><line class="grid" x1="421.2" y1="20" x2="421.2" y2="166"/><text class="day" x="425.2" y="182">09-05</text><g class="tone-projects"><text class="lane-label" x="8" y="43" dominant-baseline="middle">commits</text><line class="grid" x1="96" y1="43" x2="936" y2="43"/><circle class="ev" cx="317.7" cy="43" r="4.5"><title>2026-09-05 20:11 · siso-shell adea886</title></circle><circle class="ev ev--auto" cx="416.6" cy="43" r="3"><title>2026-09-05 23:50 · auto backup</title></circle></g><g class="tone-agents"><text class="lane-label" x="8" y="77" dominant-baseline="middle">seats</text><line class="grid" x1="96" y1="77" x2="936" y2="77"/><circle class="ev" cx="868.7" cy="77" r="4.5"><title>2026-09-06 16:31 · AGENT-ZERO born</title></circle><circle class="ev" cx="930.1" cy="77" r="4.5"><title>2026-09-06 18:47 · TEMPLATE-BANK-ZERO born</title></circle></g><g class="tone-research"><text class="lane-label" x="8" y="111" dominant-baseline="middle">decisions</text><line class="grid" x1="96" y1="111" x2="936" y2="111"/><circle class="ev" cx="923.4" cy="111" r="4.5"><title>2026-09-06 18:32 · D-30 Haiku sub-agents</title></circle><circle class="ev" cx="930.1" cy="111" r="4.5"><title>2026-09-06 18:47 · D-31…D-35</title></circle></g><g class="tone-clients"><text class="lane-label" x="8" y="145" dominant-baseline="middle">his words</text><line class="grid" x1="96" y1="145" x2="936" y2="145"/><circle class="ev" cx="877.3" cy="145" r="4.5"><title>2026-09-06 16:50 · not what I asked; CRM side nav</title></circle><circle class="ev" cx="917.5" cy="145" r="4.5"><title>2026-09-06 18:19 · templates, reasoning, side nav, order</title></circle><circle class="ev" cx="927.4" cy="145" r="4.5"><title>2026-09-06 18:41 · build the damn thing</title></circle></g></svg>
+  <div class="timeline__legend"><span class="tone-projects"><i></i>commits</span><span class="tone-agents"><i></i>seats</span><span class="tone-research"><i></i>decisions</span><span class="tone-clients"><i></i>his words</span></div>
+</div>
+
+</div>
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>{
+  &quot;chips&quot;: [
+    {
+      &quot;label&quot;: &quot;live&quot;,
+      &quot;tone&quot;: &quot;now&quot;,
+      &quot;dot&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;partial&quot;,
+      &quot;tone&quot;: &quot;warn&quot;
+    },
+    {
+      &quot;label&quot;: &quot;blocked&quot;,
+      &quot;tone&quot;: &quot;blocked&quot;
+    },
+    {
+      &quot;label&quot;: &quot;private&quot;,
+      &quot;tone&quot;: &quot;clients&quot;,
+      &quot;icon&quot;: &quot;lock&quot;
+    }
+  ],
+  &quot;metrics&quot;: [
+    {
+      &quot;value&quot;: 47,
+      &quot;label&quot;: &quot;Works&quot;,
+      &quot;tone&quot;: &quot;projects&quot;
+    },
+    {
+      &quot;value&quot;: 86,
+      &quot;label&quot;: &quot;Releases&quot;,
+      &quot;tone&quot;: &quot;research&quot;
+    },
+    {
+      &quot;value&quot;: 22,
+      &quot;label&quot;: &quot;God Questions&quot;,
+      &quot;tone&quot;: &quot;research&quot;
+    },
+    {
+      &quot;value&quot;: 27,
+      &quot;label&quot;: &quot;repos · 23 public / 4 private&quot;,
+      &quot;tone&quot;: &quot;clients&quot;
+    }
+  ],
+  &quot;words&quot;: [
+    {
+      &quot;text&quot;: &quot;agents should be ephemeral … the projects are forever&quot;,
+      &quot;who&quot;: &quot;Shaan&quot;,
+      &quot;at&quot;: &quot;6 Sep 16:50&quot;
+    }
+  ],
+  &quot;timeline&quot;: {
+    &quot;from&quot;: &quot;2026-09-05 12:00&quot;,
+    &quot;to&quot;: &quot;2026-09-06 19:00&quot;,
+    &quot;lanes&quot;: [
+      {
+        &quot;id&quot;: &quot;commits&quot;,
+        &quot;label&quot;: &quot;commits&quot;,
+        &quot;tone&quot;: &quot;projects&quot;
+      },
+      {
+        &quot;id&quot;: &quot;seats&quot;,
+        &quot;label&quot;: &quot;seats&quot;,
+        &quot;tone&quot;: &quot;agents&quot;
+      },
+      {
+        &quot;id&quot;: &quot;decisions&quot;,
+        &quot;label&quot;: &quot;decisions&quot;,
+        &quot;tone&quot;: &quot;research&quot;
+      },
+      {
+        &quot;id&quot;: &quot;words&quot;,
+        &quot;label&quot;: &quot;his words&quot;,
+        &quot;tone&quot;: &quot;clients&quot;
+      }
+    ],
+    &quot;events&quot;: [
+      {
+        &quot;at&quot;: &quot;2026-09-05 20:11&quot;,
+        &quot;lane&quot;: &quot;commits&quot;,
+        &quot;label&quot;: &quot;siso-shell adea886&quot;
+      },
+      {
+        &quot;at&quot;: &quot;2026-09-06 16:31&quot;,
+        &quot;lane&quot;: &quot;seats&quot;,
+        &quot;label&quot;: &quot;AGENT-ZERO born&quot;
+      },
+      {
+        &quot;at&quot;: &quot;2026-09-06 18:47&quot;,
+        &quot;lane&quot;: &quot;seats&quot;,
+        &quot;label&quot;: &quot;TEMPLATE-BANK-ZERO born&quot;
+      },
+      {
+        &quot;at&quot;: &quot;2026-09-06 18:32&quot;,
+        &quot;lane&quot;: &quot;decisions&quot;,
+        &quot;label&quot;: &quot;D-30 Haiku sub-agents&quot;
+      },
+      {
+        &quot;at&quot;: &quot;2026-09-06 18:47&quot;,
+        &quot;lane&quot;: &quot;decisions&quot;,
+        &quot;label&quot;: &quot;D-31…D-35&quot;
+      },
+      {
+        &quot;at&quot;: &quot;2026-09-06 16:50&quot;,
+        &quot;lane&quot;: &quot;words&quot;,
+        &quot;label&quot;: &quot;not what I asked; CRM side nav&quot;
+      },
+      {
+        &quot;at&quot;: &quot;2026-09-06 18:19&quot;,
+        &quot;lane&quot;: &quot;words&quot;,
+        &quot;label&quot;: &quot;templates, reasoning, side nav, order&quot;
+      },
+      {
+        &quot;at&quot;: &quot;2026-09-06 18:41&quot;,
+        &quot;lane&quot;: &quot;words&quot;,
+        &quot;label&quot;: &quot;build the damn thing&quot;
+      },
+      {
+        &quot;at&quot;: &quot;2026-09-05 23:50&quot;,
+        &quot;lane&quot;: &quot;commits&quot;,
+        &quot;label&quot;: &quot;auto backup&quot;,
+        &quot;auto&quot;: true
+      }
+    ]
+  }
+}</code></pre></details>
+</section>
+
+
+<section class="siso-section" id="states">
+  
+<div class="siso-section__head"><span class="n">13</span><h2>Empty, blocked, 404</h2><span class="sub">each part has a truthful empty state; the site has a real 404 (GAPS F-3)</span></div>
+
+  <div class="grid grid-3">
+    <div><span class="kicker dim">Empty list</span>
+<div class="empty">No repository registered. Register one: <code>node bin/gls add work --file … --reviewed-public</code></div>
+</div>
+    <div><span class="kicker dim">Empty catalogue</span>
+<div class="catalogue" data-catalogue="empty">
+  <div class="catalogue__bar needs-js">
+    <label class="catalogue__search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg><input type="search" placeholder="Filter…" aria-label="Filter catalogue" data-cat-search></label>
+    
+    <span class="catalogue__count" data-cat-count>0 of 0</span>
+  </div>
+  <div class="empty">0 records; nothing registered yet. Register with <code>node bin/gls add work --file … --reviewed-public</code>.</div>
+</div>
+</div>
+    <div><span class="kicker dim">Blocked / 404</span><div class="empty tone-blocked" style="border-color:rgb(var(--accent-danger-rgb)/.4);color:var(--accent-danger)">404 · no page at this address. The bank's real 404 is <a href="/404.html">/404.html</a>, served by Cloudflare Pages for any unknown path.</div></div>
+  </div>
+</section>
+
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U13 · 2026-09-06T12:26:06.189Z · data parts/</footer>
+  </main>
+</div>
+</body>
+</html>

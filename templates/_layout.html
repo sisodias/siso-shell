@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" class="no-js" data-stream="{{stream}}" data-family="{{family}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{title}}</title>
+{{#if description}}<meta name="description" content="{{description}}">{{/if}}
+<meta name="generator" content="siso-shell bin/compose · {{family}}">
+{{{head}}}
+</head>
+<body class="rail-expanded">
+{{{rail}}}
+<div class="siso-shell-page">
+  <header class="siso-topbar">
+    <div class="siso-topbar__crumb">{{#each crumb}}{{#unless @first}}{{icon chevron-right}}{{/unless}}{{#if href}}<a href="{{href}}">{{label}}</a>{{else}}<strong>{{label}}</strong>{{/if}}{{/each}}</div>
+    <div class="siso-topbar__actions">{{#each actions}}<a href="{{href}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}>{{#if icon}}{{icon icon}}{{/if}}<span>{{label}}</span>{{#if kbd}}<kbd>{{kbd}}</kbd>{{/if}}</a>{{/each}}</div>
+  </header>
+  <main class="siso-page" id="content">
+{{{body}}}
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template {{family}} · {{generated}}{{#if source}} · data {{source}}{{/if}}</footer>
+  </main>
+</div>
+</body>
+</html>

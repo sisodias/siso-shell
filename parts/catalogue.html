@@ -1,0 +1,15 @@
+{{!-- 11 · catalogue — searchable cards with filters and a truthful empty state (AM searchable track filter,
+     blueprint/index.html:357-400; registry card grid, system-map/registry.css:14-20).
+     Data: {id, filters:[{key,label,values:[]}], items:[{id,kicker,title,summary,href,status,tone,tags:{key:value},search}], empty} --}}
+<div class="catalogue" data-catalogue="{{id}}">
+  <div class="catalogue__bar needs-js">
+    <label class="catalogue__search">{{icon search}}<input type="search" placeholder="Filter…" aria-label="Filter catalogue" data-cat-search></label>
+    {{#each filters}}<label class="catalogue__filter"><select data-cat-filter="{{key}}" aria-label="{{label}}"><option value="">{{label}} · all</option>{{#each values}}<option value="{{.}}">{{.}}</option>{{/each}}</select></label>{{/each}}
+    <span class="catalogue__count" data-cat-count>{{items.length}} of {{items.length}}</span>
+  </div>
+  {{#if items}}<div class="grid grid-auto" data-cat-grid>
+  {{#each items}}<a class="card card--link card--strip tone-{{tone}}" href="{{href}}" data-cat-item data-search="{{search}}"{{#each tags}} data-tag-{{key}}="{{value}}"{{/each}}><span class="kicker">{{{kicker}}}</span><h4>{{title}}</h4><p>{{{summary}}}</p><span class="foot"><span>{{id}}</span>{{#if status}}<span class="chip tone-{{tone}}">{{status}}</span>{{/if}}</span></a>{{/each}}
+  </div>
+  <div class="empty" data-cat-empty hidden>No records match. Clear a filter.</div>
+  {{else}}<div class="empty">{{#if empty}}{{{empty}}}{{else}}0 records; nothing registered yet.{{/if}}</div>{{/if}}
+</div>

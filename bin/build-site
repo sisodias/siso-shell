@@ -1,0 +1,63 @@
+#!/usr/bin/env node
+/* bin/build-site — renders the published bank into site/:
+ *   /                 U23 gallery (from site/templates.json = plan/templates.json)
+ *   /t/<id>/          U23/detail for every family (24)
+ *   /t/<id>/example/  the family's template rendered from templates/<id>/example.json (built families only)
+ *   /t/<id>/example.json, /t/<id>/schema.json, /how/, /404.html, /shell/*, /parts/*
+ * Also writes templates/<id>/example.json (derived families) and templates/<id>/README.md (from the plan). */
+import { cpSync, mkdirSync, writeFileSync, existsSync, readFileSync, rmSync } from 'node:fs';
+import { join } from 'node:path';
+import { compose, ROOT, readJSON } from './lib/compose.mjs';
+import * as D from './lib/data.mjs';
+
+const site = join(ROOT, 'site');
+const nav = readJSON(join(site, 'nav.json'));
+const generated = new Date().toISOString();
+const write = (rel, html) => { const f = join(site, rel); mkdirSync(join(f, '..'), { recursive: true }); writeFileSync(f, html); return f; };
+const page = (family, data, current) => compose(family, data, { nav, current, base: '', generated });
+
+// derived example data → templates/<id>/example.json (so the folder is self-describing)
+const DERIVED = { U0: D.shellData, U13: D.partsData, U23: D.galleryData };
+for (const [id, fn] of Object.entries(DERIVED)) {
+  const data = fn();
+  if (id === 'U13') for (const p of data.parts) { delete p.rendered; delete p.shape; }
+  writeFileSync(join(ROOT, 'templates', id, 'example.json'), JSON.stringify(data, null, 2) + '\n');
+}
+
+// README per family from the plan (reasoning block + content contract), only where none is hand-written
+for (const id of D.ORDER) {
+  const dir = join(ROOT, 'templates', id); mkdirSync(dir, { recursive: true });
+  const r = D.rows[id], R = r.reasoning || {};
+  const readme = `# ${id} · ${r.family}\n\n> Spec row copied from \`00_AGENT_ZERO/plan/templates.json\` (6 Sep 2026 18:36). Template: \`template.html\`; JSON: \`schema.json\`; real data: \`example.json\`. Detail page: https://siso-shell.pages.dev/t/${id}/ · issue: https://github.com/sisodias/siso-agent-zero-protocol/issues/${D.ISSUES[id]}\n\n## Reasoning\n\n- **why** · ${R.why || '—'}\n- **readers** · ${R.readers || '—'}\n- **questions** · ${(R.questions || []).join(' · ') || '—'}\n- **claim ceiling** · ${R.claim_ceiling || '—'}\n- **data** · ${R.data || '—'}\n- **links out** · ${(R.links_out || []).join(', ') || '—'}\n- **links in** · ${(R.links_in || []).join(', ') || '—'}\n- **privacy** · ${R.privacy || '—'}\n- **empty state** · ${R.empty_state || '—'}\n- **agent entry** · ${R.agent_entry || '—'}\n\n## Content contract (his twelve, 18:19)\n\n| slot | this family |\n|---|---|\n${D.plan.content_contract.keys.map((k) => `| ${k} | ${(r.content && r.content[k]) || '—'} |`).join('\n')}\n\n## Sections, in order\n\n${(r.sections || []).map((s, i) => `${i + 1}. ${typeof s === 'string' ? s : JSON.stringify(s)}`).join('\n')}\n\n- **lives at** · ${r.where}\n- **instances** · ${r.instances} · ${r.count}\n- **renders** · ${r.source_data}\n- **theme** · ${r.theme} · rail: ${r.rail}\n- **needs** · ${(r.needs || []).join(', ') || '—'}\n\n## Done when\n\n${r.verification}\n\n## Rob\n\n${(r.rob_am || []).map((x) => `- AM · ${typeof x === 'string' ? x : JSON.stringify(x)}`).join('\n')}\n${(r.rob_bank || []).map((b) => `- 21st.dev · [${b.name}](${b.url || b.url_or_id})${b.his_note ? ` — his note: "${b.his_note}"` : ''}`).join('\n')}\n\n## Compose\n\n\`\`\`sh\nbin/compose ${id} templates/${id}/example.json --out /tmp/${id}.html\n\`\`\`\n`;
+  writeFileSync(join(dir, 'README.md'), readme);
+}
+
+// clean generated output (keep nav.json, templates.json, receipts)
+for (const d of ['t', 'how', 'shell', 'parts']) rmSync(join(site, d), { recursive: true, force: true });
+cpSync(join(ROOT, 'shell'), join(site, 'shell'), { recursive: true });
+// Pages publish helper allows .js, not .mjs; the browser never loads icons (they are inlined at compose time), the copy is for consumers.
+rmSync(join(site, 'shell', 'icons.mjs')); cpSync(join(ROOT, 'shell', 'icons.mjs'), join(site, 'shell', 'icons.js'));
+mkdirSync(join(site, 'parts'), { recursive: true });
+for (const f of ['parts.css', 'catalogue.js']) cpSync(join(ROOT, 'parts', f), join(site, 'parts', f));
+
+// gallery + how + 404
+write('index.html', page('U23', D.galleryData(), '/'));
+write('how/index.html', page('how', D.howData(), '/how/'));
+write('404.html', page('404', D.notFoundData(), ''));
+
+// detail + example per family
+let builtCount = 0;
+for (const id of D.ORDER) {
+  write(`t/${id}/index.html`, page('U23/detail', D.detailData(id), `/t/${id}/`));
+  const exampleFile = join(ROOT, 'templates', id, 'example.json');
+  const schemaFile = join(ROOT, 'templates', id, 'schema.json');
+  if (D.built(id) && id !== 'U23') {
+    const data = DERIVED[id] ? DERIVED[id]() : readJSON(exampleFile);
+    write(`t/${id}/example/index.html`, page(id, data, `/t/${id}/`));
+    builtCount++;
+  }
+  if (existsSync(exampleFile)) cpSync(exampleFile, join(site, 't', id, 'example.json'));
+  if (existsSync(schemaFile)) cpSync(schemaFile, join(site, 't', id, 'schema.json'));
+}
+write('_headers', `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/shell/*\n  Access-Control-Allow-Origin: *\n/parts/*\n  Access-Control-Allow-Origin: *\n/templates.json\n  Access-Control-Allow-Origin: *\n/nav.json\n  Access-Control-Allow-Origin: *\n/t/*/example.json\n  Access-Control-Allow-Origin: *\n/t/*/schema.json\n  Access-Control-Allow-Origin: *\n`);
+console.log(JSON.stringify({ generated, families: D.ORDER.length, built: D.builtIds(), examples: builtCount + 1 }));

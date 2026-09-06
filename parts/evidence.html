@@ -1,0 +1,15 @@
+{{!-- 09 · evidence — evidence / limits / version; facts (with receipts) and proposals visibly distinct (AM evidence ladder,
+     system-map root; research reader CLAIM CEILING). Data: {facts:[{claim,receipt,href,at}], proposals:[{claim,why}],
+     limits:[], version:{label,href,at}} --}}
+<div class="evidence">
+  <div>
+    <div class="evidence__legend"><span><i></i>fact · has a receipt</span><span><i class="p"></i>proposal · not yet</span></div>
+    {{#each facts}}<div class="fact"><div>{{{claim}}}{{#if receipt}}<span class="receipt">{{#if href}}<a href="{{href}}">{{receipt}}</a>{{else}}{{receipt}}{{/if}}{{#if at}} · {{at}}{{/if}}</span>{{/if}}</div></div>{{/each}}
+    {{#each proposals}}<div class="proposal"><div>{{{claim}}}{{#if why}}<span class="receipt">{{why}}</span>{{/if}}</div></div>{{/each}}
+    {{#unless facts}}{{#unless proposals}}<div class="empty">No evidence recorded.</div>{{/unless}}{{/unless}}
+  </div>
+  <div class="evidence__side">
+    {{#if limits}}<div class="card"><span class="kicker tone-warn" style="color:var(--accent-tasks)">Limits</span><ul>{{#each limits}}<li>{{{.}}}</li>{{/each}}</ul></div>{{/if}}
+    {{#if version}}<div class="card"><span class="kicker dim">Version</span><div class="small">{{#if version.href}}<a href="{{version.href}}"><code>{{version.label}}</code></a>{{else}}<code>{{version.label}}</code>{{/if}}{{#if version.at}}<div class="faint mono small" style="margin-top:4px">{{version.at}}</div>{{/if}}</div></div>{{/if}}
+  </div>
+</div>

@@ -1,0 +1,21 @@
+{{!-- 03 · reasoning — authored reasoning block, source vs interpretation kept apart. Data: {source:[{text,who,at,href}],
+     why, readers, questions:[], claim_ceiling, privacy, empty_state, agent_entry, data} --}}
+<div class="reasoning">
+  <div class="reasoning__col reasoning__col--source">
+    <span class="kicker">Source · his words, verbatim</span>
+    {{#each source}}<blockquote class="quote quote--sm">{{text}}<small>{{who}}{{#if at}} · {{at}}{{/if}}{{#if href}} · <a href="{{href}}">source</a>{{/if}}</small></blockquote>{{else}}<div class="empty">No verbatim source on this page.</div>{{/each}}
+  </div>
+  <div class="reasoning__col">
+    <span class="kicker dim">Reading · authored by the seat</span>
+    {{#if why}}<p>{{{why}}}</p>{{/if}}
+    {{#if readers}}<p class="small muted" style="margin-top:var(--crm-space-3)"><b>Readers.</b> {{{readers}}}</p>{{/if}}
+    {{#if questions}}<ol class="reasoning__questions small">{{#each questions}}<li>{{.}}</li>{{/each}}</ol>{{/if}}
+  </div>
+  <div class="reasoning__ceiling">
+    {{#if claim_ceiling}}<div class="card"><span class="kicker">Claim ceiling</span>{{{claim_ceiling}}}</div>{{/if}}
+    {{#if data}}<div class="card"><span class="kicker dim">Data it renders</span>{{{data}}}</div>{{/if}}
+    {{#if privacy}}<div class="card"><span class="kicker dim">Privacy</span>{{{privacy}}}</div>{{/if}}
+    {{#if empty_state}}<div class="card"><span class="kicker dim">Empty state</span>{{{empty_state}}}</div>{{/if}}
+    {{#if agent_entry}}<div class="card"><span class="kicker dim">Agent entry</span><code>{{agent_entry}}</code></div>{{/if}}
+  </div>
+</div>

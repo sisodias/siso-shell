@@ -1,0 +1,44 @@
+{
+  "_about": "The bank's own rail: groups → destinations. Built at publish; every href here is a page under site/. Consumers ship their own nav.json in this shape.",
+  "title": "SISO templates",
+  "mark": "S",
+  "home": "/",
+  "groups": [
+    { "id": "bank", "label": "Bank", "destinations": [
+      { "id": "gallery", "label": "Gallery", "href": "/", "icon": "layout-dashboard" },
+      { "id": "shell", "label": "Shell · U0", "href": "/t/U0/", "icon": "panel-left-close" },
+      { "id": "parts", "label": "Parts · U13", "href": "/t/U13/", "icon": "blocks" },
+      { "id": "how", "label": "How to reuse", "href": "/how/", "icon": "terminal" }
+    ]},
+    { "id": "hubs", "label": "Hubs", "destinations": [
+      { "id": "U4", "label": "Project", "href": "/t/U4/", "icon": "folder-kanban" },
+      { "id": "U5", "label": "God Question", "href": "/t/U5/", "icon": "flask-conical" },
+      { "id": "U19", "label": "Compute run", "href": "/t/U19/", "icon": "cpu" },
+      { "id": "U3", "label": "Work", "href": "/t/U3/", "icon": "book-open" },
+      { "id": "U9", "label": "Agent Zero", "href": "/t/U9/", "icon": "bot" },
+      { "id": "U1", "label": "Library landing", "href": "/t/U1/", "icon": "library" }
+    ]},
+    { "id": "records", "label": "Records", "destinations": [
+      { "id": "U18", "label": "Source", "href": "/t/U18/", "icon": "scroll-text" },
+      { "id": "U2", "label": "Catalogue", "href": "/t/U2/", "icon": "grid-2x2" },
+      { "id": "U16", "label": "Decision", "href": "/t/U16/", "icon": "gavel" },
+      { "id": "U17", "label": "Agent seat", "href": "/t/U17/", "icon": "user-round" },
+      { "id": "U21", "label": "Timeline", "href": "/t/U21/", "icon": "clock" },
+      { "id": "U8", "label": "Industry", "href": "/t/U8/", "icon": "briefcase" },
+      { "id": "U14", "label": "Person", "href": "/t/U14/", "icon": "contact-round" },
+      { "id": "U15", "label": "Client account", "href": "/t/U15/", "icon": "handshake" },
+      { "id": "U7", "label": "Doc reader", "href": "/t/U7/", "icon": "file-text" },
+      { "id": "U11", "label": "Private stub", "href": "/t/U11/", "icon": "lock" },
+      { "id": "U6", "label": "Erdős", "href": "/t/U6/", "icon": "sigma" },
+      { "id": "U10", "label": "Now", "href": "/t/U10/", "icon": "activity" },
+      { "id": "U12", "label": "Release", "href": "/t/U12/", "icon": "tag" },
+      { "id": "U20", "label": "Play", "href": "/t/U20/", "icon": "puzzle" },
+      { "id": "U22", "label": "Node", "href": "/t/U22/", "icon": "server" }
+    ]},
+    { "id": "outside", "label": "Outside", "destinations": [
+      { "id": "library", "label": "Great Library", "href": "https://great-library-of-siso.pages.dev/", "icon": "external-link" },
+      { "id": "repo", "label": "sisodias/siso-shell", "href": "https://github.com/sisodias/siso-shell", "icon": "git-branch" },
+      { "id": "issues", "label": "Template issues", "href": "https://github.com/sisodias/siso-agent-zero-protocol/issues?q=label%3Atemplate", "icon": "list-todo" }
+    ]}
+  ]
+}

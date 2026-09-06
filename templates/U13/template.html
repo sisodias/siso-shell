@@ -1,0 +1,29 @@
+{{!-- U13 · Parts — the fixture page: every part rendered once with its name, the JSON it takes, and the file it lives in. --}}
+{{> heading heading}}
+
+<section class="siso-section" id="why">
+  {{> section sections.why}}
+  {{> reasoning reasoning}}
+</section>
+
+<section class="siso-section" id="index">
+  {{> section sections.index}}
+  {{> contents index}}
+</section>
+
+{{#each parts}}
+<section class="siso-section" id="{{id}}">
+  <div class="siso-section__head"><span class="n">{{n}}</span><h2>{{title}}</h2><span class="sub">{{{what}}} · <code>parts/{{file}}</code>{{#if robbed}} · robbed from {{{robbed}}}{{/if}}</span></div>
+  {{{rendered}}}
+  <details class="card" style="margin-top:var(--crm-space-3)"><summary class="kicker dim" style="cursor:pointer">JSON this part takes</summary><pre><code>{{shape}}</code></pre></details>
+</section>
+{{/each}}
+
+<section class="siso-section" id="states">
+  {{> section sections.states}}
+  <div class="grid grid-3">
+    <div><span class="kicker dim">Empty list</span>{{> repos empty.repos}}</div>
+    <div><span class="kicker dim">Empty catalogue</span>{{> catalogue empty.catalogue}}</div>
+    <div><span class="kicker dim">Blocked / 404</span><div class="empty tone-blocked" style="border-color:rgb(var(--accent-danger-rgb)/.4);color:var(--accent-danger)">404 · no page at this address. The bank's real 404 is <a href="/404.html">/404.html</a>, served by Cloudflare Pages for any unknown path.</div></div>
+  </div>
+</section>

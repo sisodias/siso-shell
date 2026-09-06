@@ -1,0 +1,42 @@
+{{!-- U0 · Shell — the page that shows the rail itself: what it is, where each value comes from, how to consume it.
+     The rail on the left of THIS page is the deliverable. --}}
+{{> heading heading}}
+
+<section class="siso-section" id="what">
+  {{> section sections.what}}
+  {{> reasoning reasoning}}
+</section>
+
+<section class="siso-section" id="values">
+  {{> section sections.values}}
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>Thing</th><th>CRM token</th><th>Value</th><th>Where the CRM sets it</th></tr></thead>
+    <tbody>{{#each values}}<tr><td>{{thing}}</td><td><code>{{token}}</code></td><td class="mono">{{value}}</td><td class="muted">{{where}}</td></tr>{{/each}}</tbody>
+  </table></div>
+  <p class="small muted" style="margin-top:var(--crm-space-3)">Rule: every pixel, font-size, letter-spacing, gap, radius, gradient and transition in <code>shell/rail.css</code> is the CRM's value, resolved through the same token names. Section 1 of that file is <code>GroupedRail.css</code> unchanged; section 2 adds only what a static page needs, from the same tokens.</p>
+</section>
+
+<section class="siso-section" id="behaviour">
+  {{> section sections.behaviour}}
+  <div class="grid grid-2">{{#each behaviour}}<div class="card"><span class="kicker">{{label}}</span><p class="small" style="margin-top:6px">{{{what}}}</p>{{#if from}}<p class="faint mono small" style="margin-top:6px">{{from}}</p>{{/if}}</div>{{/each}}</div>
+</section>
+
+<section class="siso-section" id="bugs">
+  {{> section sections.bugs}}
+  {{> evidence evidence}}
+</section>
+
+<section class="siso-section" id="use">
+  {{> section sections.use}}
+  {{> quickstart quickstart}}
+</section>
+
+<section class="siso-section" id="sources">
+  {{> section sections.sources}}
+  {{> repos repos}}
+</section>
+
+<section class="siso-section" id="related">
+  {{> section sections.related}}
+  {{> related related}}
+</section>

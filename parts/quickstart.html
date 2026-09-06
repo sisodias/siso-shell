@@ -1,0 +1,18 @@
+{{!-- 08 · quickstart — agent quick-start: entry file, actual commands, owner, verification line, machine context.
+     Data: {entry:{path,href}, commands:[], owner:{name,href,last}, verification, context_url} --}}
+<div class="quickstart">
+  <div>
+    <span class="kicker">Agent entry</span>
+    <dl class="kv">
+      {{#if entry}}<dt>Read first</dt><dd>{{#if entry.href}}<a href="{{entry.href}}"><code>{{entry.path}}</code></a>{{else}}<code>{{entry.path}}</code>{{/if}}</dd>{{/if}}
+      {{#if owner}}<dt>Owner</dt><dd>{{#if owner.href}}<a href="{{owner.href}}">{{owner.name}}</a>{{else}}{{owner.name}}{{/if}}{{#if owner.last}} <span class="muted small">· last writeback {{owner.last}}</span>{{/if}}</dd>{{/if}}
+      {{#if context_url}}<dt>Machine</dt><dd><a href="{{context_url}}"><code>{{context_url}}</code></a></dd>{{/if}}
+      {{#if verification}}<dt>Done when</dt><dd>{{{verification}}}</dd>{{/if}}
+    </dl>
+  </div>
+  <div>
+    <span class="kicker">Commands</span>
+    {{#if commands}}<pre><code>{{#each commands}}{{.}}
+{{/each}}</code></pre>{{else}}<div class="empty">No commands yet.</div>{{/if}}
+  </div>
+</div>

@@ -1,0 +1,8 @@
+{{!-- atom · timeline — one axis, day ticks, lanes (commits · seats · decisions · docs · words), computed by the `timeline`
+     helper. Data: {from,to, lanes:[{id,label,tone}], events:[{at,lane,label,href,auto}]} --}}
+{{#if events}}
+<div class="timeline">
+  {{timeline .}}
+  <div class="timeline__legend">{{#each lanes}}<span class="tone-{{tone}}"><i></i>{{label}}</span>{{/each}}</div>
+</div>
+{{else}}<div class="empty">No dated records in this range.</div>{{/if}}

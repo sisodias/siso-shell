@@ -1,0 +1,4 @@
+{{!-- atom · words — his words, verbatim, dated. Data: [{text,who,at,href}] --}}
+<div class="words">
+{{#each .}}<blockquote class="quote">{{text}}<small>{{who}}{{#if at}} · {{at}}{{/if}}{{#if href}} · <a href="{{href}}">source</a>{{/if}}</small></blockquote>{{else}}<div class="empty">No verbatim words captured for this record.</div>{{/each}}
+</div>

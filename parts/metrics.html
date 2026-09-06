@@ -1,0 +1,4 @@
+{{!-- atom · metrics — metric strip (AM system-map/index.html:81-84). Data: [{value,label,tone,href,title}] --}}
+<div class="metrics">
+{{#each .}}{{#if href}}<a class="metric tone-{{tone}}" href="{{href}}"{{#if title}} title="{{title}}"{{/if}}><b>{{value}}</b><span>{{label}}</span></a>{{else}}<div class="metric tone-{{tone}}"{{#if title}} title="{{title}}"{{/if}}><b>{{value}}</b><span>{{label}}</span></div>{{/if}}{{/each}}
+</div>

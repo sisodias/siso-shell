@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "U23 · Gallery data (template.html) and detail data (detail.html)",
+  "description": "Both are derived by bin/lib/data.mjs from plan/templates.json (served as /templates.json). Shared $defs are in templates/U0/schema.json.",
+  "oneOf": [
+    { "title": "gallery", "type": "object", "required": ["meta", "heading", "sections", "words", "metrics", "catalogue", "contract", "partsIndex", "quickstart"], "properties": {
+      "meta": { "$ref": "U0/schema.json#/$defs/meta" }, "heading": { "$ref": "U0/schema.json#/$defs/heading" }, "sections": { "type": "object" },
+      "words": { "type": "array", "items": { "type": "object", "required": ["text", "who"], "properties": { "text": { "type": "string" }, "who": { "type": "string" }, "at": { "type": "string" }, "href": { "type": "string" } } } },
+      "metrics": { "type": "array", "items": { "type": "object", "required": ["value", "label"], "properties": { "value": {}, "label": { "type": "string" }, "tone": { "type": "string" }, "href": { "type": "string" }, "title": { "type": "string" } } } },
+      "order_note": { "type": "string" },
+      "catalogue": { "type": "object", "required": ["id", "items"], "properties": { "id": { "type": "string" }, "filters": { "type": "array", "items": { "type": "object", "required": ["key", "label", "values"] } }, "items": { "type": "array", "items": { "type": "object", "required": ["id", "title", "href"], "properties": { "id": { "type": "string" }, "kicker": { "type": "string" }, "title": { "type": "string" }, "summary": { "type": "string" }, "href": { "type": "string" }, "status": { "type": "string" }, "tone": { "type": "string" }, "tags": { "type": "array", "items": { "type": "object", "required": ["key", "value"] } }, "search": { "type": "string" } } } }, "empty": { "type": "string" } } },
+      "contract": { "type": "array", "items": { "type": "object", "required": ["key", "what"] } },
+      "partsIndex": { "type": "object" }, "quickstart": { "$ref": "U0/schema.json#/$defs/quickstart" } } },
+    { "title": "detail", "type": "object", "required": ["meta", "id", "heading", "sections", "reasoning", "contract", "page_sections", "evidence", "related"], "properties": {
+      "meta": { "$ref": "U0/schema.json#/$defs/meta" }, "id": { "type": "string", "pattern": "^U[0-9]+$" }, "stream": { "type": "string" }, "heading": { "$ref": "U0/schema.json#/$defs/heading" }, "sections": { "type": "object" },
+      "example_href": { "type": ["string", "null"] }, "example_data": { "type": ["string", "null"] }, "schema_href": { "type": ["string", "null"] },
+      "reasoning": { "$ref": "U0/schema.json#/$defs/reasoning" },
+      "contract": { "type": "array", "items": { "type": "object", "required": ["key"], "properties": { "key": { "type": "string" }, "value": { "type": ["string", "null"] } } } },
+      "page_sections": { "type": "array", "items": { "type": "string" } }, "where": { "type": "string" }, "instances": { "type": "string" }, "count": { "type": "string" }, "source_data": { "type": "string" }, "theme": { "type": "string" }, "rail": { "type": "string" }, "needs": { "type": "array" }, "links_out": { "type": "array" }, "links_in": { "type": "array" },
+      "rob_am": { "type": "array", "items": { "type": "object", "properties": { "text": { "type": "string" }, "shot": { "type": ["string", "null"] } } } },
+      "rob_components": { "type": "array", "items": { "type": "object", "properties": { "name": { "type": "string" }, "where": { "type": "string" }, "data": { "type": "string" }, "how": { "type": "string" }, "quality": { "type": "string" } } } },
+      "rob_bank": { "type": "array", "items": { "type": "object", "properties": { "name": { "type": "string" }, "url": { "type": "string" }, "his_note": { "type": "string" }, "why": { "type": "string" } } } },
+      "bank_gaps": { "type": "array", "items": { "type": "string" } },
+      "evidence": { "$ref": "U0/schema.json#/$defs/evidence" }, "related": { "$ref": "U0/schema.json#/$defs/related" } } }
+  ]
+}

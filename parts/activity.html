@@ -1,0 +1,8 @@
+{{!-- 10 · activity — activity strip with observation date and coverage, then the dated lines.
+     Data: {observed_at, coverage, days:[{label,w,title}], items:[{at,who,what,href,tone}]} --}}
+<div class="activity">
+  <div class="activity__head"><span>observed {{observed_at}}</span>{{#if coverage}}<span>coverage · {{coverage}}</span>{{/if}}</div>
+  {{#if days}}<div class="activity__strip" aria-hidden="true">{{#each days}}<i style="--w:{{w}}" title="{{title}}"></i>{{/each}}</div>{{/if}}
+  {{#if items}}<ul class="activity__list">{{#each items}}<li><span class="at">{{at}}</span><span class="who tone-{{tone}}">{{who}}</span><span>{{#if href}}<a href="{{href}}">{{{what}}}</a>{{else}}{{{what}}}{{/if}}</span></li>{{/each}}</ul>
+  {{else}}<div class="empty">No dated activity in the covered window.</div>{{/if}}
+</div>

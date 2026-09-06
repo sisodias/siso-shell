@@ -1,0 +1,4138 @@
+{
+ "_about": "Template + module map for the Great Library site and every Tier-1 front door. One row per page family or shared module: what it is, how many instances exist today (from the registry, the register, the repos), the data it renders, where it lives, its sections, the rail it uses, the theme rule, status today, an 'open X and see Y' verification line (D-25), and the proposed host. Written by AGENT-ZERO 6 Sep 2026 17:1x from library-ui-spec.md §5–§6, catalog.json, plan/projects.json, plan/modules.json, GOD-QUESTIONS.md, SISO_Research/erdos, his 16:36 and 16:50 words (source/). Rendered to atlas/TEMPLATES-2026-09-06.html by bin/az-templates; projected to GitHub issues by bin/az-issues --templates. He reverses any row by saying so. | 18:30 rewrite (his 18:19 + 18:22): +10 families (U14 person, U15 client account, U16 decision, U17 agent seat, U18 source, U19 compute run, U20 play/skill, U21 timeline, U22 estate/node, U23 gallery); per row: order, reasoning{why, readers, questions, claim_ceiling, data, links_out, links_in, privacy, empty_state, agent_entry}, content (his twelve: title, subtitle, paragraph, mind_map, repos, research, docs, progress, agents, timeline, docs_over_time, own_nav), rob_am (Action Model patterns with screenshot receipts under atlas/receipts/), example_today; rob_bank filled from ledger/templates-2026-09-06/bank-picks-per-family.json when it lands.",
+ "templates": [
+  {
+   "id": "U0",
+   "family": "Shell: CRM GroupedRail + SISO tokens (the one shell)",
+   "instances": "every page family below",
+   "count": "1 shell · 18 Library routes · 24 atlas pages · 10 front doors",
+   "source_data": "SISOCRM product-app GroupedRail.tsx/.css + tokens.css (hashes in briefs/LIBRARY-UI-FABLE.md): grouped nav, compact mode keeps the destination map, 20px collapsed handle, [ toggles, Cmd-K search, persisted preference; tokens: --siso-bg #202020, --siso-orange #FFA726 brand, --siso-gradient-brand 135° red→orange, semantic accents today/tasks/health/focus/reflect/danger, Geist",
+   "where": "siso-shell repo (public) as plain HTML/CSS/JS; atlas/crm-rail.{css,js} is the first port (AGENT-ZERO, 17:05, Luna rail-port)",
+   "sections": [
+    "brand block",
+    "groups: Now / Plan / Readings / Outside (atlas) · Library / Research / Agents / Projects / Estate (Library)",
+    "compact icons",
+    "search (Cmd-K)",
+    "collapse handle",
+    "current-page marker"
+   ],
+   "rail": "is the rail",
+   "theme": "tokens.css verbatim; the CRM gradient as the one brand gradient; his 'color streams' = the six semantic accents used per section (Research=focus blue, Agents=reflect violet, Projects=today orange, Clients=tasks amber, Health/estate=health green, Blocked=danger rose)",
+   "status": "atlas: porting now. Library: siso-shell ships its own siso-rail (forest gradient, flat list, no groups) on 6 of 18 routes; 0 GroupedRail ports anywhere (REVIEW-ZERO grep)",
+   "verification": "Open https://great-library-of-siso.pages.dev/ and /industries/law_firms/ and http://127.0.0.1:8890/atlas/ and see the same grouped rail: press [ and it collapses to a 20px handle on all three; press Cmd-K and a search box filters the destinations",
+   "host": "fable",
+   "needs": [],
+   "gaps": [
+    "T-2"
+   ],
+   "order": 1,
+   "reasoning": {
+    "why": "His 13:09 to LIBRARY-ZERO: 'you're not using our size of crm side nav, which is Specifically what I told you to do'; 16:50: 'not all of them have side nav so they're connected'; 18:19: 'the side nav is a bit shit'. One shell is what makes 60+ pages across 10 repos and 6 pages.dev sites feel like one place.",
+    "readers": "Human: orient, jump between families, collapse it and read. Agent: the rail's link data is the site map; Cmd-K search is the same map as text.",
+    "questions": [
+     "Where am I in the ecosystem?",
+     "What are the sibling pages?",
+     "Which section of this page do I want?"
+    ],
+    "claim_ceiling": "May assert only what the link data says exists; every destination must return 200 or be marked private.",
+    "data": "A link JSON per site (groups → destinations → status chip); built at publish; the rail reads it, never hand-edited HTML.",
+    "links_out": [
+     "every family"
+    ],
+    "links_in": [
+     "every family"
+    ],
+    "privacy": "Public; private destinations show a lock chip, never a payload.",
+    "empty_state": "No JS: the page still reads; the rail is absent, nav.top remains.",
+    "agent_entry": "siso-shell/shell.mjs rail({groups}) · atlas/crm-rail.js (port v2)"
+   },
+   "content": {
+    "title": "brand block: site name + subtitle",
+    "subtitle": "—",
+    "paragraph": "—",
+    "mind_map": "the grouped destinations are the map",
+    "repos": null,
+    "research": null,
+    "docs": null,
+    "progress": null,
+    "agents": null,
+    "timeline": null,
+    "docs_over_time": null,
+    "own_nav": "group 'On this page' from the page's anchors"
+   },
+   "rob_am": [
+    "system-map registry rail: grouped sections with counts and LIVE/PARTIAL/RESEARCH_ONLY chips, ⌘K 'Search registry', footer 'REGISTRY 256 PAGES' · atlas/receipts/am-system-map-root.png",
+    "blueprint: numbered links, [ toggle navigation, collapse chevron · atlas/receipts/am-blueprint.png",
+    "block-runtime: 'On this page' grid · atlas/receipts/am-block-runtime.png"
+   ],
+   "example_today": "http://127.0.0.1:8890/atlas/TEMPLATES-2026-09-06.html (port v1; v2 in progress)",
+   "rob_bank": [
+    {
+     "name": "notifications-menu",
+     "url": "https://21st.dev/@ahmedmayara/components/notifications-menu",
+     "his_note": "banging notifications menu, a really good one. We need a good notifications menu and this is a side one so it doesn't take up much space",
+     "why": "Rob this notifications-menu composition for shell: crm groupedrail + siso tokens (the one shell)."
+    },
+    {
+     "name": "apple-spotlight",
+     "url": "https://21st.dev/@samitkapoor/components/apple-spotlight",
+     "his_note": "oh my gosh this apple spotlight is beautiful. Use it for search or something. We already have something like that for search but this is really cool",
+     "why": "Rob this apple-spotlight composition for shell: crm groupedrail + siso tokens (the one shell)."
+    },
+    {
+     "name": "agent-plan",
+     "url": "https://21st.dev/@isaiahbjork/components/agent-plan",
+     "his_note": "drop-down agent plan, might be useful. We've done a really nice onboarding dropdown and our UI is better, but the way this component works is maybe slightly better",
+     "why": "Rob this agent-plan composition for shell: crm groupedrail + siso tokens (the one shell)."
+    },
+    {
+     "name": "popover",
+     "url": "https://21st.dev/@efferd/components/popover",
+     "his_note": "profile selector popover, pop it in a profile thing / settings. We need one of that for the operator",
+     "why": "Rob this popover composition for shell: crm groupedrail + siso tokens (the one shell)."
+    },
+    {
+     "name": "action-dropdown",
+     "url": "https://21st.dev/@moumensoliman/components/action-dropdown",
+     "his_note": "this drop down is quite cool, action drop down",
+     "why": "Rob this action-dropdown composition for shell: crm groupedrail + siso tokens (the one shell)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "resizable-1",
+     "url": "https://21st.dev/@sean0205/components/resizable-1",
+     "why": "sidebar shell primitive"
+    },
+    {
+     "name": "toggle-nav",
+     "url": "https://21st.dev/@airbnb-visx/components/toggle-nav",
+     "why": "collapsible navigation"
+    },
+    {
+     "name": "be-ui-command-palette",
+     "url": "https://21st.dev/@saurabh10102/components/be-ui-command-palette",
+     "why": "Cmd-K search surface"
+    },
+    {
+     "name": "fluid-dropdown",
+     "url": "https://21st.dev/@koustubhayadiyala36/components/fluid-dropdown",
+     "why": "group dropdown behavior"
+    },
+    {
+     "name": "smart-breadcrumb",
+     "url": "https://21st.dev/@ruixen.ui/components/smart-breadcrumb",
+     "why": "current-page context"
+    }
+   ],
+   "bank_gaps": [
+    "mind map not covered by shell",
+    "exact CRM GroupedRail behavior needs bespoke port"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Command palette",
+     "where": "system-map/nav.js:157-171,192-257; system-map/nav.css:183-200",
+     "data": "Registry page title, description, section, ID and keywords filtered by query",
+     "how": "Copy the palette DOM/event handlers and point REGISTRY_URL at the Great Library route registry.",
+     "quality": "good — keyboard navigation, mouse selection, escape close, and command shortcut"
+    },
+    {
+     "name": "Collapsed rail handle",
+     "where": "system-map/nav.js:40-48,165-173; system-map/nav.css:161-179; blueprint/assets/shell.js:1-19; blueprint/assets/shell.css:1-19",
+     "data": "Only shell state; preserves destination marks while hiding labels",
+     "how": "Copy the toggle plus localStorage preference and bind it to the Library grouped rail.",
+     "quality": "good — compact mode retains route affordances and keyboard toggle"
+    },
+    {
+     "name": "Mobile nav drawer/backdrop",
+     "where": "system-map/nav.js:136-155,176-189; system-map/nav.css:202-232",
+     "data": "Same registry routes as desktop rail with mobile open/close state",
+     "how": "Copy mobile button, backdrop, and responsive CSS; reuse the same registry renderer.",
+     "quality": "good — responsive drawer has explicit close semantics and backdrop"
+    }
+   ]
+  },
+  {
+   "id": "U13",
+   "family": "Reusable modules (the parts every family composes)",
+   "instances": "12 modules from library-ui-spec §6",
+   "count": "12",
+   "source_data": "library-ui-spec.md §6: shell; heading+breadcrumb+state badges; authored reasoning block (source vs interpretation); ecosystem loop + typed relationship map; repo/satellite cards with public/private/access/rights; sauce cards; contents/capability list + procedure; agent quick-start panel; evidence/limits/version panel; activity strip; searchable catalogue cards/table + empty states; related work",
+   "where": "siso-shell (or a Library src/components/ dir) as static partials the generator composes; the 21st.dev bank (112 picks, 62 libraries) is the source for cards, bento, dialogs, tables",
+   "sections": [
+    "one HTML/CSS partial each",
+    "dark tokens",
+    "no framework",
+    "a fixture page showing all 12",
+    "truthful empty state + a real 404 (GAPS F-3)"
+   ],
+   "rail": "U0",
+   "theme": "tokens + accents",
+   "status": "0 built as shared partials; each page hand-writes its own",
+   "verification": "Open /docs/ui-fixture and see the 12 modules rendered once each with their names; view-source shows each is one partial",
+   "host": "fable-with-shaan",
+   "needs": [
+    "U0"
+   ],
+   "gaps": [],
+   "order": 2,
+   "reasoning": {
+    "why": "Every family composes the same parts; build them once as partials or every page drifts (the atlas already has 24 hand-written pages). The Action Model pages are the proof that these parts render from real data.",
+    "readers": "Human: consistent reading. Agent: consistent DOM to parse.",
+    "questions": [
+     "Which parts exist and what data does each take?"
+    ],
+    "claim_ceiling": "—",
+    "data": "a fixture page with all parts + their JSON shapes.",
+    "links_out": [
+     "all"
+    ],
+    "links_in": [
+     "all"
+    ],
+    "privacy": "—",
+    "empty_state": "each part has a truthful empty state (and the site has a real 404, GAPS F-3).",
+    "agent_entry": "siso-shell partials + fixture"
+   },
+   "content": {
+    "title": null,
+    "subtitle": null,
+    "paragraph": null,
+    "mind_map": null,
+    "repos": null,
+    "research": null,
+    "docs": null,
+    "progress": null,
+    "agents": null,
+    "timeline": null,
+    "docs_over_time": null,
+    "own_nav": "the parts"
+   },
+   "rob_am": [
+    "evidence ladder (system-map) · claim ceiling + file chips (reader) · posture panel + stat strip + entity chips + states flow (industry) · chip row with live dots + numbered rail (blueprint) · thesis/posture twin panels + track cards (research-os) · thesis box + on-this-page grid (block-runtime)"
+   ],
+   "example_today": "none; parts live inline on the Action Model pages",
+   "rob_bank": [
+    {
+     "name": "bento-card",
+     "url": "https://21st.dev/@0xUrvish/components/bento-card",
+     "his_note": "really nice bento card. If we ever make a landing page this is a really good comp to have. Must mean a lot considering I've actively not been mentioning landing page stuff",
+     "why": "Rob this bento-card composition for reusable modules (the parts every family composes)."
+    },
+    {
+     "name": "project-detail-view",
+     "url": "https://21st.dev/@kavikatiyar/components/project-detail-view",
+     "his_note": "kind of nice, kind of simple, could be used somewhere in the operators thing. (Server management one was a bit shitty)",
+     "why": "Rob this project-detail-view composition for reusable modules (the parts every family composes)."
+    },
+    {
+     "name": "great-ui-revision-timeline",
+     "url": "https://21st.dev/@saurabh-2607/components/great-ui-revision-timeline",
+     "his_note": "great-ui revision timeline looks cool, the only comp I'm going to give you from them",
+     "why": "Rob this great-ui-revision-timeline composition for reusable modules (the parts every family composes)."
+    },
+    {
+     "name": "ai-input",
+     "url": "https://21st.dev/@aghasisahakyan1/components/ai-input",
+     "his_note": "ask AI input. Really cool the way it pops up, then we're not always wasting space. Having an AI chat always showing is the bad way to go on Oracle. This is definitely the best way, definitely best UI principles. Hand over to an agent to look into",
+     "why": "Rob this ai-input composition for reusable modules (the parts every family composes)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "v-table-12",
+     "url": "https://21st.dev/@cnippet.dev/components/v-table-12",
+     "why": "catalogue/table module"
+    },
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "activity module"
+    },
+    {
+     "name": "mind-map",
+     "url": "https://21st.dev/@ssshooter/components/mind-map",
+     "why": "relationship module"
+    },
+    {
+     "name": "profile-card",
+     "url": "https://21st.dev/@beratberkayg/components/profile-card",
+     "why": "repo/satellite module"
+    }
+   ],
+   "bank_gaps": [
+    "shared partial API and fixture composition are uncovered"
+   ],
+   "rob_am_components": []
+  },
+  {
+   "id": "U23",
+   "family": "Template gallery",
+   "instances": "one page + one detail page per template",
+   "count": "24 templates (this map)",
+   "source_data": "plan/templates.json: every row's reasoning, content contract, sections, rob-from lists (Action Model inventory + 21st.dev picks), example today, verification",
+   "where": "atlas/TEMPLATES-2026-09-06.html + atlas/t/<id>.html; later the Library /docs/templates/",
+   "sections": [
+    "card per template",
+    "detail: reasoning block · content contract · wireframe · components to rob (with screenshots) · example today · verification · issue"
+   ],
+   "rail": "U0",
+   "theme": "each card in its family's accent",
+   "status": "this page, being built now",
+   "verification": "Open the gallery, click U4, and see its reasoning, its twelve-item content contract, a wireframe with the sections, the Action Model panels to rob with screenshots, the 21st.dev picks, and the live prototype",
+   "host": "fable",
+   "needs": [],
+   "gaps": [],
+   "order": 2,
+   "reasoning": {
+    "why": "His 18:19: 'i'd want to see all of the templates and then from those templates i can like click on it to see something … click on the page to actually see the page template and the component'. The gallery is how he and the Library UI Fable agree on each template before it is built.",
+    "readers": "Human: judge each template. Agent: the contract to build to.",
+    "questions": [
+     "Which templates exist and in what order?",
+     "What must each carry?",
+     "What can I rob for it?",
+     "What proves it done?"
+    ],
+    "claim_ceiling": "—",
+    "data": "plan/templates.json + the two Luna inventories.",
+    "links_out": [
+     "all"
+    ],
+    "links_in": [
+     "U9"
+    ],
+    "privacy": "Public.",
+    "empty_state": "—",
+    "agent_entry": "bin/az-templates"
+   },
+   "content": {
+    "title": "Templates",
+    "subtitle": "the map",
+    "paragraph": null,
+    "mind_map": null,
+    "repos": null,
+    "research": null,
+    "docs": null,
+    "progress": null,
+    "agents": null,
+    "timeline": null,
+    "docs_over_time": null,
+    "own_nav": "cards · order"
+   },
+   "rob_am": [
+    "blueprint hero + chip rows · atlas/receipts/am-blueprint.png"
+   ],
+   "example_today": "http://127.0.0.1:8890/atlas/TEMPLATES-2026-09-06.html",
+   "rob_bank": [
+    {
+     "name": "bento-card",
+     "url": "https://21st.dev/@0xUrvish/components/bento-card",
+     "his_note": "really nice bento card. If we ever make a landing page this is a really good comp to have. Must mean a lot considering I've actively not been mentioning landing page stuff",
+     "why": "Rob this bento-card composition for template gallery (click a template → see the page + its components)."
+    },
+    {
+     "name": "feature-carousel",
+     "url": "https://21st.dev/@0xUrvish/components/feature-carousel",
+     "his_note": "feature carousel could be a way of showing models: carousel click through the models to their profile picture. Food for thought",
+     "why": "Rob this feature-carousel composition for template gallery (click a template → see the page + its components)."
+    },
+    {
+     "name": "project-detail-view",
+     "url": "https://21st.dev/@kavikatiyar/components/project-detail-view",
+     "his_note": "kind of nice, kind of simple, could be used somewhere in the operators thing. (Server management one was a bit shitty)",
+     "why": "Rob this project-detail-view composition for template gallery (click a template → see the page + its components)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "gallery-grid-block-shadcnui",
+     "url": "https://21st.dev/@moumensoliman/components/gallery-grid-block-shadcnui",
+     "why": "template gallery grid"
+    },
+    {
+     "name": "3d-gallery-photography",
+     "url": "https://21st.dev/@moazamtrade/components/3d-gallery-photography",
+     "why": "interactive preview gallery"
+    },
+    {
+     "name": "3d-orbit-gallery",
+     "url": "https://21st.dev/@moazamtrade/components/3d-orbit-gallery",
+     "why": "template browsing"
+    },
+    {
+     "name": "product-detail-page",
+     "url": "https://21st.dev/@kavikatiyar/components/product-detail-page",
+     "why": "click-through template detail"
+    }
+   ],
+   "bank_gaps": [
+    "live previews and component provenance require gallery integration"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Command palette",
+     "where": "system-map/nav.js:157-171,192-257; system-map/nav.css:183-200",
+     "data": "Registry page title, description, section, ID and keywords filtered by query",
+     "how": "Copy the palette DOM/event handlers and point REGISTRY_URL at the Great Library route registry.",
+     "quality": "good — keyboard navigation, mouse selection, escape close, and command shortcut"
+    },
+    {
+     "name": "Collapsed rail handle",
+     "where": "system-map/nav.js:40-48,165-173; system-map/nav.css:161-179; blueprint/assets/shell.js:1-19; blueprint/assets/shell.css:1-19",
+     "data": "Only shell state; preserves destination marks while hiding labels",
+     "how": "Copy the toggle plus localStorage preference and bind it to the Library grouped rail.",
+     "quality": "good — compact mode retains route affordances and keyboard toggle"
+    },
+    {
+     "name": "Mobile nav drawer/backdrop",
+     "where": "system-map/nav.js:136-155,176-189; system-map/nav.css:202-232",
+     "data": "Same registry routes as desktop rail with mobile open/close state",
+     "how": "Copy mobile button, backdrop, and responsive CSS; reuse the same registry renderer.",
+     "quality": "good — responsive drawer has explicit close semantics and backdrop"
+    },
+    {
+     "name": "SISO rail with section anchors",
+     "where": "blueprint/index.html:238-244; blueprint/assets/shell.css:4-18; blueprint/assets/shell.js:1-19",
+     "data": "Static page sections and route link labels from blueprint page content",
+     "how": "Copy rail markup/assets and replace anchors with Great Library groups.",
+     "quality": "ok — polished but static and not registry-driven"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Searchable track/card filter",
+     "where": "site/index.html:487-499; blueprint/index.html:357-400 and filter script around 487-499",
+     "data": "Track cards matched against data-search keywords and visible count",
+     "how": "Copy the input/filter function and give each card a normalized search string.",
+     "quality": "good — simple no-framework filtering with visible result count"
+    },
+    {
+     "name": "Resource room card grid",
+     "where": "site/index.html:403-416; blueprint/index.html:300-303,424-427",
+     "data": "Research room title, status/tag, short description, and route",
+     "how": "Copy card markup and map each Library work or source to tag, summary, and link.",
+     "quality": "good — clear scan-to-open pattern with color-coded category strips"
+    }
+   ]
+  },
+  {
+   "id": "U4",
+   "family": "Project one pager (bigger; the hub that links to the rest)",
+   "instances": "one per project, agency and client",
+   "count": "10 projects: Library, Foundry, Internal+Agent Base, Knowledge/siso-source, Plays/hub, GQ+compute, Agent Zero (agency) · Oracle, HALO, BykonzYard, Action Model (client)",
+   "source_data": "plan/projects.json (repos with branch/head/private, urls with HTTP code, seats with last writeback, landed, said verbatim, left, modules with verification lines) + <repo>/.agents/{PAGE.md,HANDOFF.md,owners.log,page.url,repos.json}",
+   "where": "each project's *.pages.dev front door (Tier 1) AND mirrored as a Library Work of type project; atlas/p/<slug>.html is the prototype today",
+   "sections": [
+    "what it is, in his words",
+    "repos incl. private (head, time, visibility)",
+    "live URLs with codes",
+    "owner seats + latest writeback",
+    "what landed (verified)",
+    "what is left → the module rows with verification lines",
+    "links: the Works, GQs and industries this project touches",
+    "the Cloudflare pages it leads to"
+   ],
+   "rail": "U0",
+   "theme": "project = today orange; client projects carry the client's own brand strip below the SISO shell",
+   "status": "data exists (PROJECTS.html 11 rows, atlas/p 17 pages); front door on 4 of 10 repos; no shared template",
+   "verification": "Open <project>.pages.dev and https://great-library-of-siso.pages.dev/works/<project>/ and see the same one pager; every repo listed with its head commit from gh api, private ones marked private",
+   "host": "fable",
+   "needs": [
+    "U0",
+    "U3"
+   ],
+   "gaps": [
+    "T-4"
+   ],
+   "order": 3,
+   "reasoning": {
+    "why": "His 16:36: 'templates for like our project one pager which leads to all of the other project Cloudflare … loads of different repos, but we want like a set kind of UI template'; 18:19: 'title subtitle paragraph … mind map … link to all of the repos … all of the research what the research means … all of the docs the progress what agents we've had running on here the timeline'. This is the hub: every other page is one hop from it.",
+    "readers": "Human: the whole project in one screen, then click out. Agent: the entry to resume a project: front door, repos, verification lines, open modules.",
+    "questions": [
+     "What is this project and for whom?",
+     "Which repos, which are private, what is the head commit?",
+     "What is live (URLs) and does it return 200?",
+     "What landed, what is left, who is on it?",
+     "What did he say about it, when?",
+     "Which questions, industries and Works does it touch?"
+    ],
+    "claim_ceiling": "Repo heads and HTTP codes from live lookups with their timestamp; 'landed' only when verified against a remote or URL; his words verbatim from source/.",
+    "data": "plan/projects.json (this repo) + <repo>/.agents/{PAGE.md,HANDOFF.md,owners.log,page.url,repos.json} + bin/az-projects-table live cache; the same JSON feeds the project's own pages.dev front door and its Library Work.",
+    "links_out": [
+     "U3 Works",
+     "U5 GQs",
+     "U8 industries",
+     "U14 people",
+     "U15 client account",
+     "U16 decisions",
+     "U17 seats",
+     "U18 source",
+     "U21 timeline",
+     "U22 nodes"
+    ],
+    "links_in": [
+     "U1",
+     "U9",
+     "U15"
+    ],
+    "privacy": "Public front door for agency projects; client projects show repo names, visibility and dated activity, never payload.",
+    "empty_state": "No URL → 'no live page yet' + the publish play; no owner → 'unowned' in red.",
+    "agent_entry": "<repo>/.agents/PAGE.md (read first) · bin/az-projects-table"
+   },
+   "content": {
+    "title": "project name",
+    "subtitle": "client or agency · one-line what · for whom",
+    "paragraph": "in his words, dated",
+    "mind_map": "repos · Works · questions · industries · people · nodes as a graph",
+    "repos": "every repo incl. private: head, time, branch, visibility",
+    "research": "research Works + one line each: what it means for this project",
+    "docs": "the docs in the repos, dated",
+    "progress": "modules with verification lines: landed / left",
+    "agents": "every seat that ran: born, closed, what it landed, cost",
+    "timeline": "commits + seats + decisions + docs on one axis",
+    "docs_over_time": "docs plotted on that axis",
+    "own_nav": "the ten sections"
+   },
+   "rob_am": [
+    "system-map root: 'Programme brief · date' kicker · 'Evidence ladder' counts with gate labels · 'OBSERVED' strip with commit hash · atlas/receipts/am-system-map-root.png",
+    "blueprint: chip row of entry points with live dots (system map, component catalogue, demo) · atlas/receipts/am-blueprint.png",
+    "research-os: 'central thesis' + 'decision posture' twin panels; track cards · atlas/receipts/am-research-os.png"
+   ],
+   "example_today": "http://127.0.0.1:8890/atlas/p/great-library.html (prototype) · http://127.0.0.1:8890/atlas/PROJECTS.html (all rows)",
+   "rob_bank": [
+    {
+     "name": "project-detail-view",
+     "url": "https://21st.dev/@kavikatiyar/components/project-detail-view",
+     "his_note": "kind of nice, kind of simple, could be used somewhere in the operators thing. (Server management one was a bit shitty)",
+     "why": "Rob this project-detail-view composition for project one pager (bigger; the hub that links to the rest)."
+    },
+    {
+     "name": "stats-card",
+     "url": "https://21st.dev/@ravikatiyar162/components/stats-card",
+     "his_note": "I like this stats card, the earning one, really nice",
+     "why": "Rob this stats-card composition for project one pager (bigger; the hub that links to the rest)."
+    },
+    {
+     "name": "mini-chart",
+     "url": "https://21st.dev/@jatin-yadav05/components/mini-chart",
+     "his_note": "does this activity mini chart actually work? It does. Banging. We needed some graphs. This is going to be used in the operator thing",
+     "why": "Rob this mini-chart composition for project one pager (bigger; the hub that links to the rest)."
+    },
+    {
+     "name": "great-ui-revision-timeline",
+     "url": "https://21st.dev/@saurabh-2607/components/great-ui-revision-timeline",
+     "his_note": "great-ui revision timeline looks cool, the only comp I'm going to give you from them",
+     "why": "Rob this great-ui-revision-timeline composition for project one pager (bigger; the hub that links to the rest)."
+    },
+    {
+     "name": "team-invitation",
+     "url": "https://21st.dev/@kokonutd/components/team-invitation",
+     "his_note": "team invitation comp, don't know where it could be used but kind of cool. This team invitation is just good. If I mention they're good they're always good for a component bank",
+     "why": "Rob this team-invitation composition for project one pager (bigger; the hub that links to the rest)."
+    },
+    {
+     "name": "to-do-card",
+     "url": "https://21st.dev/@rafa-porto/components/to-do-card",
+     "his_note": "to-do list, quite cool. Return activity, this could be reused in operator somewhere",
+     "why": "Rob this to-do-card composition for project one pager (bigger; the hub that links to the rest)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "glassmorphism-minimal-metrics-block-shadcnui",
+     "url": "https://21st.dev/@moumensoliman/components/glassmorphism-minimal-metrics-block-shadcnui",
+     "why": "project metrics"
+    },
+    {
+     "name": "n8n-workflow-block-shadcnui",
+     "url": "https://21st.dev/@moumensoliman/components/n8n-workflow-block-shadcnui",
+     "why": "project workflow map"
+    },
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "landed/activity timeline"
+    },
+    {
+     "name": "v-table-12",
+     "url": "https://21st.dev/@cnippet.dev/components/v-table-12",
+     "why": "repo and seat table"
+    }
+   ],
+   "bank_gaps": [
+    "repo truth, seat writebacks, and link graph need project data integration"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Collapsed rail handle",
+     "where": "system-map/nav.js:40-48,165-173; system-map/nav.css:161-179; blueprint/assets/shell.js:1-19; blueprint/assets/shell.css:1-19",
+     "data": "Only shell state; preserves destination marks while hiding labels",
+     "how": "Copy the toggle plus localStorage preference and bind it to the Library grouped rail.",
+     "quality": "good — compact mode retains route affordances and keyboard toggle"
+    },
+    {
+     "name": "SISO rail with section anchors",
+     "where": "blueprint/index.html:238-244; blueprint/assets/shell.css:4-18; blueprint/assets/shell.js:1-19",
+     "data": "Static page sections and route link labels from blueprint page content",
+     "how": "Copy rail markup/assets and replace anchors with Great Library groups.",
+     "quality": "ok — polished but static and not registry-driven"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Flow / process steps",
+     "where": "system-map/index.html:93-104; blueprint/index.html:57-60,487-492; live block-runtime SVG/sections",
+     "data": "Ordered stages from discovery through composition, runtime, and learning",
+     "how": "Copy flow-step styling and feed ordered stage objects with labels and descriptions.",
+     "quality": "good — communicates sequence without requiring a chart library"
+    },
+    {
+     "name": "Searchable track/card filter",
+     "where": "site/index.html:487-499; blueprint/index.html:357-400 and filter script around 487-499",
+     "data": "Track cards matched against data-search keywords and visible count",
+     "how": "Copy the input/filter function and give each card a normalized search string.",
+     "quality": "good — simple no-framework filtering with visible result count"
+    },
+    {
+     "name": "Resource room card grid",
+     "where": "site/index.html:403-416; blueprint/index.html:300-303,424-427",
+     "data": "Research room title, status/tag, short description, and route",
+     "how": "Copy card markup and map each Library work or source to tag, summary, and link.",
+     "quality": "good — clear scan-to-open pattern with color-coded category strips"
+    },
+    {
+     "name": "Registry card grid",
+     "where": "system-map/parts/index.html:19-34; system-map/registry.css:14-20; industry index:20; live artifacts index",
+     "data": "ID, group/section, title, description, count/status, and open route",
+     "how": "Copy registry-card grid and feed typed records with route, title, summary, and status.",
+     "quality": "good — reusable catalogue unit with strong hover/open affordance"
+    }
+   ]
+  },
+  {
+   "id": "U5",
+   "family": "God Question page",
+   "instances": "one per GQ",
+   "count": "22 (GOD-QUESTIONS.md; 18 registered as Works; 14 GQ URLs fall through to root)",
+   "source_data": "GOD-QUESTIONS.md cards (question, decision target, counterexample, evidence lines), docs/frontier-question-template.html (exact question, why it matters, assumptions, evidence map, subquestions, expected answer package), domains/compute/runs/<run>/ receipts",
+   "where": "/works/frontier-question-gq-NNN/ + /god-questions/ index",
+   "sections": [
+    "the question + decision target",
+    "research state + counterexample",
+    "evidence map with dated receipts (J2 ratio, E1 windows…)",
+    "subquestions → compute modules allocated / not",
+    "expected answer package",
+    "who is on it + host (webui/luna/codex/shaan/hold)"
+   ],
+   "rail": "U0",
+   "theme": "research = focus blue",
+   "status": "index exists with rail; 9 real GQ pages, 14 return the root HTML with 200 (GAPS F-3); no GQ page shows its compute modules",
+   "verification": "Open /works/frontier-question-gq-011/ and see GQ-011's card, its evidence lines citing the Oracle token-waste lesson, and the register modules that feed it",
+   "host": "fable",
+   "needs": [
+    "U0",
+    "U3"
+   ],
+   "gaps": [
+    "F-3",
+    "O-5"
+   ],
+   "order": 4,
+   "reasoning": {
+    "why": "His 16:36: 'all the different God questions, which are different allocations of compute, like we need a template for each and every God question project, right? Because it will show a bunch of stuff.' A GQ page is where a decision target meets its evidence and its compute.",
+    "readers": "Human: what are we trying to learn, what do we know, what is it costing. Agent: the decision target + counterexample rule + which modules to run next.",
+    "questions": [
+     "What is the exact question and the decision it changes?",
+     "What is the current answer and its counterexample?",
+     "What evidence exists, dated, with receipts?",
+     "Which compute modules are allocated / done / unallocated?",
+     "What would close it?"
+    ],
+    "claim_ceiling": "Evidence lines cite a receipt path; 'answer' is labelled proposed until a receipt supports it; ratios carry n.",
+    "data": "GOD-QUESTIONS.md card, plan/modules.json rows with domain god-questions, domains/compute/runs/<run>/ receipts (U19), source/ words that raised it.",
+    "links_out": [
+     "U19 runs",
+     "U16 decisions",
+     "U18 source",
+     "U3 Works it produced",
+     "U4 projects it serves"
+    ],
+    "links_in": [
+     "U1",
+     "U9",
+     "U4"
+    ],
+    "privacy": "Public.",
+    "empty_state": "No run yet → 'no receipt; allocated to <host>' or 'unallocated'.",
+    "agent_entry": "GOD-QUESTIONS.md#GQ-NNN · domains/compute/runs/"
+   },
+   "content": {
+    "title": "GQ-NNN · the question",
+    "subtitle": "decision target",
+    "paragraph": "why it matters, in his words",
+    "mind_map": "question → subquestions → modules → runs → Works",
+    "repos": "repos the runs live in",
+    "research": "evidence lines with receipts + what each means",
+    "docs": "docs it produced",
+    "progress": "modules: allocated / done / unallocated by host",
+    "agents": "seats that ran on it + cost",
+    "timeline": "runs + decisions by date",
+    "docs_over_time": "—",
+    "own_nav": "question · state · evidence · compute · next"
+   },
+   "rob_am": [
+    "industry page 'DEMAND POSTURE' panel (observed · signal=E · validated=U) as the GQ 'current answer' panel · atlas/receipts/am-industry-law-firms.png",
+    "system-map 'Evidence ladder' (preserved / qualified / admitted) as the evidence-state ladder · atlas/receipts/am-system-map-root.png",
+    "research reader CLAIM CEILING · atlas/receipts/am-research-report-reader.png"
+   ],
+   "example_today": "https://great-library-of-siso.pages.dev/works/frontier-question-gq-012/",
+   "rob_bank": [
+    {
+     "name": "anomaly-heatmap",
+     "url": "https://21st.dev/@aghasisahakyan1/components/anomaly-heatmap",
+     "his_note": "some sort of heat map, that'll be useful",
+     "why": "Rob this anomaly-heatmap composition for god question page."
+    },
+    {
+     "name": "scrollable-sticky-footer",
+     "url": "https://21st.dev/@originui/components/dialog/scrollable-sticky-footer",
+     "his_note": "frequently asked questions scrolly thing, could be useful",
+     "why": "Rob this scrollable-sticky-footer composition for god question page."
+    },
+    {
+     "name": "performance-benchmark-card",
+     "url": "https://21st.dev/@kavikatiyar/components/performance-benchmark-card",
+     "his_note": "another performance benchmark card, might be useful",
+     "why": "Rob this performance-benchmark-card composition for god question page."
+    },
+    {
+     "name": "timeline",
+     "url": "https://21st.dev/@nyxbui/components/timeline",
+     "his_note": "timeline of text, it's clean. I wouldn't say amazing",
+     "why": "Rob this timeline composition for god question page."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "mind-elixir-react",
+     "url": "https://21st.dev/@ssshooter/components/mind-elixir-react",
+     "why": "mind map for question/evidence"
+    },
+    {
+     "name": "mind-map",
+     "url": "https://21st.dev/@ssshooter/components/mind-map",
+     "why": "alternative evidence graph"
+    },
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "dated receipts"
+    },
+    {
+     "name": "performance-benchmark-card",
+     "url": "https://21st.dev/@kavikatiyar/components/performance-benchmark-card",
+     "why": "ratios and benchmark evidence"
+    }
+   ],
+   "bank_gaps": [
+    "mind map and evidence receipts need domain-specific rendering"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Flow / process steps",
+     "where": "system-map/index.html:93-104; blueprint/index.html:57-60,487-492; live block-runtime SVG/sections",
+     "data": "Ordered stages from discovery through composition, runtime, and learning",
+     "how": "Copy flow-step styling and feed ordered stage objects with labels and descriptions.",
+     "quality": "good — communicates sequence without requiring a chart library"
+    },
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    },
+    {
+     "name": "Registry card grid",
+     "where": "system-map/parts/index.html:19-34; system-map/registry.css:14-20; industry index:20; live artifacts index",
+     "data": "ID, group/section, title, description, count/status, and open route",
+     "how": "Copy registry-card grid and feed typed records with route, title, summary, and status.",
+     "quality": "good — reusable catalogue unit with strong hover/open affordance"
+    },
+    {
+     "name": "Node detail card grid",
+     "where": "system-map/part-page.css:19-26; generate-part-pages.mjs:144-158; industry.css:38-49; generate-industry-pages.mjs:137-144",
+     "data": "Owned scope, known findings, inputs, outputs, risks, and open questions",
+     "how": "Copy node-card variants and feed arrays into labeled cards with wide/risk/lilac/mint classes.",
+     "quality": "good — flexible two-column/wide layout for heterogeneous records"
+    },
+    {
+     "name": "Dependency link chips",
+     "where": "system-map/index.html:152-157; system-map/part-page.css:94-96; generate-part-pages.mjs:100-109",
+     "data": "Related part IDs, titles, and dependency direction",
+     "how": "Copy dependency chip styles and feed linked work/decision IDs.",
+     "quality": "good — compact relationship map that remains clickable"
+    }
+   ]
+  },
+  {
+   "id": "U19",
+   "family": "Compute run page",
+   "instances": "one per measured run",
+   "count": "runs: 2026-09-05-gq-compute, 2026-09-06-j2 (medium vs xhigh), e1 windows ×3; receipts in domains/compute/runs/",
+   "source_data": "domains/compute/runs/<run>/{preregistration,run,acceptance,runtime-audit}.json, events.jsonl, metadata.json (effort applied), receipts",
+   "where": "/runs/<run>/ under its God Question",
+   "sections": [
+    "preregistration (what we expected)",
+    "arms + effort applied",
+    "tokens in/out per arm, ratio with n",
+    "acceptance verdict",
+    "runtime audit",
+    "what it changes (decision)"
+   ],
+   "rail": "U0",
+   "theme": "research = focus blue",
+   "status": "JSON + mjs on disk; summarised in GAPS M-1/M-3; no page",
+   "verification": "Open /runs/2026-09-06-j2/ and see two arms, 122,427 vs 122,327 input, ratio 1.00×, reasoning_effort null in both, verdict 'untested'",
+   "host": "luna",
+   "needs": [],
+   "gaps": [],
+   "order": 5,
+   "reasoning": {
+    "why": "A God Question without runs is opinion; the J2 '4×' claim survived a night because no page showed ratio 1.00× with effort null. Receipts must be visible.",
+    "readers": "Human: did it work, what did it cost. Agent: the preregistration to repeat and the receipt shape to emit.",
+    "questions": [
+     "What was tested?",
+     "What was applied vs requested?",
+     "What are the numbers, with n?",
+     "What decision does it change?"
+    ],
+    "claim_ceiling": "Numbers only from receipt files; requested vs applied shown separately.",
+    "data": "domains/compute/runs/.",
+    "links_out": [
+     "U5",
+     "U16",
+     "U17"
+    ],
+    "links_in": [
+     "U5",
+     "U9"
+    ],
+    "privacy": "Public.",
+    "empty_state": "No acceptance.json → 'unfinished run'.",
+    "agent_entry": "domains/compute/runs/<run>/README or preregistration.json"
+   },
+   "content": {
+    "title": "run id",
+    "subtitle": "GQ · date · host",
+    "paragraph": "what we expected",
+    "mind_map": null,
+    "repos": null,
+    "research": null,
+    "docs": null,
+    "progress": "verdict",
+    "agents": "seat",
+    "timeline": "arms",
+    "docs_over_time": null,
+    "own_nav": "prereg · arms · numbers · verdict"
+   },
+   "rob_am": [
+    "block-runtime stat cards + bordered thesis box as 'verdict' · atlas/receipts/am-block-runtime.png",
+    "system-map evidence ladder as run state · atlas/receipts/am-system-map-root.png"
+   ],
+   "example_today": "none (JSON only)",
+   "rob_bank": [
+    {
+     "name": "performance-benchmark-card",
+     "url": "https://21st.dev/@kavikatiyar/components/performance-benchmark-card",
+     "his_note": "another performance benchmark card, might be useful",
+     "why": "Rob this performance-benchmark-card composition for compute run page (receipts, ratios)."
+    },
+    {
+     "name": "donut-chart",
+     "url": "https://21st.dev/@ravikatiyar162/components/donut-chart",
+     "his_note": "could be a really cool animation if we use it well, donut chart card. Could be used somewhere on the operator dashboard",
+     "why": "Rob this donut-chart composition for compute run page (receipts, ratios)."
+    },
+    {
+     "name": "mini-chart",
+     "url": "https://21st.dev/@jatin-yadav05/components/mini-chart",
+     "his_note": "does this activity mini chart actually work? It does. Banging. We needed some graphs. This is going to be used in the operator thing",
+     "why": "Rob this mini-chart composition for compute run page (receipts, ratios)."
+    },
+    {
+     "name": "stats-widget",
+     "url": "https://21st.dev/@ravikatiyar162/components/stats-widget",
+     "his_note": "nice different stat widget",
+     "why": "Rob this stats-widget composition for compute run page (receipts, ratios)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "performance-benchmark-card",
+     "url": "https://21st.dev/@kavikatiyar/components/performance-benchmark-card",
+     "why": "receipt ratios"
+    },
+    {
+     "name": "glassmorphism-minimal-metrics-block-shadcnui",
+     "url": "https://21st.dev/@moumensoliman/components/glassmorphism-minimal-metrics-block-shadcnui",
+     "why": "run metrics"
+    },
+    {
+     "name": "circular-progress-card",
+     "url": "https://21st.dev/@kavikatiyar/components/circular-progress-card",
+     "why": "completion status"
+    },
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "run event sequence"
+    }
+   ],
+   "bank_gaps": [
+    "receipt schema and reproducibility links need bespoke data"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Flow / process steps",
+     "where": "system-map/index.html:93-104; blueprint/index.html:57-60,487-492; live block-runtime SVG/sections",
+     "data": "Ordered stages from discovery through composition, runtime, and learning",
+     "how": "Copy flow-step styling and feed ordered stage objects with labels and descriptions.",
+     "quality": "good — communicates sequence without requiring a chart library"
+    },
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    },
+    {
+     "name": "Evidence/source table",
+     "where": "RESEARCH-PACK.html:166-176,233-264,358-395; part-page.css:32-39,50-59; industry.css:52-60; docs.css:54-59; state/index.html:220-240; blueprint/index.html:335,393,427",
+     "data": "Rows of sources, contributions, limits, repositories, evidence classes, observed slots, statuses, and provenance paths",
+     "how": "Copy scrollable table wrappers and define a record-specific column schema.",
+     "quality": "good — explicit provenance columns prevent summary-only displays"
+    },
+    {
+     "name": "Scrollable dataset search header",
+     "where": "system-map/part-page.css:46-57; generated P01 dataset markup and inline search behavior",
+     "data": "Dataset title/description plus client-side query against preserved research rows",
+     "how": "Copy dataset-head/input and bind filtering to table rows by text content.",
+     "quality": "good — keeps large evidence packets inspectable without pagination"
+    },
+    {
+     "name": "OSS admission funnel",
+     "where": "site/index.html:431-441; generate-state-page.mjs:71-112; state.css:74-160",
+     "data": "Merged candidates, bounded reviews, held evidence, rejected, admitted, and stage counts",
+     "how": "Copy funnel rows/bar CSS and feed ordered stage count objects.",
+     "quality": "good — communicates attrition and zero states without hiding them"
+    }
+   ]
+  },
+  {
+   "id": "U3",
+   "family": "Library module (standard Work) page",
+   "instances": "one per Work, by category",
+   "count": "47 Works: 18 research_question · 8 knowledge_system · 4 bundle · 3 project · 3 tool · 2 section · 2 agent_system · 2 capability_pack · 2 playbook · 2 application · 1 library",
+   "source_data": "registry/works/<id>.json + releases + source_links; his categories 16:50: 'projects, niches, client, personal' → maps onto type + section; connected to the GitHub repo front end (repos.json) 'even if they private'",
+   "where": "/works/<slug>/ (template on 1 of 47 today: siso-foundry, docs/module-page-template.md)",
+   "sections": [
+    "kicker: section/type/maturity",
+    "title + why it matters (authored)",
+    "repo + satellites cards with public/private/rights",
+    "sauce: 3–7 real assets",
+    "contents / capabilities",
+    "agent quick-start: entry file, commands, owner, verification line",
+    "evidence / limits / version",
+    "related work"
+   ],
+   "rail": "U0",
+   "theme": "accent by section",
+   "status": "1/47 on the template",
+   "verification": "Open any of the 47 /works/<slug>/ and see the same eight sections in the same order; the repo card's visibility matches gh api",
+   "host": "fable",
+   "needs": [
+    "U0",
+    "U2"
+   ],
+   "gaps": [
+    "T-1"
+   ],
+   "order": 6,
+   "reasoning": {
+    "why": "His 16:36: 'for each of the modules like it'll be connected to the github repo front-end … even client stock will have the listing of the repos even if they private'; 16:50: 'different categories of modules … projects, niches, client, personal … all of that stuff was distilled already from intelligence, so it's just about getting eyes on that stuff now'.",
+    "readers": "Human: understand one thing and its 'sauce' in a minute. Agent: entry file, command, owner, verification line, then go.",
+    "questions": [
+     "What is it and why does it matter?",
+     "Where is the code, is it public?",
+     "What can I use from it today (sauce)?",
+     "How do I verify it works?",
+     "Who owns it and when did they last write?"
+    ],
+    "claim_ceiling": "Facts from the registry record and the repo; 'why it matters' is authored and labelled as such; maturity from the record, not from prose.",
+    "data": "registry/works/<id>.json, releases, source_links, repos.json in the repo's .agents/, owners.log; type decides the section set (research_question → U5, project → U4, private → U11).",
+    "links_out": [
+     "U4 project",
+     "U12 releases",
+     "U14 person",
+     "U16 decisions",
+     "U17 seats"
+    ],
+    "links_in": [
+     "U2",
+     "U1",
+     "U4"
+    ],
+    "privacy": "Public unless the record is private → U11.",
+    "empty_state": "Missing 'sauce' → 'no assets registered' with the gls command; never filler.",
+    "agent_entry": "docs/module-page-template.md → src/build.mjs work page"
+   },
+   "content": {
+    "title": "Work name",
+    "subtitle": "section · type · maturity kicker + one-line what",
+    "paragraph": "why it matters (authored)",
+    "mind_map": "typed relationship map: repo, releases, people, questions, projects",
+    "repos": "repo + satellites with public/private/access/rights",
+    "research": "research Works it rests on, one line each on what they mean",
+    "docs": "docs in the repo, dated",
+    "progress": "verification line + state",
+    "agents": "owner + last writeback",
+    "timeline": "releases + writebacks",
+    "docs_over_time": "docs by date",
+    "own_nav": "the eight sections"
+   },
+   "rob_am": [
+    "research-report reader: breadcrumb · huge serif title · 'Rendered from source' · file chips (lines, bytes, sha256) · CLAIM CEILING panel with source path · ON THIS PAGE column · atlas/receipts/am-research-report-reader.png",
+    "industry page: kicker with observed date · posture panel · stat strip · tinted sections · entity chips · atlas/receipts/am-industry-law-firms.png"
+   ],
+   "example_today": "https://great-library-of-siso.pages.dev/works/siso-foundry/",
+   "rob_bank": [
+    {
+     "name": "project-detail-view",
+     "url": "https://21st.dev/@kavikatiyar/components/project-detail-view",
+     "his_note": "kind of nice, kind of simple, could be used somewhere in the operators thing. (Server management one was a bit shitty)",
+     "why": "Rob this project-detail-view composition for library module (standard work) page."
+    },
+    {
+     "name": "with-slash",
+     "url": "https://21st.dev/@originui/components/breadcrumb/with-slash",
+     "his_note": "these breadcrumbs, the way they do them is just really nice",
+     "why": "Rob this with-slash composition for library module (standard work) page."
+    },
+    {
+     "name": "agent-plan",
+     "url": "https://21st.dev/@isaiahbjork/components/agent-plan",
+     "his_note": "drop-down agent plan, might be useful. We've done a really nice onboarding dropdown and our UI is better, but the way this component works is maybe slightly better",
+     "why": "Rob this agent-plan composition for library module (standard work) page."
+    },
+    {
+     "name": "glass-blog-card-shadcnui",
+     "url": "https://21st.dev/@moumensoliman/components/glass-blog-card-shadcnui",
+     "his_note": "glass blog card, just nice, could be reused on the operator side",
+     "why": "Rob this glass-blog-card-shadcnui composition for library module (standard work) page."
+    },
+    {
+     "name": "estimated-arrival",
+     "url": "https://21st.dev/@hedevelope/components/estimated-arrival",
+     "his_note": "estimated time arrival, really interesting, don't know where we'd use it, love to have it. Progress bar could be useful in the operator app somewhere",
+     "why": "Rob this estimated-arrival composition for library module (standard work) page."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "product-detail-page",
+     "url": "https://21st.dev/@kavikatiyar/components/product-detail-page",
+     "why": "detail-page composition"
+    },
+    {
+     "name": "profile-card",
+     "url": "https://21st.dev/@beratberkayg/components/profile-card",
+     "why": "owner/profile card"
+    },
+    {
+     "name": "toc-base-kit",
+     "url": "https://21st.dev/@platejs/components/toc-base-kit",
+     "why": "contents rail"
+    },
+    {
+     "name": "package-installer-tabs",
+     "url": "https://21st.dev/@ruixen.ui/components/package-installer-tabs",
+     "why": "capability/procedure tabs"
+    }
+   ],
+   "bank_gaps": [
+    "authored reasoning and repo rights/access semantics need bespoke content"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Command palette",
+     "where": "system-map/nav.js:157-171,192-257; system-map/nav.css:183-200",
+     "data": "Registry page title, description, section, ID and keywords filtered by query",
+     "how": "Copy the palette DOM/event handlers and point REGISTRY_URL at the Great Library route registry.",
+     "quality": "good — keyboard navigation, mouse selection, escape close, and command shortcut"
+    },
+    {
+     "name": "Mobile nav drawer/backdrop",
+     "where": "system-map/nav.js:136-155,176-189; system-map/nav.css:202-232",
+     "data": "Same registry routes as desktop rail with mobile open/close state",
+     "how": "Copy mobile button, backdrop, and responsive CSS; reuse the same registry renderer.",
+     "quality": "good — responsive drawer has explicit close semantics and backdrop"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    },
+    {
+     "name": "Registry card grid",
+     "where": "system-map/parts/index.html:19-34; system-map/registry.css:14-20; industry index:20; live artifacts index",
+     "data": "ID, group/section, title, description, count/status, and open route",
+     "how": "Copy registry-card grid and feed typed records with route, title, summary, and status.",
+     "quality": "good — reusable catalogue unit with strong hover/open affordance"
+    },
+    {
+     "name": "Node detail card grid",
+     "where": "system-map/part-page.css:19-26; generate-part-pages.mjs:144-158; industry.css:38-49; generate-industry-pages.mjs:137-144",
+     "data": "Owned scope, known findings, inputs, outputs, risks, and open questions",
+     "how": "Copy node-card variants and feed arrays into labeled cards with wide/risk/lilac/mint classes.",
+     "quality": "good — flexible two-column/wide layout for heterogeneous records"
+    }
+   ]
+  },
+  {
+   "id": "U9",
+   "family": "Agent Zero page (his concepts + the fleet, on the Library)",
+   "instances": "one",
+   "count": "1 (+ the 24 atlas pages it fronts)",
+   "source_data": "INTENT.md, BASELINE.md, plan/{modules,projects,decisions}.json, GOD-QUESTIONS.md, source/ (44 verbatim files, 111,930 words), ledger/OWNERS.md, the atlas",
+   "where": "Library Work 'Agent Zero' (type agent_system) + agent-zero.pages.dev front door; atlas/ stays the laptop-local live view",
+   "sections": [
+    "the bet + the two axes",
+    "his concepts (source/ index, dated, verbatim)",
+    "projects → U4 pages",
+    "register: allocated / not allocated / done, by host, with verification lines",
+    "decisions D-1…D-29",
+    "fleet now (owners, nodes)",
+    "gaps"
+   ],
+   "rail": "U0",
+   "theme": "agents = reflect violet",
+   "status": "atlas/AGENT-ZERO.html + index.html exist on the laptop only; not on the Library; the atlas rail is not the CRM one (fixing now)",
+   "verification": "Open https://great-library-of-siso.pages.dev/works/agent-zero/ from a cold browser and see the register with 51 rows, each with its host and verification line, and the 44 source files listed by date",
+   "host": "fable",
+   "needs": [
+    "U0",
+    "U4"
+   ],
+   "gaps": [],
+   "order": 7,
+   "reasoning": {
+    "why": "His 16:36: 'the template for Agent Zero and like a repo of all of my main concepts and information for Agent Zero. So if I want to see that front end and see what's going on with Agent Zero, see all of the main projects and all of that stuff linked to it, it's all there.'",
+    "readers": "Human: the whole thing from the top. Agent: the read order + the register + the decisions, then the project it touches.",
+    "questions": [
+     "What is the bet and the two axes?",
+     "What are his concepts, in his words, by date?",
+     "Which projects exist and what state are they in?",
+     "What is allocated, done, unallocated, by host?",
+     "What was decided and what reverses it?",
+     "Who is running now and where?"
+    ],
+    "claim_ceiling": "Every number from a JSON in this repo; his words only from source/.",
+    "data": "INTENT.md, BASELINE.md, plan/*.json, GOD-QUESTIONS.md, source/, ledger/OWNERS.md, atlas/now.json.",
+    "links_out": [
+     "U4 all projects",
+     "U5 GQs",
+     "U16 decisions",
+     "U17 seats",
+     "U18 source",
+     "U21 timeline",
+     "U22 nodes",
+     "U20 plays"
+    ],
+    "links_in": [
+     "U1"
+    ],
+    "privacy": "Public page; the repo may stay private (D on source/ → private siso-agent-zero-source).",
+    "empty_state": "—",
+    "agent_entry": "INTENT.md → BASELINE.md → this page"
+   },
+   "content": {
+    "title": "Agent Zero",
+    "subtitle": "the bet",
+    "paragraph": "INTENT in his words",
+    "mind_map": "projects · questions · plays · nodes",
+    "repos": "this repo + harness-lab",
+    "research": "the GQs",
+    "docs": "atlas readings by date",
+    "progress": "register 51: 7 landed · 24 partial · 20 untouched, by host",
+    "agents": "every seat, live and closed",
+    "timeline": "decisions + seats + readings",
+    "docs_over_time": "atlas pages by date",
+    "own_nav": "bet · concepts · projects · register · decisions · fleet · gaps"
+   },
+   "rob_am": [
+    "system-map registry rail with counts + status chips · atlas/receipts/am-system-map-root.png",
+    "research-os pack index + hero posture card · atlas/receipts/am-research-os.png"
+   ],
+   "example_today": "http://127.0.0.1:8890/atlas/ (laptop only)",
+   "rob_bank": [
+    {
+     "name": "ai-input",
+     "url": "https://21st.dev/@aghasisahakyan1/components/ai-input",
+     "his_note": "ask AI input. Really cool the way it pops up, then we're not always wasting space. Having an AI chat always showing is the bad way to go on Oracle. This is definitely the best way, definitely best UI principles. Hand over to an agent to look into",
+     "why": "Rob this ai-input composition for agent zero page (his concepts + the fleet, on the library)."
+    },
+    {
+     "name": "agent-plan",
+     "url": "https://21st.dev/@isaiahbjork/components/agent-plan",
+     "his_note": "drop-down agent plan, might be useful. We've done a really nice onboarding dropdown and our UI is better, but the way this component works is maybe slightly better",
+     "why": "Rob this agent-plan composition for agent zero page (his concepts + the fleet, on the library)."
+    },
+    {
+     "name": "agent-avatar",
+     "url": "https://21st.dev/@educalvolpz/components/agent-avatar",
+     "his_note": "(agent avatar; part of the AI/agent set, no separate comment)",
+     "why": "Rob this agent-avatar composition for agent zero page (his concepts + the fleet, on the library)."
+    },
+    {
+     "name": "animated-state-icons",
+     "url": "https://21st.dev/@dev.yadhakim/components/animated-state-icons",
+     "his_note": "animated state icons, always useful to make the app feel nicer",
+     "why": "Rob this animated-state-icons composition for agent zero page (his concepts + the fleet, on the library)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "mind-map",
+     "url": "https://21st.dev/@ssshooter/components/mind-map",
+     "why": "concept and fleet graph"
+    },
+    {
+     "name": "profile-selector",
+     "url": "https://21st.dev/@ravikatiyar162/components/profile-selector",
+     "why": "agent seat selector"
+    },
+    {
+     "name": "activity-with-number-flow",
+     "url": "https://21st.dev/@barvian/components/activity-with-number-flow",
+     "why": "fleet activity counts"
+    },
+    {
+     "name": "thinking",
+     "url": "https://21st.dev/@theshanelevine/components/thinking",
+     "why": "agent run state"
+    }
+   ],
+   "bank_gaps": [
+    "fleet register and verbatim source index need bespoke data"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Command palette",
+     "where": "system-map/nav.js:157-171,192-257; system-map/nav.css:183-200",
+     "data": "Registry page title, description, section, ID and keywords filtered by query",
+     "how": "Copy the palette DOM/event handlers and point REGISTRY_URL at the Great Library route registry.",
+     "quality": "good — keyboard navigation, mouse selection, escape close, and command shortcut"
+    },
+    {
+     "name": "Collapsed rail handle",
+     "where": "system-map/nav.js:40-48,165-173; system-map/nav.css:161-179; blueprint/assets/shell.js:1-19; blueprint/assets/shell.css:1-19",
+     "data": "Only shell state; preserves destination marks while hiding labels",
+     "how": "Copy the toggle plus localStorage preference and bind it to the Library grouped rail.",
+     "quality": "good — compact mode retains route affordances and keyboard toggle"
+    },
+    {
+     "name": "SISO rail with section anchors",
+     "where": "blueprint/index.html:238-244; blueprint/assets/shell.css:4-18; blueprint/assets/shell.js:1-19",
+     "data": "Static page sections and route link labels from blueprint page content",
+     "how": "Copy rail markup/assets and replace anchors with Great Library groups.",
+     "quality": "ok — polished but static and not registry-driven"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Flow / process steps",
+     "where": "system-map/index.html:93-104; blueprint/index.html:57-60,487-492; live block-runtime SVG/sections",
+     "data": "Ordered stages from discovery through composition, runtime, and learning",
+     "how": "Copy flow-step styling and feed ordered stage objects with labels and descriptions.",
+     "quality": "good — communicates sequence without requiring a chart library"
+    },
+    {
+     "name": "Searchable track/card filter",
+     "where": "site/index.html:487-499; blueprint/index.html:357-400 and filter script around 487-499",
+     "data": "Track cards matched against data-search keywords and visible count",
+     "how": "Copy the input/filter function and give each card a normalized search string.",
+     "quality": "good — simple no-framework filtering with visible result count"
+    }
+   ]
+  },
+  {
+   "id": "U1",
+   "family": "Library landing (root front door)",
+   "instances": "one page",
+   "count": "1",
+   "source_data": "catalog.json counts (47 Works, 86 Releases, 40 Snapshots, 8 inventories, 27 repos 23 public / 4 private, 17 industries, 22 GQ), the ecosystem loop from library-ui-spec §6, featured entry points",
+   "where": "great-library-of-siso.pages.dev/ (Great_Library_of_SISO/src build)",
+   "sections": [
+    "purpose in his words",
+    "the loop: clients fund compute → owners build → packs enter the Library → people+repos feed Foundry → questions turn evidence into breakthroughs",
+    "section counts from catalog.json",
+    "featured: latest Works, latest GQ, latest project one pagers",
+    "search"
+   ],
+   "rail": "U0",
+   "theme": "brand gradient hero, section accents",
+   "status": "exists, 'stupid' by his 16:36 word: no loop, no counts, siso-rail not GroupedRail; he wants 21st.dev bento/onboarding picks (ui-bank preset landing: only bento-card and onboarding-dialog kept)",
+   "verification": "Open the root and see the loop diagram with every node a real link, the counts equal to catalog.json, and the grouped rail",
+   "host": "fable",
+   "needs": [
+    "U0"
+   ],
+   "gaps": [],
+   "order": 8,
+   "reasoning": {
+    "why": "His 16:36: the Library is 'a way to actually see that shit'; 'look at what we currently have and figure out why it's stupid'. The root is the only page a stranger or a cold agent sees first.",
+    "readers": "Human: understand SISO in 30 s, pick a door. Agent: read the loop and the counts, then follow catalog.json.",
+    "questions": [
+     "What is SISO building and why?",
+     "How big is it (counts)?",
+     "Where do I go for a project / a question / an industry?",
+     "What moved this week?"
+    ],
+    "claim_ceiling": "Counts come from catalog.json at build; the loop shows the thesis and marks measured results only where a receipt exists.",
+    "data": "catalog.json (works, repositories, assemblies, inventories), GOD-QUESTIONS.md count, industries index, the latest owners.log lines for 'what moved'.",
+    "links_out": [
+     "U2 sections",
+     "U4 projects",
+     "U5 GQs",
+     "U8 industries",
+     "U9 Agent Zero",
+     "U21 timeline"
+    ],
+    "links_in": [
+     "everything"
+    ],
+    "privacy": "Public.",
+    "empty_state": "A section with 0 items says '0, nothing registered yet' with the gls command to register.",
+    "agent_entry": "Great_Library_of_SISO/src/build.mjs → site/index.html"
+   },
+   "content": {
+    "title": "Great Library of SISO",
+    "subtitle": "the bet in one line (INTENT.md)",
+    "paragraph": "his words, dated",
+    "mind_map": "the ecosystem loop, every node a link",
+    "repos": "27 repos, 23 public / 4 private, as a count + link",
+    "research": "latest research Works",
+    "docs": "latest docs",
+    "progress": "counts strip",
+    "agents": "live seats from /now/",
+    "timeline": "last 7 days strip",
+    "docs_over_time": "—",
+    "own_nav": "loop · sections · latest · doors"
+   },
+   "rob_am": [
+    "system-map hero: serif headline + one-paragraph thesis + 'Evidence ladder' counts panel with gate labels · atlas/receipts/am-system-map-root.png",
+    "blueprint hero: kicker · gradient headline · chip row of entry points with live dots · 4-stat strip · atlas/receipts/am-blueprint.png",
+    "research-os: 6-stat strip with coloured numbers, 'central thesis' panel + 'decision posture' checklist · atlas/receipts/am-research-os.png"
+   ],
+   "example_today": "https://great-library-of-siso.pages.dev/",
+   "rob_bank": [
+    {
+     "name": "bento-card",
+     "url": "https://21st.dev/@0xUrvish/components/bento-card",
+     "his_note": "really nice bento card. If we ever make a landing page this is a really good comp to have. Must mean a lot considering I've actively not been mentioning landing page stuff",
+     "why": "Rob this bento-card composition for library landing (root front door)."
+    },
+    {
+     "name": "welcome-modal",
+     "url": "https://21st.dev/@ravikatiyar162/components/welcome-modal",
+     "his_note": "welcome new models, that's what we needed",
+     "why": "Rob this welcome-modal composition for library landing (root front door)."
+    },
+    {
+     "name": "feature-carousel",
+     "url": "https://21st.dev/@0xUrvish/components/feature-carousel",
+     "his_note": "feature carousel could be a way of showing models: carousel click through the models to their profile picture. Food for thought",
+     "why": "Rob this feature-carousel composition for library landing (root front door)."
+    },
+    {
+     "name": "onboardin-dialog",
+     "url": "https://21st.dev/@originui/components/dialog/onboardin-dialog",
+     "his_note": "another dialog card, could be useful. That's more landing page shit",
+     "why": "Rob this onboardin-dialog composition for library landing (root front door)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "bento-monochrome",
+     "url": "https://21st.dev/@larsen66/components/bento-monochrome",
+     "why": "landing feature grid"
+    },
+    {
+     "name": "bento-features",
+     "url": "https://21st.dev/@larsen66/components/bento-features",
+     "why": "featured entry cards"
+    },
+    {
+     "name": "magic-bento",
+     "url": "https://21st.dev/@deleted_reactbits/components/magic-bento",
+     "why": "interactive landing grid"
+    },
+    {
+     "name": "home-section",
+     "url": "https://21st.dev/@ruixen.ui/components/home-section",
+     "why": "carousel for featured pages"
+    }
+   ],
+   "bank_gaps": [
+    "loop diagram and truthful catalog data need bespoke integration"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Collapsed rail handle",
+     "where": "system-map/nav.js:40-48,165-173; system-map/nav.css:161-179; blueprint/assets/shell.js:1-19; blueprint/assets/shell.css:1-19",
+     "data": "Only shell state; preserves destination marks while hiding labels",
+     "how": "Copy the toggle plus localStorage preference and bind it to the Library grouped rail.",
+     "quality": "good — compact mode retains route affordances and keyboard toggle"
+    },
+    {
+     "name": "Mobile nav drawer/backdrop",
+     "where": "system-map/nav.js:136-155,176-189; system-map/nav.css:202-232",
+     "data": "Same registry routes as desktop rail with mobile open/close state",
+     "how": "Copy mobile button, backdrop, and responsive CSS; reuse the same registry renderer.",
+     "quality": "good — responsive drawer has explicit close semantics and backdrop"
+    },
+    {
+     "name": "SISO rail with section anchors",
+     "where": "blueprint/index.html:238-244; blueprint/assets/shell.css:4-18; blueprint/assets/shell.js:1-19",
+     "data": "Static page sections and route link labels from blueprint page content",
+     "how": "Copy rail markup/assets and replace anchors with Great Library groups.",
+     "quality": "ok — polished but static and not registry-driven"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Resource room card grid",
+     "where": "site/index.html:403-416; blueprint/index.html:300-303,424-427",
+     "data": "Research room title, status/tag, short description, and route",
+     "how": "Copy card markup and map each Library work or source to tag, summary, and link.",
+     "quality": "good — clear scan-to-open pattern with color-coded category strips"
+    }
+   ]
+  },
+  {
+   "id": "U18",
+   "family": "Source page (his words)",
+   "instances": "one per capture",
+   "count": "44 files, 111,930 words in 00_AGENT_ZERO/source/ + siso-source partitions (August 10,503, September 4,144 occurrences)",
+   "source_data": "source/<date-time>-<slug>.md: verbatim block + Reads; transcript timestamp; the decisions/projects it caused",
+   "where": "/source/ index by date + /source/<file>/ (private repo siso-agent-zero-source if he rules so)",
+   "sections": [
+    "the words, verbatim, dated",
+    "who it was said to",
+    "what it caused (decisions, briefs, pages)",
+    "the offset note (label vs transcript, GAPS F-8)"
+   ],
+   "rail": "U0",
+   "theme": "agents = reflect violet",
+   "status": "44 markdown files; quoted on pages; no index, no page per capture",
+   "verification": "Open /source/2026-09-06-1650/ and see the 16:50 words verbatim, the transcript timestamp, and links to TEMPLATES and the rail work it caused",
+   "host": "luna",
+   "needs": [],
+   "gaps": [],
+   "order": 9,
+   "reasoning": {
+    "why": "His 16:36: 'all of my prompts and absolutely everything'; 16:50: 'those 50,000 words and the last 20,000 words … a really important source'. The words are the root of every decision; they need a front end of their own.",
+    "readers": "Human: what did I say, when, and what happened because of it. Agent: the verbatim to quote instead of paraphrasing.",
+    "questions": [
+     "What did he say on X?",
+     "What did it cause?",
+     "When exactly (label vs transcript)?"
+    ],
+    "claim_ceiling": "Verbatim only; 'Reads' labelled as the seat's reading.",
+    "data": "source/*.md, siso-source manifest.",
+    "links_out": [
+     "U16",
+     "U4",
+     "U5",
+     "U17"
+    ],
+    "links_in": [
+     "U9",
+     "U16",
+     "U4"
+    ],
+    "privacy": "Private repo; public pages quote fragments.",
+    "empty_state": "—",
+    "agent_entry": "source/"
+   },
+   "content": {
+    "title": "date-time · slug",
+    "subtitle": "to whom",
+    "paragraph": "the words",
+    "mind_map": "→ decisions, briefs, pages",
+    "repos": null,
+    "research": null,
+    "docs": null,
+    "progress": "caused",
+    "agents": null,
+    "timeline": "the day",
+    "docs_over_time": null,
+    "own_nav": "words · reads · caused"
+   },
+   "rob_am": [
+    "research reader: source meta chips + claim ceiling · atlas/receipts/am-research-report-reader.png"
+   ],
+   "example_today": "none (markdown only)",
+   "rob_bank": [
+    {
+     "name": "bento-card",
+     "url": "https://21st.dev/@0xUrvish/components/bento-card",
+     "his_note": "really nice bento card. If we ever make a landing page this is a really good comp to have. Must mean a lot considering I've actively not been mentioning landing page stuff",
+     "why": "Rob this bento-card composition for source page (his verbatim words, dated)."
+    },
+    {
+     "name": "great-ui-revision-timeline",
+     "url": "https://21st.dev/@saurabh-2607/components/great-ui-revision-timeline",
+     "his_note": "great-ui revision timeline looks cool, the only comp I'm going to give you from them",
+     "why": "Rob this great-ui-revision-timeline composition for source page (his verbatim words, dated)."
+    },
+    {
+     "name": "scrollable-sticky-footer",
+     "url": "https://21st.dev/@originui/components/dialog/scrollable-sticky-footer",
+     "his_note": "frequently asked questions scrolly thing, could be useful",
+     "why": "Rob this scrollable-sticky-footer composition for source page (his verbatim words, dated)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "toc-base-kit",
+     "url": "https://21st.dev/@platejs/components/toc-base-kit",
+     "why": "source contents"
+    },
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "dated source timeline"
+    },
+    {
+     "name": "pdf-viewer",
+     "url": "https://21st.dev/@andrewlu0/components/pdf-viewer",
+     "why": "reader surface"
+    },
+    {
+     "name": "smart-breadcrumb",
+     "url": "https://21st.dev/@ruixen.ui/components/smart-breadcrumb",
+     "why": "source context"
+    }
+   ],
+   "bank_gaps": [
+    "verbatim provenance and quote search require bespoke content"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Command palette",
+     "where": "system-map/nav.js:157-171,192-257; system-map/nav.css:183-200",
+     "data": "Registry page title, description, section, ID and keywords filtered by query",
+     "how": "Copy the palette DOM/event handlers and point REGISTRY_URL at the Great Library route registry.",
+     "quality": "good — keyboard navigation, mouse selection, escape close, and command shortcut"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Searchable track/card filter",
+     "where": "site/index.html:487-499; blueprint/index.html:357-400 and filter script around 487-499",
+     "data": "Track cards matched against data-search keywords and visible count",
+     "how": "Copy the input/filter function and give each card a normalized search string.",
+     "quality": "good — simple no-framework filtering with visible result count"
+    },
+    {
+     "name": "Resource room card grid",
+     "where": "site/index.html:403-416; blueprint/index.html:300-303,424-427",
+     "data": "Research room title, status/tag, short description, and route",
+     "how": "Copy card markup and map each Library work or source to tag, summary, and link.",
+     "quality": "good — clear scan-to-open pattern with color-coded category strips"
+    },
+    {
+     "name": "Evidence/source table",
+     "where": "RESEARCH-PACK.html:166-176,233-264,358-395; part-page.css:32-39,50-59; industry.css:52-60; docs.css:54-59; state/index.html:220-240; blueprint/index.html:335,393,427",
+     "data": "Rows of sources, contributions, limits, repositories, evidence classes, observed slots, statuses, and provenance paths",
+     "how": "Copy scrollable table wrappers and define a record-specific column schema.",
+     "quality": "good — explicit provenance columns prevent summary-only displays"
+    },
+    {
+     "name": "Scrollable dataset search header",
+     "where": "system-map/part-page.css:46-57; generated P01 dataset markup and inline search behavior",
+     "data": "Dataset title/description plus client-side query against preserved research rows",
+     "how": "Copy dataset-head/input and bind filtering to table rows by text content.",
+     "quality": "good — keeps large evidence packets inspectable without pagination"
+    },
+    {
+     "name": "Freshness lane card",
+     "where": "generate-state-page.mjs:122-190; state/index.html:83-176; state.css:306-469",
+     "data": "Lane owner, state, last change, age/budget, note, source locator, and reachability",
+     "how": "Copy lane-card structure and feed owner, freshness state, budget, source, and note.",
+     "quality": "good — combines operational status and evidence locator in one unit"
+    }
+   ]
+  },
+  {
+   "id": "U2",
+   "family": "Section / catalogue",
+   "instances": "Works, Releases, Snapshots, Research, Agents, Industries, Estate, Promotion, Intelligence",
+   "count": "9 sections",
+   "source_data": "catalog.json works[] (type, maturity, section, source_links), releases (86), snapshots (40), research.json, industries index",
+   "where": "/works/ /releases/ /snapshots/ /research/ /agents/ /industries/ /estate/ /promotion/ /intelligence/",
+   "sections": [
+    "section purpose + scope",
+    "real counts",
+    "filter by type / maturity / section",
+    "cards with kicker, summary, repo state",
+    "truthful empty state"
+   ],
+   "rail": "U0",
+   "theme": "section accent",
+   "status": "9 routes 200; rail on 3 (/works/, /docs/, /god-questions/); 16 Works sit in section 'Unassigned'",
+   "verification": "Open /works/ and filter type=research_question and see exactly 18 cards; every card's repo badge says public/private truthfully",
+   "host": "fable",
+   "needs": [
+    "U0"
+   ],
+   "gaps": [],
+   "order": 9,
+   "reasoning": {
+    "why": "Nine index routes exist and six have no shell and no filters; 16 Works sit 'Unassigned'. A catalogue that cannot be filtered by type/maturity/section is a list, not a catalogue.",
+    "readers": "Human: find the thing. Agent: same, via the JSON the page renders.",
+    "questions": [
+     "How many of X exist?",
+     "Which are active / experimental / retired?",
+     "Which have a public repo?"
+    ],
+    "claim_ceiling": "Only registry records; counts equal the JSON; no 'coming soon' rows.",
+    "data": "catalog.json works[] + registry/{releases,snapshots,source-inventories}; a section.json per route.",
+    "links_out": [
+     "U3",
+     "U12",
+     "U11"
+    ],
+    "links_in": [
+     "U1",
+     "U0"
+    ],
+    "privacy": "Public; private Works appear as U11 stubs.",
+    "empty_state": "Empty filter → 'no records match' + the filters that would.",
+    "agent_entry": "site/<section>/index.html built from the section's JSON"
+   },
+   "content": {
+    "title": "section name",
+    "subtitle": "what belongs here",
+    "paragraph": "scope in two lines",
+    "mind_map": null,
+    "repos": null,
+    "research": null,
+    "docs": null,
+    "progress": "counts by type and maturity",
+    "agents": null,
+    "timeline": null,
+    "docs_over_time": null,
+    "own_nav": "filters · list"
+   },
+   "rob_am": [
+    "research-os track cards: kicker · status chip · 'ORIGINAL TASK' · one paragraph · atlas/receipts/am-research-os.png",
+    "system-map industries grid (13 dirs) rendered from JSON · site/system-map/industries/"
+   ],
+   "example_today": "https://great-library-of-siso.pages.dev/works/",
+   "rob_bank": [
+    {
+     "name": "stats-widget",
+     "url": "https://21st.dev/@ravikatiyar162/components/stats-widget",
+     "his_note": "nice different stat widget",
+     "why": "Rob this stats-widget composition for section / catalogue."
+    },
+    {
+     "name": "review-filter-bars",
+     "url": "https://21st.dev/@ruixen.ui/components/review-filter-bars",
+     "his_note": "filter by rating. Don't know where we would use it but save it, it's cool",
+     "why": "Rob this review-filter-bars composition for section / catalogue."
+    },
+    {
+     "name": "tree-with-filtering",
+     "url": "https://21st.dev/@originui/components/tree/tree-with-filtering",
+     "his_note": "tree drop down, not sure when you'd ever use that",
+     "why": "Rob this tree-with-filtering composition for section / catalogue."
+    },
+    {
+     "name": "list",
+     "url": "https://21st.dev/@lavikatiyar/components/list",
+     "his_note": "(list; no separate comment)",
+     "why": "Rob this list composition for section / catalogue."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "v-table-12",
+     "url": "https://21st.dev/@cnippet.dev/components/v-table-12",
+     "why": "catalogue table"
+    },
+    {
+     "name": "indevui-table",
+     "url": "https://21st.dev/@ln-dev7/components/indevui-table",
+     "why": "dense records table"
+    },
+    {
+     "name": "filters",
+     "url": "https://21st.dev/@andrewlu0/components/filters",
+     "why": "filter popover"
+    },
+    {
+     "name": "filter-chips-breadcrumb",
+     "url": "https://21st.dev/@nextjsshop/components/filter-chips-breadcrumb",
+     "why": "filter state display"
+    },
+    {
+     "name": "task-list",
+     "url": "https://21st.dev/@ravikatiyar162/components/task-list",
+     "why": "list/table fallback"
+    }
+   ],
+   "bank_gaps": [
+    "typed catalogue semantics and truthful empty state need data code"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Command palette",
+     "where": "system-map/nav.js:157-171,192-257; system-map/nav.css:183-200",
+     "data": "Registry page title, description, section, ID and keywords filtered by query",
+     "how": "Copy the palette DOM/event handlers and point REGISTRY_URL at the Great Library route registry.",
+     "quality": "good — keyboard navigation, mouse selection, escape close, and command shortcut"
+    },
+    {
+     "name": "Collapsed rail handle",
+     "where": "system-map/nav.js:40-48,165-173; system-map/nav.css:161-179; blueprint/assets/shell.js:1-19; blueprint/assets/shell.css:1-19",
+     "data": "Only shell state; preserves destination marks while hiding labels",
+     "how": "Copy the toggle plus localStorage preference and bind it to the Library grouped rail.",
+     "quality": "good — compact mode retains route affordances and keyboard toggle"
+    },
+    {
+     "name": "Mobile nav drawer/backdrop",
+     "where": "system-map/nav.js:136-155,176-189; system-map/nav.css:202-232",
+     "data": "Same registry routes as desktop rail with mobile open/close state",
+     "how": "Copy mobile button, backdrop, and responsive CSS; reuse the same registry renderer.",
+     "quality": "good — responsive drawer has explicit close semantics and backdrop"
+    },
+    {
+     "name": "Searchable track/card filter",
+     "where": "site/index.html:487-499; blueprint/index.html:357-400 and filter script around 487-499",
+     "data": "Track cards matched against data-search keywords and visible count",
+     "how": "Copy the input/filter function and give each card a normalized search string.",
+     "quality": "good — simple no-framework filtering with visible result count"
+    },
+    {
+     "name": "Resource room card grid",
+     "where": "site/index.html:403-416; blueprint/index.html:300-303,424-427",
+     "data": "Research room title, status/tag, short description, and route",
+     "how": "Copy card markup and map each Library work or source to tag, summary, and link.",
+     "quality": "good — clear scan-to-open pattern with color-coded category strips"
+    },
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    },
+    {
+     "name": "Registry card grid",
+     "where": "system-map/parts/index.html:19-34; system-map/registry.css:14-20; industry index:20; live artifacts index",
+     "data": "ID, group/section, title, description, count/status, and open route",
+     "how": "Copy registry-card grid and feed typed records with route, title, summary, and status.",
+     "quality": "good — reusable catalogue unit with strong hover/open affordance"
+    }
+   ]
+  },
+  {
+   "id": "U16",
+   "family": "Decision page",
+   "instances": "one per decision",
+   "count": "29 (plan/decisions.json D-1…D-29) + harness-lab DECISIONS.md",
+   "source_data": "plan/decisions.json: id, date, his words, what it changed, what reverses it; the source/ file it came from",
+   "where": "/decisions/ index + /decisions/D-NN/ under the Agent Zero page",
+   "sections": [
+    "the decision in one line",
+    "his words (verbatim)",
+    "what it changed (files, modules)",
+    "what reverses it",
+    "superseded by"
+   ],
+   "rail": "U0",
+   "theme": "agents = reflect violet",
+   "status": "JSON only; no page; decisions are quoted inside other pages",
+   "verification": "Open /decisions/D-25/ and see 'no seat is spawned without a verification line', the 5 Sep words that caused it, and the modules it gates",
+   "host": "luna",
+   "needs": [],
+   "gaps": [],
+   "order": 10,
+   "reasoning": {
+    "why": "'You just decide all of the answers for me' (D-1…D-29) means decisions are the constitution; a future Agent Zero must be able to read them one by one with the words that caused them.",
+    "readers": "Human: what did we decide and why. Agent: the rule to obey and what would reverse it.",
+    "questions": [
+     "What was decided, when?",
+     "In whose words?",
+     "What did it change?",
+     "Is it still in force?"
+    ],
+    "claim_ceiling": "Only decisions in decisions.json; a proposal is labelled proposal.",
+    "data": "plan/decisions.json + source/.",
+    "links_out": [
+     "U18",
+     "U4",
+     "U5",
+     "U9"
+    ],
+    "links_in": [
+     "U9",
+     "U4",
+     "U5"
+    ],
+    "privacy": "Public.",
+    "empty_state": "—",
+    "agent_entry": "plan/decisions.json"
+   },
+   "content": {
+    "title": "D-NN · one line",
+    "subtitle": "date · in force / superseded",
+    "paragraph": "his words",
+    "mind_map": "→ modules, projects, plays it gates",
+    "repos": null,
+    "research": null,
+    "docs": null,
+    "progress": "in force",
+    "agents": null,
+    "timeline": "decided · reaffirmed · reversed",
+    "docs_over_time": null,
+    "own_nav": "decision · words · effects · reversal"
+   },
+   "rob_am": [
+    "system-map 'OBSERVED' strip with hash as the 'in force since' strip · atlas/receipts/am-system-map-root.png",
+    "system-map artifacts decision-ledger-json pages · site/system-map/artifacts/p01/decision-ledger-json/"
+   ],
+   "example_today": "none (decisions.json only)",
+   "rob_bank": [
+    {
+     "name": "bento-card",
+     "url": "https://21st.dev/@0xUrvish/components/bento-card",
+     "his_note": "really nice bento card. If we ever make a landing page this is a really good comp to have. Must mean a lot considering I've actively not been mentioning landing page stuff",
+     "why": "Rob this bento-card composition for decision page."
+    },
+    {
+     "name": "leaderboard-card",
+     "url": "https://21st.dev/@trophyso/components/leaderboard-card",
+     "his_note": "this would be so banging in the operators dashboard. I'd make a whole page for this. Models could have streaks, get assigned badges. We're going to gamify a bit for them, on the operators performance side of the admin board",
+     "why": "Rob this leaderboard-card composition for decision page."
+    },
+    {
+     "name": "great-ui-revision-timeline",
+     "url": "https://21st.dev/@saurabh-2607/components/great-ui-revision-timeline",
+     "his_note": "great-ui revision timeline looks cool, the only comp I'm going to give you from them",
+     "why": "Rob this great-ui-revision-timeline composition for decision page."
+    },
+    {
+     "name": "performance-benchmark-card",
+     "url": "https://21st.dev/@kavikatiyar/components/performance-benchmark-card",
+     "his_note": "another performance benchmark card, might be useful",
+     "why": "Rob this performance-benchmark-card composition for decision page."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "mind-map",
+     "url": "https://21st.dev/@ssshooter/components/mind-map",
+     "why": "decision/evidence graph"
+    },
+    {
+     "name": "performance-benchmark-card",
+     "url": "https://21st.dev/@kavikatiyar/components/performance-benchmark-card",
+     "why": "decision ratios"
+    },
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "decision history"
+    },
+    {
+     "name": "filters",
+     "url": "https://21st.dev/@andrewlu0/components/filters",
+     "why": "evidence filtering"
+    }
+   ],
+   "bank_gaps": [
+    "decision schema and evidence provenance need bespoke data"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Command palette",
+     "where": "system-map/nav.js:157-171,192-257; system-map/nav.css:183-200",
+     "data": "Registry page title, description, section, ID and keywords filtered by query",
+     "how": "Copy the palette DOM/event handlers and point REGISTRY_URL at the Great Library route registry.",
+     "quality": "good — keyboard navigation, mouse selection, escape close, and command shortcut"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    },
+    {
+     "name": "Node detail card grid",
+     "where": "system-map/part-page.css:19-26; generate-part-pages.mjs:144-158; industry.css:38-49; generate-industry-pages.mjs:137-144",
+     "data": "Owned scope, known findings, inputs, outputs, risks, and open questions",
+     "how": "Copy node-card variants and feed arrays into labeled cards with wide/risk/lilac/mint classes.",
+     "quality": "good — flexible two-column/wide layout for heterogeneous records"
+    },
+    {
+     "name": "Dependency link chips",
+     "where": "system-map/index.html:152-157; system-map/part-page.css:94-96; generate-part-pages.mjs:100-109",
+     "data": "Related part IDs, titles, and dependency direction",
+     "how": "Copy dependency chip styles and feed linked work/decision IDs.",
+     "quality": "good — compact relationship map that remains clickable"
+    },
+    {
+     "name": "Evidence/source table",
+     "where": "RESEARCH-PACK.html:166-176,233-264,358-395; part-page.css:32-39,50-59; industry.css:52-60; docs.css:54-59; state/index.html:220-240; blueprint/index.html:335,393,427",
+     "data": "Rows of sources, contributions, limits, repositories, evidence classes, observed slots, statuses, and provenance paths",
+     "how": "Copy scrollable table wrappers and define a record-specific column schema.",
+     "quality": "good — explicit provenance columns prevent summary-only displays"
+    }
+   ]
+  },
+  {
+   "id": "U17",
+   "family": "Agent seat page",
+   "instances": "one per seat that ever ran",
+   "count": "~30 seats 5–6 Sep (12 closed Astra seats + Fable heads + Oracle lane + Mini seats); ledger/OWNERS.md lines",
+   "source_data": "briefs/<SEAT>.md (born from), handoffs/<SEAT>.md, OWNERS.md lines, owners.log, rollout path + token maxima (GAPS M-4), verification line",
+   "where": "/seats/<SEAT>/ under the project it served; the rollout stays in <project>-sessions",
+   "sections": [
+    "born: date, brief, node, model, harness",
+    "what it landed (verified)",
+    "what it cost (uncached in / out / reasoning)",
+    "its writebacks",
+    "its rollout (path, size, private)",
+    "closed: how, handoff"
+   ],
+   "rail": "U0",
+   "theme": "agents = reflect violet",
+   "status": "exists as handoff markdown + OWNERS lines; no page; cost only in GAPS M-4",
+   "verification": "Open /seats/HALO-ZERO/ and see born 5 Sep 12:01, 37 commits landed on the mirror, 184.6M cumulative tokens, the rollout path, and its handoff",
+   "host": "luna",
+   "needs": [],
+   "gaps": [],
+   "order": 11,
+   "reasoning": {
+    "why": "His 16:50: 'agents should be ephemeral … the projects are forever'. Ephemeral means a record, not a memory: every seat gets one page so the project keeps what the agent learned.",
+    "readers": "Human: what did this agent do and cost. Agent: the handoff to resume from and the brief pattern that worked.",
+    "questions": [
+     "What was it born from?",
+     "What did it land, verified?",
+     "What did it cost?",
+     "Where is its reasoning (rollout)?",
+     "How did it close?"
+    ],
+    "claim_ceiling": "Landed only with a commit/URL; cost from token_count events labelled cumulative vs uncached.",
+    "data": "briefs/, handoffs/, OWNERS.md, owners.log, ~/.codex/sessions rollouts (private satellite).",
+    "links_out": [
+     "U4",
+     "U19",
+     "U21",
+     "U18"
+    ],
+    "links_in": [
+     "U4",
+     "U9",
+     "U10"
+    ],
+    "privacy": "Public page; rollout private.",
+    "empty_state": "No handoff → 'closed without handoff' in red.",
+    "agent_entry": "handoffs/<SEAT>.md"
+   },
+   "content": {
+    "title": "SEAT",
+    "subtitle": "model · node · born → closed",
+    "paragraph": "what it was for (brief)",
+    "mind_map": "project → modules → commits",
+    "repos": "repos it wrote to",
+    "research": null,
+    "docs": null,
+    "progress": "landed / left",
+    "agents": "itself + successors",
+    "timeline": "born · writebacks · closed",
+    "docs_over_time": "handoff sections by time",
+    "own_nav": "born · landed · cost · rollout · closed"
+   },
+   "rob_am": [
+    "research-os track card: kicker · status · 'ORIGINAL TASK' · atlas/receipts/am-research-os.png",
+    "block-runtime stat cards for cost · atlas/receipts/am-block-runtime.png"
+   ],
+   "example_today": "handoffs/*.md (markdown only)",
+   "rob_bank": [
+    {
+     "name": "agent-plan",
+     "url": "https://21st.dev/@isaiahbjork/components/agent-plan",
+     "his_note": "drop-down agent plan, might be useful. We've done a really nice onboarding dropdown and our UI is better, but the way this component works is maybe slightly better",
+     "why": "Rob this agent-plan composition for agent seat page."
+    },
+    {
+     "name": "ai-planning",
+     "url": "https://21st.dev/@arunjdass/components/ai-planning",
+     "his_note": "AI planning, I like how it dropped down and can show a bunch of information. Not sure where we'd use it",
+     "why": "Rob this ai-planning composition for agent seat page."
+    },
+    {
+     "name": "stats-card",
+     "url": "https://21st.dev/@ravikatiyar162/components/stats-card",
+     "his_note": "I like this stats card, the earning one, really nice",
+     "why": "Rob this stats-card composition for agent seat page."
+    },
+    {
+     "name": "estimated-arrival",
+     "url": "https://21st.dev/@hedevelope/components/estimated-arrival",
+     "his_note": "estimated time arrival, really interesting, don't know where we'd use it, love to have it. Progress bar could be useful in the operator app somewhere",
+     "why": "Rob this estimated-arrival composition for agent seat page."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "profile-selector",
+     "url": "https://21st.dev/@ravikatiyar162/components/profile-selector",
+     "why": "agent identity/seat"
+    },
+    {
+     "name": "glassmorphism-minimal-metrics-block-shadcnui",
+     "url": "https://21st.dev/@moumensoliman/components/glassmorphism-minimal-metrics-block-shadcnui",
+     "why": "cost and rollout metrics"
+    },
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "born-to-landed timeline"
+    },
+    {
+     "name": "circular-progress-card",
+     "url": "https://21st.dev/@kavikatiyar/components/circular-progress-card",
+     "why": "rollout progress"
+    }
+   ],
+   "bank_gaps": [
+    "seat lifecycle and cost receipts need bespoke data"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    },
+    {
+     "name": "Node detail card grid",
+     "where": "system-map/part-page.css:19-26; generate-part-pages.mjs:144-158; industry.css:38-49; generate-industry-pages.mjs:137-144",
+     "data": "Owned scope, known findings, inputs, outputs, risks, and open questions",
+     "how": "Copy node-card variants and feed arrays into labeled cards with wide/risk/lilac/mint classes.",
+     "quality": "good — flexible two-column/wide layout for heterogeneous records"
+    },
+    {
+     "name": "Dependency link chips",
+     "where": "system-map/index.html:152-157; system-map/part-page.css:94-96; generate-part-pages.mjs:100-109",
+     "data": "Related part IDs, titles, and dependency direction",
+     "how": "Copy dependency chip styles and feed linked work/decision IDs.",
+     "quality": "good — compact relationship map that remains clickable"
+    },
+    {
+     "name": "Freshness lane card",
+     "where": "generate-state-page.mjs:122-190; state/index.html:83-176; state.css:306-469",
+     "data": "Lane owner, state, last change, age/budget, note, source locator, and reachability",
+     "how": "Copy lane-card structure and feed owner, freshness state, budget, source, and note.",
+     "quality": "good — combines operational status and evidence locator in one unit"
+    },
+    {
+     "name": "Computed defect panel",
+     "where": "generate-state-page.mjs:349-370; state/index.html:213-229",
+     "data": "Derived estate defects with owner, observed rows, and detection method",
+     "how": "Copy defect section and feed computed findings only, with detection explanation.",
+     "quality": "good — distinguishes live derived defects from hand-maintained warnings"
+    },
+    {
+     "name": "Sprint lane grid",
+     "where": "part-page.css:78-96; task-graph/index.html generated markup",
+     "data": "Sprint number, title, gate, lane owner, linked parts, and lane outputs",
+     "how": "Copy sprint/lane grid and feed owner, gate, linked IDs, and output bullets.",
+     "quality": "good — dense multi-owner work stays scannable"
+    }
+   ]
+  },
+  {
+   "id": "U21",
+   "family": "Timeline page",
+   "instances": "one per project + one global",
+   "count": "10 projects + Agent Zero; axis = commits, seats born/closed, decisions, docs, source captures, writebacks",
+   "source_data": "git log per repo (date, hash, author human/auto), OWNERS.md, decisions.json, ls source/, ls docs by mtime, owners.log",
+   "where": "/timeline/ on the Agent Zero page and a 'timeline' section on every U4",
+   "sections": [
+    "one axis, day ticks",
+    "lanes: commits · seats · decisions · docs · his words",
+    "filters by lane",
+    "hover = the record"
+   ],
+   "rail": "U0",
+   "theme": "lane colours = the six accents",
+   "status": "nothing renders time; the closest is the Overnight page's ten lines",
+   "verification": "Open /timeline/?project=halo and see 37 commits, HALO-ZERO born 5 Sep 12:01 and closed, its writebacks, and the docs it produced, on one axis",
+   "host": "fable",
+   "needs": [],
+   "gaps": [],
+   "order": 11,
+   "reasoning": {
+    "why": "His 18:19: 'the timeline what docs have we made over those timelines'. Time is the one axis every record shares; without it 'what happened in 48 h' is a hand-written page (the Checkpoint) every time.",
+    "readers": "Human: what happened when. Agent: the ordered events to reconstruct state at a date.",
+    "questions": [
+     "What happened on day X?",
+     "When was this doc/commit/decision made and by which seat?",
+     "How dense was the work?"
+    ],
+    "claim_ceiling": "Only dated records; auto-backup commits marked as such.",
+    "data": "git log, OWNERS.md, decisions.json, source/, docs mtimes.",
+    "links_out": [
+     "U17",
+     "U16",
+     "U18",
+     "U4"
+    ],
+    "links_in": [
+     "U4",
+     "U9",
+     "U1"
+    ],
+    "privacy": "Public; private repos contribute counts, not messages.",
+    "empty_state": "—",
+    "agent_entry": "bin/az-timeline (to write)"
+   },
+   "content": {
+    "title": "timeline",
+    "subtitle": "project · range",
+    "paragraph": null,
+    "mind_map": "—",
+    "repos": "commit lanes",
+    "research": null,
+    "docs": "doc lane",
+    "progress": "density",
+    "agents": "seat lane",
+    "timeline": "the page",
+    "docs_over_time": "the doc lane",
+    "own_nav": "lanes · days"
+   },
+   "rob_am": [
+    "industry page 'states flow' (received → normalized → …) as the lane legend · atlas/receipts/am-industry-law-firms.png"
+   ],
+   "example_today": "none",
+   "rob_bank": [
+    {
+     "name": "timeline",
+     "url": "https://21st.dev/@nyxbui/components/timeline",
+     "his_note": "timeline of text, it's clean. I wouldn't say amazing",
+     "why": "Rob this timeline composition for timeline page (commits, docs, seats, decisions on one axis)."
+    },
+    {
+     "name": "great-ui-revision-timeline",
+     "url": "https://21st.dev/@saurabh-2607/components/great-ui-revision-timeline",
+     "his_note": "great-ui revision timeline looks cool, the only comp I'm going to give you from them",
+     "why": "Rob this great-ui-revision-timeline composition for timeline page (commits, docs, seats, decisions on one axis)."
+    },
+    {
+     "name": "estimated-arrival",
+     "url": "https://21st.dev/@hedevelope/components/estimated-arrival",
+     "his_note": "estimated time arrival, really interesting, don't know where we'd use it, love to have it. Progress bar could be useful in the operator app somewhere",
+     "why": "Rob this estimated-arrival composition for timeline page (commits, docs, seats, decisions on one axis)."
+    },
+    {
+     "name": "with-slash",
+     "url": "https://21st.dev/@originui/components/breadcrumb/with-slash",
+     "his_note": "these breadcrumbs, the way they do them is just really nice",
+     "why": "Rob this with-slash composition for timeline page (commits, docs, seats, decisions on one axis)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "single-axis timeline"
+    },
+    {
+     "name": "3d-interactive-timeline",
+     "url": "https://21st.dev/@dhileepkumargm/components/3d-interactive-timeline",
+     "why": "cross-source timeline"
+    },
+    {
+     "name": "timeline",
+     "url": "https://21st.dev/@preetsuthar17/components/timeline",
+     "why": "commit/doc revision history"
+    },
+    {
+     "name": "order-status-card",
+     "url": "https://21st.dev/@ravikatiyar162/components/order-status-card",
+     "why": "status milestones"
+    }
+   ],
+   "bank_gaps": [
+    "cross-source normalization and one-axis ordering need bespoke data"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Flow / process steps",
+     "where": "system-map/index.html:93-104; blueprint/index.html:57-60,487-492; live block-runtime SVG/sections",
+     "data": "Ordered stages from discovery through composition, runtime, and learning",
+     "how": "Copy flow-step styling and feed ordered stage objects with labels and descriptions.",
+     "quality": "good — communicates sequence without requiring a chart library"
+    },
+    {
+     "name": "Phase track",
+     "where": "task-graph/index.html line 1 generated markup; part-page.css:77-93; blueprint/index.html:475-479",
+     "data": "Ordered program phases with owner/mode, description, and current phase marker",
+     "how": "Copy phase card/grid CSS and feed ordered phase records plus current marker.",
+     "quality": "good — supports roadmap and execution state at a glance"
+    }
+   ]
+  },
+  {
+   "id": "U8",
+   "family": "Industry detail / value research",
+   "instances": "one per industry",
+   "count": "17 records (siso-foundry intelligence/agency/industries), law-firm pilot live",
+   "source_data": "Foundry industry JSON (process hypotheses 70, capability rows 35), N2 value model + 10 examples, his 14:26 ask: 'per industry research with all of the projects and what we're offering'",
+   "where": "/industries/<slug>/ + /industries/ index (Foundry writes JSON, Library renders)",
+   "sections": [
+    "process / workflow map",
+    "current marketed capabilities",
+    "candidate modules",
+    "SISO projects that apply",
+    "the offer",
+    "value inputs + rank (unmeasured stays unmeasured)",
+    "evidence gaps"
+   ],
+   "rail": "U0",
+   "theme": "clients/niches = tasks amber",
+   "status": "17 index rows, 1 pilot page, no rail on either, no JSON contract",
+   "verification": "Open /industries/law_firms/ and see the seven sections filled from the record; open /industries/ and see 17 rows each with a rank or 'unmeasured'",
+   "host": "fable-spec-then-luna",
+   "needs": [
+    "U0",
+    "U3"
+   ],
+   "gaps": [
+    "T-3",
+    "O-1"
+   ],
+   "order": 12,
+   "reasoning": {
+    "why": "His 14:26: 'the per industry research with all of the projects and what we're offering'; the bet is 'industry by industry'. The Action Model industry page already renders this shape from real data.",
+    "readers": "Human: is this industry worth it, what would we build, what do we offer. Agent: the JSON contract Foundry writes.",
+    "questions": [
+     "What does the workflow look like?",
+     "What do vendors already sell?",
+     "Which of our modules apply, which projects?",
+     "What is the offer and the value estimate, measured or not?",
+     "Where are the gaps?"
+    ],
+    "claim_ceiling": "Value numbers only from the value model with inputs shown; 'unmeasured' stays unmeasured.",
+    "data": "siso-foundry intelligence/agency/industries/<slug>.json, value model, projects.json cross-refs.",
+    "links_out": [
+     "U4 projects",
+     "U3 modules",
+     "U14 people"
+    ],
+    "links_in": [
+     "U1",
+     "U2 Industries"
+    ],
+    "privacy": "Public.",
+    "empty_state": "No value inputs → 'unmeasured' chip.",
+    "agent_entry": "siso-foundry scripts/build_industry_pages.py (dirty, unpushed)"
+   },
+   "content": {
+    "title": "industry",
+    "subtitle": "demand in one line",
+    "paragraph": "what the research says",
+    "mind_map": "workflow map",
+    "repos": "repos of candidate modules",
+    "research": "records + meaning",
+    "docs": "—",
+    "progress": "rank / unmeasured",
+    "agents": "FOUNDRY seats",
+    "timeline": "observed dates",
+    "docs_over_time": null,
+    "own_nav": "workflow · vendors · modules · projects · offer · gaps"
+   },
+   "rob_am": [
+    "industry page whole: breadcrumb · CLAIM CEILING · kicker with observed date · posture panel · 4 stats · tinted sections · entity chips · states flow · ON THIS PAGE · atlas/receipts/am-industry-law-firms.png"
+   ],
+   "example_today": "https://great-library-of-siso.pages.dev/industries/law_firms/ · https://actionist-system-map.pages.dev/industries/law_firms/",
+   "rob_bank": [
+    {
+     "name": "workflow-builder-card",
+     "url": "https://21st.dev/@ravikatiyar162/components/workflow-builder-card",
+     "his_note": "I like this workflow builder card, could be used in the dashboard somewhere",
+     "why": "Rob this workflow-builder-card composition for industry detail / value research."
+    },
+    {
+     "name": "anomaly-heatmap",
+     "url": "https://21st.dev/@aghasisahakyan1/components/anomaly-heatmap",
+     "his_note": "some sort of heat map, that'll be useful",
+     "why": "Rob this anomaly-heatmap composition for industry detail / value research."
+    },
+    {
+     "name": "heat-map-xl",
+     "url": "https://21st.dev/@reaviz/components/heat-map-xl",
+     "his_note": "(charts batch; heat map. Order in the batch: incident report / funnel / glassmorphism portfolio bit mid / line chart four)",
+     "why": "Rob this heat-map-xl composition for industry detail / value research."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "n8n-workflow-block-shadcnui",
+     "url": "https://21st.dev/@moumensoliman/components/n8n-workflow-block-shadcnui",
+     "why": "workflow/process map"
+    },
+    {
+     "name": "workflow-builder-card",
+     "url": "https://21st.dev/@ravikatiyar162/components/workflow-builder-card",
+     "why": "candidate module workflow"
+    },
+    {
+     "name": "glassmorphism-minimal-metrics-block-shadcnui",
+     "url": "https://21st.dev/@moumensoliman/components/glassmorphism-minimal-metrics-block-shadcnui",
+     "why": "value metrics"
+    },
+    {
+     "name": "filters",
+     "url": "https://21st.dev/@andrewlu0/components/filters",
+     "why": "industry scope filters"
+    }
+   ],
+   "bank_gaps": [
+    "industry JSON contract and unmeasured value rules need bespoke data"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Mobile nav drawer/backdrop",
+     "where": "system-map/nav.js:136-155,176-189; system-map/nav.css:202-232",
+     "data": "Same registry routes as desktop rail with mobile open/close state",
+     "how": "Copy mobile button, backdrop, and responsive CSS; reuse the same registry renderer.",
+     "quality": "good — responsive drawer has explicit close semantics and backdrop"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    },
+    {
+     "name": "Registry card grid",
+     "where": "system-map/parts/index.html:19-34; system-map/registry.css:14-20; industry index:20; live artifacts index",
+     "data": "ID, group/section, title, description, count/status, and open route",
+     "how": "Copy registry-card grid and feed typed records with route, title, summary, and status.",
+     "quality": "good — reusable catalogue unit with strong hover/open affordance"
+    },
+    {
+     "name": "Node detail card grid",
+     "where": "system-map/part-page.css:19-26; generate-part-pages.mjs:144-158; industry.css:38-49; generate-industry-pages.mjs:137-144",
+     "data": "Owned scope, known findings, inputs, outputs, risks, and open questions",
+     "how": "Copy node-card variants and feed arrays into labeled cards with wide/risk/lilac/mint classes.",
+     "quality": "good — flexible two-column/wide layout for heterogeneous records"
+    },
+    {
+     "name": "Evidence/source table",
+     "where": "RESEARCH-PACK.html:166-176,233-264,358-395; part-page.css:32-39,50-59; industry.css:52-60; docs.css:54-59; state/index.html:220-240; blueprint/index.html:335,393,427",
+     "data": "Rows of sources, contributions, limits, repositories, evidence classes, observed slots, statuses, and provenance paths",
+     "how": "Copy scrollable table wrappers and define a record-specific column schema.",
+     "quality": "good — explicit provenance columns prevent summary-only displays"
+    }
+   ]
+  },
+  {
+   "id": "U14",
+   "family": "Person page",
+   "instances": "one per client, collaborator, person in the graph",
+   "count": "3 clients (Camron · ofm, Fahmy · bykonz, Cena · actionmodel) + the People Graph programme",
+   "source_data": "PEOPLE-GRAPH-PROGRAM.md, client account repos, projects.json 'for whom', WhatsApp intake words (private)",
+   "where": "Library Work of type person (public-safe) + private account repo",
+   "sections": [
+    "who, in one line",
+    "relationship + since",
+    "projects + repos",
+    "what they said (private, dated)",
+    "what we owe / they owe",
+    "activity"
+   ],
+   "rail": "U0",
+   "theme": "clients = tasks amber",
+   "status": "nothing renders a person; clients exist only as words inside project rows",
+   "verification": "Open /people/camron/ and see two projects (Oracle, HALO), their repos and the last dated activity; no message content",
+   "host": "fable",
+   "needs": [],
+   "gaps": [],
+   "order": 13,
+   "reasoning": {
+    "why": "Every client project points at a person and nothing renders one; the 5 Sep 22:20 ruling 'account repo over project repos' has no page.",
+    "readers": "Human: who is this, what do we do for them, where are we. Agent: the account repo + the projects.",
+    "questions": [
+     "Who?",
+     "Which projects and repos?",
+     "When did we last deliver?",
+     "What is owed?"
+    ],
+    "claim_ceiling": "Public-safe identity and relationship only; words and money private.",
+    "data": "account repo .agents/, projects.json, owners.log.",
+    "links_out": [
+     "U15",
+     "U4",
+     "U11"
+    ],
+    "links_in": [
+     "U4",
+     "U1"
+    ],
+    "privacy": "Public stub; private detail behind the account repo.",
+    "empty_state": "—",
+    "agent_entry": "<account-repo>/.agents/PAGE.md"
+   },
+   "content": {
+    "title": "name",
+    "subtitle": "role · since",
+    "paragraph": "relationship",
+    "mind_map": "projects → repos",
+    "repos": "account + project repos",
+    "research": null,
+    "docs": null,
+    "progress": "deliverables",
+    "agents": "seats on their projects",
+    "timeline": "deliveries",
+    "docs_over_time": null,
+    "own_nav": "who · projects · activity"
+   },
+   "rob_am": [
+    "research-os track cards as 'project cards per person' · atlas/receipts/am-research-os.png"
+   ],
+   "example_today": "none",
+   "rob_bank": [
+    {
+     "name": "social-card",
+     "url": "https://21st.dev/@shailendrakumar19999/components/social-card",
+     "his_note": "always been a cool socials card, it's always been good",
+     "why": "Rob this social-card composition for person page."
+    },
+    {
+     "name": "social-post-card",
+     "url": "https://21st.dev/@ruixen.ui/components/social-post-card",
+     "his_note": "really cool. Don't know where it can be used but save this. I always like the UI of the design and the card and where the profile shows",
+     "why": "Rob this social-post-card composition for person page."
+    },
+    {
+     "name": "popover",
+     "url": "https://21st.dev/@efferd/components/popover",
+     "his_note": "profile selector popover, pop it in a profile thing / settings. We need one of that for the operator",
+     "why": "Rob this popover composition for person page."
+    },
+    {
+     "name": "card-5",
+     "url": "https://21st.dev/@lavikatiyar/components/card-5",
+     "his_note": "this card if you rob it out the box is really good. New opportunity card. Could be used somewhere, just the design of the way the card is laid out, maybe for models. Good UI design",
+     "why": "Rob this card-5 composition for person page."
+    },
+    {
+     "name": "social-card",
+     "url": "https://21st.dev/@shailendrakumar19999/components/social-card",
+     "his_note": "always been a cool socials card, it's always been good",
+     "why": "Rob this social-card composition for person page."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "profile-card",
+     "url": "https://21st.dev/@beratberkayg/components/profile-card",
+     "why": "person identity"
+    },
+    {
+     "name": "freelancer-profile-card",
+     "url": "https://21st.dev/@lavikatiyar/components/freelancer-profile-card",
+     "why": "bio and work context"
+    },
+    {
+     "name": "profile-selector",
+     "url": "https://21st.dev/@ravikatiyar162/components/profile-selector",
+     "why": "seat/context switcher"
+    },
+    {
+     "name": "gallery-grid-block-shadcnui",
+     "url": "https://21st.dev/@moumensoliman/components/gallery-grid-block-shadcnui",
+     "why": "work gallery"
+    }
+   ],
+   "bank_gaps": [
+    "verbatim source and all-repo relationship graph need bespoke data"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    },
+    {
+     "name": "Node detail card grid",
+     "where": "system-map/part-page.css:19-26; generate-part-pages.mjs:144-158; industry.css:38-49; generate-industry-pages.mjs:137-144",
+     "data": "Owned scope, known findings, inputs, outputs, risks, and open questions",
+     "how": "Copy node-card variants and feed arrays into labeled cards with wide/risk/lilac/mint classes.",
+     "quality": "good — flexible two-column/wide layout for heterogeneous records"
+    },
+    {
+     "name": "Research/industry colored cards",
+     "where": "part-page.css:20-26,44-45; industry.css:39-49; blueprint/index.html:50-56,449-454",
+     "data": "Typed narrative blocks such as conclusion, rationale, risk, falsifier, or directional score",
+     "how": "Copy lilac/mint/risk/dark variants and feed an explicit semantic role.",
+     "quality": "good — color communicates evidence role without replacing text"
+    }
+   ]
+  },
+  {
+   "id": "U15",
+   "family": "Client account page",
+   "instances": "one per client account (the account repo over its project repos)",
+   "count": "3 accounts → 5 client projects (ofm: Oracle, HALO · bykonz: BykonzYard · actionmodel: Actionist)",
+   "source_data": "his 5 Sep 22:20 'You've got client projects and you've got agency work. It should be split like that.'; account repo; the projects' U4 pages",
+   "where": "<account>.pages.dev (private-gated) + Library stub",
+   "sections": [
+    "account in one line",
+    "projects (U4 cards)",
+    "repos incl. private",
+    "money + deliverables (private)",
+    "people",
+    "timeline"
+   ],
+   "rail": "U0",
+   "theme": "client brand strip under the SISO shell",
+   "status": "not built; HALO front door is a private mirror URL (GAPS F-4)",
+   "verification": "Open the ofm account page and see Oracle and HALO as two project cards with their live URLs and heads",
+   "host": "fable",
+   "needs": [],
+   "gaps": [],
+   "order": 14,
+   "reasoning": {
+    "why": "Client work is one of the two axes; today each client project is an island and the account (Camron → Oracle + HALO) is nowhere.",
+    "readers": "Human: everything for one client. Agent: the projects to resume for that client.",
+    "questions": [
+     "Which projects belong to this account?",
+     "What is live for them?",
+     "What is owed and when?"
+    ],
+    "claim_ceiling": "Deliverables only when a URL or commit proves them.",
+    "data": "account repo, projects.json group, owners.log.",
+    "links_out": [
+     "U4",
+     "U14",
+     "U11"
+    ],
+    "links_in": [
+     "U1",
+     "U14"
+    ],
+    "privacy": "Gated; the Library shows a stub.",
+    "empty_state": "—",
+    "agent_entry": "<account-repo>/.agents/PAGE.md"
+   },
+   "content": {
+    "title": "account",
+    "subtitle": "client · since",
+    "paragraph": "the engagement",
+    "mind_map": "account → projects → repos",
+    "repos": "all, private marked",
+    "research": null,
+    "docs": null,
+    "progress": "deliverables",
+    "agents": "seats",
+    "timeline": "engagement",
+    "docs_over_time": null,
+    "own_nav": "projects · repos · money · people"
+   },
+   "rob_am": [
+    "blueprint hero + chip row per project · atlas/receipts/am-blueprint.png"
+   ],
+   "example_today": "none",
+   "rob_bank": [],
+   "rob_bank_wide": [],
+   "bank_gaps": [
+    "not queried yet (family added after the bank read)"
+   ],
+   "rob_am_components": []
+  },
+  {
+   "id": "U7",
+   "family": "Research doc reader",
+   "instances": "one per document",
+   "count": "20 docs on the site (site/docs/*.html) + every research dossier Work",
+   "source_data": "site/docs/*.html, research.json, the Works of type knowledge_system/bundle",
+   "where": "/docs/<name>.html and /research/",
+   "sections": [
+    "same shell + breadcrumb",
+    "title, description, date, author seat",
+    "table of contents rail",
+    "the doc",
+    "evidence / version panel",
+    "related"
+   ],
+   "rail": "U0",
+   "theme": "section accent",
+   "status": "/docs/ index has the rail; /docs/*.html do not (308 redirect on the .html route; readers carry no shell)",
+   "verification": "Open /docs/frontier-question-template and see the grouped rail, a contents column and the same heading style as a Work page",
+   "host": "fable",
+   "needs": [
+    "U0"
+   ],
+   "gaps": [],
+   "order": 15,
+   "reasoning": {
+    "why": "20 docs on the site carry no shell; the Action Model research reader shows the pattern that works: breadcrumb, source meta, claim ceiling, on-this-page.",
+    "readers": "Human: read without losing orientation. Agent: the source path and hash to cite.",
+    "questions": [
+     "What is this doc, from which source file, which version?",
+     "What may it claim?",
+     "Where does it sit in the site?"
+    ],
+    "claim_ceiling": "Rendered from source; the claim ceiling states what the doc does not establish.",
+    "data": "the markdown/HTML source + its git path, lines, bytes, sha256.",
+    "links_out": [
+     "U3 Work it belongs to",
+     "U18 source"
+    ],
+    "links_in": [
+     "U2 Research",
+     "U3",
+     "U4"
+    ],
+    "privacy": "Public unless in a private repo → U11.",
+    "empty_state": "—",
+    "agent_entry": "site/docs/<name>.html"
+   },
+   "content": {
+    "title": "doc title",
+    "subtitle": "rendered from <path>",
+    "paragraph": "abstract",
+    "mind_map": null,
+    "repos": null,
+    "research": null,
+    "docs": "the doc",
+    "progress": null,
+    "agents": null,
+    "timeline": null,
+    "docs_over_time": null,
+    "own_nav": "ON THIS PAGE from its headings"
+   },
+   "rob_am": [
+    "research-report reader, whole page · atlas/receipts/am-research-report-reader.png"
+   ],
+   "example_today": "https://great-library-of-siso.pages.dev/docs/",
+   "rob_bank": [
+    {
+     "name": "with-slash",
+     "url": "https://21st.dev/@originui/components/breadcrumb/with-slash",
+     "his_note": "these breadcrumbs, the way they do them is just really nice",
+     "why": "Rob this with-slash composition for research doc reader."
+    },
+    {
+     "name": "scrollable-sticky-footer",
+     "url": "https://21st.dev/@originui/components/dialog/scrollable-sticky-footer",
+     "his_note": "frequently asked questions scrolly thing, could be useful",
+     "why": "Rob this scrollable-sticky-footer composition for research doc reader."
+    },
+    {
+     "name": "stock-portfolio-card",
+     "url": "https://21st.dev/@kavikatiyar/components/stock-portfolio-card",
+     "his_note": "stock portfolio card, 50/50, maybe could be used in operator somewhere",
+     "why": "Rob this stock-portfolio-card composition for research doc reader."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "toc-base-kit",
+     "url": "https://21st.dev/@platejs/components/toc-base-kit",
+     "why": "document contents rail"
+    },
+    {
+     "name": "pdf-viewer",
+     "url": "https://21st.dev/@andrewlu0/components/pdf-viewer",
+     "why": "long-form reader"
+    },
+    {
+     "name": "smart-breadcrumb",
+     "url": "https://21st.dev/@ruixen.ui/components/smart-breadcrumb",
+     "why": "reader breadcrumb"
+    },
+    {
+     "name": "timeline",
+     "url": "https://21st.dev/@preetsuthar17/components/timeline",
+     "why": "dated document history"
+    }
+   ],
+   "bank_gaps": [
+    "semantic document typography and evidence/version contract need bespoke work"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Command palette",
+     "where": "system-map/nav.js:157-171,192-257; system-map/nav.css:183-200",
+     "data": "Registry page title, description, section, ID and keywords filtered by query",
+     "how": "Copy the palette DOM/event handlers and point REGISTRY_URL at the Great Library route registry.",
+     "quality": "good — keyboard navigation, mouse selection, escape close, and command shortcut"
+    },
+    {
+     "name": "Mobile nav drawer/backdrop",
+     "where": "system-map/nav.js:136-155,176-189; system-map/nav.css:202-232",
+     "data": "Same registry routes as desktop rail with mobile open/close state",
+     "how": "Copy mobile button, backdrop, and responsive CSS; reuse the same registry renderer.",
+     "quality": "good — responsive drawer has explicit close semantics and backdrop"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Resource room card grid",
+     "where": "site/index.html:403-416; blueprint/index.html:300-303,424-427",
+     "data": "Research room title, status/tag, short description, and route",
+     "how": "Copy card markup and map each Library work or source to tag, summary, and link.",
+     "quality": "good — clear scan-to-open pattern with color-coded category strips"
+    },
+    {
+     "name": "Registry card grid",
+     "where": "system-map/parts/index.html:19-34; system-map/registry.css:14-20; industry index:20; live artifacts index",
+     "data": "ID, group/section, title, description, count/status, and open route",
+     "how": "Copy registry-card grid and feed typed records with route, title, summary, and status.",
+     "quality": "good — reusable catalogue unit with strong hover/open affordance"
+    },
+    {
+     "name": "Evidence/source table",
+     "where": "RESEARCH-PACK.html:166-176,233-264,358-395; part-page.css:32-39,50-59; industry.css:52-60; docs.css:54-59; state/index.html:220-240; blueprint/index.html:335,393,427",
+     "data": "Rows of sources, contributions, limits, repositories, evidence classes, observed slots, statuses, and provenance paths",
+     "how": "Copy scrollable table wrappers and define a record-specific column schema.",
+     "quality": "good — explicit provenance columns prevent summary-only displays"
+    },
+    {
+     "name": "Native details lane box",
+     "where": "blueprint/index.html:185-191,540-560",
+     "data": "Long repository/source lists grouped by category, count, and links",
+     "how": "Copy details.lanebox CSS and render one summary per source/template family.",
+     "quality": "good — native progressive disclosure and no custom state code"
+    }
+   ]
+  },
+  {
+   "id": "U11",
+   "family": "Private Work stub (client + personal)",
+   "instances": "one per private repo / satellite",
+   "count": "4 private repos in catalog (27 total) + siso-source + oracle-source/sessions + halocrm-mirror + bykonz-scout-review + actionmodel-private",
+   "source_data": "catalog repositories[] lifecycle_status + visibility; repos.json per front door; his 16:36: 'even client stock will have the listing of the repos even if they private'",
+   "where": "/works/<slug>/ rendered from the stub schema; no payload",
+   "sections": [
+    "public-safe purpose",
+    "owner + relationship",
+    "why it exists",
+    "how access works",
+    "the repo listed, marked private",
+    "dated activity"
+   ],
+   "rail": "U0",
+   "theme": "clients = tasks amber; personal = reflect violet",
+   "status": "no stub template; private repos appear only as a visibility flag on 4 rows",
+   "verification": "Open /works/halo-crm/ logged out and see the purpose, the owner, 'private mirror' and a dated activity line, and no code, roster or payload",
+   "host": "fable",
+   "needs": [
+    "U3"
+   ],
+   "gaps": [],
+   "order": 16,
+   "reasoning": {
+    "why": "His 16:36: 'even client stock will have the listing of the repos even if they private'. The stub is how a private thing is visible without leaking.",
+    "readers": "Human: what it is and why it exists. Agent: that it exists, who owns it, how to get access.",
+    "questions": [
+     "Why does this exist?",
+     "Who owns it, who is it for?",
+     "How do I get access?",
+     "When did it last move?"
+    ],
+    "claim_ceiling": "Purpose, owner, relationship, dated activity; nothing from inside the repo.",
+    "data": "catalog repositories[] visibility, repos.json, owners.log dates.",
+    "links_out": [
+     "U14 person",
+     "U15 client account",
+     "U4"
+    ],
+    "links_in": [
+     "U2",
+     "U4",
+     "U15"
+    ],
+    "privacy": "Private by construction.",
+    "empty_state": "—",
+    "agent_entry": "registry record with visibility=private"
+   },
+   "content": {
+    "title": "name",
+    "subtitle": "private · client/personal",
+    "paragraph": "public-safe purpose",
+    "mind_map": null,
+    "repos": "listed, locked",
+    "research": null,
+    "docs": null,
+    "progress": null,
+    "agents": "owner",
+    "timeline": "dated activity",
+    "docs_over_time": null,
+    "own_nav": "purpose · access · activity"
+   },
+   "rob_am": [
+    "system-map nav chips RESEARCH_ONLY as the 'private' chip · atlas/receipts/am-system-map-root.png"
+   ],
+   "example_today": "none",
+   "rob_bank": [
+    {
+     "name": "popover",
+     "url": "https://21st.dev/@efferd/components/popover",
+     "his_note": "profile selector popover, pop it in a profile thing / settings. We need one of that for the operator",
+     "why": "Rob this popover composition for private work stub (client + personal)."
+    },
+    {
+     "name": "edit-profile-dialog",
+     "url": "https://21st.dev/@originui/components/dialog/edit-profile-dialog",
+     "his_note": "nice profile card out of the box. Edit profile dialog's a nice card out of the box",
+     "why": "Rob this edit-profile-dialog composition for private work stub (client + personal)."
+    },
+    {
+     "name": "project-detail-view",
+     "url": "https://21st.dev/@kavikatiyar/components/project-detail-view",
+     "his_note": "kind of nice, kind of simple, could be used somewhere in the operators thing. (Server management one was a bit shitty)",
+     "why": "Rob this project-detail-view composition for private work stub (client + personal)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "profile-card",
+     "url": "https://21st.dev/@beratberkayg/components/profile-card",
+     "why": "owner/relationship card"
+    },
+    {
+     "name": "profile-selector",
+     "url": "https://21st.dev/@ravikatiyar162/components/profile-selector",
+     "why": "access selector"
+    },
+    {
+     "name": "filters",
+     "url": "https://21st.dev/@andrewlu0/components/filters",
+     "why": "visibility/access filter"
+    }
+   ],
+   "bank_gaps": [
+    "privacy-safe projection and access explanation are not component concerns"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    }
+   ]
+  },
+  {
+   "id": "U6",
+   "family": "Erdős question page",
+   "instances": "one per problem in the Erdős fleet",
+   "count": "4 (742, 647, 23, 848; SISO_Research/erdos, laptop lane frozen 30 Aug, Mini lane)",
+   "source_data": "SISO_Research/erdos/goals/*.md, DECISION-LOG.html, CHECKPOINT-2026-08-30.html, audits/, proof certificates",
+   "where": "Library Works of type research_question, section Research, one per problem; the erdos repo as their satellite",
+   "sections": [
+    "problem statement",
+    "approach + reductions",
+    "certificate / replay status",
+    "compute spent + host",
+    "decision log",
+    "what would close it"
+   ],
+   "rail": "U0",
+   "theme": "research = focus blue",
+   "status": "not in the Library at all (0 Works mention erdos); the fleet's own HTML pages exist locally",
+   "verification": "Open /works/erdos-742/ and see the problem, the proof-logging status and a link to the replayable certificate",
+   "host": "luna-then-fable",
+   "needs": [
+    "U5"
+   ],
+   "gaps": [],
+   "order": 17,
+   "reasoning": {
+    "why": "His 16:50: 'we need one for each ERDOS question'. Four problems, a frozen laptop lane, a Mini lane, certificates: a GQ page with maths-specific state.",
+    "readers": "Human: is it solved, replayable, what did it cost. Agent: the certificate path and the replay command.",
+    "questions": [
+     "What is the problem?",
+     "What is proven, what is conjectured?",
+     "Is the certificate replayable, by which command?",
+     "What compute did it take, where?"
+    ],
+    "claim_ceiling": "Proof state only from a certificate or an audit file; never from a handoff sentence.",
+    "data": "SISO_Research/erdos/goals/*.md, audits/, DECISION-LOG.html, CHECKPOINT-2026-08-30.html.",
+    "links_out": [
+     "U19 runs",
+     "U22 nodes"
+    ],
+    "links_in": [
+     "U5 index",
+     "U2 Research"
+    ],
+    "privacy": "Public.",
+    "empty_state": "No certificate → 'unverified' in amber.",
+    "agent_entry": "SISO_Research/erdos/AGENTS.md"
+   },
+   "content": {
+    "title": "Erdős NNN",
+    "subtitle": "statement in one line",
+    "paragraph": "approach",
+    "mind_map": "reductions",
+    "repos": "erdos repo + certificate files",
+    "research": "papers/sources",
+    "docs": "audits",
+    "progress": "proven / conjectured / replayable",
+    "agents": "fleet seats",
+    "timeline": "attempts",
+    "docs_over_time": null,
+    "own_nav": "problem · approach · certificate · compute"
+   },
+   "rob_am": [
+    "block-runtime synthesis page: badge · headline · bordered thesis box · stat cards · atlas/receipts/am-block-runtime.png"
+   ],
+   "example_today": "none (0 Erdős Works in the Library)",
+   "rob_bank": [
+    {
+     "name": "scrollable-sticky-footer",
+     "url": "https://21st.dev/@originui/components/dialog/scrollable-sticky-footer",
+     "his_note": "frequently asked questions scrolly thing, could be useful",
+     "why": "Rob this scrollable-sticky-footer composition for erdős question page."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "mind-elixir-react",
+     "url": "https://21st.dev/@ssshooter/components/mind-elixir-react",
+     "why": "mind map for question/evidence"
+    },
+    {
+     "name": "mind-map",
+     "url": "https://21st.dev/@ssshooter/components/mind-map",
+     "why": "alternative evidence graph"
+    },
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "dated receipts"
+    },
+    {
+     "name": "performance-benchmark-card",
+     "url": "https://21st.dev/@kavikatiyar/components/performance-benchmark-card",
+     "why": "ratios and benchmark evidence"
+    }
+   ],
+   "bank_gaps": [
+    "proof certificate replay and mathematical notation are uncovered"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Flow / process steps",
+     "where": "system-map/index.html:93-104; blueprint/index.html:57-60,487-492; live block-runtime SVG/sections",
+     "data": "Ordered stages from discovery through composition, runtime, and learning",
+     "how": "Copy flow-step styling and feed ordered stage objects with labels and descriptions.",
+     "quality": "good — communicates sequence without requiring a chart library"
+    },
+    {
+     "name": "Registry card grid",
+     "where": "system-map/parts/index.html:19-34; system-map/registry.css:14-20; industry index:20; live artifacts index",
+     "data": "ID, group/section, title, description, count/status, and open route",
+     "how": "Copy registry-card grid and feed typed records with route, title, summary, and status.",
+     "quality": "good — reusable catalogue unit with strong hover/open affordance"
+    },
+    {
+     "name": "Node detail card grid",
+     "where": "system-map/part-page.css:19-26; generate-part-pages.mjs:144-158; industry.css:38-49; generate-industry-pages.mjs:137-144",
+     "data": "Owned scope, known findings, inputs, outputs, risks, and open questions",
+     "how": "Copy node-card variants and feed arrays into labeled cards with wide/risk/lilac/mint classes.",
+     "quality": "good — flexible two-column/wide layout for heterogeneous records"
+    },
+    {
+     "name": "Evidence/source table",
+     "where": "RESEARCH-PACK.html:166-176,233-264,358-395; part-page.css:32-39,50-59; industry.css:52-60; docs.css:54-59; state/index.html:220-240; blueprint/index.html:335,393,427",
+     "data": "Rows of sources, contributions, limits, repositories, evidence classes, observed slots, statuses, and provenance paths",
+     "how": "Copy scrollable table wrappers and define a record-specific column schema.",
+     "quality": "good — explicit provenance columns prevent summary-only displays"
+    },
+    {
+     "name": "Scrollable dataset search header",
+     "where": "system-map/part-page.css:46-57; generated P01 dataset markup and inline search behavior",
+     "data": "Dataset title/description plus client-side query against preserved research rows",
+     "how": "Copy dataset-head/input and bind filtering to table rows by text content.",
+     "quality": "good — keeps large evidence packets inspectable without pagination"
+    },
+    {
+     "name": "Research/industry colored cards",
+     "where": "part-page.css:20-26,44-45; industry.css:39-49; blueprint/index.html:50-56,449-454",
+     "data": "Typed narrative blocks such as conclusion, rationale, risk, falsifier, or directional score",
+     "how": "Copy lilac/mint/risk/dark variants and feed an explicit semantic role.",
+     "quality": "good — color communicates evidence role without replacing text"
+    },
+    {
+     "name": "Persisted notes textarea",
+     "where": "system-map/index.html:158-170 and inline script around notes controls",
+     "data": "Viewer-entered notes attached to selected domain; UI includes saved feedback state",
+     "how": "Copy notes panel only where per-viewer scratch notes are acceptable; use localStorage safely.",
+     "quality": "ok — useful interaction but viewer-local rather than shared record"
+    }
+   ]
+  },
+  {
+   "id": "U10",
+   "family": "Now / activity",
+   "instances": "one per site + one per project",
+   "count": "Library /now/, atlas NOW.html, per-project owners.log views",
+   "source_data": "owners.log lines (P5 writeback), OWNERS.md, herdr roster, rate_limits events",
+   "where": "/now/ on the Library; NOW.html on the atlas; <project>.pages.dev/now",
+   "sections": [
+    "dated owner/runtime observations",
+    "task/outcome summaries",
+    "repo activity",
+    "coverage date",
+    "who to message"
+   ],
+   "rail": "U0",
+   "theme": "health green when fresh, danger rose when stale",
+   "status": "Library /now/ 200 with rail; atlas NOW every 5 min; no per-project view",
+   "verification": "Open /now/ and see the last writeback line per live seat with a timestamp under one hour old",
+   "host": "luna",
+   "needs": [
+    "U0"
+   ],
+   "gaps": [],
+   "order": 18,
+   "reasoning": {
+    "why": "A page that answers 'who is doing what right now' without asking anyone; owners.log makes it possible.",
+    "readers": "Human: is anyone on it, when did they last write. Agent: whom to message, what is stale.",
+    "questions": [
+     "Who is live, where, doing what?",
+     "When did each last write back?",
+     "What is stale?"
+    ],
+    "claim_ceiling": "Only writeback lines with timestamps; no inferred status.",
+    "data": "owners.log per repo, OWNERS.md, herdr roster.",
+    "links_out": [
+     "U17 seats",
+     "U4"
+    ],
+    "links_in": [
+     "U0",
+     "U1",
+     "U9"
+    ],
+    "privacy": "Public-safe lines only.",
+    "empty_state": "No seat live → says so.",
+    "agent_entry": "bin/az-now"
+   },
+   "content": {
+    "title": "Now",
+    "subtitle": "dated",
+    "paragraph": null,
+    "mind_map": null,
+    "repos": null,
+    "research": null,
+    "docs": null,
+    "progress": "freshness chips",
+    "agents": "live seats",
+    "timeline": "last 24 h",
+    "docs_over_time": null,
+    "own_nav": "live · stale · nodes"
+   },
+   "rob_am": [
+    "research-os 'CURRENT POSTURE' badge; status chips LIVE/PARTIAL · atlas/receipts/am-research-os.png"
+   ],
+   "example_today": "http://127.0.0.1:8890/atlas/NOW.html · https://great-library-of-siso.pages.dev/now/",
+   "rob_bank": [
+    {
+     "name": "mini-chart",
+     "url": "https://21st.dev/@jatin-yadav05/components/mini-chart",
+     "his_note": "does this activity mini chart actually work? It does. Banging. We needed some graphs. This is going to be used in the operator thing",
+     "why": "Rob this mini-chart composition for now / activity."
+    },
+    {
+     "name": "team-invitation",
+     "url": "https://21st.dev/@kokonutd/components/team-invitation",
+     "his_note": "team invitation comp, don't know where it could be used but kind of cool. This team invitation is just good. If I mention they're good they're always good for a component bank",
+     "why": "Rob this team-invitation composition for now / activity."
+    },
+    {
+     "name": "social-post-card",
+     "url": "https://21st.dev/@ruixen.ui/components/social-post-card",
+     "his_note": "really cool. Don't know where it can be used but save this. I always like the UI of the design and the card and where the profile shows",
+     "why": "Rob this social-post-card composition for now / activity."
+    },
+    {
+     "name": "audio-chat",
+     "url": "https://21st.dev/@jatin-yadav05/components/audio-chat",
+     "his_note": "audio chat is really cool. Don't know where it'd be used, maybe not this project",
+     "why": "Rob this audio-chat composition for now / activity."
+    },
+    {
+     "name": "great-ui-revision-timeline",
+     "url": "https://21st.dev/@saurabh-2607/components/great-ui-revision-timeline",
+     "his_note": "great-ui revision timeline looks cool, the only comp I'm going to give you from them",
+     "why": "Rob this great-ui-revision-timeline composition for now / activity."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "activity-with-number-flow",
+     "url": "https://21st.dev/@barvian/components/activity-with-number-flow",
+     "why": "live activity counts"
+    },
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "activity timeline"
+    },
+    {
+     "name": "activity-with-number-flow",
+     "url": "https://21st.dev/@barvian/components/activity-with-number-flow",
+     "why": "freshness and progress"
+    }
+   ],
+   "bank_gaps": [
+    "freshness semantics and per-seat writeback require project data"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Metric strip",
+     "where": "system-map/index.html:81-84; system-map/part-page.css:40-43,72-75; blueprint/index.html:328-335; industries/law_firms/index.html:21; state/index.html:19-27",
+     "data": "Counts such as mapped parts, sources, observed slots, repos, cells, and open gaps",
+     "how": "Copy metric cards and bind each value to a named registry or record count.",
+     "quality": "good — compact quantitative orientation with semantic labels"
+    },
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    },
+    {
+     "name": "Progress/budget bar",
+     "where": "generate-state-page.mjs:122-150; state/index.html:92-105,195; site/index.html:435-439; blueprint/index.html:146-151",
+     "data": "Freshness age versus lane budget, qualification pass/deferred counts, and candidate funnel proportions",
+     "how": "Copy bar track/fill styles and feed value, max, and semantic state.",
+     "quality": "good — makes thresholds and stale/zero states legible"
+    },
+    {
+     "name": "Freshness lane card",
+     "where": "generate-state-page.mjs:122-190; state/index.html:83-176; state.css:306-469",
+     "data": "Lane owner, state, last change, age/budget, note, source locator, and reachability",
+     "how": "Copy lane-card structure and feed owner, freshness state, budget, source, and note.",
+     "quality": "good — combines operational status and evidence locator in one unit"
+    }
+   ]
+  },
+  {
+   "id": "U12",
+   "family": "Release / Snapshot / Assembly record",
+   "instances": "one per pinned thing",
+   "count": "86 releases · 40 snapshots · 2 assemblies · 8 source inventories",
+   "source_data": "registry/{releases,snapshots,assemblies,source-inventories}/*.json (gls schemas, immutable history)",
+   "where": "/releases/<id>/ /snapshots/<id>/ /promotion/",
+   "sections": [
+    "exact version + scope",
+    "source locators",
+    "evidence",
+    "distribution + rights",
+    "what it pins, linked to its Work"
+   ],
+   "rail": "U0",
+   "theme": "section accent",
+   "status": "indexes 200, no rail, records rendered as lists",
+   "verification": "Open any /releases/<id>/ and see the pinned commit as a link that resolves, and the Work it belongs to",
+   "host": "luna",
+   "needs": [
+    "U0",
+    "U3"
+   ],
+   "gaps": [],
+   "order": 19,
+   "reasoning": {
+    "why": "What is pinned is what an agent can rely on; the record must show the exact commit and its evidence.",
+    "readers": "Human: what version is this. Agent: the locator to fetch.",
+    "questions": [
+     "Exact version and scope?",
+     "Source locators?",
+     "Evidence and rights?"
+    ],
+    "claim_ceiling": "gls records only; immutable history untouched.",
+    "data": "registry/{releases,snapshots,assemblies,source-inventories}.",
+    "links_out": [
+     "U3"
+    ],
+    "links_in": [
+     "U2",
+     "U3"
+    ],
+    "privacy": "Public.",
+    "empty_state": "—",
+    "agent_entry": "bin/gls"
+   },
+   "content": {
+    "title": "release id",
+    "subtitle": "of Work X",
+    "paragraph": null,
+    "mind_map": null,
+    "repos": null,
+    "research": null,
+    "docs": "evidence",
+    "progress": null,
+    "agents": null,
+    "timeline": "pinned at",
+    "docs_over_time": null,
+    "own_nav": "version · locators · evidence"
+   },
+   "rob_am": [
+    "research reader file chips: lines · bytes · sha256 · atlas/receipts/am-research-report-reader.png"
+   ],
+   "example_today": "https://great-library-of-siso.pages.dev/releases/",
+   "rob_bank": [
+    {
+     "name": "great-ui-revision-timeline",
+     "url": "https://21st.dev/@saurabh-2607/components/great-ui-revision-timeline",
+     "his_note": "great-ui revision timeline looks cool, the only comp I'm going to give you from them",
+     "why": "Rob this great-ui-revision-timeline composition for release / snapshot / assembly record."
+    },
+    {
+     "name": "with-slash",
+     "url": "https://21st.dev/@originui/components/breadcrumb/with-slash",
+     "his_note": "these breadcrumbs, the way they do them is just really nice",
+     "why": "Rob this with-slash composition for release / snapshot / assembly record."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "timeline-animation",
+     "url": "https://21st.dev/@anubra266/components/timeline-animation",
+     "why": "immutable revision history"
+    },
+    {
+     "name": "timeline",
+     "url": "https://21st.dev/@preetsuthar17/components/timeline",
+     "why": "release revision record"
+    },
+    {
+     "name": "toc-base-kit",
+     "url": "https://21st.dev/@platejs/components/toc-base-kit",
+     "why": "source locator panel"
+    }
+   ],
+   "bank_gaps": [
+    "immutable registry semantics, rights, and source locators need bespoke data"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Status badge/chip",
+     "where": "site/index.html:101-102; system-map/part-page.css:37-39,58-59; nav.css:151-153; blueprint/index.html:39-42",
+     "data": "Research state, maturity, qualification, sparse/observed posture, and live/open state",
+     "how": "Copy chip CSS and feed an explicit status vocabulary, never inferred prose.",
+     "quality": "good — status is visually prominent and remains text-readable"
+    },
+    {
+     "name": "Registry card grid",
+     "where": "system-map/parts/index.html:19-34; system-map/registry.css:14-20; industry index:20; live artifacts index",
+     "data": "ID, group/section, title, description, count/status, and open route",
+     "how": "Copy registry-card grid and feed typed records with route, title, summary, and status.",
+     "quality": "good — reusable catalogue unit with strong hover/open affordance"
+    },
+    {
+     "name": "Evidence/source table",
+     "where": "RESEARCH-PACK.html:166-176,233-264,358-395; part-page.css:32-39,50-59; industry.css:52-60; docs.css:54-59; state/index.html:220-240; blueprint/index.html:335,393,427",
+     "data": "Rows of sources, contributions, limits, repositories, evidence classes, observed slots, statuses, and provenance paths",
+     "how": "Copy scrollable table wrappers and define a record-specific column schema.",
+     "quality": "good — explicit provenance columns prevent summary-only displays"
+    },
+    {
+     "name": "Progress/budget bar",
+     "where": "generate-state-page.mjs:122-150; state/index.html:92-105,195; site/index.html:435-439; blueprint/index.html:146-151",
+     "data": "Freshness age versus lane budget, qualification pass/deferred counts, and candidate funnel proportions",
+     "how": "Copy bar track/fill styles and feed value, max, and semantic state.",
+     "quality": "good — makes thresholds and stale/zero states legible"
+    },
+    {
+     "name": "Freshness lane card",
+     "where": "generate-state-page.mjs:122-190; state/index.html:83-176; state.css:306-469",
+     "data": "Lane owner, state, last change, age/budget, note, source locator, and reachability",
+     "how": "Copy lane-card structure and feed owner, freshness state, budget, source, and note.",
+     "quality": "good — combines operational status and evidence locator in one unit"
+    },
+    {
+     "name": "Block hub tier/family/donor cards",
+     "where": "generate-block-hub.mjs:216-267,247-273; block-hub/index.html generated markup; block-hub.css",
+     "data": "Capability families, donor repos, observed facts, foundry stage, qualification state, and built manifest joins",
+     "how": "Copy donorCard and family/tier loops; feed source-registry rows grouped by template capability.",
+     "quality": "good — separates derived candidates from editorial tier grouping"
+    },
+    {
+     "name": "Native details lane box",
+     "where": "blueprint/index.html:185-191,540-560",
+     "data": "Long repository/source lists grouped by category, count, and links",
+     "how": "Copy details.lanebox CSS and render one summary per source/template family.",
+     "quality": "good — native progressive disclosure and no custom state code"
+    }
+   ]
+  },
+  {
+   "id": "U20",
+   "family": "Play / skill page",
+   "instances": "one per play and per hub skill",
+   "count": "8 plays (P1–P8) + 32 hub skills (siso-skills-hub)",
+   "source_data": "atlas/FRAMEWORKS-2026-09-05.html, skills-hub registry/skills/*/SKILL.md, install state per harness per machine (cold-discovery probes)",
+   "where": "Library section Agents → /plays/<id>/ and /skills/<name>/",
+   "sections": [
+    "what it does in one line",
+    "the command",
+    "where installed (harness × machine) with probe date",
+    "used for real: receipts",
+    "source hash"
+   ],
+   "rail": "U0",
+   "theme": "agents = reflect violet",
+   "status": "one atlas reading page; hub has SKILL.md files; no per-play page with install state",
+   "verification": "Open /plays/P5-writeback/ and see the command, installed on Claude+Codex on laptop+Mini with probe dates, and three real uses",
+   "host": "luna",
+   "needs": [],
+   "gaps": [],
+   "order": 20,
+   "reasoning": {
+    "why": "Eight plays let fourteen contexts behave as one system; an agent must find the play and its command without reading a brief.",
+    "readers": "Human: what plays exist. Agent: the exact command and whether it is installed here.",
+    "questions": [
+     "What does it do?",
+     "How do I run it?",
+     "Is it installed on this harness/machine?",
+     "Has it been used for real?"
+    ],
+    "claim_ceiling": "Installed only with a probe receipt.",
+    "data": "hub registry + probe receipts + OWNERS lines.",
+    "links_out": [
+     "U17",
+     "U9"
+    ],
+    "links_in": [
+     "U9",
+     "U2 Agents"
+    ],
+    "privacy": "Public.",
+    "empty_state": "Not installed here → the add-skill command.",
+    "agent_entry": "siso-skills-hub registry/skills/<path>/SKILL.md"
+   },
+   "content": {
+    "title": "play",
+    "subtitle": "one line",
+    "paragraph": "when to use",
+    "mind_map": null,
+    "repos": null,
+    "research": null,
+    "docs": null,
+    "progress": "installed matrix",
+    "agents": "owner",
+    "timeline": "uses",
+    "docs_over_time": null,
+    "own_nav": "what · command · installed · uses"
+   },
+   "rob_am": [
+    "blueprint chip row with live dots as the install matrix · atlas/receipts/am-blueprint.png"
+   ],
+   "example_today": "http://127.0.0.1:8890/atlas/FRAMEWORKS-2026-09-05.html",
+   "rob_bank": [
+    {
+     "name": "countdown-number",
+     "url": "https://21st.dev/@reuno-ui/components/countdown-number",
+     "his_note": "countdown component, always loved it. Can be used in coming-soon features or wherever",
+     "why": "Rob this countdown-number composition for play page (commands, where installed)."
+    },
+    {
+     "name": "workflow-builder-card",
+     "url": "https://21st.dev/@ravikatiyar162/components/workflow-builder-card",
+     "his_note": "I like this workflow builder card, could be used in the dashboard somewhere",
+     "why": "Rob this workflow-builder-card composition for play page (commands, where installed)."
+    },
+    {
+     "name": "to-do-card",
+     "url": "https://21st.dev/@rafa-porto/components/to-do-card",
+     "his_note": "to-do list, quite cool. Return activity, this could be reused in operator somewhere",
+     "why": "Rob this to-do-card composition for play page (commands, where installed)."
+    },
+    {
+     "name": "draggable-priority-list",
+     "url": "https://21st.dev/@nikhiljainsam/components/draggable-priority-list",
+     "his_note": "priority queue, thought about it, could be used somewhere in the operator",
+     "why": "Rob this draggable-priority-list composition for play page (commands, where installed)."
+    }
+   ],
+   "rob_bank_wide": [
+    {
+     "name": "package-installer-tabs",
+     "url": "https://21st.dev/@ruixen.ui/components/package-installer-tabs",
+     "why": "commands/install tabs"
+    },
+    {
+     "name": "terminal-bento-grid",
+     "url": "https://21st.dev/@dhileepkumargm/components/terminal-bento-grid",
+     "why": "command surface"
+    },
+    {
+     "name": "task-list",
+     "url": "https://21st.dev/@ravikatiyar162/components/task-list",
+     "why": "installed steps"
+    },
+    {
+     "name": "toc-base-kit",
+     "url": "https://21st.dev/@platejs/components/toc-base-kit",
+     "why": "play contents"
+    }
+   ],
+   "bank_gaps": [
+    "safe command rendering and install provenance need bespoke content"
+   ],
+   "rob_am_components": [
+    {
+     "name": "Actionist grouped registry rail",
+     "where": "system-map/nav.js:74-123,125-174; system-map/nav.css:27-177",
+     "data": "page-registry.json sections/pages, status, descriptions and route IDs",
+     "how": "Copy nav.js/nav.css and feed a registry JSON with sections and pages.",
+     "quality": "good — complete persistent grouped navigation and active-route state"
+    },
+    {
+     "name": "Hero plus status panel",
+     "where": "system-map/index.html:67-80; system-map/part-page.css:8-15; registry.css:3-12; industry.css:1-30; state.css:15-72; blueprint/index.html:246-258",
+     "data": "Title, thesis/lede, current posture, status, date, and source/generator metadata",
+     "how": "Copy the two-column hero/status structure and feed title, summary, posture, and provenance fields.",
+     "quality": "good — consistently separates narrative from current state"
+    },
+    {
+     "name": "Flow / process steps",
+     "where": "system-map/index.html:93-104; blueprint/index.html:57-60,487-492; live block-runtime SVG/sections",
+     "data": "Ordered stages from discovery through composition, runtime, and learning",
+     "how": "Copy flow-step styling and feed ordered stage objects with labels and descriptions.",
+     "quality": "good — communicates sequence without requiring a chart library"
+    },
+    {
+     "name": "Searchable track/card filter",
+     "where": "site/index.html:487-499; blueprint/index.html:357-400 and filter script around 487-499",
+     "data": "Track cards matched against data-search keywords and visible count",
+     "how": "Copy the input/filter function and give each card a normalized search string.",
+     "quality": "good — simple no-framework filtering with visible result count"
+    },
+    {
+     "name": "Resource room card grid",
+     "where": "site/index.html:403-416; blueprint/index.html:300-303,424-427",
+     "data": "Research room title, status/tag, short description, and route",
+     "how": "Copy card markup and map each Library work or source to tag, summary, and link.",
+     "quality": "good — clear scan-to-open pattern with color-coded category strips"
+    },
+    {
+     "name": "Node detail card grid",
+     "where": "system-map/part-page.css:19-26; generate-part-pages.mjs:144-158; industry.css:38-49; generate-industry-pages.mjs:137-144",
+     "data": "Owned scope, known findings, inputs, outputs, risks, and open questions",
+     "how": "Copy node-card variants and feed arrays into labeled cards with wide/risk/lilac/mint classes.",
+     "quality": "good — flexible two-column/wide layout for heterogeneous records"
+    },
+    {
+     "name": "Dependency link chips",
+     "where": "system-map/index.html:152-157; system-map/part-page.css:94-96; generate-part-pages.mjs:100-109",
+     "data": "Related part IDs, titles, and dependency direction",
+     "how": "Copy dependency chip styles and feed linked work/decision IDs.",
+     "quality": "good — compact relationship map that remains clickable"
+    },
+    {
+     "name": "OSS admission funnel",
+     "where": "site/index.html:431-441; generate-state-page.mjs:71-112; state.css:74-160",
+     "data": "Merged candidates, bounded reviews, held evidence, rejected, admitted, and stage counts",
+     "how": "Copy funnel rows/bar CSS and feed ordered stage count objects.",
+     "quality": "good — communicates attrition and zero states without hiding them"
+    }
+   ]
+  },
+  {
+   "id": "U22",
+   "family": "Estate / node page",
+   "instances": "one per node",
+   "count": "3 (laptop, Mac Mini, client VPS) + Cloudflare/Tailscale/WARP routes",
+   "source_data": "ESTATE.md, estate/SWEEP-*.md, briefs/MINI-SYNC.md, ledger mini-probe, herdr roster, rate_limits",
+   "where": "/estate/ on the Agent Zero page and the Library /estate/",
+   "sections": [
+    "node: what runs there",
+    "reachability probe, dated",
+    "seats on it now",
+    "disk / swap / budgets",
+    "placement rule"
+   ],
+   "rail": "U0",
+   "theme": "health green / danger rose",
+   "status": "ESTATE.md + a Library /estate/ page (no rail); the Mini WARP question open (GAPS N-1)",
+   "verification": "Open /estate/mini/ and see the last probe time, the seats on it, and the reachability route with its date",
+   "host": "luna",
+   "needs": [],
+   "gaps": [],
+   "order": 21,
+   "reasoning": {
+    "why": "'What runs on laptop, Mini and client VPS' is GQ-017 and the placement rule has no enforcement; a node page makes 'where' visible.",
+    "readers": "Human: is the Mini up, what is on it. Agent: where to be born.",
+    "questions": [
+     "Is it reachable, by which route?",
+     "What runs there?",
+     "What is the budget left?"
+    ],
+    "claim_ceiling": "Probe-dated facts only.",
+    "data": "ESTATE.md, mini-probe, herdr.",
+    "links_out": [
+     "U17",
+     "U10"
+    ],
+    "links_in": [
+     "U9",
+     "U1"
+    ],
+    "privacy": "Public-safe; no IPs.",
+    "empty_state": "—",
+    "agent_entry": "ESTATE.md"
+   },
+   "content": {
+    "title": "node",
+    "subtitle": "role",
+    "paragraph": null,
+    "mind_map": null,
+    "repos": null,
+    "research": null,
+    "docs": null,
+    "progress": "probe",
+    "agents": "seats here",
+    "timeline": "probes",
+    "docs_over_time": null,
+    "own_nav": "what · reach · seats · budget"
+   },
+   "rob_am": [
+    "blueprint stat strip · atlas/receipts/am-blueprint.png"
+   ],
+   "example_today": "https://great-library-of-siso.pages.dev/estate/",
+   "rob_bank": [],
+   "rob_bank_wide": [],
+   "bank_gaps": [
+    "not queried yet (family added after the bank read)"
+   ],
+   "rob_am_components": []
+  }
+ ],
+ "content_contract": {
+  "from": "his 18:19 words (source/2026-09-06-1720-*)",
+  "keys": [
+   "title",
+   "subtitle",
+   "paragraph",
+   "mind_map",
+   "repos",
+   "research",
+   "docs",
+   "progress",
+   "agents",
+   "timeline",
+   "docs_over_time",
+   "own_nav"
+  ],
+  "reasoning_block_keys": [
+   "why",
+   "readers",
+   "questions",
+   "claim_ceiling",
+   "data",
+   "links_out",
+   "links_in",
+   "privacy",
+   "empty_state",
+   "agent_entry",
+   "verification"
+  ]
+ },
+ "order": [
+  "U0",
+  "U13",
+  "U23",
+  "U4",
+  "U5",
+  "U19",
+  "U3",
+  "U9",
+  "U1",
+  "U18",
+  "U2",
+  "U16",
+  "U17",
+  "U21",
+  "U8",
+  "U14",
+  "U15",
+  "U7",
+  "U11",
+  "U6",
+  "U10",
+  "U12",
+  "U20",
+  "U22"
+ ],
+ "cross_cutting_bank": {
+  "side_nav_with_dropdowns": [
+   {
+    "name": "dashboard-sidebar",
+    "url_or_id": "https://21st.dev/@arunjdass/components/dashboard-sidebar",
+    "his_note": "bit shit, ours is better I'd say. But I like how their sidebar completely closes, that is really cool. Our app should probably do something similar",
+    "rubric_score_if_any": null,
+    "why_here": "collapsible sidebar behavior"
+   },
+   {
+    "name": "action-dropdown",
+    "url_or_id": "https://21st.dev/@moumensoliman/components/action-dropdown",
+    "his_note": "this drop down is quite cool, action drop down",
+    "rubric_score_if_any": null,
+    "why_here": "group/action dropdown"
+   },
+   {
+    "name": "apple-spotlight",
+    "url_or_id": "https://21st.dev/@samitkapoor/components/apple-spotlight",
+    "his_note": "oh my gosh this apple spotlight is beautiful. Use it for search or something. We already have something like that for search but this is really cool",
+    "rubric_score_if_any": null,
+    "why_here": "Cmd-K search"
+   }
+  ],
+  "timeline": [
+   {
+    "name": "timeline",
+    "url_or_id": "https://21st.dev/@nyxbui/components/timeline",
+    "his_note": "timeline of text, it's clean. I wouldn't say amazing",
+    "rubric_score_if_any": null,
+    "why_here": "clean timeline"
+   },
+   {
+    "name": "great-ui-revision-timeline",
+    "url_or_id": "https://21st.dev/@saurabh-2607/components/great-ui-revision-timeline",
+    "his_note": "great-ui revision timeline looks cool, the only comp I'm going to give you from them",
+    "rubric_score_if_any": null,
+    "why_here": "revision history"
+   },
+   {
+    "name": "estimated-arrival",
+    "url_or_id": "https://21st.dev/@hedevelope/components/estimated-arrival",
+    "his_note": "estimated time arrival, really interesting, don't know where we'd use it, love to have it. Progress bar could be useful in the operator app somewhere",
+    "rubric_score_if_any": null,
+    "why_here": "progress timeline"
+   }
+  ],
+  "mind_map_or_graph": [
+   {
+    "name": "mind-elixir-react",
+    "url": "https://21st.dev/@ssshooter/components/mind-elixir-react",
+    "why": "mind map"
+   },
+   {
+    "name": "mind-map",
+    "url": "https://21st.dev/@ssshooter/components/mind-map",
+    "why": "mind map"
+   }
+  ],
+  "table_with_filters": [
+   {
+    "name": "v-table-12",
+    "url": "https://21st.dev/@cnippet.dev/components/v-table-12",
+    "why": "table"
+   },
+   {
+    "name": "filters",
+    "url": "https://21st.dev/@andrewlu0/components/filters",
+    "why": "filters"
+   },
+   {
+    "name": "review-filter-bars",
+    "url_or_id": "https://21st.dev/@ruixen.ui/components/review-filter-bars",
+    "his_note": "filter by rating. Don't know where we would use it but save it, it's cool",
+    "rubric_score_if_any": null,
+    "why_here": "rating filter"
+   }
+  ],
+  "status_chips": [
+   {
+    "name": "animated-state-icons",
+    "url_or_id": "https://21st.dev/@dev.yadhakim/components/animated-state-icons",
+    "his_note": "animated state icons, always useful to make the app feel nicer",
+    "rubric_score_if_any": null,
+    "why_here": "state icons"
+   },
+   {
+    "name": "statistics-card-7",
+    "url_or_id": "https://21st.dev/@sean0205/components/statistics-card-7",
+    "his_note": "more stats cards, useful",
+    "rubric_score_if_any": null,
+    "why_here": "stats card"
+   },
+   {
+    "name": "stats-card",
+    "url_or_id": "https://21st.dev/@ravikatiyar162/components/stats-card",
+    "his_note": "I like this stats card, the earning one, really nice",
+    "rubric_score_if_any": null,
+    "why_here": "stats card"
+   }
+  ],
+  "evidence_panel": [
+   {
+    "name": "performance-benchmark-card",
+    "url_or_id": "https://21st.dev/@kavikatiyar/components/performance-benchmark-card",
+    "his_note": "another performance benchmark card, might be useful",
+    "rubric_score_if_any": null,
+    "why_here": "benchmark evidence"
+   },
+   {
+    "name": "anomaly-heatmap",
+    "url_or_id": "https://21st.dev/@aghasisahakyan1/components/anomaly-heatmap",
+    "his_note": "some sort of heat map, that'll be useful",
+    "rubric_score_if_any": null,
+    "why_here": "heatmap evidence"
+   },
+   {
+    "name": "estimated-arrival",
+    "url_or_id": "https://21st.dev/@hedevelope/components/estimated-arrival",
+    "his_note": "estimated time arrival, really interesting, don't know where we'd use it, love to have it. Progress bar could be useful in the operator app somewhere",
+    "rubric_score_if_any": null,
+    "why_here": "progress evidence"
+   }
+  ]
+ },
+ "his_theme_notes": [
+  "activity rings bit extra, doesn't really feel theme, but alright"
+ ],
+ "dropdown_and_nav_patterns": [
+  {
+   "file": "system-map/nav.js:74-123; nav.css:130-140",
+   "behaviour": "Registry sections render as custom button toggles. Open state is stored in localStorage under actionist-registry-nav-sections; each section exposes aria-expanded and rotates its chevron."
+  },
+  {
+   "file": "system-map/nav.js:40-48,165-173; nav.css:161-179",
+   "behaviour": "Rail collapse button toggles body class, updates aria-label/title/glyph, stores preference under actionist-registry-nav-collapsed, and preserves marks in compact mode."
+  },
+  {
+   "file": "system-map/nav.js:136-155,176-189; nav.css:202-232",
+   "behaviour": "Mobile drawer uses a fixed toggle, backdrop button, hidden state, and explicit close on route click or backdrop click."
+  },
+  {
+   "file": "system-map/nav.js:157-257; nav.css:183-200",
+   "behaviour": "Command palette is a modal-like overlay, opens from rail or Cmd/Ctrl-K, filters 40 registry pages, supports arrows/enter/escape, and closes on backdrop click."
+  },
+  {
+   "file": "blueprint/assets/shell.js:1-19; shell.css:13-18",
+   "behaviour": "SISO rail uses a [ keyboard shortcut and localStorage boolean to collapse to a 20px handle; button aria-expanded and glyph update together."
+  },
+  {
+   "file": "blueprint/index.html:540-560",
+   "behaviour": "Native details.lanebox disclosure groups show a summary with title/count and switch summary suffix from + to − when open; one group is initially open."
+  },
+  {
+   "file": "site/index.html:277-299",
+   "behaviour": "Static sidebar nav uses anchor links to section IDs, with active class authored in markup and responsive horizontal overflow at mobile."
+  },
+  {
+   "file": "RESEARCH-PACK.html:93",
+   "behaviour": "Static table-of-contents nav anchors long dossier sections; no collapse behavior."
+  },
+  {
+   "file": "blueprint/index.html:243-244",
+   "behaviour": "Sticky horizontal topnav provides a second in-page route map independent of the left rail; overflow scrolls on narrow screens."
+  }
+ ],
+ "data_display_patterns": [
+  {
+   "name": "metric cards",
+   "file": "system-map/index.html:81-84; blueprint/index.html:328-335; state/index.html:19-27",
+   "data_shape": "[{value,label,semantic_color}]"
+  },
+  {
+   "name": "status chips/badges",
+   "file": "system-map/part-page.css:37-39; nav.css:151-153; industry.css:59-60",
+   "data_shape": "{status, vocabulary, optional detail}"
+  },
+  {
+   "name": "registry cards",
+   "file": "system-map/registry.css:14-20; parts/index.html:19-34",
+   "data_shape": "{id, group, title, description, status, href}"
+  },
+  {
+   "name": "node cards",
+   "file": "system-map/part-page.css:19-26; generate-part-pages.mjs:144-158",
+   "data_shape": "{heading, bullets|paragraph, variant, wide}"
+  },
+  {
+   "name": "evidence tables",
+   "file": "system-map/part-page.css:32-39; docs.css:54-59; industry.css:52-60",
+   "data_shape": "{columns:[...], rows:[...], source_locator?, status?}"
+  },
+  {
+   "name": "filterable datasets",
+   "file": "system-map/part-page.css:46-57; P01 generated page",
+   "data_shape": "{query, rows:[record], searchable_fields}"
+  },
+  {
+   "name": "funnel",
+   "file": "site/index.html:433-441; generate-state-page.mjs:71-112",
+   "data_shape": "[{label,count,ratio,semantic_state}]"
+  },
+  {
+   "name": "progress/budget bars",
+   "file": "state/index.html:92-105; blueprint/index.html:146-151",
+   "data_shape": "{value,max,percent,state,caption}"
+  },
+  {
+   "name": "freshness lanes",
+   "file": "generate-state-page.mjs:122-190; state/index.html:83-176",
+   "data_shape": "{name,owner,state,last_changed,age,budget,note,source}"
+  },
+  {
+   "name": "dependency graph",
+   "file": "blueprint/index.html:338-360",
+   "data_shape": "{nodes:[id,label,state],edges:[from,to,kind]}"
+  },
+  {
+   "name": "heatmap",
+   "file": "blueprint/index.html:393-399",
+   "data_shape": "matrix rows x dimensions with h0-h6 cell classes and totals"
+  },
+  {
+   "name": "timeline/phase track",
+   "file": "part-page.css:77-93; blueprint/index.html:475-479",
+   "data_shape": "[{id,title,owner,description,state,order}]"
+  },
+  {
+   "name": "convergence flow",
+   "file": "part-page.css:101-116",
+   "data_shape": "{steps:[{value,label}],artifacts:[{title,href,status}]}"
+  },
+  {
+   "name": "donor/family cards",
+   "file": "generate-block-hub.mjs:216-267",
+   "data_shape": "{tier,family,count,donors:[{repo,url,facts,foundry_stage,qualification,built}]}"
+  },
+  {
+   "name": "truth-state cards",
+   "file": "blueprint/index.html:449-463",
+   "data_shape": "{bucket,claims:[{title,body,source_or_limit}]}"
+  },
+  {
+   "name": "decision cards",
+   "file": "generate-front-page.mjs:274-289; system-map/index.html:171-179",
+   "data_shape": "{id,state,title,rationale,falsifier?}"
+  },
+  {
+   "name": "evidence/source pills",
+   "file": "system-map/part-page.css:58-59; industry.css:59-60",
+   "data_shape": "{evidence_class,source_path,rights_or_status}"
+  },
+  {
+   "name": "native disclosure lists",
+   "file": "blueprint/index.html:540-560",
+   "data_shape": "{group_title,count,items:[{label,href,meta}]}"
+  },
+  {
+   "name": "SVG architecture diagram",
+   "file": "blueprint/index.html:338-360; https://actionist-block-runtime.pages.dev",
+   "data_shape": "{nodes,edges,legend,hover_state}"
+  }
+ ]
+}
