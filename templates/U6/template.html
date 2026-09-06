@@ -1,0 +1,58 @@
+{{!-- U6 · Erdős — a God Question page with maths-specific state. Problem statement · approach + reductions · certificate /
+     replay status (proof state only from a certificate or an audit file; never from a handoff sentence; no certificate →
+     'unverified' amber) · compute spent + host · decision log · what would close it. --}}
+{{> heading heading}}
+<section class="siso-section" id="problem">
+  {{> section sections.problem}}
+  <p class="doc-lede">{{{problem.statement}}}</p>
+  <dl class="kv" style="margin-top:var(--crm-space-4)">{{#each problem.facts}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+  {{#if problem.words}}<div style="margin-top:var(--crm-space-4)">{{> words problem.words}}</div>{{/if}}
+</section>
+<section class="siso-section" id="approach">
+  {{> section sections.approach}}
+  {{> contents approach}}
+</section>
+<section class="siso-section" id="certificate">
+  {{> section sections.certificate}}
+  <div class="grid grid-3" style="margin-bottom:var(--crm-space-4)">{{#each certificate.states}}<div class="card card--strip tone-{{tone}}"><span class="kicker" style="color:var(--tone)">{{icon icon}} {{label}}</span><b style="display:block;margin-top:4px;font-size:16px;color:var(--crm-color-text-strong)">{{value}}</b><span class="small muted">{{{note}}}</span></div>{{/each}}</div>
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Gate</th><th>Command</th><th>Result</th><th>Receipt</th></tr></thead><tbody>{{#each certificate.gates}}<tr><td>{{gate}}</td><td><code class="small">{{cmd}}</code></td><td><span class="chip tone-{{tone}}">{{result}}</span></td><td class="small">{{{receipt}}}</td></tr>{{/each}}</tbody></table></div>
+  {{#if certificate.replay}}<div class="card" style="margin-top:var(--crm-space-4)"><span class="kicker">{{icon terminal}} replay command · what a certificate would take</span><pre style="margin-top:8px">{{certificate.replay}}</pre><span class="small muted">{{{certificate.replay_note}}}</span></div>{{/if}}
+</section>
+<section class="siso-section" id="compute">
+  {{> section sections.compute}}
+  {{> metrics compute.metrics}}
+  <dl class="kv" style="margin-top:var(--crm-space-4)">{{#each compute.facts}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+</section>
+<section class="siso-section" id="decisions">
+  {{> section sections.decisions}}
+  {{> evidence decisions}}
+</section>
+<section class="siso-section" id="close">
+  {{> section sections.close}}
+  {{> contents close}}
+</section>
+<section class="siso-section" id="repos">
+  {{> section sections.repos}}
+  {{> repos repos}}
+</section>
+<section class="siso-section" id="fleet">
+  {{> section sections.fleet}}
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>#</th><th>Lane</th><th>Observed status (30 Aug)</th><th>Durable evidence</th></tr></thead><tbody>{{#each fleet}}<tr><td class="mono">{{n}}</td><td>{{lane}}</td><td><span class="chip tone-{{tone}}">{{status}}</span> <span class="small">{{{what}}}</span></td><td class="small"><code>{{evidence}}</code></td></tr>{{/each}}</tbody></table></div>
+  <div class="chips" style="margin-top:var(--crm-space-3)">{{> chips seats}}</div>
+</section>
+<section class="siso-section" id="timeline">
+  {{> section sections.timeline}}
+  {{> timeline timeline}}
+</section>
+<section class="siso-section" id="map">
+  {{> section sections.map}}
+  {{> map map}}
+</section>
+<section class="siso-section" id="related">
+  {{> section sections.related}}
+  {{> related related}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

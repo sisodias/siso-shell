@@ -126,14 +126,14 @@ a.metric:hover { border-color: rgb(var(--stream-rgb) / 0.5); text-decoration: no
 .flow-step span { color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); }
 
 /* ---- 02 heading ---- */
-.heading { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr); gap: var(--crm-space-7-5); align-items: end; padding-bottom: var(--crm-space-8); border-bottom: 1px solid var(--crm-color-line); }
+.heading { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr); gap: var(--crm-space-7-5); align-items: start; padding-bottom: var(--crm-space-8); border-bottom: 1px solid var(--crm-color-line); }
 .heading__crumb { display: flex; flex-wrap: wrap; gap: var(--crm-space-1-5); color: var(--crm-color-text-muted); font-family: var(--crm-font-mono); font-size: var(--crm-text-xs); letter-spacing: 0.06em; text-transform: uppercase; }
 .heading__crumb a { color: var(--crm-color-text-muted); }
 .heading__crumb a:hover { color: var(--stream); }
 .heading h1 { margin: var(--crm-space-3-5) 0 var(--crm-space-4); font-size: clamp(38px, 5vw, 64px); font-weight: var(--crm-weight-semibold); letter-spacing: -0.045em; line-height: 0.98; }
 .heading__sub { max-width: 760px; color: var(--crm-color-text-muted); font-size: var(--crm-text-lg); line-height: 1.5; }
 .heading__badges { display: flex; flex-wrap: wrap; gap: var(--crm-space-1-5); margin-top: var(--crm-space-4); }
-.heading__status { padding: var(--crm-space-4-5); border: 1px solid rgb(var(--stream-rgb) / 0.25); border-radius: var(--crm-radius-card-compact, 12px); background: linear-gradient(145deg, rgb(var(--stream-rgb) / 0.10), rgb(var(--crm-chrome-rgb) / 0.72)); }
+.heading__status { margin-top: 0; padding: var(--crm-space-4-5); border: 1px solid rgb(var(--stream-rgb) / 0.25); border-radius: var(--crm-radius-card-compact, 12px); background: linear-gradient(145deg, rgb(var(--stream-rgb) / 0.10), rgb(var(--crm-chrome-rgb) / 0.72)); }
 .heading__status .kicker { font-size: var(--crm-text-2xs); }
 .heading__status strong { display: block; margin-top: var(--crm-space-2-5); color: var(--crm-color-text-strong); font-size: var(--crm-text-lg); font-weight: var(--crm-weight-semibold); letter-spacing: -0.03em; }
 .heading__status p { margin-top: var(--crm-space-2); color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); }

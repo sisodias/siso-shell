@@ -1,0 +1,780 @@
+{
+ "meta": {
+  "title": "Erdős 742 · problem",
+  "description": "Erdős problem 742 (Murty–Simon): statement, the claimed Lean proof under review, certificate and replay status from receipts (PARTIAL: statement audit passed, theorem did not compile, no axiom receipt → unverified), compute and host, the 30 Aug decision log, what would close it.",
+  "stream": "research",
+  "crumb": [
+   {
+    "label": "Templates",
+    "href": "/"
+   },
+   {
+    "label": "U6 · Erdős",
+    "href": "/t/U6/"
+   },
+   {
+    "label": "742"
+   }
+  ],
+  "actions": [
+   {
+    "label": "erdosproblems.com/742",
+    "href": "https://www.erdosproblems.com/742",
+    "icon": "arrow-up-right",
+    "external": true
+   },
+   {
+    "label": "claimed proof · Erdos742/Erdos742",
+    "href": "https://github.com/Erdos742/Erdos742/commit/814289f2eb4091ad39b7c456266f92cf82f38bce",
+    "icon": "git-branch",
+    "external": true
+   }
+  ],
+  "source": "SISO_Research/erdos/targets/742/runs/proof-review/HANDOFF.md (30 Aug 16:22) · SISO_Research/erdos/MAC-MINI-HANDOFF-2026-08-30.md · DECISION-LOG.html · CHECKPOINT-2026-08-30.html · tasks/TASKS.json · state/project.json · audits/{easiest-targets,solver-repositories}.md · goals/review-742-proof.md · formal-conjectures-742.lean (google-deepmind, sha256 25f7c5cd…) · atlas/now.json ERDOS-LEAD · read 6 Sep 20:25 UTC+07"
+ },
+ "heading": {
+  "breadcrumb": [
+   {
+    "label": "Research",
+    "href": "/t/U5/"
+   },
+   {
+    "label": "Erdős"
+   },
+   {
+    "label": "742"
+   }
+  ],
+  "kicker": "Erdős problem <span class=\"sep\">·</span> #742 <span class=\"sep\">·</span> <span class=\"dim\">Murty–Simon conjecture · AMS 5 · open</span>",
+  "title": "Erdős 742",
+  "subtitle": "A diameter-2-critical graph on <em>n</em> vertices has at most ⌊<em>n</em>²/4⌋ edges. A repository claims a complete Lean proof; SISO's review lane got the statement to match Formal Conjectures and the dependency audit to pass, and the theorem did not compile. No kernel or axiom receipt exists, so the state here is <b>unverified</b>.",
+  "badges": [
+   {
+    "label": "research question",
+    "tone": "research",
+    "dot": true
+   },
+   {
+    "label": "proof state · unverified",
+    "tone": "warn",
+    "href": "#certificate",
+    "icon": "shield-alert"
+   },
+   {
+    "label": "REVIEW-742 · partial",
+    "tone": "warn",
+    "href": "#certificate"
+   },
+   {
+    "label": "laptop lane frozen 30 Aug",
+    "tone": "blocked",
+    "href": "#compute"
+   },
+   {
+    "label": "ERDOS-LEAD · mini · idle",
+    "tone": "agents",
+    "href": "#fleet"
+   }
+  ],
+  "status": {
+   "kicker": "Certificate",
+   "value": "none · unverified",
+   "note": "HANDOFF.md 30 Aug 16:22: \"PARTIAL — the pinned source was acquired and statement/sorry reachability were audited, but the headline theorem did not compile in this environment.\" Bounded build exited 124 during dependency acquisition.",
+   "facts": [
+    {
+     "k": "claim under review",
+     "v": "<code>Erdos742/Erdos742</code> @ <code>814289f2</code> (10 Aug 2026, no licence, no lock)"
+    },
+    {
+     "k": "statement match",
+     "v": "<code>erdos_742</code> = Formal Conjectures 742 after removing <code>answer(sorry)</code>"
+    },
+    {
+     "k": "known results",
+     "v": "Fan 1987: n ≤ 24 and n = 26 · Füredi 1992: all large n (Formal Conjectures header)"
+    },
+    {
+     "k": "first live order",
+     "v": "25 (audits/easiest-targets.md)"
+    },
+    {
+     "k": "next host",
+     "v": "Mac Mini M4 (state: handoff-to-mac-mini)"
+    }
+   ]
+  }
+ },
+ "sections": {
+  "problem": {
+   "n": "01",
+   "title": "Problem statement",
+   "sub": "from the Formal Conjectures file fetched at review time (sha256 25f7c5cd…)"
+  },
+  "approach": {
+   "n": "02",
+   "title": "Approach · reductions",
+   "sub": "what the fleet chose to do and why"
+  },
+  "certificate": {
+   "n": "03",
+   "title": "Certificate · replay status",
+   "sub": "proof state only from a receipt; the claim ceiling of this page"
+  },
+  "compute": {
+   "n": "04",
+   "title": "Compute spent · host",
+   "sub": "what is measured, what is not"
+  },
+  "decisions": {
+   "n": "05",
+   "title": "Decision log",
+   "sub": "DECISION-LOG.html and CHECKPOINT-2026-08-30.html, verbatim lines as facts"
+  },
+  "close": {
+   "n": "06",
+   "title": "What would close it"
+  },
+  "repos": {
+   "n": "07",
+   "title": "Repos · certificate files",
+   "sub": "the erdos workspace (inside SISO_Workspace, not a git repo of its own) and the pinned upstreams"
+  },
+  "fleet": {
+   "n": "08",
+   "title": "Fleet · seats",
+   "sub": "the four problems as the 30 Aug handoff observed them"
+  },
+  "timeline": {
+   "n": "09",
+   "title": "Attempts"
+  },
+  "map": {
+   "n": "10",
+   "title": "Mind map",
+   "sub": "problem → reductions → repos → gates"
+  },
+  "related": {
+   "n": "11",
+   "title": "Links out"
+  },
+  "agent": {
+   "n": "12",
+   "title": "Agent entry"
+  }
+ },
+ "problem": {
+  "statement": "<b>Murty–Simon Conjecture.</b> Let <em>G</em> be a graph on <em>n</em> vertices with diameter 2 such that deleting any edge increases the diameter. Is it true that <em>G</em> has at most ⌊<em>n</em>²/4⌋ edges? Equality is conjectured to hold for the complete balanced bipartite graph <em>K</em><sub>⌈n/2⌉,⌊n/2⌋</sub>.",
+  "facts": [
+   {
+    "k": "formal statement",
+    "v": "<code>theorem erdos_742 : answer(sorry) ↔ ∀ (V : Type*) [Fintype V] [DecidableEq V] (G : SimpleGraph V) [DecidableRel G.Adj], IsDiameter2Critical G → G.edgeFinset.card ≤ (Fintype.card V) ^ 2 / 4</code>"
+   },
+   {
+    "k": "definition",
+    "v": "<code>IsDiameter2Critical G := G.diam = 2 ∧ ∀ e ∈ G.edgeSet, (G.deleteEdges {e}).diam ≠ 2</code>"
+   },
+   {
+    "k": "category",
+    "v": "research open · AMS 5 (Formal Conjectures tag)"
+   },
+   {
+    "k": "resolved up to",
+    "v": "a finite check: Fan [Fa87] n ≤ 24 and n = 26; Füredi [Fü92] all sufficiently large n"
+   },
+   {
+    "k": "lane brief",
+    "v": "targets/742/README.md: \"audit and extend proof-logging SAT work at order 25. Preserve CNF identity, solver version, proof log, independent replay, and any decoded graph.\""
+   }
+  ],
+  "words": [
+   {
+    "text": "we need one for each ERDOS question we need one for each god question we need one for each agent zero, we need one for each research doc, we need one for each project one pager",
+    "who": "Shaan → AGENT-ZERO · 00_AGENT_ZERO/source/2026-09-06-1650-…",
+    "at": "6 Sep 16:50"
+   }
+  ]
+ },
+ "approach": {
+  "items": [
+   {
+    "label": "Admit 742 first as a bounded falsification/certification job",
+    "what": "audits/easiest-targets.md: \"the practical frontier is one finite order (25), the SAT input and candidate checker are public, and a SAT witness would be a genuine counterexample\"",
+    "state": "admitted",
+    "tone": "now"
+   },
+   {
+    "label": "Then a repository claimed a complete Lean proof",
+    "what": "audits/solver-repositories.md §742: Erdos742.lean 173 KB, Equality.lean 300 KB, Erdos742Full.lean 474 KB, two papers; \"no lakefile.lean, lean-toolchain, workflow, build script, certificate manifest, or pinned dependency file\"",
+    "state": "claim",
+    "tone": "warn"
+   },
+   {
+    "label": "Goal /review-742-proof",
+    "what": "\"Wrap the pinned Erdos742/Erdos742 sources in the smallest reproducible Lean project, compile the headline theorem, print its transitive axioms, and determine whether any sorryAx or unstated hypothesis reaches the result.\" PASS requires a reproducible build plus statement-fidelity and axiom receipts.",
+    "state": "goal",
+    "tone": "research"
+   },
+   {
+    "label": "Reusable SAT path kept",
+    "what": "leansolving/leansms (Apache-2.0) MurtySimon encoder, <code>lake exe murty-simon-generate &lt;n&gt;</code>: verified CNF/LRAT impossibility proofs for finite orders; restricted LRAT classes exist upstream (edisonymy/erdos-lean-research experiments/erdos742)",
+    "state": "available",
+    "tone": "muted"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Pin",
+    "what": "detached checkout at 814289f2, source sha256 recorded"
+   },
+   {
+    "label": "Match",
+    "what": "statement against Formal Conjectures 742 (fetched, sha256 recorded)"
+   },
+   {
+    "label": "Build",
+    "what": "smallest wrapper project: lakefile, toolchain v4.33.0-rc1, Main.lean with <code>#print axioms</code>"
+   },
+   {
+    "label": "Audit",
+    "what": "transitive axioms for sorryAx, custom axioms, native_decide"
+   }
+  ]
+ },
+ "certificate": {
+  "states": [
+   {
+    "label": "proof state",
+    "value": "unverified",
+    "tone": "warn",
+    "icon": "shield-alert",
+    "note": "no kernel or axiom receipt; \"classify the claim as candidate-proof/blocked, not kernel-checked or solved\" (HANDOFF.md)"
+   },
+   {
+    "label": "statement fidelity",
+    "value": "passed",
+    "tone": "now",
+    "icon": "check",
+    "note": "IsDiameter2Critical and erdos_742 agree textually with Formal Conjectures after removing answer(sorry)"
+   },
+   {
+    "label": "static sorry audit",
+    "value": "passed · 1 literal sorry, statically unreachable",
+    "tone": "now",
+    "icon": "search",
+    "note": "dependency-audit.txt; MAC-MINI handoff: \"no kernel/axiom receipt exists\""
+   },
+   {
+    "label": "build",
+    "value": "exit 124 · timed out in dependency acquisition",
+    "tone": "blocked",
+    "icon": "x",
+    "note": "lake update tried to clone Mathlib; a path-dependency retry (647's mathlib) was stopped"
+   },
+   {
+    "label": "replayable certificate",
+    "value": "none",
+    "tone": "warn",
+    "icon": "lock",
+    "note": "no LRAT/DRAT for order 25 in this workspace; upstream restricted classes are not this claim"
+   },
+   {
+    "label": "independent review (Sol)",
+    "value": "not run",
+    "tone": "muted",
+    "icon": "eye",
+    "note": "Sol is reserved for a genuine proof boundary; none reached"
+   }
+  ],
+  "gates": [
+   {
+    "gate": "checkout pinned",
+    "cmd": "git -C Erdos742 rev-parse HEAD",
+    "result": "814289f2…",
+    "tone": "now",
+    "receipt": "HANDOFF.md verify line; status --short empty"
+   },
+   {
+    "gate": "source hash",
+    "cmd": "sha256 Erdos742/Erdos742.lean",
+    "result": "355a8539…",
+    "tone": "now",
+    "receipt": "HANDOFF.md evidence line"
+   },
+   {
+    "gate": "reference statement",
+    "cmd": "curl … formal-conjectures/…/742.lean",
+    "result": "exit 0",
+    "tone": "now",
+    "receipt": "<code>formal-conjectures-fetch.exit</code> = 0; sha256 25f7c5cd…"
+   },
+   {
+    "gate": "bounded build",
+    "cmd": "timeout 10s … lake build Erdos742",
+    "result": "exit 124",
+    "tone": "blocked",
+    "receipt": "<code>build-timeout.exit</code> = 124; <code>build.log</code> 15 lines, cloning aesop/Qq/batteries"
+   },
+   {
+    "gate": "axiom print",
+    "cmd": "lake env lean Main.lean → #print axioms Erdos742.erdos_742",
+    "result": "not reached",
+    "tone": "warn",
+    "receipt": "Main.lean present; never executed"
+   }
+  ],
+  "replay": "cd SISO_Research/erdos/targets/742/runs/proof-review\n# obtain Mathlib at exactly ae0d973 without touching Erdos742/, point lake-manifest at it, then\nelan run leanprover/lean4:v4.33.0-rc1 lake build Erdos742\nelan run leanprover/lean4:v4.33.0-rc1 lake env lean Main.lean   # must print axioms of Erdos742.erdos_742",
+  "replay_note": "From HANDOFF.md \"Smallest next action\". Until the second command completes and its transitive axioms are inspected for <code>sorryAx</code>, custom axioms and <code>native_decide</code>, the chip above stays amber."
+ },
+ "compute": {
+  "metrics": [
+   {
+    "value": "1",
+    "label": "review run (proof-review)",
+    "tone": "research",
+    "href": "#certificate"
+   },
+   {
+    "value": "10 s",
+    "label": "bounded build budget · exit 124",
+    "tone": "blocked"
+   },
+   {
+    "value": "0",
+    "label": "kernel-checked theorems",
+    "tone": "warn"
+   },
+   {
+    "value": "2",
+    "label": "historical ChatGPT turns recovered · 240 m + 33 m",
+    "tone": "muted",
+    "href": "#timeline"
+   },
+   {
+    "value": "—",
+    "label": "tokens · not measured",
+    "tone": "muted"
+   }
+  ],
+  "facts": [
+   {
+    "k": "host",
+    "v": "laptop (MacBook), frozen 30 Aug 16:35: \"Freeze all laptop proof/Lean compute and move the programme to a dedicated Mac Mini workspace\""
+   },
+   {
+    "k": "next host",
+    "v": "Mac Mini M4 · 16 GB (ESTATE.md); <code>ERDOS-LEAD</code> seat present in atlas/now.json, node mini, idle"
+   },
+   {
+    "k": "toolchain",
+    "v": "<code>leanprover/lean4:v4.33.0-rc1</code> installed; Mathlib <code>ae0d973</code> named by upstream comments, not acquired"
+   },
+   {
+    "k": "what is not measured",
+    "v": "wall time of the lane, tokens, CPU; the workspace has no run ledger for 742 (only the exit-code receipts above)"
+   },
+   {
+    "k": "historical",
+    "v": "audits/connector-recovery-2026-09-06/erdos-742-historical-chat.md: a recovered ChatGPT thread (\"Worked for 240m 4s\", \"I did not finish a full proof\"); prose, not a certificate"
+   }
+  ]
+ },
+ "decisions": {
+  "facts": [
+   {
+    "claim": "WIN: #23 exact replay passed; #647 bounded C slice passed; #742 and #848 release blockers were localized.",
+    "receipt": "DECISION-LOG.html",
+    "at": "30 Aug 2026"
+   },
+   {
+    "claim": "DECISION: Freeze all laptop proof/Lean compute and move the programme to a dedicated Mac Mini workspace.",
+    "receipt": "DECISION-LOG.html",
+    "at": "30 Aug 2026"
+   },
+   {
+    "claim": "TRAP: A successful arithmetic replay is not a theorem-interface proof; a repository claiming kernel closure is not reproducible when its own manifest gate fails.",
+    "receipt": "DECISION-LOG.html",
+    "at": "30 Aug 2026"
+   },
+   {
+    "claim": "LEARN: Run release-integrity and dependency-lock gates before expensive proof review; keep intentional axioms separate from certified finite evidence.",
+    "receipt": "DECISION-LOG.html",
+    "at": "30 Aug 2026"
+   },
+   {
+    "claim": "Hard-won traps: Do not accept certificate arithmetic as semantic theorem validation. Do not accept a Lean claim without a pinned dependency lock and executed axiom audit. Do not let a returned worker leave an orphaned Lean process.",
+    "receipt": "CHECKPOINT-2026-08-30.html",
+    "at": "30 Aug 2026 16:35"
+   }
+  ],
+  "proposals": [
+   {
+    "claim": "Exactly one resume step: a fresh Mini Codex reads the handoff, then resumes the interrupted #23 Sol interface review before admitting any new proof compute.",
+    "why": "MAC-MINI-HANDOFF-2026-08-30.md §\"Exactly one resume step\"; 742 waits behind it"
+   }
+  ],
+  "limits": [
+   "Proof state on this page comes only from targets/742/runs/proof-review receipts and the 30 Aug audits; no handoff sentence upgrades it.",
+   "The upstream repository's own claim (\"only ordinary Lean axioms, no sorryAx\") is quoted by audits/solver-repositories.md and is not a receipt.",
+   "The erdos workspace sits inside SISO_Workspace (outer repo untracked); no commit hash pins these files."
+  ],
+  "version": {
+   "label": "proof-review · 30 Aug 16:22",
+   "at": "HANDOFF.md status: done · result: PARTIAL"
+  }
+ },
+ "close": {
+  "items": [
+   {
+    "label": "Kernel-checked build of erdos_742 with an executed axiom print",
+    "what": "the two commands in §03 complete on a clean machine with Mathlib ae0d973; transitive axioms contain no sorryAx, custom axiom or native_decide",
+    "state": "closes the claim",
+    "tone": "now"
+   },
+   {
+    "label": "Or a finite counterexample at order 25",
+    "what": "a SAT witness decoded to a diameter-2-critical graph with more than ⌊625/4⌋ = 156 edges (easiest-targets: \"would settle the conjecture negatively\")",
+    "state": "closes the conjecture",
+    "tone": "research"
+   },
+   {
+    "label": "Or a replayable LRAT/DRAT for order 25",
+    "what": "extends Fan's finite check by one order; a finite result, not the conjecture (README \"Completion standard\")",
+    "state": "finite",
+    "tone": "muted"
+   },
+   {
+    "label": "Cold Sol review at the boundary",
+    "what": "only once one of the above exists (AGENTS.md operating rules)",
+    "state": "gate",
+    "tone": "agents"
+   }
+  ]
+ },
+ "repos": [
+  {
+   "repo": "SISO_Research/erdos",
+   "branch": "— (inside SISO_Workspace; outer repo untracked)",
+   "private": true,
+   "access": "workspace",
+   "rights": "SISO",
+   "what": "AGENTS.md · manager/{CHARTER,launch-board}.md · goals/ · targets/742/runs/proof-review/ (wrapper project, logs, exit receipts, dependency-audit.txt, pinned Erdos742/) · audits/ · DECISION-LOG.html · CHECKPOINT-2026-08-30.html · MAC-MINI-HANDOFF-2026-08-30.md"
+  },
+  {
+   "repo": "Erdos742/Erdos742",
+   "url": "https://github.com/Erdos742/Erdos742",
+   "branch": "main",
+   "head": "814289f",
+   "head_at": "2026-08-10 07:36 UTC+07",
+   "private": false,
+   "rights": "no declared licence",
+   "what": "The claimed proof: Erdos742.lean (173 KB), Equality.lean, Erdos742Full.lean, two papers. No lakefile, toolchain, lock or manifest."
+  },
+  {
+   "repo": "google-deepmind/formal-conjectures",
+   "url": "https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/742.lean",
+   "branch": "main",
+   "private": false,
+   "rights": "Apache-2.0",
+   "what": "The reference statement (fetched at review, sha256 25f7c5cd…)."
+  },
+  {
+   "repo": "leansolving/leansms",
+   "url": "https://github.com/leansolving/leansms",
+   "head": "f5e9528",
+   "private": false,
+   "rights": "Apache-2.0",
+   "what": "MurtySimon encoder; verified CNF/LRAT impossibility proofs for finite orders (the order-25 path)."
+  }
+ ],
+ "fleet": [
+  {
+   "n": "742",
+   "lane": "REVIEW-742 · luna-review-742",
+   "status": "PARTIAL",
+   "tone": "warn",
+   "what": "statement/static dependency audit passed, theorem did not compile",
+   "evidence": "targets/742/runs/proof-review/HANDOFF.md"
+  },
+  {
+   "n": "23",
+   "lane": "VERIFY-23 · luna-verify-23 · SOL-REVIEW-23",
+   "status": "PARTIAL",
+   "tone": "warn",
+   "what": "exact arithmetic replay passed; six mathematical interfaces not discharged; Sol review interrupted, no verdict",
+   "evidence": "targets/23/runs/baseline/HANDOFF.md"
+  },
+  {
+   "n": "647",
+   "lane": "REPLAY-647 · luna-replay-647",
+   "status": "handoff",
+   "tone": "muted",
+   "what": "C validation slice passed (55 closed, 41 open residues, one intentional Stage-1 axiom); Lean replay interrupted",
+   "evidence": "targets/647/runs/baseline/HANDOFF.md"
+  },
+  {
+   "n": "848",
+   "lane": "VERIFY-848 · luna-verify-848",
+   "status": "PARTIAL",
+   "tone": "warn",
+   "what": "fast verifier passed; kernel-package public gate failed (PDF bytes/hash disagree with manifest)",
+   "evidence": "targets/848/runs/baseline/HANDOFF.md"
+  }
+ ],
+ "seats": [
+  {
+   "label": "root Codex · Erdős manager (laptop, frozen)",
+   "tone": "muted"
+  },
+  {
+   "label": "luna-review-742 · partial",
+   "tone": "agents"
+  },
+  {
+   "label": "sol · reserved, not run",
+   "tone": "muted"
+  },
+  {
+   "label": "ERDOS-LEAD · mini · idle",
+   "tone": "agents",
+   "href": "/t/U22/"
+  }
+ ],
+ "timeline": {
+  "observed_at": "6 Sep 20:25 UTC+07",
+  "from": "2026-08-09 00:00",
+  "to": "2026-09-06 21:00",
+  "lanes": [
+   {
+    "id": "claims",
+    "label": "upstream",
+    "tone": "research"
+   },
+   {
+    "id": "lane",
+    "label": "review lane",
+    "tone": "agents"
+   },
+   {
+    "id": "decisions",
+    "label": "decisions",
+    "tone": "projects"
+   },
+   {
+    "id": "docs",
+    "label": "docs",
+    "tone": "clients"
+   },
+   {
+    "id": "words",
+    "label": "his words",
+    "tone": "now"
+   }
+  ],
+  "events": [
+   {
+    "at": "2026-08-10 07:36",
+    "lane": "claims",
+    "label": "Erdos742/Erdos742 tip 814289f2 (equality paper references)",
+    "href": "https://github.com/Erdos742/Erdos742/commit/814289f2eb4091ad39b7c456266f92cf82f38bce"
+   },
+   {
+    "at": "2026-08-30 16:05",
+    "lane": "docs",
+    "label": "AGENTS.md · operating rules"
+   },
+   {
+    "at": "2026-08-30 16:07",
+    "lane": "docs",
+    "label": "audits/easiest-targets.md: admit 742 first"
+   },
+   {
+    "at": "2026-08-30 16:08",
+    "lane": "docs",
+    "label": "audits/solver-repositories.md: 742 claimed Lean proof, poor turnkey reuse"
+   },
+   {
+    "at": "2026-08-30 16:09",
+    "lane": "lane",
+    "label": "goals/review-742-proof.md launched"
+   },
+   {
+    "at": "2026-08-30 16:20",
+    "lane": "lane",
+    "label": "build.log: lake update cloning Mathlib deps"
+   },
+   {
+    "at": "2026-08-30 16:21",
+    "lane": "lane",
+    "label": "build-timeout.exit 124"
+   },
+   {
+    "at": "2026-08-30 16:22",
+    "lane": "lane",
+    "label": "HANDOFF.md: PARTIAL, theorem did not compile"
+   },
+   {
+    "at": "2026-08-30 16:35",
+    "lane": "decisions",
+    "label": "DECISION-LOG: freeze laptop compute; CHECKPOINT; MAC-MINI handoff"
+   },
+   {
+    "at": "2026-09-06 04:32",
+    "lane": "docs",
+    "label": "connector recovery: erdos-742 historical ChatGPT readback (prose only)"
+   },
+   {
+    "at": "2026-09-06 16:50",
+    "lane": "words",
+    "label": "\"we need one for each ERDOS question\""
+   }
+  ]
+ },
+ "map": {
+  "centre": {
+   "label": "Erdős 742",
+   "href": "#top"
+  },
+  "types": [
+   {
+    "type": "reduction",
+    "label": "Reductions",
+    "tone": "research",
+    "items": [
+     {
+      "label": "Formal Conjectures 742 statement",
+      "href": "#problem",
+      "rel": "reference"
+     },
+     {
+      "label": "order 25 SAT / LRAT",
+      "href": "#close",
+      "rel": "finite path"
+     },
+     {
+      "label": "claimed Lean proof",
+      "href": "#certificate",
+      "rel": "under review"
+     }
+    ]
+   },
+   {
+    "type": "repo",
+    "label": "Repos",
+    "tone": "projects",
+    "items": [
+     {
+      "label": "Erdos742/Erdos742",
+      "href": "https://github.com/Erdos742/Erdos742",
+      "rel": "claim · no licence"
+     },
+     {
+      "label": "leansolving/leansms",
+      "href": "https://github.com/leansolving/leansms",
+      "rel": "Apache-2.0"
+     },
+     {
+      "label": "SISO_Research/erdos",
+      "rel": "workspace",
+      "private": true
+     }
+    ]
+   },
+   {
+    "type": "gate",
+    "label": "Gates",
+    "tone": "agents",
+    "items": [
+     {
+      "label": "statement fidelity · passed",
+      "href": "#certificate"
+     },
+     {
+      "label": "build · exit 124",
+      "href": "#certificate"
+     },
+     {
+      "label": "axiom print · not reached",
+      "href": "#certificate"
+     },
+     {
+      "label": "Sol review · not run",
+      "href": "#fleet"
+     }
+    ]
+   },
+   {
+    "type": "node",
+    "label": "Hosts",
+    "tone": "now",
+    "items": [
+     {
+      "label": "laptop · frozen 30 Aug",
+      "href": "#compute"
+     },
+     {
+      "label": "Mac Mini M4 · ERDOS-LEAD idle",
+      "href": "/t/U22/"
+     }
+    ]
+   }
+  ]
+ },
+ "related": [
+  {
+   "title": "Compute run · 2026-09-06-j2",
+   "href": "/t/U19/example/",
+   "type": "U19 compute run",
+   "tone": "research",
+   "why": "the run family a replay would be recorded in"
+  },
+  {
+   "title": "Nodes · Mac Mini M4",
+   "href": "/t/U22/",
+   "type": "U22 node",
+   "tone": "now",
+   "why": "the next host"
+  },
+  {
+   "title": "GQ-011 · God Question",
+   "href": "/t/U5/example/",
+   "type": "U5",
+   "tone": "research",
+   "why": "the plain God Question page; this family adds proof state"
+  },
+  {
+   "title": "erdosproblems.com/742",
+   "href": "https://www.erdosproblems.com/742",
+   "type": "external",
+   "tone": "research"
+  },
+  {
+   "title": "Formal Conjectures · 742.lean",
+   "href": "https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/742.lean",
+   "type": "external",
+   "tone": "research"
+  },
+  {
+   "title": "Source · 16:50",
+   "href": "/t/U18/example/",
+   "type": "U18 source",
+   "tone": "agents",
+   "why": "\"one for each ERDOS question\""
+  }
+ ],
+ "quickstart": {
+  "entry": {
+   "path": "SISO_Research/erdos/AGENTS.md → MAC-MINI-HANDOFF-2026-08-30.md → tasks/TASKS.json → SISO_Research/erdos/targets/742/runs/proof-review/HANDOFF.md"
+  },
+  "owner": {
+   "name": "Erdős manager (root Codex, frozen) · ERDOS-LEAD on the Mini, idle",
+   "last": "30 Aug 16:35 (handoff) · 6 Sep 04:32 (recovery audit)"
+  },
+  "verification": "Open this page and see the problem, the proof-logging status (unverified, amber: statement audit passed, build exit 124, no axiom receipt) and the replay command with the receipt files it would produce.",
+  "commands": [
+   "cat SISO_Research/erdos/targets/742/runs/proof-review/HANDOFF.md",
+   "cat SISO_Research/erdos/targets/742/runs/proof-review/build-timeout.exit   # 124",
+   "jq '.tasks[]|select(.id==\"REVIEW-742\")' SISO_Research/erdos/tasks/TASKS.json",
+   "shasum -a 256 SISO_Research/erdos/targets/742/runs/proof-review/Erdos742/Erdos742.lean   # 355a8539…"
+  ]
+ }
+}
