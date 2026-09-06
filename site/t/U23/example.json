@@ -33,7 +33,7 @@
     "subtitle": "Every page family the Great Library and every SISO front door needs. Click one: why it exists, the twelve things it carries, what to rob, the data it renders, and the rendered example in the CRM shell.",
     "badges": [
       {
-        "label": "18 of 24 built",
+        "label": "19 of 24 built",
         "tone": "warn",
         "dot": true
       },
@@ -52,7 +52,7 @@
     ],
     "status": {
       "kicker": "Build order",
-      "value": "18 landed · 6 to go",
+      "value": "19 landed · 5 to go",
       "note": "Shell first because every page sits in it. Parts second so nothing drifts. Gallery third so he judges each template as it lands. Then the project one pager, the God Question with its compute run, the Work page, Agent Zero, the landing, and the records.",
       "facts": [
         {
@@ -136,7 +136,7 @@
       "href": "#order"
     },
     {
-      "value": 18,
+      "value": 19,
       "label": "built and published",
       "tone": "warn",
       "href": "/?status=built#order"
@@ -642,12 +642,12 @@
         "title": "Private stub",
         "summary": "Private Work stub (client + personal) <span class=\"faint\">· 4 private repos in catalog (27 total) + siso-source + oracle-source/sessions + halocrm-mirror + bykonz-scout-review + actionmodel-private</span>",
         "href": "/t/U11/",
-        "status": "spec",
+        "status": "built",
         "tone": "clients",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",

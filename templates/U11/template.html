@@ -1,0 +1,43 @@
+{{!-- U11 · Private stub — how a private thing is visible without leaking (his 16:38: "even client stock will have the listing
+     of the repos even if they private"). Purpose · owner + relationship · why it exists · how access works · the repo listed,
+     locked · dated activity. Claim ceiling: nothing from inside the repo. Tone: clients = amber; personal = violet (meta.stream). --}}
+{{> heading heading}}
+<section class="siso-section" id="purpose">
+  {{> section sections.purpose}}
+  <p class="doc-lede">{{{purpose.text}}}</p>
+  {{#if purpose.words}}<div style="margin-top:var(--crm-space-4)">{{> words purpose.words}}</div>{{/if}}
+</section>
+<section class="siso-section" id="owner">
+  {{> section sections.owner}}
+  <dl class="kv">{{#each owner}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+</section>
+<section class="siso-section" id="why">
+  {{> section sections.why}}
+  {{> contents why}}
+</section>
+<section class="siso-section" id="access">
+  {{> section sections.access}}
+  <div class="grid grid-3">{{#each access.roles}}<div class="card card--strip tone-{{tone}}"><span class="kicker" style="color:var(--tone)">{{icon icon}} {{who}}</span><p class="small" style="margin-top:6px">{{{gets}}}</p></div>{{/each}}</div>
+  {{#if access.steps}}<div class="flow" style="margin-top:var(--crm-space-4)">{{#each access.steps}}<div class="flow-step"><b>{{label}}</b><span>{{{what}}}</span></div>{{/each}}</div>{{/if}}
+  {{#if access.never}}<div class="card" style="margin-top:var(--crm-space-4)"><span class="kicker" style="color:var(--accent-danger)">{{icon lock}} never on a public page</span><ul class="small" style="margin-top:6px">{{#each access.never}}<li>{{{.}}}</li>{{/each}}</ul></div>{{/if}}
+</section>
+<section class="siso-section" id="repo">
+  {{> section sections.repo}}
+  {{> repos repos}}
+</section>
+<section class="siso-section" id="activity">
+  {{> section sections.activity}}
+  {{> activity activity}}
+</section>
+<section class="siso-section" id="others">
+  {{> section sections.others}}
+  {{#if others}}<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Repo</th><th>Work</th><th>Kind</th><th>Status</th><th>Last push</th></tr></thead><tbody>{{#each others}}<tr><td>{{icon lock}} {{#if href}}<a href="{{href}}">{{repo}}</a>{{else}}{{repo}}{{/if}}</td><td>{{#if work_href}}<a href="{{work_href}}">{{work}}</a>{{else}}{{work}}{{/if}}</td><td class="small">{{kind}}</td><td><span class="chip tone-{{tone}}">{{status}}</span></td><td class="mono small muted">{{pushed}}</td></tr>{{/each}}</tbody></table></div>{{else}}<div class="empty">No other private repo is listed in the catalogue.</div>{{/if}}
+</section>
+<section class="siso-section" id="related">
+  {{> section sections.related}}
+  {{> related related}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

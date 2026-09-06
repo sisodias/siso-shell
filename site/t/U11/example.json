@@ -1,0 +1,442 @@
+{
+ "meta": {
+  "title": "halocrm-mirror · private stub",
+  "description": "Private stub for sisodias/halocrm-mirror (HALO CRM, ofm account): purpose, owner and relationship, why it exists, how access works, the repo listed and locked, dated activity. Nothing from inside the repo.",
+  "stream": "clients",
+  "crumb": [
+   {
+    "label": "Templates",
+    "href": "/"
+   },
+   {
+    "label": "U11 · Private stub",
+    "href": "/t/U11/"
+   },
+   {
+    "label": "halocrm-mirror"
+   }
+  ],
+  "actions": [
+   {
+    "label": "account · ofm",
+    "href": "/t/U15/example/",
+    "icon": "handshake"
+   },
+   {
+    "label": "seat · HALO-ZERO",
+    "href": "/t/U17/example/",
+    "icon": "bot"
+   }
+  ],
+  "source": "gh api repos/sisodias/halocrm-mirror (+ branches, contributors, commits) 6 Sep 20:16 UTC+07 · plan/projects.json#halo · handoffs/HALO.md · plan/decisions.json D-21 D-24 · OWNERS.md HALO-ZERO lines (31) · source/2026-09-06-1638 · Library site/catalog.json repositories[] (27, 4 private)"
+ },
+ "heading": {
+  "breadcrumb": [
+   {
+    "label": "Works",
+    "href": "https://great-library-of-siso.pages.dev/works/"
+   },
+   {
+    "label": "private"
+   },
+   {
+    "label": "halocrm-mirror"
+   }
+  ],
+  "kicker": "private stub <span class=\"sep\">·</span> client <span class=\"sep\">·</span> <span class=\"dim\">account ofm · HALO CRM</span>",
+  "title": "halocrm-mirror",
+  "subtitle": "The private mirror where SISO rebuilds the client's CRM natively. It exists, it is owned, it moves; what is inside it does not render here. In his words: <em>\"even client stock will have the listing of the repos even if they private\"</em>.",
+  "badges": [
+   {
+    "label": "private",
+    "tone": "clients",
+    "dot": true,
+    "icon": "lock"
+   },
+   {
+    "label": "client · ofm",
+    "tone": "clients",
+    "href": "/t/U15/example/"
+   },
+   {
+    "label": "owner · HALO lane (Shaan)",
+    "tone": "agents",
+    "href": "#owner"
+   },
+   {
+    "label": "last push 6 Sep 13:16",
+    "tone": "now",
+    "href": "#activity"
+   },
+   {
+    "label": "no payload on this page",
+    "tone": "muted",
+    "icon": "lock"
+   }
+  ],
+  "status": {
+   "kicker": "Dated activity",
+   "value": "6 Sep 13:16 · push 09d69f5",
+   "note": "Last push to the working branch (gh api pushed_at 06:16:50Z). Native lane idle since; Phase 1 continues from the ChatGPT web UI (D-21). 31 HALO-ZERO writebacks 5 Sep 19:58 → 6 Sep 13:17.",
+   "facts": [
+    {
+     "k": "repo",
+     "v": "<code>sisodias/halocrm-mirror</code> · private"
+    },
+    {
+     "k": "created",
+     "v": "29 Aug 2026 06:02Z"
+    },
+    {
+     "k": "branches",
+     "v": "50 · working branch <code>codex/private-rewrite-83ab4ba</code>"
+    },
+    {
+     "k": "upstream",
+     "v": "<code>camronkellman/halocrm</code> · push disabled by name"
+    },
+    {
+     "k": "Library",
+     "v": "not in catalog.json (the 4 private rows there are agency repos)"
+    }
+   ]
+  }
+ },
+ "sections": {
+  "purpose": {
+   "n": "01",
+   "title": "Public-safe purpose"
+  },
+  "owner": {
+   "n": "02",
+   "title": "Owner · relationship"
+  },
+  "why": {
+   "n": "03",
+   "title": "Why it exists",
+   "sub": "the decisions and words that made it, dated"
+  },
+  "access": {
+   "n": "04",
+   "title": "How access works",
+   "sub": "who sees what; the route to more"
+  },
+  "repo": {
+   "n": "05",
+   "title": "The repo, listed and locked"
+  },
+  "activity": {
+   "n": "06",
+   "title": "Dated activity",
+   "sub": "from OWNERS.md and gh api; public-safe lines only"
+  },
+  "others": {
+   "n": "07",
+   "title": "Other private repos the Library lists",
+   "sub": "catalog.json repositories[] visibility=private · 4 of 27; each gets this page shape"
+  },
+  "related": {
+   "n": "08",
+   "title": "Related"
+  },
+  "agent": {
+   "n": "09",
+   "title": "Agent entry"
+  }
+ },
+ "purpose": {
+  "text": "A read-only study mirror of the client's CRM, then the branch where SISO rewrites it natively (Postgres, S3-compatible storage, staff and creator roles). The repo description reads: <em>\"Read-only study mirror of camronkellman/halocrm (HALO Angels CRM). Analysis only — never push upstream.\"</em> The rewrite lives on one working branch; <code>main</code> is still the 17 Aug import.",
+  "words": [
+   {
+    "text": "even client stock will have the listing of the repos even if they private or what like it just our infrastructure database",
+    "who": "Shaan → Fable (AGENT-ZERO) · 00_AGENT_ZERO/source/2026-09-06-1638-…",
+    "at": "6 Sep 16:38"
+   }
+  ]
+ },
+ "owner": [
+  {
+   "k": "owner",
+   "v": "the HALO lane: <a href=\"/t/U17/example/\">HALO-ZERO</a> (gpt-6-astra, native) 5 Sep 12:01 → 6 Sep 13:16; since D-21 the ChatGPT web UI on the same planner. Shaan decides."
+  },
+  {
+   "k": "client",
+   "v": "<a href=\"/t/U14/example/\">Camron</a> · account <a href=\"/t/U15/example/\">ofm</a> (HALO + Oracle are one client, his 5 Sep 22:20)"
+  },
+  {
+   "k": "relationship",
+   "v": "client deliverable; the upstream repo is the client's (<code>camronkellman/halocrm</code>, sole contributor on <code>main</code>); the mirror is SISO's workbench"
+  },
+  {
+   "k": "rights",
+   "v": "client code; no licence asserted here"
+  },
+  {
+   "k": "front door",
+   "v": "<code>.agents/PAGE.md</code>, <code>HANDOFF.md</code>, <code>page.url</code> inside the repo at 09d69f5 (private)"
+  }
+ ],
+ "why": {
+  "items": [
+   {
+    "label": "Study the client's CRM without touching it",
+    "what": "mirror created 29 Aug 06:02Z as read-only; push to upstream disabled by name",
+    "state": "29 Aug",
+    "tone": "muted"
+   },
+   {
+    "label": "Rewrite natively on a private branch",
+    "what": "HALO-ZERO brief 5 Sep 12:01: \"take over the current build intelligently … full continuing HALO ownership\"; 37 commits 5–6 Sep, P1-01…P1-06 done, P1-07 verified slice",
+    "state": "5–6 Sep",
+    "tone": "now"
+   },
+   {
+    "label": "D-21 · stop at the checkpoint, hand to the web UI",
+    "what": "his 13:00: <em>\"halo has got to stop when it reaches a checkpoint … get the web ui to run all of these with our new plugin\"</em>; native lane idle at 4d24d1b",
+    "state": "6 Sep 13:00",
+    "tone": "warn"
+   },
+   {
+    "label": "D-24 · the .agents spine pushed before idling",
+    "what": "09d69f5 adds PAGE, HANDOFF, page.url; then idle",
+    "state": "6 Sep 13:16",
+    "tone": "now"
+   },
+   {
+    "label": "This stub",
+    "what": "the Library shows the repo exists, who owns it and when it moved; the content stays behind the client's and SISO's access",
+    "state": "6 Sep",
+    "tone": "clients"
+   }
+  ]
+ },
+ "access": {
+  "roles": [
+   {
+    "who": "public · this page",
+    "gets": "purpose, owner, relationship, dated activity, the repo name marked private. No file, roster, route, token or figure.",
+    "tone": "clients",
+    "icon": "globe"
+   },
+   {
+    "who": "agent with the ofm account",
+    "gets": "the account repo's <code>.agents/PAGE.md</code>, then this repo's <code>.agents/PAGE.md</code> and <code>HANDOFF.md</code> at 09d69f5; the planner in <code>build/plan/</code>.",
+    "tone": "agents",
+    "icon": "bot"
+   },
+   {
+    "who": "the client",
+    "gets": "their upstream repo; a page.url they can open is still owed (today it is the mirror repo URL, 404 logged out).",
+    "tone": "projects",
+    "icon": "user"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Ask",
+    "what": "the account owner (Shaan) grants GitHub access to <code>sisodias/halocrm-mirror</code>; there is no self-serve route"
+   },
+   {
+    "label": "Read",
+    "what": "<code>.agents/HANDOFF.md</code> first, then <code>build/plan/LEDGER.md</code>; do not mistake route-walk success for DONE (handoffs/HALO.md)"
+   },
+   {
+    "label": "Write",
+    "what": "on the working branch only; never push upstream; OWNERS.md line per landed slice"
+   }
+  ],
+  "never": [
+   "creators, staff, chatters or any roster inside HALO",
+   "routing, auth material, device tokens, hosts",
+   "engagement terms or money",
+   "file contents or diffs from the private branch"
+  ]
+ },
+ "repos": [
+  {
+   "repo": "sisodias/halocrm-mirror",
+   "private": true,
+   "branch": "codex/private-rewrite-83ab4ba",
+   "head": "09d69f5",
+   "head_at": "2026-09-06 13:16 UTC+07",
+   "access": "client account",
+   "rights": "client",
+   "what": "Private mirror of the client's CRM. 50 branches; <code>main</code> at <code>347329a</code> (17 Aug import, author Camron Kellman); 545 commits on the working branch; size 68,277 KB (gh api). Nothing else about the inside renders here."
+  }
+ ],
+ "activity": {
+  "observed_at": "6 Sep 20:16 UTC+07",
+  "coverage": "gh api pushed_at · OWNERS.md HALO-ZERO lines (31 of 31) · handoffs/HALO.md · public-safe",
+  "days": [
+   {
+    "w": 0.25,
+    "title": "29 Aug · created"
+   },
+   {
+    "w": 0.1,
+    "title": "30 Aug–4 Sep · quiet"
+   },
+   {
+    "w": 0.55,
+    "title": "5 Sep · 3 writebacks"
+   },
+   {
+    "w": 1,
+    "title": "6 Sep · 28 writebacks, last push 13:16"
+   }
+  ],
+  "items": [
+   {
+    "at": "2026-09-06 13:16",
+    "who": "HALO-ZERO",
+    "what": "push 09d69f5: .agents PAGE, HANDOFF, page.url (D-24 step 3); native lane idle",
+    "href": "/t/U17/example/",
+    "tone": "agents"
+   },
+   {
+    "at": "2026-09-06 12:57",
+    "who": "HALO-ZERO",
+    "what": "D-21 checkpoint 4d24d1b: idle at P1-07 verified slice, not done; route walks 63/63",
+    "tone": "agents"
+   },
+   {
+    "at": "2026-09-06 11:49",
+    "who": "HALO-ZERO",
+    "what": "authenticated attachment downloads verified (87d7fea)",
+    "tone": "agents"
+   },
+   {
+    "at": "2026-09-06 09:57",
+    "who": "HALO-ZERO",
+    "what": "Customs in integer USD cents with live scoped SQL projection (8efb0aa)",
+    "tone": "agents"
+   },
+   {
+    "at": "2026-09-06 00:39",
+    "who": "HALO-ZERO",
+    "what": "identity: Postgres account and admin workflows (27b8c0f, P1-01)",
+    "tone": "agents"
+   },
+   {
+    "at": "2026-09-05 19:58",
+    "who": "HALO-ZERO",
+    "what": "first writeback of the seat",
+    "tone": "agents"
+   },
+   {
+    "at": "2026-09-05 12:01",
+    "who": "AGENT-ZERO",
+    "what": "HALO-ZERO born (briefs/HALO-ZERO.md)",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-08-29 13:02",
+    "who": "sisodias",
+    "what": "repo created as a read-only study mirror",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-08-17 21:45",
+    "who": "Camron Kellman",
+    "what": "main: the last upstream commit mirrored (347329a)",
+    "tone": "clients"
+   }
+  ]
+ },
+ "others": [
+  {
+   "repo": "sisodias/siso-agent-playbook",
+   "href": null,
+   "work": "SISO Agent Playbook",
+   "work_href": "https://great-library-of-siso.pages.dev/works/siso-agent-playbook/",
+   "kind": "playbook · agency",
+   "status": "linked · 1.0.0+6ee572b",
+   "tone": "now",
+   "pushed": "2026-09-05 21:13"
+  },
+  {
+   "repo": "sisodias/siso-knowledge",
+   "work": "SISO Knowledge",
+   "work_href": "https://great-library-of-siso.pages.dev/works/siso-knowledge/",
+   "kind": "knowledge_system · agency",
+   "status": "linked · public-architecture+333447a",
+   "tone": "now",
+   "pushed": "2026-08-31 12:31"
+  },
+  {
+   "repo": "sisodias/actionmodel-private",
+   "work": "Action Model · Assembly Framework",
+   "work_href": "https://great-library-of-siso.pages.dev/works/actionmodel-assembly-framework/",
+   "kind": "project · client actionmodel",
+   "status": "staging",
+   "tone": "warn",
+   "pushed": "2026-09-06 14:20"
+  },
+  {
+   "repo": "sisodias/siso-connector-research",
+   "work": "Action Model · Connector Research",
+   "work_href": "https://great-library-of-siso.pages.dev/works/actionmodel-connector-research/",
+   "kind": "project · client actionmodel",
+   "status": "staging",
+   "tone": "warn",
+   "pushed": "2026-08-27 11:18"
+  }
+ ],
+ "related": [
+  {
+   "title": "ofm · client account",
+   "href": "/t/U15/example/",
+   "type": "U15",
+   "tone": "clients",
+   "why": "the account this repo belongs to"
+  },
+  {
+   "title": "Camron",
+   "href": "/t/U14/example/",
+   "type": "U14 person",
+   "tone": "clients"
+  },
+  {
+   "title": "HALO-ZERO",
+   "href": "/t/U17/example/",
+   "type": "U17 seat",
+   "tone": "agents",
+   "why": "the lane that made the 37 commits"
+  },
+  {
+   "title": "HALO · timeline",
+   "href": "/t/U21/example/",
+   "type": "U21",
+   "tone": "projects",
+   "why": "57 events, 5–6 Sep"
+  },
+  {
+   "title": "D-21 · HALO off the Codex bucket",
+   "href": "/t/U16/",
+   "type": "U16 decision",
+   "tone": "agents"
+  },
+  {
+   "title": "Action Model · Assembly Framework",
+   "href": "https://great-library-of-siso.pages.dev/works/actionmodel-assembly-framework/",
+   "type": "Library Work · private source",
+   "tone": "projects",
+   "why": "the Library's existing private-source Work; same stub rule"
+  }
+ ],
+ "quickstart": {
+  "entry": {
+   "path": "registry record with visibility=private → this stub; inside: <halocrm-mirror>/.agents/PAGE.md (private, 09d69f5)"
+  },
+  "owner": {
+   "name": "HALO lane · web UI since D-21 · Shaan decides",
+   "last": "6 Sep 13:16"
+  },
+  "verification": "Open this page logged out and see the purpose, the owner, \"private mirror\" and a dated activity line; no code, roster, route, token or money anywhere on it.",
+  "commands": [
+   "gh api repos/sisodias/halocrm-mirror --jq '{private,pushed_at,created_at,description}'",
+   "grep -c '· HALO-ZERO ·' 00_AGENT_ZERO/ledger/OWNERS.md",
+   "jq '.repositories[]|select(.visibility==\"private\")|.repository' Great_Library_of_SISO/site/catalog.json"
+  ]
+ }
+}
