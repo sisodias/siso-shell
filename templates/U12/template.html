@@ -1,0 +1,37 @@
+{{!-- U12 · Release — what is pinned is what an agent can rely on. Exact version + scope · source locators (each checked) ·
+     evidence · distribution + rights (per-release state, never inferred from catalog presence: docs/registry-model.md §Releases) ·
+     what it pins, linked to its Work · pinned-at timeline. gls records only; immutable history untouched. --}}
+{{> heading heading}}
+<section class="siso-section" id="version">
+  {{> section sections.version}}
+  <dl class="kv">{{#each version}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/each}}</dl>
+</section>
+<section class="siso-section" id="locators">
+  {{> section sections.locators}}
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Artifact</th><th>Locator</th><th>Revision · integrity</th><th>Recorded</th><th>Checked</th></tr></thead><tbody>{{#each locators}}<tr><td><span class="kicker">{{kind}}</span><br><span class="small muted">{{availability}} · {{owner}}</span></td><td class="small"><a href="{{href}}">{{label}}</a></td><td class="mono small">{{revision}}<br><span class="muted">{{integrity}}</span></td><td class="mono small muted">{{recorded}}</td><td><span class="chip tone-{{tone}}">{{check}}</span></td></tr>{{/each}}</tbody></table></div>
+  {{#if locator_note}}<div class="card" style="margin-top:var(--crm-space-4)"><span class="kicker" style="color:var(--accent-tasks)">{{icon alert-triangle}} locator note</span><p class="small" style="margin-top:6px">{{{locator_note}}}</p></div>{{/if}}
+</section>
+<section class="siso-section" id="evidence">
+  {{> section sections.evidence}}
+  {{> evidence evidence}}
+</section>
+<section class="siso-section" id="rights">
+  {{> section sections.rights}}
+  <div class="grid grid-3">{{#each rights}}<div class="card card--strip tone-{{tone}}"><span class="kicker" style="color:var(--tone)">{{icon icon}} {{label}}</span><b style="display:block;margin-top:4px;color:var(--crm-color-text-strong)">{{state}}</b><span class="small muted">{{{reason}}}</span>{{#if receipt}}<div class="small" style="margin-top:6px">{{#if href}}<a href="{{href}}">{{receipt}}</a>{{else}}{{receipt}}{{/if}}</div>{{/if}}</div>{{/each}}</div>
+</section>
+<section class="siso-section" id="work">
+  {{> section sections.work}}
+  {{> related work}}
+</section>
+<section class="siso-section" id="siblings">
+  {{> section sections.siblings}}
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Version</th><th>Title</th><th>Released</th><th></th></tr></thead><tbody>{{#each siblings}}<tr{{#if this_one}} style="background:rgb(var(--stream-rgb) / 0.08)"{{/if}}><td class="mono">{{version}}</td><td class="small">{{title}}</td><td class="mono small muted">{{at}}</td><td>{{#if this_one}}<span class="chip tone-research">this page</span>{{/if}}</td></tr>{{/each}}</tbody></table></div>
+</section>
+<section class="siso-section" id="timeline">
+  {{> section sections.timeline}}
+  {{> timeline timeline}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>

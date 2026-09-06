@@ -33,7 +33,7 @@
     "subtitle": "Every page family the Great Library and every SISO front door needs. Click one: why it exists, the twelve things it carries, what to rob, the data it renders, and the rendered example in the CRM shell.",
     "badges": [
       {
-        "label": "21 of 24 built",
+        "label": "22 of 24 built",
         "tone": "warn",
         "dot": true
       },
@@ -52,7 +52,7 @@
     ],
     "status": {
       "kicker": "Build order",
-      "value": "21 landed · 3 to go",
+      "value": "22 landed · 2 to go",
       "note": "Shell first because every page sits in it. Parts second so nothing drifts. Gallery third so he judges each template as it lands. Then the project one pager, the God Question with its compute run, the Work page, Agent Zero, the landing, and the records.",
       "facts": [
         {
@@ -136,7 +136,7 @@
       "href": "#order"
     },
     {
-      "value": 21,
+      "value": 22,
       "label": "built and published",
       "tone": "warn",
       "href": "/?status=built#order"
@@ -714,12 +714,12 @@
         "title": "Release",
         "summary": "Release / Snapshot / Assembly record <span class=\"faint\">· 86 releases · 40 snapshots · 2 assemblies · 8 source inventories</span>",
         "href": "/t/U12/",
-        "status": "spec",
+        "status": "built",
         "tone": "projects",
         "tags": [
           {
             "key": "status",
-            "value": "spec"
+            "value": "built"
           },
           {
             "key": "host",

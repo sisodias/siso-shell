@@ -1,0 +1,527 @@
+{
+ "meta": {
+  "title": "siso-foundry 0.4.0+233edef · release",
+  "description": "Release Manifest gls:release:47922651 of the Work SISO Foundry: exact version and scope, each source locator checked live, evidence, per-release distribution and rights states copied from the record, the Work it pins, its sibling releases, pinned-at timeline.",
+  "stream": "projects",
+  "crumb": [
+   {
+    "label": "Templates",
+    "href": "/"
+   },
+   {
+    "label": "U12 · Release",
+    "href": "/t/U12/"
+   },
+   {
+    "label": "0.4.0+233edef"
+   }
+  ],
+  "actions": [
+   {
+    "label": "Work · SISO Foundry",
+    "href": "/t/U3/example/",
+    "icon": "book-open"
+   },
+   {
+    "label": "record on GitHub",
+    "href": "https://github.com/sisodias/great-library-of-siso/blob/main/registry/releases/siso-foundry-233edef.json",
+    "icon": "file-json",
+    "external": true
+   }
+  ],
+  "source": "Great_Library_of_SISO/registry/releases/siso-foundry-233edef.json (commit 4ab8fbb, 2 Aug 23:37) · registry/works/siso-foundry.json · docs/registry-model.md §Releases · curl -I on every locator + gh api commits/233edef… 6 Sep 20:33 UTC+07"
+ },
+ "heading": {
+  "breadcrumb": [
+   {
+    "label": "Releases",
+    "href": "https://great-library-of-siso.pages.dev/works/siso-foundry/"
+   },
+   {
+    "label": "siso-foundry"
+   },
+   {
+    "label": "0.4.0+233edef"
+   }
+  ],
+  "kicker": "release <span class=\"sep\">·</span> <code>0.4.0+233edef</code> <span class=\"sep\">·</span> <span class=\"dim\">of SISO Foundry · immutable</span>",
+  "title": "SISO Foundry Agency OS value matrix",
+  "subtitle": "Foundry 0.4.0 promotes the first cross-agency value matrix from the recovered 9,636-repository evidence universe, with twenty scored applications, twelve evidence-qualified God Sources and zero outcome-proven claims.",
+  "badges": [
+   {
+    "label": "immutable",
+    "tone": "muted",
+    "icon": "lock"
+   },
+   {
+    "label": "MIT · verified",
+    "tone": "now",
+    "href": "#rights"
+   },
+   {
+    "label": "5 of 6 distribution states verified · portable experimental",
+    "tone": "warn",
+    "href": "#rights"
+   },
+   {
+    "label": "commit resolves",
+    "tone": "now",
+    "href": "#locators"
+   },
+   {
+    "label": "tag v0.4.0 · 404 today",
+    "tone": "blocked",
+    "href": "#locators"
+   },
+   {
+    "label": "released 2 Aug 2026 23:33",
+    "tone": "projects",
+    "href": "#timeline"
+   }
+  ],
+  "status": {
+   "kicker": "Pinned commit",
+   "value": "233edef · 2 Aug 2026 23:28 +07",
+   "note": "\"feat: publish Agency OS value matrix\" (gh api commits, 20:33). Resolves under sisodias/siso-foundry; the record's locators still name the pre-transfer owner Lordsisodia and return 404 verbatim.",
+   "facts": [
+    {
+     "k": "release id",
+     "v": "<code>gls:release:47922651-40fb-4da4-9d7c-5635957e9d19</code>"
+    },
+    {
+     "k": "work",
+     "v": "<a href=\"/t/U3/example/\">SISO Foundry</a> · <code>gls:work:ec664d93-df93-48c5-be40-5d0165886c01</code>"
+    },
+    {
+     "k": "released_at",
+     "v": "2026-08-02T23:33:05+07:00"
+    },
+    {
+     "k": "observed_at",
+     "v": "2026-08-02"
+    },
+    {
+     "k": "Library page",
+     "v": "<a href=\"https://great-library-of-siso.pages.dev/works/siso-foundry/releases/0.4.0+233edef/\">/works/siso-foundry/releases/0.4.0+233edef/</a> · 200"
+    }
+   ]
+  }
+ },
+ "sections": {
+  "version": {
+   "n": "01",
+   "title": "Exact version · scope"
+  },
+  "locators": {
+   "n": "02",
+   "title": "Source locators",
+   "sub": "as recorded, and whether each resolves today"
+  },
+  "evidence": {
+   "n": "03",
+   "title": "Evidence"
+  },
+  "rights": {
+   "n": "04",
+   "title": "Distribution · rights",
+   "sub": "per-release states from the record; \"catalog presence alone must not be translated into claims\" (registry-model.md)"
+  },
+  "work": {
+   "n": "05",
+   "title": "What it pins"
+  },
+  "siblings": {
+   "n": "06",
+   "title": "Sibling releases of the Work",
+   "sub": "9 Release Manifests for siso-foundry in registry/releases"
+  },
+  "timeline": {
+   "n": "07",
+   "title": "Pinned at"
+  },
+  "agent": {
+   "n": "08",
+   "title": "Agent entry"
+  }
+ },
+ "version": [
+  {
+   "k": "version",
+   "v": "<code>0.4.0+233edef</code> (semver + short revision)"
+  },
+  {
+   "k": "scope",
+   "v": "the Foundry software and the authored Agency OS value matrix (<code>intelligence/agency/value-matrix.json</code>: twenty repository-by-use-case-by-route entries)"
+  },
+  {
+   "k": "artifact",
+   "v": "1 · <code>source_archive</code> · public · owner Lordsisodia · ownership siso"
+  },
+  {
+   "k": "integrity",
+   "v": "<code>git_commit_sha1</code> · verified · <code>233edef7408afb95571ecd25f64189dfd92a6860</code>"
+  },
+  {
+   "k": "immutable",
+   "v": "true"
+  },
+  {
+   "k": "schema",
+   "v": "release · 1.0.0"
+  }
+ ],
+ "locators": [
+  {
+   "kind": "source archive",
+   "availability": "public",
+   "owner": "Lordsisodia (record)",
+   "label": "…/archive/233edef….tar.gz",
+   "href": "https://github.com/sisodias/siso-foundry/archive/233edef7408afb95571ecd25f64189dfd92a6860.tar.gz",
+   "revision": "233edef7408afb95571ecd25f64189dfd92a6860",
+   "integrity": "git_commit_sha1 · verified",
+   "recorded": "2026-08-02",
+   "check": "sisodias 200 · Lordsisodia 404",
+   "tone": "warn"
+  },
+  {
+   "kind": "release tag",
+   "availability": "public",
+   "owner": "Lordsisodia (record)",
+   "label": "releases/tag/v0.4.0",
+   "href": "https://github.com/sisodias/siso-foundry/releases/tag/v0.4.0",
+   "revision": "v0.4.0",
+   "integrity": "—",
+   "recorded": "2026-08-02",
+   "check": "404 on both owners",
+   "tone": "blocked"
+  },
+  {
+   "kind": "licence",
+   "availability": "public",
+   "owner": "Lordsisodia (record)",
+   "label": "blob/233edef…/LICENSE",
+   "href": "https://github.com/sisodias/siso-foundry/blob/233edef7408afb95571ecd25f64189dfd92a6860/LICENSE",
+   "revision": "233edef",
+   "integrity": "MIT",
+   "recorded": "2026-08-02",
+   "check": "sisodias 200",
+   "tone": "now"
+  },
+  {
+   "kind": "manifest",
+   "availability": "public",
+   "owner": "Lordsisodia (record)",
+   "label": "blob/233edef…/intelligence/agency/value-matrix.json",
+   "href": "https://github.com/sisodias/siso-foundry/blob/233edef7408afb95571ecd25f64189dfd92a6860/intelligence/agency/value-matrix.json",
+   "revision": "233edef",
+   "integrity": "—",
+   "recorded": "2026-08-02",
+   "check": "sisodias 200",
+   "tone": "now"
+  },
+  {
+   "kind": "commit",
+   "availability": "public",
+   "owner": "sisodias",
+   "label": "commit 233edef7408afb95571ecd25f64189dfd92a6860",
+   "href": "https://github.com/sisodias/siso-foundry/commit/233edef7408afb95571ecd25f64189dfd92a6860",
+   "revision": "233edef7408afb95571ecd25f64189dfd92a6860",
+   "integrity": "gh api 200 · \"feat: publish Agency OS value matrix\"",
+   "recorded": "checked 20:33",
+   "check": "200",
+   "tone": "now"
+  }
+ ],
+ "locator_note": "The record was written when the repo lived at <code>Lordsisodia/siso-foundry</code>; it now lives at <code>sisodias/siso-foundry</code> (the Work record already points there, revision main@11f4595). The commit, archive, LICENSE and manifest resolve under the new owner; the <code>v0.4.0</code> tag does not exist on either (gh api releases/tags and git/ref/tags both 404). The manifest is immutable, so this page reports the drift instead of editing it; a new Release with corrected locators is the gls route.",
+ "evidence": {
+  "facts": [
+   {
+    "claim": "Foundry 0.4.0 promotes the first cross-agency value matrix from the recovered 9,636-repository evidence universe, with twenty scored applications, twelve evidence-qualified God Sources and zero outcome-proven claims.",
+    "receipt": "release_receipt · https://github.com/Lordsisodia/siso-foundry/releases/tag/v0.4.0",
+    "href": "https://github.com/sisodias/siso-foundry/releases/tag/v0.4.0",
+    "at": "2026-08-02"
+   },
+   {
+    "claim": "Thirty Python files compiled, three campaign tests passed, all matrix formula and God Source evidence gates passed, and the publication scan passed.",
+    "receipt": "repo-check:siso-foundry:233edef7408afb95571ecd25f64189dfd92a6860",
+    "at": "2026-08-02"
+   },
+   {
+    "claim": "Twenty repository-by-use-case-by-route entries record value, feasibility, priority, evidence maturity, authority groups, agent operations and falsifiable next gates.",
+    "receipt": "source_review · value-matrix.json at 233edef",
+    "href": "https://github.com/sisodias/siso-foundry/blob/233edef7408afb95571ecd25f64189dfd92a6860/intelligence/agency/value-matrix.json",
+    "at": "2026-08-02"
+   },
+   {
+    "claim": "Commit 233edef7 exists on sisodias/siso-foundry, committed 2 Aug 2026 16:28Z: \"feat: publish Agency OS value matrix\".",
+    "receipt": "gh api repos/sisodias/siso-foundry/commits/233edef…",
+    "at": "6 Sep 20:33 UTC+07"
+   }
+  ],
+  "proposals": [
+   {
+    "claim": "Register a successor Release whose locators name sisodias/siso-foundry and drop the missing tag, then mark this one superseded.",
+    "why": "immutable history stays; the drift is recorded here and in the Library's own verification gate when it next runs"
+   }
+  ],
+  "limits": [
+   "\"zero outcome-proven claims\" is the record's own wording: the matrix scores applications, it proves none.",
+   "The 9,636-repository evidence universe and operational corpora are outside this release (portable: experimental).",
+   "Distribution states are copied from the record dated 2026-08-02; only the locator checks are from today."
+  ],
+  "version": {
+   "label": "4ab8fbb",
+   "href": "https://github.com/sisodias/great-library-of-siso/commit/4ab8fbb",
+   "at": "2 Aug 2026 23:37 +07 · registry: select Foundry Agency value matrix"
+  }
+ },
+ "rights": [
+  {
+   "label": "licence",
+   "state": "MIT · verified",
+   "tone": "now",
+   "icon": "scale",
+   "reason": "The Foundry software and authored value-matrix package are MIT licensed; upstream repositories and external data-plane assets retain their own rights.",
+   "receipt": "LICENSE at 233edef (record: Lordsisodia path; resolves under sisodias)",
+   "href": "https://github.com/sisodias/siso-foundry/blob/233edef7408afb95571ecd25f64189dfd92a6860/LICENSE"
+  },
+  {
+   "label": "addressable",
+   "state": "verified",
+   "tone": "now",
+   "icon": "check",
+   "reason": "The value matrix and GitHub release are pinned to an exact public commit.",
+   "receipt": "evidence locator",
+   "href": "https://github.com/sisodias/siso-foundry/releases/tag/v0.4.0"
+  },
+  {
+   "label": "archive downloadable",
+   "state": "verified",
+   "tone": "now",
+   "icon": "check",
+   "reason": "The public code and intelligence package have a commit-scoped source archive; operational corpus payloads remain outside Git.",
+   "receipt": "evidence locator",
+   "href": "https://github.com/sisodias/siso-foundry/archive/233edef7408afb95571ecd25f64189dfd92a6860.tar.gz"
+  },
+  {
+   "label": "manifest resolvable",
+   "state": "verified",
+   "tone": "now",
+   "icon": "check",
+   "reason": "The matrix is machine-readable and carries its scoring model, evidence states, routes, proof gates and source-universe boundary.",
+   "receipt": "evidence locator",
+   "href": "https://github.com/sisodias/siso-foundry/blob/233edef7408afb95571ecd25f64189dfd92a6860/intelligence/agency/value-matrix.json"
+  },
+  {
+   "label": "installable",
+   "state": "verified",
+   "tone": "now",
+   "icon": "check",
+   "reason": "The repository gate validates source, campaigns, Agency manifests, score arithmetic, evidence thresholds and publication safety.",
+   "receipt": "repo-check:siso-foundry:233edef7408afb95571ecd25f64189dfd92a6860"
+  },
+  {
+   "label": "forkable",
+   "state": "verified",
+   "tone": "now",
+   "icon": "check",
+   "reason": "The source, scoring contract, first decision tranche and verifier are public and MIT licensed.",
+   "receipt": "evidence locator",
+   "href": "https://github.com/sisodias/siso-foundry/blob/233edef7408afb95571ecd25f64189dfd92a6860/intelligence/agency/VALUE-MATRIX.md"
+  },
+  {
+   "label": "portable",
+   "state": "experimental",
+   "tone": "warn",
+   "icon": "flask-conical",
+   "reason": "The decision contract and publication-safe evidence are portable; the underlying 9,636-repository ledger and larger operational corpora remain externally owned and unreleased.",
+   "receipt": "repo-check:siso-foundry:233edef7408afb95571ecd25f64189dfd92a6860"
+  }
+ ],
+ "work": [
+  {
+   "title": "SISO Foundry",
+   "href": "/t/U3/example/",
+   "type": "U3 Work · application · active",
+   "tone": "projects",
+   "why": "gls:work:ec664d93 · current locator main@11f4595 (6 Sep); this release pins an earlier revision"
+  },
+  {
+   "title": "Library · siso-foundry",
+   "href": "https://great-library-of-siso.pages.dev/works/siso-foundry/",
+   "type": "Library Work page",
+   "tone": "projects",
+   "why": "the live page links this revision twice (matrix and God Sources)"
+  },
+  {
+   "title": "Foundry industry records · U8",
+   "href": "/t/U8/example/",
+   "type": "U8 industry",
+   "tone": "clients",
+   "why": "the 0.5.1+11f4595 release that followed (17 industry records)"
+  },
+  {
+   "title": "Compute run · U19",
+   "href": "/t/U19/example/",
+   "type": "U19",
+   "tone": "research",
+   "why": "where a replay of the repo gate would be recorded"
+  }
+ ],
+ "siblings": [
+  {
+   "version": "registry-seed-2026-07-30",
+   "title": "SISO Foundry metadata seed",
+   "at": "2026-07-30 00:00",
+   "this_one": false
+  },
+  {
+   "version": "main+1ec5890",
+   "title": "SISO Foundry initial public source boundary",
+   "at": "2026-07-30 04:44",
+   "this_one": false
+  },
+  {
+   "version": "main+f6afca0",
+   "title": "SISO Foundry identity-sanitized source release",
+   "at": "2026-07-30 06:24",
+   "this_one": false
+  },
+  {
+   "version": "main+fd7d270",
+   "title": "SISO Foundry repository header release",
+   "at": "2026-07-30 21:08",
+   "this_one": false
+  },
+  {
+   "version": "0.2.0+d29480a",
+   "title": "SISO Foundry resumable public source campaigns",
+   "at": "2026-08-02 00:15",
+   "this_one": false
+  },
+  {
+   "version": "0.3.0+8c6eb30",
+   "title": "SISO Foundry Agency source intelligence",
+   "at": "2026-08-02 22:53",
+   "this_one": false
+  },
+  {
+   "version": "0.4.0+233edef",
+   "title": "SISO Foundry Agency OS value matrix",
+   "at": "2026-08-02 23:33",
+   "this_one": true
+  },
+  {
+   "version": "0.5.1+b28b0f7",
+   "title": "SISO Foundry Agency OS coverage inventory",
+   "at": "2026-08-03 02:01",
+   "this_one": false
+  },
+  {
+   "version": "0.5.1+11f4595",
+   "title": "Foundry industry and observed-value research",
+   "at": "2026-09-06 06:15",
+   "this_one": false
+  }
+ ],
+ "timeline": {
+  "observed_at": "2026-09-06 20:33 UTC+07",
+  "from": "2026-07-29 12:00",
+  "to": "2026-09-07 00:00",
+  "lanes": [
+   {
+    "id": "releases",
+    "label": "releases",
+    "tone": "projects"
+   },
+   {
+    "id": "commits",
+    "label": "pinned commits",
+    "tone": "research"
+   },
+   {
+    "id": "registry",
+    "label": "registry",
+    "tone": "muted"
+   }
+  ],
+  "events": [
+   {
+    "at": "2026-07-30 00:00",
+    "lane": "releases",
+    "label": "registry-seed-2026-07-30 · SISO Foundry metadata seed"
+   },
+   {
+    "at": "2026-07-30 04:44",
+    "lane": "releases",
+    "label": "main+1ec5890 · SISO Foundry initial public source boundary"
+   },
+   {
+    "at": "2026-07-30 06:24",
+    "lane": "releases",
+    "label": "main+f6afca0 · SISO Foundry identity-sanitized source release"
+   },
+   {
+    "at": "2026-07-30 21:08",
+    "lane": "releases",
+    "label": "main+fd7d270 · SISO Foundry repository header release"
+   },
+   {
+    "at": "2026-08-02 00:15",
+    "lane": "releases",
+    "label": "0.2.0+d29480a · SISO Foundry resumable public source campaigns"
+   },
+   {
+    "at": "2026-08-02 22:53",
+    "lane": "releases",
+    "label": "0.3.0+8c6eb30 · SISO Foundry Agency source intelligence"
+   },
+   {
+    "at": "2026-08-02 23:33",
+    "lane": "releases",
+    "label": "0.4.0+233edef · SISO Foundry Agency OS value matrix"
+   },
+   {
+    "at": "2026-08-03 02:01",
+    "lane": "releases",
+    "label": "0.5.1+b28b0f7 · SISO Foundry Agency OS coverage inventory"
+   },
+   {
+    "at": "2026-09-06 06:15",
+    "lane": "releases",
+    "label": "0.5.1+11f4595 · Foundry industry and observed-value research"
+   },
+   {
+    "at": "2026-08-02 23:28",
+    "lane": "commits",
+    "label": "233edef · feat: publish Agency OS value matrix",
+    "href": "https://github.com/sisodias/siso-foundry/commit/233edef7408afb95571ecd25f64189dfd92a6860"
+   },
+   {
+    "at": "2026-08-02 23:37",
+    "lane": "registry",
+    "label": "4ab8fbb · registry: select Foundry Agency value matrix"
+   },
+   {
+    "at": "2026-09-06 13:08",
+    "lane": "commits",
+    "label": "11f4595 · current Work locator (0.5.1+11f4595)"
+   }
+  ]
+ },
+ "quickstart": {
+  "entry": {
+   "path": "Great_Library_of_SISO/bin/gls · registry/releases/siso-foundry-233edef.json"
+  },
+  "owner": {
+   "name": "LIBRARY-ZERO (registry)",
+   "last": "6 Sep 13:42 · 477b775"
+  },
+  "verification": "Open this page and see the pinned commit 233edef as a link that resolves (200 under sisodias) and the Work it belongs to; the tag locator is shown as 404, not hidden.",
+  "commands": [
+   "node bin/gls show release gls:release:47922651-40fb-4da4-9d7c-5635957e9d19",
+   "jq '{version,released_at,artifacts:[.artifacts[].locator]}' registry/releases/siso-foundry-233edef.json",
+   "curl -sI -L https://github.com/sisodias/siso-foundry/archive/233edef7408afb95571ecd25f64189dfd92a6860.tar.gz | head -1"
+  ]
+ }
+}
