@@ -1,12 +1,30 @@
-{{!-- 05 · repos — repository and satellite cards with public/private/access/rights (his 16:36: "even if they private").
+{{!-- 05 · repos v2 — repository cards. Robbed from 21st.dev @shadcnspace/sonner-05 (parts/SOURCES.md): a rounded
+     glyph tile, the name over its locator in mono, a state pill top-right, a hairline rule, then the branch /
+     head / recency meta row and one action. His 16:36: "even client stock will have the listing of the repos even
+     if they private" — a private repo keeps its card and loses only its payload.
      Data: [{repo,url,branch,head,head_at,private,access,rights,what,satellite,local}] --}}
 {{#if .}}
 <div class="grid grid-2">
-{{#each .}}<div class="card repo{{#if private}} card--strip tone-clients{{/if}}">
-  <div class="repo__name">{{icon git-branch}}{{#if url}}<a href="{{url}}">{{repo}}</a>{{else}}{{repo}}{{/if}}</div>
-  <div class="chips">{{#if private}}<span class="chip tone-clients">{{icon lock}}private</span>{{else}}<span class="chip tone-now">public</span>{{/if}}{{#if satellite}}<span class="chip tone-muted">satellite</span>{{/if}}{{#if access}}<span class="chip tone-muted">{{access}}</span>{{/if}}</div>
-  <div class="repo__meta">{{#if branch}}<span>branch <b>{{branch}}</b></span>{{/if}}{{#if head}}<span>head <b>{{head}}</b></span>{{/if}}{{#if head_at}}<span>{{head_at}}</span>{{/if}}{{#if rights}}<span>rights <b>{{rights}}</b></span>{{/if}}</div>
-  {{#if what}}<div class="repo__what">{{{what}}}</div>{{/if}}
+{{#each .}}<div class="repocard{{#if private}} is-private{{/if}}">
+  <div class="repocard__top">
+    <span class="repocard__tile" aria-hidden="true">{{#if private}}{{icon lock}}{{else}}{{icon git-branch}}{{/if}}</span>
+    <div class="repocard__id">
+      <div class="repocard__name">{{repo}}</div>
+      <div class="repocard__locator">{{#if url}}{{url}}{{else}}no public locator{{/if}}</div>
+    </div>
+    <span class="repocard__state tone-{{#if private}}clients{{else}}now{{/if}}"><i class="dot"></i>{{#if private}}private{{else}}public{{/if}}</span>
+  </div>
+  <div class="repocard__rule"></div>
+  <div class="repocard__meta">
+    {{#if branch}}<span><b>{{branch}}</b> branch</span>{{/if}}
+    {{#if head}}<span>head <b>{{head}}</b></span>{{/if}}
+    {{#if head_at}}<span class="repocard__when">{{head_at}}</span>{{/if}}
+  </div>
+  {{#if what}}<div class="repocard__what">{{{what}}}</div>{{/if}}
+  <div class="repocard__foot">
+    <div class="chips">{{#if satellite}}<span class="chip tone-muted">satellite</span>{{/if}}{{#if access}}<span class="chip tone-muted">{{access}}</span>{{/if}}{{#if rights}}<span class="chip tone-muted">{{rights}}</span>{{/if}}</div>
+    {{#if url}}<a class="repocard__open" href="{{url}}">{{icon external-link}}Open repo</a>{{else}}<span class="repocard__open is-off">{{icon lock}}No public payload</span>{{/if}}
+  </div>
 </div>{{/each}}
 </div>
 {{else}}<div class="empty">No repository registered. Register one: <code>node bin/gls add work --file … --reviewed-public</code></div>{{/if}}

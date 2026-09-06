@@ -1,11 +1,13 @@
-{{!-- 04 · map — the mind map: a typed relationship map (SVG, computed by the `map` helper) with its text equivalent.
-     Data: {centre:{label,href}, types:[{type,label,tone,items:[{label,href,rel,private}]}]}
+{{!-- 04 · map v2 — the mind map as a real graph. Layout: bin/lib/helpers.mjs mapSvg (Reingold-Tilford tidy tree,
+     root centred, branches split left/right, bezier links). Robbed from 21st.dev @ssshooter/mind-map — see
+     parts/SOURCES.md. Data: {centre:{label,href}, types:[{type,label,tone,items:[{label,href,rel,private}]}]}
      For the ecosystem loop use parts/loop.html. --}}
 {{#if types}}
 <div class="map">
-  {{map .}}
-  <div class="map__list">
-    {{#each types}}<div class="map__type tone-{{tone}}"><span class="kicker">{{label}} <span class="dim">· {{items.length}}</span></span><ul>{{#each items}}<li><span>{{#if href}}<a href="{{href}}">{{label}}</a>{{else}}{{label}}{{/if}}{{#if private}} <span class="chip tone-clients" title="private">{{icon lock}}</span>{{/if}}</span>{{#if rel}}<span class="rel">{{rel}}</span>{{/if}}</li>{{/each}}</ul></div>{{/each}}
+  <div class="map__frame">{{map .}}</div>
+  <div class="map__legend">
+    {{#each types}}<div class="map__lane tone-{{tone}}"><b>{{label}}</b><span class="n">{{items.length}}</span></div>{{/each}}
+    <p class="map__note">Each leaf links to its record. Branches are laid out by subtree size, not by hand.</p>
   </div>
 </div>
 {{else}}<div class="empty">Nothing linked yet: no repos, Works, questions or people point at this page.</div>{{/if}}

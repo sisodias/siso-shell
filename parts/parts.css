@@ -114,7 +114,12 @@ a.chip:hover { text-decoration: none; border-color: var(--tone, var(--crm-color-
 /* metric strip (AM system-map/index.html:81-84; blueprint .metric) */
 .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--crm-space-2-5); }
 .metric { padding: var(--crm-space-3-5) var(--crm-space-4); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-control); background: rgb(var(--crm-chrome-rgb) / 0.84); text-decoration: none; color: inherit; }
-.metric b { display: block; color: var(--tone, var(--stream)); font-size: 24px; font-weight: var(--crm-weight-semibold); letter-spacing: -0.03em; line-height: 1.1; }
+.metric b { display: block; color: var(--tone, var(--stream)); font-size: 26px; font-weight: var(--crm-weight-semibold); letter-spacing: -0.035em; line-height: 1.1; }
+/* the inline qualifier beside the number — @ravikatiyar162/stats-card's "36 projects" treatment */
+.metric b em { color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); font-style: normal; font-weight: var(--crm-weight-medium); letter-spacing: 0; }
+.metric small { display: block; margin-top: var(--crm-space-1); color: var(--crm-color-text-faint); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); }
+.metric { transition: border-color 160ms ease, background 160ms ease; }
+a.metric:hover { border-color: rgb(var(--tone-rgb, var(--stream-rgb)) / 0.5); background: rgb(var(--crm-chrome-rgb) / 0.95); }
 .metric span { display: block; margin-top: var(--crm-space-1); color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); }
 a.metric:hover { border-color: rgb(var(--stream-rgb) / 0.5); text-decoration: none; }
 
@@ -141,37 +146,61 @@ a.metric:hover { border-color: rgb(var(--stream-rgb) / 0.5); text-decoration: no
 @media (max-width: 980px) { .heading { grid-template-columns: 1fr; } }
 
 /* ---- 03 reasoning ---- */
-.reasoning { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--crm-space-4); }
-.reasoning__col { padding: var(--crm-space-4-5); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-card-compact, 12px); background: var(--glass-card-soft); }
-.reasoning__col--source { border-color: rgb(var(--stream-rgb) / 0.3); }
-.reasoning__col > .kicker { margin-bottom: var(--crm-space-3); }
-.reasoning__col .quote { margin-top: var(--crm-space-2); padding-block: var(--crm-space-2); }
-.reasoning__col .quote + .quote { margin-top: var(--crm-space-3); }
-.reasoning__questions { margin-top: var(--crm-space-3); padding-left: var(--crm-space-4-5); }
-.reasoning__questions li { color: var(--crm-color-text); }
-.reasoning__ceiling { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--crm-space-2-5); }
-.reasoning__ceiling .card { font-size: var(--crm-text-sm); }
-.reasoning__ceiling .card .kicker { display: block; margin-bottom: var(--crm-space-1-5); font-size: var(--crm-text-2xs); }
-@media (max-width: 980px) { .reasoning { grid-template-columns: 1fr; } }
+/* 03 · reasoning v2 — the chain-of-thought spine. Robbed from 21st.dev @elements-/chain-of-thought
+ * (parts/SOURCES.md): stages down a connecting rail, a state glyph per stage, nested cards under the stage that
+ * produced them. Replaces the v1 two-column block (his 21:05: the parts "all just seem like redos"). */
+.cot { border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-card-compact, 12px); background: var(--glass-card-soft); }
+.cot__steps { display: grid; margin: 0; padding: var(--crm-space-4-5); list-style: none; }
+.cot__step { position: relative; display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: var(--crm-space-3); padding-bottom: var(--crm-space-5); }
+/* the spine: a line from this stage's glyph down to the next one */
+.cot__step::before { content: ''; position: absolute; top: 26px; bottom: 0; left: 12.5px; width: 1px; background: linear-gradient(to bottom, rgb(var(--stream-rgb) / 0.5), var(--crm-color-line)); }
+.cot__step--last { padding-bottom: 0; }
+.cot__step--last::before { display: none; }
+.cot__mark { display: grid; width: 26px; height: 26px; place-items: center; border: 1px solid rgb(var(--stream-rgb) / 0.4); border-radius: 50%; background: rgb(var(--crm-chrome-rgb) / 0.95); }
+.cot__mark svg { width: 13px; height: 13px; color: var(--stream); stroke-width: var(--crm-icon-stroke); }
+.cot__step--source .cot__mark { border-color: rgb(var(--stream-rgb) / 0.7); background: rgb(var(--stream-rgb) / 0.14); }
+.cot__body { min-width: 0; padding-top: 3px; }
+.cot__title { display: flex; align-items: center; gap: var(--crm-space-2); margin: 0; color: var(--crm-color-text-strong); font-size: var(--crm-text-md); font-weight: var(--crm-weight-semibold); }
+.cot__count { padding: 0 var(--crm-space-1-5); border-radius: var(--crm-radius-pill); color: var(--crm-color-text-muted); background: rgb(var(--crm-white-rgb) / 0.06); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); }
+.cot__by { color: var(--crm-color-text-faint); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); font-weight: var(--crm-weight-medium); letter-spacing: 0.08em; text-transform: uppercase; }
+.cot__sub { margin: var(--crm-space-1) 0 var(--crm-space-3); color: var(--crm-color-text-faint); font-size: var(--crm-text-sm); }
+.cot__quote { margin: 0 0 var(--crm-space-2-5); padding: var(--crm-space-3) var(--crm-space-3-5); border: 1px solid var(--crm-color-line); border-left: 2px solid rgb(var(--stream-rgb) / 0.55); border-radius: var(--crm-radius-control); background: rgb(var(--crm-black-rgb) / 0.2); color: var(--crm-color-text); font-size: var(--crm-text-md); }
+.cot__quote small { display: block; margin-top: var(--crm-space-2); color: var(--crm-color-text-faint); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); }
+.cot__prose { margin: var(--crm-space-2) 0 0; color: var(--crm-color-text); font-size: var(--crm-text-md); }
+.cot__prose--muted { color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); }
+.cot__questions { margin: var(--crm-space-3) 0 0; padding-left: var(--crm-space-4-5); color: var(--crm-color-text); font-size: var(--crm-text-sm); }
+.cot__cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: var(--crm-space-2-5); margin-top: var(--crm-space-3); }
+.cot__card { padding: var(--crm-space-3) var(--crm-space-3-5); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-control); background: rgb(var(--crm-black-rgb) / 0.18); color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); }
+.cot__card .kicker { display: block; margin-bottom: var(--crm-space-1-5); font-size: var(--crm-text-2xs); }
 
 /* ---- 04 map (ecosystem loop + typed relationship map) ---- */
-.map { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr); gap: var(--crm-space-4); align-items: start; }
-.map svg { display: block; width: 100%; height: auto; border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-card-compact, 12px); background: radial-gradient(circle at 50% 50%, rgb(var(--stream-rgb) / 0.07), transparent 60%), rgb(var(--crm-chrome-rgb) / 0.6); }
-.map svg text { font-family: var(--crm-font-sans); font-size: 11.5px; fill: var(--crm-color-text); }
-.map svg .centre text { font-size: 13px; font-weight: 650; fill: var(--crm-color-text-strong); }
-.map svg .centre circle { fill: rgb(var(--stream-rgb) / 0.18); stroke: var(--stream); stroke-width: 1.4; }
-.map svg .edge { stroke: rgb(var(--crm-white-rgb) / 0.16); stroke-width: 1.1; fill: none; }
-.map svg .edge--typed { stroke: rgb(var(--tone-rgb) / 0.55); }
-.map svg .node circle { fill: rgb(var(--crm-chrome-rgb) / 0.95); stroke: var(--tone, var(--crm-color-line-strong)); stroke-width: 1.2; }
-.map svg .node:hover circle { fill: rgb(var(--tone-rgb) / 0.2); }
-.map svg .node text { fill: var(--crm-color-text); }
-.map svg .type-label { font-family: var(--crm-font-mono); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--tone, var(--crm-color-text-muted)); }
-.map__list { display: grid; gap: var(--crm-space-2-5); }
-.map__type { padding: var(--crm-space-3) var(--crm-space-3-5); border: 1px solid var(--crm-color-line); border-left: 3px solid var(--tone, var(--stream)); border-radius: var(--crm-radius-control); background: var(--glass-card-soft); }
-.map__type .kicker { color: var(--tone, var(--stream)); font-size: var(--crm-text-2xs); }
-.map__type ul { margin-top: var(--crm-space-1-5); padding-left: 0; list-style: none; font-size: var(--crm-text-sm); }
-.map__type li { display: flex; justify-content: space-between; gap: var(--crm-space-2); }
-.map__type li .rel { color: var(--crm-color-text-faint); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); }
+/* 04 · map v2 — the mind-map graph. Layout is bin/lib/helpers.mjs mapSvg (tidy tree); presentation robbed from
+ * 21st.dev @ssshooter/mind-map (parts/SOURCES.md): dark ground, curved branches tinted by lane, boxed nodes,
+ * root as the one filled tile. The v1 ring and its duplicate node list are gone (his 21:05 "maps all this stuff
+ * a bit shoddy"). The list beside it is now a legend of lanes and counts, not a second copy of every node. */
+.map { display: grid; grid-template-columns: minmax(0, 1fr) minmax(190px, 210px); gap: var(--crm-space-4); align-items: start; }
+.map__frame { position: relative; overflow-x: auto; padding: var(--crm-space-2); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-card-compact, 12px); background: radial-gradient(120% 90% at 50% 50%, rgb(var(--stream-rgb) / 0.08), transparent 62%), rgb(var(--crm-chrome-rgb) / 0.6); }
+.map__svg { display: block; width: 100%; min-width: 620px; height: auto; }
+.map__svg text { font-family: var(--crm-font-mono); font-size: 11px; letter-spacing: -0.01em; fill: var(--crm-color-text); }
+.map__svg .node--root rect { fill: rgb(var(--stream-rgb) / 0.22); stroke: var(--stream); stroke-width: 1.3; }
+.map__svg .node--root text { font-family: var(--crm-font-sans); font-size: 12.5px; font-weight: 650; fill: var(--crm-color-text-strong); }
+.map__svg .node--branch rect { fill: rgb(var(--tone-rgb) / 0.14); stroke: rgb(var(--tone-rgb) / 0.5); stroke-width: 1.1; }
+.map__svg .node--branch text { fill: var(--tone, var(--crm-color-text)); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+.map__svg .node--branch .count { fill: var(--crm-color-text-faint); letter-spacing: 0; }
+.map__svg .node--leaf rect { fill: rgb(var(--crm-chrome-rgb) / 0.92); stroke: rgb(var(--tone-rgb) / 0.3); stroke-width: 1; }
+.map__svg .node--leaf text { fill: var(--crm-color-text); }
+.map__svg a { text-decoration: none; }
+.map__svg a .node--leaf rect { transition: fill 160ms ease, stroke 160ms ease; }
+.map__svg a:hover .node--leaf rect { fill: rgb(var(--tone-rgb) / 0.2); stroke: var(--tone); }
+.map__svg a:hover .node--leaf text { fill: var(--crm-color-text-strong); }
+.map__svg a:focus-visible .node--leaf rect { stroke: var(--tone); stroke-width: 1.8; }
+.map__svg .edge { fill: none; stroke: rgb(var(--tone-rgb) / 0.42); stroke-width: 1.2; }
+.map__svg .edge--trunk { stroke: rgb(var(--tone-rgb) / 0.62); stroke-width: 1.7; }
+.map__legend { display: grid; gap: var(--crm-space-1-5); align-content: start; }
+.map__lane { display: flex; align-items: center; gap: var(--crm-space-2); padding: var(--crm-space-1-5) var(--crm-space-2-5); border: 1px solid var(--crm-color-line); border-left: 3px solid var(--tone, var(--stream)); border-radius: var(--crm-radius-control); background: var(--glass-card-soft); font-size: var(--crm-text-sm); }
+.map__lane b { color: var(--tone, var(--stream)); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); letter-spacing: 0.1em; text-transform: uppercase; }
+.map__lane .n { margin-left: auto; color: var(--crm-color-text-faint); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); }
+.map__note { color: var(--crm-color-text-faint); font-size: var(--crm-text-2xs); font-family: var(--crm-font-mono); }
 @media (max-width: 980px) { .map { grid-template-columns: 1fr; } }
 .loop { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--crm-space-2); }
 .loop__node { position: relative; padding: var(--crm-space-3) var(--crm-space-3-5); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-control); background: linear-gradient(160deg, rgb(var(--tone-rgb, var(--stream-rgb)) / 0.10), rgb(var(--crm-chrome-rgb) / 0.7)); color: inherit; text-decoration: none; }
@@ -182,12 +211,28 @@ a.metric:hover { border-color: rgb(var(--stream-rgb) / 0.5); text-decoration: no
 .loop__node .unmeasured { color: var(--crm-color-text-faint); }
 
 /* ---- 05 repos ---- */
-.repo { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--crm-space-2) var(--crm-space-3); }
-.repo__name { display: flex; align-items: center; gap: var(--crm-space-2); min-width: 0; color: var(--crm-color-text-strong); font-weight: var(--crm-weight-semibold); overflow-wrap: anywhere; }
-.repo__name svg { width: var(--crm-icon-sm); height: var(--crm-icon-sm); flex: none; color: var(--crm-color-text-muted); stroke-width: var(--crm-icon-stroke); }
-.repo__meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: var(--crm-space-1) var(--crm-space-3); color: var(--crm-color-text-muted); font-family: var(--crm-font-mono); font-size: var(--crm-text-xs); }
-.repo__meta b { color: var(--crm-color-text); font-weight: var(--crm-weight-medium); }
-.repo__what { grid-column: 1 / -1; color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); }
+/* 05 · repos v2 — robbed from 21st.dev @shadcnspace/sonner-05 (parts/SOURCES.md): glyph tile + name over its
+ * locator, state pill right, hairline rule, meta row, one action. CRM tokens only. */
+.repocard { display: flex; flex-direction: column; gap: var(--crm-space-3); padding: var(--crm-space-4); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-card-compact, 12px); background: var(--glass-card-soft); }
+.repocard.is-private { border-left: 3px solid var(--tone-clients, var(--crm-color-line-strong)); }
+.repocard__top { display: flex; align-items: center; gap: var(--crm-space-3); min-width: 0; }
+.repocard__tile { display: grid; width: 38px; height: 38px; flex: none; place-items: center; border: 1px solid var(--crm-color-line); border-radius: 11px; background: rgb(var(--crm-black-rgb) / 0.28); }
+.repocard__tile svg { width: var(--crm-icon-md); height: var(--crm-icon-md); color: var(--crm-color-text-muted); stroke-width: var(--crm-icon-stroke); }
+.repocard__id { min-width: 0; flex: 1; }
+.repocard__name { color: var(--crm-color-text-strong); font-size: var(--crm-text-md); font-weight: var(--crm-weight-semibold); overflow-wrap: anywhere; }
+.repocard__locator { margin-top: 1px; overflow: hidden; color: var(--crm-color-text-faint); font-family: var(--crm-font-mono); font-size: var(--crm-text-xs); text-overflow: ellipsis; white-space: nowrap; }
+.repocard__state { display: inline-flex; align-items: center; gap: var(--crm-space-1-5); height: 22px; flex: none; padding: 0 var(--crm-space-2-5); border-radius: var(--crm-radius-pill); color: var(--tone, var(--crm-color-text-muted)); background: rgb(var(--tone-rgb, var(--siso-text-muted-rgb)) / 0.12); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); font-weight: var(--crm-weight-semibold); letter-spacing: 0.08em; text-transform: uppercase; }
+.repocard__state .dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+.repocard__rule { height: 1px; background: var(--crm-color-line); }
+.repocard__meta { display: flex; flex-wrap: wrap; gap: var(--crm-space-1) var(--crm-space-3); color: var(--crm-color-text-muted); font-family: var(--crm-font-mono); font-size: var(--crm-text-xs); }
+.repocard__meta b { color: var(--crm-color-text); font-weight: var(--crm-weight-medium); }
+.repocard__when { margin-left: auto; color: var(--crm-color-text-faint); }
+.repocard__foot { display: flex; align-items: center; gap: var(--crm-space-2); margin-top: auto; }
+.repocard__open { display: inline-flex; align-items: center; gap: var(--crm-space-1-5); height: 30px; margin-left: auto; flex: none; padding: 0 var(--crm-space-3); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-control); color: var(--crm-color-text); font-size: var(--crm-text-sm); text-decoration: none; transition: border-color 160ms ease, background 160ms ease; }
+.repocard__open svg { width: var(--crm-icon-xs); height: var(--crm-icon-xs); stroke-width: var(--crm-icon-stroke); }
+a.repocard__open:hover { border-color: var(--crm-color-line-strong); background: rgb(var(--crm-white-rgb) / 0.04); text-decoration: none; }
+.repocard__open.is-off { color: var(--crm-color-text-faint); border-style: dashed; }
+.repocard__what { color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); }
 
 /* ---- 06 sauce ---- */
 .sauce .card { display: flex; flex-direction: column; gap: var(--crm-space-1-5); }
@@ -207,10 +252,26 @@ a.metric:hover { border-color: rgb(var(--stream-rgb) / 0.5); text-decoration: no
 @media (max-width: 980px) { .contents { grid-template-columns: 1fr; } }
 
 /* ---- 08 quickstart ---- */
-.quickstart { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--crm-space-4); padding: var(--crm-space-4-5); border: 1px solid rgb(var(--accent-reflect-rgb) / 0.3); border-radius: var(--crm-radius-card-compact, 12px); background: linear-gradient(145deg, rgb(var(--accent-reflect-rgb) / 0.08), rgb(var(--crm-chrome-rgb) / 0.7)); }
-.quickstart .kicker { color: var(--accent-reflect); }
-.quickstart pre { margin-top: var(--crm-space-2); }
-.quickstart .kv { margin-top: var(--crm-space-2); }
+/* 08 · quickstart v2 (agentbox) — robbed from 21st.dev @dev.yadhakim/animated-terminal (parts/SOURCES.md):
+ * window strip with lights, the file in the title bar, a prompt glyph per command line. His 21:05: "the agent
+ * entries and shit like the parts you have i say are still quite shit". No animation: the commands are real and
+ * copy-pasteable, so they must not move. */
+.agentbox { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: var(--crm-space-4); padding: var(--crm-space-4-5); border: 1px solid rgb(var(--accent-reflect-rgb) / 0.3); border-radius: var(--crm-radius-card-compact, 12px); background: linear-gradient(145deg, rgb(var(--accent-reflect-rgb) / 0.08), rgb(var(--crm-chrome-rgb) / 0.7)); }
+.agentbox .kicker { color: var(--accent-reflect); }
+.agentbox__term { overflow: hidden; border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-control); background: rgb(var(--crm-black-rgb) / 0.42); }
+.agentbox__bar { display: flex; align-items: center; gap: var(--crm-space-3); height: 30px; padding: 0 var(--crm-space-3); border-bottom: 1px solid var(--crm-color-line); background: rgb(var(--crm-white-rgb) / 0.03); }
+.agentbox__lights { display: flex; gap: 5px; }
+.agentbox__lights i { width: 8px; height: 8px; border-radius: 50%; background: rgb(var(--crm-white-rgb) / 0.16); }
+.agentbox__lights i:first-child { background: rgb(var(--accent-reflect-rgb) / 0.55); }
+.agentbox__where { overflow: hidden; color: var(--crm-color-text-faint); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); letter-spacing: 0.04em; text-overflow: ellipsis; white-space: nowrap; }
+.agentbox__lines { display: grid; gap: var(--crm-space-1-5); margin: 0; padding: var(--crm-space-3) var(--crm-space-3-5); list-style: none; }
+.agentbox__lines li { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: var(--crm-space-2); align-items: start; }
+.agentbox__prompt { color: var(--accent-reflect); font-family: var(--crm-font-mono); font-size: var(--crm-text-xs); line-height: 1.55; }
+.agentbox__lines code { color: var(--crm-color-text); background: none; font-family: var(--crm-font-mono); font-size: var(--crm-text-xs); line-height: 1.55; overflow-wrap: anywhere; white-space: pre-wrap; }
+.agentbox__lines--empty { color: var(--crm-color-text-faint); font-size: var(--crm-text-sm); }
+.agentbox__facts .kv { margin-top: var(--crm-space-2); grid-template-columns: 88px minmax(0, 1fr); gap: var(--crm-space-2-5) var(--crm-space-3); }
+.agentbox__facts .kv dd code { font-size: var(--crm-text-xs); }
+@media (max-width: 980px) { .agentbox { grid-template-columns: 1fr; } }
 @media (max-width: 980px) { .quickstart { grid-template-columns: 1fr; } }
 
 /* ---- 09 evidence ---- */
@@ -240,13 +301,20 @@ a.metric:hover { border-color: rgb(var(--stream-rgb) / 0.5); text-decoration: no
 @media (max-width: 640px) { .activity__list li { grid-template-columns: 1fr; gap: 2px; } }
 
 /* ---- 11 catalogue ---- */
-.catalogue__bar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--crm-space-2); margin-bottom: var(--crm-space-3); }
-.catalogue__search { display: flex; align-items: center; gap: var(--crm-space-2); height: var(--crm-control-md); min-width: 240px; flex: 1; padding: 0 var(--crm-space-3); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-control); background: rgb(var(--crm-white-rgb) / 0.025); color: var(--crm-color-text-muted); }
-.catalogue__search svg { width: var(--crm-icon-sm); height: var(--crm-icon-sm); stroke-width: var(--crm-icon-stroke); }
-.catalogue__search input { min-width: 0; flex: 1; border: 0; outline: 0; color: var(--crm-color-text); background: transparent; font: inherit; font-size: var(--crm-text-sm); }
+/* 11 · catalogue search — robbed from 21st.dev @samitkapoor/apple-spotlight (parts/SOURCES.md; his note: "oh my
+ * gosh this apple spotlight is beautiful. Use it for search or something"): one tall pill, the glyph left, larger
+ * type than a form field, and the result count riding inside the row. He kept the catalogue itself ("searchable
+ * catalog yeah that's cool although again you could use some 21st.dev components for the search"). */
+.catalogue__bar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--crm-space-2); margin-bottom: var(--crm-space-3-5); }
+.catalogue__search { display: flex; align-items: center; gap: var(--crm-space-2-5); height: 46px; min-width: 260px; flex: 1; padding: 0 var(--crm-space-4); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-pill); background: rgb(var(--crm-white-rgb) / 0.035); color: var(--crm-color-text-muted); box-shadow: inset 0 1px 0 rgb(var(--crm-white-rgb) / 0.04); transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease; }
+.catalogue__search:focus-within { border-color: rgb(var(--stream-rgb) / 0.45); background: rgb(var(--crm-white-rgb) / 0.055); box-shadow: 0 0 0 3px rgb(var(--stream-rgb) / 0.09), inset 0 1px 0 rgb(var(--crm-white-rgb) / 0.05); }
+.catalogue__search svg { width: 18px; height: 18px; flex: none; stroke-width: var(--crm-icon-stroke); transition: color 180ms ease; }
+.catalogue__search:focus-within svg { color: var(--stream); }
+.catalogue__search input { min-width: 0; flex: 1; border: 0; outline: 0; color: var(--crm-color-text-strong); background: transparent; font: inherit; font-size: var(--crm-text-lg, 15px); letter-spacing: -0.01em; }
+.catalogue__search input::placeholder { color: var(--crm-color-text-faint); }
 .catalogue__filter { display: flex; align-items: center; gap: var(--crm-space-1); }
-.catalogue__filter select { height: var(--crm-control-md); padding: 0 var(--crm-space-2-5); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-control); color: var(--crm-color-text); background: rgb(var(--crm-chrome-rgb) / 0.9); font: inherit; font-size: var(--crm-text-sm); }
-.catalogue__count { color: var(--crm-color-text-muted); font-family: var(--crm-font-mono); font-size: var(--crm-text-xs); }
+.catalogue__filter select { height: 38px; padding: 0 var(--crm-space-3); border: 1px solid var(--crm-color-line); border-radius: var(--crm-radius-pill); color: var(--crm-color-text); background: rgb(var(--crm-chrome-rgb) / 0.9); font: inherit; font-size: var(--crm-text-sm); }
+.catalogue__count { padding: 0 var(--crm-space-2-5); border-radius: var(--crm-radius-pill); color: var(--crm-color-text-muted); background: rgb(var(--crm-white-rgb) / 0.045); font-family: var(--crm-font-mono); font-size: var(--crm-text-xs); line-height: 26px; }
 .catalogue .card .kicker { font-size: var(--crm-text-2xs); }
 .catalogue .card h4 { margin: var(--crm-space-2) 0 var(--crm-space-1); font-size: 15px; letter-spacing: -0.02em; }
 .catalogue .card p { color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); }
@@ -256,7 +324,7 @@ a.metric:hover { border-color: rgb(var(--stream-rgb) / 0.5); text-decoration: no
 /* ---- 12 related ---- */
 .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--crm-space-2-5); }
 .related .card { gap: var(--crm-space-1); }
-.related .card b { color: var(--crm-color-text-strong); }
+.related .card b { color: var(--crm-color-text-strong); font-size: var(--crm-text-md); letter-spacing: -0.015em; }
 .related .card span { color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); }
 
 /* ---- timeline atom (U21 + every 'timeline' slot) ---- */
@@ -307,3 +375,28 @@ a.metric:hover { border-color: rgb(var(--stream-rgb) / 0.5); text-decoration: no
 .doc th, .doc td { padding: var(--crm-space-2-5) var(--crm-space-3); border-bottom: 1px solid var(--crm-color-line-subtle); text-align: left; vertical-align: top; }
 .doc th { color: var(--crm-color-text-muted); background: rgb(var(--crm-white-rgb) / 0.03); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); font-weight: var(--crm-weight-semibold); letter-spacing: var(--crm-tracking-label); text-transform: uppercase; }
 .doc a { text-decoration: underline; text-decoration-color: rgb(var(--stream-rgb) / 0.4); text-underline-offset: 3px; }
+
+/* 13 · gallery (bento) — robbed from 21st.dev @0xUrvish/bento-card (parts/SOURCES.md; his note: "really nice
+ * bento card"). Kicker, large title, quiet sub, then a recessed inset holding the family's own preview that
+ * bleeds off the card's bottom edge. His 21:05: "the gallery cards are a bit shit". */
+.bento { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--crm-space-3); }
+.bento__card { position: relative; display: flex; flex-direction: column; overflow: hidden; min-height: 300px; padding: var(--crm-space-4-5) var(--crm-space-4-5) 0; border: 1px solid var(--crm-color-line); border-radius: 16px; background: linear-gradient(165deg, rgb(var(--tone-rgb, var(--stream-rgb)) / 0.09), rgb(var(--crm-chrome-rgb) / 0.82)); color: inherit; text-decoration: none; transition: border-color 200ms ease, transform 200ms cubic-bezier(0.32, 0.72, 0, 1); }
+.bento__card:hover { border-color: rgb(var(--tone-rgb, var(--stream-rgb)) / 0.5); transform: translateY(-2px); text-decoration: none; }
+.bento__card:focus-visible { outline: 2px solid var(--tone, var(--stream)); outline-offset: 2px; }
+.bento__head { position: relative; z-index: 1; }
+.bento__kicker { display: block; color: var(--tone, var(--stream)); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); font-weight: var(--crm-weight-semibold); letter-spacing: var(--crm-tracking-label); text-transform: uppercase; }
+.bento__kicker .sep, .bento__kicker .dim { color: var(--crm-color-text-faint); }
+.bento__title { margin: var(--crm-space-2-5) 0 0; color: var(--crm-color-text-strong); font-size: 21px; font-weight: var(--crm-weight-semibold); letter-spacing: -0.03em; line-height: 1.15; }
+.bento__sub { margin: var(--crm-space-2) 0 0; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: var(--crm-color-text-muted); font-size: var(--crm-text-sm); line-height: 1.45; }
+.bento__sub .faint { color: var(--crm-color-text-faint); }
+/* the inset preview panel: sunk, clipped, bleeding off the bottom — the bento-card's device mock */
+.bento__shot { position: relative; margin: var(--crm-space-4) calc(var(--crm-space-4-5) * -1) 0 var(--crm-space-3); flex: 1; min-height: 128px; overflow: hidden; border-top: 1px solid var(--crm-color-line); border-left: 1px solid var(--crm-color-line); border-top-left-radius: 12px; background: rgb(var(--crm-black-rgb) / 0.3); }
+.bento__shot img { display: block; width: 100%; height: auto; opacity: 0.92; transform-origin: top left; transition: opacity 200ms ease, transform 300ms cubic-bezier(0.32, 0.72, 0, 1); }
+.bento__card:hover .bento__shot img { opacity: 1; transform: scale(1.02); }
+.bento__noshot { padding: var(--crm-space-4); color: var(--crm-color-text-faint); font-family: var(--crm-font-mono); font-size: var(--crm-text-2xs); }
+/* the state chip and the go-arrow ride on a scrim so they stay legible over any preview */
+.bento__foot { position: absolute; right: var(--crm-space-3); bottom: var(--crm-space-3); z-index: 2; display: flex; align-items: center; gap: var(--crm-space-2); padding: var(--crm-space-1) var(--crm-space-1) var(--crm-space-1) var(--crm-space-2); border-radius: var(--crm-radius-pill); background: rgb(var(--crm-black-rgb) / 0.55); backdrop-filter: blur(6px); }
+.bento__go { display: grid; width: 26px; height: 26px; place-items: center; border: 1px solid var(--crm-color-line); border-radius: 50%; background: rgb(var(--crm-chrome-rgb) / 0.9); color: var(--crm-color-text-muted); transition: color 160ms ease, border-color 160ms ease; }
+.bento__go svg { width: 13px; height: 13px; stroke-width: var(--crm-icon-stroke); }
+.bento__card:hover .bento__go { color: var(--tone, var(--stream)); border-color: rgb(var(--tone-rgb, var(--stream-rgb)) / 0.5); }
+@media (prefers-reduced-motion: reduce) { .bento__card, .bento__shot img { transition: none; } .bento__card:hover { transform: none; } .bento__card:hover .bento__shot img { transform: none; } }

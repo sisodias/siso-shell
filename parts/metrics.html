@@ -1,4 +1,6 @@
-{{!-- atom · metrics — metric strip (AM system-map/index.html:81-84). Data: [{value,label,tone,href,title}] --}}
+{{!-- atom · metrics v2 — the metric strip. Robbed from 21st.dev @ravikatiyar162/stats-card (parts/SOURCES.md;
+     his note: "I like this stats card, the earning one, really nice"): the number carries a small inline
+     qualifier and the label sits under it as the quiet line. Data: [{value,label,tone,href,title,unit,note}] --}}
 <div class="metrics">
-{{#each .}}{{#if href}}<a class="metric tone-{{tone}}" href="{{href}}"{{#if title}} title="{{title}}"{{/if}}><b>{{value}}</b><span>{{label}}</span></a>{{else}}<div class="metric tone-{{tone}}"{{#if title}} title="{{title}}"{{/if}}><b>{{value}}</b><span>{{label}}</span></div>{{/if}}{{/each}}
+{{#each .}}{{#if href}}<a class="metric tone-{{tone}}" href="{{href}}"{{#if title}} title="{{title}}"{{/if}}><b>{{value}}{{#if unit}} <em>{{unit}}</em>{{/if}}</b><span>{{label}}</span>{{#if note}}<small>{{note}}</small>{{/if}}</a>{{else}}<div class="metric tone-{{tone}}"{{#if title}} title="{{title}}"{{/if}}><b>{{value}}{{#if unit}} <em>{{unit}}</em>{{/if}}</b><span>{{label}}</span>{{#if note}}<small>{{note}}</small>{{/if}}</div>{{/if}}{{/each}}
 </div>

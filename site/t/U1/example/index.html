@@ -99,7 +99,7 @@
   
 <div class="catalogue" data-catalogue="featured">
   <div class="catalogue__bar needs-js">
-    <label class="catalogue__search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="search"><path pathLength="1" d="m21 21-4.34-4.34"/><circle pathLength="1" cx="11" cy="11" r="8"/></svg><input type="search" placeholder="Filter…" aria-label="Filter catalogue" data-cat-search></label>
+    <label class="catalogue__search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="search"><path pathLength="1" d="m21 21-4.34-4.34"/><circle pathLength="1" cx="11" cy="11" r="8"/></svg><input type="search" placeholder="Search this catalogue…" aria-label="Search catalogue" data-cat-search autocomplete="off" spellcheck="false"></label>
     <label class="catalogue__filter"><select data-cat-filter="kind" aria-label="kind"><option value="">kind · all</option><option value="work">work</option><option value="question">question</option><option value="project">project</option></select></label>
     <span class="catalogue__count" data-cat-count>7 of 7</span>
   </div>
@@ -144,8 +144,16 @@
 <div class="siso-section__head"><span class="n">07</span><h2>Agent entry</h2></div>
 
   
-<div class="quickstart">
-  <div>
+<div class="agentbox">
+  <div class="agentbox__term">
+    <div class="agentbox__bar">
+      <span class="agentbox__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="agentbox__where">Great_Library_of_SISO/AGENTS.md</span>
+    </div>
+    <ol class="agentbox__lines"><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>curl -s https://great-library-of-siso.pages.dev/catalog.json | jq &#39;.works|length, .repositories|length&#39;</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>cd Great_Library_of_SISO &amp;&amp; npm ci &amp;&amp; npm run verify &amp;&amp; npm run build</code></li></ol>
+    
+  </div>
+  <div class="agentbox__facts">
     <span class="kicker">Agent entry</span>
     <dl class="kv">
       <dt>Read first</dt><dd><a href="https://github.com/sisodias/great-library-of-siso/blob/main/AGENTS.md"><code>Great_Library_of_SISO/AGENTS.md</code></a></dd>
@@ -154,17 +162,11 @@
       <dt>Done when</dt><dd>Open the root and see the loop with every node a real link, the counts equal to catalog.json, and the grouped rail.</dd>
     </dl>
   </div>
-  <div>
-    <span class="kicker">Commands</span>
-    <pre><code>curl -s https://great-library-of-siso.pages.dev/catalog.json | jq &#39;.works|length, .repositories|length&#39;
-cd Great_Library_of_SISO &amp;&amp; npm ci &amp;&amp; npm run verify &amp;&amp; npm run build
-</code></pre>
-  </div>
 </div>
 
 </section>
 
-    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U1 · 2026-09-06T14:39:01.140Z · data https://great-library-of-siso.pages.dev/catalog.json generated 2026-09-06T06:50Z · GOD-QUESTIONS.md · INTENT.md · OWNERS.md</footer>
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U1 · 2026-09-06T14:55:15.557Z · data https://great-library-of-siso.pages.dev/catalog.json generated 2026-09-06T06:50Z · GOD-QUESTIONS.md · INTENT.md · OWNERS.md</footer>
   </main>
 </div>
 </body>

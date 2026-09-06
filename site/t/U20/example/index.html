@@ -145,8 +145,16 @@ python3 $SISO_HUB/scripts/skills install owner-writeback</pre><span class="small
 <div class="siso-section__head"><span class="n">09</span><h2>Agent entry</h2></div>
 
   
-<div class="quickstart">
-  <div>
+<div class="agentbox">
+  <div class="agentbox__term">
+    <div class="agentbox__bar">
+      <span class="agentbox__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="agentbox__where">SISO_Agents/siso-skills-hub/registry/skills/global/writeback/SKILL.md</span>
+    </div>
+    <ol class="agentbox__lines"><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>jq &#39;.checks.fresh_discovery&#39; 00_AGENT_ZERO/ledger/plays-verification-2026-09-05.json</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>shasum -a 256 ~/.claude/skills/writeback/SKILL.md SISO_Agents/siso-skills-hub/registry/skills/global/writeback/SKILL.md</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>grep -c writeback 00_AGENT_ZERO/ledger/OWNERS.md</code></li></ol>
+    
+  </div>
+  <div class="agentbox__facts">
     <span class="kicker">Agent entry</span>
     <dl class="kv">
       <dt>Read first</dt><dd><code>SISO_Agents/siso-skills-hub/registry/skills/global/writeback/SKILL.md</code></dd>
@@ -155,18 +163,11 @@ python3 $SISO_HUB/scripts/skills install owner-writeback</pre><span class="small
       <dt>Done when</dt><dd>Open this page and see the command, installed on Claude + Codex on laptop + Mini with probe dates, and real uses with OWNERS.md timestamps.</dd>
     </dl>
   </div>
-  <div>
-    <span class="kicker">Commands</span>
-    <pre><code>jq &#39;.checks.fresh_discovery&#39; 00_AGENT_ZERO/ledger/plays-verification-2026-09-05.json
-shasum -a 256 ~/.claude/skills/writeback/SKILL.md SISO_Agents/siso-skills-hub/registry/skills/global/writeback/SKILL.md
-grep -c writeback 00_AGENT_ZERO/ledger/OWNERS.md
-</code></pre>
-  </div>
 </div>
 
 </section>
 
-    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U20 · 2026-09-06T14:39:01.140Z · data 00_AGENT_ZERO/ledger/plays-verification-2026-09-05.json (PLAYS-ZERO, 18:28Z; fresh_discovery per machine × harness) · atlas/FRAMEWORKS-2026-09-05.html (P1–P8 with his words) · SISO_Agents/siso-skills-hub registry/skills_registry.json (41 entries) + registry/skills/global/{owner-writeback,writeback}/SKILL.md (shasum 6 Sep 20:38) · ~/.claude/skills and ~/.codex/skills projections (shasum, mtime) · ledger/OWNERS.md lines mentioning writeback</footer>
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U20 · 2026-09-06T14:55:15.557Z · data 00_AGENT_ZERO/ledger/plays-verification-2026-09-05.json (PLAYS-ZERO, 18:28Z; fresh_discovery per machine × harness) · atlas/FRAMEWORKS-2026-09-05.html (P1–P8 with his words) · SISO_Agents/siso-skills-hub registry/skills_registry.json (41 entries) + registry/skills/global/{owner-writeback,writeback}/SKILL.md (shasum 6 Sep 20:38) · ~/.claude/skills and ~/.codex/skills projections (shasum, mtime) · ledger/OWNERS.md lines mentioning writeback</footer>
   </main>
 </div>
 </body>

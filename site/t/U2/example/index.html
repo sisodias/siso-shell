@@ -81,7 +81,7 @@
   
 <div class="catalogue" data-catalogue="works">
   <div class="catalogue__bar needs-js">
-    <label class="catalogue__search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="search"><path pathLength="1" d="m21 21-4.34-4.34"/><circle pathLength="1" cx="11" cy="11" r="8"/></svg><input type="search" placeholder="Filter…" aria-label="Filter catalogue" data-cat-search></label>
+    <label class="catalogue__search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="search"><path pathLength="1" d="m21 21-4.34-4.34"/><circle pathLength="1" cx="11" cy="11" r="8"/></svg><input type="search" placeholder="Search this catalogue…" aria-label="Search catalogue" data-cat-search autocomplete="off" spellcheck="false"></label>
     <label class="catalogue__filter"><select data-cat-filter="type" aria-label="type"><option value="">type · all</option><option value="research_question">research_question</option><option value="knowledge_system">knowledge_system</option><option value="bundle">bundle</option><option value="project">project</option><option value="tool">tool</option><option value="section">section</option><option value="agent_system">agent_system</option><option value="capability_pack">capability_pack</option><option value="playbook">playbook</option><option value="application">application</option><option value="library">library</option></select></label><label class="catalogue__filter"><select data-cat-filter="maturity" aria-label="maturity"><option value="">maturity · all</option><option value="active">active</option><option value="experimental">experimental</option><option value="planned">planned</option><option value="retired">retired</option></select></label><label class="catalogue__filter"><select data-cat-filter="section" aria-label="section"><option value="">section · all</option><option value="Research">Research</option><option value="Agents">Agents</option><option value="Library">Library</option><option value="Unassigned">Unassigned</option></select></label>
     <span class="catalogue__count" data-cat-count>23 of 23</span>
   </div>
@@ -98,8 +98,16 @@
 <div class="siso-section__head"><span class="n">04</span><h2>Agent entry</h2></div>
 
   
-<div class="quickstart">
-  <div>
+<div class="agentbox">
+  <div class="agentbox__term">
+    <div class="agentbox__bar">
+      <span class="agentbox__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="agentbox__where">Great_Library_of_SISO/site/works/index.html</span>
+    </div>
+    <ol class="agentbox__lines"><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>curl -s https://great-library-of-siso.pages.dev/catalog.json | jq &#39;[.works[]|select(.type==&quot;research_question&quot;)]|length&#39;   # 18</code></li></ol>
+    
+  </div>
+  <div class="agentbox__facts">
     <span class="kicker">Agent entry</span>
     <dl class="kv">
       <dt>Read first</dt><dd><code>Great_Library_of_SISO/site/works/index.html</code></dd>
@@ -108,16 +116,11 @@
       <dt>Done when</dt><dd>Open /works/ and filter type=research_question and see exactly 18 cards; every card's repo badge says public/private truthfully.</dd>
     </dl>
   </div>
-  <div>
-    <span class="kicker">Commands</span>
-    <pre><code>curl -s https://great-library-of-siso.pages.dev/catalog.json | jq &#39;[.works[]|select(.type==&quot;research_question&quot;)]|length&#39;   # 18
-</code></pre>
-  </div>
 </div>
 
 </section>
 
-    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U2 · 2026-09-06T14:39:01.140Z · data https://great-library-of-siso.pages.dev/catalog.json works[] · generated 2026-09-06T06:50Z</footer>
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U2 · 2026-09-06T14:55:15.557Z · data https://great-library-of-siso.pages.dev/catalog.json works[] · generated 2026-09-06T06:50Z</footer>
   </main>
 </div>
 </body>

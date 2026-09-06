@@ -99,11 +99,26 @@
   
 
 <div class="grid grid-2">
-<div class="card repo card--strip tone-clients">
-  <div class="repo__name"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="git-branch"><path pathLength="1" d="M15 6a9 9 0 0 0-9 9V3"/><circle pathLength="1" cx="18" cy="6" r="3"/><circle pathLength="1" cx="6" cy="18" r="3"/></svg>sisodias/halocrm-mirror</div>
-  <div class="chips"><span class="chip tone-clients"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="lock"><rect pathLength="1" width="18" height="11" x="3" y="11" rx="2" ry="2"/><path pathLength="1" d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>private</span><span class="chip tone-muted">client account</span></div>
-  <div class="repo__meta"><span>branch <b>codex/private-rewrite-83ab4ba</b></span><span>head <b>09d69f5</b></span><span>2026-09-06 13:16 UTC+07</span><span>rights <b>client</b></span></div>
-  <div class="repo__what">Private mirror of the client's CRM. 50 branches; <code>main</code> at <code>347329a</code> (17 Aug import, client author); 545 commits on the working branch; size 68,277 KB (gh api). Nothing else about the inside renders here.</div>
+<div class="repocard is-private">
+  <div class="repocard__top">
+    <span class="repocard__tile" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="lock"><rect pathLength="1" width="18" height="11" x="3" y="11" rx="2" ry="2"/><path pathLength="1" d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+    <div class="repocard__id">
+      <div class="repocard__name">sisodias/halocrm-mirror</div>
+      <div class="repocard__locator">no public locator</div>
+    </div>
+    <span class="repocard__state tone-clients"><i class="dot"></i>private</span>
+  </div>
+  <div class="repocard__rule"></div>
+  <div class="repocard__meta">
+    <span><b>codex/private-rewrite-83ab4ba</b> branch</span>
+    <span>head <b>09d69f5</b></span>
+    <span class="repocard__when">2026-09-06 13:16 UTC+07</span>
+  </div>
+  <div class="repocard__what">Private mirror of the client's CRM. 50 branches; <code>main</code> at <code>347329a</code> (17 Aug import, client author); 545 commits on the working branch; size 68,277 KB (gh api). Nothing else about the inside renders here.</div>
+  <div class="repocard__foot">
+    <div class="chips"><span class="chip tone-muted">client account</span><span class="chip tone-muted">client</span></div>
+    <span class="repocard__open is-off"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="lock"><rect pathLength="1" width="18" height="11" x="3" y="11" rx="2" ry="2"/><path pathLength="1" d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>No public payload</span>
+  </div>
 </div>
 </div>
 
@@ -145,8 +160,16 @@
 <div class="siso-section__head"><span class="n">09</span><h2>Agent entry</h2></div>
 
   
-<div class="quickstart">
-  <div>
+<div class="agentbox">
+  <div class="agentbox__term">
+    <div class="agentbox__bar">
+      <span class="agentbox__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="agentbox__where">registry record with visibility=private → this stub; inside: &lt;halocrm-mirror&gt;/.agents/PAGE.md (private, 09d69f5)</span>
+    </div>
+    <ol class="agentbox__lines"><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>gh api repos/sisodias/halocrm-mirror --jq &#39;{private,pushed_at,created_at,description}&#39;</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>grep -c &#39;· HALO-ZERO ·&#39; 00_AGENT_ZERO/ledger/OWNERS.md</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>jq &#39;.repositories[]|select(.visibility==&quot;private&quot;)|.repository&#39; Great_Library_of_SISO/site/catalog.json</code></li></ol>
+    
+  </div>
+  <div class="agentbox__facts">
     <span class="kicker">Agent entry</span>
     <dl class="kv">
       <dt>Read first</dt><dd><code>registry record with visibility=private → this stub; inside: &lt;halocrm-mirror&gt;/.agents/PAGE.md (private, 09d69f5)</code></dd>
@@ -155,18 +178,11 @@
       <dt>Done when</dt><dd>Open this page logged out and see the purpose, the owner, "private mirror" and a dated activity line; no code, roster, route, token or money anywhere on it.</dd>
     </dl>
   </div>
-  <div>
-    <span class="kicker">Commands</span>
-    <pre><code>gh api repos/sisodias/halocrm-mirror --jq &#39;{private,pushed_at,created_at,description}&#39;
-grep -c &#39;· HALO-ZERO ·&#39; 00_AGENT_ZERO/ledger/OWNERS.md
-jq &#39;.repositories[]|select(.visibility==&quot;private&quot;)|.repository&#39; Great_Library_of_SISO/site/catalog.json
-</code></pre>
-  </div>
 </div>
 
 </section>
 
-    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U11 · 2026-09-06T14:39:01.140Z · data gh api repos/sisodias/halocrm-mirror (+ branches, contributors, commits) 6 Sep 20:16 UTC+07 · plan/projects.json#halo · handoffs/HALO.md · plan/decisions.json D-21 D-24 · OWNERS.md HALO-ZERO lines (31) · source/2026-09-06-1638 · Library site/catalog.json repositories[] (27, 4 private)</footer>
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U11 · 2026-09-06T14:55:15.557Z · data gh api repos/sisodias/halocrm-mirror (+ branches, contributors, commits) 6 Sep 20:16 UTC+07 · plan/projects.json#halo · handoffs/HALO.md · plan/decisions.json D-21 D-24 · OWNERS.md HALO-ZERO lines (31) · source/2026-09-06-1638 · Library site/catalog.json repositories[] (27, 4 private)</footer>
   </main>
 </div>
 </body>

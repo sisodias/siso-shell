@@ -141,8 +141,16 @@
 <div class="siso-section__head"><span class="n">08</span><h2>Agent entry</h2></div>
 
   
-<div class="quickstart">
-  <div>
+<div class="agentbox">
+  <div class="agentbox__term">
+    <div class="agentbox__bar">
+      <span class="agentbox__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="agentbox__where">00_AGENT_ZERO/bin/az-now → atlas/now.json + atlas/NOW.html</span>
+    </div>
+    <ol class="agentbox__lines"><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>cd 00_AGENT_ZERO &amp;&amp; bin/az-now --no-cascade</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>jq -r &#39;.agents|to_entries[]|[.value.name,.value.node,.value.status]|@tsv&#39; 00_AGENT_ZERO/atlas/now.json</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>jq -r &#39;.owner_reports|to_entries|sort_by(.value.timestamp)|reverse|.[0:5][]|[.value.time,.key,.value.path]|@tsv&#39; 00_AGENT_ZERO/atlas/now.json</code></li></ol>
+    
+  </div>
+  <div class="agentbox__facts">
     <span class="kicker">Agent entry</span>
     <dl class="kv">
       <dt>Read first</dt><dd><code>00_AGENT_ZERO/bin/az-now → atlas/now.json + atlas/NOW.html</code></dd>
@@ -151,18 +159,11 @@
       <dt>Done when</dt><dd>Open /now/ and see the last writeback line per live seat with a timestamp; the fresh rows (<1 h against the observation time) are green, the rest amber or rose, and seats with no line say so.</dd>
     </dl>
   </div>
-  <div>
-    <span class="kicker">Commands</span>
-    <pre><code>cd 00_AGENT_ZERO &amp;&amp; bin/az-now --no-cascade
-jq -r &#39;.agents|to_entries[]|[.value.name,.value.node,.value.status]|@tsv&#39; 00_AGENT_ZERO/atlas/now.json
-jq -r &#39;.owner_reports|to_entries|sort_by(.value.timestamp)|reverse|.[0:5][]|[.value.time,.key,.value.path]|@tsv&#39; 00_AGENT_ZERO/atlas/now.json
-</code></pre>
-  </div>
 </div>
 
 </section>
 
-    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U10 · 2026-09-06T14:39:01.140Z · data 00_AGENT_ZERO/atlas/now.json generated &quot;06 Sep 2026 20:29 +0700&quot; by bin/az-now (herdr --session herdr-2|default agent list on laptop, mini-herdr agent list on Mini; 15 log sources; 20 log issues) · git log -1 / rev-list --since 24 h in six local checkouts, 20:27 UTC+07</footer>
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U10 · 2026-09-06T14:55:15.557Z · data 00_AGENT_ZERO/atlas/now.json generated &quot;06 Sep 2026 20:29 +0700&quot; by bin/az-now (herdr --session herdr-2|default agent list on laptop, mini-herdr agent list on Mini; 15 log sources; 20 log issues) · git log -1 / rev-list --since 24 h in six local checkouts, 20:27 UTC+07</footer>
   </main>
 </div>
 </body>

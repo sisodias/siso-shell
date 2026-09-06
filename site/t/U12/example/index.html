@@ -125,8 +125,16 @@
 <div class="siso-section__head"><span class="n">08</span><h2>Agent entry</h2></div>
 
   
-<div class="quickstart">
-  <div>
+<div class="agentbox">
+  <div class="agentbox__term">
+    <div class="agentbox__bar">
+      <span class="agentbox__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="agentbox__where">Great_Library_of_SISO/bin/gls · registry/releases/siso-foundry-233edef.json</span>
+    </div>
+    <ol class="agentbox__lines"><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>node bin/gls show release gls:release:47922651-40fb-4da4-9d7c-5635957e9d19</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>jq &#39;{version,released_at,artifacts:[.artifacts[].locator]}&#39; registry/releases/siso-foundry-233edef.json</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>curl -sI -L https://github.com/sisodias/siso-foundry/archive/233edef7408afb95571ecd25f64189dfd92a6860.tar.gz | head -1</code></li></ol>
+    
+  </div>
+  <div class="agentbox__facts">
     <span class="kicker">Agent entry</span>
     <dl class="kv">
       <dt>Read first</dt><dd><code>Great_Library_of_SISO/bin/gls · registry/releases/siso-foundry-233edef.json</code></dd>
@@ -135,18 +143,11 @@
       <dt>Done when</dt><dd>Open this page and see the pinned commit 233edef as a link that resolves (200 under sisodias) and the Work it belongs to; the tag locator is shown as 404, not hidden.</dd>
     </dl>
   </div>
-  <div>
-    <span class="kicker">Commands</span>
-    <pre><code>node bin/gls show release gls:release:47922651-40fb-4da4-9d7c-5635957e9d19
-jq &#39;{version,released_at,artifacts:[.artifacts[].locator]}&#39; registry/releases/siso-foundry-233edef.json
-curl -sI -L https://github.com/sisodias/siso-foundry/archive/233edef7408afb95571ecd25f64189dfd92a6860.tar.gz | head -1
-</code></pre>
-  </div>
 </div>
 
 </section>
 
-    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U12 · 2026-09-06T14:39:01.140Z · data Great_Library_of_SISO/registry/releases/siso-foundry-233edef.json (commit 4ab8fbb, 2 Aug 23:37) · registry/works/siso-foundry.json · docs/registry-model.md §Releases · curl -I on every locator + gh api commits/233edef… 6 Sep 20:33 UTC+07</footer>
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U12 · 2026-09-06T14:55:15.557Z · data Great_Library_of_SISO/registry/releases/siso-foundry-233edef.json (commit 4ab8fbb, 2 Aug 23:37) · registry/works/siso-foundry.json · docs/registry-model.md §Releases · curl -I on every locator + gh api commits/233edef… 6 Sep 20:33 UTC+07</footer>
   </main>
 </div>
 </body>

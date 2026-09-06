@@ -49,7 +49,10 @@ export function galleryData() {
     const r = rows[id];
     return {
       id, kicker: `${id} <span class="sep">·</span> order ${r.order} <span class="sep">·</span> <span class="dim">${r.host}</span>`,
+      order: r.order, host: r.host,
       title: SHORT[id] + (r.family.includes(' (') ? '' : ''), summary: r.family + (r.count ? ` <span class="faint">· ${r.count}</span>` : ''),
+      /* the family's own rendered example, shot by bin/shoot-previews; absent until the family is built */
+      shot: built(id) ? `/previews/${id}.jpg` : '',
       href: `/t/${id}/`, status: built(id) ? 'built' : 'spec', tone: STREAM[id],
       tags: [{ key: 'status', value: built(id) ? 'built' : 'spec' }, { key: 'host', value: r.host }, { key: 'stream', value: STREAM[id] }],
       search: `${id} ${r.family} ${r.host} ${r.instances} ${(r.sections || []).join(' ')}`.toLowerCase(),

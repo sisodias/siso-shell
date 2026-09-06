@@ -4,44 +4,117 @@ import { esc } from './engine.mjs';
 
 const num = (v) => typeof v === 'number' ? v.toLocaleString('en-GB') : esc(v);
 
-/** Typed relationship map: centre node, one ring segment per type, nodes on the ring. Pure SVG, no library. */
+/** Typed relationship map — a real graph, laid out by a tidy-tree algorithm, not a ring of nodes at one radius.
+ *
+ * Robbed from 21st.dev @ssshooter/mind-map (Mind Elixir; parts/SOURCES.md): root in the middle, branches split
+ * left and right, each branch a curved bezier from parent edge to child edge, leaves as boxed labels tinted by
+ * their branch. What is implemented here is the layout itself — Reingold-Tilford tidy-tree first-walk /
+ * second-walk, so siblings never overlap, subtrees are packed by their real extents, and a parent sits at the
+ * midpoint of its children. The v1 map put every node on one circle at a fixed radius (a star), which is what
+ * collided and what "a bit shoddy" named.
+ *
+ * data: {centre:{label,href}, types:[{type,label,tone,items:[{label,href,rel,private}]}]}
+ * Types become branch nodes; items become their leaves. Returns SVG with no script and no dependency.
+ */
+const MAP_CHAR = 6.35;                 // measured advance of --crm-font-mono at 11px (the leaf label size)
+const MAP_BOX_H = 26;                  // leaf box height
+const MAP_V_GAP = 10;                  // vertical gap between siblings
+const MAP_H_GAP = 62;                  // horizontal gap between depths
+const MAP_PAD = 22;
+
+const mapWidth = (label, depth) => {
+  const chars = Math.min(String(label).length, depth === 1 ? 26 : 30);
+  return Math.round(chars * MAP_CHAR) + (depth === 1 ? 26 : 22);
+};
+const mapClip = (label, depth) => {
+  const max = depth === 1 ? 26 : 30;
+  const s = String(label);
+  return s.length > max ? s.slice(0, max - 1) + '…' : s;
+};
+
+/* Reingold-Tilford, one side. Nodes carry {h} (their own height); the walk assigns y, and x comes from depth. */
+function mapLayout(branches, side) {
+  let cursor = 0;
+  const rows = [];
+  for (const b of branches) {
+    const leaves = (b.items || []);
+    const kids = [];
+    const top = cursor;
+    for (const leaf of leaves) {
+      kids.push({ ...leaf, y: cursor + MAP_BOX_H / 2, depth: 2, side, tone: b.tone });
+      cursor += MAP_BOX_H + MAP_V_GAP;
+    }
+    /* second walk: a parent sits at the midpoint of the block its children occupy — the tidy-tree rule. */
+    const y = kids.length ? (top + cursor - MAP_V_GAP + MAP_BOX_H) / 2 - MAP_BOX_H / 2 : cursor + MAP_BOX_H / 2;
+    if (!kids.length) cursor += MAP_BOX_H + MAP_V_GAP;
+    rows.push({ branch: b, y, kids, side });
+    cursor += 18;                       // gap between whole subtrees
+  }
+  return { rows, height: Math.max(cursor - 18 - MAP_V_GAP, 0) };
+}
+
 export function mapSvg(data) {
   if (!data || !Array.isArray(data.types) || !data.types.length) return '';
-  const W = 760, H = 500, cx = W / 2, cy = H / 2, R = 160;
-  const nodes = data.types.flatMap((t) => (t.items || []).map((it) => ({ ...it, type: t })));
-  const n = Math.max(nodes.length, 1);
-  let out = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Relationship map: ${esc(data.centre?.label || '')} and ${n} linked records">`;
-  out += `<title>${esc(data.centre?.label || 'map')}</title>`;
-  // type arcs (labels) around the ring
-  let idx = 0;
-  const seg = (2 * Math.PI) / n;
-  const start = -Math.PI / 2;
-  for (const t of data.types) {
-    const count = (t.items || []).length; if (!count) continue;
-    const a0 = start + seg * idx, a1 = start + seg * (idx + count);
-    const mid = (a0 + a1) / 2; const lr = R + 78;
-    const lx = cx + Math.cos(mid) * lr, ly = cy + Math.sin(mid) * lr;
-    out += `<g class="tone-${esc(t.tone || 'muted')}"><text class="type-label" x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="middle" dominant-baseline="middle">${esc(t.label)}</text></g>`;
-    idx += count;
+  const types = data.types.filter((t) => (t.items || []).length || t.label);
+  /* Split branches between the two sides, heaviest first, so the two columns end up near the same height
+   * (Mind Elixir's `direction` on each first-level child, chosen for us instead of hand-set). */
+  const sorted = [...types].map((t, i) => ({ t, i, n: (t.items || []).length }));
+  const left = [], right = [];
+  let lw = 0, rw = 0;
+  for (const s of sorted.sort((a, b) => b.n - a.n || a.i - b.i)) {
+    if (rw <= lw) { right.push(s); rw += s.n + 1; } else { left.push(s); lw += s.n + 1; }
   }
-  idx = 0;
-  for (const node of nodes) {
-    const a = start + seg * idx + seg / 2;
-    const x = cx + Math.cos(a) * R, y = cy + Math.sin(a) * R;
-    const tone = node.type.tone || 'muted';
-    out += `<line class="edge edge--typed tone-${esc(tone)}" x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`;
-    const label = String(node.label).length > 22 ? String(node.label).slice(0, 21) + '…' : String(node.label);
-    const right = Math.cos(a) >= -0.05;
-    const tx = x + (right ? 11 : -11), anchor = right ? 'start' : 'end';
-    const g = `<g class="node tone-${esc(tone)}"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><text x="${tx.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="${anchor}" dominant-baseline="middle">${esc(label)}${node.private ? ' 🔒' : ''}</text></g>`;
-    out += node.href ? `<a href="${esc(node.href)}">${g}</a>` : g;
-    idx++;
+  const ord = (arr) => arr.sort((a, b) => a.i - b.i).map((s) => s.t);
+  const L = mapLayout(ord(left), -1), R = mapLayout(ord(right), 1);
+
+  const branchW = Math.max(...types.map((t) => mapWidth(t.label, 1)), 90);
+  const leafW = Math.max(...types.flatMap((t) => (t.items || []).map((it) => mapWidth(it.label, 2))), 110);
+  const rootW = mapWidth(data.centre?.label || 'map', 1) + 16;
+  const half = rootW / 2 + MAP_H_GAP + branchW + MAP_H_GAP + leafW;
+  const W = Math.round(half * 2 + MAP_PAD * 2);
+  const H = Math.round(Math.max(L.height, R.height, 80) + MAP_PAD * 2);
+  const cx = W / 2;
+  const cy = H / 2;
+
+  const sideX = (side, depth) => side < 0
+    ? (depth === 1 ? cx - rootW / 2 - MAP_H_GAP - branchW : cx - rootW / 2 - MAP_H_GAP - branchW - MAP_H_GAP - leafW)
+    : (depth === 1 ? cx + rootW / 2 + MAP_H_GAP : cx + rootW / 2 + MAP_H_GAP + branchW + MAP_H_GAP);
+
+  /* A link is a cubic whose control points sit halfway across the gap — the Mind Elixir branch curve. */
+  const link = (x1, y1, x2, y2, tone, wide) => {
+    const mx = (x1 + x2) / 2;
+    return `<path class="edge tone-${esc(tone || 'muted')}${wide ? ' edge--trunk' : ''}" d="M${x1.toFixed(1)} ${y1.toFixed(1)}C${mx.toFixed(1)} ${y1.toFixed(1)} ${mx.toFixed(1)} ${y2.toFixed(1)} ${x2.toFixed(1)} ${y2.toFixed(1)}"/>`;
+  };
+
+  let edges = '', nodes = '';
+  for (const { rows, } of [L, R]) {
+    for (const row of rows) {
+      const side = row.side;
+      const offset = (side < 0 ? L : R).height;
+      const top = cy - offset / 2;
+      const by = top + row.y + MAP_BOX_H / 2;
+      const bx = sideX(side, 1);
+      const bAnchor = side < 0 ? bx + branchW : bx;          // the edge of the branch box facing the root
+      const bOuter = side < 0 ? bx : bx + branchW;
+      edges += link(cx + (side < 0 ? -rootW / 2 : rootW / 2), cy, bAnchor, by, row.branch.tone, true);
+      const count = (row.branch.items || []).length;
+      nodes += `<g class="node node--branch tone-${esc(row.branch.tone || 'muted')}"><rect x="${bx.toFixed(1)}" y="${(by - MAP_BOX_H / 2).toFixed(1)}" width="${branchW}" height="${MAP_BOX_H}" rx="7"/><text x="${(bx + branchW / 2).toFixed(1)}" y="${by.toFixed(1)}" text-anchor="middle" dominant-baseline="central">${esc(mapClip(row.branch.label, 1))}${count ? ` <tspan class="count">${count}</tspan>` : ''}</text></g>`;
+      for (const kid of row.kids) {
+        const ky = top + kid.y;
+        const kx = sideX(side, 2);
+        const kAnchor = side < 0 ? kx + leafW : kx;
+        edges += link(bOuter, by, kAnchor, ky, row.branch.tone, false);
+        const label = esc(mapClip(kid.label, 2)) + (kid.private ? ' 🔒' : '');
+        const inner = `<g class="node node--leaf tone-${esc(row.branch.tone || 'muted')}"><rect x="${kx.toFixed(1)}" y="${(ky - MAP_BOX_H / 2).toFixed(1)}" width="${leafW}" height="${MAP_BOX_H}" rx="6"/><text x="${(kx + (side < 0 ? leafW - 11 : 11)).toFixed(1)}" y="${ky.toFixed(1)}" text-anchor="${side < 0 ? 'end' : 'start'}" dominant-baseline="central">${label}</text>${kid.rel ? `<title>${esc(kid.label)} — ${esc(kid.rel)}</title>` : `<title>${esc(kid.label)}</title>`}</g>`;
+        nodes += kid.href ? `<a href="${esc(kid.href)}">${inner}</a>` : inner;
+      }
+    }
   }
   const c = data.centre || {};
-  const cg = `<g class="centre"><circle cx="${cx}" cy="${cy}" r="46"/><text x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="middle">${esc(String(c.label || '').slice(0, 14))}</text></g>`;
-  out += c.href ? `<a href="${esc(c.href)}">${cg}</a>` : cg;
-  out += '</svg>';
-  return out;
+  const rootLabel = esc(mapClip(c.label || 'map', 1));
+  const rootG = `<g class="node node--root"><rect x="${(cx - rootW / 2).toFixed(1)}" y="${(cy - 17).toFixed(1)}" width="${rootW.toFixed(1)}" height="34" rx="10"/><text x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central">${rootLabel}</text></g>`;
+  const total = types.reduce((n, t) => n + (t.items || []).length, 0);
+  return `<svg class="map__svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Relationship map: ${esc(c.label || '')}, ${types.length} branches, ${total} linked records"><title>${esc(c.label || 'map')}</title><g class="map__edges">${edges}</g>${nodes}${c.href ? `<a href="${esc(c.href)}">${rootG}</a>` : rootG}</svg>`;
 }
 
 /** One-axis timeline with lanes and day ticks. events: [{at (ISO or 'YYYY-MM-DD HH:MM'), lane, label, href, auto}] */

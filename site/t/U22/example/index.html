@@ -154,8 +154,16 @@
 <div class="siso-section__head"><span class="n">09</span><h2>Agent entry</h2></div>
 
   
-<div class="quickstart">
-  <div>
+<div class="agentbox">
+  <div class="agentbox__term">
+    <div class="agentbox__bar">
+      <span class="agentbox__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="agentbox__where">00_AGENT_ZERO/ESTATE.md → briefs/MINI-SYNC.md → ledger/2026-09-06-mini-native-pilot.json</span>
+    </div>
+    <ol class="agentbox__lines"><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>00_AGENT_ZERO/bin/mini-probe</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>mini-herdr agent list</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>ssh -T -o BatchMode=yes -o RemoteCommand=none mac-mini-ts &#39;uptime; df -h /; pmset -g | grep sleep&#39;</code></li></ol>
+    
+  </div>
+  <div class="agentbox__facts">
     <span class="kicker">Agent entry</span>
     <dl class="kv">
       <dt>Read first</dt><dd><code>00_AGENT_ZERO/ESTATE.md → briefs/MINI-SYNC.md → ledger/2026-09-06-mini-native-pilot.json</code></dd>
@@ -164,18 +172,11 @@
       <dt>Done when</dt><dd>Open this page and see the last probe time, the seats on the node, and the reachability route with its date; no address anywhere on it.</dd>
     </dl>
   </div>
-  <div>
-    <span class="kicker">Commands</span>
-    <pre><code>00_AGENT_ZERO/bin/mini-probe
-mini-herdr agent list
-ssh -T -o BatchMode=yes -o RemoteCommand=none mac-mini-ts &#39;uptime; df -h /; pmset -g | grep sleep&#39;
-</code></pre>
-  </div>
 </div>
 
 </section>
 
-    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U22 · 2026-09-06T14:39:01.140Z · data ssh over Tailscale (hostname, sysctl hw.model/hw.memsize, sw_vers, uptime, df -h /, pmset -g, herdr --version, codex --version, curl :8080) 6 Sep 20:43 UTC+07 · 00_AGENT_ZERO/bin/mini-probe 20:43 · mini-herdr agent list 20:38 · atlas/now.json 20:29 · ledger/2026-09-06-mini-native-pilot.json · briefs/MINI-SYNC.md (6 Sep 00:30) · estate/MINI-STATUS.md (5 Sep) · ESTATE.md (1e5e61e, 5 Sep 18:36) · OWNERS.md LAPTOP-ORGANIZER 5 Sep 19:59</footer>
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U22 · 2026-09-06T14:55:15.557Z · data ssh over Tailscale (hostname, sysctl hw.model/hw.memsize, sw_vers, uptime, df -h /, pmset -g, herdr --version, codex --version, curl :8080) 6 Sep 20:43 UTC+07 · 00_AGENT_ZERO/bin/mini-probe 20:43 · mini-herdr agent list 20:38 · atlas/now.json 20:29 · ledger/2026-09-06-mini-native-pilot.json · briefs/MINI-SYNC.md (6 Sep 00:30) · estate/MINI-STATUS.md (5 Sep) · ESTATE.md (1e5e61e, 5 Sep 18:36) · OWNERS.md LAPTOP-ORGANIZER 5 Sep 19:59</footer>
   </main>
 </div>
 </body>

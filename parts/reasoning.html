@@ -1,21 +1,40 @@
-{{!-- 03 · reasoning — authored reasoning block, source vs interpretation kept apart. Data: {source:[{text,who,at,href}],
-     why, readers, questions:[], claim_ceiling, privacy, empty_state, agent_entry, data} --}}
-<div class="reasoning">
-  <div class="reasoning__col reasoning__col--source">
-    <span class="kicker">Source · his words, verbatim</span>
-    {{#each source}}<blockquote class="quote quote--sm">{{text}}<small>{{who}}{{#if at}} · {{at}}{{/if}}{{#if href}} · <a href="{{href}}">source</a>{{/if}}</small></blockquote>{{else}}<div class="empty">No verbatim source on this page.</div>{{/each}}
-  </div>
-  <div class="reasoning__col">
-    <span class="kicker dim">Reading · authored by the seat</span>
-    {{#if why}}<p>{{{why}}}</p>{{/if}}
-    {{#if readers}}<p class="small muted" style="margin-top:var(--crm-space-3)"><b>Readers.</b> {{{readers}}}</p>{{/if}}
-    {{#if questions}}<ol class="reasoning__questions small">{{#each questions}}<li>{{.}}</li>{{/each}}</ol>{{/if}}
-  </div>
-  <div class="reasoning__ceiling">
-    {{#if claim_ceiling}}<div class="card"><span class="kicker">Claim ceiling</span>{{{claim_ceiling}}}</div>{{/if}}
-    {{#if data}}<div class="card"><span class="kicker dim">Data it renders</span>{{{data}}}</div>{{/if}}
-    {{#if privacy}}<div class="card"><span class="kicker dim">Privacy</span>{{{privacy}}}</div>{{/if}}
-    {{#if empty_state}}<div class="card"><span class="kicker dim">Empty state</span>{{{empty_state}}}</div>{{/if}}
-    {{#if agent_entry}}<div class="card"><span class="kicker dim">Agent entry</span><code>{{agent_entry}}</code></div>{{/if}}
-  </div>
+{{!-- 03 · reasoning v2 — the reasoning block as a stepped spine. Robbed from 21st.dev @elements-/chain-of-thought
+     (parts/SOURCES.md): numbered stages down a connecting rail, each with a state glyph, and nested source cards
+     under the stage that produced them. Source (his words) and reading (the seat's) stay apart — the spine makes
+     which is which structural rather than a matter of two columns.
+     Data: {source:[{text,who,at,href}], why, readers, questions:[], claim_ceiling, privacy, empty_state,
+     agent_entry, data} --}}
+<div class="cot">
+  <ol class="cot__steps">
+    <li class="cot__step cot__step--source">
+      <span class="cot__mark" aria-hidden="true">{{icon megaphone}}</span>
+      <div class="cot__body">
+        <h3 class="cot__title">His words <span class="cot__count">{{source.length}}</span></h3>
+        <p class="cot__sub">verbatim, from <code>00_AGENT_ZERO/source/</code> — never paraphrased</p>
+        {{#each source}}<blockquote class="cot__quote">{{text}}<small>{{who}}{{#if at}} · {{at}}{{/if}}{{#if href}} · <a href="{{href}}">source</a>{{/if}}</small></blockquote>{{else}}<div class="empty">No verbatim source on this page.</div>{{/each}}
+      </div>
+    </li>
+    <li class="cot__step">
+      <span class="cot__mark" aria-hidden="true">{{icon brain-circuit}}</span>
+      <div class="cot__body">
+        <h3 class="cot__title">Reading <span class="cot__by">authored by the seat</span></h3>
+        {{#if why}}<p class="cot__prose">{{{why}}}</p>{{/if}}
+        {{#if readers}}<p class="cot__prose cot__prose--muted"><b>Readers.</b> {{{readers}}}</p>{{/if}}
+        {{#if questions}}<ol class="cot__questions">{{#each questions}}<li>{{.}}</li>{{/each}}</ol>{{/if}}
+      </div>
+    </li>
+    <li class="cot__step cot__step--last">
+      <span class="cot__mark" aria-hidden="true">{{icon shield-check}}</span>
+      <div class="cot__body">
+        <h3 class="cot__title">What this page may claim</h3>
+        <div class="cot__cards">
+          {{#if claim_ceiling}}<div class="cot__card"><span class="kicker">Claim ceiling</span>{{{claim_ceiling}}}</div>{{/if}}
+          {{#if data}}<div class="cot__card"><span class="kicker dim">Data it renders</span>{{{data}}}</div>{{/if}}
+          {{#if privacy}}<div class="cot__card"><span class="kicker dim">Privacy</span>{{{privacy}}}</div>{{/if}}
+          {{#if empty_state}}<div class="cot__card"><span class="kicker dim">Empty state</span>{{{empty_state}}}</div>{{/if}}
+          {{#if agent_entry}}<div class="cot__card"><span class="kicker dim">Agent entry</span><code>{{agent_entry}}</code></div>{{/if}}
+        </div>
+      </div>
+    </li>
+  </ol>
 </div>

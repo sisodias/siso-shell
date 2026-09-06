@@ -146,8 +146,16 @@
 <div class="siso-section__head"><span class="n">07</span><h2>Agent entry</h2></div>
 
   
-<div class="quickstart">
-  <div>
+<div class="agentbox">
+  <div class="agentbox__term">
+    <div class="agentbox__bar">
+      <span class="agentbox__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="agentbox__where">00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2/preregistration.json</span>
+    </div>
+    <ol class="agentbox__lines"><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>cd 00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>jq &#39;.medium.usage, .xhigh.usage&#39; acceptance.json</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>jq &#39;.medium.records[] | select(.type==&quot;turn_context&quot;) | .payload.collaboration_mode.settings.reasoning_effort&#39; runtime-audit.json</code></li><li><span class="agentbox__prompt" aria-hidden="true">❯</span><code>node run-pair.mjs   # re-run both arms on the Mini (native route)</code></li></ol>
+    
+  </div>
+  <div class="agentbox__facts">
     <span class="kicker">Agent entry</span>
     <dl class="kv">
       <dt>Read first</dt><dd><code>00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2/preregistration.json</code></dd>
@@ -156,19 +164,11 @@
       <dt>Done when</dt><dd>Open this page and see two arms, 122,427 vs 122,327 input, ratio 1.00×, reasoning_effort null in both, and the verdict; then compare against <code>acceptance.json</code>.</dd>
     </dl>
   </div>
-  <div>
-    <span class="kicker">Commands</span>
-    <pre><code>cd 00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2
-jq &#39;.medium.usage, .xhigh.usage&#39; acceptance.json
-jq &#39;.medium.records[] | select(.type==&quot;turn_context&quot;) | .payload.collaboration_mode.settings.reasoning_effort&#39; runtime-audit.json
-node run-pair.mjs   # re-run both arms on the Mini (native route)
-</code></pre>
-  </div>
 </div>
 
 </section>
 
-    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U19 · 2026-09-06T14:39:01.140Z · data 00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2/{preregistration,j2,acceptance,runtime-audit}.json · medium|xhigh/{run,metadata}.json</footer>
+    <footer class="faint small mono" style="padding-top:var(--crm-space-8)">rendered by siso-shell · template U19 · 2026-09-06T14:55:15.557Z · data 00_AGENT_ZERO/domains/compute/runs/2026-09-06-j2/{preregistration,j2,acceptance,runtime-audit}.json · medium|xhigh/{run,metadata}.json</footer>
   </main>
 </div>
 </body>

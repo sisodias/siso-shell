@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+/* bin/shoot-previews — one preview image per built family, for the gallery's bento cards (parts/gallery.html).
+ * Shoots /t/<id>/example/ from the local preview server at 1440×900, crops to the top of the workspace (the
+ * heading, which is what identifies a family at card size), and writes site/previews/<id>.webp.
+ * Usage: node bin/build-site && (cd site && python3 -m http.server 8893 &) && node bin/shoot-previews [base] */
+import { mkdirSync, readdirSync, existsSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { join } from 'node:path';
+
+const BASE = process.argv[2] || 'http://127.0.0.1:8893';
+const ROOT = new URL('..', import.meta.url).pathname;
+const OUT = join(ROOT, 'site/previews');
+mkdirSync(OUT, { recursive: true });
+const ids = readdirSync(join(ROOT, 'templates')).filter((d) => existsSync(join(ROOT, 'templates', d, 'template.html')) && /^U\d+$/.test(d));
+
+const pw = await import('/Users/shaansisodia/.npm-global/lib/node_modules/@playwright/cli/node_modules/playwright/index.js');
+const chromium = pw.chromium || pw.default?.chromium;
+const b = await chromium.launch({ headless: true, executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' });
+const page = await b.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
+const done = [];
+for (const id of ids) {
+  /* U23's rendered example is the gallery itself, served at / — it has no /t/U23/example/ route. */
+  const url = id === 'U23' ? `${BASE}/` : `${BASE}/t/${id}/example/`;
+  await page.goto(url, { waitUntil: 'networkidle' });
+  /* the gallery's own page lazy-loads 24 previews and would shoot blank; force them eager, then wait for paint */
+  await page.evaluate(async () => {
+    for (const i of document.images) i.loading = 'eager';
+    await Promise.all(Array.from(document.images).map((i) => i.complete ? null : i.decode().catch(() => null)));
+  });
+  await page.waitForTimeout(400);
+  const png = join(OUT, `${id}.png`);
+  /* crop: skip the rail (232 + 2×16 inset = 264) and take the page's own first screenful */
+  await page.screenshot({ path: png, clip: { x: 264, y: 0, width: 1176, height: 760 } });
+  execFileSync('sips', ['-s', 'format', 'jpeg', '-Z', '640', png, '--out', join(OUT, `${id}.jpg`)], { stdio: 'ignore' });
+  execFileSync('rm', ['-f', png]);
+  done.push(id);
+}
+await b.close();
+console.log(JSON.stringify({ shot: done.length, ids: done, out: 'site/previews/' }));

@@ -3,7 +3,7 @@
      Data: {id, filters:[{key,label,values:[]}], items:[{id,kicker,title,summary,href,status,tone,tags:{key:value},search}], empty} --}}
 <div class="catalogue" data-catalogue="{{id}}">
   <div class="catalogue__bar needs-js">
-    <label class="catalogue__search">{{icon search}}<input type="search" placeholder="Filter…" aria-label="Filter catalogue" data-cat-search></label>
+    <label class="catalogue__search">{{icon search}}<input type="search" placeholder="Search this catalogue…" aria-label="Search catalogue" data-cat-search autocomplete="off" spellcheck="false"></label>
     {{#each filters}}<label class="catalogue__filter"><select data-cat-filter="{{key}}" aria-label="{{label}}"><option value="">{{label}} · all</option>{{#each values}}<option value="{{.}}">{{.}}</option>{{/each}}</select></label>{{/each}}
     <span class="catalogue__count" data-cat-count>{{items.length}} of {{items.length}}</span>
   </div>

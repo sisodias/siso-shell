@@ -1,0 +1,28 @@
+{{!-- 13 · gallery — one card per template family, each with its rendered preview. His 21:05: "the gallery cards
+     are a bit shit". Robbed from 21st.dev @0xUrvish/bento-card (parts/SOURCES.md; his note: "really nice bento
+     card. If we ever make a landing page this is a really good comp to have"): a small uppercase kicker, a large
+     title, then a recessed inset panel holding the preview, bleeding off the bottom edge of the card.
+     Filters and the count row are the catalogue's (kept: "searchable catalog yeah that's cool").
+     Data: {id, filters:[{key,label,values:[]}], items:[{id,order,host,title,summary,href,status,tone,shot,tags,search}], empty} --}}
+<div class="catalogue" data-catalogue="{{id}}">
+  <div class="catalogue__bar needs-js">
+    <label class="catalogue__search">{{icon search}}<input type="search" placeholder="Search the 24 families…" aria-label="Search templates" data-cat-search autocomplete="off" spellcheck="false"></label>
+    {{#each filters}}<label class="catalogue__filter"><select data-cat-filter="{{key}}" aria-label="{{label}}"><option value="">{{label}} · all</option>{{#each values}}<option value="{{.}}">{{.}}</option>{{/each}}</select></label>{{/each}}
+    <span class="catalogue__count" data-cat-count>{{items.length}} of {{items.length}}</span>
+  </div>
+  {{#if items}}<div class="bento" data-cat-grid>
+  {{#each items}}<a class="bento__card tone-{{tone}}" href="{{href}}" data-cat-item data-search="{{search}}"{{#each tags}} data-tag-{{key}}="{{value}}"{{/each}}>
+    <div class="bento__head">
+      <span class="bento__kicker">{{id}} <span class="sep">·</span> order {{order}} <span class="sep">·</span> <span class="dim">{{host}}</span></span>
+      <h4 class="bento__title">{{title}}</h4>
+      <p class="bento__sub">{{{summary}}}</p>
+    </div>
+    <div class="bento__shot">
+      {{#if shot}}<img src="{{shot}}" alt="{{title}} rendered in the CRM shell" loading="lazy" width="640" height="400">{{else}}<div class="bento__noshot">spec only — no example rendered yet</div>{{/if}}
+    </div>
+    <span class="bento__foot"><span class="chip tone-{{tone}}">{{status}}</span><span class="bento__go">{{icon arrow-up-right}}</span></span>
+  </a>{{/each}}
+  </div>
+  <div class="empty" data-cat-empty hidden>No records match. Clear a filter.</div>
+  {{else}}<div class="empty">{{#if empty}}{{{empty}}}{{else}}0 records; nothing registered yet.{{/if}}</div>{{/if}}
+</div>
