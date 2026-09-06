@@ -1,0 +1,875 @@
+{
+ "meta": {
+  "title": "Now · 6 Sep 20:29",
+  "description": "Who is doing what right now, from atlas/now.json (herdr agent list on laptop and Mini + owners.log/OWNERS.md latest lines): live seats with freshness chips, dated owner observations, stale seats, repo activity in the last 24 h, coverage limits, whom to message.",
+  "stream": "now",
+  "crumb": [
+   {
+    "label": "Templates",
+    "href": "/"
+   },
+   {
+    "label": "U10 · Now",
+    "href": "/t/U10/"
+   },
+   {
+    "label": "6 Sep 20:29"
+   }
+  ],
+  "actions": [
+   {
+    "label": "atlas NOW.html",
+    "href": "https://github.com/sisodias/siso-agent-zero-protocol",
+    "icon": "activity",
+    "external": true
+   },
+   {
+    "label": "bin/az-now",
+    "href": "https://github.com/sisodias/siso-agent-zero-protocol",
+    "icon": "terminal",
+    "external": true
+   }
+  ],
+  "source": "00_AGENT_ZERO/atlas/now.json generated \"06 Sep 2026 20:29 +0700\" by bin/az-now (herdr --session herdr-2|default agent list on laptop, mini-herdr agent list on Mini; 15 log sources; 20 log issues) · git log -1 / rev-list --since 24 h in six local checkouts, 20:27 UTC+07"
+ },
+ "heading": {
+  "breadcrumb": [
+   {
+    "label": "Now"
+   },
+   {
+    "label": "6 Sep 2026"
+   },
+   {
+    "label": "20:29 +07"
+   }
+  ],
+  "kicker": "now <span class=\"sep\">·</span> observed 6 Sep 20:29 +07 <span class=\"sep\">·</span> <span class=\"dim\">2 nodes · 10 seats · 22 owner reports</span>",
+  "title": "Now",
+  "subtitle": "10 seats answer <code>herdr agent list</code> across the laptop and the Mac Mini: 2 working, 5 idle, 3 done. Every line below is a timestamped writeback from owners.log or OWNERS.md; nothing is inferred. Freshness is measured against the observation time, not the reader's clock.",
+  "badges": [
+   {
+    "label": "observed 20:29 +07",
+    "tone": "now",
+    "dot": true
+   },
+   {
+    "label": "2 fresh · <1 h",
+    "tone": "now",
+    "href": "#live"
+   },
+   {
+    "label": "3 within 24 h",
+    "tone": "warn",
+    "href": "#live"
+   },
+   {
+    "label": "5 no writeback",
+    "tone": "blocked",
+    "href": "#live"
+   },
+   {
+    "label": "16 seats wrote back but are not live",
+    "tone": "muted",
+    "href": "#stale"
+   },
+   {
+    "label": "node errors · 0",
+    "tone": "now"
+   }
+  ],
+  "status": {
+   "kicker": "Last writeback anywhere",
+   "value": "20:26 · TEMPLATE-BANK-ZERO-2",
+   "note": "heading align fix (his 20:20) · U6 Erdős 742 live (20 of 24); issue #59 closed; siso-shell 4a5fc11 · handoffs/TEMPLATE-BANK.md: \"D-36 scrub 4e30a78 (0 hits live)\". Seats read at 20:29; this page is a snapshot and says so.",
+   "facts": [
+    {
+     "k": "laptop",
+     "v": "6 seats · herdr-2 + default"
+    },
+    {
+     "k": "mini",
+     "v": "4 seats · default"
+    },
+    {
+     "k": "unowned claims",
+     "v": "0"
+    },
+    {
+     "k": "log issues",
+     "v": "22 (scan limit; 2 lines without time; malformed lines 153–155)"
+    }
+   ]
+  }
+ },
+ "sections": {
+  "live": {
+   "n": "01",
+   "title": "Live seats",
+   "sub": "runtime status from herdr; last writeback from the owner logs; freshness against 20:29"
+  },
+  "observations": {
+   "n": "02",
+   "title": "Dated owner observations",
+   "sub": "the latest owner report per seat, newest first; owner text is an attributed report, never acceptance"
+  },
+  "stale": {
+   "n": "03",
+   "title": "Stale · seats that wrote back but are not live",
+   "sub": "their last line, its age, where it was written"
+  },
+  "repos": {
+   "n": "04",
+   "title": "Repo activity · last 24 h",
+   "sub": "local checkouts, git log; six of the repos the live seats sit in"
+  },
+  "coverage": {
+   "n": "05",
+   "title": "Coverage",
+   "sub": "what this snapshot could and could not see"
+  },
+  "message": {
+   "n": "06",
+   "title": "Who to message",
+   "sub": "address seats by name (herdr-send NAME \"…\"); pane ids are volatile"
+  },
+  "timeline": {
+   "n": "07",
+   "title": "Last 24 h"
+  },
+  "agent": {
+   "n": "08",
+   "title": "Agent entry"
+  }
+ },
+ "generated_at": "2026-09-06 20:29 +07",
+ "metrics": [
+  {
+   "value": 10,
+   "label": "seats live (herdr)",
+   "tone": "now",
+   "href": "#live"
+  },
+  {
+   "value": 2,
+   "label": "working",
+   "tone": "now"
+  },
+  {
+   "value": 5,
+   "label": "idle",
+   "tone": "warn"
+  },
+  {
+   "value": 3,
+   "label": "done",
+   "tone": "muted"
+  },
+  {
+   "value": 3,
+   "label": "writebacks in the last hour",
+   "tone": "now",
+   "href": "#observations"
+  },
+  {
+   "value": 19,
+   "label": "in the last 24 h",
+   "tone": "projects",
+   "href": "#observations"
+  },
+  {
+   "value": 22,
+   "label": "latest owner reports",
+   "tone": "muted"
+  }
+ ],
+ "seats": [
+  {
+   "name": "AGENT-ZERO",
+   "node": "laptop",
+   "node_tone": "projects",
+   "status": "done",
+   "status_tone": "muted",
+   "cwd": "~/SISO_Workspace/00_AGENT_ZERO",
+   "last": "2026-09-06 19:53 · 24 issues closed; builder at 59% ctx",
+   "fresh": "36 min",
+   "fresh_tone": "now",
+   "fresh_dot": true
+  },
+  {
+   "name": "TEMPLATE-BANK-ZERO-2",
+   "node": "laptop",
+   "node_tone": "projects",
+   "status": "working",
+   "status_tone": "now",
+   "cwd": "~/SISO_Workspace/siso-shell",
+   "last": "2026-09-06 20:26 · TEMPLATE-BANK.md",
+   "fresh": "2 min",
+   "fresh_tone": "now",
+   "fresh_dot": true,
+   "href": "/t/U17/"
+  },
+  {
+   "name": "BYK FABLE",
+   "node": "laptop",
+   "node_tone": "projects",
+   "status": "idle",
+   "status_tone": "warn",
+   "cwd": "~/SISO_Workspace/SISO_Agency/clients/fahmy-2026-08/bykonzyard",
+   "last": "none in owners.log / OWNERS.md",
+   "fresh": "no timestamped writeback",
+   "fresh_tone": "blocked",
+   "fresh_dot": false
+  },
+  {
+   "name": "ORACLE-ZERO",
+   "node": "laptop",
+   "node_tone": "projects",
+   "status": "idle",
+   "status_tone": "warn",
+   "cwd": "~/SISO_Workspace/SISO_Agency/apps/oracle-streaming",
+   "last": "2026-09-05 19:58 · ORACLE-ZERO-HANDOFF.md",
+   "fresh": "1.0 d",
+   "fresh_tone": "blocked",
+   "fresh_dot": false
+  },
+  {
+   "name": "ORACLE-OPERATOR",
+   "node": "laptop",
+   "node_tone": "projects",
+   "status": "working",
+   "status_tone": "now",
+   "cwd": "~/SISO_Workspace/SISO_Agency/apps/oracle-operator/.worktrees/cf-integration",
+   "last": "2026-09-06 00:26 · ORACLE-OPERATOR-HANDOFF.md",
+   "fresh": "20.0 h",
+   "fresh_tone": "warn",
+   "fresh_dot": false
+  },
+  {
+   "name": "OPERATOR-UI",
+   "node": "laptop",
+   "node_tone": "projects",
+   "status": "idle",
+   "status_tone": "warn",
+   "cwd": "~/SISO_Workspace/SISO_Agency/apps/oracle-operator/.worktrees/operator-ui-20260906",
+   "last": "none in owners.log / OWNERS.md",
+   "fresh": "no timestamped writeback",
+   "fresh_tone": "blocked",
+   "fresh_dot": false
+  },
+  {
+   "name": "ERDOS-LEAD",
+   "node": "mini",
+   "node_tone": "now",
+   "status": "idle",
+   "status_tone": "warn",
+   "cwd": "~/SISO_Workspace/SISO_Research/erdos",
+   "last": "none in owners.log / OWNERS.md",
+   "fresh": "no timestamped writeback",
+   "fresh_tone": "blocked",
+   "fresh_dot": false
+  },
+  {
+   "name": "SISO-PERF-SOL",
+   "node": "mini",
+   "node_tone": "now",
+   "status": "idle",
+   "status_tone": "warn",
+   "cwd": "~/SISO_Workspace/SISO_Internal_Lab",
+   "last": "none in owners.log / OWNERS.md",
+   "fresh": "no timestamped writeback",
+   "fresh_tone": "blocked",
+   "fresh_dot": false
+  },
+  {
+   "name": "PLAYS-ZERO",
+   "node": "mini",
+   "node_tone": "now",
+   "status": "done",
+   "status_tone": "muted",
+   "cwd": "~/SISO_Workspace/SISO_Agents/siso-skills-hub",
+   "last": "2026-09-06 01:28 · plays-verification-2026-09-05.json",
+   "fresh": "19.0 h",
+   "fresh_tone": "warn",
+   "fresh_dot": false
+  },
+  {
+   "name": "INTENT-DISTILLATION",
+   "node": "mini",
+   "node_tone": "now",
+   "status": "done",
+   "status_tone": "muted",
+   "cwd": "~/SISO_Workspace/SISO_Knowledge/.siso-local/siso-source",
+   "last": "2026-09-06 05:33 · KNOWLEDGE-PEOPLE.md",
+   "fresh": "14.9 h",
+   "fresh_tone": "warn",
+   "fresh_dot": false
+  }
+ ],
+ "stale": [
+  {
+   "name": "TEMPLATE-BANK-ZERO",
+   "last": "2026-09-06 19:58",
+   "age": "31 min",
+   "tone": "now",
+   "path": "handoffs/TEMPLATE-BANK.md"
+  },
+  {
+   "name": "REVIEW-ZERO",
+   "last": "2026-09-06 16:32",
+   "age": "3.9 h",
+   "tone": "warn",
+   "path": "handoffs/REVIEW.md"
+  },
+  {
+   "name": "BYK-ZERO",
+   "last": "2026-09-06 15:22",
+   "age": "5.1 h",
+   "tone": "warn",
+   "path": "00_AGENT_ZERO/handoffs/BYK.md"
+  },
+  {
+   "name": "IMPROVEMENT-ZERO",
+   "last": "2026-09-06 15:09",
+   "age": "5.3 h",
+   "tone": "warn",
+   "path": "atlas/IMPROVEMENT-2026-09-06.html"
+  },
+  {
+   "name": "FOUNDRY-ZERO",
+   "last": "2026-09-06 14:27",
+   "age": "6.0 h",
+   "tone": "warn",
+   "path": "00_AGENT_ZERO/handoffs/agency-drivers/FOUNDRY.md"
+  },
+  {
+   "name": "ACTION-MODEL-ZERO",
+   "last": "2026-09-06 14:13",
+   "age": "6.3 h",
+   "tone": "warn",
+   "path": "00_AGENT_ZERO/handoffs/agency-drivers/ACTION-MODEL.md"
+  },
+  {
+   "name": "HALO-ZERO",
+   "last": "2026-09-06 13:17",
+   "age": "7.2 h",
+   "tone": "warn",
+   "path": "00_AGENT_ZERO/handoffs/HALO.md"
+  },
+  {
+   "name": "GQ-COMPUTE",
+   "last": "2026-09-06 13:12",
+   "age": "7.3 h",
+   "tone": "warn",
+   "path": "00_AGENT_ZERO/handoffs/GQ-COMPUTE.md"
+  },
+  {
+   "name": "MAIN-ZERO",
+   "last": "2026-09-06 13:11",
+   "age": "7.3 h",
+   "tone": "warn",
+   "path": "handoffs/MAIN-ZERO.md"
+  },
+  {
+   "name": "LIBRARY-ZERO",
+   "last": "2026-09-06 12:52",
+   "age": "7.6 h",
+   "tone": "warn",
+   "path": "CURRENT_STATE.md"
+  },
+  {
+   "name": "LAPTOP-ORGANIZER",
+   "last": "2026-09-06 12:48",
+   "age": "7.7 h",
+   "tone": "warn",
+   "path": "00_AGENT_ZERO/handoffs/LAPTOP-ORGANIZER.md"
+  },
+  {
+   "name": "INTERNAL-ZERO",
+   "last": "2026-09-06 06:25",
+   "age": "14.1 h",
+   "tone": "warn",
+   "path": "00_AGENT_ZERO/handoffs/agency-drivers/INTERNAL.md"
+  },
+  {
+   "name": "ORACLE-REBUILD/FIXER",
+   "last": "2026-09-06 00:11",
+   "age": "20.3 h",
+   "tone": "warn",
+   "path": ".agents/briefs/ORACLE-REBUILD-HANDOFF.md"
+  },
+  {
+   "name": "ORACLE-REBUILD",
+   "last": "2026-09-05 20:46",
+   "age": "23.7 h",
+   "tone": "warn",
+   "path": "SISO_Agency/apps/oracle-streaming/docs/runs/oracle-rebuild-20260905/ETHEREAL-STORAGE-VERIFICATION.json"
+  },
+  {
+   "name": "AGENCY-ZERO",
+   "last": "2026-09-05 19:58",
+   "age": "1.0 d",
+   "tone": "blocked",
+   "path": "00_AGENT_ZERO/handoffs/AGENCY-BUILD.md"
+  },
+  {
+   "name": "GO-LIVE",
+   "last": "2026-09-05 19:58",
+   "age": "1.0 d",
+   "tone": "blocked",
+   "path": "SISO_Agency/apps/oracle-streaming/.agents/briefs/ORACLE-GOLIVE-HANDOFF.md"
+  }
+ ],
+ "activity": {
+  "observed_at": "6 Sep 20:29 UTC+07",
+  "coverage": "atlas/now.json owner_reports (latest per seat) · 15 log sources",
+  "days": [
+   {
+    "w": 0.2222222222222222,
+    "title": "2026-09-05 · 4 reports"
+   },
+   {
+    "w": 1,
+    "title": "2026-09-06 · 18 reports"
+   }
+  ],
+  "items": [
+   {
+    "at": "2026-09-06 20:26",
+    "who": "TEMPLATE-BANK-ZERO-2",
+    "what": "D-36 scrub 4e30a78 (0 hits live)",
+    "tone": "now",
+    "href": "/t/U17/"
+   },
+   {
+    "at": "2026-09-06 19:58",
+    "who": "TEMPLATE-BANK-ZERO",
+    "what": "U8 law_firms + U14 Camron live (16 of 24); issues #54 #55 closed; successor 'next' list updated (NEXT → U15); siso-shell 0c9bad5",
+    "tone": "muted",
+    "href": "/t/U17/"
+   },
+   {
+    "at": "2026-09-06 19:53",
+    "who": "AGENT-ZERO",
+    "what": "TEMPLATE-BANK-ZERO landed U18 (16:50 words), U2 (catalogue: research_question",
+    "tone": "now"
+   },
+   {
+    "at": "2026-09-06 16:32",
+    "who": "REVIEW-ZERO",
+    "what": "Spawned AGENT-ZERO (Claude Fable 5.1, herdr-2 pane w659e02f80e5bb1-3, cwd A0) from briefs/boot/AGENT-ZERO-FRESH-BOOT.txt at 16:31 on Shaan's order; no trust prompt, readi…",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 15:22",
+    "who": "BYK-ZERO",
+    "what": "Website and report version2 published.188tests pass, six-width public header/footer and three-width media checks pass. Gallery unchanged. Report125points stays explicit a…",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 15:09",
+    "who": "IMPROVEMENT-ZERO",
+    "what": "First recursive-improvement reading: 268 Codex rollouts + 74 Claude transcripts 4→6 Sep measured (95.86M/2822M/12.37M Codex uncached/cached/out); polls, stale xhigh, boot…",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 14:27",
+    "who": "FOUNDRY-ZERO",
+    "what": "The durable follow-up note covers UI, missing information, relevant projects/modules, SISO offers and explicit reasoning for choosing or rejecting options. Current live p…",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 14:13",
+    "who": "ACTION-MODEL-ZERO",
+    "what": "Project OS spine entry files adopted without a second task system. Existing24-framework registry has five bounded bindings to three validators; a cold Luna matched eight …",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 13:17",
+    "who": "HALO-ZERO",
+    "what": "D-24 step3: commit09d69f5 adds .agents/PAGE.md, .agents/HANDOFF.md and .agents/page.url modelled on Great_Library_of_SISO. PAGE describes HALO, read order, planner status…",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 13:12",
+    "who": "GQ-COMPUTE",
+    "what": "Landed P6 wording, diagnoses, GQ map/case and frozen compute evidence at086465c64e4e02f65ce153f9c421d70c53265638 on checkpoint/gq-compute-20260906-d24. Left paused: GQ022…",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 13:11",
+    "who": "MAIN-ZERO",
+    "what": "D-24 landed E3/Mini evidence and project spine; left shared-main integration, peer WIP and V5/successor readback; content commit 4d65f9da509f3b83b0bbeada8f3037dd22104859;…",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 12:52",
+    "who": "LIBRARY-ZERO",
+    "what": "D-20 published P1/P2/V39 and GQ-012–019/023 at https://29e40f52.great-library-of-siso.pages.dev/; 13 exact HTTP200 checks PASS; idle",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 12:48",
+    "who": "LAPTOP-ORGANIZER",
+    "what": "INTENT-DISTILLATION moved to Mini thread 01a071a3 on native Astra medium, 828400 usable. Cold readbacks, owner release, one manual transfer, exact GitHub history, real su…",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 06:25",
+    "who": "INTERNAL-ZERO",
+    "what": "Organizer completed one real manual transfer, successor writeback and preserved predecessor closure. Internal matched four acceptance/history hashes and independently rec…",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-06 05:33",
+    "who": "INTENT-DISTILLATION",
+    "what": "Private sisodias/siso-source commit b569d17e160f8885488fdedee951dded2fe72bda is published: only skills/recall/SKILL.md gains one paragraph separating report/relay content…",
+    "tone": "now"
+   },
+   {
+    "at": "2026-09-06 01:28",
+    "who": "PLAYS-ZERO",
+    "what": "First source/install outcome verified: all three v1 plays plus writeback discovered in fresh Codex and Claude on both machines without context override; 20 installed file…",
+    "tone": "now"
+   },
+   {
+    "at": "2026-09-06 00:26",
+    "who": "ORACLE-OPERATOR",
+    "what": "Actual5188 login now serves the real form; logout302/cookie clear and unauthenticated API401 remain intact.24 security/proxy tests,30 UI tests and forced typecheck pass. …",
+    "tone": "now"
+   },
+   {
+    "at": "2026-09-06 00:11",
+    "who": "ORACLE-REBUILD/FIXER",
+    "what": "Returned repair tip aca771bbb07981a8a7b112eb1a44456d1731cdbb to GO-LIVE;119 focused tests pass, unique Lovense coverage retained, full gate remains unshipped2/4",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-05 20:46",
+    "who": "ORACLE-REBUILD",
+    "what": "TASK-1023: private three-occurrence source bootstrap and metadata-only sessions pushed; front door local with empty page.url; full capture/page gates held",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-05 19:58",
+    "who": "AGENCY-ZERO",
+    "what": "Existing AGENCY-BUILD handoff records completed synthesis and checked report. Its recommended proof was intentionally not executed.",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-05 19:58",
+    "who": "GO-LIVE",
+    "what": "Current handoff maps 14/14 historical gates and records the two-file preflight reservation. Existing ledger reports 17 injected tests; source/consent/runtime limits remai…",
+    "tone": "muted"
+   },
+   {
+    "at": "2026-09-05 19:58",
+    "who": "ORACLE-ZERO",
+    "what": "Owner handoff records TASK-0989 source-only A5 fixture reservation and preserved Unit6/Operator boundaries. This is a routing/scope observation, not a new restore or prod…",
+    "tone": "now"
+   }
+  ]
+ },
+ "repo_activity": [
+  {
+   "repo": "sisodias/siso-shell",
+   "url": "https://github.com/sisodias/siso-shell",
+   "head": "4a5fc11",
+   "at": "2026-09-06 20:26",
+   "n": 14,
+   "tone": "now",
+   "msg": "U6 Erdős 742 · heading align-items start"
+  },
+  {
+   "repo": "sisodias/siso-agent-zero-protocol",
+   "url": "https://github.com/sisodias/siso-agent-zero-protocol",
+   "head": "3ce7cdd",
+   "at": "2026-09-06 20:22",
+   "n": 104,
+   "tone": "now",
+   "msg": "D-36: client-owned repo handles never published; scrubbed from projects.json; U11 live"
+  },
+  {
+   "repo": "sisodias/great-library-of-siso",
+   "url": "https://github.com/sisodias/great-library-of-siso",
+   "head": "477b775",
+   "at": "2026-09-06 13:42",
+   "n": 13,
+   "tone": "warn",
+   "msg": "Record verified Action Model metadata publication and headers compatibility"
+  },
+  {
+   "repo": "Lordsisodia/siso-skills-hub",
+   "url": "https://github.com/Lordsisodia/siso-skills-hub",
+   "head": "1cf5c09",
+   "at": "2026-09-06 01:14",
+   "n": 7,
+   "tone": "warn",
+   "msg": "fix: report cold-discovery configuration failures explicitly"
+  },
+  {
+   "repo": "sisodias/bykonzyard-site",
+   "head": "fb3d7fc",
+   "at": "2026-09-05 03:28",
+   "n": 0,
+   "tone": "muted",
+   "msg": "events: fifth Loom — tables as a product (BYK FABLE idle in this checkout)"
+  },
+  {
+   "repo": "sisodias/oracle-operator",
+   "head": "e51317a",
+   "at": "2026-08-31 17:47",
+   "n": 0,
+   "tone": "muted",
+   "msg": "main checkout; the two operator seats work in .worktrees (cf-integration, operator-ui-20260906), not counted here"
+  }
+ ],
+ "coverage": {
+  "facts": [
+   {
+    "claim": "Seats: <code>herdr --session herdr-2|default agent list</code> on the laptop and <code>mini-herdr agent list</code> on the Mini, 20:29; node errors: none.",
+    "receipt": "atlas/now.json agents, node_errors"
+   },
+   {
+    "claim": "Writebacks: 15 owner-log sources (00_AGENT_ZERO/.agents/owners.log, ledger/OWNERS.md, Great_Library .agents/owners.log, project .agents/briefs/*-HANDOFF.md …); latest line per seat.",
+    "receipt": "atlas/now.json log_sources"
+   },
+   {
+    "claim": "Local workspace only; symlink targets, dependency/cache trees and remote-only logs are not scanned. Git-synced ledger mirrors retain remote reports, not live verification. Owner text and observer seeds are attributed reports, never acceptance or dispatch authority.",
+    "receipt": "atlas/now.json log_coverage"
+   },
+   {
+    "claim": "Repo activity: <code>git rev-list --count --since=24h</code> in six local checkouts at 20:27; worktrees not walked.",
+    "receipt": "this build"
+   }
+  ],
+  "proposals": [
+   {
+    "claim": "Freshness on a live /now/ page should be recomputed at request time from the same JSON, not baked at build.",
+    "why": "this bank page is a snapshot; the atlas NOW.html and Library /now/ own the live view"
+   }
+  ],
+  "limits": [
+   "Directory scan limit reached; local log coverage is incomplete (log_issues[0]).",
+   "OWNERS.md lines 101 and 145 have no time and are excluded; lines 153–155 are malformed (log_issues).",
+   "Seats that never wrote a timestamped line show \"no timestamped writeback\", not a guessed status."
+  ],
+  "version": {
+   "label": "now.json · 06 Sep 2026 20:29 +0700",
+   "at": "bin/az-now"
+  }
+ },
+ "message": {
+  "items": [
+   {
+    "label": "AGENT-ZERO · laptop · done",
+    "what": "<code>~/SISO_Workspace/00_AGENT_ZERO</code> · last writeback 2026-09-06 19:53 · 24 issues closed; builder at 59% ctx",
+    "state": "36 min",
+    "tone": "now"
+   },
+   {
+    "label": "TEMPLATE-BANK-ZERO-2 · laptop · working",
+    "what": "<code>~/SISO_Workspace/siso-shell</code> · last writeback 2026-09-06 20:26 · TEMPLATE-BANK.md",
+    "state": "2 min",
+    "tone": "now",
+    "href": "/t/U17/"
+   },
+   {
+    "label": "ORACLE-OPERATOR · laptop · working",
+    "what": "<code>~/SISO_Workspace/SISO_Agency/apps/oracle-operator/.worktrees/cf-integration</code> · last writeback 2026-09-06 00:26 · ORACLE-OPERATOR-HANDOFF.md",
+    "state": "20.0 h",
+    "tone": "warn"
+   },
+   {
+    "label": "PLAYS-ZERO · mini · done",
+    "what": "<code>~/SISO_Workspace/SISO_Agents/siso-skills-hub</code> · last writeback 2026-09-06 01:28 · plays-verification-2026-09-05.json",
+    "state": "19.0 h",
+    "tone": "warn"
+   },
+   {
+    "label": "INTENT-DISTILLATION · mini · done",
+    "what": "<code>~/SISO_Workspace/SISO_Knowledge/.siso-local/siso-source</code> · last writeback 2026-09-06 05:33 · KNOWLEDGE-PEOPLE.md",
+    "state": "14.9 h",
+    "tone": "warn"
+   },
+   {
+    "label": "BYK FABLE · laptop · idle",
+    "what": "<code>~/SISO_Workspace/SISO_Agency/clients/fahmy-2026-08/bykonzyard</code> · last writeback none in owners.log / OWNERS.md",
+    "state": "no timestamped writeback",
+    "tone": "blocked"
+   },
+   {
+    "label": "ORACLE-ZERO · laptop · idle",
+    "what": "<code>~/SISO_Workspace/SISO_Agency/apps/oracle-streaming</code> · last writeback 2026-09-05 19:58 · ORACLE-ZERO-HANDOFF.md",
+    "state": "1.0 d",
+    "tone": "blocked"
+   },
+   {
+    "label": "OPERATOR-UI · laptop · idle",
+    "what": "<code>~/SISO_Workspace/SISO_Agency/apps/oracle-operator/.worktrees/operator-ui-20260906</code> · last writeback none in owners.log / OWNERS.md",
+    "state": "no timestamped writeback",
+    "tone": "blocked"
+   },
+   {
+    "label": "ERDOS-LEAD · mini · idle",
+    "what": "<code>~/SISO_Workspace/SISO_Research/erdos</code> · last writeback none in owners.log / OWNERS.md",
+    "state": "no timestamped writeback",
+    "tone": "blocked"
+   },
+   {
+    "label": "SISO-PERF-SOL · mini · idle",
+    "what": "<code>~/SISO_Workspace/SISO_Internal_Lab</code> · last writeback none in owners.log / OWNERS.md",
+    "state": "no timestamped writeback",
+    "tone": "blocked"
+   }
+  ],
+  "steps": [
+   {
+    "label": "Read",
+    "what": "the seat's last writeback path before messaging"
+   },
+   {
+    "label": "Send",
+    "what": "<code>herdr-send NAME \"msg\"</code> (verifies delivery); never by pane id"
+   },
+   {
+    "label": "Wait",
+    "what": "a reply is a new timestamped line in its owner log, nothing else"
+   }
+  ]
+ },
+ "timeline": {
+  "observed_at": "2026-09-06 20:29 UTC+07",
+  "from": "2026-09-05 20:29",
+  "to": "2026-09-06 20:30",
+  "lanes": [
+   {
+    "id": "laptop",
+    "label": "laptop seats",
+    "tone": "projects"
+   },
+   {
+    "id": "mini",
+    "label": "mini seats",
+    "tone": "now"
+   },
+   {
+    "id": "other",
+    "label": "seats not live",
+    "tone": "muted"
+   }
+  ],
+  "events": [
+   {
+    "at": "2026-09-06 13:11",
+    "lane": "other",
+    "label": "MAIN-ZERO · MAIN-ZERO.md"
+   },
+   {
+    "at": "2026-09-06 14:27",
+    "lane": "other",
+    "label": "FOUNDRY-ZERO · FOUNDRY.md"
+   },
+   {
+    "at": "2026-09-06 13:12",
+    "lane": "other",
+    "label": "GQ-COMPUTE · GQ-COMPUTE.md"
+   },
+   {
+    "at": "2026-09-06 12:48",
+    "lane": "other",
+    "label": "LAPTOP-ORGANIZER · LAPTOP-ORGANIZER.md"
+   },
+   {
+    "at": "2026-09-06 00:26",
+    "lane": "laptop",
+    "label": "ORACLE-OPERATOR · ORACLE-OPERATOR-HANDOFF.md"
+   },
+   {
+    "at": "2026-09-05 20:46",
+    "lane": "other",
+    "label": "ORACLE-REBUILD · ETHEREAL-STORAGE-VERIFICATION.json"
+   },
+   {
+    "at": "2026-09-06 15:22",
+    "lane": "other",
+    "label": "BYK-ZERO · BYK.md"
+   },
+   {
+    "at": "2026-09-06 05:33",
+    "lane": "mini",
+    "label": "INTENT-DISTILLATION · KNOWLEDGE-PEOPLE.md"
+   },
+   {
+    "at": "2026-09-06 13:17",
+    "lane": "other",
+    "label": "HALO-ZERO · HALO.md"
+   },
+   {
+    "at": "2026-09-06 06:25",
+    "lane": "other",
+    "label": "INTERNAL-ZERO · INTERNAL.md"
+   },
+   {
+    "at": "2026-09-06 14:13",
+    "lane": "other",
+    "label": "ACTION-MODEL-ZERO · ACTION-MODEL.md"
+   },
+   {
+    "at": "2026-09-06 12:52",
+    "lane": "other",
+    "label": "LIBRARY-ZERO · CURRENT_STATE.md"
+   },
+   {
+    "at": "2026-09-06 01:28",
+    "lane": "mini",
+    "label": "PLAYS-ZERO · plays-verification-2026-09-05.json"
+   },
+   {
+    "at": "2026-09-06 00:11",
+    "lane": "other",
+    "label": "ORACLE-REBUILD/FIXER · ORACLE-REBUILD-HANDOFF.md"
+   },
+   {
+    "at": "2026-09-06 15:09",
+    "lane": "other",
+    "label": "IMPROVEMENT-ZERO · IMPROVEMENT-2026-09-06.html"
+   },
+   {
+    "at": "2026-09-06 16:32",
+    "lane": "other",
+    "label": "REVIEW-ZERO · REVIEW.md"
+   },
+   {
+    "at": "2026-09-06 19:58",
+    "lane": "other",
+    "label": "TEMPLATE-BANK-ZERO · TEMPLATE-BANK.md"
+   },
+   {
+    "at": "2026-09-06 19:53",
+    "lane": "laptop",
+    "label": "AGENT-ZERO · 24 issues closed; builder at 59% ctx"
+   },
+   {
+    "at": "2026-09-06 20:26",
+    "lane": "laptop",
+    "label": "TEMPLATE-BANK-ZERO-2 · TEMPLATE-BANK.md"
+   }
+  ]
+ },
+ "quickstart": {
+  "entry": {
+   "path": "00_AGENT_ZERO/bin/az-now → atlas/now.json + atlas/NOW.html"
+  },
+  "owner": {
+   "name": "AGENT-ZERO (atlas)",
+   "last": "20:29 render"
+  },
+  "verification": "Open /now/ and see the last writeback line per live seat with a timestamp; the fresh rows (<1 h against the observation time) are green, the rest amber or rose, and seats with no line say so.",
+  "commands": [
+   "cd 00_AGENT_ZERO && bin/az-now --no-cascade",
+   "jq -r '.agents|to_entries[]|[.value.name,.value.node,.value.status]|@tsv' 00_AGENT_ZERO/atlas/now.json",
+   "jq -r '.owner_reports|to_entries|sort_by(.value.timestamp)|reverse|.[0:5][]|[.value.time,.key,.value.path]|@tsv' 00_AGENT_ZERO/atlas/now.json"
+  ]
+ }
+}

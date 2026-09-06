@@ -1,0 +1,38 @@
+{{!-- U10 · Now — who is doing what right now, without asking anyone. Only writeback lines with timestamps; no inferred status.
+     Freshness: health (<1 h) · warn (<24 h) · danger (stale). Sections: live seats · owner observations · task summaries ·
+     repo activity · coverage · who to message. Empty state: no seat live → says so. --}}
+{{> heading heading}}
+<section class="siso-section" id="live">
+  {{> section sections.live}}
+  {{> metrics metrics}}
+  {{#if seats}}<div class="tbl-wrap" style="margin-top:var(--crm-space-4)"><table class="tbl"><thead><tr><th>Seat</th><th>Node</th><th>Runtime status</th><th>cwd</th><th>Last writeback</th><th>Freshness</th></tr></thead><tbody>{{#each seats}}<tr><td><b>{{#if href}}<a href="{{href}}">{{name}}</a>{{else}}{{name}}{{/if}}</b></td><td><span class="chip tone-{{node_tone}}">{{node}}</span></td><td><span class="chip tone-{{status_tone}}">{{status}}</span></td><td class="mono small muted">{{cwd}}</td><td class="mono small">{{last}}</td><td><span class="chip tone-{{fresh_tone}}">{{#if fresh_dot}}<i class="dot"></i>{{/if}}{{fresh}}</span></td></tr>{{/each}}</tbody></table></div>
+  {{else}}<div class="empty no">No seat is live on any node.</div>{{/if}}
+</section>
+<section class="siso-section" id="observations">
+  {{> section sections.observations}}
+  {{> activity activity}}
+</section>
+<section class="siso-section" id="stale">
+  {{> section sections.stale}}
+  {{#if stale}}<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Seat</th><th>Last writeback</th><th>Age</th><th>Where it wrote</th></tr></thead><tbody>{{#each stale}}<tr><td><b>{{name}}</b></td><td class="mono small">{{last}}</td><td><span class="chip tone-{{tone}}">{{age}}</span></td><td class="small"><code>{{path}}</code></td></tr>{{/each}}</tbody></table></div>{{else}}<div class="empty">Nothing stale: every seat wrote back within the hour.</div>{{/if}}
+</section>
+<section class="siso-section" id="repos">
+  {{> section sections.repos}}
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Repo</th><th>Head</th><th>When</th><th>24 h</th><th>Last message</th></tr></thead><tbody>{{#each repo_activity}}<tr><td>{{#if url}}<a href="{{url}}">{{repo}}</a>{{else}}{{repo}}{{/if}}</td><td class="mono">{{head}}</td><td class="mono small">{{at}}</td><td class="num"><span class="chip tone-{{tone}}">{{n}}</span></td><td class="small muted">{{msg}}</td></tr>{{/each}}</tbody></table></div>
+</section>
+<section class="siso-section" id="coverage">
+  {{> section sections.coverage}}
+  {{> evidence coverage}}
+</section>
+<section class="siso-section" id="message">
+  {{> section sections.message}}
+  {{> contents message}}
+</section>
+<section class="siso-section" id="timeline">
+  {{> section sections.timeline}}
+  {{> timeline timeline}}
+</section>
+<section class="siso-section" id="agent">
+  {{> section sections.agent}}
+  {{> quickstart quickstart}}
+</section>
