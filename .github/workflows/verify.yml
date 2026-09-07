@@ -1,0 +1,28 @@
+name: Verify template bank
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      NODE_OPTIONS: --max-old-space-size=512
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Test source contracts
+        run: node --test --test-concurrency=1
+      - name: Build template bank in the isolated checkout
+        run: node bin/build-site
+      # Build output is intentionally not uploaded or deployed. The builder's
+      # source/example side effects stay in this disposable CI checkout.
+      # Visual review and Library Release/Snapshot selection are separate gates.

@@ -22,13 +22,13 @@
 <section class="siso-section" id="live">
   {{> section sections.live}}
   {{#if urls}}<div class="tbl-wrap"><table class="tbl"><thead><tr><th>URL</th><th>What</th><th>HTTP</th><th>Checked</th></tr></thead><tbody>{{#each urls}}<tr><td><a href="{{url}}">{{url}}</a></td><td>{{what}}</td><td class="num"><span class="chip tone-{{tone}}">{{code}}</span></td><td class="mono small muted">{{checked}}</td></tr>{{/each}}</tbody></table></div>
-  {{else}}<div class="empty">No live page yet. Publish one with the publish play: <code>node scripts/publish.mjs --input site --project &lt;name&gt; --public</code></div>{{/if}}
+  {{else}}<div class="empty">No deployment observations are supplied for this view. Check the project's existing handoff before concluding that no live page exists.</div>{{/if}}
 </section>
 
 <section class="siso-section" id="seats">
   {{> section sections.seats}}
   {{#if seats}}<div class="grid grid-3">{{#each seats}}<div class="card card--strip tone-agents"><span class="kicker" style="color:var(--accent-reflect)">{{state}}</span><b style="display:block;margin-top:4px;color:var(--crm-color-text-strong)">{{#if href}}<a href="{{href}}">{{name}}</a>{{else}}{{name}}{{/if}}</b>{{#if born}}<span class="small muted">born {{born}}{{#if closed}} · closed {{closed}}{{/if}}</span>{{/if}}{{#if last}}<div class="small" style="margin-top:6px"><span class="faint mono">{{last.at}}</span> {{{last.what}}}</div>{{/if}}</div>{{/each}}</div>
-  {{else}}<div class="empty no">Unowned: no seat has ever run on this project.</div>{{/if}}
+  {{else}}<div class="empty">No owner observations are supplied for this view. Ownership and runtime presence are unverified here; check the project's existing handoff.</div>{{/if}}
 </section>
 
 <section class="siso-section" id="landed">
