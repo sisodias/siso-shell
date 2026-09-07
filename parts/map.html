@@ -1,13 +1,34 @@
-{{!-- 04 · map v2 — the mind map as a real graph. Layout: bin/lib/helpers.mjs mapSvg (Reingold-Tilford tidy tree,
-     root centred, branches split left/right, bezier links). Robbed from 21st.dev @ssshooter/mind-map — see
-     parts/SOURCES.md. Data: {centre:{label,href}, types:[{type,label,tone,items:[{label,href,rel,private}]}]}
-     For the ecosystem loop use parts/loop.html. --}}
+{{!-- Typed relationship map and source-derived text alternative.
+     Layout implementation: bin/lib/helpers.mjs mapSvg; provenance: parts/SOURCES.md.
+     Data: {centre:{label,href}, types:[{type,label,tone,items:[{label,href,rel,private}]}]}.
+     Group position is presentation, not an ownership or dependency assertion.
+     Only reviewed public metadata belongs in this input; a private badge is not a sanitizer. --}}
 {{#if types}}
 <div class="map">
   <div class="map__frame">{{map .}}</div>
   <div class="map__legend">
     {{#each types}}<div class="map__lane tone-{{tone}}"><b>{{label}}</b><span class="n">{{items.length}}</span></div>{{/each}}
-    <p class="map__note">Each leaf links to its record. Branches are laid out by subtree size, not by hand.</p>
+    <p class="map__note">Nodes with a supplied link open their record. Branch position is a layout choice, not an ownership or dependency claim.</p>
   </div>
+  <details class="map__records" style="margin-top:var(--crm-space-4)">
+    <summary>Read the relationship records</summary>
+    <p class="small muted" style="margin-top:var(--crm-space-2)">Full labels and supplied relationship descriptions. This list uses the same input as the diagram.</p>
+    {{#each types}}
+    <section style="margin-top:var(--crm-space-4)">
+      <h3>{{label}}</h3>
+      {{#if type}}<p class="small muted">Source group: <code>{{type}}</code></p>{{/if}}
+      {{#if items}}
+      <ul style="margin-top:var(--crm-space-2)">
+        {{#each items}}
+        <li><strong>{{label}}</strong>
+          {{#if rel}}<p class="small">{{rel}}</p>{{else}}<p class="small muted">No relationship description supplied.</p>{{/if}}
+          {{#if private}}<p class="small muted">Private record; no payload provided.</p>{{/if}}
+        </li>
+        {{/each}}
+      </ul>
+      {{else}}<p class="small muted">No record observations are supplied in this group.</p>{{/if}}
+    </section>
+    {{/each}}
+  </details>
 </div>
-{{else}}<div class="empty">Nothing linked yet: no repos, Works, questions or people point at this page.</div>{{/if}}
+{{else}}<div class="empty">No relationship data is supplied for this view. Check the owning source record before concluding that no relationships exist.</div>{{/if}}
