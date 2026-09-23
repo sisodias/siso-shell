@@ -455,7 +455,7 @@
       "last": "2026-09-05 20:46",
       "age": "23.7 h",
       "tone": "warn",
-      "path": "SISO_Workspace/_archive/2026-09-23-home-cleanup/home-SISO_Agency-stray/apps/oracle-streaming/docs/runs/oracle-rebuild-20260905/ETHEREAL-STORAGE-VERIFICATION.json"
+      "path": "SISO_Agency/apps/oracle-streaming/docs/runs/oracle-rebuild-20260905/ETHEREAL-STORAGE-VERIFICATION.json"
     },
     {
       "name": "AGENCY-ZERO",
@@ -469,7 +469,7 @@
       "last": "2026-09-05 19:58",
       "age": "1.0 d",
       "tone": "blocked",
-      "path": "SISO_Workspace/_archive/2026-09-23-home-cleanup/home-SISO_Agency-stray/apps/oracle-streaming/.agents/briefs/ORACLE-GOLIVE-HANDOFF.md"
+      "path": "SISO_Agency/apps/oracle-streaming/.agents/briefs/ORACLE-GOLIVE-HANDOFF.md"
     }
   ],
   "activity": {
