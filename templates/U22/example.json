@@ -295,7 +295,7 @@
       "harness": "codex",
       "status": "idle",
       "tone": "warn",
-      "cwd": "~/SISO_Workspace/SISO_Research/erdos",
+      "cwd": "~/SISO_Workspace/Great_Library_of_SISO/works/erdos",
       "last": "none in scanned logs",
       "href": "/t/U6/example/"
     },
@@ -304,7 +304,7 @@
       "harness": "codex",
       "status": "idle",
       "tone": "warn",
-      "cwd": "~/SISO_Workspace/SISO_Internal_Lab",
+      "cwd": "~/SISO_Workspace/SISO_Agency/apps/siso-internal",
       "last": "none in scanned logs"
     },
     {
@@ -321,7 +321,7 @@
       "harness": "codex",
       "status": "done",
       "tone": "muted",
-      "cwd": "~/SISO_Workspace/SISO_Knowledge/.siso-local/siso-source",
+      "cwd": "~/SISO_Workspace/Great_Library_of_SISO/knowledge/.siso-local/siso-source",
       "last": "2026-09-06 05:33 · KNOWLEDGE-PEOPLE.md"
     }
   ],
@@ -454,7 +454,7 @@
       },
       {
         "label": "2 · Repos",
-        "what": "gh repo clone the protocol repo, fix SISO_Agency remote, clone SISO_Knowledge"
+        "what": "gh repo clone the protocol repo, fix SISO_Workspace/_archive/2026-09-23-home-cleanup/home-SISO_Agency-stray remote, clone SISO_Knowledge"
       },
       {
         "label": "3 · Herdr",

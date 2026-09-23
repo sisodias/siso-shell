@@ -242,7 +242,7 @@
       "node_tone": "projects",
       "status": "done",
       "status_tone": "muted",
-      "cwd": "~/SISO_Workspace/00_AGENT_ZERO",
+      "cwd": "~/SISO_Workspace/SISO_Agents/siso-agent-zero-protocol",
       "last": "2026-09-06 19:53 · 24 issues closed; builder at 59% ctx",
       "fresh": "36 min",
       "fresh_tone": "now",
@@ -254,7 +254,7 @@
       "node_tone": "projects",
       "status": "working",
       "status_tone": "now",
-      "cwd": "~/SISO_Workspace/siso-shell",
+      "cwd": "~/SISO_Workspace/Great_Library_of_SISO/banks/siso-shell",
       "last": "2026-09-06 20:26 · TEMPLATE-BANK.md",
       "fresh": "2 min",
       "fresh_tone": "now",
@@ -315,7 +315,7 @@
       "node_tone": "now",
       "status": "idle",
       "status_tone": "warn",
-      "cwd": "~/SISO_Workspace/SISO_Research/erdos",
+      "cwd": "~/SISO_Workspace/Great_Library_of_SISO/works/erdos",
       "last": "none in owners.log / OWNERS.md",
       "fresh": "no timestamped writeback",
       "fresh_tone": "blocked",
@@ -327,7 +327,7 @@
       "node_tone": "now",
       "status": "idle",
       "status_tone": "warn",
-      "cwd": "~/SISO_Workspace/SISO_Internal_Lab",
+      "cwd": "~/SISO_Workspace/SISO_Agency/apps/siso-internal",
       "last": "none in owners.log / OWNERS.md",
       "fresh": "no timestamped writeback",
       "fresh_tone": "blocked",
@@ -351,7 +351,7 @@
       "node_tone": "now",
       "status": "done",
       "status_tone": "muted",
-      "cwd": "~/SISO_Workspace/SISO_Knowledge/.siso-local/siso-source",
+      "cwd": "~/SISO_Workspace/Great_Library_of_SISO/knowledge/.siso-local/siso-source",
       "last": "2026-09-06 05:33 · KNOWLEDGE-PEOPLE.md",
       "fresh": "14.9 h",
       "fresh_tone": "warn",
@@ -455,7 +455,7 @@
       "last": "2026-09-05 20:46",
       "age": "23.7 h",
       "tone": "warn",
-      "path": "SISO_Agency/apps/oracle-streaming/docs/runs/oracle-rebuild-20260905/ETHEREAL-STORAGE-VERIFICATION.json"
+      "path": "SISO_Workspace/_archive/2026-09-23-home-cleanup/home-SISO_Agency-stray/apps/oracle-streaming/docs/runs/oracle-rebuild-20260905/ETHEREAL-STORAGE-VERIFICATION.json"
     },
     {
       "name": "AGENCY-ZERO",
@@ -469,7 +469,7 @@
       "last": "2026-09-05 19:58",
       "age": "1.0 d",
       "tone": "blocked",
-      "path": "SISO_Agency/apps/oracle-streaming/.agents/briefs/ORACLE-GOLIVE-HANDOFF.md"
+      "path": "SISO_Workspace/_archive/2026-09-23-home-cleanup/home-SISO_Agency-stray/apps/oracle-streaming/.agents/briefs/ORACLE-GOLIVE-HANDOFF.md"
     }
   ],
   "activity": {
@@ -715,13 +715,13 @@
     "items": [
       {
         "label": "AGENT-ZERO · laptop · done",
-        "what": "<code>~/SISO_Workspace/00_AGENT_ZERO</code> · last writeback 2026-09-06 19:53 · 24 issues closed; builder at 59% ctx",
+        "what": "<code>~/SISO_Workspace/SISO_Agents/siso-agent-zero-protocol</code> · last writeback 2026-09-06 19:53 · 24 issues closed; builder at 59% ctx",
         "state": "36 min",
         "tone": "now"
       },
       {
         "label": "TEMPLATE-BANK-ZERO-2 · laptop · working",
-        "what": "<code>~/SISO_Workspace/siso-shell</code> · last writeback 2026-09-06 20:26 · TEMPLATE-BANK.md",
+        "what": "<code>~/SISO_Workspace/Great_Library_of_SISO/banks/siso-shell</code> · last writeback 2026-09-06 20:26 · TEMPLATE-BANK.md",
         "state": "2 min",
         "tone": "now",
         "href": "/t/U17/"
@@ -740,7 +740,7 @@
       },
       {
         "label": "INTENT-DISTILLATION · mini · done",
-        "what": "<code>~/SISO_Workspace/SISO_Knowledge/.siso-local/siso-source</code> · last writeback 2026-09-06 05:33 · KNOWLEDGE-PEOPLE.md",
+        "what": "<code>~/SISO_Workspace/Great_Library_of_SISO/knowledge/.siso-local/siso-source</code> · last writeback 2026-09-06 05:33 · KNOWLEDGE-PEOPLE.md",
         "state": "14.9 h",
         "tone": "warn"
       },
@@ -764,13 +764,13 @@
       },
       {
         "label": "ERDOS-LEAD · mini · idle",
-        "what": "<code>~/SISO_Workspace/SISO_Research/erdos</code> · last writeback none in owners.log / OWNERS.md",
+        "what": "<code>~/SISO_Workspace/Great_Library_of_SISO/works/erdos</code> · last writeback none in owners.log / OWNERS.md",
         "state": "no timestamped writeback",
         "tone": "blocked"
       },
       {
         "label": "SISO-PERF-SOL · mini · idle",
-        "what": "<code>~/SISO_Workspace/SISO_Internal_Lab</code> · last writeback none in owners.log / OWNERS.md",
+        "what": "<code>~/SISO_Workspace/SISO_Agency/apps/siso-internal</code> · last writeback none in owners.log / OWNERS.md",
         "state": "no timestamped writeback",
         "tone": "blocked"
       }
